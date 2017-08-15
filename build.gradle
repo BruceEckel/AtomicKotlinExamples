@@ -38,8 +38,7 @@ dependencies {
 }
 
 sourceSets {
-    main.kotlin.srcDirs += 'examples'
-    main.kotlin.srcDirs += 'testing'
+    main.kotlin.srcDirs += 'Examples'
 }
 
 apply from: 'gradle/tasks.gradle'

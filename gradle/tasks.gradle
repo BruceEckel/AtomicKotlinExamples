@@ -8,1037 +8,1043 @@ dependencies {
 
 def kotlinClassPath = configurations.kotlinRuntime + sourceSets.main.runtimeClasspath
 
-task emptyProgram(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'helloWorld.EmptyProgramKt'
-}
-
-task helloWorld(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'helloWorld.HelloWorldKt'
-}
-
-task vars(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variables.VarsKt'
-}
-
-task mutableVariable(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variables.MutableVariableKt'
-}
-
-task vals(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variables.ValsKt'
-}
-
-task stringPlusNumber(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'dataTypes.StringPlusNumberKt'
-}
-
-task types(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'dataTypes.TypesKt'
-}
-
-task inference(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'dataTypes.InferenceKt'
-}
-
-task multiplyByTwo(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'functions.MultiplyByTwoKt'
-}
-
-task sayHello(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'functions.SayHelloKt'
-}
-
-task multiplyByThree(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'functions.MultiplyByThreeKt'
-}
-
-task multiplyByFour(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'functions.MultiplyByFourKt'
-}
-
-task if1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ifExpressions.If1Kt'
-}
-
-task if2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ifExpressions.If2Kt'
-}
-
-task if3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ifExpressions.If3Kt'
-}
-
-task if4(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ifExpressions.If4Kt'
-}
-
-task if5(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ifExpressions.If5Kt'
-}
-
-task if6(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ifExpressions.If6Kt'
-}
-
-task trueOrFalse(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ifExpressions.TrueOrFalseKt'
-}
-
-task oneOrTheOther(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ifExpressions.OneOrTheOtherKt'
-}
-
-task stringTemplates(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'stringTemplates.StringTemplatesKt'
-}
-
-task stringConcatenation(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'stringTemplates.StringConcatenationKt'
-}
-
-task expressionInStringTemplate(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'stringTemplates.ExpressionInStringTemplateKt'
-}
-
-task tripleQuotes(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'stringTemplates.TripleQuotesKt'
-}
-
-task inferInt(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'numberTypes.InferIntKt'
-}
-
-task modulus(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'numberTypes.ModulusKt'
-}
-
-task intDivisionTruncates(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'numberTypes.IntDivisionTruncatesKt'
-}
-
-task bMI(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'numberTypes.BMIKt'
-}
-
-task integerMath(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'numberTypes.IntegerMathKt'
-}
-
-task integerOverflow(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'numberTypes.IntegerOverflowKt'
-}
-
-task usingLongs(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'numberTypes.UsingLongsKt'
-}
-
-task biggestLong(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'numberTypes.BiggestLongKt'
-}
-
-task booleans1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'booleans.Booleans1Kt'
-}
-
-task booleans2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'booleans.Booleans2Kt'
-}
-
-task booleans3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'booleans.Booleans3Kt'
-}
-
-task evaluationOrder(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'booleans.EvaluationOrderKt'
-}
-
-task whileLoop(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'repetitionWithWhile.WhileLoopKt'
-}
-
-task doWhileLoop(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'repetitionWithWhile.DoWhileLoopKt'
-}
-
-task repeatThreeTimes(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'forAndRanges.RepeatThreeTimesKt'
-}
-
-task definingRanges(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'forAndRanges.DefiningRangesKt'
-}
-
-task sumUsingRange(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'forAndRanges.SumUsingRangeKt'
-}
-
-task forWithRanges(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'forAndRanges.ForWithRangesKt'
-}
-
-task forWithCharRange(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'forAndRanges.ForWithCharRangeKt'
-}
-
-task indexIntoString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'forAndRanges.IndexIntoStringKt'
-}
-
-task addingIntToChar(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'forAndRanges.AddingIntToCharKt'
-}
-
-task iterateOverString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'forAndRanges.IterateOverStringKt'
-}
-
-task containsChar(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'forAndRanges.ContainsCharKt'
-}
-
-task membershipInRange(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'moreAboutRanges.MembershipInRangeKt'
-}
-
-task membershipUsingBounds(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'moreAboutRanges.MembershipUsingBoundsKt'
-}
-
-task iterationVsMembership(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'moreAboutRanges.IterationVsMembershipKt'
-}
-
-task inString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'moreAboutRanges.InStringKt'
-}
-
-task charRange(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'moreAboutRanges.CharRangeKt'
-}
-
-task floatingPointRange(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'moreAboutRanges.FloatingPointRangeKt'
-}
-
-task stringRange(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'moreAboutRanges.StringRangeKt'
-}
-
-task forLoopIsAStatement(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'expressionsAndStatements.ForLoopIsAStatementKt'
-}
-
-task unitReturnType(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'expressionsAndStatements.UnitReturnTypeKt'
-}
-
-task assigningAnIf(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'expressionsAndStatements.AssigningAnIfKt'
-}
-
-task basicFunctions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.BasicFunctionsKt'
-}
-
-task booleans(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.BooleansKt'
-}
-
-task ifResult(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.IfResultKt'
-}
-
-task ifExpression(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.IfExpressionKt'
-}
-
-task strTemplates(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.StrTemplatesKt'
-}
-
-task threeQuotes(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.ThreeQuotesKt'
-}
-
-task numberTypes(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.NumberTypesKt'
-}
-
-task overflow(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.OverflowKt'
-}
-
-task truncation(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.TruncationKt'
-}
-
-task iterateThroughString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.IterateThroughStringKt'
-}
-
-task intRange(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.IntRangeKt'
-}
-
-task rangeMembership(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary1.RangeMembershipKt'
-}
-
-task intRanges(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'classesAndObjects.IntRangesKt'
-}
-
-task rangeSum(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'classesAndObjects.RangeSumKt'
-}
-
-task animals(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'creatingClasses.AnimalsKt'
-}
-
-task dog(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'memberFunctions.DogKt'
-}
-
-task cat(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'memberFunctions.CatKt'
-}
-
-task hamster(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'memberFunctions.HamsterKt'
-}
-
-task importClass(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'importsAndPackages.ImportClassKt'
-}
-
-task importMultiple(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'importsAndPackages.ImportMultipleKt'
-}
-
-task importNameChange(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'importsAndPackages.ImportNameChangeKt'
-}
-
-task importEverything(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'importsAndPackages.ImportEverythingKt'
-}
-
-task fullyQualify(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'importsAndPackages.FullyQualifyKt'
-}
-
-task importPythagorean(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'importsAndPackages.ImportPythagoreanKt'
-}
-
-task testingExample(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'testing.TestingExampleKt'
-}
-
-task tDDFail(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'testing1.TDDFailKt'
-}
-
-task tDDStillFails(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'testing2.TDDStillFailsKt'
-}
-
-task tDDWorks(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'testing3.TDDWorksKt'
-}
-
-task cup(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'properties.CupKt'
-}
-
-task cup2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'properties.Cup2Kt'
-}
-
-task changingAVal(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'referencesAndMutability.ChangingAValKt'
-}
-
-task anUnchangingVar(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'referencesAndMutability.AnUnchangingVarKt'
-}
-
-task references(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'referencesAndMutability.ReferencesKt'
-}
-
-task lists(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lists.ListsKt'
-}
-
-task parameterizedTypes(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'parameterizedTypes.ParameterizedTypesKt'
-}
-
-task parameterizedReturnTypes(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'parameterizedTypes.ParameterizedReturnTypesKt'
-}
-
-task mutableList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'readOnlyAndMutableLists.MutableListKt'
-}
-
-task mutableListIsList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'readOnlyAndMutableLists.MutableListIsListKt'
-}
-
-task differentReferencesToList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'readOnlyAndMutableLists.DifferentReferencesToListKt'
-}
-
-task useALibrary(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary2.UseALibraryKt'
-}
-
-task usingAtomicTest(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary2.UsingAtomicTestKt'
-}
-
-task listCollection(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary2.ListCollectionKt'
-}
-
-task classBodies(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary2.ClassBodiesKt'
-}
-
-task temperature(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary2.TemperatureKt'
-}
-
-task ticTacToe(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'summary2.TicTacToeKt'
-}
-
-task observeAnimals(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'visibilityModifiers.ObserveAnimalsKt'
-}
-
-task cookie(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'visibilityModifiers.CookieKt'
-}
-
-task whenExpressions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'whenExpressions.WhenExpressionsKt'
-}
-
-task whenExpressionAndSmartCasts(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'whenexpressionscasts.WhenExpressionAndSmartCastsKt'
-}
-
-task namedArguments(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'namedAndDefaultArguments.NamedArgumentsKt'
-}
-
-task namedArgumentsOrder(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'namedAndDefaultArguments.NamedArgumentsOrderKt'
-}
-
-task namedAndDefaultArgs(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'namedAndDefaultArguments.NamedAndDefaultArgsKt'
-}
-
-task overloading(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'overloading.OverloadingKt'
-}
-
-task overloadingAdd(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'overloading.OverloadingAddKt'
-}
-
-task withoutDefaultArguments(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'overloading.WithoutDefaultArgumentsKt'
-}
-
-task withDefaultArguments(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'overloading.WithDefaultArgumentsKt'
-}
-
-task classArg(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'classArguments.ClassArgKt'
-}
-
-task visibleClassArgs(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'classArguments.VisibleClassArgsKt'
-}
-
-task multipleClassArgs(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'classArguments.MultipleClassArgsKt'
-}
-
-task initSection(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'constructors.InitSectionKt'
-}
-
-task coffee(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'constructors.CoffeeKt'
-}
-
-task gardenGnome(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'secondaryConstructors.GardenGnomeKt'
-}
-
-task dataClasses(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'dataclasses.DataClassesKt'
-}
-
-task copyDataClass(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'dataClasses.CopyDataClassKt'
-}
-
-task bicycle(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'automaticStringConversion.BicycleKt'
-}
-
-task surrey(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'automaticStringConversion.SurreyKt'
-}
-
-task surreyWithToString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'automaticStringConversion.SurreyWithToStringKt'
-}
-
-task sets(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'sets.SetsKt'
-}
-
-task removeDuplicates(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'sets.RemoveDuplicatesKt'
-}
-
-task mutableSet(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'sets.MutableSetKt'
-}
-
-task maps(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'maps.MapsKt'
-}
-
-task mutableMaps(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'maps.MutableMapsKt'
-}
-
-task readOnlyMaps(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'maps.ReadOnlyMapsKt'
-}
-
-task contactMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'maps.ContactMapKt'
-}
-
-task pairs(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'destructuringDeclarations.PairsKt'
-}
-
-task pairsAndDesctructuring(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'destructuringDeclarations.PairsAndDesctructuringKt'
-}
-
-task computationResult(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'destructuringDeclarations.ComputationResultKt'
-}
-
-task tuple(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'destructuringDeclarations.TupleKt'
-}
-
-task destructuringAndForLoop(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'destructuringDeclarations.DestructuringAndForLoopKt'
-}
-
-task quoting(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'quoting.QuotingKt'
-}
-
-task quote(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'quoting.QuoteKt'
-}
-
-task strangeQuote(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionFunctions.StrangeQuoteKt'
-}
-
-task memberVsExtension(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionFunctions.MemberVsExtensionKt'
-}
-
-task bookExtensions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionFunctions.BookExtensionsKt'
-}
-
-task localFunctions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'localFunctions.LocalFunctionsKt'
-}
-
-task localExtensions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'localFunctions.LocalExtensionsKt'
-}
-
-task nullInMaps(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nullableTypes.NullInMapsKt'
-}
-
-task nullableAndNonnullTypes(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nullableTypes.NullableAndNonnullTypesKt'
-}
-
-task dereference(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nullableTypes.DereferenceKt'
-}
-
-task explicitCheck(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nullableTypes.ExplicitCheckKt'
-}
-
-task dereferenceNull(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'safeCallsAndElvisOperator.DereferenceNullKt'
-}
-
-task safeCall(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'safeCallsAndElvisOperator.SafeCallKt'
-}
-
-task chainedSafeCalls(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'safeCallsAndElvisOperator.ChainedSafeCallsKt'
-}
-
-task elvisOperator(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'safeCallsAndElvisOperator.ElvisOperatorKt'
-}
-
-task nonNullAssertedCalls(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nonNullAssertedCalls.NonNullAssertedCallsKt'
-}
-
-task nonNullAssertion(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nonNullAssertedCalls.NonNullAssertionKt'
-}
-
-task gettingValueFromMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nonNullAssertedCalls.GettingValueFromMapKt'
-}
-
-task extensionsOnNullableString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionsForNullableTypes.ExtensionsOnNullableStringKt'
-}
-
-task declarations(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionsForNullableTypes.DeclarationsKt'
-}
-
-task displayList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdas.DisplayListKt'
-}
-
-task displayListWithLambda(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdas.DisplayListWithLambdaKt'
-}
-
-task displayDuck(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdas.DisplayDuckKt'
-}
-
-task displayDuckTestable(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdas.DisplayDuckTestableKt'
-}
-
-task twoArgAnonymous(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdas.TwoArgAnonymousKt'
-}
-
-task callLater(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdas.CallLaterKt'
-}
-
-task assignAnonymous(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdas.AssignAnonymousKt'
-}
-
-task simpleMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'operationsOnLists.SimpleMapKt'
-}
-
-task sum(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'operationsOnLists.SumKt'
-}
-
-task reduce(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'operationsOnLists.ReduceKt'
-}
-
-task moreReduce(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'operationsOnLists.MoreReduceKt'
-}
-
-task zipper(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'combiningListsWithZip.ZipperKt'
-}
-
-task indexWithZip(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'combiningListsWithZip.IndexWithZipKt'
-}
-
-task zipMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'combininglistswithzip.ZipMapKt'
-}
-
-task listOf(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'varargsAndArrays.ListOfKt'
-}
-
-task variableArgLists(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'varargsAndArrays.VariableArgListsKt'
-}
-
-task varargSum(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'varargsAndArrays.VarargSumKt'
-}
-
-task spreadOperator(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'varargsAndArrays.SpreadOperatorKt'
-}
-
-task twoFunctionsWithVarargs(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'varargsAndArrays.TwoFunctionsWithVarargsKt'
-}
-
-task greatApe(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritance.GreatApeKt'
-}
-
-task greatApe2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseclassinit.GreatApe2Kt'
-}
-
-task auxiliaryInitialization(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseClassInitialization.AuxiliaryInitializationKt'
-}
-
-task callingOtherConstructors(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseclassinit.CallingOtherConstructorsKt'
-}
-
-task greatApe3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'overridingFunctions.GreatApe3Kt'
-}
-
-task abstractClasses(type: JavaExec) {
+task AbstractClasses(type: JavaExec) {
     classpath kotlinClassPath
     main = 'abstractClasses.AbstractClassesKt'
 }
 
-task stateOfAClass(type: JavaExec) {
+task Bicycle(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interfaces.StateOfAClassKt'
+    main = 'BicycleKt'
 }
 
-task interfaceMemberImplementations(type: JavaExec) {
+task Surrey(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interfaces3.InterfaceMemberImplementationsKt'
+    main = 'SurreyKt'
 }
 
-task framework(type: JavaExec) {
+task SurreyWithToString(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interfaces.FrameworkKt'
+    main = 'SurreyWithToStringKt'
 }
 
-task interfaceCollision(type: JavaExec) {
+task AuxiliaryInitialization(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interfaces.InterfaceCollisionKt'
+    main = 'AuxiliaryInitializationKt'
 }
 
-task myClass(type: JavaExec) {
+task CallingOtherConstructors(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyaccessors.MyClassKt'
+    main = 'baseclassinit.CallingOtherConstructorsKt'
 }
 
-task defaultAccessors(type: JavaExec) {
+task GreatApe2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyAccessors.DefaultAccessorsKt'
+    main = 'baseclassinit.GreatApe2Kt'
 }
 
-task loggingChange(type: JavaExec) {
+task Booleans1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyAccessors.LoggingChangeKt'
+    main = 'Booleans1Kt'
 }
 
-task hamsters(type: JavaExec) {
+task Booleans2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyaccessors.HamstersKt'
+    main = 'Booleans2Kt'
 }
 
-task propertyInInterface(type: JavaExec) {
+task Booleans3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyaccessors.PropertyInInterfaceKt'
+    main = 'Booleans3Kt'
 }
 
-task explicitDelegation(type: JavaExec) {
+task EvaluationOrder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'classDelegation.ExplicitDelegationKt'
+    main = 'EvaluationOrderKt'
 }
 
-task adjustedControls(type: JavaExec) {
+task ClassArg(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'classDelegation.AdjustedControlsKt'
+    main = 'ClassArgKt'
 }
 
-task modelingMultipleInheritance(type: JavaExec) {
+task MultipleClassArgs(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'classDelegation.ModelingMultipleInheritanceKt'
+    main = 'MultipleClassArgsKt'
 }
 
-task level(type: JavaExec) {
+task VisibleClassArgs(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'enumerations.LevelKt'
+    main = 'VisibleClassArgsKt'
 }
 
-task importLevel(type: JavaExec) {
+task AdjustedControls(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'enumerations.ImportLevelKt'
+    main = 'AdjustedControlsKt'
 }
 
-task colorBlendTest(type: JavaExec) {
+task ExplicitDelegation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'colorblend.ColorBlendTestKt'
+    main = 'ExplicitDelegationKt'
 }
 
-task colorBlendMap(type: JavaExec) {
+task ModelingMultipleInheritance(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'colorblendmap.ColorBlendMapKt'
+    main = 'ModelingMultipleInheritanceKt'
 }
 
-task regularClasses(type: JavaExec) {
+task IntRanges(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'regularClasses.RegularClassesKt'
+    main = 'IntRangesKt'
 }
 
-task sealedClasses(type: JavaExec) {
+task RangeSum(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'sealedClasses.SealedClassesKt'
+    main = 'RangeSumKt'
 }
 
-task objectsAndFunctions(type: JavaExec) {
+task IndexWithZip(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjects.ObjectsAndFunctionsKt'
+    main = 'IndexWithZipKt'
 }
 
-task thisKeyword(type: JavaExec) {
+task ZipMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjects1.ThisKeywordKt'
+    main = 'combininglistswithzip.ZipMapKt'
 }
 
-task objectKeyword(type: JavaExec) {
+task Zipper(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjects2.ObjectKeywordKt'
+    main = 'ZipperKt'
 }
 
-task objectProperty(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'companionobjects4.ObjectPropertyKt'
-}
-
-task objectFunctions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'companionobjects5.ObjectFunctionsKt'
-}
-
-task objCounter(type: JavaExec) {
+task ObjCounter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjects.ObjCounterKt'
 }
 
-task dataClassesWithVars(type: JavaExec) {
+task ObjectFunctions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjects5.ObjectFunctionsKt'
+}
+
+task ObjectKeyword(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjects2.ObjectKeywordKt'
+}
+
+task ObjectProperty(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjects4.ObjectPropertyKt'
+}
+
+task ObjectsAndFunctions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjects.ObjectsAndFunctionsKt'
+}
+
+task ThisKeyword(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjects1.ThisKeywordKt'
+}
+
+task Coffee(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CoffeeKt'
+}
+
+task InitSection(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'constructors.InitSectionKt'
+}
+
+task Animals(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AnimalsKt'
+}
+
+task CopyDataClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CopyDataClassKt'
+}
+
+task DataClasses(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'dataclasses.DataClassesKt'
+}
+
+task DataClassAndHashCode(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'dataclasses4.DataClassAndHashCodeKt'
+}
+
+task DataClassesWithVars(type: JavaExec) {
     classpath kotlinClassPath
     main = 'dataclasses3.DataClassesWithVarsKt'
 }
 
-task dataClassAndHashCode(type: JavaExec) {
+task Inference(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'dataclasses4.DataClassAndHashCodeKt'
+    main = 'InferenceKt'
 }
+
+task StringPlusNumber(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringPlusNumberKt'
+}
+
+task Types(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TypesKt'
+}
+
+task ComputationResult(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ComputationResultKt'
+}
+
+task DestructuringAndForLoop(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DestructuringAndForLoopKt'
+}
+
+task Pairs(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'PairsKt'
+}
+
+task PairsAndDesctructuring(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'PairsAndDesctructuringKt'
+}
+
+task Tuple(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TupleKt'
+}
+
+task ImportLevel(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'enumerations.ImportLevelKt'
+}
+
+task Level(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'enumerations.LevelKt'
+}
+
+task AssigningAnIf(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AssigningAnIfKt'
+}
+
+task ForLoopIsAStatement(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ForLoopIsAStatementKt'
+}
+
+task UnitReturnType(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UnitReturnTypeKt'
+}
+
+task BookExtensions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BookExtensionsKt'
+}
+
+task MemberVsExtension(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MemberVsExtensionKt'
+}
+
+task Quote(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'quoting.QuoteKt'
+}
+
+task Quoting(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'quoting.QuotingKt'
+}
+
+task StrangeQuote(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StrangeQuoteKt'
+}
+
+task Declarations(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DeclarationsKt'
+}
+
+task ExtensionsOnNullableString(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ExtensionsOnNullableStringKt'
+}
+
+task AddingIntToChar(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AddingIntToCharKt'
+}
+
+task ContainsChar(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ContainsCharKt'
+}
+
+task DefiningRanges(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DefiningRangesKt'
+}
+
+task ForWithCharRange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ForWithCharRangeKt'
+}
+
+task ForWithRanges(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ForWithRangesKt'
+}
+
+task IndexIntoString(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IndexIntoStringKt'
+}
+
+task IterateOverString(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IterateOverStringKt'
+}
+
+task RepeatThreeTimes(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RepeatThreeTimesKt'
+}
+
+task SumUsingRange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SumUsingRangeKt'
+}
+
+task MultiplyByFour(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MultiplyByFourKt'
+}
+
+task MultiplyByThree(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MultiplyByThreeKt'
+}
+
+task MultiplyByTwo(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MultiplyByTwoKt'
+}
+
+task SayHello(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SayHelloKt'
+}
+
+task EmptyProgram(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'EmptyProgramKt'
+}
+
+task HelloWorld(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'HelloWorldKt'
+}
+
+task If1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'If1Kt'
+}
+
+task If2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'If2Kt'
+}
+
+task If3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'If3Kt'
+}
+
+task If4(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'If4Kt'
+}
+
+task If5(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'If5Kt'
+}
+
+task If6(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'If6Kt'
+}
+
+task OneOrTheOther(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'OneOrTheOtherKt'
+}
+
+task TrueOrFalse(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TrueOrFalseKt'
+}
+
+task FullyQualify(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FullyQualifyKt'
+}
+
+task ImportClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ImportClassKt'
+}
+
+task ImportEverything(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ImportEverythingKt'
+}
+
+task ImportMultiple(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ImportMultipleKt'
+}
+
+task ImportNameChange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ImportNameChangeKt'
+}
+
+task ImportPythagorean(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ImportPythagoreanKt'
+}
+
+task GreatApe(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritance.GreatApeKt'
+}
+
+task Framework(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FrameworkKt'
+}
+
+task InterfaceCollision(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'InterfaceCollisionKt'
+}
+
+task InterfaceMemberImplementations(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces3.InterfaceMemberImplementationsKt'
+}
+
+task StateOfAClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StateOfAClassKt'
+}
+
+task AssignAnonymous(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AssignAnonymousKt'
+}
+
+task CallLater(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CallLaterKt'
+}
+
+task DisplayDuck(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DisplayDuckKt'
+}
+
+task DisplayDuckTestable(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DisplayDuckTestableKt'
+}
+
+task DisplayList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DisplayListKt'
+}
+
+task DisplayListWithLambda(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DisplayListWithLambdaKt'
+}
+
+task TwoArgAnonymous(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TwoArgAnonymousKt'
+}
+
+task Lists(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ListsKt'
+}
+
+task LocalExtensions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LocalExtensionsKt'
+}
+
+task LocalFunctions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LocalFunctionsKt'
+}
+
+task ContactMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ContactMapKt'
+}
+
+task Maps(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MapsKt'
+}
+
+task MutableMaps(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MutableMapsKt'
+}
+
+task ReadOnlyMaps(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReadOnlyMapsKt'
+}
+
+task Cat(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CatKt'
+}
+
+task Dog(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DogKt'
+}
+
+task Hamster(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'HamsterKt'
+}
+
+task CharRange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CharRangeKt'
+}
+
+task FloatingPointRange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FloatingPointRangeKt'
+}
+
+task InString(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'InStringKt'
+}
+
+task IterationVsMembership(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IterationVsMembershipKt'
+}
+
+task MembershipInRange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MembershipInRangeKt'
+}
+
+task MembershipUsingBounds(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MembershipUsingBoundsKt'
+}
+
+task StringRange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringRangeKt'
+}
+
+task ColorBlendMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'colorblendmap.ColorBlendMapKt'
+}
+
+task ColorBlendTest(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'colorblend.ColorBlendTestKt'
+}
+
+task NamedAndDefaultArgs(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NamedAndDefaultArgsKt'
+}
+
+task NamedArguments(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NamedArgumentsKt'
+}
+
+task NamedArgumentsOrder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NamedArgumentsOrderKt'
+}
+
+task GettingValueFromMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GettingValueFromMapKt'
+}
+
+task NonNullAssertedCalls(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NonNullAssertedCallsKt'
+}
+
+task NonNullAssertion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NonNullAssertionKt'
+}
+
+task Dereference(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DereferenceKt'
+}
+
+task ExplicitCheck(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ExplicitCheckKt'
+}
+
+task NullableAndNonnullTypes(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NullableAndNonnullTypesKt'
+}
+
+task NullInMaps(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NullInMapsKt'
+}
+
+task BiggestLong(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BiggestLongKt'
+}
+
+task BMI(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BMIKt'
+}
+
+task InferInt(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'InferIntKt'
+}
+
+task IntDivisionTruncates(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IntDivisionTruncatesKt'
+}
+
+task IntegerMath(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IntegerMathKt'
+}
+
+task IntegerOverflow(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IntegerOverflowKt'
+}
+
+task Modulus(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ModulusKt'
+}
+
+task UsingLongs(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UsingLongsKt'
+}
+
+task MoreReduce(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MoreReduceKt'
+}
+
+task Reduce(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReduceKt'
+}
+
+task SimpleMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SimpleMapKt'
+}
+
+task Sum(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SumKt'
+}
+
+task Overloading(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'OverloadingKt'
+}
+
+task OverloadingAdd(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'OverloadingAddKt'
+}
+
+task WithDefaultArguments(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WithDefaultArgumentsKt'
+}
+
+task WithoutDefaultArguments(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WithoutDefaultArgumentsKt'
+}
+
+task GreatApe3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GreatApe3Kt'
+}
+
+task ParameterizedReturnTypes(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ParameterizedReturnTypesKt'
+}
+
+task ParameterizedTypes(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ParameterizedTypesKt'
+}
+
+task Cup(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CupKt'
+}
+
+task Cup2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Cup2Kt'
+}
+
+task DefaultAccessors(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DefaultAccessorsKt'
+}
+
+task Hamsters(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertyaccessors.HamstersKt'
+}
+
+task LoggingChange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LoggingChangeKt'
+}
+
+task MyClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertyaccessors.MyClassKt'
+}
+
+task PropertyInInterface(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertyaccessors.PropertyInInterfaceKt'
+}
+
+task DifferentReferencesToList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DifferentReferencesToListKt'
+}
+
+task MutableList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MutableListKt'
+}
+
+task MutableListIsList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MutableListIsListKt'
+}
+
+task AnUnchangingVar(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AnUnchangingVarKt'
+}
+
+task ChangingAVal(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ChangingAValKt'
+}
+
+task References(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReferencesKt'
+}
+
+task DoWhileLoop(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DoWhileLoopKt'
+}
+
+task WhileLoop(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WhileLoopKt'
+}
+
+task ChainedSafeCalls(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ChainedSafeCallsKt'
+}
+
+task DereferenceNull(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DereferenceNullKt'
+}
+
+task ElvisOperator(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ElvisOperatorKt'
+}
+
+task SafeCall(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SafeCallKt'
+}
+
+task RegularClasses(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'regularClasses.RegularClassesKt'
+}
+
+task SealedClasses(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SealedClassesKt'
+}
+
+task GardenGnome(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GardenGnomeKt'
+}
+
+task MutableSet(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MutableSetKt'
+}
+
+task RemoveDuplicates(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RemoveDuplicatesKt'
+}
+
+task Sets(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SetsKt'
+}
+
+task ExpressionInStringTemplate(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ExpressionInStringTemplateKt'
+}
+
+task StringConcatenation(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringConcatenationKt'
+}
+
+task StringTemplates(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringTemplatesKt'
+}
+
+task TripleQuotes(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TripleQuotesKt'
+}
+
+task BasicFunctions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BasicFunctionsKt'
+}
+
+task Booleans(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BooleansKt'
+}
+
+task IfExpression(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IfExpressionKt'
+}
+
+task IfResult(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IfResultKt'
+}
+
+task IntRange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IntRangeKt'
+}
+
+task IterateThroughString(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IterateThroughStringKt'
+}
+
+task NumberTypes(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NumberTypesKt'
+}
+
+task Overflow(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'OverflowKt'
+}
+
+task RangeMembership(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RangeMembershipKt'
+}
+
+task StrTemplates(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StrTemplatesKt'
+}
+
+task ThreeQuotes(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ThreeQuotesKt'
+}
+
+task Truncation(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TruncationKt'
+}
+
+task UnitReturn(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UnitReturnKt'
+}
+
+task ClassBodies(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ClassBodiesKt'
+}
+
+task ListCollection(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ListCollectionKt'
+}
+
+task Temperature(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TemperatureKt'
+}
+
+task TicTacToe(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TicTacToeKt'
+}
+
+task UseALibrary(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UseALibraryKt'
+}
+
+task UsingAtomicTest(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UsingAtomicTestKt'
+}
+
+task TDDFail(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'testing1.TDDFailKt'
+}
+
+task TDDStillFails(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'testing2.TDDStillFailsKt'
+}
+
+task TDDWorks(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'testing3.TDDWorksKt'
+}
+
+task TestingExample(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TestingExampleKt'
+}
+
+task ListOf(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ListOfKt'
+}
+
+task SpreadOperator(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SpreadOperatorKt'
+}
+
+task TwoFunctionsWithVarargs(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TwoFunctionsWithVarargsKt'
+}
+
+task VarargSum(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'VarargSumKt'
+}
+
+task VariableArgLists(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'VariableArgListsKt'
+}
+
+task MutableVariable(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MutableVariableKt'
+}
+
+task Vals(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ValsKt'
+}
+
+task Vars(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'VarsKt'
+}
+
+task Cookie(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CookieKt'
+}
+
+task ObserveAnimals(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ObserveAnimalsKt'
+}
+
+task WhenExpressions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WhenExpressionsKt'
+}
+
+task WhenExpressionAndSmartCasts(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'whenexpressionscasts.WhenExpressionAndSmartCastsKt'
+}
+
