@@ -8,5 +8,5 @@ fun main(args: Array<String>) {
   x.n eq 11
   x.n = 22
   x.n eq 22
-//  x = X(22) // Not allowed
+  // x = X(22) // Not allowed
 }

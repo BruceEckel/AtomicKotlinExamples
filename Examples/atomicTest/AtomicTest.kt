@@ -2,20 +2,15 @@
 /* A tiny little testing framework, to
 display results and to introduce & promote
 unit testing early in the learning curve.
-To use in your code snippet, include:
+To use in your code, include:
 import atomicTest.*
 */
 package atomicTest
-
 import java.util.*
-
-private fun err(msg: String) {
-  println("Error: $msg")
-}
 
 private fun <L, R> equals(actual: L, expected: R) {
   if (actual != expected)
-    err("$actual != $expected")
+    println("Error: $actual != $expected")
 }
 
 infix fun <T : Any> T.eq(value: String) {
@@ -32,7 +27,7 @@ infix fun Double.eq(value: Double) {
   println(this)
   val diff = this - value
   if (Math.abs(diff) > 0.0000001)
-    err("$this not equal to $value")
+    println("Error: $this != $value")
 }
 
 infix fun <T> Array<T>.eq(value: Array<T>) {
@@ -43,5 +38,5 @@ infix fun <T> Array<T>.eq(value: Array<T>) {
 infix fun <T> T.neq(value: T) {
   println(this)
   if (this == value)
-    err("$this == $value")
+    println("Error: $this == $value")
 }

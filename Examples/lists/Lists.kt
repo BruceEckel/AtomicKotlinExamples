@@ -2,31 +2,31 @@
 import atomicTest.eq
 
 fun main(args: Array<String>) {
-  // A List holds other objects:
-  val l1 = listOf(1, 3, 5, 7, 11, 13)
-  l1 eq "[1, 3, 5, 7, 11, 13]"           // [1]
+  // Lists hold other objects:
+  val list1 = listOf(1, 3, 5, 7, 11, 13)
+  list1 eq "[1, 3, 5, 7, 11, 13]"        // [1]
 
-  l1[4] eq 11 // "Indexing" into a List  // [2]
+  list1[4] eq 11 // "[]" is "Indexing"   // [2]
 
-  // Take each element of the List:
+  // Select each element in the List:
   var result = ""
-  for (i in l1) {                        // [3]
+  for (i in list1) {                     // [3]
     result += "$i "
   }
   result eq "1 3 5 7 11 13 "
 
-  val l3 = listOf(1.1, 2.2, 3.3, 4.4)    // [4]
-  l3.min() eq 1.1
-  l3.max() eq 4.4
+  val list2 = listOf(1.1, 2.2, 3.3, 4.4) // [4]
+  list2.min() eq 1.1
+  list2.max() eq 4.4
 
-  val l4 = listOf("Twa", "Brillig", "And",
+  val list3 = listOf("Twas", "Brillig", "And",
       "Slithy", "Tove")
-  l4 eq listOf("Twa", "Brillig", "And",
+  list3 eq listOf("Twas", "Brillig", "And",
       "Slithy", "Tove")
-  l4.sorted() eq listOf("And", "Brillig",
-      "Slithy", "Tove", "Twa")
-  l4.reversed() eq listOf("Tove", "Slithy",
-      "And", "Brillig", "Twa")
-  l4.first() eq "Twa"
-  l4.takeLast(2) eq listOf("Slithy", "Tove")
+  list3.sorted() eq listOf("And", "Brillig",
+      "Slithy", "Tove", "Twas")
+  list3.reversed() eq listOf("Tove", "Slithy",
+      "And", "Brillig", "Twas")
+  list3.first() eq "Twas"
+  list3.takeLast(2) eq listOf("Slithy", "Tove")
 }

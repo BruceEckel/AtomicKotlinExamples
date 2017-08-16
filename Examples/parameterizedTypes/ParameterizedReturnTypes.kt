@@ -2,16 +2,14 @@
 import atomicTest.eq
 
 // Return type is inferred:
-fun inferred(c1: Char, c2: Char, c3: Char) =
-    listOf(c1, c2, c3)
+fun inferred(c1: Char, c2: Char) =
+    listOf(c1, c2)
 
 // Explicit return type:
-fun explicit(c1: Char, c2: Char, c3: Char): List<Char> =
-    listOf(c1, c2, c3)
+fun explicit(c1: Char, c2: Char): List<Char> =
+    listOf(c1, c2)
 
 fun main(args: Array<String>) {
-  inferred('a', 'b', 'c') eq
-      "[a, b, c]"
-  explicit('a', 'b', 'c') eq
-      "[a, b, c]"
+  inferred('a', 'b') eq "[a, b]"
+  explicit('y', 'z') eq "[y, z]"
 }
