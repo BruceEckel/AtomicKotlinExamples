@@ -1,5 +1,5 @@
 // whenExpressionsAndSmartCasts/WhenExpressionAndSmartCasts.kt
-package whenexpressionscasts
+package whenExpressionsCasts
 import atomicTest.eq
 
 fun acceptAnything(x: Any): String =

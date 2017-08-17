@@ -1,5 +1,5 @@
 // moreAboutWhenExpressions/PaintColors.kt
-package paintcolors
+package paintColors
 
 enum class Color {
   red, blue, yellow, purple, green, orange, brown

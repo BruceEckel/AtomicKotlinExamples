@@ -1,5 +1,5 @@
 // dataClasses/DataClasses.kt
-package dataclasses
+package dataClasses
 import atomicTest.*
 
 data class Contact(val name: String, val number: String)

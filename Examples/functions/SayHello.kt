@@ -4,7 +4,7 @@ fun sayHello() {
 }
 
 fun sayGoodbye(): Unit {
-  println("Tschüss!")
+  println("Auf Wiedersehen!")
 }
 
 fun main(args: Array<String>) {
@@ -13,5 +13,5 @@ fun main(args: Array<String>) {
 }
 /* Output:
 Hallo!
-Tschüss!
+Auf Wiedersehen!
 */

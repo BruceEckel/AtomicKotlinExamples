@@ -1,5 +1,5 @@
 // propertyAccessors/PropertyInInterface.kt
-package propertyaccessors
+package propertyAccessors
 import atomicTest.eq
 
 interface MyInterface {

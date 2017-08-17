@@ -1,5 +1,5 @@
 // companionObjects/ObjectProperty.kt
-package companionobjects4
+package companionObjects4
 
 import atomicTest.eq
 

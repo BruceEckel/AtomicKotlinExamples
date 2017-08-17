@@ -1,5 +1,5 @@
 // companionObjects/CompanionObject.kt
-package companionobjects3
+package companionObjects3
 
 class X {
   companion object

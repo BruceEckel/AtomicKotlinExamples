@@ -1,5 +1,5 @@
 // dataClassesAndImmutability/DataClassAndHashCode.kt
-package dataclasses4
+package dataClasses4
 
 import atomicTest.eq
 

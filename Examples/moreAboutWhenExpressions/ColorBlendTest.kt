@@ -1,8 +1,8 @@
 // moreAboutWhenExpressions/ColorBlendTest.kt
-package colorblend
+package colorBlend
 
 import atomicTest.eq
-import paintcolors.Color.*
+import paintColors.Color.*
 
 fun main(args: Array<String>) {
   blend(red, red) eq red

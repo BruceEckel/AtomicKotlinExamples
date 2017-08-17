@@ -1,9 +1,9 @@
 // moreAboutWhenExpressions/ColorBlendMap.kt
-package colorblendmap
+package colorBlendMap
 
 import atomicTest.eq
-import paintcolors.Color
-import paintcolors.Color.*
+import paintColors.Color
+import paintColors.Color.*
 
 val blender = createBlendMap()
 
@@ -11,7 +11,7 @@ private fun createBlendMap(): Map<Pair<Color, Color>, Color> {
   val result = mutableMapOf<Pair<Color, Color>, Color>()
   for (a in Color.values()) {
     for (b in Color.values()) {
-      result[a to b] = colorblend.blend(a, b)
+      result[a to b] = colorBlend.blend(a, b)
     }
   }
   return result

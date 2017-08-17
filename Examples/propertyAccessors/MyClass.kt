@@ -1,5 +1,5 @@
 // propertyAccessors/MyClass.kt
-package propertyaccessors
+package propertyAccessors
 import atomicTest.eq
 
 class MyClass(var property: Int)

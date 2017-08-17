@@ -1,5 +1,5 @@
 // baseClassInitialization/GreatApe2.kt
-package baseclassinit
+package baseClassInit
 import atomicTest.eq
 
 open class GreatApe(

@@ -100,7 +100,7 @@ task CallLater(type: JavaExec) {
 
 task CallingOtherConstructors(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'baseclassinit.CallingOtherConstructorsKt'
+    main = 'baseClassInit.CallingOtherConstructorsKt'
 }
 
 task Cat(type: JavaExec) {
@@ -140,12 +140,12 @@ task Coffee(type: JavaExec) {
 
 task ColorBlendMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'colorblendmap.ColorBlendMapKt'
+    main = 'colorBlendMap.ColorBlendMapKt'
 }
 
 task ColorBlendTest(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'colorblend.ColorBlendTestKt'
+    main = 'colorBlend.ColorBlendTestKt'
 }
 
 task ComputationResult(type: JavaExec) {
@@ -185,17 +185,17 @@ task Cup2(type: JavaExec) {
 
 task DataClassAndHashCode(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'dataclasses4.DataClassAndHashCodeKt'
+    main = 'dataClasses4.DataClassAndHashCodeKt'
 }
 
 task DataClasses(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'dataclasses.DataClassesKt'
+    main = 'dataClasses.DataClassesKt'
 }
 
 task DataClassesWithVars(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'dataclasses3.DataClassesWithVarsKt'
+    main = 'dataClasses3.DataClassesWithVarsKt'
 }
 
 task Declarations(type: JavaExec) {
@@ -345,7 +345,7 @@ task GreatApe(type: JavaExec) {
 
 task GreatApe2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'baseclassinit.GreatApe2Kt'
+    main = 'baseClassInit.GreatApe2Kt'
 }
 
 task GreatApe3(type: JavaExec) {
@@ -360,7 +360,7 @@ task Hamster(type: JavaExec) {
 
 task Hamsters(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyaccessors.HamstersKt'
+    main = 'propertyAccessors.HamstersKt'
 }
 
 task HelloWorld(type: JavaExec) {
@@ -635,7 +635,7 @@ task MutableVariable(type: JavaExec) {
 
 task MyClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyaccessors.MyClassKt'
+    main = 'propertyAccessors.MyClassKt'
 }
 
 task NamedAndDefaultArgs(type: JavaExec) {
@@ -680,27 +680,27 @@ task NumberTypes(type: JavaExec) {
 
 task ObjCounter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjects.ObjCounterKt'
+    main = 'companionObjects.ObjCounterKt'
 }
 
 task ObjectFunctions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjects5.ObjectFunctionsKt'
+    main = 'companionObjects5.ObjectFunctionsKt'
 }
 
 task ObjectKeyword(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjects2.ObjectKeywordKt'
+    main = 'companionObjects2.ObjectKeywordKt'
 }
 
 task ObjectProperty(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjects4.ObjectPropertyKt'
+    main = 'companionObjects4.ObjectPropertyKt'
 }
 
 task ObjectsAndFunctions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjects.ObjectsAndFunctionsKt'
+    main = 'companionObjects.ObjectsAndFunctionsKt'
 }
 
 task ObserveAnimals(type: JavaExec) {
@@ -750,7 +750,7 @@ task ParameterizedTypes(type: JavaExec) {
 
 task PropertyInInterface(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyaccessors.PropertyInInterfaceKt'
+    main = 'propertyAccessors.PropertyInInterfaceKt'
 }
 
 task Quote(type: JavaExec) {
@@ -915,7 +915,7 @@ task TestingExample(type: JavaExec) {
 
 task ThisKeyword(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjects1.ThisKeywordKt'
+    main = 'companionObjects1.ThisKeywordKt'
 }
 
 task ThreeQuotes(type: JavaExec) {
@@ -1015,7 +1015,7 @@ task VisibleClassArgs(type: JavaExec) {
 
 task WhenExpressionAndSmartCasts(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'whenexpressionscasts.WhenExpressionAndSmartCastsKt'
+    main = 'whenExpressionsCasts.WhenExpressionAndSmartCastsKt'
 }
 
 task WhenExpressions(type: JavaExec) {
@@ -1040,7 +1040,7 @@ task WithoutDefaultArguments(type: JavaExec) {
 
 task ZipMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'combininglistswithzip.ZipMapKt'
+    main = 'combiningListsWithZip.ZipMapKt'
 }
 
 task Zipper(type: JavaExec) {

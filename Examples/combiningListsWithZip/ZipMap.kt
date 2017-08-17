@@ -1,5 +1,5 @@
 // combiningListsWithZip/ZipMap.kt
-package combininglistswithzip
+package combiningListsWithZip
 import atomicTest.eq
 
 data class Person(val name: String, val ID: Int)

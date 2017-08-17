@@ -1,8 +1,8 @@
 // moreAboutWhenExpressions/ColorBlend.kt
-package colorblend
+package colorBlend
 
-import paintcolors.Color
-import paintcolors.Color.*
+import paintColors.Color
+import paintColors.Color.*
 
 fun blend(a: Color, b: Color) = when {
   a == b -> a

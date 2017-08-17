@@ -1,5 +1,5 @@
 // baseClassInitialization/CallingOtherConstructors.kt
-package baseclassinit
+package baseClassInit
 import atomicTest.eq
 
 open class Base(val i: Int)

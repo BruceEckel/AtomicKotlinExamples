@@ -7,6 +7,6 @@ fun main(args: Array<String>) {
   list2 eq listOf(1)
 
   list1 += 2
-  // list2 is changed as well
+  // list2 sees the change:
   list2 eq listOf(1, 2)
 }

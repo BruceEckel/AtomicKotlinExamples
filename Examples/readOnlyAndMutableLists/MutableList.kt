@@ -2,7 +2,7 @@
 import atomicTest.eq
 
 fun main(args: Array<String>) {
-  val list: MutableList<Int> = mutableListOf(1, 2)
+  val list = mutableListOf(1, 2)
 
   list.add(3)
   list.addAll(listOf(4, 5))
