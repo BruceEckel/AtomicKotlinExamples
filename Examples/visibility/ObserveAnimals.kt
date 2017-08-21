@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
   // declared in another file.
   // Class is private:
   // val rabbit = Animal("Rabbit")
-  // Function is private
+  // Function is private:
   // recordAnimal(rabbit)
   // Property is private:
   // counter++
