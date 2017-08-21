@@ -8,10 +8,9 @@ private fun recordAnimal(animal: Animal) = // [2]
 
 private class Animal(val name: String)     // [3]
 
-fun recordAnimals(): String {
-  return recordAnimal(Animal("Tiger")) +
-    recordAnimal(Animal("Antelope"))
-}
+fun recordAnimals() =
+  recordAnimal(Animal("Tiger")) +
+  recordAnimal(Animal("Antelope"))
 
 fun recordAnimalsCount() =
   "$counter animals are here!"

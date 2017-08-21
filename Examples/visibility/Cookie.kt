@@ -8,10 +8,9 @@ class Cookie {
   public fun bite() =      // [2]
     "bite"
 
-  fun eatUp(): String {    // [3]
-    return crumble() +     // [4]
-      bite()
-  }
+  fun eatUp() =            // [3]
+    crumble() +            // [4]
+    bite()
 }
 
 fun main(args: Array<String>) {
