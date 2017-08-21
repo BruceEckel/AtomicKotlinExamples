@@ -1,11 +1,11 @@
 // companionObjects/ObjCounter.kt
-package companionObjects
+package companionObjects4
 
 import atomicTest.eq
 
-class Count {
-  val id = Count.id()
-  override fun toString() = "Count$id"
+class Numbered {
+  private val id = id()
+  override fun toString() = "#$id"
 
   companion object {
     var n = -1
@@ -17,7 +17,7 @@ class Count {
 }
 
 fun main(args: Array<String>) {
-  listOf(Count(), Count(), Count(),
-    Count(), Count()) eq
-    "[Count0, Count1, Count2, Count3, Count4]"
+  listOf(Numbered(), Numbered(), Numbered(),
+    Numbered(), Numbered()) eq
+    "[#0, #1, #2, #3, #4]"
 }

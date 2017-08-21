@@ -1,16 +1,16 @@
 // companionObjects/ObjectProperty.kt
-package companionObjects4
+package companionObjects2
 
 import atomicTest.eq
 
 class X {
   fun increment(): Int {
-    X.n += 1
-    return X.n
+    n += 1
+    return n
   }
 
   companion object {
-    var n: Int = 0 // Only one of these
+    private var n: Int = 0 // Only one of these
   }
 }
 

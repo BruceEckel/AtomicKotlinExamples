@@ -148,6 +148,11 @@ task ColorBlendTest(type: JavaExec) {
     main = 'colorBlend.ColorBlendTestKt'
 }
 
+task CompanionObject(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionObjects1.CompanionObjectKt'
+}
+
 task ComputationResult(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ComputationResultKt'
@@ -171,6 +176,11 @@ task Cookie(type: JavaExec) {
 task CopyDataClass(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CopyDataClassKt'
+}
+
+task CreateInCompanionObject(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionObjects5.CreateInCompanionObjectKt'
 }
 
 task Cup(type: JavaExec) {
@@ -420,7 +430,7 @@ task ImportEverything(type: JavaExec) {
 
 task ImportLevel(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'enumerations.ImportLevelKt'
+    main = 'enumerations2.ImportLevelKt'
 }
 
 task ImportMultiple(type: JavaExec) {
@@ -520,7 +530,7 @@ task IterationVsMembership(type: JavaExec) {
 
 task Level(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'enumerations.LevelKt'
+    main = 'enumerations1.LevelKt'
 }
 
 task ListCollection(type: JavaExec) {
@@ -680,27 +690,22 @@ task NumberTypes(type: JavaExec) {
 
 task ObjCounter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionObjects.ObjCounterKt'
+    main = 'companionObjects4.ObjCounterKt'
 }
 
 task ObjectFunctions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionObjects5.ObjectFunctionsKt'
+    main = 'companionObjects3.ObjectFunctionsKt'
 }
 
 task ObjectKeyword(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionObjects2.ObjectKeywordKt'
+    main = 'objects.ObjectKeywordKt'
 }
 
 task ObjectProperty(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionObjects4.ObjectPropertyKt'
-}
-
-task ObjectsAndFunctions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'companionObjects.ObjectsAndFunctionsKt'
+    main = 'companionObjects2.ObjectPropertyKt'
 }
 
 task ObserveAnimals(type: JavaExec) {
@@ -913,11 +918,6 @@ task TestingExample(type: JavaExec) {
     main = 'TestingExampleKt'
 }
 
-task ThisKeyword(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'companionObjects1.ThisKeywordKt'
-}
-
 task ThreeQuotes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ThreeQuotesKt'
@@ -1077,11 +1077,13 @@ task run (dependsOn: [
     'Coffee',
     'ColorBlendMap',
     'ColorBlendTest',
+    'CompanionObject',
     'ComputationResult',
     'ContactMap',
     'ContainsChar',
     'Cookie',
     'CopyDataClass',
+    'CreateInCompanionObject',
     'Cup',
     'Cup2',
     'DataClassAndHashCode',
@@ -1187,7 +1189,6 @@ task run (dependsOn: [
     'ObjectFunctions',
     'ObjectKeyword',
     'ObjectProperty',
-    'ObjectsAndFunctions',
     'ObserveAnimals',
     'OneOrTheOther',
     'Overflow',
@@ -1230,7 +1231,6 @@ task run (dependsOn: [
     'TDDWorks',
     'Temperature',
     'TestingExample',
-    'ThisKeyword',
     'ThreeQuotes',
     'TicTacToe',
     'TripleQuotes',

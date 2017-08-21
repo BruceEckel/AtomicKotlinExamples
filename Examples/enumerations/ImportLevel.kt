@@ -1,7 +1,11 @@
 // enumerations/ImportLevel.kt
-package enumerations
+package enumerations2
 import atomicTest.eq
-import enumerations.Level.*    // [1]
+import enumerations2.Level.*    // [1]
+
+enum class Level {
+  Overflow, High, Medium, Low, Empty
+}
 
 fun main(args: Array<String>) {
   Medium eq "Medium"           // [2]
