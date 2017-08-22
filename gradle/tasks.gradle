@@ -833,6 +833,11 @@ task SimpleMap(type: JavaExec) {
     main = 'SimpleMapKt'
 }
 
+task SmartCasts(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'smartCasts.SmartCastsKt'
+}
+
 task SpreadOperator(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SpreadOperatorKt'
@@ -1214,6 +1219,7 @@ task run (dependsOn: [
     'SealedClasses',
     'Sets',
     'SimpleMap',
+    'SmartCasts',
     'SpreadOperator',
     'StateOfAClass',
     'StrTemplates',

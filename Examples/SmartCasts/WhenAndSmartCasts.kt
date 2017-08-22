@@ -2,20 +2,16 @@
 package smartCasts
 import atomicTest.eq
 
-fun acceptAnything(x: Any): String =
-  when (x) {
+fun acceptAnything(a: Any) =
+  when(a) {
     is String ->
-      "String: $x of length ${x.length}"
+      "String: $a of length ${a.length}"
     is Int ->
-      if (x < 20) "Int Less than 20: $x"
-      else "Some Other Int: $x"
-    is Dog -> "Dog: ${x.bark()}"
+      if(a < 20) "Int Less than 20: $a"
+      else "Some Other Int: $a"
+    is Dog -> "Dog: ${a.bark()}"
     else -> "I don't know what that is!"
   }
-
-class Dog {
-  fun bark() = "yip!"
-}
 
 fun main(args: Array<String>) {
   acceptAnything(5) eq "Int Less than 20: 5"
