@@ -63,6 +63,11 @@ task BasicFunctions(type: JavaExec) {
     main = 'BasicFunctionsKt'
 }
 
+task BetterSurrey(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BetterSurreyKt'
+}
+
 task Bicycle(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BicycleKt'
@@ -898,11 +903,6 @@ task Surrey(type: JavaExec) {
     main = 'SurreyKt'
 }
 
-task SurreyWithToString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SurreyWithToStringKt'
-}
-
 task TDDFail(type: JavaExec) {
     classpath kotlinClassPath
     main = 'testing1.TDDFailKt'
@@ -1070,6 +1070,7 @@ task run (dependsOn: [
     'AuxiliaryInitialization',
     'BMI',
     'BasicFunctions',
+    'BetterSurrey',
     'Bicycle',
     'BiggestLong',
     'BookExtensions',
@@ -1237,7 +1238,6 @@ task run (dependsOn: [
     'Sum',
     'SumUsingRange',
     'Surrey',
-    'SurreyWithToString',
     'TDDFail',
     'TDDStillFails',
     'TDDWorks',
