@@ -1,12 +1,11 @@
-// namedAndDefaultArguments/NamedAndDefaultArgs.kt
+// namedAndDefaultArgs/NamedAndDefaultArgs.kt
 import atomicTest.eq
 
 fun getColor1(
     red: Int = 0,
     green: Int = 0,
     blue: Int = 0
-) =
-    "($red, $green, $blue)"
+) = "($red, $green, $blue)"
 
 fun main(args: Array<String>) {
   val darkRed = "(139, 0, 0)"

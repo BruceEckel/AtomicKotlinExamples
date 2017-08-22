@@ -33,6 +33,11 @@ task Animals(type: JavaExec) {
     main = 'AnimalsKt'
 }
 
+task ArgumentOrder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ArgumentOrderKt'
+}
+
 task AssignAnonymous(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AssignAnonymousKt'
@@ -658,11 +663,6 @@ task NamedArguments(type: JavaExec) {
     main = 'NamedArgumentsKt'
 }
 
-task NamedArgumentsOrder(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'NamedArgumentsOrderKt'
-}
-
 task NonNullAssertedCalls(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NonNullAssertedCallsKt'
@@ -1054,6 +1054,7 @@ task run (dependsOn: [
     'AdjustedControls',
     'AnUnchangingVar',
     'Animals',
+    'ArgumentOrder',
     'AssignAnonymous',
     'AssigningAnIf',
     'AuxiliaryInitialization',
@@ -1179,7 +1180,6 @@ task run (dependsOn: [
     'MyClass',
     'NamedAndDefaultArgs',
     'NamedArguments',
-    'NamedArgumentsOrder',
     'NonNullAssertedCalls',
     'NonNullAssertion',
     'NullInMaps',

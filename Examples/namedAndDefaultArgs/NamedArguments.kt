@@ -1,4 +1,4 @@
-// namedAndDefaultArguments/NamedArguments.kt
+// namedAndDefaultArgs/NamedArguments.kt
 import atomicTest.eq
 
 fun getColor(red: Int, green: Int, blue: Int) =

@@ -1,7 +1,9 @@
 // overloading/WithoutDefaultArguments.kt
-fun f(n: Int): Int = n + 373
-fun f(): Int = f(0)
+import atomicTest.eq
+
+fun f(n: Int) = n + 373
+fun f() = f(0)
 
 fun main(args: Array<String>) {
-  println(f())
+  f() eq 373
 }
