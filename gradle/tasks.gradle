@@ -828,6 +828,11 @@ task Sets(type: JavaExec) {
     main = 'SetsKt'
 }
 
+task Simple(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SimpleKt'
+}
+
 task SimpleMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SimpleMapKt'
@@ -1218,6 +1223,7 @@ task run (dependsOn: [
     'SayHello',
     'SealedClasses',
     'Sets',
+    'Simple',
     'SimpleMap',
     'SmartCasts',
     'SpreadOperator',
