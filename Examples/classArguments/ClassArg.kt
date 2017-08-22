@@ -8,5 +8,5 @@ class ClassArg(a: Int) {
 fun main(args: Array<String>) {
   val ca = ClassArg(19)
   ca.f eq 190
-//  ca.a // error
+  // ca.a // error
 }
