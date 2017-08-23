@@ -683,9 +683,9 @@ task NullInMaps(type: JavaExec) {
     main = 'NullInMapsKt'
 }
 
-task NullableAndNonnullTypes(type: JavaExec) {
+task NullableTypes(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NullableAndNonnullTypesKt'
+    main = 'NullableTypesKt'
 }
 
 task NumberTypes(type: JavaExec) {
@@ -1194,7 +1194,7 @@ task run (dependsOn: [
     'NonNullAssertedCalls',
     'NonNullAssertion',
     'NullInMaps',
-    'NullableAndNonnullTypes',
+    'NullableTypes',
     'NumberTypes',
     'ObjCounter',
     'ObjectFunctions',

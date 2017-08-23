@@ -1,4 +1,4 @@
-// nullableTypes/Dereference.kt
+// nullable/Dereference.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {
