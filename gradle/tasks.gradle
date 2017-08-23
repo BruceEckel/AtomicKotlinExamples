@@ -765,7 +765,7 @@ task PropertyInInterface(type: JavaExec) {
 
 task Quote(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'quoting.QuoteKt'
+    main = 'other.QuoteKt'
 }
 
 task Quoting(type: JavaExec) {

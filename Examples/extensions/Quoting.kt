@@ -1,4 +1,4 @@
-// extensionFunctions/Quoting.kt
+// extensions/Quoting.kt
 package quoting
 import atomicTest.eq
 
