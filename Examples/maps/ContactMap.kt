@@ -1,7 +1,8 @@
 // maps/ContactMap.kt
 import atomicTest.eq
 
-data class Contact(val name: String, val number: String)
+data class Contact(
+  val name: String, val number: String)
 
 fun main(args: Array<String>) {
   val miffy = Contact("Miffy", "1-234-567890")
@@ -11,5 +12,5 @@ fun main(args: Array<String>) {
       cleo.number to cleo)
 
   contacts["1-234-567890"] eq miffy
-  contacts["1-111-111111"] eq null
+  contacts["1-111-111111"] eq null    // [1]
 }
