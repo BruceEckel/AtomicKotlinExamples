@@ -353,11 +353,6 @@ task GardenGnome(type: JavaExec) {
     main = 'GardenGnomeKt'
 }
 
-task GettingValueFromMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'GettingValueFromMapKt'
-}
-
 task GreatApe(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritance.GreatApeKt'
@@ -668,9 +663,9 @@ task NamedArguments(type: JavaExec) {
     main = 'NamedArgumentsKt'
 }
 
-task NonNullAssertedCalls(type: JavaExec) {
+task NonNullAssertCall(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NonNullAssertedCallsKt'
+    main = 'NonNullAssertCallKt'
 }
 
 task NonNullAssertion(type: JavaExec) {
@@ -1003,6 +998,11 @@ task Vals(type: JavaExec) {
     main = 'ValsKt'
 }
 
+task ValueFromMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ValueFromMapKt'
+}
+
 task VarargSum(type: JavaExec) {
     classpath kotlinClassPath
     main = 'VarargSumKt'
@@ -1128,7 +1128,6 @@ task run (dependsOn: [
     'Framework',
     'FullyQualify',
     'GardenGnome',
-    'GettingValueFromMap',
     'GreatApe',
     'GreatApe2',
     'GreatApe3',
@@ -1191,7 +1190,7 @@ task run (dependsOn: [
     'MyClass',
     'NamedAndDefaultArgs',
     'NamedArguments',
-    'NonNullAssertedCalls',
+    'NonNullAssertCall',
     'NonNullAssertion',
     'NullInMaps',
     'NullableTypes',
@@ -1258,6 +1257,7 @@ task run (dependsOn: [
     'UsingAtomicTest',
     'UsingLongs',
     'Vals',
+    'ValueFromMap',
     'VarargSum',
     'VariableArgLists',
     'Vars',

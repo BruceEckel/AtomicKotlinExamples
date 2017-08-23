@@ -1,4 +1,4 @@
-// nonNullAssertedCalls/NonNullAssertedCalls.kt
+// nonNullAsserts/NonNullAssertCall.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {
