@@ -243,11 +243,6 @@ task DereferenceNull(type: JavaExec) {
     main = 'DereferenceNullKt'
 }
 
-task DestructuringAndForLoop(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DestructuringAndForLoopKt'
-}
-
 task DifferentReferencesToList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DifferentReferencesToListKt'
@@ -321,6 +316,11 @@ task ExtensionsOnNullableString(type: JavaExec) {
 task FloatingPointRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FloatingPointRangeKt'
+}
+
+task ForLoop(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ForLoopKt'
 }
 
 task ForLoopIsAStatement(type: JavaExec) {
@@ -738,14 +738,14 @@ task OverloadingAdd(type: JavaExec) {
     main = 'OverloadingAddKt'
 }
 
+task PairDestructuring(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'PairDestructuringKt'
+}
+
 task Pairs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PairsKt'
-}
-
-task PairsAndDesctructuring(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'PairsAndDesctructuringKt'
 }
 
 task ParameterizedReturnTypes(type: JavaExec) {
@@ -1106,7 +1106,6 @@ task run (dependsOn: [
     'DefiningRanges',
     'Dereference',
     'DereferenceNull',
-    'DestructuringAndForLoop',
     'DifferentReferencesToList',
     'DisplayDuck',
     'DisplayDuckTestable',
@@ -1122,6 +1121,7 @@ task run (dependsOn: [
     'ExpressionInStringTemplate',
     'ExtensionsOnNullableString',
     'FloatingPointRange',
+    'ForLoop',
     'ForLoopIsAStatement',
     'ForWithCharRange',
     'ForWithRanges',
@@ -1205,8 +1205,8 @@ task run (dependsOn: [
     'Overflow',
     'Overloading',
     'OverloadingAdd',
+    'PairDestructuring',
     'Pairs',
-    'PairsAndDesctructuring',
     'ParameterizedReturnTypes',
     'ParameterizedTypes',
     'PropertyInInterface',
