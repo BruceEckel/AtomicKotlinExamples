@@ -1,4 +1,4 @@
-// safeCalls/ChainedSafeCalls.kt
+// safeCalls/ChainedCalls.kt
 import atomicTest.eq
 
 class Person(val name: String,

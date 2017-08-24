@@ -118,9 +118,9 @@ task Cat(type: JavaExec) {
     main = 'CatKt'
 }
 
-task ChainedSafeCalls(type: JavaExec) {
+task ChainedCalls(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ChainedSafeCallsKt'
+    main = 'ChainedCallsKt'
 }
 
 task ChangingAVal(type: JavaExec) {
@@ -276,6 +276,11 @@ task DoWhileLoop(type: JavaExec) {
 task Dog(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DogKt'
+}
+
+task ElvisCall(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ElvisCallKt'
 }
 
 task ElvisOperator(type: JavaExec) {
@@ -813,6 +818,11 @@ task SafeCall(type: JavaExec) {
     main = 'SafeCallKt'
 }
 
+task SafeOperation(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SafeOperationKt'
+}
+
 task SayHello(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SayHelloKt'
@@ -1081,7 +1091,7 @@ task run (dependsOn: [
     'CallLater',
     'CallingOtherConstructors',
     'Cat',
-    'ChainedSafeCalls',
+    'ChainedCalls',
     'ChangingAVal',
     'CharRange',
     'ClassArg',
@@ -1113,6 +1123,7 @@ task run (dependsOn: [
     'DisplayListWithLambda',
     'DoWhileLoop',
     'Dog',
+    'ElvisCall',
     'ElvisOperator',
     'EmptyProgram',
     'EvaluationOrder',
@@ -1220,6 +1231,7 @@ task run (dependsOn: [
     'RemoveDuplicates',
     'RepeatThreeTimes',
     'SafeCall',
+    'SafeOperation',
     'SayHello',
     'SealedClasses',
     'Sets',

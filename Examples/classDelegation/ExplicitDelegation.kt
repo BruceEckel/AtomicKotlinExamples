@@ -24,8 +24,8 @@ class AdjustedControlsExplicit : SpaceShipControls {
 
   override fun right(velocity: Int) =
       controls.right(velocity)
-      
-  // Modified implementations:    
+
+  // Modified implementations:
 
   override fun turboBoost(): String =
       controls.turboBoost() + "... boooooost!"
