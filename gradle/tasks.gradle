@@ -268,6 +268,11 @@ task DisplayListWithLambda(type: JavaExec) {
     main = 'DisplayListWithLambdaKt'
 }
 
+task DivZero(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'exceptions.DivZeroKt'
+}
+
 task DoWhileLoop(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DoWhileLoopKt'
@@ -666,6 +671,11 @@ task NamedAndDefaultArgs(type: JavaExec) {
 task NamedArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NamedArgumentsKt'
+}
+
+task NonNullAssert(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NonNullAssertKt'
 }
 
 task NonNullAssertCall(type: JavaExec) {
@@ -1121,6 +1131,7 @@ task run (dependsOn: [
     'DisplayDuckTestable',
     'DisplayList',
     'DisplayListWithLambda',
+    'DivZero',
     'DoWhileLoop',
     'Dog',
     'ElvisCall',
@@ -1201,6 +1212,7 @@ task run (dependsOn: [
     'MyClass',
     'NamedAndDefaultArgs',
     'NamedArguments',
+    'NonNullAssert',
     'NonNullAssertCall',
     'NonNullAssertion',
     'NullInMaps',

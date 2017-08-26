@@ -1,15 +1,12 @@
 // errors/Errors.scala
 package errors
 
-case class Except1(why:String)
-  extends Exception(why)
-case class Except2(n:Int)
-  extends Exception(n.toString)
-case class Except3(msg:String, d:Double)
-  extends Exception(s"$msg $d")
+data class Except1(why:String): Exception(why)
+data class Except2(n:Int): Exception(n.toString)
+data class Except3(msg:String, d:Double): Exception("$msg $d")
 
 object toss {
-  def apply(which:Int) =
+  fun apply(which:Int) =
     which match {
       case 1 => throw Except1("Reason")
       case 2 => throw Except2(11)
