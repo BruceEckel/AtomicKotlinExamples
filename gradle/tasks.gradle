@@ -683,11 +683,6 @@ task NonNullAssertCall(type: JavaExec) {
     main = 'NonNullAssertCallKt'
 }
 
-task NonNullAssertion(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'NonNullAssertionKt'
-}
-
 task NullInMaps(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NullInMapsKt'
@@ -1214,7 +1209,6 @@ task run (dependsOn: [
     'NamedArguments',
     'NonNullAssert',
     'NonNullAssertCall',
-    'NonNullAssertion',
     'NullInMaps',
     'NullableTypes',
     'NumberTypes',

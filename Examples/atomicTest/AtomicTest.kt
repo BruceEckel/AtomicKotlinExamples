@@ -40,3 +40,20 @@ infix fun <T> T.neq(value: T) {
   if (this == value)
     println("Error: $this == $value")
 }
+
+// Capture an exception and produce its name:
+fun except(f: () -> Unit) =
+  try {
+    f()
+    "Error: Expected an exception"
+  } catch(e: Exception) {
+    e.toString().split(".", ":")
+      .filter { "Exception" in it }
+      .first()
+  }
+
+/* Usage:
+except {
+  // code that fails
+} eq "FailureException"
+*/
