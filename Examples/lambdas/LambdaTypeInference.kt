@@ -1,8 +1,10 @@
-// lambdas/DisplayListWithLambda.kt
+// lambdas/LambdaTypeInference.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {
   var s = ""
-  (1..4).forEach { s += "[$it]" }
+  listOf(1, 2, 3, 4).forEach({
+    n -> s += "[$n]"
+  })
   s eq "[1][2][3][4]"
 }

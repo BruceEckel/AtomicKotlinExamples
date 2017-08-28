@@ -1,8 +1,8 @@
 // expressionsAndStatements/UnitReturnType.kt
-fun g() = Unit
+fun foo() = Unit
 
 fun main(args: Array<String>) {
-  println(g())
+  println(foo())
   val u: Unit = println(42)
   println(u)
 }

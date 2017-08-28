@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
   val s2: String? = null
   // Compiles, but produces a
   // KotlinNullPointerException:
-  except {
+  capture {
     val s3 = s2!!
   } eq "KotlinNullPointerException"
 }

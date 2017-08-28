@@ -1,5 +1,5 @@
-// combiningListsWithZip/ZipMap.kt
-package combiningListsWithZip
+// zipping/ZipMap.kt
+package zipping
 import atomicTest.eq
 
 data class Person(val name: String, val ID: Int)
@@ -11,5 +11,6 @@ fun main(args: Array<String>) {
     (n, id) ->
     Person(n, id)
   } eq "[Person(name=Bob, ID=1731), " +
-      "Person(name=Jill, ID=9274), Person(name=Jim, ID=8378)]"
+      "Person(name=Jill, ID=9274), " +
+      "Person(name=Jim, ID=8378)]"
 }

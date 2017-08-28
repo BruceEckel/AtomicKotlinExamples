@@ -1,9 +1,9 @@
 // lambdas/CallLater.kt
-class Later(val f: () -> Unit) {
-  fun call(): Unit = f()
-}
+import atomicTest.eq
+
+class Later(val call: () -> String)
 
 fun main(args: Array<String>) {
-  val cl = Later { println("now") }
-  cl.call()
+  val later = Later { "Now" }
+  later.call() eq "Now"
 }

@@ -1,4 +1,4 @@
-// lambdas/DisplayListWithLambda.kt
+// ListOperations/DisplayListBlemish.kt
 import atomicTest.eq
 
 fun main(args: Array<String>) {

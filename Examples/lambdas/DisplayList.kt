@@ -1,9 +1,14 @@
 // lambdas/DisplayList.kt
-fun show(n: Int) {
-  println("> " + n)
+import atomicTest.eq
+
+var s = ""
+
+fun format(n: Int) {
+  s += "[$n]"
 }
 
 fun main(args: Array<String>) {
-  val l = listOf(1, 2, 3, 4)
-  l.forEach(::show)
+  val a = listOf(1, 2, 3, 4)
+  a.forEach(::format)          // [1]
+  s eq "[1][2][3][4]"
 }

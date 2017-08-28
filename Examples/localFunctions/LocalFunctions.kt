@@ -3,7 +3,6 @@ import atomicTest.eq
 
 fun main(args: Array<String>) {
   val sb = StringBuilder()
-
   fun log(message: String) {
     sb.appendln(message)
   }

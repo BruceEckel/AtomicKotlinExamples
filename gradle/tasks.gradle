@@ -33,14 +33,14 @@ task Animals(type: JavaExec) {
     main = 'AnimalsKt'
 }
 
+task AnonymousFunction(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AnonymousFunctionKt'
+}
+
 task ArgumentOrder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ArgumentOrderKt'
-}
-
-task AssignAnonymous(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'AssignAnonymousKt'
 }
 
 task AssigningAnIf(type: JavaExec) {
@@ -218,11 +218,6 @@ task DataClassesWithVars(type: JavaExec) {
     main = 'dataClasses3.DataClassesWithVarsKt'
 }
 
-task Declarations(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DeclarationsKt'
-}
-
 task DefaultAccessors(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DefaultAccessorsKt'
@@ -231,6 +226,11 @@ task DefaultAccessors(type: JavaExec) {
 task DefiningRanges(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DefiningRangesKt'
+}
+
+task Definition(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DefinitionKt'
 }
 
 task Dereference(type: JavaExec) {
@@ -253,14 +253,19 @@ task DisplayDuck(type: JavaExec) {
     main = 'DisplayDuckKt'
 }
 
-task DisplayDuckTestable(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DisplayDuckTestableKt'
-}
-
 task DisplayList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DisplayListKt'
+}
+
+task DisplayListBlemish(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DisplayListBlemishKt'
+}
+
+task DisplayListMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DisplayListMapKt'
 }
 
 task DisplayListWithLambda(type: JavaExec) {
@@ -281,6 +286,11 @@ task DoWhileLoop(type: JavaExec) {
 task Dog(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DogKt'
+}
+
+task DuckForEach(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DuckForEachKt'
 }
 
 task ElvisCall(type: JavaExec) {
@@ -318,11 +328,6 @@ task ExpressionInStringTemplate(type: JavaExec) {
     main = 'ExpressionInStringTemplateKt'
 }
 
-task ExtensionsOnNullableString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ExtensionsOnNullableStringKt'
-}
-
 task FloatingPointRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FloatingPointRangeKt'
@@ -346,6 +351,11 @@ task ForWithCharRange(type: JavaExec) {
 task ForWithRanges(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ForWithRangesKt'
+}
+
+task FormatLambda(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FormatLambdaKt'
 }
 
 task Framework(type: JavaExec) {
@@ -541,6 +551,16 @@ task IterateThroughString(type: JavaExec) {
 task IterationVsMembership(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IterationVsMembershipKt'
+}
+
+task LambdaIt(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LambdaItKt'
+}
+
+task LambdaTypeInference(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LambdaTypeInferenceKt'
 }
 
 task Level(type: JavaExec) {
@@ -813,6 +833,11 @@ task RemoveDuplicates(type: JavaExec) {
     main = 'RemoveDuplicatesKt'
 }
 
+task RemoveNulls(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RemoveNullsKt'
+}
+
 task RepeatThreeTimes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RepeatThreeTimesKt'
@@ -883,6 +908,16 @@ task StringConcatenation(type: JavaExec) {
     main = 'StringConcatenationKt'
 }
 
+task StringInvoke(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringInvokeKt'
+}
+
+task StringIsNullOr(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringIsNullOrKt'
+}
+
 task StringPlusNumber(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringPlusNumberKt'
@@ -896,11 +931,6 @@ task StringRange(type: JavaExec) {
 task StringTemplates(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringTemplatesKt'
-}
-
-task Sum(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SumKt'
 }
 
 task SumUsingRange(type: JavaExec) {
@@ -968,9 +998,9 @@ task Tuple(type: JavaExec) {
     main = 'TupleKt'
 }
 
-task TwoArgAnonymous(type: JavaExec) {
+task TwoArgLambda(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'TwoArgAnonymousKt'
+    main = 'TwoArgLambdaKt'
 }
 
 task TwoFunctionsWithVarargs(type: JavaExec) {
@@ -1065,7 +1095,7 @@ task WithoutDefaultArguments(type: JavaExec) {
 
 task ZipMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'combiningListsWithZip.ZipMapKt'
+    main = 'zipping.ZipMapKt'
 }
 
 task Zipper(type: JavaExec) {
@@ -1079,8 +1109,8 @@ task run (dependsOn: [
     'AdjustedControls',
     'AnUnchangingVar',
     'Animals',
+    'AnonymousFunction',
     'ArgumentOrder',
-    'AssignAnonymous',
     'AssigningAnIf',
     'AuxiliaryInitialization',
     'BMI',
@@ -1116,19 +1146,21 @@ task run (dependsOn: [
     'DataClassAndHashCode',
     'DataClasses',
     'DataClassesWithVars',
-    'Declarations',
     'DefaultAccessors',
     'DefiningRanges',
+    'Definition',
     'Dereference',
     'DereferenceNull',
     'DifferentReferencesToList',
     'DisplayDuck',
-    'DisplayDuckTestable',
     'DisplayList',
+    'DisplayListBlemish',
+    'DisplayListMap',
     'DisplayListWithLambda',
     'DivZero',
     'DoWhileLoop',
     'Dog',
+    'DuckForEach',
     'ElvisCall',
     'ElvisOperator',
     'EmptyProgram',
@@ -1136,12 +1168,12 @@ task run (dependsOn: [
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExpressionInStringTemplate',
-    'ExtensionsOnNullableString',
     'FloatingPointRange',
     'ForLoop',
     'ForLoopIsAStatement',
     'ForWithCharRange',
     'ForWithRanges',
+    'FormatLambda',
     'Framework',
     'FullyQualify',
     'GardenGnome',
@@ -1181,6 +1213,8 @@ task run (dependsOn: [
     'IterateOverString',
     'IterateThroughString',
     'IterationVsMembership',
+    'LambdaIt',
+    'LambdaTypeInference',
     'Level',
     'ListCollection',
     'ListOf',
@@ -1235,6 +1269,7 @@ task run (dependsOn: [
     'References',
     'RegularClasses',
     'RemoveDuplicates',
+    'RemoveNulls',
     'RepeatThreeTimes',
     'SafeCall',
     'SafeOperation',
@@ -1249,10 +1284,11 @@ task run (dependsOn: [
     'StrTemplates',
     'StrangeQuote',
     'StringConcatenation',
+    'StringInvoke',
+    'StringIsNullOr',
     'StringPlusNumber',
     'StringRange',
     'StringTemplates',
-    'Sum',
     'SumUsingRange',
     'Surrey',
     'TDDFail',
@@ -1266,7 +1302,7 @@ task run (dependsOn: [
     'TrueOrFalse',
     'Truncation',
     'Tuple',
-    'TwoArgAnonymous',
+    'TwoArgLambda',
     'TwoFunctionsWithVarargs',
     'Types',
     'UnitReturn',
