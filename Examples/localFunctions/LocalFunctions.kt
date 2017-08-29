@@ -12,7 +12,9 @@ fun main(args: Array<String>) {
   val x = 42
   log("Computation result: $x")
 
-  sb.toString().trim() eq """
+  val expected = """
     Starting computation
     Computation result: 42""".trimIndent()
+
+  sb.toString().trim() eq expected
 }

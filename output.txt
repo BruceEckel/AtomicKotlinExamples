@@ -15,15 +15,14 @@ turbo boost... boooooost!
 :AnUnchangingVar
 11
 :Animals
-Giraffe@28d93b30
-Giraffe@1b6d3586
-Hippo@4554617c
-Bear@74a14482
+Giraffe@4554617c
+Giraffe@74a14482
+Hippo@1540e19d
+Bear@677327b6
+:AnonymousFunction
+[1][2][3][4]
 :ArgumentOrder
 (255, 255, 0)
-:AssignAnonymous
-now
-now
 :AssigningAnIf
 x < y
 5
@@ -67,13 +66,13 @@ Open: false
 Operating hours: 9 - 20
 Closed: true
 :CallLater
-now
+Now
 :CallingOtherConstructors
 1
 0
 :Cat
 mew!
-:ChainedSafeCalls
+:ChainedCalls
 null
 Alice
 :ChangingAVal
@@ -134,17 +133,17 @@ DetailedContact(name=Miffy, surname=Miller, number=098-765-4321, address=Brandsc
 -2067767101
 :DataClasses
 Contact(name=Miffy, number=1-234-567890)
-dataClasses.Person@28d93b30
+dataClasses.Person@4554617c
 :DataClassesWithVars
 Kotlin
 null
-:Declarations
-true
 :DefaultAccessors
 2
 :DefiningRanges
 1..10
 0..9
+:Definition
+true
 :Dereference
 3
 :DereferenceNull
@@ -152,29 +151,34 @@ true
 [1]
 [1, 2]
 :DisplayDuck
-> D
-> u
-> c
-> k
-:DisplayDuckTestable
-D:u:c:k:
+[D][u][c][k]
 :DisplayList
-> 1
-> 2
-> 3
-> 4
+[1][2][3][4]
+:DisplayListBlemish
+[1][2][3][4]
+:DisplayListMap
+[1][2][3][4]
 :DisplayListWithLambda
-> 1
-> 2
-> 3
-> 4
+[1][2][3][4]
+:DivZero
+6
+4
+4
+Failed: Divide by zero
+1
+0
 :DoWhileLoop
 ..........:Dog
+:DuckForEach
+[D][u][c][k]
+:ElvisCall
+3
+3
+0
+0
 :ElvisOperator
-3
-3
-0
-0
+a
+No b
 :EmptyProgram
 :EvaluationOrder
 true
@@ -188,10 +192,6 @@ turbo boost... boooooost!
 :ExpressionInStringTemplate
 a
 11 + 4 = 15
-:ExtensionsOnNullableString
-true
-false
-true
 :FloatingPointRange
 0.999999 in 1.0..10.0? false
 5.0 in 1.0..10.0? true
@@ -209,6 +209,8 @@ abcdefghijklmnopqrstuvwxyz:ForWithRanges
 0 2 4 6 8 // 0..8 step 2
 0 3 6 9 // 0..9 step 3
 9 6 3 // 9 downTo 3 step 3
+:FormatLambda
+[1][2][3][4]
 :Framework
 44.71828
 :FullyQualify
@@ -217,9 +219,6 @@ In primary constructor
 20.0 110.0 false true
 In primary constructor
 15.0 100.0 true true
-:GettingValueFromMap
-ONE
-ONE
 :GreatApe
 weight: 100.0 age: 12
 weight: 100.0 age: 12
@@ -318,6 +317,10 @@ iteration 1
 iteration 2
 iteration 3
 2 is a member of 1..3
+:LambdaIt
+[1][2][3][4]
+:LambdaTypeInference
+[1][2][3][4]
 :Level
 Medium
 :ListCollection
@@ -349,7 +352,7 @@ Ciao!
 :LocalFunctions
 Starting computation
 Computation result: 42
-Error: Starting computation
+[Error]: Starting computation
 Computation result: 42 != Starting computation
 Computation result: 42
 :LoggingChange
@@ -406,10 +409,11 @@ five
 :NamedArguments
 (255, 255, 0)
 (255, 255, 0)
-:NonNullAssertedCalls
-3
-:NonNullAssertion
+:NonNullAssert
 abc
+KotlinNullPointerException
+:NonNullAssertCall
+3
 :NullInMaps
 null
 :NullableTypes
@@ -486,6 +490,7 @@ five
 {5=five, 6=six, 4=four}
 :Reduce
 1111
+1111
 :References
 13
 97
@@ -495,6 +500,9 @@ Bus number 11, size 90
 :RemoveDuplicates
 [3, 2, 1]
 [a, b, c]
+:RemoveNulls
+[a, null, b, null, c]
+[a, b, c]
 :RepeatThreeTimes
 Hey 1!
 Hey 2!
@@ -503,6 +511,9 @@ Hey 3!
 3
 3
 null
+null
+:SafeOperation
+Howdy
 null
 :SayHello
 Hallo!
@@ -531,6 +542,7 @@ yip!
 not Dog
 :SpreadOperator
 21
+30
 :StateOfAClass
 0
 [0, 1]
@@ -543,6 +555,15 @@ printing a $1
 :StringConcatenation
 first: hi
 second: 11, third: 3.14
+:StringInvoke
+MUMBLING
+:StringIsNullOr
+true
+true
+true
+true
+false
+true
 :StringPlusNumber
 Sally5.9
 :StringRange
@@ -551,12 +572,10 @@ false
 :StringTemplates
 Found 42!
 printing a $1
-:Sum
-1111
 :SumUsingRange
 sum = 5005
 :Surrey
-Surrey@28d93b30
+Surrey@4554617c
 :TDDFail
 Normal weight
 :TDDStillFails
@@ -597,13 +616,11 @@ Mouse
 false
 []
 Mouse
-:TwoArgAnonymous
-0: a
-1: b
-2: c
+:TwoArgLambda
+[0:D][1:u][2:c][3:k]
 :TwoFunctionsWithVarargs
-varargs:
-1 2 3 :Types
+varargs: 7 9 32
+:Types
 11
 1.4
 true
@@ -629,6 +646,13 @@ A round dessert
 11
 1.4
 A value
+:ValueFromMap
+ONE
+ONE
+KotlinNullPointerException
+NoSuchElementException
+:VarargListMap
+[1][2][3][4]
 :VarargSum
 84
 36
@@ -653,8 +677,7 @@ UNKNOWN COLOR: white
 BLUE
 :WhileLoop
 ..........:WithDefaultArguments
-kotlin.Unit
-Error: 373 != kotlin.Unit
+373
 :WithoutDefaultArguments
 373
 :ZipMap
@@ -663,9 +686,11 @@ Error: 373 != kotlin.Unit
 [(a, q), (b, r), (c, s), (d, t)]
 [(a, 0), (b, 1), (c, 2), (d, 3)]
 [(a, 0), (b, 1), (c, 2), (d, 3)]
+[(0, a), (1, b), (2, c), (3, d)]
+[(10, q), (11, r), (12, s), (13, t)]
 :run
 *** run complete ***
 
 BUILD SUCCESSFUL
 
-Total time: 35.405 secs
+Total time: 35.799 secs

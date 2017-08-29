@@ -1048,6 +1048,11 @@ task ValueFromMap(type: JavaExec) {
     main = 'ValueFromMapKt'
 }
 
+task VarargListMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'VarargListMapKt'
+}
+
 task VarargSum(type: JavaExec) {
     classpath kotlinClassPath
     main = 'VarargSumKt'
@@ -1312,6 +1317,7 @@ task run (dependsOn: [
     'UsingLongs',
     'Vals',
     'ValueFromMap',
+    'VarargListMap',
     'VarargSum',
     'VariableArgLists',
     'Vars',
