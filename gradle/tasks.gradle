@@ -108,9 +108,9 @@ task CallLater(type: JavaExec) {
     main = 'CallLaterKt'
 }
 
-task CallingOtherConstructors(type: JavaExec) {
+task CallOtherConstructors(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'baseClassInit.CallingOtherConstructorsKt'
+    main = 'baseClassInit.CallOtherConstructorsKt'
 }
 
 task Cat(type: JavaExec) {
@@ -1129,7 +1129,7 @@ task run (dependsOn: [
     'Booleans2',
     'Booleans3',
     'CallLater',
-    'CallingOtherConstructors',
+    'CallOtherConstructors',
     'Cat',
     'ChainedCalls',
     'ChangingAVal',

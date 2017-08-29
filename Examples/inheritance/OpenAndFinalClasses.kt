@@ -1,10 +1,14 @@
 // inheritance/OpenAndFinalClasses.kt
-// This class can be inherited from:
+
+// This class can be inherited:
 open class Parent
 
 class Child : Parent()
 
-// This class can't be inherited from:
+// Child is not open, so this won't work:
+// class Child2 : Child()
+
+// This class can't be inherited:
 final class Single
 
 // The same as using 'final':

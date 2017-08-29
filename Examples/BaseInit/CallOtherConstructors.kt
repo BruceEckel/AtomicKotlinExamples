@@ -1,12 +1,12 @@
-// baseClassInitialization/CallingOtherConstructors.kt
+// BaseInit/CallOtherConstructors.kt
 package baseClassInit
 import atomicTest.eq
 
 open class Base(val i: Int)
 
 class Derived : Base {
-  constructor(i: Int) : super(i)
-  constructor() : this(0)
+  constructor(i: Int): super(i)
+  constructor(): this(0)
 }
 
 fun main(args: Array<String>) {

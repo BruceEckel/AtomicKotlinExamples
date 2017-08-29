@@ -12,15 +12,15 @@ class Chimpanzee : GreatApe()
 class BonoboB : Bonobo()
 
 fun display(ape: GreatApe) =
-    "weight: ${ape.weight} age: ${ape.age}"
+  "weight: ${ape.weight} age: ${ape.age}"
 
 fun main(args: Array<String>) {
   display(GreatApe()) eq
-      "weight: 100.0 age: 12"
+    "weight: 100.0 age: 12"
   display(Bonobo()) eq
-      "weight: 100.0 age: 12"
+    "weight: 100.0 age: 12"
   display(Chimpanzee()) eq
-      "weight: 100.0 age: 12"
+    "weight: 100.0 age: 12"
   display(BonoboB()) eq
-      "weight: 100.0 age: 12"
+    "weight: 100.0 age: 12"
 }
