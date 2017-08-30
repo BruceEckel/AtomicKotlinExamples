@@ -1,17 +1,16 @@
-// abstractClasses/AbstractClasses.kt
+// Abstract/AbstractClasses.kt
 package abstractClasses
 import atomicTest.eq
 
 abstract class Animal {
-  fun templateFunction() = "The ${animal()} goes ${sound()}"
-  // Abstract functions (no function body):
+  fun templateFunction() =
+    "The ${animal()} goes ${sound()}"
   abstract fun animal(): String
   abstract fun sound(): String
 }
 
 class Duck : Animal() {
   override fun animal() = "Duck"
-  // "override" eq optional here():
   override fun sound() = "Quack"
 }
 
@@ -21,8 +20,8 @@ class Cow : Animal() {
 }
 
 fun main(args: Array<String>) {
-  // Error -- Cannot create
-  // an instance of an abstract class:
+  // Error -- Cannot create an
+  // instance of an abstract class:
   // val a = Animal()
 
   Duck().templateFunction() eq
