@@ -1,9 +1,9 @@
 // interfaces/NoMultipleInheritance.kt
-package classes
+package interfaces1
 
 open class Animal
 open class Mammal : Animal()
 open class AquaticAnimal : Animal()
 
 // Doesn't compile:
-// class Dolphin : Mammal(), AquaticAnimal()
+// class Dolphin: Mammal(), AquaticAnimal()

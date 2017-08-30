@@ -1,15 +1,17 @@
 // propertyAccessors/LoggingChange.kt
+import atomicTest.eq
+
 class LoggingChange {
+  var trace = ""
   var property: Int = 0
     set(value) {
-      println("Value has changed from $field to $value")
+      trace += "$field becomes $value"
       field = value
     }
 }
 
 fun main(args: Array<String>) {
-  LoggingChange().property = 2
+  val lc = LoggingChange()
+  lc.property = 2
+  lc.trace eq "0 becomes 2"
 }
-/* Output:
-Value has changed from 0 to 2
-*/

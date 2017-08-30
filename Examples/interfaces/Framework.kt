@@ -4,14 +4,13 @@ import atomicTest.eq
 interface Framework {
   val part1: Int
   fun part2(): Double
-  // Even without definitions:
   fun templateMethod() = part1 + part2()
 }
 
 fun operation(impl: Framework) =
-    impl.templateMethod()
+  impl.templateMethod() + 11
 
-class Implementation : Framework {
+class Implementation: Framework {
   override val part1 = 42
   override fun part2() = 2.71828
 }

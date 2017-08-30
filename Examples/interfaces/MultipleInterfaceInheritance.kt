@@ -1,9 +1,9 @@
 // interfaces/MultipleInterfaceInheritance.kt
-package interfaces1
+package interfaces2
 
 interface Animal
-interface Mammal : Animal
-interface AquaticAnimal : Animal
+interface Mammal: Animal
+interface AquaticAnimal: Animal
 
 // Now compiles!
-class Dolphin : Mammal, AquaticAnimal
+class Dolphin: Mammal, AquaticAnimal

@@ -23,7 +23,7 @@ class Cage(private val maxCapacity: Int) {
     }
 
   fun takeHamster(): Hamster =
-      hamsters.removeAt(Random().nextInt(hamsters.size))
+    hamsters.removeAt(Random().nextInt(hamsters.size))
 }
 
 fun main(args: Array<String>) {

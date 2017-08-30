@@ -1,20 +1,19 @@
-// interfaces/InterfaceMemberImplementations.kt
-package interfaces3
+// interfaces/MemberImplementations.kt
+package interfaces4
 import atomicTest.eq
 
 interface Animal {
   val sound: String
-
   fun talk() = "$sound!"
 }
 
-class Cat : Animal {
+class Cat: Animal {
   override val sound = "meow"
 }
 
 class Dog(
-    override val sound: String
-) : Animal
+  override val sound: String
+): Animal
 
 fun main(args: Array<String>) {
   val cat = Cat()

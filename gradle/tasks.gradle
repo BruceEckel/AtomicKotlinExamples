@@ -218,9 +218,9 @@ task DataClassesWithVars(type: JavaExec) {
     main = 'dataClasses3.DataClassesWithVarsKt'
 }
 
-task DefaultAccessors(type: JavaExec) {
+task Default(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'DefaultAccessorsKt'
+    main = 'DefaultKt'
 }
 
 task DefiningRanges(type: JavaExec) {
@@ -533,11 +533,6 @@ task InterfaceCollision(type: JavaExec) {
     main = 'InterfaceCollisionKt'
 }
 
-task InterfaceMemberImplementations(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'interfaces3.InterfaceMemberImplementationsKt'
-}
-
 task IterateOverString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IterateOverStringKt'
@@ -601,6 +596,11 @@ task LoggingChange(type: JavaExec) {
 task Maps(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MapsKt'
+}
+
+task MemberImplementations(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces4.MemberImplementationsKt'
 }
 
 task MemberVsExtension(type: JavaExec) {
@@ -1151,7 +1151,7 @@ task run (dependsOn: [
     'DataClassAndHashCode',
     'DataClasses',
     'DataClassesWithVars',
-    'DefaultAccessors',
+    'Default',
     'DefiningRanges',
     'Definition',
     'Dereference',
@@ -1214,7 +1214,6 @@ task run (dependsOn: [
     'IntegerMath',
     'IntegerOverflow',
     'InterfaceCollision',
-    'InterfaceMemberImplementations',
     'IterateOverString',
     'IterateThroughString',
     'IterationVsMembership',
@@ -1228,6 +1227,7 @@ task run (dependsOn: [
     'LocalFunctions',
     'LoggingChange',
     'Maps',
+    'MemberImplementations',
     'MemberVsExtension',
     'MembershipInRange',
     'MembershipUsingBounds',

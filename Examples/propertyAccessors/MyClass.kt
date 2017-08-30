@@ -2,10 +2,10 @@
 package propertyAccessors
 import atomicTest.eq
 
-class MyClass(var property: Int)
+class MyClass(var i: Int)
 
 fun main(args: Array<String>) {
   val myClass = MyClass(10)
-  myClass.property = 20
-  myClass.property eq 20
+  myClass.i eq 20 // Read the 'i' property
+  myClass.i = 20  // Write to the 'i' property
 }

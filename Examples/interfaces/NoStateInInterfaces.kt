@@ -1,5 +1,5 @@
 // interfaces/NoStateInInterfaces.kt
-package interfaces2
+package interfaces3
 
 interface Animal {
   val sound: String
