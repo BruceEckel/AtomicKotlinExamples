@@ -1,47 +1,37 @@
-// overridingFunctions/GreatApe3.kt
+// Overriding/GreatApe3.kt
 import atomicTest.eq
 
 open class GreatApe {
-
   protected var energy = 0
-
   open fun call() = "Hoo!"
-
   open fun eat(): Int {
     energy += 10
     return energy
   }
-
   fun climb(x: Int) {
     energy -= x
   }
 }
 
 class Bonobo : GreatApe() {
-
   override fun call() = "Eep!"
-
   override fun eat(): Int {
     // Modify the base-class var:
     energy += 10
     // Call the base-class version:
     return super.eat()
   }
-
   // Add a function():
   fun run() = "Bonobo run"
 }
 
 class Chimpanzee : GreatApe() {
   val additionalEnergy = 20 // New property
-
   override fun call() = "Yawp!"
-
   override fun eat(): Int {
     energy += additionalEnergy
     return super.eat()
   }
-
   fun jump() = "Chimp jump"
 }
 
