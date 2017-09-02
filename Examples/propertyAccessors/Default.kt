@@ -3,20 +3,20 @@ import atomicTest.eq
 
 class Default {
   var trace = ""
-  var property: Int = 0
+  var i: Int = 0
     get() {              // [1]
       trace += "get() called"
-      return field
+      return field       // [2]
     }
-    set(value) {         // [2]
+    set(value) {         // [3]
       trace += "set($value) "
-      field = value
+      field = value      // [4]
     }
 }
 
 fun main(args: Array<String>) {
   val d = Default()
-  d.property = 2         // [3]
-  d.property eq 2        // [4]
+  d.i = 2
+  d.i eq 2
   d.trace eq "set(2) get() called"
 }

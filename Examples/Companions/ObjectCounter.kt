@@ -1,19 +1,12 @@
-// companionObjects/ObjCounter.kt
-package companionObjects4
-
+// Companions/ObjectCounter.kt
 import atomicTest.eq
 
 class Numbered {
-  private val id = id()
-  override fun toString() = "#$id"
-
   companion object {
-    var n = -1
-    fun id(): Int {
-      n += 1
-      return n
-    }
+    private var count = 0
   }
+  private val id = count++
+  override fun toString() = "#$id"
 }
 
 fun main(args: Array<String>) {

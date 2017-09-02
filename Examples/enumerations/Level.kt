@@ -1,5 +1,5 @@
 // enumerations/Level.kt
-package enumerations1
+package enumerations
 import atomicTest.eq
 
 enum class Level {

@@ -1,9 +1,9 @@
-// propertyAccessors/LoggingChange.kt
+// propertyAccessors/LogChanges.kt
 import atomicTest.eq
 
-class LoggingChange {
+class LogChanges {
   var trace = ""
-  var property: Int = 0
+  var n: Int = 0
     set(value) {
       trace += "$field becomes $value"
       field = value
@@ -11,7 +11,8 @@ class LoggingChange {
 }
 
 fun main(args: Array<String>) {
-  val lc = LoggingChange()
-  lc.property = 2
+  val lc = LogChanges()
+  lc.n eq 0 // Uses default get()
+  lc.n = 2
   lc.trace eq "0 becomes 2"
 }

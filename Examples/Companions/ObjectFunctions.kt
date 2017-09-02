@@ -1,9 +1,7 @@
-// companionObjects/ObjectFunctions.kt
-package companionObjects3
-
+// Companions/ObjectFunctions.kt
 import atomicTest.eq
 
-class X {
+class CompanionObjectFunction {
   companion object {
     private var n: Int = 0
     fun increment(): Int {
@@ -14,6 +12,6 @@ class X {
 }
 
 fun main(args: Array<String>) {
-  X.increment() eq 1
-  X.increment() eq 2
+  CompanionObjectFunction.increment() eq 1
+  CompanionObjectFunction.increment() eq 2
 }

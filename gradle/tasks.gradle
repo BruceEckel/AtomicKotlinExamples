@@ -13,14 +13,14 @@ task AbstractClasses(type: JavaExec) {
     main = 'abstractClasses.AbstractClassesKt'
 }
 
+task Adder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.AdderKt'
+}
+
 task AddingIntToChar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AddingIntToCharKt'
-}
-
-task AdjustedControls(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'AdjustedControlsKt'
 }
 
 task AnUnchangingVar(type: JavaExec) {
@@ -150,17 +150,22 @@ task Coffee(type: JavaExec) {
 
 task ColorBlendMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'colorBlendMap.ColorBlendMapKt'
+    main = 'colorblendmap.ColorBlendMapKt'
 }
 
 task ColorBlendTest(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'colorBlend.ColorBlendTestKt'
+    main = 'colorblendtest.ColorBlendTestKt'
+}
+
+task CompanionFactory(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CompanionFactoryKt'
 }
 
 task CompanionObject(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionObjects1.CompanionObjectKt'
+    main = 'CompanionObjectKt'
 }
 
 task ComputationResult(type: JavaExec) {
@@ -188,11 +193,6 @@ task CopyDataClass(type: JavaExec) {
     main = 'CopyDataClassKt'
 }
 
-task CreateInCompanionObject(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'companionObjects5.CreateInCompanionObjectKt'
-}
-
 task Cup(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CupKt'
@@ -201,6 +201,11 @@ task Cup(type: JavaExec) {
 task Cup2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'Cup2Kt'
+}
+
+task Data(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertyAccessors.DataKt'
 }
 
 task DataClassAndHashCode(type: JavaExec) {
@@ -231,6 +236,11 @@ task DefiningRanges(type: JavaExec) {
 task Definition(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DefinitionKt'
+}
+
+task DelegatedControls(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DelegatedControlsKt'
 }
 
 task Dereference(type: JavaExec) {
@@ -308,6 +318,11 @@ task EmptyProgram(type: JavaExec) {
     main = 'EmptyProgramKt'
 }
 
+task EnumImport(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'EnumImportKt'
+}
+
 task EvaluationOrder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EvaluationOrderKt'
@@ -326,6 +341,11 @@ task ExplicitDelegation(type: JavaExec) {
 task ExpressionInStringTemplate(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExpressionInStringTemplateKt'
+}
+
+task FantasyGame(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'polymorphism.FantasyGameKt'
 }
 
 task FloatingPointRange(type: JavaExec) {
@@ -356,11 +376,6 @@ task ForWithRanges(type: JavaExec) {
 task FormatLambda(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FormatLambdaKt'
-}
-
-task Framework(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FrameworkKt'
 }
 
 task FullyQualify(type: JavaExec) {
@@ -455,7 +470,7 @@ task ImportEverything(type: JavaExec) {
 
 task ImportLevel(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'enumerations2.ImportLevelKt'
+    main = 'ImportLevelKt'
 }
 
 task ImportMultiple(type: JavaExec) {
@@ -560,7 +575,7 @@ task LambdaTypeInference(type: JavaExec) {
 
 task Level(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'enumerations1.LevelKt'
+    main = 'enumerations.LevelKt'
 }
 
 task ListCollection(type: JavaExec) {
@@ -588,9 +603,9 @@ task LocalFunctions(type: JavaExec) {
     main = 'LocalFunctionsKt'
 }
 
-task LoggingChange(type: JavaExec) {
+task LogChanges(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'LoggingChangeKt'
+    main = 'LogChangesKt'
 }
 
 task Maps(type: JavaExec) {
@@ -618,9 +633,9 @@ task MembershipUsingBounds(type: JavaExec) {
     main = 'MembershipUsingBoundsKt'
 }
 
-task ModelingMultipleInheritance(type: JavaExec) {
+task ModelingMI(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ModelingMultipleInheritanceKt'
+    main = 'ModelingMIKt'
 }
 
 task Modulus(type: JavaExec) {
@@ -678,11 +693,6 @@ task MutableVariable(type: JavaExec) {
     main = 'MutableVariableKt'
 }
 
-task MyClass(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'propertyAccessors.MyClassKt'
-}
-
 task NamedAndDefaultArgs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NamedAndDefaultArgsKt'
@@ -691,6 +701,11 @@ task NamedAndDefaultArgs(type: JavaExec) {
 task NamedArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NamedArgumentsKt'
+}
+
+task NamedCompanionObject(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NamedCompanionObjectKt'
 }
 
 task NonNullAssert(type: JavaExec) {
@@ -718,24 +733,34 @@ task NumberTypes(type: JavaExec) {
     main = 'NumberTypesKt'
 }
 
-task ObjCounter(type: JavaExec) {
+task ObjectCounter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionObjects4.ObjCounterKt'
+    main = 'ObjectCounterKt'
 }
 
 task ObjectFunctions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionObjects3.ObjectFunctionsKt'
+    main = 'ObjectFunctionsKt'
+}
+
+task ObjectInheritance(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ObjectInheritanceKt'
 }
 
 task ObjectKeyword(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'objects.ObjectKeywordKt'
+    main = 'ObjectKeywordKt'
+}
+
+task ObjectNesting(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ObjectNestingKt'
 }
 
 task ObjectProperty(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionObjects2.ObjectPropertyKt'
+    main = 'ObjectPropertyKt'
 }
 
 task ObserveAnimals(type: JavaExec) {
@@ -785,7 +810,7 @@ task ParameterizedTypes(type: JavaExec) {
 
 task PropertyInInterface(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyAccessors.PropertyInInterfaceKt'
+    main = 'interfaces.PropertyInInterfaceKt'
 }
 
 task Quote(type: JavaExec) {
@@ -813,6 +838,11 @@ task ReadOnlyMaps(type: JavaExec) {
     main = 'ReadOnlyMapsKt'
 }
 
+task RecursiveEnumImport(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'enumerations.RecursiveEnumImportKt'
+}
+
 task Reduce(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReduceKt'
@@ -825,7 +855,7 @@ task References(type: JavaExec) {
 
 task RegularClasses(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'regularClasses.RegularClassesKt'
+    main = 'RegularClassesKt'
 }
 
 task RemoveDuplicates(type: JavaExec) {
@@ -860,7 +890,7 @@ task SayHello(type: JavaExec) {
 
 task SealedClasses(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'SealedClassesKt'
+    main = 'sealedclasses.SealedClassesKt'
 }
 
 task Sets(type: JavaExec) {
@@ -1110,8 +1140,8 @@ task Zipper(type: JavaExec) {
 
 task run (dependsOn: [
     'AbstractClasses',
+    'Adder',
     'AddingIntToChar',
-    'AdjustedControls',
     'AnUnchangingVar',
     'Animals',
     'AnonymousFunction',
@@ -1139,21 +1169,23 @@ task run (dependsOn: [
     'Coffee',
     'ColorBlendMap',
     'ColorBlendTest',
+    'CompanionFactory',
     'CompanionObject',
     'ComputationResult',
     'ContactMap',
     'ContainsChar',
     'Cookie',
     'CopyDataClass',
-    'CreateInCompanionObject',
     'Cup',
     'Cup2',
+    'Data',
     'DataClassAndHashCode',
     'DataClasses',
     'DataClassesWithVars',
     'Default',
     'DefiningRanges',
     'Definition',
+    'DelegatedControls',
     'Dereference',
     'DereferenceNull',
     'DifferentReferencesToList',
@@ -1169,17 +1201,18 @@ task run (dependsOn: [
     'ElvisCall',
     'ElvisOperator',
     'EmptyProgram',
+    'EnumImport',
     'EvaluationOrder',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExpressionInStringTemplate',
+    'FantasyGame',
     'FloatingPointRange',
     'ForLoop',
     'ForLoopIsAStatement',
     'ForWithCharRange',
     'ForWithRanges',
     'FormatLambda',
-    'Framework',
     'FullyQualify',
     'GardenGnome',
     'GreatApe',
@@ -1225,13 +1258,13 @@ task run (dependsOn: [
     'Lists',
     'LocalExtensions',
     'LocalFunctions',
-    'LoggingChange',
+    'LogChanges',
     'Maps',
     'MemberImplementations',
     'MemberVsExtension',
     'MembershipInRange',
     'MembershipUsingBounds',
-    'ModelingMultipleInheritance',
+    'ModelingMI',
     'Modulus',
     'MoreReduce',
     'MultipleClassArgs',
@@ -1243,17 +1276,19 @@ task run (dependsOn: [
     'MutableMaps',
     'MutableSet',
     'MutableVariable',
-    'MyClass',
     'NamedAndDefaultArgs',
     'NamedArguments',
+    'NamedCompanionObject',
     'NonNullAssert',
     'NonNullAssertCall',
     'NullInMaps',
     'NullableTypes',
     'NumberTypes',
-    'ObjCounter',
+    'ObjectCounter',
     'ObjectFunctions',
+    'ObjectInheritance',
     'ObjectKeyword',
+    'ObjectNesting',
     'ObjectProperty',
     'ObserveAnimals',
     'OneOrTheOther',
@@ -1270,6 +1305,7 @@ task run (dependsOn: [
     'RangeMembership',
     'RangeSum',
     'ReadOnlyMaps',
+    'RecursiveEnumImport',
     'Reduce',
     'References',
     'RegularClasses',

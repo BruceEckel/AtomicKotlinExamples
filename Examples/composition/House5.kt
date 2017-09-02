@@ -17,7 +17,7 @@ interface Utensil : Store<Utensil>,
 interface Kitchen : Room {
   val storage: Storage
   val sinks: List<Sink>
-  val food: Food
+  val food: List<Food>
   val utensils: List<Utensil>
 }
 

@@ -1,4 +1,4 @@
-// classDelegation/ModelingMultipleInheritance.kt
+// classDelegation/ModelingMI.kt
 import atomicTest.eq
 
 interface Foo {
@@ -17,11 +17,13 @@ class BarImpl : Bar {
   override fun bar() = "bar"
 }
 
-// Even if we make the classes open, we'll get an error:
-// Only one class may appear in a supertype list
-//class B : FooImpl(), BarImpl()
+// Even if we make the classes open, we'll
+// get an error: Only one class may appear
+// in a supertype list.
+// class B : FooImpl(), BarImpl()
 
-class FooBar(val foo: Foo, val bar: Bar) : Foo by foo, Bar by bar
+class FooBar(val foo: Foo, val bar: Bar):
+  Foo by foo, Bar by bar
 
 fun main(args: Array<String>) {
   val fooBar = FooBar(FooImpl(), BarImpl())
