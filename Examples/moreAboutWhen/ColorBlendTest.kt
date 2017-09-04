@@ -1,6 +1,6 @@
-// moreAboutWhen/ColorBlendTest.kt
+// MoreAboutWhen/ColorBlendTest.kt
 package colorblendtest
-import atomicTest.eq
+import atomictest.eq
 import paintcolors.Color
 import paintcolors.Color.*
 import colorblend.blend

@@ -1,4 +1,4 @@
-// forAndRanges/AddingIntToChar.kt
+// ForAndRanges/AddingIntToChar.kt
 fun main(args: Array<String>) {
   val ch: Char = 'a'
   println(ch + 25)

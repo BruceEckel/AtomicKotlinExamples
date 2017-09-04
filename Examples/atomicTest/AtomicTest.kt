@@ -1,11 +1,11 @@
-// atomicTest/AtomicTest.kt
+// AtomicTest/AtomicTest.kt
 /* A tiny little testing framework, to
 display results and to introduce & promote
 unit testing early in the learning curve.
 To use in your code, include:
-import atomicTest.*
+import atomictest.*
 */
-package atomicTest
+package atomictest
 import java.util.*
 
 private fun <L, R> equals(actual: L, expected: R) {

@@ -1,6 +1,6 @@
-// interfaces/PropertyInInterface.kt
+// Interfaces/PropertyInInterface.kt
 package interfaces
-import atomicTest.eq
+import atomictest.eq
 
 interface SignedInt {
   val number: Int                  // [1]

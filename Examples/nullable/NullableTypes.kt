@@ -1,5 +1,5 @@
-// nullable/NullableTypes.kt
-import atomicTest.eq
+// Nullable/NullableTypes.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val s1 = "abc"            // [1]

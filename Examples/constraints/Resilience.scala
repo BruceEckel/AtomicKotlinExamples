@@ -1,4 +1,4 @@
-// constraints/Resilience.scala
+// Constraints/Resilience.scala
 import com.atomickotlin.AtomicTest._
 
 trait Resilience

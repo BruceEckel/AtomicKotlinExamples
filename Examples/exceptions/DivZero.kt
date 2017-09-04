@@ -1,6 +1,6 @@
-// exceptions/DivZero.kt
+// Exceptions/DivZero.kt
 package exceptions
-import atomicTest.eq
+import atomictest.eq
 
 class Problem(val msg:String) : Exception(msg)
 

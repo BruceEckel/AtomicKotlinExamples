@@ -1,5 +1,5 @@
-// parameterizedTypes/ParameterizedTypes.kt
-import atomicTest.eq
+// ParameterizedTypes/ParameterizedTypes.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   // Type is inferred:

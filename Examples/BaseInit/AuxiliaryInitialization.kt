@@ -1,5 +1,5 @@
 // BaseInit/AuxiliaryInitialization.kt
-import atomicTest.eq
+import atomictest.eq
 
 open class House(
   val address: String,

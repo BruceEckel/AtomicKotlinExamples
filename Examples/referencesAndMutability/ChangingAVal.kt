@@ -1,5 +1,5 @@
-// referencesAndMutability/ChangingAVal.kt
-import atomicTest.eq
+// ReferencesAndMutability/ChangingAVal.kt
+import atomictest.eq
 
 class X(var n: Int)
 

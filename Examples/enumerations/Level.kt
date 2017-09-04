@@ -1,6 +1,6 @@
-// enumerations/Level.kt
+// Enumerations/Level.kt
 package enumerations
-import atomicTest.eq
+import atomictest.eq
 
 enum class Level {
   Overflow, High, Medium, Low, Empty

@@ -1,4 +1,4 @@
-// composition/House1.kt
+// Composition/House1.kt
 package composition1
 
 interface Building

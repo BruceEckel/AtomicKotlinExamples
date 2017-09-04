@@ -1,4 +1,4 @@
-// stringTemplates/StringTemplates.kt
+// StringTemplates/StringTemplates.kt
 fun main(args: Array<String>) {
   val answer = 42
   println("Found $answer!")                  // [1]

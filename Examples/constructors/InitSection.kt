@@ -1,6 +1,6 @@
-// constructors/InitSection.kt
+// Constructors/InitSection.kt
 package constructors
-import atomicTest.eq
+import atomictest.eq
 
 class X(i: Int) {
   var s: String

@@ -1,5 +1,5 @@
-// elvis/ElvisCall.kt
-import atomicTest.eq
+// Elvis/ElvisCall.kt
+import atomictest.eq
 
 fun check(s: String?, len: Int) {   // [1]
   val length1 =

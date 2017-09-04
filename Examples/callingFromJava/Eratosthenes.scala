@@ -1,4 +1,4 @@
-// callingFromJava/Eratosthenes.scala
+// CallingFromJava/Eratosthenes.scala
 package primesieve
 
 object Eratosthenes {

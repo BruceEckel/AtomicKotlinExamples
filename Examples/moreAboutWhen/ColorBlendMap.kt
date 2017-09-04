@@ -1,6 +1,6 @@
-// moreAboutWhen/ColorBlendMap.kt
+// MoreAboutWhen/ColorBlendMap.kt
 package colorblendmap
-import atomicTest.eq
+import atomictest.eq
 import paintcolors.Color
 import paintcolors.Color.*
 

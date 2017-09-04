@@ -1,5 +1,5 @@
 // Varargs/VarargListMap.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun display(vararg nums: Int) =
   nums.map {

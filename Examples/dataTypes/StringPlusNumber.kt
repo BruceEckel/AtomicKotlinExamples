@@ -1,4 +1,4 @@
-// dataTypes/StringPlusNumber.kt
+// DataTypes/StringPlusNumber.kt
 fun main(args: Array<String>) {
   println("Sally" + 5.9)
 }

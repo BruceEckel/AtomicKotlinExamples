@@ -1,5 +1,5 @@
-// maps/MutableMaps.kt
-import atomicTest.eq
+// Maps/MutableMaps.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val m = mutableMapOf(5 to "five", 6 to "six")

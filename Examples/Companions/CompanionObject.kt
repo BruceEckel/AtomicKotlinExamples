@@ -1,5 +1,5 @@
 // Companions/CompanionObject.kt
-import atomicTest.eq
+import atomictest.eq
 
 class WithCompanion {
   companion object {

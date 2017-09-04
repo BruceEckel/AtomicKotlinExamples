@@ -1,4 +1,4 @@
-// interfaces/MultipleInterfaceInheritance.kt
+// Interfaces/MultipleInterfaceInheritance.kt
 package interfaces2
 
 interface Animal

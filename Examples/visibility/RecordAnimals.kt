@@ -1,4 +1,4 @@
-// visibility/RecordAnimals.kt
+// Visibility/RecordAnimals.kt
 
 private var counter = 0                    // [1]
 

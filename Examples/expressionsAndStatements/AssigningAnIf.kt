@@ -1,4 +1,4 @@
-// expressionsAndStatements/AssigningAnIf.kt
+// ExpressionsAndStatements/AssigningAnIf.kt
 fun main(args: Array<String>) {
   val result1 = if (11 > 42) 9 else 5
 

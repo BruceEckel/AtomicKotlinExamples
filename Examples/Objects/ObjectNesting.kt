@@ -1,5 +1,5 @@
 // Objects/ObjectNesting.kt
-import atomicTest.eq
+import atomictest.eq
 
 object Outer {
   object Inner1 {

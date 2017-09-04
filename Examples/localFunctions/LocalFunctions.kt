@@ -1,5 +1,5 @@
-// localFunctions/LocalFunctions.kt
-import atomicTest.eq
+// LocalFunctions/LocalFunctions.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val sb = StringBuilder()

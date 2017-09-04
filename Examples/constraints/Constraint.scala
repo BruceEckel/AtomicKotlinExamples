@@ -1,4 +1,4 @@
-// constraints/Constraint.scala
+// Constraints/Constraint.scala
 import com.atomickotlin.AtomicTest._
 
 class WithF {

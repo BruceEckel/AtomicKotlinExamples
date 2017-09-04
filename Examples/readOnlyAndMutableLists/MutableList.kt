@@ -1,5 +1,5 @@
-// readOnlyAndMutableLists/MutableList.kt
-import atomicTest.eq
+// ReadOnlyAndMutableLists/MutableList.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val list = mutableListOf(1, 2)

@@ -1,5 +1,5 @@
-// nonNullAsserts/ValueFromMap.kt
-import atomicTest.*
+// NonNullAsserts/ValueFromMap.kt
+import atomictest.*
 
 fun main(args: Array<String>) {
   val map = mapOf(1 to "one")

@@ -1,4 +1,4 @@
-// whenExpressions/WhenAsStatement.kt
+// WhenExpressions/WhenAsStatement.kt
 
 fun checkColor(color: String) {
   when (color) {

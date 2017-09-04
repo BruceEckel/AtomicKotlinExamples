@@ -1,5 +1,5 @@
-// destructuring/Tuple.kt
-import atomicTest.eq
+// Destructuring/Tuple.kt
+import atomictest.eq
 
 data class Tuple(
   val i: Int,

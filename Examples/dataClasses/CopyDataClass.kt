@@ -1,5 +1,5 @@
-// dataClasses/CopyDataClass.kt
-import atomicTest.eq
+// DataClasses/CopyDataClass.kt
+import atomictest.eq
 
 data class DetailedContact(
   val name: String,

@@ -1,4 +1,4 @@
-// numberTypes/IntDivisionTruncates.kt
+// NumberTypes/IntDivisionTruncates.kt
 fun main(args: Array<String>) {
   val numerator: Int = 19
   val denominator: Int = 10

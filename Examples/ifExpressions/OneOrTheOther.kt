@@ -1,4 +1,4 @@
-// ifExpressions/OneOrTheOther.kt
+// IfExpressions/OneOrTheOther.kt
 fun oneOrTheOther(exp: Boolean): String =
     if (exp) {
       "True!" // No 'return' necessary

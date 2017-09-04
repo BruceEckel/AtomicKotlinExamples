@@ -1,5 +1,5 @@
-// lambdas/LambdaTypeInference.kt
-import atomicTest.eq
+// Lambdas/LambdaTypeInference.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   var s = ""

@@ -1,4 +1,4 @@
-// importsAndPackages/ImportEverything.kt
+// ImportsAndPackages/ImportEverything.kt
 import java.util.*
 
 fun main(args: Array<String>) {

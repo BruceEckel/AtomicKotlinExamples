@@ -1,5 +1,5 @@
-// overloading/WithoutDefaultArguments.kt
-import atomicTest.eq
+// Overloading/WithoutDefaultArguments.kt
+import atomictest.eq
 
 fun f(n: Int) = n + 373
 fun f() = f(0)

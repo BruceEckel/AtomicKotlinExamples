@@ -1,5 +1,5 @@
 // Objects/ObjectKeyword.kt
-import atomicTest.eq
+import atomictest.eq
 
 object JustOne {
   val n = 2

@@ -1,4 +1,4 @@
-// moreAboutWhen/ColorBlend.kt
+// MoreAboutWhen/ColorBlend.kt
 package colorblend
 import paintcolors.Color
 import paintcolors.Color.*

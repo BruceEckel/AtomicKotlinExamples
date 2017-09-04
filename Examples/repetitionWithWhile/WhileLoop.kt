@@ -1,4 +1,4 @@
-// repetitionWithWhile/WhileLoop.kt
+// RepetitionWithWhile/WhileLoop.kt
 fun condition(i: Int) = i < 10
 
 fun main(args: Array<String>) {

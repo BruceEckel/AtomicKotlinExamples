@@ -1,5 +1,5 @@
-// safeCalls/ChainedCalls.kt
-import atomicTest.eq
+// SafeCalls/ChainedCalls.kt
+import atomictest.eq
 
 class Person(val name: String,
   var bestFriend: Person? = null)

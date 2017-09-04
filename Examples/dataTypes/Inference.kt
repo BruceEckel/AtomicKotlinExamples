@@ -1,4 +1,4 @@
-// dataTypes/Inference.kt
+// DataTypes/Inference.kt
 fun main(args: Array<String>) {
   val n = 1 + 1.2
   println(n)

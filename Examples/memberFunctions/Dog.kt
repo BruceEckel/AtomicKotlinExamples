@@ -1,4 +1,4 @@
-// memberFunctions/Dog.kt
+// MemberFunctions/Dog.kt
 
 class Dog {
   fun bark() = "yip!"

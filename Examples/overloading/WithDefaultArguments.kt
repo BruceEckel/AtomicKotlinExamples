@@ -1,5 +1,5 @@
-// overloading/WithDefaultArguments.kt
-import atomicTest.eq
+// Overloading/WithDefaultArguments.kt
+import atomictest.eq
 
 fun g(n: Int = 0) = n + 373
 

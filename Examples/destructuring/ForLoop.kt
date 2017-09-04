@@ -1,5 +1,5 @@
-// destructuring/ForLoop.kt
-import atomicTest.eq
+// Destructuring/ForLoop.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   var result = ""

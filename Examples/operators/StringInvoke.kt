@@ -1,8 +1,11 @@
-// operators/StringInvoke.kt
+// Operators/StringInvoke.kt
+import atomictest.eq
 
-operator fun String.invoke(f: (s:String) -> String) = f(this)
+operator fun
+String.invoke(f: (s:String) -> String) =
+  f(this)
 
 fun main(args: Array<String>) {
-  val s = "mumbling" { it.toUpperCase() }
-  println(s)
+  "mumbling" { it.toUpperCase() } eq
+    "MUMBLING"
 }

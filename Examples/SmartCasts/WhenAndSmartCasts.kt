@@ -1,6 +1,6 @@
 // SmartCasts/WhenAndSmartCasts.kt
-package smartCasts
-import atomicTest.eq
+package smartcasts
+import atomictest.eq
 
 fun acceptAnything(a: Any) =
   when(a) {

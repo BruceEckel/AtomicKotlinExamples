@@ -1,5 +1,5 @@
 // Overriding/GreatApe3.kt
-import atomicTest.eq
+import atomictest.eq
 
 open class GreatApe {
   protected var energy = 0

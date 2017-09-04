@@ -1,5 +1,5 @@
-// localFunctions/LocalExtensions.kt
-import atomicTest.eq
+// LocalFunctions/LocalExtensions.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   fun String.exclaim() = "$this!"

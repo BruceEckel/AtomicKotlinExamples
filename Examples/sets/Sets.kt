@@ -1,5 +1,5 @@
-// sets/Sets.kt
-import atomicTest.eq
+// Sets/Sets.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val set = setOf(1, 1, 2, 3, 9, 9, 4)

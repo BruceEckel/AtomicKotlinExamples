@@ -1,5 +1,5 @@
-// safeCalls/SafeCall.kt
-import atomicTest.eq
+// SafeCalls/SafeCall.kt
+import atomictest.eq
 
 fun check(s: String?, len: Int?) {
   val length1 =

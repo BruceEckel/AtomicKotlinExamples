@@ -1,5 +1,5 @@
-// elvis/ElvisOperator.kt
-import atomicTest.eq
+// Elvis/ElvisOperator.kt
+import atomictest.eq
 
 fun what(s: String) = if(s != "b") s else null
 

@@ -1,6 +1,6 @@
-// extensions/Quoting.kt
+// Extensions/Quoting.kt
 package quoting
-import atomicTest.eq
+import atomictest.eq
 
 fun String.singleQuote() = "'$this'"
 fun String.doubleQuote() = "\"$this\""

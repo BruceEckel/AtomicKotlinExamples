@@ -1,5 +1,5 @@
-// lists/Lists.kt
-import atomicTest.eq
+// Lists/Lists.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   // Lists hold other objects:

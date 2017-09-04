@@ -10,7 +10,7 @@ def kotlinClassPath = configurations.kotlinRuntime + sourceSets.main.runtimeClas
 
 task AbstractClasses(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'abstractClasses.AbstractClassesKt'
+    main = 'abstractcasses.AbstractClassesKt'
 }
 
 task Adder(type: JavaExec) {
@@ -21,6 +21,11 @@ task Adder(type: JavaExec) {
 task AddingIntToChar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AddingIntToCharKt'
+}
+
+task AllOperators(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operators.AllOperatorsKt'
 }
 
 task AnUnchangingVar(type: JavaExec) {
@@ -56,6 +61,11 @@ task AuxiliaryInitialization(type: JavaExec) {
 task BMI(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BMIKt'
+}
+
+task Backticks(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BackticksKt'
 }
 
 task BasicFunctions(type: JavaExec) {
@@ -110,7 +120,7 @@ task CallLater(type: JavaExec) {
 
 task CallOtherConstructors(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'baseClassInit.CallOtherConstructorsKt'
+    main = 'baseclassinit.CallOtherConstructorsKt'
 }
 
 task Cat(type: JavaExec) {
@@ -151,6 +161,11 @@ task Coffee(type: JavaExec) {
 task ColorBlendMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'colorblendmap.ColorBlendMapKt'
+}
+
+task ColorBlendMap2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'colorblendmap2.ColorBlendMap2Kt'
 }
 
 task ColorBlendTest(type: JavaExec) {
@@ -205,22 +220,22 @@ task Cup2(type: JavaExec) {
 
 task Data(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyAccessors.DataKt'
+    main = 'propertyaccessors.DataKt'
 }
 
 task DataClassAndHashCode(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'dataClasses4.DataClassAndHashCodeKt'
+    main = 'immutability2.DataClassAndHashCodeKt'
 }
 
 task DataClasses(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'dataClasses.DataClassesKt'
+    main = 'dataclasses.DataClassesKt'
 }
 
 task DataClassesWithVars(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'dataClasses3.DataClassesWithVarsKt'
+    main = 'immutability1.DataClassesWithVarsKt'
 }
 
 task Default(type: JavaExec) {
@@ -395,7 +410,7 @@ task GreatApe(type: JavaExec) {
 
 task GreatApe2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'baseClassInit.GreatApe2Kt'
+    main = 'baseclassinit.GreatApe2Kt'
 }
 
 task GreatApe3(type: JavaExec) {
@@ -410,7 +425,7 @@ task Hamster(type: JavaExec) {
 
 task Hamsters(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertyAccessors.HamstersKt'
+    main = 'propertyaccessors.HamstersKt'
 }
 
 task HelloWorld(type: JavaExec) {
@@ -548,6 +563,11 @@ task InterfaceCollision(type: JavaExec) {
     main = 'InterfaceCollisionKt'
 }
 
+task Invoke(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'InvokeKt'
+}
+
 task IterateOverString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IterateOverStringKt'
@@ -618,6 +638,11 @@ task MemberImplementations(type: JavaExec) {
     main = 'interfaces4.MemberImplementationsKt'
 }
 
+task MemberOperator(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operators.MemberOperatorKt'
+}
+
 task MemberVsExtension(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MemberVsExtensionKt'
@@ -641,6 +666,11 @@ task ModelingMI(type: JavaExec) {
 task Modulus(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ModulusKt'
+}
+
+task Molecule(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MoleculeKt'
 }
 
 task MoreReduce(type: JavaExec) {
@@ -726,6 +756,11 @@ task NullInMaps(type: JavaExec) {
 task NullableTypes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NullableTypesKt'
+}
+
+task Num(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operators.NumKt'
 }
 
 task NumberTypes(type: JavaExec) {
@@ -910,7 +945,7 @@ task SimpleMap(type: JavaExec) {
 
 task SmartCasts(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartCasts.SmartCastsKt'
+    main = 'smartcasts.SmartCastsKt'
 }
 
 task SpreadOperator(type: JavaExec) {
@@ -971,6 +1006,11 @@ task SumUsingRange(type: JavaExec) {
 task Surrey(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SurreyKt'
+}
+
+task Swearing(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SwearingKt'
 }
 
 task TDDFail(type: JavaExec) {
@@ -1105,7 +1145,7 @@ task VisibleClassArgs(type: JavaExec) {
 
 task WhenAndSmartCasts(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartCasts.WhenAndSmartCastsKt'
+    main = 'smartcasts.WhenAndSmartCastsKt'
 }
 
 task WhenExpressions(type: JavaExec) {
@@ -1142,6 +1182,7 @@ task run (dependsOn: [
     'AbstractClasses',
     'Adder',
     'AddingIntToChar',
+    'AllOperators',
     'AnUnchangingVar',
     'Animals',
     'AnonymousFunction',
@@ -1149,6 +1190,7 @@ task run (dependsOn: [
     'AssigningAnIf',
     'AuxiliaryInitialization',
     'BMI',
+    'Backticks',
     'BasicFunctions',
     'BetterSurrey',
     'Bicycle',
@@ -1168,6 +1210,7 @@ task run (dependsOn: [
     'ClassBodies',
     'Coffee',
     'ColorBlendMap',
+    'ColorBlendMap2',
     'ColorBlendTest',
     'CompanionFactory',
     'CompanionObject',
@@ -1247,6 +1290,7 @@ task run (dependsOn: [
     'IntegerMath',
     'IntegerOverflow',
     'InterfaceCollision',
+    'Invoke',
     'IterateOverString',
     'IterateThroughString',
     'IterationVsMembership',
@@ -1261,11 +1305,13 @@ task run (dependsOn: [
     'LogChanges',
     'Maps',
     'MemberImplementations',
+    'MemberOperator',
     'MemberVsExtension',
     'MembershipInRange',
     'MembershipUsingBounds',
     'ModelingMI',
     'Modulus',
+    'Molecule',
     'MoreReduce',
     'MultipleClassArgs',
     'MultiplyByFour',
@@ -1283,6 +1329,7 @@ task run (dependsOn: [
     'NonNullAssertCall',
     'NullInMaps',
     'NullableTypes',
+    'Num',
     'NumberTypes',
     'ObjectCounter',
     'ObjectFunctions',
@@ -1332,6 +1379,7 @@ task run (dependsOn: [
     'StringTemplates',
     'SumUsingRange',
     'Surrey',
+    'Swearing',
     'TDDFail',
     'TDDStillFails',
     'TDDWorks',

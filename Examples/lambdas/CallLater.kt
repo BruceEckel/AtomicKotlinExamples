@@ -1,5 +1,5 @@
-// lambdas/CallLater.kt
-import atomicTest.eq
+// Lambdas/CallLater.kt
+import atomictest.eq
 
 class Later(val call: () -> String)
 

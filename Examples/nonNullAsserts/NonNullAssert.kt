@@ -1,5 +1,5 @@
-// nonNullAsserts/NonNullAssert.kt
-import atomicTest.*
+// NonNullAsserts/NonNullAssert.kt
+import atomictest.*
 
 fun main(args: Array<String>) {
   val s1: String? = "abc"

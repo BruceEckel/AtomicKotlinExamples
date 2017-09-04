@@ -1,5 +1,5 @@
-// lambdas/FormatLambda.kt
-import atomicTest.eq
+// Lambdas/FormatLambda.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   var s = ""

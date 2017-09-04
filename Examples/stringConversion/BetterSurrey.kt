@@ -1,5 +1,5 @@
-// stringConversion/BetterSurrey.kt
-import atomicTest.eq
+// StringConversion/BetterSurrey.kt
+import atomictest.eq
 
 class Surrey2(val adornment: String) {
   override fun toString() =

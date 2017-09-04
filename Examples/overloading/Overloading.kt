@@ -1,5 +1,5 @@
-// overloading/Overloading.kt
-import atomicTest.eq
+// Overloading/Overloading.kt
+import atomictest.eq
 
 class Overloading1 {
   fun f() = 88

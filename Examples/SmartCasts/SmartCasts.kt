@@ -1,6 +1,6 @@
 // SmartCasts/SmartCasts.kt
-package smartCasts
-import atomicTest.eq
+package smartcasts
+import atomictest.eq
 
 class Dog {
   fun bark() = "yip!"

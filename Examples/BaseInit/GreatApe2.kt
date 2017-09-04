@@ -1,6 +1,6 @@
 // BaseInit/GreatApe2.kt
-package baseClassInit
-import atomicTest.eq
+package baseclassinit
+import atomictest.eq
 
 open class GreatApe(
   val weight: Double,

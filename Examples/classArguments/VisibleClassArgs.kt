@@ -1,5 +1,5 @@
-// classArguments/VisibleClassArgs.kt
-import atomicTest.eq
+// ClassArguments/VisibleClassArgs.kt
+import atomictest.eq
 
 class ClassArg2(var a: Int)
 class ClassArg3(val a: Int)

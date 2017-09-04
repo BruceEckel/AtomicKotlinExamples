@@ -1,5 +1,5 @@
-// propertyAccessors/Default.kt
-import atomicTest.eq
+// PropertyAccessors/Default.kt
+import atomictest.eq
 
 class Default {
   var trace = ""

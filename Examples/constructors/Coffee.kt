@@ -1,5 +1,5 @@
-// constructors/Coffee.kt
-import atomicTest.eq
+// Constructors/Coffee.kt
+import atomictest.eq
 
 class Coffee(
     val shots: Int = 2,

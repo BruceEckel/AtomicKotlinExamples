@@ -1,5 +1,5 @@
 // Objects/ObjectInheritance.kt
-import atomicTest.eq
+import atomictest.eq
 
 open class Paint(val color: String) {
   open fun apply() = "Applying $color"

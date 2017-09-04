@@ -1,5 +1,5 @@
-// testing/TestingExample.kt
-import atomicTest.*
+// Testing/TestingExample.kt
+import atomictest.*
 
 fun main(args: Array<String>) {
   val v1 = 11

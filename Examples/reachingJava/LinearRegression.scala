@@ -1,4 +1,4 @@
-// reachingJava/LinearRegression.scala
+// ReachingJava/LinearRegression.scala
 import com.atomickotlin.AtomicTest._
 import org.apache.commons.math3._
 import stat.regression.SimpleRegression

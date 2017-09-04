@@ -1,4 +1,4 @@
-// summary2/ClassBodies.kt
+// Summary2/ClassBodies.kt
 class NoBody
 
 class SomeBody {

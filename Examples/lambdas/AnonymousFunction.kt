@@ -1,5 +1,5 @@
-// lambdas/AnonymousFunction.kt
-import atomicTest.eq
+// Lambdas/AnonymousFunction.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val a = listOf(1, 2, 3, 4)

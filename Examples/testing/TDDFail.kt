@@ -1,7 +1,7 @@
-// testing/TDDFail.kt
+// Testing/TDDFail.kt
 package testing1
 
-import atomicTest.eq
+import atomictest.eq
 
 fun main(args: Array<String>) {
   calculateBMI(160, 68) eq "Normal weight"

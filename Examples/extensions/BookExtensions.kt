@@ -1,5 +1,5 @@
-// extensions/BookExtensions.kt
-import atomicTest.eq
+// Extensions/BookExtensions.kt
+import atomictest.eq
 
 data class Book(val title: String)
 

@@ -1,5 +1,5 @@
-// interfaces/InterfaceCollision.kt
-import atomicTest.eq
+// Interfaces/InterfaceCollision.kt
+import atomictest.eq
 
 interface A {
   fun f() = 1.1

@@ -1,6 +1,6 @@
-// interfaces/Adder.kt
+// Interfaces/Adder.kt
 package interfaces
-import atomicTest.eq
+import atomictest.eq
 
 interface Adder {
   val part1: Int

@@ -1,7 +1,6 @@
-// dataClassesAndImmutability/DataClassesWithVars.kt
-package dataClasses3
-
-import atomicTest.eq
+// Immutability/DataClassesWithVars.kt
+package immutability1
+import atomictest.eq
 
 data class Contact(
   var name: String,

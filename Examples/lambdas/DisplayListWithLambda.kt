@@ -1,5 +1,5 @@
-// lambdas/DisplayListWithLambda.kt
-import atomicTest.eq
+// Lambdas/DisplayListWithLambda.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   var s = ""

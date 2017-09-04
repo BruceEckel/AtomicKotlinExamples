@@ -1,5 +1,5 @@
-// maps/ReadOnlyMaps.kt
-import atomicTest.eq
+// Maps/ReadOnlyMaps.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val m = mapOf(5 to "five", 6 to "six")

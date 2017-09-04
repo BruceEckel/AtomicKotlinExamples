@@ -1,5 +1,5 @@
-// destructuring/Pairs.kt
-import atomicTest.eq
+// Destructuring/Pairs.kt
+import atomictest.eq
 
 fun compute1(input: Int) =
   if (input > 5)

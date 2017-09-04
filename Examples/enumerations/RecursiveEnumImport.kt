@@ -1,6 +1,6 @@
-// enumerations/RecursiveEnumImport.kt
+// Enumerations/RecursiveEnumImport.kt
 package enumerations
-import atomicTest.eq
+import atomictest.eq
 import enumerations.Size.*            // [1]
 
 enum class Size {

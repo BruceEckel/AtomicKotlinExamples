@@ -1,4 +1,4 @@
-// forAndRanges/DefiningRanges.kt
+// ForAndRanges/DefiningRanges.kt
 fun main(args: Array<String>) {
   val range1 = 1..10             // [1]
   val range2 = 0 until 10        // [2]

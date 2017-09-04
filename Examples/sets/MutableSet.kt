@@ -1,5 +1,5 @@
-// sets/MutableSet.kt
-import atomicTest.eq
+// Sets/MutableSet.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val set = mutableSetOf<Int>()

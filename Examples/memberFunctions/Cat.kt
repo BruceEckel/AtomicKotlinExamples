@@ -1,4 +1,4 @@
-// memberFunctions/Cat.kt
+// MemberFunctions/Cat.kt
 
 class Cat {
   fun meow() = "mew!"

@@ -1,5 +1,5 @@
-// sealedClasses/RegularClasses.kt
-import atomicTest.eq
+// SealedClasses/RegularClasses.kt
+import atomictest.eq
 
 open class Transport
 

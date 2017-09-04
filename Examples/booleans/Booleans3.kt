@@ -1,4 +1,4 @@
-// booleans/Booleans3.kt
+// Booleans/Booleans3.kt
 fun main(args: Array<String>) {
   val hour = 6
   val opens = 9

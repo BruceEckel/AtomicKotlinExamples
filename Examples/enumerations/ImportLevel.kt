@@ -1,5 +1,5 @@
-// enumerations/ImportLevel.kt
-import atomicTest.eq
+// Enumerations/ImportLevel.kt
+import atomictest.eq
 import enumerations.Level               // [1]
 import enumerations.Level.*
 

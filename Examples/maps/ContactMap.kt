@@ -1,5 +1,5 @@
-// maps/ContactMap.kt
-import atomicTest.eq
+// Maps/ContactMap.kt
+import atomictest.eq
 
 data class Contact(
   val name: String, val number: String)

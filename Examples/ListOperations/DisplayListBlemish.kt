@@ -1,5 +1,5 @@
 // ListOperations/DisplayListBlemish.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun main(args: Array<String>) {
   var s = ""

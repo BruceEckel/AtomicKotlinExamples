@@ -1,4 +1,4 @@
-// helloWorld/HelloWorld.kt
+// HelloWorld/HelloWorld.kt
 fun main(args: Array<String>) {
   println("Hello, world!")
 }

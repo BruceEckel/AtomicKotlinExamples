@@ -1,6 +1,6 @@
-// extensions/Quote.kt
+// Extensions/Quote.kt
 package other
-import atomicTest.eq
+import atomictest.eq
 import quoting.doubleQuote
 import quoting.singleQuote
 

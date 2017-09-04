@@ -1,4 +1,4 @@
-// moreAboutWhen/PaintColors.kt
+// MoreAboutWhen/PaintColors.kt
 package paintcolors
 
 enum class Color {

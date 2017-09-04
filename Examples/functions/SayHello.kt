@@ -1,4 +1,4 @@
-// functions/SayHello.kt
+// Functions/SayHello.kt
 fun sayHello() {
   println("Hallo!")
 }

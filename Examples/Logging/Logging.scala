@@ -1,4 +1,4 @@
-// com/atomickotlin/Logging.scala
+// Logging/Logging.scala
 package com.atomickotlin
 import java.util.logging._
 

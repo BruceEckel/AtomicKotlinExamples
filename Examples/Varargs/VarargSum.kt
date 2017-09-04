@@ -1,5 +1,5 @@
 // Varargs/VarargSum.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun sum(vararg numbers: Int): Int {
   var total = 0

@@ -1,5 +1,5 @@
 // Varargs/SpreadOperator.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val array = intArrayOf(4, 5)  // [1]

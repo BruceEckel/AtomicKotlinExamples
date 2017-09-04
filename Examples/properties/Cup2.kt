@@ -1,5 +1,5 @@
-// properties/Cup2.kt
-import atomicTest.eq
+// Properties/Cup2.kt
+import atomictest.eq
 
 class Cup2 {
   var percentFull = 0

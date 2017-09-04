@@ -1,5 +1,5 @@
-// summary2/UsingAtomicTest.kt
-import atomicTest.eq
+// Summary2/UsingAtomicTest.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val pi = 3.14

@@ -1,5 +1,5 @@
-// nullable/ExplicitCheck.kt
-import atomicTest.eq
+// Nullable/ExplicitCheck.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val s: String? = "abc"

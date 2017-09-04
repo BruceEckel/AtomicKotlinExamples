@@ -1,5 +1,5 @@
-// referencesAndMutability/AnUnchangingVar.kt
-import atomicTest.eq
+// ReferencesAndMutability/AnUnchangingVar.kt
+import atomictest.eq
 
 class Y(val n: Int)
 

@@ -1,6 +1,6 @@
 // Abstract/AbstractClasses.kt
-package abstractClasses
-import atomicTest.eq
+package abstractcasses
+import atomictest.eq
 
 abstract class Animal {
   fun templateFunction() =

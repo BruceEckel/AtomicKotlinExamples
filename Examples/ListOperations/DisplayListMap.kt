@@ -1,5 +1,5 @@
 // ListOperations/DisplayListMap.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun main(args: Array<String>) {
   (1..4).map {

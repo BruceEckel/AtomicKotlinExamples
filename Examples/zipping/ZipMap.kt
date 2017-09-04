@@ -1,6 +1,6 @@
-// zipping/ZipMap.kt
+// Zipping/ZipMap.kt
 package zipping
-import atomicTest.eq
+import atomictest.eq
 
 data class Person(val name: String, val ID: Int)
 

@@ -1,5 +1,5 @@
-// summary2/ListCollection.kt
-import atomicTest.eq
+// Summary2/ListCollection.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val l1 = listOf(19.2, 88.3, 22.1)

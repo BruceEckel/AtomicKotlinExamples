@@ -1,5 +1,5 @@
 // ListOperations/Reduce.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val terms = listOf(1, 10, 100, 1000)

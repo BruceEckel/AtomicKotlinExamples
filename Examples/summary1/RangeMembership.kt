@@ -1,4 +1,4 @@
-// summary1/RangeMembership.kt
+// Summary1/RangeMembership.kt
 fun inNumRange(n: Int) = n in 50..100
 
 fun notLowerCase(ch: Char) = ch !in 'a'..'z'

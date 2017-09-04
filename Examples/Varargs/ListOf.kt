@@ -1,5 +1,5 @@
 // Varargs/ListOf.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun main(args: Array<String>) {
   listOf(1) eq "[1]"

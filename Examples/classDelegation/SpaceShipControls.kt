@@ -1,4 +1,4 @@
-// classDelegation/SpaceShipControls.kt
+// ClassDelegation/SpaceShipControls.kt
 
 interface ShipControls {
   fun up(velocity: Int): String

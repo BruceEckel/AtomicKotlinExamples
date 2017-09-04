@@ -1,5 +1,5 @@
-// destructuring/ComputationResult.kt
-import atomicTest.eq
+// Destructuring/ComputationResult.kt
+import atomictest.eq
 
 data class ComputationResult(
   val data: Int, val info: String)

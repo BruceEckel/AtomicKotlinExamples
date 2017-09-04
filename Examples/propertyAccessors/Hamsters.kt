@@ -1,6 +1,6 @@
-// propertyAccessors/Hamsters.kt
-package propertyAccessors
-import atomicTest.eq
+// PropertyAccessors/Hamsters.kt
+package propertyaccessors
+import atomictest.eq
 import java.util.*
 
 class Hamster(val name: String)

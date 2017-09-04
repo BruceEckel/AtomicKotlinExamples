@@ -1,5 +1,5 @@
 // NullableExtensions/RemoveNulls.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val list = listOf("a", null, "b", null, "c")

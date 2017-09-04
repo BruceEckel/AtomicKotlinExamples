@@ -1,4 +1,4 @@
-// creatingClasses/Animals.kt
+// CreatingClasses/Animals.kt
 
 // Create some classes:
 class Giraffe

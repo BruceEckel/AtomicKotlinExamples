@@ -1,5 +1,5 @@
-// parameterizedTypes/ParameterizedReturnTypes.kt
-import atomicTest.eq
+// ParameterizedTypes/ParameterizedReturnTypes.kt
+import atomictest.eq
 
 // Return type is inferred:
 fun inferred(c1: Char, c2: Char) =

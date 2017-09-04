@@ -1,6 +1,6 @@
 // BaseInit/CallOtherConstructors.kt
-package baseClassInit
-import atomicTest.eq
+package baseclassinit
+import atomictest.eq
 
 open class Base(val i: Int)
 

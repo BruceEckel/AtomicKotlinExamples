@@ -1,5 +1,5 @@
 // Companions/ObjectCounter.kt
-import atomicTest.eq
+import atomictest.eq
 
 class Numbered {
   companion object {

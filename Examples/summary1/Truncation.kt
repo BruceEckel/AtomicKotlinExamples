@@ -1,4 +1,4 @@
-// summary1/Truncation.kt
+// Summary1/Truncation.kt
 fun main(args: Array<String>) {
   val d1: Double = 3.0 + 2 / 5
   println(d1)

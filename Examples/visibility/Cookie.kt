@@ -1,5 +1,5 @@
-// visibility/Cookie.kt
-import atomicTest.eq
+// Visibility/Cookie.kt
+import atomictest.eq
 
 class Cookie {
   private fun crumble() =  // [1]

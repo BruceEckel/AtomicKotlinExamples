@@ -1,5 +1,5 @@
 // Companions/NamedCompanionObject.kt
-import atomicTest.eq
+import atomictest.eq
 
 class WithNamed {
   companion object Named {

@@ -1,5 +1,5 @@
-// maps/Maps.kt
-import atomicTest.eq
+// Maps/Maps.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val constants = mapOf(

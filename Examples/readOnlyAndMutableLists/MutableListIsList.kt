@@ -1,5 +1,5 @@
-// readOnlyAndMutableLists/MutableListIsList.kt
-import atomicTest.eq
+// ReadOnlyAndMutableLists/MutableListIsList.kt
+import atomictest.eq
 
 fun getList(): List<Int> {
   return mutableListOf(1, 2, 3)

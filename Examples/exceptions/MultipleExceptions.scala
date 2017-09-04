@@ -1,5 +1,5 @@
-// exceptions/MultipleExceptions.scala
-import atomicTest.eq
+// Exceptions/MultipleExceptions.scala
+import atomictest.eq
 import errors.*
 
 fun test(which:Int) =

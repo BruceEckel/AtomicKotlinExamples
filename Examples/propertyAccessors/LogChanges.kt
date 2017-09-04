@@ -1,5 +1,5 @@
-// propertyAccessors/LogChanges.kt
-import atomicTest.eq
+// PropertyAccessors/LogChanges.kt
+import atomictest.eq
 
 class LogChanges {
   var trace = ""

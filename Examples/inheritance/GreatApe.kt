@@ -1,6 +1,6 @@
-// inheritance/GreatApe.kt
+// Inheritance/GreatApe.kt
 package inheritance
-import atomicTest.eq
+import atomictest.eq
 
 open class GreatApe {
   val weight = 100.0

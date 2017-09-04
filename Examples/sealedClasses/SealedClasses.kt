@@ -1,6 +1,6 @@
-// sealedClasses/SealedClasses.kt
+// SealedClasses/SealedClasses.kt
 package sealedclasses
-import atomicTest.eq
+import atomictest.eq
 
 sealed class Transport
 

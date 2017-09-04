@@ -1,4 +1,4 @@
-// reflection/Name.scala
+// Reflection/Name.scala
 package com.atomickotlin
 import reflect.runtime.currentMirror
 

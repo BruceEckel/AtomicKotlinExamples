@@ -1,5 +1,5 @@
-// classDelegation/ModelingMI.kt
-import atomicTest.eq
+// ClassDelegation/ModelingMI.kt
+import atomictest.eq
 
 interface Foo {
   fun foo(): String

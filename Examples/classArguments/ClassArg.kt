@@ -1,5 +1,5 @@
-// classArguments/ClassArg.kt
-import atomicTest.eq
+// ClassArguments/ClassArg.kt
+import atomictest.eq
 
 class ClassArg(a: Int) {
   val f = a * 10

@@ -1,4 +1,4 @@
-// errors/Errors.scala
+// Errors/Errors.scala
 package errors
 
 data class Except1(why:String): Exception(why)

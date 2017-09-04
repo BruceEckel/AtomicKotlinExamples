@@ -1,4 +1,4 @@
-// stringTemplates/ExpressionInStringTemplate.kt
+// StringTemplates/ExpressionInStringTemplate.kt
 fun main(args: Array<String>) {
   val condition = true
   println("${if (condition) 'a' else 'b'}")  // [1]

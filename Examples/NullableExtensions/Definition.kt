@@ -1,5 +1,5 @@
 // NullableExtensions/Definition.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun String?.isNullOrEmpty(): Boolean =
   this == null || this.isEmpty()

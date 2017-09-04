@@ -1,4 +1,4 @@
-// functions/MultiplyByTwo.kt
+// Functions/MultiplyByTwo.kt
 fun multiplyByTwo(x: Int): Int {  // [1]
   println("Inside multiplyByTwo") // [2]
   return x * 2

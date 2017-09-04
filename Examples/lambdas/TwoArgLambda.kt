@@ -1,5 +1,5 @@
-// lambdas/TwoArgLambda.kt
-import atomicTest.eq
+// Lambdas/TwoArgLambda.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   var s = ""

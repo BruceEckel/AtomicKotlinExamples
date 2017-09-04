@@ -1,6 +1,6 @@
 // Polymorphism/FantasyGame.kt
 package polymorphism
-import atomicTest.eq
+import atomictest.eq
 
 abstract class Name {
   override fun toString(): String =

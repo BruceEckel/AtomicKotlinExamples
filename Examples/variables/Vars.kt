@@ -1,4 +1,4 @@
-// variables/Vars.kt
+// Variables/Vars.kt
 fun main(args: Array<String>) {
   var whole = 11          // [1]
   var fractional = 1.4    // [2]

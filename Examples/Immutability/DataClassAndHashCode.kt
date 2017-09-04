@@ -1,7 +1,6 @@
-// dataClassesAndImmutability/DataClassAndHashCode.kt
-package dataClasses4
-
-import atomicTest.eq
+// Immutability/DataClassAndHashCode.kt
+package immutability2
+import atomictest.eq
 
 data class Contact(
   var name: String,

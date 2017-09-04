@@ -1,4 +1,4 @@
-// interfaces/NoStateInInterfaces.kt
+// Interfaces/NoStateInInterfaces.kt
 package interfaces3
 
 interface Animal {

@@ -1,5 +1,5 @@
-// extensions/MemberVsExtension.kt
-import atomicTest.eq
+// Extensions/MemberVsExtension.kt
+import atomictest.eq
 
 class My {
   fun foo() = 1

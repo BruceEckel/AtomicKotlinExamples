@@ -1,5 +1,5 @@
-// classDelegation/DelegatedControls.kt
-import atomicTest.eq
+// ClassDelegation/DelegatedControls.kt
+import atomictest.eq
 
 class DelegatedControls(
   private val controls: SpaceShipControls =

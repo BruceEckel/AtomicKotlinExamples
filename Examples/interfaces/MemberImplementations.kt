@@ -1,6 +1,6 @@
-// interfaces/MemberImplementations.kt
+// Interfaces/MemberImplementations.kt
 package interfaces4
-import atomicTest.eq
+import atomictest.eq
 
 interface Animal {
   val sound: String

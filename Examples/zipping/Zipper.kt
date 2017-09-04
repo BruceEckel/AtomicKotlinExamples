@@ -1,5 +1,5 @@
-// zipping/Zipper.kt
-import atomicTest.eq
+// Zipping/Zipper.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val left = listOf("a", "b", "c", "d")

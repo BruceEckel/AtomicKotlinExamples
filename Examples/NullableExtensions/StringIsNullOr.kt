@@ -1,5 +1,5 @@
 // NullableExtensions/StringIsNullOr.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val s1: String? = null

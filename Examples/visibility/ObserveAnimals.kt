@@ -1,5 +1,5 @@
-// visibility/ObserveAnimals.kt
-import atomicTest.eq
+// Visibility/ObserveAnimals.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   // Can't access private members

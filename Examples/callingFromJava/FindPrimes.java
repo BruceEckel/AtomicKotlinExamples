@@ -1,4 +1,4 @@
-// callingFromJava/FindPrimes.java
+// CallingFromJava/FindPrimes.java
 import primesieve.*;
 
 public class FindPrimes {

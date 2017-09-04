@@ -1,5 +1,5 @@
-// nullable/Dereference.kt
-import atomicTest.eq
+// Nullable/Dereference.kt
+import atomictest.eq
 
 fun main(args: Array<String>) {
   val s1: String = "abc"

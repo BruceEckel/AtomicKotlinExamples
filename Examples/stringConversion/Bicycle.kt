@@ -1,5 +1,5 @@
-// stringConversion/Bicycle.kt
-import atomicTest.eq
+// StringConversion/Bicycle.kt
+import atomictest.eq
 
 data class Bicycle(val riders: Int)
 

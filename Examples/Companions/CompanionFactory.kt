@@ -1,5 +1,5 @@
 // Companions/CompanionFactory.kt
-import atomicTest.eq
+import atomictest.eq
 
 class Numbered2
 private constructor(private val id: Int) {

@@ -1,6 +1,6 @@
-// dataClasses/DataClasses.kt
-package dataClasses
-import atomicTest.*
+// DataClasses/DataClasses.kt
+package dataclasses
+import atomictest.*
 
 data class Contact(val name: String, val number: String)
 

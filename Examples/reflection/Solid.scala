@@ -1,4 +1,4 @@
-// reflection/Solid.scala
+// Reflection/Solid.scala
 package reflection
 import com.atomickotlin.AtomicTest._
 import com.atomickotlin.Name

@@ -1,5 +1,5 @@
 // Varargs/TwoFunctionsWithVarargs.kt
-import atomicTest.eq
+import atomictest.eq
 
 fun first(vararg numbers: Int) =
   numbers.fold("varargs:", {

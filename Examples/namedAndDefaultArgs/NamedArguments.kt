@@ -1,5 +1,5 @@
-// namedAndDefaultArgs/NamedArguments.kt
-import atomicTest.eq
+// NamedAndDefaultArgs/NamedArguments.kt
+import atomictest.eq
 
 fun getColor(red: Int, green: Int, blue: Int) =
     "($red, $green, $blue)"

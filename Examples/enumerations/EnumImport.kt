@@ -1,5 +1,5 @@
-// enumerations/EnumImport.kt
-import atomicTest.eq
+// Enumerations/EnumImport.kt
+import atomictest.eq
 import enumerations.Level.*    // [1]
 
 fun main(args: Array<String>) {

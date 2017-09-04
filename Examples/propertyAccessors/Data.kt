@@ -1,6 +1,6 @@
-// propertyAccessors/Data.kt
-package propertyAccessors
-import atomicTest.eq
+// PropertyAccessors/Data.kt
+package propertyaccessors
+import atomictest.eq
 
 class Data(var i: Int)
 

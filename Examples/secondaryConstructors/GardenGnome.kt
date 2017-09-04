@@ -1,5 +1,5 @@
-// secondaryConstructors/GardenGnome.kt
-import atomicTest.eq
+// SecondaryConstructors/GardenGnome.kt
+import atomictest.eq
 
 class GardenGnome(
     val height: Double,

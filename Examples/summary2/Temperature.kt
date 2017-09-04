@@ -1,5 +1,5 @@
-// summary2/Temperature.kt
-import atomicTest.eq
+// Summary2/Temperature.kt
+import atomictest.eq
 
 class Temperature {
   var current = 0.0

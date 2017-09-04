@@ -1,5 +1,5 @@
-// lambdas/DisplayList.kt
-import atomicTest.eq
+// Lambdas/DisplayList.kt
+import atomictest.eq
 
 var s = ""
 

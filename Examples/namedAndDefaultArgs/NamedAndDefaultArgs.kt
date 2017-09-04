@@ -1,5 +1,5 @@
-// namedAndDefaultArgs/NamedAndDefaultArgs.kt
-import atomicTest.eq
+// NamedAndDefaultArgs/NamedAndDefaultArgs.kt
+import atomictest.eq
 
 fun getColor1(
     red: Int = 0,

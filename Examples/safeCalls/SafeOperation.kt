@@ -1,5 +1,5 @@
-// safeCalls/SafeOperation.kt
-import atomicTest.eq
+// SafeCalls/SafeOperation.kt
+import atomictest.eq
 
 fun String.echo() = "$this"
 

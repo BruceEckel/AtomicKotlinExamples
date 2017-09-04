@@ -1,4 +1,4 @@
-// summary1/NumberTypes.kt
+// Summary1/NumberTypes.kt
 fun main(args: Array<String>) {
   val n = 1000    // Int
   val l = 1000L   // Long

@@ -1,5 +1,5 @@
-// interfaces/StateOfAClass.kt
-import atomicTest.eq
+// Interfaces/StateOfAClass.kt
+import atomictest.eq
 
 class IntList(val i: Int) {
   val list = mutableListOf(i)

@@ -1,5 +1,5 @@
 // Companions/ObjectProperty.kt
-import atomicTest.eq
+import atomictest.eq
 
 class WithObjectProperty {
   fun increment(): Int {

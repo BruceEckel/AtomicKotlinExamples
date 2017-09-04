@@ -1,5 +1,5 @@
-// classDelegation/ExplicitDelegation.kt
-import atomicTest.eq
+// ClassDelegation/ExplicitDelegation.kt
+import atomictest.eq
 
 class ExplicitControls : ShipControls {
   private val controls = SpaceShipControls()

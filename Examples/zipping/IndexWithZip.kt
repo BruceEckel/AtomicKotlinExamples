@@ -1,5 +1,5 @@
-// zipping/IndexWithZip.kt
-import atomicTest.eq
+// Zipping/IndexWithZip.kt
+import atomictest.eq
 
 fun number(s: String) =
   s.indices.zip(s.toList())

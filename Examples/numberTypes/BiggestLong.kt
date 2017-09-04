@@ -1,4 +1,4 @@
-// numberTypes/BiggestLong.kt
+// NumberTypes/BiggestLong.kt
 fun main(args: Array<String>) {
   println(Long.MAX_VALUE)
 }

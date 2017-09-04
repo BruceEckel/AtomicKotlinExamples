@@ -1,5 +1,5 @@
-// summary2/TicTacToe.kt
-import atomicTest.eq
+// Summary2/TicTacToe.kt
+import atomictest.eq
 
 class Cell {
   var entry = ' '                 // [1]

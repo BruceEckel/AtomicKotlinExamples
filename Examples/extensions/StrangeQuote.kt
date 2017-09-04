@@ -1,5 +1,5 @@
-// extensions/StrangeQuote.kt
-import atomicTest.eq
+// Extensions/StrangeQuote.kt
+import atomictest.eq
 import quoting.singleQuote
 
 // Apply two sets of single quotes:

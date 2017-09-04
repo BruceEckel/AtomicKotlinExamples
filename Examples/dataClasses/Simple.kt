@@ -1,5 +1,5 @@
-// dataClasses/Simple.kt
-import atomicTest.*
+// DataClasses/Simple.kt
+import atomictest.*
 
 data class Simple(val arg1: String, var arg2: Int)
 

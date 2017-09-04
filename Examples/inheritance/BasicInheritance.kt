@@ -1,4 +1,4 @@
-// inheritance/BasicInheritance.kt
+// Inheritance/BasicInheritance.kt
 
 open class Base
 
