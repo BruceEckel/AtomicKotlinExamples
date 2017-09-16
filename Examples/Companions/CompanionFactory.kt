@@ -1,4 +1,5 @@
 // Companions/CompanionFactory.kt
+package companions
 import atomictest.eq
 
 class Numbered2

@@ -3,13 +3,13 @@ package polymorphism
 import atomictest.eq
 
 abstract class Name {
-  override fun toString(): String =
-    this.javaClass.simpleName
+  override fun toString() =
+    javaClass.simpleName
 }
 
 open class Element: Name() {
   fun interact(other: Element) =
-    "$this interact $other"
+    "$this interacts with $other"
 }
 
 open class Inert: Element()
@@ -33,19 +33,19 @@ class WoodWall: Wall(), Wood
 interface Skill
 
 interface Fighting: Skill {
-  fun fight() = "Fight!"
+  fun fight() = "Fights"
 }
 
 interface Digging: Skill {
-  fun dig() = "Dig!"
+  fun dig() = "Digs"
 }
 
 interface Magic: Skill {
-  fun castSpell() = "Spell!"
+  fun castSpell() = "Casts"
 }
 
 interface Flight: Skill {
-  fun fly() = "Fly!"
+  fun fly() = "Flies"
 }
 
 open class
@@ -61,19 +61,26 @@ class Dwarf: Character(), Digging, Fighting
 class Wizard: Character(), Magic
 class Dragon: Character(), Magic, Flight
 
-fun battle(fighter: Fighting) =
-  "$fighter, ${fighter.fight()}"
+fun contact(e1: Element, e2: Element) =
+  "${e1.interact(e2)}"
 
-fun <F> fly(flyer: F, opponent: Element) where F: Element, F: Flight =
-  "$flyer, ${flyer.fly()}, ${opponent.interact(flyer)}"
+fun battle(fighter: Fighting) =
+  "$fighter ${fighter.fight()}"
+
+fun <F> fly(flyer: F, opponent: Element)
+  where F: Element, F: Flight =
+  "$flyer ${flyer.fly()}, " +
+  "${contact(opponent, flyer)}"
 
 fun main(args: Array<String>) {
   val d = Dragon()
   d.player = "Puff"
-  d.interact(Wall()) eq
-      "Dragon interact Wall"
-  battle(Viking()) eq "Viking, Fight!"
-  battle(Dwarf()) eq "Dwarf, Fight!"
+  d.interact(RockWall()) eq
+    "Dragon interacts with RockWall"
+  battle(Viking()) eq "Viking Fights"
+  battle(Dwarf()) eq "Dwarf Fights"
   fly(d, Fairy()) eq
-    "Dragon, Fly!, Fairy interact Dragon"
+    "Dragon Flies, Fairy interacts with Dragon"
+  contact(Viking(), Fairy()) eq
+    "Viking interacts with Fairy"
 }

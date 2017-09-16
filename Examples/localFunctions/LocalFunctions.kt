@@ -2,9 +2,9 @@
 import atomictest.eq
 
 fun main(args: Array<String>) {
-  val sb = StringBuilder()
+  var logMsg = ""
   fun log(message: String) {
-    sb.appendln(message)
+    logMsg += message + "\n"
   }
 
   log("Starting computation")
@@ -12,7 +12,10 @@ fun main(args: Array<String>) {
   val x = 42
   log("Computation result: $x")
 
-  sb.toString().trim() eq """
+  logMsg eq
+    """
     Starting computation
-    Computation result: 42""".trimIndent()
+    Computation result: 42
+
+    """.trimIndent()
 }

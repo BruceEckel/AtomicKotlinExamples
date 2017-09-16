@@ -165,7 +165,7 @@ task ColorBlendMap(type: JavaExec) {
 
 task ColorBlendMap2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'colorblendmap2.ColorBlendMap2Kt'
+    main = 'immutability.ColorBlendMap2Kt'
 }
 
 task ColorBlendTest(type: JavaExec) {
@@ -175,7 +175,7 @@ task ColorBlendTest(type: JavaExec) {
 
 task CompanionFactory(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'CompanionFactoryKt'
+    main = 'companions.CompanionFactoryKt'
 }
 
 task CompanionObject(type: JavaExec) {
@@ -223,19 +223,14 @@ task Data(type: JavaExec) {
     main = 'propertyaccessors.DataKt'
 }
 
-task DataClassAndHashCode(type: JavaExec) {
+task DataClassCopy(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'immutability2.DataClassAndHashCodeKt'
+    main = 'DataClassCopyKt'
 }
 
 task DataClasses(type: JavaExec) {
     classpath kotlinClassPath
     main = 'dataclasses.DataClassesKt'
-}
-
-task DataClassesWithVars(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'immutability1.DataClassesWithVarsKt'
 }
 
 task Default(type: JavaExec) {
@@ -270,7 +265,7 @@ task DereferenceNull(type: JavaExec) {
 
 task DifferentReferencesToList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'DifferentReferencesToListKt'
+    main = 'readonlyandmutable.DifferentReferencesToListKt'
 }
 
 task DisplayDuck(type: JavaExec) {
@@ -316,6 +311,11 @@ task Dog(type: JavaExec) {
 task DuckForEach(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DuckForEachKt'
+}
+
+task EasyKeys(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'hashing.EasyKeysKt'
 }
 
 task ElvisCall(type: JavaExec) {
@@ -418,6 +418,11 @@ task GreatApe3(type: JavaExec) {
     main = 'GreatApe3Kt'
 }
 
+task GuaranteedCleanup(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GuaranteedCleanupKt'
+}
+
 task Hamster(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HamsterKt'
@@ -428,9 +433,19 @@ task Hamsters(type: JavaExec) {
     main = 'propertyaccessors.HamstersKt'
 }
 
+task HashCodeFailure(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'HashCodeFailureKt'
+}
+
 task HelloWorld(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HelloWorldKt'
+}
+
+task HiddenArrayList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'HiddenArrayListKt'
 }
 
 task If1(type: JavaExec) {
@@ -583,6 +598,11 @@ task IterationVsMembership(type: JavaExec) {
     main = 'IterationVsMembershipKt'
 }
 
+task KeyFailure(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'KeyFailureKt'
+}
+
 task LambdaIt(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LambdaItKt'
@@ -683,6 +703,11 @@ task MultipleClassArgs(type: JavaExec) {
     main = 'MultipleClassArgsKt'
 }
 
+task MultipleExceptions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MultipleExceptionsKt'
+}
+
 task MultiplyByFour(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MultiplyByFourKt'
@@ -705,7 +730,7 @@ task MutableList(type: JavaExec) {
 
 task MutableListIsList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'MutableListIsListKt'
+    main = 'readonlyandmutable.MutableListIsListKt'
 }
 
 task MutableMaps(type: JavaExec) {
@@ -835,12 +860,17 @@ task Pairs(type: JavaExec) {
 
 task ParameterizedReturnTypes(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ParameterizedReturnTypesKt'
+    main = 'parameterizedtypes.ParameterizedReturnTypesKt'
 }
 
 task ParameterizedTypes(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ParameterizedTypesKt'
+    main = 'parameterizedtypes.ParameterizedTypesKt'
+}
+
+task Pets(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'hashing.PetsKt'
 }
 
 task PropertyInInterface(type: JavaExec) {
@@ -938,6 +968,11 @@ task Simple(type: JavaExec) {
     main = 'SimpleKt'
 }
 
+task SimpleHashing(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SimpleHashingKt'
+}
+
 task SimpleMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SimpleMapKt'
@@ -971,6 +1006,11 @@ task StrangeQuote(type: JavaExec) {
 task StringConcatenation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringConcatenationKt'
+}
+
+task StringHashCode(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringHashCodeKt'
 }
 
 task StringInvoke(type: JavaExec) {
@@ -1065,7 +1105,7 @@ task Truncation(type: JavaExec) {
 
 task Tuple(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'TupleKt'
+    main = 'destructuring.TupleKt'
 }
 
 task TwoArgLambda(type: JavaExec) {
@@ -1091,6 +1131,11 @@ task UnitReturn(type: JavaExec) {
 task UnitReturnType(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UnitReturnTypeKt'
+}
+
+task UnpredictableHashing(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UnpredictableHashingKt'
 }
 
 task UseALibrary(type: JavaExec) {
@@ -1222,9 +1267,8 @@ task run (dependsOn: [
     'Cup',
     'Cup2',
     'Data',
-    'DataClassAndHashCode',
+    'DataClassCopy',
     'DataClasses',
-    'DataClassesWithVars',
     'Default',
     'DefiningRanges',
     'Definition',
@@ -1241,6 +1285,7 @@ task run (dependsOn: [
     'DoWhileLoop',
     'Dog',
     'DuckForEach',
+    'EasyKeys',
     'ElvisCall',
     'ElvisOperator',
     'EmptyProgram',
@@ -1261,9 +1306,12 @@ task run (dependsOn: [
     'GreatApe',
     'GreatApe2',
     'GreatApe3',
+    'GuaranteedCleanup',
     'Hamster',
     'Hamsters',
+    'HashCodeFailure',
     'HelloWorld',
+    'HiddenArrayList',
     'If1',
     'If2',
     'If3',
@@ -1294,6 +1342,7 @@ task run (dependsOn: [
     'IterateOverString',
     'IterateThroughString',
     'IterationVsMembership',
+    'KeyFailure',
     'LambdaIt',
     'LambdaTypeInference',
     'Level',
@@ -1314,6 +1363,7 @@ task run (dependsOn: [
     'Molecule',
     'MoreReduce',
     'MultipleClassArgs',
+    'MultipleExceptions',
     'MultiplyByFour',
     'MultiplyByThree',
     'MultiplyByTwo',
@@ -1346,6 +1396,7 @@ task run (dependsOn: [
     'Pairs',
     'ParameterizedReturnTypes',
     'ParameterizedTypes',
+    'Pets',
     'PropertyInInterface',
     'Quote',
     'Quoting',
@@ -1365,6 +1416,7 @@ task run (dependsOn: [
     'SealedClasses',
     'Sets',
     'Simple',
+    'SimpleHashing',
     'SimpleMap',
     'SmartCasts',
     'SpreadOperator',
@@ -1372,6 +1424,7 @@ task run (dependsOn: [
     'StrTemplates',
     'StrangeQuote',
     'StringConcatenation',
+    'StringHashCode',
     'StringInvoke',
     'StringIsNullOr',
     'StringPlusNumber',
@@ -1396,6 +1449,7 @@ task run (dependsOn: [
     'Types',
     'UnitReturn',
     'UnitReturnType',
+    'UnpredictableHashing',
     'UseALibrary',
     'UsingAtomicTest',
     'UsingLongs',

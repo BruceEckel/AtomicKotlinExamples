@@ -14,8 +14,13 @@ private fun <L, R> equals(actual: L, expected: R) {
 }
 
 infix fun <T: Any> T.eq(value: String) {
-  println(this)
-  equals(value, this.toString())
+  val s = this.toString()
+  println(s)
+  if(s.compareTo(value) != 0) {
+    println("[Error]: \n[$s]\n!=\n[$value]")
+    // println(s.toList())
+    // println(value.toList())
+  }
 }
 
 infix fun <T> T.eq(value: T) {

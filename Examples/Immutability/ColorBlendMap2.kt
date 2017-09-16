@@ -1,5 +1,5 @@
-// MoreAboutWhen/ColorBlendMap2.kt
-package colorblendmap2
+// Immutability/ColorBlendMap2.kt
+package immutability
 import atomictest.eq
 import paintcolors.Color
 import paintcolors.Color.*
