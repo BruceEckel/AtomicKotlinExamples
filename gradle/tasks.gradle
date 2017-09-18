@@ -988,6 +988,11 @@ task SpreadOperator(type: JavaExec) {
     main = 'SpreadOperatorKt'
 }
 
+task StackTrace(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StackTraceKt'
+}
+
 task StateOfAClass(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StateOfAClassKt'
@@ -1420,6 +1425,7 @@ task run (dependsOn: [
     'SimpleMap',
     'SmartCasts',
     'SpreadOperator',
+    'StackTrace',
     'StateOfAClass',
     'StrTemplates',
     'StrangeQuote',

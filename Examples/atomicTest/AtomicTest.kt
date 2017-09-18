@@ -23,6 +23,16 @@ infix fun <T: Any> T.eq(value: String) {
   }
 }
 
+// Character equals: removes all whitespace
+infix fun <T: Any> T.ceq(rv: String) {
+  val rws = "\\s".toRegex()
+  val lval = this.toString().replace(rws, "")
+  val rval = rv.toString().replace(rws, "")
+  println(this.toString())
+  if(lval.compareTo(rval) != 0)
+    println("[Error]: \n[$lval]\n!=\n[$rval]")
+}
+
 infix fun <T> T.eq(value: T) {
   println(this)
   equals(value, this)
