@@ -298,6 +298,11 @@ task DivZero(type: JavaExec) {
     main = 'exceptions.DivZeroKt'
 }
 
+task DivZero2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DivZero2Kt'
+}
+
 task DoWhileLoop(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DoWhileLoopKt'
@@ -771,6 +776,11 @@ task NonNullAssert(type: JavaExec) {
 task NonNullAssertCall(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NonNullAssertCallKt'
+}
+
+task NullDereference(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NullDereferenceKt'
 }
 
 task NullInMaps(type: JavaExec) {
@@ -1287,6 +1297,7 @@ task run (dependsOn: [
     'DisplayListMap',
     'DisplayListWithLambda',
     'DivZero',
+    'DivZero2',
     'DoWhileLoop',
     'Dog',
     'DuckForEach',
@@ -1382,6 +1393,7 @@ task run (dependsOn: [
     'NamedCompanionObject',
     'NonNullAssert',
     'NonNullAssertCall',
+    'NullDereference',
     'NullInMaps',
     'NullableTypes',
     'Num',

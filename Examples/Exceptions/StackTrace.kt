@@ -8,8 +8,8 @@ fun main(args: Array<String>) {
   } catch(e: Exception) {
     val trace = StringWriter()
     e.printStackTrace(PrintWriter(trace))
-    trace.toString().trim() ceq
+    trace ceq
     """java.lang.Exception: StackTrace
-        at StackTraceKt.main(StackTrace.kt:7)"""
+    at StackTraceKt.main(StackTrace.kt:7)"""
   }
 }
