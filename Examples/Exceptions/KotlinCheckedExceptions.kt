@@ -1,7 +1,7 @@
 // Exceptions/KotlinCheckedExceptions.kt
 import java.io.*;
 
-fun main(args: Array<String>) {
+fun noChecked() {
   // FileNotFoundException:
   val source = FileInputStream(
     File("KotlinCheckedExceptions.kt"))

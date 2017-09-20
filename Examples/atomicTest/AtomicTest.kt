@@ -7,6 +7,7 @@ import atomictest.*
 */
 package atomictest
 import java.util.*
+import java.io.*
 
 private fun <L, R> equals(actual: L, expected: R) {
   if (actual != expected)
@@ -69,4 +70,21 @@ fun capture(f: () -> Unit): String =
 capture {
   // Code that fails
 } eq "FailureException"
+*/
+
+// Capture an exception and produce its name:
+fun stacktrace(f: () -> Unit): String =
+  try {
+    f()
+    "[Error]: Expected an exception"
+  } catch(e: Exception) {
+    val trace = StringWriter()
+    e.printStackTrace(PrintWriter(trace))
+    trace.toString()
+  }
+
+/* Usage:
+stacktrace {
+  // Code that fails
+} ceq "(stack trace)"
 */

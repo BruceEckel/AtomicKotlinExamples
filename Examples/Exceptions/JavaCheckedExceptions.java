@@ -8,12 +8,12 @@ public class JavaCheckedExceptions {
       source = new FileInputStream(new File(
         "JavaCheckedExceptions.java"));
     } catch(FileNotFoundException e) {
-      // Recover from error
+      // Recover from file-open error
     }
     try {
       int contents = source.read();
     } catch(IOException e) {
-      // Recover from error
+      // Recover from read() error
     }
     if(source != null) {
       try {

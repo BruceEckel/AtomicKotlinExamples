@@ -623,11 +623,6 @@ task KeyFailure(type: JavaExec) {
     main = 'KeyFailureKt'
 }
 
-task KotlinCheckedExceptions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'KotlinCheckedExceptionsKt'
-}
-
 task LambdaIt(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LambdaItKt'
@@ -968,6 +963,11 @@ task RepeatThreeTimes(type: JavaExec) {
     main = 'RepeatThreeTimesKt'
 }
 
+task ST(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'STKt'
+}
+
 task SafeCall(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SafeCallKt'
@@ -1016,11 +1016,6 @@ task SmartCasts(type: JavaExec) {
 task SpreadOperator(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SpreadOperatorKt'
-}
-
-task StackTrace(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'StackTraceKt'
 }
 
 task StateOfAClass(type: JavaExec) {
@@ -1387,7 +1382,6 @@ task run (dependsOn: [
     'IterateThroughString',
     'IterationVsMembership',
     'KeyFailure',
-    'KotlinCheckedExceptions',
     'LambdaIt',
     'LambdaTypeInference',
     'Level',
@@ -1456,6 +1450,7 @@ task run (dependsOn: [
     'RemoveDuplicates',
     'RemoveNulls',
     'RepeatThreeTimes',
+    'ST',
     'SafeCall',
     'SafeOperation',
     'SayHello',
@@ -1466,7 +1461,6 @@ task run (dependsOn: [
     'SimpleMap',
     'SmartCasts',
     'SpreadOperator',
-    'StackTrace',
     'StateOfAClass',
     'StrTemplates',
     'StrangeQuote',
