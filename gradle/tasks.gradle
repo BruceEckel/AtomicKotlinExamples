@@ -623,6 +623,11 @@ task KeyFailure(type: JavaExec) {
     main = 'KeyFailureKt'
 }
 
+task KotlinCheckedExceptions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'KotlinCheckedExceptionsKt'
+}
+
 task LambdaIt(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LambdaItKt'
@@ -1382,6 +1387,7 @@ task run (dependsOn: [
     'IterateThroughString',
     'IterationVsMembership',
     'KeyFailure',
+    'KotlinCheckedExceptions',
     'LambdaIt',
     'LambdaTypeInference',
     'Level',
