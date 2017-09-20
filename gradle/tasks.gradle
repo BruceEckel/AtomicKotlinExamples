@@ -198,6 +198,11 @@ task ContainsChar(type: JavaExec) {
     main = 'ContainsCharKt'
 }
 
+task ConversionFailure(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ConversionFailureKt'
+}
+
 task Cookie(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CookieKt'
@@ -341,6 +346,11 @@ task EmptyProgram(type: JavaExec) {
 task EnumImport(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EnumImportKt'
+}
+
+task ErrorReporting(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'toss.ErrorReportingKt'
 }
 
 task EvaluationOrder(type: JavaExec) {
@@ -551,6 +561,11 @@ task Inference(type: JavaExec) {
 task InitSection(type: JavaExec) {
     classpath kotlinClassPath
     main = 'constructors.InitSectionKt'
+}
+
+task InputCheck(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'InputCheckKt'
 }
 
 task IntDivisionTruncates(type: JavaExec) {
@@ -1118,6 +1133,11 @@ task Truncation(type: JavaExec) {
     main = 'TruncationKt'
 }
 
+task TryFinally(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TryFinallyKt'
+}
+
 task Tuple(type: JavaExec) {
     classpath kotlinClassPath
     main = 'destructuring.TupleKt'
@@ -1277,6 +1297,7 @@ task run (dependsOn: [
     'ComputationResult',
     'ContactMap',
     'ContainsChar',
+    'ConversionFailure',
     'Cookie',
     'CopyDataClass',
     'Cup',
@@ -1306,6 +1327,7 @@ task run (dependsOn: [
     'ElvisOperator',
     'EmptyProgram',
     'EnumImport',
+    'ErrorReporting',
     'EvaluationOrder',
     'ExplicitCheck',
     'ExplicitDelegation',
@@ -1348,6 +1370,7 @@ task run (dependsOn: [
     'InferInt',
     'Inference',
     'InitSection',
+    'InputCheck',
     'IntDivisionTruncates',
     'IntRange',
     'IntRanges',
@@ -1461,6 +1484,7 @@ task run (dependsOn: [
     'TripleQuotes',
     'TrueOrFalse',
     'Truncation',
+    'TryFinally',
     'Tuple',
     'TwoArgLambda',
     'TwoFunctionsWithVarargs',

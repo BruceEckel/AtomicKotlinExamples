@@ -2,7 +2,7 @@
 package exceptions
 import atomictest.*
 
-fun f(i:Int) =
+fun f(i: Int) =
   if(i == 0)
     throw IllegalArgumentException()
   else
