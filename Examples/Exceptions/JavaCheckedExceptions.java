@@ -15,12 +15,10 @@ public class JavaCheckedExceptions {
     } catch(IOException e) {
       // Recover from read() error
     }
-    if(source != null) {
-      try {
-        source.close();
-      } catch(IOException e) {
-        // Recover from close() error
-      }
+    try {
+      source.close();
+    } catch(IOException e) {
+      // Recover from close() error
     }
   }
 }

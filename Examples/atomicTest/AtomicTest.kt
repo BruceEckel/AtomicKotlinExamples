@@ -86,5 +86,8 @@ fun stacktrace(f: () -> Unit): String =
 /* Usage:
 stacktrace {
   // Code that fails
-} ceq "(stack trace)"
+} ceq
+"""
+(stack trace)
+"""
 */

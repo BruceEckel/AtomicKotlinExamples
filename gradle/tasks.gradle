@@ -348,11 +348,6 @@ task EnumImport(type: JavaExec) {
     main = 'EnumImportKt'
 }
 
-task ErrorReporting(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'toss.ErrorReportingKt'
-}
-
 task EvaluationOrder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EvaluationOrderKt'
@@ -1118,6 +1113,11 @@ task TicTacToe(type: JavaExec) {
     main = 'TicTacToeKt'
 }
 
+task Toss(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'toss.TossKt'
+}
+
 task TripleQuotes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TripleQuotesKt'
@@ -1327,7 +1327,6 @@ task run (dependsOn: [
     'ElvisOperator',
     'EmptyProgram',
     'EnumImport',
-    'ErrorReporting',
     'EvaluationOrder',
     'ExplicitCheck',
     'ExplicitDelegation',
@@ -1481,6 +1480,7 @@ task run (dependsOn: [
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
+    'Toss',
     'TripleQuotes',
     'TrueOrFalse',
     'Truncation',

@@ -1,4 +1,4 @@
-// Exceptions/ErrorReporting.kt
+// Exceptions/Toss.kt
 package toss
 import atomictest.*
 
