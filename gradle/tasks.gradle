@@ -908,6 +908,11 @@ task Quoting(type: JavaExec) {
     main = 'quoting.QuotingKt'
 }
 
+task Random(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RandomKt'
+}
+
 task RangeMembership(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RangeMembershipKt'
@@ -1439,6 +1444,7 @@ task run (dependsOn: [
     'PropertyInInterface',
     'Quote',
     'Quoting',
+    'Random',
     'RangeMembership',
     'RangeSum',
     'ReadOnlyMaps',

@@ -13,9 +13,9 @@ public class UsingDataClass {
     HashMap<Data, Integer> hm =
       new HashMap<>();
     hm.put(d, 47);
-    // Hashing works:
+    // Data objects work as hash keys:
     System.out.println(hm.get(d));
-    // Copy function from the data class:
+    // copy() function from the data class:
     Data d2 = d.copy("Sam", 24);
     System.out.println(d2);
   }
