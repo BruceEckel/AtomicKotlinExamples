@@ -1183,6 +1183,11 @@ task UseALibrary(type: JavaExec) {
     main = 'UseALibraryKt'
 }
 
+task UseBeanClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UseBeanClassKt'
+}
+
 task UsingAtomicTest(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingAtomicTestKt'
@@ -1499,6 +1504,7 @@ task run (dependsOn: [
     'UnitReturnType',
     'UnpredictableHashing',
     'UseALibrary',
+    'UseBeanClass',
     'UsingAtomicTest',
     'UsingLongs',
     'Vals',
