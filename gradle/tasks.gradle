@@ -908,11 +908,6 @@ task Quoting(type: JavaExec) {
     main = 'quoting.QuotingKt'
 }
 
-task Random(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'RandomKt'
-}
-
 task RangeMembership(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RangeMembershipKt'
@@ -1183,11 +1178,6 @@ task UseALibrary(type: JavaExec) {
     main = 'UseALibraryKt'
 }
 
-task UseBeanClass(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'UseBeanClassKt'
-}
-
 task UsingAtomicTest(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingAtomicTestKt'
@@ -1449,7 +1439,6 @@ task run (dependsOn: [
     'PropertyInInterface',
     'Quote',
     'Quoting',
-    'Random',
     'RangeMembership',
     'RangeSum',
     'ReadOnlyMaps',
@@ -1504,7 +1493,6 @@ task run (dependsOn: [
     'UnitReturnType',
     'UnpredictableHashing',
     'UseALibrary',
-    'UseBeanClass',
     'UsingAtomicTest',
     'UsingLongs',
     'Vals',

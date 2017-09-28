@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+@echo off& python -x %0".bat" %* &goto :eof
 from subprocess import call
 from pathlib import Path
 import sys, os
