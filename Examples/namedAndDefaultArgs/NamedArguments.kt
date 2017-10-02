@@ -2,7 +2,7 @@
 import atomictest.eq
 
 fun getColor(red: Int, green: Int, blue: Int) =
-    "($red, $green, $blue)"
+  "($red, $green, $blue)"
 
 fun main(args: Array<String>) {
   val yellow = "(255, 255, 0)"

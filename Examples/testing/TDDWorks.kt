@@ -1,6 +1,5 @@
 // Testing/TDDWorks.kt
 package testing3
-
 import atomictest.eq
 
 fun main(args: Array<String>) {

@@ -1,6 +1,7 @@
 // Summary1/IterateThroughString.kt
+
 fun main(args: Array<String>) {
-  for (c in "Kotlin") {
+  for(c in "Kotlin") {
     print("$c ")
     // c += 1 // error:
     // val cannot be reassigned

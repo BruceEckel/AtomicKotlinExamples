@@ -1,4 +1,5 @@
 // Summary1/ThreeQuotes.kt
+
 fun json(q: String, a: Int) = """{
     "question" : "$q",
     "answer" : $a

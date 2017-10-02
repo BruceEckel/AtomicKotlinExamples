@@ -48,6 +48,11 @@ task ArgumentOrder(type: JavaExec) {
     main = 'ArgumentOrderKt'
 }
 
+task AssertTrue(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AssertTrueKt'
+}
+
 task AssigningAnIf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AssigningAnIfKt'
@@ -1267,6 +1272,7 @@ task run (dependsOn: [
     'Animals',
     'AnonymousFunction',
     'ArgumentOrder',
+    'AssertTrue',
     'AssigningAnIf',
     'AuxiliaryInitialization',
     'BMI',

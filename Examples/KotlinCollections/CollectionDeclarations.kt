@@ -1,4 +1,4 @@
-// KotlinCollectionsAndJava/CollectionDeclarations.kt
+// KotlinCollections/CollectionDeclarations.kt
 // TODO replace with picture?
 
 interface Collection<E>

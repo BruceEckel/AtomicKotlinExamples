@@ -1,6 +1,5 @@
 // Testing/TDDFail.kt
 package testing1
-
 import atomictest.eq
 
 fun main(args: Array<String>) {

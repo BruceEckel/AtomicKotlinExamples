@@ -1,4 +1,5 @@
 // Summary2/ClassBodies.kt
+
 class NoBody
 
 class SomeBody {
@@ -7,7 +8,7 @@ class SomeBody {
 
 class EveryBody {
   val all = listOf(SomeBody(),
-      SomeBody(), SomeBody())
+    SomeBody(), SomeBody())
 }
 
 fun main(args: Array<String>) {
