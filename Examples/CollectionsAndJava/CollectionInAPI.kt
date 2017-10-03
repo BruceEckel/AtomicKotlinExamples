@@ -1,4 +1,4 @@
-// KotlinCollections/CollectionInAPI.kt
+// CollectionsAndJava/CollectionInAPI.kt
 package kotlincollections
 
 data class Animal(val name: String)

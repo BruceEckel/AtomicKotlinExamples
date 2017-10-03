@@ -188,6 +188,11 @@ task CompanionObject(type: JavaExec) {
     main = 'CompanionObjectKt'
 }
 
+task CompareTo(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'usingoperators.CompareToKt'
+}
+
 task ComputationResult(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ComputationResultKt'
@@ -271,6 +276,16 @@ task Dereference(type: JavaExec) {
 task DereferenceNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DereferenceNullKt'
+}
+
+task DestructuringData(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'usingoperators.DestructuringDataKt'
+}
+
+task DestructuringDuo(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DestructuringDuoKt'
 }
 
 task DifferentReferencesToList(type: JavaExec) {
@@ -501,6 +516,11 @@ task IfExpression(type: JavaExec) {
 task IfResult(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IfResultKt'
+}
+
+task ImmutableAndPlus(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ImmutableAndPlusKt'
 }
 
 task ImportClass(type: JavaExec) {
@@ -783,6 +803,11 @@ task NamedCompanionObject(type: JavaExec) {
     main = 'NamedCompanionObjectKt'
 }
 
+task NewAngle(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NewAngleKt'
+}
+
 task NonNullAssert(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NonNullAssertKt'
@@ -856,6 +881,11 @@ task ObserveAnimals(type: JavaExec) {
 task OneOrTheOther(type: JavaExec) {
     classpath kotlinClassPath
     main = 'OneOrTheOtherKt'
+}
+
+task OperatorPlus(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'OperatorPlusKt'
 }
 
 task Overflow(type: JavaExec) {
@@ -1163,6 +1193,11 @@ task Types(type: JavaExec) {
     main = 'TypesKt'
 }
 
+task Unexpected(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UnexpectedKt'
+}
+
 task UnitReturn(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UnitReturnKt'
@@ -1300,6 +1335,7 @@ task run (dependsOn: [
     'ColorBlendTest',
     'CompanionFactory',
     'CompanionObject',
+    'CompareTo',
     'ComputationResult',
     'ContactMap',
     'ContainsChar',
@@ -1317,6 +1353,8 @@ task run (dependsOn: [
     'DelegatedControls',
     'Dereference',
     'DereferenceNull',
+    'DestructuringData',
+    'DestructuringDuo',
     'DifferentReferencesToList',
     'DisplayDuck',
     'DisplayList',
@@ -1363,6 +1401,7 @@ task run (dependsOn: [
     'If6',
     'IfExpression',
     'IfResult',
+    'ImmutableAndPlus',
     'ImportClass',
     'ImportEverything',
     'ImportLevel',
@@ -1419,6 +1458,7 @@ task run (dependsOn: [
     'NamedAndDefaultArgs',
     'NamedArguments',
     'NamedCompanionObject',
+    'NewAngle',
     'NonNullAssert',
     'NonNullAssertCall',
     'NullDereference',
@@ -1434,6 +1474,7 @@ task run (dependsOn: [
     'ObjectProperty',
     'ObserveAnimals',
     'OneOrTheOther',
+    'OperatorPlus',
     'Overflow',
     'Overloading',
     'OverloadingAdd',
@@ -1495,6 +1536,7 @@ task run (dependsOn: [
     'TwoArgLambda',
     'TwoFunctionsWithVarargs',
     'Types',
+    'Unexpected',
     'UnitReturn',
     'UnitReturnType',
     'UnpredictableHashing',

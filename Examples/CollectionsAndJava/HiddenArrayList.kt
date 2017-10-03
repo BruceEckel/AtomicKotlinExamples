@@ -1,4 +1,4 @@
-// KotlinCollections/HiddenArrayList.kt
+// CollectionsAndJava/HiddenArrayList.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {
