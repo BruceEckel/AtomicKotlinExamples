@@ -1,19 +1,16 @@
 // NamedAndDefaultArgs/NamedAndDefaultArgs.kt
 import atomictest.eq
 
-fun getColor1(
+fun getColor(
   red: Int = 0,
   green: Int = 0,
   blue: Int = 0
 ) = "($red, $green, $blue)"
 
 fun main(args: Array<String>) {
-  val darkRed = "(139, 0, 0)"
-  val darkBlue = "(0, 0, 139)"
-  val orange = "(255, 165, 0)"
-  val purple = "(128, 0, 128)"
-  getColor1(139) eq darkRed
-  getColor1(blue = 139) eq darkBlue
-  getColor1(255, 165) eq orange
-  getColor1(red = 128, blue = 128) eq purple
+  getColor(139) eq "(139, 0, 0)"
+  getColor(blue = 139) eq "(0, 0, 139)"
+  getColor(255, 165) eq "(255, 165, 0)"
+  getColor(red = 128, blue = 128) eq
+    "(128, 0, 128)"
 }

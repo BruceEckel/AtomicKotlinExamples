@@ -78,6 +78,11 @@ task BasicFunctions(type: JavaExec) {
     main = 'BasicFunctionsKt'
 }
 
+task BetterSuitcase(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BetterSuitcaseKt'
+}
+
 task BetterSurrey(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BetterSurreyKt'
@@ -293,6 +298,11 @@ task DifferentReferencesToList(type: JavaExec) {
     main = 'readonlyandmutable.DifferentReferencesToListKt'
 }
 
+task DifferentWaysOfCreation(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lazyproperties.DifferentWaysOfCreationKt'
+}
+
 task DisplayDuck(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DisplayDuckKt'
@@ -391,6 +401,11 @@ task ExpressionInStringTemplate(type: JavaExec) {
 task FantasyGame(type: JavaExec) {
     classpath kotlinClassPath
     main = 'polymorphism.FantasyGameKt'
+}
+
+task FaultySuitcase(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FaultySuitcaseKt'
 }
 
 task FloatingPointRange(type: JavaExec) {
@@ -651,6 +666,11 @@ task LambdaIt(type: JavaExec) {
 task LambdaTypeInference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LambdaTypeInferenceKt'
+}
+
+task LazyImpl(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LazyImplKt'
 }
 
 task Level(type: JavaExec) {
@@ -1098,6 +1118,11 @@ task StringTemplates(type: JavaExec) {
     main = 'StringTemplatesKt'
 }
 
+task Suitcase(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SuitcaseKt'
+}
+
 task SumUsingRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SumUsingRangeKt'
@@ -1126,6 +1151,16 @@ task TDDStillFails(type: JavaExec) {
 task TDDWorks(type: JavaExec) {
     classpath kotlinClassPath
     main = 'testing3.TDDWorksKt'
+}
+
+task Team(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TeamKt'
+}
+
+task TeamWithTraditions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TeamWithTraditionsKt'
 }
 
 task Temperature(type: JavaExec) {
@@ -1211,6 +1246,11 @@ task UnitReturnType(type: JavaExec) {
 task UnpredictableHashing(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UnpredictableHashingKt'
+}
+
+task UnusedProperty(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UnusedPropertyKt'
 }
 
 task UseALibrary(type: JavaExec) {
@@ -1313,6 +1353,7 @@ task run (dependsOn: [
     'BMI',
     'Backticks',
     'BasicFunctions',
+    'BetterSuitcase',
     'BetterSurrey',
     'Bicycle',
     'BiggestLong',
@@ -1356,6 +1397,7 @@ task run (dependsOn: [
     'DestructuringData',
     'DestructuringDuo',
     'DifferentReferencesToList',
+    'DifferentWaysOfCreation',
     'DisplayDuck',
     'DisplayList',
     'DisplayListBlemish',
@@ -1376,6 +1418,7 @@ task run (dependsOn: [
     'ExplicitDelegation',
     'ExpressionInStringTemplate',
     'FantasyGame',
+    'FaultySuitcase',
     'FloatingPointRange',
     'ForLoop',
     'ForLoopIsAStatement',
@@ -1428,6 +1471,7 @@ task run (dependsOn: [
     'KeyFailure',
     'LambdaIt',
     'LambdaTypeInference',
+    'LazyImpl',
     'Level',
     'ListCollection',
     'ListOf',
@@ -1517,12 +1561,15 @@ task run (dependsOn: [
     'StringPlusNumber',
     'StringRange',
     'StringTemplates',
+    'Suitcase',
     'SumUsingRange',
     'Surrey',
     'Swearing',
     'TDDFail',
     'TDDStillFails',
     'TDDWorks',
+    'Team',
+    'TeamWithTraditions',
     'Temperature',
     'TestingExample',
     'ThreeQuotes',
@@ -1540,6 +1587,7 @@ task run (dependsOn: [
     'UnitReturn',
     'UnitReturnType',
     'UnpredictableHashing',
+    'UnusedProperty',
     'UseALibrary',
     'UsingAtomicTest',
     'UsingLongs',
