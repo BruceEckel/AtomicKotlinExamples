@@ -1,4 +1,4 @@
-// CollectionsAndJava/CollectionInAPI.kt
+// CollectionsAndJava/ImmutableByDefault.kt
 package kotlincollections
 
 data class Animal(val name: String)
@@ -9,7 +9,6 @@ interface Zoo {
 
 fun visitZoo(zoo: Zoo) {
   val animals = zoo.viewAnimals()
-
-  // Produces compile-time error:
-  // animals.add(Animal("my grumpy cat"))
+  // Compile-time error:
+  // animals.add(Animal("Grumpy Cat"))
 }

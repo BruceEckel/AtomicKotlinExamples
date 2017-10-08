@@ -783,6 +783,11 @@ task MultiplyByTwo(type: JavaExec) {
     main = 'MultiplyByTwoKt'
 }
 
+task MutableCollections(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MutableCollectionsKt'
+}
+
 task MutableList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MutableListKt'
@@ -1494,6 +1499,7 @@ task run (dependsOn: [
     'MultiplyByFour',
     'MultiplyByThree',
     'MultiplyByTwo',
+    'MutableCollections',
     'MutableList',
     'MutableListIsList',
     'MutableMaps',

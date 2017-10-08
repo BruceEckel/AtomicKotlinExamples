@@ -1,4 +1,5 @@
 // CollectionsAndJava/Declarations.kt
+package kotlincollections
 
 interface Collection<E>
 interface List<E>: Collection<E>
