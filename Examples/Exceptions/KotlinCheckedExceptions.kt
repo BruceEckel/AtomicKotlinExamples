@@ -1,4 +1,6 @@
 // Exceptions/KotlinCheckedExceptions.kt
+package Exceptions;
+
 import java.io.*;
 
 fun noChecked() {

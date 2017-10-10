@@ -1,5 +1,5 @@
 // FromJava/UsingKotlinClass.java
-import fromjava.*;
+package FromJava;
 
 public class UsingKotlinClass {
   public static void main(String[] args) {

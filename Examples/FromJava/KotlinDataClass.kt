@@ -1,4 +1,4 @@
 // FromJava/KotlinDataClass.kt
-package fromjava
+package FromJava
 
 data class Data(var name: String, var age: Int)

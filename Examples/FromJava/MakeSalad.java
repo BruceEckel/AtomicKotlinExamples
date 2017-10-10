@@ -1,5 +1,5 @@
 // FromJava/MakeSalad.java
-import fromjava.*;
+package FromJava;
 
 public class MakeSalad {
   public static void main(String[] args) {

@@ -1,6 +1,8 @@
 // FromJava/UsingDataClass.java
+package FromJava;
+
 import java.util.HashMap;
-import fromjava.*;
+import FromJava.*;
 
 public class UsingDataClass {
   public static void main(String[] args) {

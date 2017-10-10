@@ -1,5 +1,5 @@
 // FromJava/CallTopLevelFunction.java
-import fromjava.*;
+package FromJava;
 
 public class CallTopLevelFunction {
   public static void main(String[] args) {

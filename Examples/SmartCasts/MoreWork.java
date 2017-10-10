@@ -1,4 +1,5 @@
 // SmartCasts/MoreWork.java
+package SmartCasts;
 
 class Dog {
   public String bark() { return "yip!"; }

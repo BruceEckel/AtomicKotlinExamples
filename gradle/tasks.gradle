@@ -310,7 +310,7 @@ task DisplayDuck(type: JavaExec) {
 
 task DisplayList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'DisplayListKt'
+    main = 'FromKotlin.DisplayListKt'
 }
 
 task DisplayListBlemish(type: JavaExec) {
@@ -321,11 +321,6 @@ task DisplayListBlemish(type: JavaExec) {
 task DisplayListMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DisplayListMapKt'
-}
-
-task DisplayListWithLambda(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DisplayListWithLambdaKt'
 }
 
 task DivZero(type: JavaExec) {
@@ -383,6 +378,11 @@ task EvaluationOrder(type: JavaExec) {
     main = 'EvaluationOrderKt'
 }
 
+task Even(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'EvenKt'
+}
+
 task ExplicitCheck(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExplicitCheckKt'
@@ -406,6 +406,11 @@ task FantasyGame(type: JavaExec) {
 task FaultySuitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FaultySuitcaseKt'
+}
+
+task Filter(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FilterKt'
 }
 
 task FloatingPointRange(type: JavaExec) {
@@ -436,6 +441,16 @@ task ForWithRanges(type: JavaExec) {
 task FormatLambda(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FormatLambdaKt'
+}
+
+task FormatList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FormatListKt'
+}
+
+task FormatListWithLambda(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FormatListWithLambdaKt'
 }
 
 task FullyQualify(type: JavaExec) {
@@ -653,6 +668,11 @@ task IterationVsMembership(type: JavaExec) {
     main = 'IterationVsMembershipKt'
 }
 
+task JavaList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'JavaListKt'
+}
+
 task KeyFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'KeyFailureKt'
@@ -758,6 +778,11 @@ task MoreReduce(type: JavaExec) {
     main = 'MoreReduceKt'
 }
 
+task MoreThan2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MoreThan2Kt'
+}
+
 task MultipleClassArgs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MultipleClassArgsKt'
@@ -781,11 +806,6 @@ task MultiplyByThree(type: JavaExec) {
 task MultiplyByTwo(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MultiplyByTwoKt'
-}
-
-task MutableCollections(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'MutableCollectionsKt'
 }
 
 task MutableList(type: JavaExec) {
@@ -968,6 +988,11 @@ task Quoting(type: JavaExec) {
     main = 'quoting.QuotingKt'
 }
 
+task Random(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RandomKt'
+}
+
 task RangeMembership(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RangeMembershipKt'
@@ -976,6 +1001,11 @@ task RangeMembership(type: JavaExec) {
 task RangeSum(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RangeSumKt'
+}
+
+task ReadOnlyCollections(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReadOnlyCollectionsKt'
 }
 
 task ReadOnlyMaps(type: JavaExec) {
@@ -1076,6 +1106,11 @@ task SpreadOperator(type: JavaExec) {
 task StateOfAClass(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StateOfAClassKt'
+}
+
+task StoringLambdaInVariable(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StoringLambdaInVariableKt'
 }
 
 task StrTemplates(type: JavaExec) {
@@ -1263,6 +1298,11 @@ task UseALibrary(type: JavaExec) {
     main = 'UseALibraryKt'
 }
 
+task UseBeanClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UseBeanClassKt'
+}
+
 task UsingAtomicTest(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingAtomicTestKt'
@@ -1407,7 +1447,6 @@ task run (dependsOn: [
     'DisplayList',
     'DisplayListBlemish',
     'DisplayListMap',
-    'DisplayListWithLambda',
     'DivZero',
     'DivZero2',
     'DoWhileLoop',
@@ -1419,17 +1458,21 @@ task run (dependsOn: [
     'EmptyProgram',
     'EnumImport',
     'EvaluationOrder',
+    'Even',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExpressionInStringTemplate',
     'FantasyGame',
     'FaultySuitcase',
+    'Filter',
     'FloatingPointRange',
     'ForLoop',
     'ForLoopIsAStatement',
     'ForWithCharRange',
     'ForWithRanges',
     'FormatLambda',
+    'FormatList',
+    'FormatListWithLambda',
     'FullyQualify',
     'GardenGnome',
     'GreatApe',
@@ -1473,6 +1516,7 @@ task run (dependsOn: [
     'IterateOverString',
     'IterateThroughString',
     'IterationVsMembership',
+    'JavaList',
     'KeyFailure',
     'LambdaIt',
     'LambdaTypeInference',
@@ -1494,12 +1538,12 @@ task run (dependsOn: [
     'Modulus',
     'Molecule',
     'MoreReduce',
+    'MoreThan2',
     'MultipleClassArgs',
     'MultipleExceptions',
     'MultiplyByFour',
     'MultiplyByThree',
     'MultiplyByTwo',
-    'MutableCollections',
     'MutableList',
     'MutableListIsList',
     'MutableMaps',
@@ -1536,8 +1580,10 @@ task run (dependsOn: [
     'PropertyInInterface',
     'Quote',
     'Quoting',
+    'Random',
     'RangeMembership',
     'RangeSum',
+    'ReadOnlyCollections',
     'ReadOnlyMaps',
     'RecursiveEnumImport',
     'Reduce',
@@ -1558,6 +1604,7 @@ task run (dependsOn: [
     'SmartCasts',
     'SpreadOperator',
     'StateOfAClass',
+    'StoringLambdaInVariable',
     'StrTemplates',
     'StrangeQuote',
     'StringConcatenation',
@@ -1595,6 +1642,7 @@ task run (dependsOn: [
     'UnpredictableHashing',
     'UnusedProperty',
     'UseALibrary',
+    'UseBeanClass',
     'UsingAtomicTest',
     'UsingLongs',
     'Vals',

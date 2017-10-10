@@ -1,4 +1,4 @@
-// Lambdas/DisplayListWithLambda.kt
+// Lambdas/FormatListWithLambda.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {
