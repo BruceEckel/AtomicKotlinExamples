@@ -9,6 +9,8 @@ fun format(n: Int) {
 
 fun main(args: Array<String>) {
   val a = listOf(1, 2, 3, 4)
-  a.forEach(::format)          // [1]
-  s eq "[1][2][3][4]"
+  val operation = ::format     // [1]
+  a.forEach(operation)
+  a.forEach(::format)
+  s eq "[1][2][3][4][1][2][3][4]"
 }
