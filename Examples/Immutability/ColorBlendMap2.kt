@@ -1,16 +1,25 @@
 // Immutability/ColorBlendMap2.kt
 package immutability
-import atomictest.eq
 import paintcolors.Color
 import paintcolors.Color.*
 
+/* Original (mutable) version:
+private fun createBlendMap():
+  Map<Pair<Color, Color>, Color> {
+  val result =
+    mutableMapOf<Pair<Color, Color>, Color>()
+  for(a in Color.values())
+    for(b in Color.values())
+      result[a to b] = colorblend.blend(a, b)
+  return result
+}
+*/
+
 val blendMap = Color.values().flatMap {
-  first -> Color.values().map {
-    second -> first to second
-    }
-  }.map {
-    it to colorblend.blend(it.first, it.second)
-  }.toMap()
+  a -> Color.values().map { b -> a to b }
+}.map {
+  it to colorblend.blend(it.first, it.second)
+}.toMap()
 
 fun blend2(a: Color, b: Color) =
   blendMap[a to b]

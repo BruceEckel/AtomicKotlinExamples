@@ -1373,6 +1373,11 @@ task WhileLoop(type: JavaExec) {
     main = 'WhileLoopKt'
 }
 
+task WhyFlatMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'immutability.WhyFlatMapKt'
+}
+
 task WithDefaultArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'WithDefaultArgumentsKt'
@@ -1667,6 +1672,7 @@ task run (dependsOn: [
     'WhenAndSmartCasts',
     'WhenExpressions',
     'WhileLoop',
+    'WhyFlatMap',
     'WithDefaultArguments',
     'WithoutDefaultArguments',
     'ZipMap',
