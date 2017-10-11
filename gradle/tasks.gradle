@@ -293,6 +293,11 @@ task DestructuringDuo(type: JavaExec) {
     main = 'DestructuringDuoKt'
 }
 
+task DestructuringMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'usingoperators.DestructuringMapKt'
+}
+
 task DifferentReferencesToList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'readonlyandmutable.DifferentReferencesToListKt'
@@ -1446,6 +1451,7 @@ task run (dependsOn: [
     'DereferenceNull',
     'DestructuringData',
     'DestructuringDuo',
+    'DestructuringMap',
     'DifferentReferencesToList',
     'DifferentWaysOfCreation',
     'DisplayDuck',

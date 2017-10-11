@@ -1,8 +1,10 @@
 // UsingOperators/DestructuringData.kt
 package usingoperators
+import atomictest.eq
 
-data class Person(val name: String, val age: Int) {
-  // This generates:
+data class
+Person(val name: String, val age: Int) {
+  // Compiler generates:
   // fun component1() = name
   // fun component2() = age
 }
@@ -10,7 +12,11 @@ data class Person(val name: String, val age: Int) {
 fun main(args: Array<String>) {
   val person = Person("Alice", 29)
   val (name, age) = person
-  // Under the hood is compiled to:
-  // val name = person.component1()
-  // val age = person.component2()
+  // Destructuring assignment compiles to:
+  val namex = person.component1()
+  val agex = person.component2()
+  name eq "Alice"
+  age eq 29
+  namex eq "Alice"
+  agex eq 29
 }
