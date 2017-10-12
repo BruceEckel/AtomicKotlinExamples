@@ -283,6 +283,11 @@ task DereferenceNull(type: JavaExec) {
     main = 'DereferenceNullKt'
 }
 
+task Describe(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DescribeKt'
+}
+
 task DestructuringData(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.DestructuringDataKt'
@@ -1110,7 +1115,7 @@ task SimpleMap(type: JavaExec) {
 
 task SmartCasts(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartcasts.SmartCastsKt'
+    main = 'smartcastsinkotlin.SmartCastsKt'
 }
 
 task SpreadOperator(type: JavaExec) {
@@ -1360,7 +1365,7 @@ task VisibleClassArgs(type: JavaExec) {
 
 task WhenAndSmartCasts(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartcasts.WhenAndSmartCastsKt'
+    main = 'smartcastsinkotlin.WhenAndSmartCastsKt'
 }
 
 task WhenExpressions(type: JavaExec) {
@@ -1454,6 +1459,7 @@ task run (dependsOn: [
     'DelegatedControls',
     'Dereference',
     'DereferenceNull',
+    'Describe',
     'DestructuringData',
     'DestructuringDuo',
     'DestructuringMap',

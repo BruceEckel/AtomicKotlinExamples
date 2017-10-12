@@ -1,5 +1,5 @@
 // FromJava/ChangeName.kt
 @file:JvmName("Utils")
-package FromJava
+package mypackage
 
 fun salad() = "Lettuce!"

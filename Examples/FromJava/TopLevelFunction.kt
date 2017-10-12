@@ -1,4 +1,4 @@
 // FromJava/TopLevelFunction.kt
-package FromJava
+package mypackage
 
 fun hi() = "Hello!"

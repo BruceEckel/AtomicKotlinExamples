@@ -1,5 +1,5 @@
 // FromJava/KotlinClass.kt
-package FromJava
+package mypackage
 
 class Basic {
   var property1 = 1

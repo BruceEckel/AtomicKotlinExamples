@@ -1,8 +1,6 @@
 // FromJava/UsingDataClass.java
 package FromJava;
-
 import java.util.HashMap;
-import FromJava.*;
 
 public class UsingDataClass {
   public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class UsingDataClass {
     hm.put(d, 47);
     // Data objects work as hash keys:
     System.out.println(hm.get(d));
-    // copy() function from the data class:
+    // copy() function from the Data class:
     Data d2 = d.copy("Sam", 24);
     System.out.println(d2);
   }
