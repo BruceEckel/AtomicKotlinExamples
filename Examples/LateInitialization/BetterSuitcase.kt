@@ -1,19 +1,19 @@
-// LateInitializedProperties/Suitcase.kt
+// LateInitialization/BetterSuitcase.kt
 import atomictest.eq
 
-class Suitcase : Bag {
-  private var items: String? = null
-  
+class BetterSuitcase : Bag {
+  lateinit var items: String
+
   override fun setUp() {
     items = "socks, jacket, laptop"
   }
 
   fun checkSocks(): Boolean =
-    items?.contains("socks") ?: false
+    items.contains("socks")
 }
 
 fun main(args: Array<String>) {
-  val suitcase = Suitcase()
+  val suitcase = BetterSuitcase()
   suitcase.setUp()
   suitcase.checkSocks() eq true
 }

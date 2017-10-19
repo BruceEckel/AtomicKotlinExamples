@@ -1,4 +1,4 @@
-// LazyProperties/UnusedProperty.kt
+// LazyInitialization/UnusedProperty.kt
 val lazyString: String by lazy {
     println("computation...")
     "result"

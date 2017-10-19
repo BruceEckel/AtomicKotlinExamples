@@ -1,4 +1,4 @@
-// DelegatedProperties/TeamWithTraditions.kt
+// PropertyDelegation/TeamWithTraditions.kt
 import atomictest.eq
 import kotlin.properties.Delegates
 

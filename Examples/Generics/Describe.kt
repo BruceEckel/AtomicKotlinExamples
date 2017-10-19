@@ -1,6 +1,6 @@
 // Generics/Describe.kt
 
-fun describe(x: Any) =
+fun <T: Any> describe(x: T) =
   println(x::class.simpleName)
 
 fun main(args: Array<String>) {

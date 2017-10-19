@@ -1,4 +1,4 @@
-// DelegatedProperties/Team.kt
+// PropertyDelegation/Team.kt
 import kotlin.properties.Delegates
 
 class Team {

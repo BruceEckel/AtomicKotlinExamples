@@ -1,10 +1,10 @@
-// LateInitializedProperties/FaultySuitcase.kt
+// LateInitialization/FaultySuitcase.kt
 import atomictest.eq
 import atomictest.capture
 
 class FaultySuitcase : Bag {
     lateinit var items: String
-    
+
     override fun setUp() {
     }
 

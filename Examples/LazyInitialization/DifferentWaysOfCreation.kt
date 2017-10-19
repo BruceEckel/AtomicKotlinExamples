@@ -1,5 +1,5 @@
-// LazyProperties/DifferentWaysOfCreation.kt
-package lazyproperties
+// LazyInitialization/DifferentWaysOfCreation.kt
+package LazyInitialization
 
 fun compute(i: Int): Int {
   println("Computation of $i")
@@ -8,9 +8,9 @@ fun compute(i: Int): Int {
 
 class A {
   val first = compute(1)
-  val second 
+  val second
     get() = compute(2)
-  val third by lazy { compute(3) } 
+  val third by lazy { compute(3) }
 }
 
 fun main(args: Array<String>) {

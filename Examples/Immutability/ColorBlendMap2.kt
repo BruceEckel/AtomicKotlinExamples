@@ -15,10 +15,15 @@ private fun createBlendMap():
 }
 */
 
-val blendMap = Color.values().flatMap {
+fun blendPair(p: Pair<Color, Color>) =
+  p to colorblend.blend(p.first, p.second)
+
+val combinations = Color.values().flatMap {
   a -> Color.values().map { b -> a to b }
-}.map {
-  it to colorblend.blend(it.first, it.second)
+}
+
+val blendMap = combinations.map {
+  blendPair(it)
 }.toMap()
 
 fun blend2(a: Color, b: Color) =

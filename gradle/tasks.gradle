@@ -310,7 +310,7 @@ task DifferentReferencesToList(type: JavaExec) {
 
 task DifferentWaysOfCreation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lazyproperties.DifferentWaysOfCreationKt'
+    main = 'LazyInitialization.DifferentWaysOfCreationKt'
 }
 
 task DisplayDuck(type: JavaExec) {
@@ -1238,6 +1238,11 @@ task TicTacToe(type: JavaExec) {
     main = 'TicTacToeKt'
 }
 
+task ToString(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ToStringKt'
+}
+
 task Toss(type: JavaExec) {
     classpath kotlinClassPath
     main = 'toss.TossKt'
@@ -1650,6 +1655,7 @@ task run (dependsOn: [
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
+    'ToString',
     'Toss',
     'TripleQuotes',
     'TrueOrFalse',
