@@ -3,11 +3,9 @@ import atomictest.eq
 
 class BetterSuitcase : Bag {
   lateinit var items: String
-
   override fun setUp() {
     items = "socks, jacket, laptop"
   }
-
   fun checkSocks(): Boolean =
     items.contains("socks")
 }

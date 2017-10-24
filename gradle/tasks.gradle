@@ -308,11 +308,6 @@ task DifferentReferencesToList(type: JavaExec) {
     main = 'readonlyandmutable.DifferentReferencesToListKt'
 }
 
-task DifferentWaysOfCreation(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'LazyInitialization.DifferentWaysOfCreationKt'
-}
-
 task DisplayDuck(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DisplayDuckKt'
@@ -718,6 +713,11 @@ task LazyImpl(type: JavaExec) {
     main = 'LazyImplKt'
 }
 
+task LazySyntax(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LazyInitialization.LazySyntaxKt'
+}
+
 task Level(type: JavaExec) {
     classpath kotlinClassPath
     main = 'enumerations.LevelKt'
@@ -996,6 +996,11 @@ task Pets(type: JavaExec) {
 task PropertyInInterface(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces.PropertyInInterfaceKt'
+}
+
+task PropertyOptions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LazyInitialization.PropertyOptionsKt'
 }
 
 task Quote(type: JavaExec) {
@@ -1308,11 +1313,6 @@ task UnpredictableHashing(type: JavaExec) {
     main = 'UnpredictableHashingKt'
 }
 
-task UnusedProperty(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'UnusedPropertyKt'
-}
-
 task UseALibrary(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UseALibraryKt'
@@ -1469,7 +1469,6 @@ task run (dependsOn: [
     'DestructuringDuo',
     'DestructuringMap',
     'DifferentReferencesToList',
-    'DifferentWaysOfCreation',
     'DisplayDuck',
     'DisplayList',
     'DisplayListBlemish',
@@ -1551,6 +1550,7 @@ task run (dependsOn: [
     'LambdaReference',
     'LambdaTypeInference',
     'LazyImpl',
+    'LazySyntax',
     'Level',
     'ListCollection',
     'ListOf',
@@ -1607,6 +1607,7 @@ task run (dependsOn: [
     'ParameterizedTypes',
     'Pets',
     'PropertyInInterface',
+    'PropertyOptions',
     'Quote',
     'Quoting',
     'Random',
@@ -1669,7 +1670,6 @@ task run (dependsOn: [
     'UnitReturn',
     'UnitReturnType',
     'UnpredictableHashing',
-    'UnusedProperty',
     'UseALibrary',
     'UseBeanClass',
     'UsingAtomicTest',

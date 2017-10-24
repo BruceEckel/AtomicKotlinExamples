@@ -3,13 +3,11 @@ import atomictest.eq
 import atomictest.capture
 
 class FaultySuitcase : Bag {
-    lateinit var items: String
-
-    override fun setUp() {
-    }
-
-    fun checkSocks(): Boolean =
-        items.contains("socks")
+  lateinit var items: String
+  override fun setUp() {
+  }
+  fun checkSocks(): Boolean =
+    items.contains("socks")
 }
 
 fun main(args: Array<String>) {

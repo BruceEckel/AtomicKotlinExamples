@@ -15,12 +15,11 @@ private fun <L, R> equals(actual: L, expected: R) {
 }
 
 infix fun <T: Any> T.eq(value: String) {
-  val s = this.toString()
-  println(s)
-  if(s.compareTo(value) != 0) {
-    println("[Error]: \n[$s]\n!=\n[$value]")
-    // println(s.toList())
-    // println(value.toList())
+  val lval = this.toString().trim()
+  val rval = value.trim()
+  println(lval)
+  if(lval.compareTo(rval.trim()) != 0) {
+    println("[Error]: \n[$lval]\n!=\n[$rval]")
   }
 }
 
@@ -91,3 +90,10 @@ stacktrace {
 (stack trace)
 """
 */
+
+object trace {
+  var result = ""
+  operator fun invoke(msg: Any) {
+    result += msg.toString() + "\n"
+  }
+}
