@@ -708,9 +708,9 @@ task LambdaTypeInference(type: JavaExec) {
     main = 'LambdaTypeInferenceKt'
 }
 
-task LazyImpl(type: JavaExec) {
+task LazyInt(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'LazyImplKt'
+    main = 'LazyIntKt'
 }
 
 task LazySyntax(type: JavaExec) {
@@ -1549,7 +1549,7 @@ task run (dependsOn: [
     'LambdaIt',
     'LambdaReference',
     'LambdaTypeInference',
-    'LazyImpl',
+    'LazyInt',
     'LazySyntax',
     'Level',
     'ListCollection',
