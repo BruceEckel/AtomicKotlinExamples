@@ -413,6 +413,11 @@ task FaultySuitcase(type: JavaExec) {
     main = 'FaultySuitcaseKt'
 }
 
+task FibonacciProperty(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.FibonacciPropertyKt'
+}
+
 task Filter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FilterKt'
@@ -871,6 +876,11 @@ task NamedCompanionObject(type: JavaExec) {
 task NewAngle(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NewAngleKt'
+}
+
+task NickName(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.NickNameKt'
 }
 
 task NonNullAssert(type: JavaExec) {
@@ -1490,6 +1500,7 @@ task run (dependsOn: [
     'ExpressionInStringTemplate',
     'FantasyGame',
     'FaultySuitcase',
+    'FibonacciProperty',
     'Filter',
     'FloatingPointRange',
     'ForLoop',
@@ -1582,6 +1593,7 @@ task run (dependsOn: [
     'NamedArguments',
     'NamedCompanionObject',
     'NewAngle',
+    'NickName',
     'NonNullAssert',
     'NonNullAssertCall',
     'NullDereference',
