@@ -415,7 +415,7 @@ task FaultySuitcase(type: JavaExec) {
 
 task FibonacciProperty(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertydelegation.FibonacciPropertyKt'
+    main = 'FibonacciPropertyKt'
 }
 
 task Filter(type: JavaExec) {
