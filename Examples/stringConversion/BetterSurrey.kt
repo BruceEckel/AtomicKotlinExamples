@@ -3,7 +3,7 @@ import atomictest.eq
 
 class Surrey2(val adornment: String) {
   override fun toString() =
-      "Surrey with the $adornment"
+    "Surrey with the $adornment"
 }
 
 fun main(args: Array<String>) {

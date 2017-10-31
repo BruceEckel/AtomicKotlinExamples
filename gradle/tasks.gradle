@@ -13,6 +13,11 @@ task AbstractClasses(type: JavaExec) {
     main = 'abstractcasses.AbstractClassesKt'
 }
 
+task AddCodePoints(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AddCodePointsKt'
+}
+
 task Adder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces.AdderKt'
@@ -403,6 +408,21 @@ task ExpressionInStringTemplate(type: JavaExec) {
     main = 'ExpressionInStringTemplateKt'
 }
 
+task Facto(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FactoKt'
+}
+
+task Factorial(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'recursion.FactorialKt'
+}
+
+task Factorials(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FactorialsKt'
+}
+
 task FantasyGame(type: JavaExec) {
     classpath kotlinClassPath
     main = 'polymorphism.FantasyGameKt'
@@ -411,6 +431,16 @@ task FantasyGame(type: JavaExec) {
 task FaultySuitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FaultySuitcaseKt'
+}
+
+task Fibo(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FiboKt'
+}
+
+task Fibonacci(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'recursion.FibonacciKt'
 }
 
 task FibonacciProperty(type: JavaExec) {
@@ -1193,6 +1223,11 @@ task Suitcase(type: JavaExec) {
     main = 'SuitcaseKt'
 }
 
+task SumOfSquares(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SumOfSquaresKt'
+}
+
 task SumUsingRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SumUsingRangeKt'
@@ -1420,6 +1455,7 @@ task Zipper(type: JavaExec) {
 
 task run (dependsOn: [
     'AbstractClasses',
+    'AddCodePoints',
     'Adder',
     'AddingIntToChar',
     'AllOperators',
@@ -1498,8 +1534,13 @@ task run (dependsOn: [
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExpressionInStringTemplate',
+    'Facto',
+    'Factorial',
+    'Factorials',
     'FantasyGame',
     'FaultySuitcase',
+    'Fibo',
+    'Fibonacci',
     'FibonacciProperty',
     'Filter',
     'FloatingPointRange',
@@ -1656,6 +1697,7 @@ task run (dependsOn: [
     'StringRange',
     'StringTemplates',
     'Suitcase',
+    'SumOfSquares',
     'SumUsingRange',
     'Surrey',
     'Swearing',

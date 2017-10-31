@@ -9,7 +9,6 @@ interface Pet {
   }
 }
 
-
 data class Cat(val name:String,
   val id: Int = Pet.next()): Pet
 data class Dog(val name:String,

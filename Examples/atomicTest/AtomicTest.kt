@@ -71,7 +71,7 @@ capture {
 } eq "FailureException"
 */
 
-// Capture an exception and produce its name:
+// Capture a a stack trace for comparison:
 fun stacktrace(f: () -> Unit): String =
   try {
     f()
@@ -91,6 +91,9 @@ stacktrace {
 """
 */
 
+// Add messages via trace(msg), to be later
+// validated with:
+// trace.result eq "(trace contents)"
 object trace {
   var result = ""
   operator fun invoke(msg: Any) {

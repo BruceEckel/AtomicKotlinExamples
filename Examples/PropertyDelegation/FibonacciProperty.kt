@@ -1,34 +1,11 @@
 // PropertyDelegation/FibonacciProperty.kt
 import atomictest.eq
-import java.math.BigInteger
 import kotlin.reflect.KProperty
-typealias BigInt = BigInteger
-
-val zero = BigInt.ZERO
-val one = BigInt.ONE
-
-val Int.big: BigInt
-  get() = BigInt.valueOf(toLong())
-
-val String.big: BigInt
-  get() = BigInt(this)
-
-fun fibonacci(n: BigInt): BigInt {
-  tailrec fun iterate(nn: BigInt,
-    current: BigInt = zero,
-    next: BigInt = one): BigInt {
-      if(nn == zero)
-        return current
-      else
-        return iterate(
-          nn - one, next, current + next)
-  }
-  assert(n >= zero)
-  return iterate(n)
-}
+import bigint.*
+import recursion.fibonacci
 
 class Fibonacci {
-  private var current = zero
+  private var current: BigInt = zero
   operator fun getValue(dgtor: Any?,
     prop: KProperty<*>) = current
   operator fun setValue(dgtor: Any?,
