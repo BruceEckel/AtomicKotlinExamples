@@ -19,8 +19,10 @@ class NickName() {
 fun main(args: Array<String>) {
   val babs = Person("Barbara", "Babs")
   babs.name eq
-  "'val Person.name: kotlin.String' Barbara"
+  "'val propertydelegation.Person.name: " +
+  "kotlin.String' Barbara"
   babs.casual = true
   babs.name eq
-  "'val Person.name: kotlin.String' Babs"
+  "'val propertydelegation.Person.name: " +
+  "kotlin.String' Babs"
 }

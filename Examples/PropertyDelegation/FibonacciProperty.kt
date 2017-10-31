@@ -10,7 +10,7 @@ class Fibonacci {
     prop: KProperty<*>) = current
   operator fun setValue(dgtor: Any?,
     prop: KProperty<*>, n: BigInt) {
-    current = fibonacci(n)
+    current = fibonacci(n.toInt())
   }
 }
 

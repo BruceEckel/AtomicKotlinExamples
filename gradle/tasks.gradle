@@ -1033,6 +1033,11 @@ task Pets(type: JavaExec) {
     main = 'hashing.PetsKt'
 }
 
+task Phi(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'PhiKt'
+}
+
 task PropertyInInterface(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces.PropertyInInterfaceKt'
@@ -1659,6 +1664,7 @@ task run (dependsOn: [
     'ParameterizedReturnTypes',
     'ParameterizedTypes',
     'Pets',
+    'Phi',
     'PropertyInInterface',
     'PropertyOptions',
     'Quote',
