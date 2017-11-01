@@ -1,10 +1,12 @@
 // PropertyDelegation/Team.kt
 import kotlin.properties.Delegates
+import atomictest.*
 
 class Team {
-  var captain: String by Delegates.observable("<not chosen>") {
-    _, old, new ->
-    println("Changed from $old to $new")
+  var captain: String by
+  Delegates.observable("<none>") {
+    prop, old, new ->
+    trace("$prop $old to $new")
   }
 }
 
@@ -12,8 +14,8 @@ fun main(args: Array<String>) {
   val team = Team()
   team.captain = "Adam"
   team.captain = "Amanda"
+  trace.result eq """
+var Team.captain: kotlin.String <none> to Adam
+var Team.captain: kotlin.String Adam to Amanda
+"""
 }
-/* Output:
-Changed from <not chosen> to Adam
-Changed from Adam to Amanda
-*/
