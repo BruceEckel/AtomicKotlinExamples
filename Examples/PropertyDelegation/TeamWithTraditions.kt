@@ -1,16 +1,16 @@
 // PropertyDelegation/TeamWithTraditions.kt
-import atomictest.eq
+import atomictest.*
 import kotlin.properties.Delegates
 
 class TeamWithTraditions {
-  var captain: String by Delegates.vetoable("Adam") {
+  var captain: String
+  by Delegates.vetoable("Adam") {
     _, old, new ->
     val canChange = new.startsWith("A")
-    if (canChange) {
-      println("Changed from $old to $new")
-    } else {
-      println("Can't break traditions, sorry $new")
-    }
+    if(canChange)
+      trace("$old -> $new")
+    else
+      trace("It's tradition, sorry $new")
     canChange
   }
 }
@@ -20,9 +20,8 @@ fun main(args: Array<String>) {
   team.captain = "Amanda"
   team.captain = "Bill"
   team.captain eq "Amanda"
+  trace.result eq """
+Adam -> Amanda
+It's tradition, sorry Bill
+"""
 }
-/* Output:
-Changed from Adam to Amanda
-Can't break traditions, sorry Bill
-Amanda
-*/

@@ -353,6 +353,11 @@ task Dog(type: JavaExec) {
     main = 'DogKt'
 }
 
+task Dots(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DotsKt'
+}
+
 task DuckForEach(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DuckForEachKt'
@@ -541,6 +546,11 @@ task Hamsters(type: JavaExec) {
 task HashCodeFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HashCodeFailureKt'
+}
+
+task HelloCoroutines(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'HelloCoroutinesKt'
 }
 
 task HelloWorld(type: JavaExec) {
@@ -1528,6 +1538,7 @@ task run (dependsOn: [
     'DivZero2',
     'DoWhileLoop',
     'Dog',
+    'Dots',
     'DuckForEach',
     'EasyKeys',
     'ElvisCall',
@@ -1566,6 +1577,7 @@ task run (dependsOn: [
     'Hamster',
     'Hamsters',
     'HashCodeFailure',
+    'HelloCoroutines',
     'HelloWorld',
     'HiddenArrayList',
     'If1',
