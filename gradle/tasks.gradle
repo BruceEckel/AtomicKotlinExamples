@@ -353,11 +353,6 @@ task Dog(type: JavaExec) {
     main = 'DogKt'
 }
 
-task Dots(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DotsKt'
-}
-
 task DuckForEach(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DuckForEachKt'
@@ -451,6 +446,11 @@ task Fibonacci(type: JavaExec) {
 task FibonacciProperty(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FibonacciPropertyKt'
+}
+
+task FibonacciSequence(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FibonacciSequenceKt'
 }
 
 task Filter(type: JavaExec) {
@@ -728,6 +728,11 @@ task JavaList(type: JavaExec) {
     main = 'JavaListKt'
 }
 
+task Jobs(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'JobsKt'
+}
+
 task KeyFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'KeyFailureKt'
@@ -756,6 +761,11 @@ task LambdaTypeInference(type: JavaExec) {
 task LazyInt(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LazyIntKt'
+}
+
+task LazySequence(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LazySequenceKt'
 }
 
 task LazySyntax(type: JavaExec) {
@@ -1028,6 +1038,16 @@ task Pairs(type: JavaExec) {
     main = 'PairsKt'
 }
 
+task Parallel(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ParallelKt'
+}
+
+task ParallelSlowFib(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ParallelSlowFibKt'
+}
+
 task ParameterizedReturnTypes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'parameterizedtypes.ParameterizedReturnTypesKt'
@@ -1153,6 +1173,11 @@ task SealedClasses(type: JavaExec) {
     main = 'sealedclasses.SealedClassesKt'
 }
 
+task Sequential(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SequentialKt'
+}
+
 task Sets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SetsKt'
@@ -1171,6 +1196,11 @@ task SimpleHashing(type: JavaExec) {
 task SimpleMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SimpleMapKt'
+}
+
+task SlowFib(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SlowFibKt'
 }
 
 task SmartCasts(type: JavaExec) {
@@ -1538,7 +1568,6 @@ task run (dependsOn: [
     'DivZero2',
     'DoWhileLoop',
     'Dog',
-    'Dots',
     'DuckForEach',
     'EasyKeys',
     'ElvisCall',
@@ -1558,6 +1587,7 @@ task run (dependsOn: [
     'Fibo',
     'Fibonacci',
     'FibonacciProperty',
+    'FibonacciSequence',
     'Filter',
     'FloatingPointRange',
     'ForLoop',
@@ -1613,12 +1643,14 @@ task run (dependsOn: [
     'IterateThroughString',
     'IterationVsMembership',
     'JavaList',
+    'Jobs',
     'KeyFailure',
     'LambdaAsReference',
     'LambdaIt',
     'LambdaReference',
     'LambdaTypeInference',
     'LazyInt',
+    'LazySequence',
     'LazySyntax',
     'Level',
     'ListCollection',
@@ -1673,6 +1705,8 @@ task run (dependsOn: [
     'OverloadingAdd',
     'PairDestructuring',
     'Pairs',
+    'Parallel',
+    'ParallelSlowFib',
     'ParameterizedReturnTypes',
     'ParameterizedTypes',
     'Pets',
@@ -1698,10 +1732,12 @@ task run (dependsOn: [
     'SafeOperation',
     'SayHello',
     'SealedClasses',
+    'Sequential',
     'Sets',
     'Simple',
     'SimpleHashing',
     'SimpleMap',
+    'SlowFib',
     'SmartCasts',
     'SpreadOperator',
     'StateOfAClass',
