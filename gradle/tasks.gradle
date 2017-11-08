@@ -808,6 +808,11 @@ task LogChanges(type: JavaExec) {
     main = 'LogChangesKt'
 }
 
+task MapUnpacking(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MapUnpackingKt'
+}
+
 task Maps(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MapsKt'
@@ -1383,6 +1388,11 @@ task Types(type: JavaExec) {
     main = 'TypesKt'
 }
 
+task Underscore(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UnderscoreKt'
+}
+
 task Unexpected(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UnexpectedKt'
@@ -1659,6 +1669,7 @@ task run (dependsOn: [
     'LocalExtensions',
     'LocalFunctions',
     'LogChanges',
+    'MapUnpacking',
     'Maps',
     'MemberImplementations',
     'MemberOperator',
@@ -1774,6 +1785,7 @@ task run (dependsOn: [
     'TwoArgLambda',
     'TwoFunctionsWithVarargs',
     'Types',
+    'Underscore',
     'Unexpected',
     'UnitReturn',
     'UnitReturnType',
