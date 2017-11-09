@@ -21,7 +21,7 @@ tools is found in *Atomic Kotlin*.
 
 Before you can run the examples from this repository, you must install:
 
-1. The [Java 8 jdk](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+1. [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 2. The latest version (1.1 or better) of the [Kotlin command-line
 compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
@@ -56,6 +56,9 @@ All the book examples are in the subdirectory `Examples` in subdirectories
 corresponding to the atom names.
 
 ## Detailed Instructions
+
+If you are not familiar with the command line, first read [Command-Line 
+Basics](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Basics.md)
 
 ### Install Java
 
