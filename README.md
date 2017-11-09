@@ -58,7 +58,7 @@ corresponding to the atom names.
 ## Detailed Instructions
 
 If you are not familiar with the command line, first read [Command-Line 
-Basics](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Basics.md)
+Basics](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Basics.md).
 
 ### Install Java
 
