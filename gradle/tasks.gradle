@@ -58,6 +58,11 @@ task AssertTrue(type: JavaExec) {
     main = 'AssertTrueKt'
 }
 
+task AssignAnonymous(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AssignAnonymousKt'
+}
+
 task AssigningAnIf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AssigningAnIfKt'
@@ -786,6 +791,11 @@ task ListCollection(type: JavaExec) {
 task ListOf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ListOfKt'
+}
+
+task ListOperations(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ListOperationsKt'
 }
 
 task Lists(type: JavaExec) {
@@ -1519,6 +1529,7 @@ task run (dependsOn: [
     'AnonymousFunction',
     'ArgumentOrder',
     'AssertTrue',
+    'AssignAnonymous',
     'AssigningAnIf',
     'AuxiliaryInitialization',
     'BMI',
@@ -1665,6 +1676,7 @@ task run (dependsOn: [
     'Level',
     'ListCollection',
     'ListOf',
+    'ListOperations',
     'Lists',
     'LocalExtensions',
     'LocalFunctions',
