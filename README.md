@@ -240,41 +240,30 @@ To run these scripts, you must first install [Python
 # Running Kotlin from the Command Line
 
 The Kotlin interpreter is also called the REPL (for
-*Read-Evaluate-Print-Loop*). You get the REPL when you type `kotlin` by
-itself on the command line. You should see something like the following
-(it can take a few moments to start):
+*Read-Evaluate-Print-Loop*). You get the REPL when you type `kotlinc` by
+itself on the command line. You should see something like the following:
 
 ```
-Welcome to Kotlin version 2.11.4 (Java HotSpot(TM) 64-Bit Server VM, Java 1.7.0_09).
-Type in expressions to have them evaluated.
-Type :help for more information.
-```
-
-```
-kotlin>
+Welcome to Kotlin version 1.1.51 (JRE 1.8.0_144-b01)
+Type :help for help, :quit for quit
+>>>
 ```
 
 The exact version numbers will vary depending on the versions of Kotlin
-and Java you've installed, but make sure that you're running Kotlin 2.11
+and Java you've installed, but make sure that you're running Kotlin 1.1
 or greater.
 
 The REPL gives you immediate interactive feedback, which is helpful for
 experimentation. For example, you can do arithmetic:
 
 ```
-kotlin> 42 * 11.3
-res0: Double = 474.6
+>>> 42 * 11.3
+474.6
 ```
-
-`res0` is the name Kotlin gave to the result of the calculation.
-`Double` means "double precision floating point number." A
-floating-point number can hold fractional values, and "double precision"
-refers to the number of significant places to the right of the decimal
-point that the number is capable of representing.
 
 Find out more by typing `:help` at the Kotlin prompt. To exit the REPL,
 type:
 
 ```
-kotlin> :quit
+>>> :quit
 ```
