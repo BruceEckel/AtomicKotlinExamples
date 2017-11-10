@@ -14,9 +14,6 @@ See *AtomicKotlin.com* for the IDEA examples {{ To be configured }}.
 
 {{ There may be additional convenient ways of using the examples }}
 
-A thorough introduction to the command line and installing and running the
-tools is found in *Atomic Kotlin*.
-
 ## Quick Version
 
 Before you can run the examples from this repository, you must install:
