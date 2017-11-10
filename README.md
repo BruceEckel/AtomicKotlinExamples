@@ -55,18 +55,18 @@ examples will run. Everything should complete without errors.
 All the book examples are in the subdirectory `Examples` in subdirectories
 corresponding to the atom names.
 
-## Detailed Instructions
+# Detailed Instructions
 
-If you are not familiar with the command line, first read [Command-Line 
+If you are not familiar with the command line, first read [Command-Line
 Basics](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Basics.md).
 
-### Install Java
+## Install Java
 
 Kotlin runs on top of Java, so you must first install Java (you only need basic
 Java; the development kit also works but is not required). In this book we use
 JDK8 (Java 1.8).
 
-#### Windows
+### Windows
 
 1. Follow the instructions at this link to [Install Chocolatey](https://chocolatey.org/).
 
@@ -74,7 +74,7 @@ JDK8 (Java 1.8).
 but when it's finished Java is installed and the necessary environment
 variables are set.
 
-#### Macintosh
+### Macintosh
 
 The Mac comes with a much older version of Java that won't work for the
 examples in this book, so you'll need to update it to Java 8.
@@ -84,7 +84,7 @@ examples in this book, so you'll need to update it to Java 8.
   2.  At a shell prompt, first type `brew update`. When that completes, enter
       `brew cask install java`.
 
-#### Linux
+### Linux
 
 Use the standard package installer with the following shell commands:
 
@@ -99,7 +99,7 @@ Use the standard package installer with the following shell commands:
   1. `su -c "yum install java-1.8.0-openjdk"`
 
 
-### Verify Your Installation
+## Verify Your Installation
 
 Open a new shell and type:
 
@@ -120,13 +120,13 @@ If you see a message that the command is not found or not recognized, review
 the installation instructions in this chapter. If you still can't get it to work,
 check [StackOverflow](http://stackoverflow.com/search?q=installing+java).
 
-### Install Kotlin
+## Install Kotlin
 
 In this book, we use Kotlin version 1.1, the latest available at the
 time. The main download site for Kotlin is
 [www.kt-lang.org/downloads](http://www.kt-lang.org/downloads).
 
-#### Windows
+### Windows
 
 Choose the MSI installer which is custom-made for Windows. Once it
 downloads, execute the resulting file by double-clicking on it, then
@@ -155,7 +155,7 @@ kotlin -version
 at the shell prompt. You'll see the version information for your Kotlin
 installation.
 
-#### Macintosh
+### Macintosh
 
 Download the version with the `.tgz` extension. Click the link on
 the web page, then select "open with archive utility." This puts it in
@@ -175,7 +175,7 @@ When you look at your `Kotlin` directory, it should contain:
 bin     doc    examples    lib     man     misc     src
 ```
 
-#### Linux
+### Linux
 
 **Important**: The standard package installer might not install the most
 recent version of Kotlin. There is often a significant delay between a
@@ -193,7 +193,7 @@ one of the following shell commands:
 incompatible with this book).
 
 
-### Installing and Running the Book Examples
+## Installing and Running the Book Examples
 
 Once you have Java installed, the process to install and run the book examples
 is the same for all platforms:
@@ -221,7 +221,7 @@ builds and runs will be much faster.
 Note that you must be connected to the Internet the first time you run `gradlew`
 so that Gradle can download the necessary packages.
 
-## Using `run`
+# Using `run`
 
 In each atom-named subdirectory under the `Examples` directory, you will see
 two files: `run.bat` and `run.sh`. These are convenience commands for Windows
@@ -236,3 +236,45 @@ has a `main()`).
 
 To run these scripts, you must first install [Python
 3.6](https://www.python.org/downloads/release/python-363/) or newer.
+
+# Running Kotlin from the Command Line
+
+The Kotlin interpreter is also called the REPL (for
+*Read-Evaluate-Print-Loop*). You get the REPL when you type `kotlin` by
+itself on the command line. You should see something like the following
+(it can take a few moments to start):
+
+```
+Welcome to Kotlin version 2.11.4 (Java HotSpot(TM) 64-Bit Server VM, Java 1.7.0_09).
+Type in expressions to have them evaluated.
+Type :help for more information.
+```
+
+```
+kotlin>
+```
+
+The exact version numbers will vary depending on the versions of Kotlin
+and Java you've installed, but make sure that you're running Kotlin 2.11
+or greater.
+
+The REPL gives you immediate interactive feedback, which is helpful for
+experimentation. For example, you can do arithmetic:
+
+```
+kotlin> 42 * 11.3
+res0: Double = 474.6
+```
+
+`res0` is the name Kotlin gave to the result of the calculation.
+`Double` means "double precision floating point number." A
+floating-point number can hold fractional values, and "double precision"
+refers to the number of significant places to the right of the decimal
+point that the number is capable of representing.
+
+Find out more by typing `:help` at the Kotlin prompt. To exit the REPL,
+type:
+
+```
+kotlin> :quit
+```
