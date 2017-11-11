@@ -25,8 +25,14 @@ see there's a new subdirectory called `helloworld`. The name of the
 subdirectory that appears when you run `kotlinc` corresponds to the `package`
 name in the program that was compiled.
 
-The package name is also required to run the program. That is, you cannot simply
-say:
+If the program is in a package, the package name is also required to run the
+program. That is, if `HelloWorld.kt` contains a `package` statement:
+
+```
+package helloworld
+```
+
+then you cannot simply say:
 
 ```
 kotlin HelloWorld
@@ -41,11 +47,10 @@ You'll see that the directory contains `HelloWorldKt.class`. What's important is
 the part before the `.class` (You'll learn about the idea of classes in later
 atoms). This is the actual name of the program: `HelloWorldKt`.
 
-Now we can run the program, by giving the package name followed by a "dot," then
-the program's name:
+Now we can run the program:
 
 ```
-kotlin helloworld.HelloWorldKt
+kotlin HelloWorldKt
 ```
 
 And you'll see the output on the console:
@@ -54,5 +59,9 @@ And you'll see the output on the console:
 Hello, world!
 ```
 
-When working from the console, you'll follow this pattern for all the examples
-in this book.
+If the program is packaged using the aformentioned `helloworld` package, we
+give the package name followed by a "dot," then the program's name:
+
+```
+kotlin helloworld.HelloWorldKt
+```
