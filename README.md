@@ -170,13 +170,13 @@ and Mac/Linux that allow you to compile and run the examples in that
 subdirectory. They are not necessary to build the code, but if you begin
 experimenting with individual examples they are helpful.
 
+To run these scripts, you must first install [Python
+3.6](https://www.python.org/downloads/release/python-363/) or newer.
+
 If you just type `run` (`./run.sh` in Mac/Linux), it will (using
 Gradle) compile and run all the examples in the directory. You can also type
 `run AnExample.kt` to compile and run the example `AnExample.kt` (assuming it
 has a `main()`).
-
-To run these scripts, you must first install [Python
-3.6](https://www.python.org/downloads/release/python-363/) or newer.
 
 # Running Kotlin from the Command Line
 
