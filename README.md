@@ -52,6 +52,9 @@ examples will run. Everything should complete without errors.
 All the book examples are in the subdirectory `Examples` in subdirectories
 corresponding to the atom names.
 
+To compile and run examples using the Kotlin command-line tools, see
+[Command-Line Hello World](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Hello_World.md).
+
 # Detailed Instructions
 
 If you are not familiar with the command line, first read [Command-Line
@@ -208,3 +211,6 @@ type:
 ```
 >>> :quit
 ```
+
+To compile and run examples using the Kotlin command-line tools, see
+[Command-Line Hello World](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Hello_World.md).
