@@ -93,8 +93,9 @@ Use the standard package installer with the following shell commands:
 
 *Fedora/Redhat*:
 
-  1. `su -c "yum install java-1.8.0-openjdk"`
-
+```
+su -c "yum install java-1.8.0-openjdk"
+```
 
 ## Verify Your Installation
 
@@ -108,42 +109,22 @@ You should see something like the following (Version numbers and actual text
 will vary):
 
 ```
-java version "1.8.0_102"
-Java(TM) SE Runtime Environment (build 1.8.0_102-b14)
-Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
+java version "1.8.0_144"
+Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
+Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
 ```
 
 If you see a message that the command is not found or not recognized, review
-the installation instructions in this chapter. If you still can't get it to work,
-check [StackOverflow](http://stackoverflow.com/search?q=installing+java).
+the installation instructions. If you still can't get it to work, check
+[StackOverflow](http://stackoverflow.com/search?q=installing+java).
 
 ## Install Kotlin
 
-In this book, we use Kotlin version 1.1, the latest available at the
-time. The main download site for Kotlin is
-[www.kt-lang.org/downloads](http://www.kt-lang.org/downloads).
+In this book, we use Kotlin version 1.1, the latest available at the time. The
+detailed installation instructions for the command-line compiler are available
+at [The Kotlin Site](https://kotlinlang.org/docs/tutorials/command-line.html).
 
-### Windows
-
-Choose the MSI installer which is custom-made for Windows. Once it
-downloads, execute the resulting file by double-clicking on it, then
-follow the instructions.
-
-Note: If you are running Windows 8, you might see a message that says
-"Windows SmartScreen prevented an unrecognized app from starting.
-Running this app might put your PC at risk." Choose "More info" and then
-"Run anyway."
-
-When you look in the default installation directory
-(`C:\Program Files(x86)\kotlin` or `C:\Program Files\kotlin`), it should contain:
-
-```
-bin     doc     lib     api
-```
-
-The installer will automatically add the `bin` directory to your execution path.
-
-Now open a new shell and type
+To check your installation, open a new shell and type:
 
 ```
 kotlin -version
@@ -151,43 +132,6 @@ kotlin -version
 
 at the shell prompt. You'll see the version information for your Kotlin
 installation.
-
-### Macintosh
-
-Download the version with the `.tgz` extension. Click the link on
-the web page, then select "open with archive utility." This puts it in
-your "Downloads" directory and un-archives the file into a folder. (If
-you download without opening, open a new Finder window, right-click on
-the `.tgz` file, then choose "Open With -> Archive Utility").
-
-Rename the un-archived folder to "Kotlin" and then drag it to your home
-directory (the directory with an icon of a home, and is named whatever
-your user name is). If you don't see a home icon, open "Finder," choose
-"Preferences" and then choose the "Sidebar" icon. Check the box with the
-home icon next to your name in the list.
-
-When you look at your `Kotlin` directory, it should contain:
-
-```
-bin     doc    examples    lib     man     misc     src
-```
-
-### Linux
-
-**Important**: The standard package installer might not install the most
-recent version of Kotlin. There is often a significant delay between a
-release of Kotlin and its inclusion in the standard packages. However, the book
-examples should work fine with the version installed by the standard installer.
-
-Use the standard package installer, which also installs Java if necessary, with
-one of the following shell commands:
-
-*Ubuntu/Debian*: `sudo apt-get install kotlin`
-
-*Fedora/Redhat* release 17+: `sudo yum install kotlin`
-
-(Prior to release 17, Fedora/Redhat contains an old version of Kotlin,
-incompatible with this book).
 
 
 ## Installing and Running the Book Examples
