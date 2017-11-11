@@ -1,4 +1,5 @@
 // ForAndRanges/ContainsChar.kt
+
 fun containsChar(s: String, ch: Char): Boolean {
   for (c in s) {
     if (c == ch)

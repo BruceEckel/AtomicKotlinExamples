@@ -19,8 +19,8 @@ fun main(args: Array<String>) {
   println(b)
 }
 /* Sample output:
-creatingclasses.Giraffe@279f2327
-creatingclasses.Giraffe@2ff4acd0
-creatingclasses.Hippo@54bedef2
-creatingclasses.Bear@5caf905d
+Giraffe@28d93b30
+Giraffe@1b6d3586
+Hippo@4554617c
+Bear@74a14482
 */

@@ -1,6 +1,5 @@
 // Exceptions/JavaCheckedExceptions.java
 package Exceptions;
-
 import java.io.*;
 
 public class JavaCheckedExceptions {

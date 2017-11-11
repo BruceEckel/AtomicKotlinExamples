@@ -408,9 +408,9 @@ task ExplicitDelegation(type: JavaExec) {
     main = 'ExplicitDelegationKt'
 }
 
-task ExpressionInStringTemplate(type: JavaExec) {
+task ExpressionInTemplate(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ExpressionInStringTemplateKt'
+    main = 'ExpressionInTemplateKt'
 }
 
 task Facto(type: JavaExec) {
@@ -1599,7 +1599,7 @@ task run (dependsOn: [
     'EvenFilter',
     'ExplicitCheck',
     'ExplicitDelegation',
-    'ExpressionInStringTemplate',
+    'ExpressionInTemplate',
     'Facto',
     'Factorial',
     'Factorials',

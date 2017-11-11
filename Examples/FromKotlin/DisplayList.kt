@@ -1,6 +1,5 @@
 // FromKotlin/DisplayList.kt
 package FromKotlin
-
 import java.util.*
 
 fun List<*>.display() {

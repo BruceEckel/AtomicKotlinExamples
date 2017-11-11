@@ -1,4 +1,5 @@
 // StringTemplates/TripleQuotes.kt
+
 fun main(args: Array<String>) {
   val s = "value"
   println("s = \"$s\".")

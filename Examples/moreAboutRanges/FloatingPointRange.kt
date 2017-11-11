@@ -1,4 +1,5 @@
 // MoreAboutRanges/FloatingPointRange.kt
+
 fun inFloatRange(n: Double) {
   val r = 1.0..10.0
   println("$n in $r? ${n in r}")

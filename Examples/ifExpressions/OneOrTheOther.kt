@@ -1,10 +1,11 @@
 // IfExpressions/OneOrTheOther.kt
+
 fun oneOrTheOther(exp: Boolean): String =
-    if (exp) {
-      "True!" // No 'return' necessary
-    } else {
-      "False"
-    }
+  if (exp) {
+    "True!" // No 'return' necessary
+  } else {
+    "False"
+  }
 
 fun main(args: Array<String>) {
   val x = 1
