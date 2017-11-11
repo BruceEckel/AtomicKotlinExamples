@@ -145,7 +145,7 @@ is the same for all platforms:
 2. `unzip` the downloaded file into the directory of your choice.
 
 3. Use the Windows Explorer, the Mac Finder, or Nautilus or equivalent on Linux
-to browse to the directory where you uzipped `OnJava8-Examples`, and open a
+to browse to the directory where you uzipped `AtomicKotlinExamples`, and open a
 shell there.
 
 4. If you're in the right directory, you should see files named `gradlew` and
