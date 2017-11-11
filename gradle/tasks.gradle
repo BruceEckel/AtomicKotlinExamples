@@ -8,6 +8,11 @@ dependencies {
 
 def kotlinClassPath = configurations.kotlinRuntime + sourceSets.main.runtimeClasspath
 
+task AVariableIsMutable(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AVariableIsMutableKt'
+}
+
 task AbstractClasses(type: JavaExec) {
     classpath kotlinClassPath
     main = 'abstractcasses.AbstractClassesKt'
@@ -775,7 +780,7 @@ task LazySequence(type: JavaExec) {
 
 task LazySyntax(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'LazyInitialization.LazySyntaxKt'
+    main = 'lazyinitialization.LazySyntaxKt'
 }
 
 task Level(type: JavaExec) {
@@ -916,11 +921,6 @@ task MutableMaps(type: JavaExec) {
 task MutableSet(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MutableSetKt'
-}
-
-task MutableVariable(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'MutableVariableKt'
 }
 
 task NamedAndDefaultArgs(type: JavaExec) {
@@ -1090,7 +1090,7 @@ task PropertyInInterface(type: JavaExec) {
 
 task PropertyOptions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'LazyInitialization.PropertyOptionsKt'
+    main = 'lazyinitialization.PropertyOptionsKt'
 }
 
 task Quote(type: JavaExec) {
@@ -1220,7 +1220,7 @@ task SlowFib(type: JavaExec) {
 
 task SmartCasts(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartcastsinkotlin.SmartCastsKt'
+    main = 'smartcasts.SmartCastsKt'
 }
 
 task SpreadOperator(type: JavaExec) {
@@ -1480,7 +1480,7 @@ task VisibleClassArgs(type: JavaExec) {
 
 task WhenAndSmartCasts(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartcastsinkotlin.WhenAndSmartCastsKt'
+    main = 'smartcasts.WhenAndSmartCastsKt'
 }
 
 task WhenExpressions(type: JavaExec) {
@@ -1519,6 +1519,7 @@ task Zipper(type: JavaExec) {
 }
 
 task run (dependsOn: [
+    'AVariableIsMutable',
     'AbstractClasses',
     'AddCodePoints',
     'Adder',
@@ -1701,7 +1702,6 @@ task run (dependsOn: [
     'MutableListIsList',
     'MutableMaps',
     'MutableSet',
-    'MutableVariable',
     'NamedAndDefaultArgs',
     'NamedArguments',
     'NamedCompanionObject',

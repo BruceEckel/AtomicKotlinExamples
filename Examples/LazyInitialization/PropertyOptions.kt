@@ -1,5 +1,5 @@
 // LazyInitialization/PropertyOptions.kt
-package LazyInitialization
+package lazyinitialization
 import atomictest.*
 
 fun compute(i: Int): Int {

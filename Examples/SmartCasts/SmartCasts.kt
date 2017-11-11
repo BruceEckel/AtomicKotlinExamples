@@ -1,5 +1,5 @@
 // SmartCasts/SmartCasts.kt
-package smartcastsinkotlin
+package smartcasts
 import atomictest.eq
 
 class Dog {

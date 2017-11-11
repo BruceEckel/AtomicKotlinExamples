@@ -1,5 +1,5 @@
 // SmartCasts/WhenAndSmartCasts.kt
-package smartcastsinkotlin
+package smartcasts
 import atomictest.eq
 
 fun acceptAnything(a: Any) =

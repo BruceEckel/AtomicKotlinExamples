@@ -1,5 +1,5 @@
 // Exceptions/CatchChecked.java
-package Exceptions;
+package exceptions;
 import java.io.*;
 import checked.*;
 

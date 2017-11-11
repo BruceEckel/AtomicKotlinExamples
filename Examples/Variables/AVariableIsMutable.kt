@@ -1,4 +1,4 @@
-// Variables/MutableVariable.kt
+// Variables/AVariableIsMutable.kt
 
 fun main(args: Array<String>) {
   var sum = 1

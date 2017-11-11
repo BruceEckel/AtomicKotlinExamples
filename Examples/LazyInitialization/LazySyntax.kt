@@ -1,5 +1,5 @@
 // LazyInitialization/LazySyntax.kt
-package LazyInitialization
+package lazyinitialization
 import atomictest.*
 
 val unused: String by lazy {
