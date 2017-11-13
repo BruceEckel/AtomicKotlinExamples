@@ -46,5 +46,8 @@ fun main(args: Array<String>) {
   println("Ratio: ${round2dp(seq/par)}")
 }
 /* Sample output: (2 core machine)
-Ratio: 1.5
+Ratio: 1.68
+*/
+/* Sample output: (4 core machine)
+Ratio: 1.94
 */
