@@ -80,7 +80,7 @@ fun main(args: Array<String>) {
   battle(Viking()) eq "Viking Fights"
   battle(Dwarf()) eq "Dwarf Fights"
   fly(d, Fairy()) eq
-    "Dragon Flies, Fairy interacts with Dragon"
+  "Dragon Flies, Fairy interacts with Dragon"
   contact(Viking(), Fairy()) eq
     "Viking interacts with Fairy"
 }

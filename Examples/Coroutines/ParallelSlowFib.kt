@@ -20,5 +20,6 @@ runBlocking<Unit> {
     b.join()
     c.join()
   }
-  println("${results.joinToString()} completed in $time ms")
+  println(
+    "${results.joinToString()} in $time ms")
 }

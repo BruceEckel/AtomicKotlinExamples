@@ -7,7 +7,8 @@ interface Utensil
 interface Store<T>
 interface Cook<T>
 interface Clean<T>
-interface Kitchen : Store<Food>, Cook<Food>, Clean<Utensil>
+interface Kitchen :
+  Store<Food>, Cook<Food>, Clean<Utensil>
   // Oops. Can't do this:
   // , Store<Utensil>, Clean<Food>
 

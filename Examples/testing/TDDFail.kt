@@ -8,4 +8,5 @@ fun main(args: Array<String>) {
 //  calculateBMI(200, 68) eq "Overweight"
 }
 
-fun calculateBMI(lbs: Int, height: Int): String = "Normal weight"
+fun calculateBMI(lbs: Int, height: Int) =
+  "Normal weight"

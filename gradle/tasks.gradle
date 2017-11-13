@@ -223,11 +223,6 @@ task ContactMap(type: JavaExec) {
     main = 'ContactMapKt'
 }
 
-task ContainsChar(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ContainsCharKt'
-}
-
 task ConversionFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ConversionFailureKt'
@@ -316,11 +311,6 @@ task DestructuringDuo(type: JavaExec) {
 task DestructuringMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.DestructuringMapKt'
-}
-
-task DifferentReferencesToList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'readonlyandmutable.DifferentReferencesToListKt'
 }
 
 task DisplayDuck(type: JavaExec) {
@@ -473,14 +463,14 @@ task FloatingPointRange(type: JavaExec) {
     main = 'FloatingPointRangeKt'
 }
 
+task ForIsAStatement(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ForIsAStatementKt'
+}
+
 task ForLoop(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ForLoopKt'
-}
-
-task ForLoopIsAStatement(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ForLoopIsAStatementKt'
 }
 
 task ForWithCharRange(type: JavaExec) {
@@ -551,6 +541,11 @@ task Hamster(type: JavaExec) {
 task Hamsters(type: JavaExec) {
     classpath kotlinClassPath
     main = 'propertyaccessors.HamstersKt'
+}
+
+task HasChar(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'HasCharKt'
 }
 
 task HashCodeFailure(type: JavaExec) {
@@ -888,6 +883,11 @@ task MultipleExceptions(type: JavaExec) {
     main = 'MultipleExceptionsKt'
 }
 
+task MultipleListRefs(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'readonlyandmutable.MultipleListRefsKt'
+}
+
 task MultiplyByFour(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MultiplyByFourKt'
@@ -903,14 +903,14 @@ task MultiplyByTwo(type: JavaExec) {
     main = 'MultiplyByTwoKt'
 }
 
+task MutListIsList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'readonlyandmutable.MutListIsListKt'
+}
+
 task MutableList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MutableListKt'
-}
-
-task MutableListIsList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'readonlyandmutable.MutableListIsListKt'
 }
 
 task MutableMaps(type: JavaExec) {
@@ -1063,9 +1063,9 @@ task ParallelSlowFib(type: JavaExec) {
     main = 'ParallelSlowFibKt'
 }
 
-task ParameterizedReturnTypes(type: JavaExec) {
+task ParameterizedReturn(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'parameterizedtypes.ParameterizedReturnTypesKt'
+    main = 'parameterizedtypes.ParameterizedReturnKt'
 }
 
 task ParameterizedTypes(type: JavaExec) {
@@ -1562,7 +1562,6 @@ task run (dependsOn: [
     'CompareTo',
     'ComputationResult',
     'ContactMap',
-    'ContainsChar',
     'ConversionFailure',
     'Cookie',
     'CopyDataClass',
@@ -1581,7 +1580,6 @@ task run (dependsOn: [
     'DestructuringData',
     'DestructuringDuo',
     'DestructuringMap',
-    'DifferentReferencesToList',
     'DisplayDuck',
     'DisplayList',
     'DisplayListBlemish',
@@ -1612,8 +1610,8 @@ task run (dependsOn: [
     'FibonacciSequence',
     'Filter',
     'FloatingPointRange',
+    'ForIsAStatement',
     'ForLoop',
-    'ForLoopIsAStatement',
     'ForWithCharRange',
     'ForWithRanges',
     'FormatLambda',
@@ -1628,6 +1626,7 @@ task run (dependsOn: [
     'GuaranteedCleanup',
     'Hamster',
     'Hamsters',
+    'HasChar',
     'HashCodeFailure',
     'HelloCoroutines',
     'HelloWorld',
@@ -1695,11 +1694,12 @@ task run (dependsOn: [
     'MoreReduce',
     'MultipleClassArgs',
     'MultipleExceptions',
+    'MultipleListRefs',
     'MultiplyByFour',
     'MultiplyByThree',
     'MultiplyByTwo',
+    'MutListIsList',
     'MutableList',
-    'MutableListIsList',
     'MutableMaps',
     'MutableSet',
     'NamedAndDefaultArgs',
@@ -1730,7 +1730,7 @@ task run (dependsOn: [
     'Pairs',
     'Parallel',
     'ParallelSlowFib',
-    'ParameterizedReturnTypes',
+    'ParameterizedReturn',
     'ParameterizedTypes',
     'Pets',
     'Phi',

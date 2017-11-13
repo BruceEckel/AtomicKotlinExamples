@@ -12,7 +12,4 @@ fun main(args: Array<String>) {
   }
   squares.toList() eq
   "[1, 361, 1156, 484, 9409, 121, 5184, 9801]"
-
-// Unsupported [Collection literals outside of annotations]
-//  squares.toList() eq [1, 361, 1156, 484, 9409, 121, 5184, 9801]
 }

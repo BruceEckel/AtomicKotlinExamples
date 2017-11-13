@@ -9,7 +9,8 @@ package atomictest
 import java.util.*
 import java.io.*
 
-private fun <L, R> equals(actual: L, expected: R) {
+private fun <L, R>
+equals(actual: L, expected: R) {
   if (actual != expected)
     println("[Error]: $actual != $expected")
 }

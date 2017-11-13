@@ -1,7 +1,8 @@
 // DataClasses/Simple.kt
 import atomictest.*
 
-data class Simple(val arg1: String, var arg2: Int)
+data class
+Simple(val arg1: String, var arg2: Int)
 
 fun main(args: Array<String>) {
   val s1 = Simple("Hi", 29)

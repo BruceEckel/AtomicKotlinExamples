@@ -18,5 +18,6 @@ fun main(args: Array<String>) {
     results[1] = fibs(37.big)
     results[2] = fibs(38.big)
   }
-  println("${results.joinToString()} completed in $time ms")
+  println(
+    "${results.joinToString()} in $time ms")
 }

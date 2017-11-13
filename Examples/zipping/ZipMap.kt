@@ -2,7 +2,8 @@
 package zipping
 import atomictest.eq
 
-data class Person(val name: String, val ID: Int)
+data class
+Person(val name: String, val ID: Int)
 
 fun main(args: Array<String>) {
   val names = listOf("Bob", "Jill", "Jim")

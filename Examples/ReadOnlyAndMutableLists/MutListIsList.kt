@@ -1,4 +1,4 @@
-// ReadOnlyAndMutableLists/MutableListIsList.kt
+// ReadOnlyAndMutableLists/MutListIsList.kt
 package readonlyandmutable
 import atomictest.eq
 

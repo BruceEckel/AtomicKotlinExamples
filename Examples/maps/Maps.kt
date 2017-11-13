@@ -7,7 +7,8 @@ fun main(args: Array<String>) {
     "e" to 2.718,
     "phi" to 1.618)
 
-  constants eq "{Pi=3.141, e=2.718, phi=1.618}"
+  constants eq
+  "{Pi=3.141, e=2.718, phi=1.618}"
 
   // Look up a value from a key:
   constants["e"] eq 2.718

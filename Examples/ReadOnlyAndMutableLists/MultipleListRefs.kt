@@ -1,4 +1,4 @@
-// ReadOnlyAndMutableLists/DifferentReferencesToList.kt
+// ReadOnlyAndMutableLists/MultipleListRefs.kt
 package readonlyandmutable
 import atomictest.eq
 

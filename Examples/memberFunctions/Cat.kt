@@ -6,7 +6,8 @@ class Cat {
 
 fun main(args: Array<String>) {
   val cat = Cat()
-  val m1 = cat.meow() // Call 'meow()' for 'cat'
+  // Call 'meow()' for 'cat':
+  val m1 = cat.meow()
   println(m1)
 }
 /* Output:

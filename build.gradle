@@ -20,10 +20,6 @@ repositories {
     jcenter()
 }
 
-dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
-}
-
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
@@ -33,6 +29,7 @@ compileTestKotlin {
 }
 
 dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
