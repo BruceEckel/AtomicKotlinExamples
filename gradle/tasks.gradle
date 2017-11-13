@@ -208,6 +208,16 @@ task CompanionObject(type: JavaExec) {
     main = 'CompanionObjectKt'
 }
 
+task CompareDelayingTask(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CompareDelayingTaskKt'
+}
+
+task CompareSlowFib(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CompareSlowFibKt'
+}
+
 task CompareTo(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.CompareToKt'
@@ -1053,16 +1063,6 @@ task Pairs(type: JavaExec) {
     main = 'PairsKt'
 }
 
-task Parallel(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ParallelKt'
-}
-
-task ParallelSlowFib(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ParallelSlowFibKt'
-}
-
 task ParameterizedReturn(type: JavaExec) {
     classpath kotlinClassPath
     main = 'parameterizedtypes.ParameterizedReturnKt'
@@ -1188,11 +1188,6 @@ task SealedClasses(type: JavaExec) {
     main = 'sealedclasses.SealedClassesKt'
 }
 
-task Sequential(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SequentialKt'
-}
-
 task Sets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SetsKt'
@@ -1211,11 +1206,6 @@ task SimpleHashing(type: JavaExec) {
 task SimpleMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SimpleMapKt'
-}
-
-task SlowFib(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SlowFibKt'
 }
 
 task SmartCasts(type: JavaExec) {
@@ -1559,6 +1549,8 @@ task run (dependsOn: [
     'ColorBlendTest',
     'CompanionFactory',
     'CompanionObject',
+    'CompareDelayingTask',
+    'CompareSlowFib',
     'CompareTo',
     'ComputationResult',
     'ContactMap',
@@ -1728,8 +1720,6 @@ task run (dependsOn: [
     'OverloadingAdd',
     'PairDestructuring',
     'Pairs',
-    'Parallel',
-    'ParallelSlowFib',
     'ParameterizedReturn',
     'ParameterizedTypes',
     'Pets',
@@ -1755,12 +1745,10 @@ task run (dependsOn: [
     'SafeOperation',
     'SayHello',
     'SealedClasses',
-    'Sequential',
     'Sets',
     'Simple',
     'SimpleHashing',
     'SimpleMap',
-    'SlowFib',
     'SmartCasts',
     'SpreadOperator',
     'StateOfAClass',

@@ -5,11 +5,10 @@ import atomictest.eq
 
 fun main(args: Array<String>) {
   val fibonacciSeq = buildSequence {
-    var fibn = Pair(zero, one)
+    var n = Pair(zero, one)
     while(true) {
-      yield(fibn.first)
-      fibn = Pair(fibn.second,
-        fibn.first + fibn.second)
+      yield(n.first)
+      n = Pair(n.second, n.first + n.second)
     }
   }
   fibonacciSeq.take(101).last() eq
