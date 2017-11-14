@@ -1,11 +1,18 @@
 // Coroutines/HelloCoroutines.kt
 import kotlinx.coroutines.experimental.*
+import atomictest.*
 
 fun main(args: Array<String>) =
 runBlocking<Unit> {
   val coroutine = launch {
-    delay(1000)
-    println("Hello")
+    delay(10)
+    trace("Hello,")
   }
+  trace("World!")
   coroutine.join()
+  trace.result eq
+"""
+World!
+Hello,
+"""
 }
