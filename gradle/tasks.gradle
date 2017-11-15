@@ -743,11 +743,6 @@ task JavaList(type: JavaExec) {
     main = 'JavaListKt'
 }
 
-task Jobs(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'JobsKt'
-}
-
 task KeyFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'KeyFailureKt'
@@ -771,6 +766,16 @@ task LambdaReference(type: JavaExec) {
 task LambdaTypeInference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LambdaTypeInferenceKt'
+}
+
+task LaunchMany(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LaunchManyKt'
+}
+
+task LaunchManyTimed(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LaunchManyTimedKt'
 }
 
 task LazyInt(type: JavaExec) {
@@ -1656,12 +1661,13 @@ task run (dependsOn: [
     'IterateThroughString',
     'IterationVsMembership',
     'JavaList',
-    'Jobs',
     'KeyFailure',
     'LambdaAsReference',
     'LambdaIt',
     'LambdaReference',
     'LambdaTypeInference',
+    'LaunchMany',
+    'LaunchManyTimed',
     'LazyInt',
     'LazySequence',
     'LazySyntax',

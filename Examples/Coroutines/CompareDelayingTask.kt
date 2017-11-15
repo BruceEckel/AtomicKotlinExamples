@@ -3,7 +3,7 @@ import kotlinx.coroutines.experimental.*
 import kotlin.system.measureTimeMillis
 import atomictest.eq
 
-suspend fun Task(): Int {
+suspend fun task(): Int {
   delay(1000L) // Performing work...
   return 111   // Result of work
 }
@@ -11,7 +11,7 @@ suspend fun Task(): Int {
 fun sequentialTasks() = runBlocking<Double> {
   measureTimeMillis {
     val result =
-      List(5){Task()}.sumBy{it}
+      List(5){task()}.sumBy{it}
     result eq 555
   }.toDouble()
 }
@@ -19,7 +19,7 @@ fun sequentialTasks() = runBlocking<Double> {
 fun parallelTasks() = runBlocking<Double> {
   measureTimeMillis {
     val result =
-      List(5){async{Task()}}.sumBy{it.await()}
+      List(5){async{task()}}.sumBy{it.await()}
     result eq 555
   }.toDouble()
 }
