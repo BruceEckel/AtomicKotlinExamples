@@ -9,10 +9,10 @@ interface Store<T>
 interface Cook<T>
 interface Clean<T>
 interface Food : Store<Food>,
-    Clean<Food>, Cook<Food>
+  Clean<Food>, Cook<Food>
 
 interface Utensil : Store<Utensil>,
-    Clean<Utensil>, Cook<Utensil>
+  Clean<Utensil>, Cook<Utensil>
 
 interface Kitchen : Room {
   val storage: Storage

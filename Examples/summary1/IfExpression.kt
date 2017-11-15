@@ -4,12 +4,13 @@ fun main(args: Array<String>) {
   val activity = "swimming"
   val hour = 10
 
-  val isOpen = if (activity == "swimming" ||
-      activity == "ice skating") {
+  val isOpen = if(
+    activity == "swimming" ||
+    activity == "ice skating") {
     val opens = 9
     val closes = 20
     println("Operating hours: " +
-        opens + " - " + closes)
+      opens + " - " + closes)
     hour >= opens && hour <= closes
   } else {
     false

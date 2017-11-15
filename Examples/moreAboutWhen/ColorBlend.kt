@@ -17,7 +17,7 @@ private fun blendRest(a: Color, b: Color) =
     else -> {
       // Interesting but not accurate:
       val values = values()
-      values[(a.ordinal + b.ordinal) %
-             values.size]
+      values[
+        (a.ordinal + b.ordinal) % values.size]
     }
   }

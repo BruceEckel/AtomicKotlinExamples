@@ -1,10 +1,8 @@
 // SecondaryConstructors/GardenGnome.kt
 import atomictest.eq
 
-class GardenGnome(
-    val height: Double,
-    val weight: Double,
-    var happy: Boolean) {
+class GardenGnome(val height: Double,
+  val weight: Double, var happy: Boolean) {
   init {
     println("In primary constructor")
   }

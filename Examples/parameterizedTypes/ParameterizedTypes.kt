@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
   // Exactly the same, but explicitly typed:
   val list3: List<Int> = listOf(1, 2, 3)
   val list4: List<String> =
-      listOf("one", "two", "three")
+    listOf("one", "two", "three")
 
   list1 eq list3
   list2 eq list4

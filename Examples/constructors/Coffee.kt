@@ -2,11 +2,11 @@
 import atomictest.eq
 
 class Coffee(
-    val shots: Int = 2,
-    val decaf: Boolean = false,
-    val milk: Boolean = false,
-    val toGo: Boolean = false,
-    val syrup: String = "") {
+  val shots: Int = 2,
+  val decaf: Boolean = false,
+  val milk: Boolean = false,
+  val toGo: Boolean = false,
+  val syrup: String = "") {
   var result = ""
   init {
     println(listOf(

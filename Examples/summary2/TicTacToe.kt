@@ -4,8 +4,8 @@ import atomictest.eq
 class Cell {
   var entry = ' '                 // [1]
   fun set(e: Char): String =      // [2]
-    if(entry == ' ' &&
-       (e == 'X' || e == 'O')) {
+    if(entry == ' ' && (
+      e == 'X' || e == 'O')) {
       entry = e
       "successful move"
     } else

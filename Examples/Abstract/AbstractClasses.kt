@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
   // val a = Animal()
 
   Duck().templateFunction() eq
-      "The Duck goes Quack"
+    "The Duck goes Quack"
   Cow().templateFunction() eq
-      "The Cow goes Moo"
+    "The Cow goes Moo"
 }

@@ -1,8 +1,8 @@
 // Summary1/ThreeQuotes.kt
 
 fun json(q: String, a: Int) = """{
-    "question" : "$q",
-    "answer" : $a
+  "question" : "$q",
+  "answer" : $a
 }"""
 
 fun main(args: Array<String>) {
@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
 }
 /* Output:
 {
-    "question" : "The Ultimate",
-    "answer" : 42
+  "question" : "The Ultimate",
+  "answer" : 42
 }
 */
