@@ -563,11 +563,6 @@ task HashCodeFailure(type: JavaExec) {
     main = 'HashCodeFailureKt'
 }
 
-task HelloCoroutines(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'HelloCoroutinesKt'
-}
-
 task HelloWorld(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HelloWorldKt'
@@ -766,16 +761,6 @@ task LambdaReference(type: JavaExec) {
 task LambdaTypeInference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LambdaTypeInferenceKt'
-}
-
-task LaunchMany(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'LaunchManyKt'
-}
-
-task LaunchManyTimed(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'LaunchManyTimedKt'
 }
 
 task LazyInt(type: JavaExec) {
@@ -1625,7 +1610,6 @@ task run (dependsOn: [
     'Hamsters',
     'HasChar',
     'HashCodeFailure',
-    'HelloCoroutines',
     'HelloWorld',
     'HiddenArrayList',
     'If1',
@@ -1666,8 +1650,6 @@ task run (dependsOn: [
     'LambdaIt',
     'LambdaReference',
     'LambdaTypeInference',
-    'LaunchMany',
-    'LaunchManyTimed',
     'LazyInt',
     'LazySequence',
     'LazySyntax',

@@ -2,8 +2,8 @@
 import kotlinx.coroutines.experimental.*
 import atomictest.*
 
-fun main(args: Array<String>) =
-runBlocking<Unit> {
+fun
+main(a: Array<String>) = runBlocking<Unit> {
   val coroutine = launch {
     delay(10)
     trace("Hello,")

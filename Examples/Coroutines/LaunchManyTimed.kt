@@ -2,8 +2,8 @@
 import kotlinx.coroutines.experimental.*
 import kotlin.system.measureTimeMillis
 
-fun main(args: Array<String>) =
-runBlocking<Unit> {
+fun
+main(a: Array<String>) = runBlocking<Unit> {
   val duration = measureTimeMillis {
     val jobs = List(19) {
       launch {

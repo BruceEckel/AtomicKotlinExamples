@@ -1,0 +1,1019 @@
+:compileKotlin UP-TO-DATE
+:compileJava UP-TO-DATE
+:processResources NO-SOURCE
+:classes UP-TO-DATE
+:AVariableIsMutable
+6
+:AbstractClasses
+The Duck goes Quack
+The Cow goes Moo
+:AddCodePoints
+625
+K: 75
+o: 111
+t: 116
+l: 108
+i: 105
+n: 110
+:Adder
+55.71828
+:AddingIntToChar
+z
+true
+:AllOperators
+:AnUnchangingVar
+11
+:Animals
+Giraffe@28d93b30
+Giraffe@1b6d3586
+Hippo@4554617c
+Bear@74a14482
+:AnonymousFunction
+[1][2][3][4]
+:ArgumentOrder
+(99, 52, 0)
+:AssertTrue
+:AssignAnonymous
+A Lambda
+More Explicit
+:AssigningAnIf
+x < y
+5
+53
+kotlin.Unit
+:AuxiliaryInitialization
+88 Target St.
+KS
+Metropolis
+Metropolis: 88 Target St., KS 66632
+KS
+6
+8
+Oak
+48104
+:BMI
+Normal weight
+:Backticks
+:BasicFunctions
+27
+pop!
+:BetterSuitcase
+true
+:BetterSurrey
+Surrey with the fringe on top
+:Bicycle
+Bicycle(riders=2)
+:BiggestLong
+9223372036854775807
+:BookExtensions
+title: "Dracula", category: Vampire
+:Booleans
+Operating hours: 9 - 20
+Open: false
+Not open: true
+Closed: true
+:Booleans1
+Operating hours: 9 - 20
+Open: false
+:Booleans2
+Operating hours: 9 - 20
+Open: false
+:Booleans3
+Operating hours: 9 - 20
+Closed: true
+:CallLater
+Now
+:CallOtherConstructors
+1
+0
+:Cat
+mew!
+:ChainedCalls
+null
+Alice
+:ChangingAVal
+11
+22
+:CharRange
+false
+true
+true
+:ClassArg
+190
+:ClassBodies
+:Coffee
+[2, false, false, false, ]
+HereCup shot shot
+[2, true, false, true, Chocolate]
+ToGoCup decaf shot decaf shot Chocolate
+:ColorBlendMap
+red
+brown
+orange
+green
+blue
+:ColorBlendMap2
+red
+brown
+orange
+green
+blue
+:ColorBlendTest
+red
+brown
+orange
+green
+blue
+:CompanionFactory
+[]
+[#0, #1, #2, #3, #4]
+:CompanionObject
+3
+9
+3
+9
+:CompareDelayingTask
+555
+555
+Ratio: 4.89
+:CompareSlowFib
+Ratio: 1.51
+:CompareTo
+true
+true
+false
+false
+[Contact(name=Alice, mobile=0123456789), Contact(name=Bob, mobile=9876543210)]
+[Contact(name=Bob, mobile=9876543210), Contact(name=Alice, mobile=0123456789)]
+:ComputationResult
+14
+High
+:ContactMap
+Contact(name=Miffy, number=1-234-567890)
+null
+:ConversionFailure
+0
+0
+0
+:Cookie
+bite
+crumblebite
+:CopyDataClass
+DetailedContact(name=Miffy, surname=Miller, number=098-765-4321, address=Brandschenkestrasse 110)
+:Cup
+50
+100
+:Cup2
+50
+100
+:Data
+10
+:DataClassCopy
+DC(a=one, b=two, c=three, d=four)
+DC(a=one, b=bouncy, c=three, d=red)
+:DataClasses
+Contact(name=Miffy, number=1-234-567890)
+dataclasses.Person@4554617c
+:Default
+2
+set(2)
+get() called
+:DefiningRanges
+1..10
+0..9
+:Definition
+true
+:DelegatedControls
+forward 100
+turbo boost... boooooost!
+:Dereference
+3
+:DereferenceNull
+:Describe
+String
+Int
+Double
+Float
+Char
+:DestructuringData
+Alice
+29
+Alice
+29
+:DestructuringDuo
+1
+2
+component1()component2()
+:DestructuringMap
+a
+1
+a
+1
+:DisplayDuck
+[D][u][c][k]
+:DisplayList
+[
+  AA
+  BB
+  CC
+]
+:DisplayListBlemish
+[1][2][3][4]
+:DisplayListMap
+[1][2][3][4]
+:DivZero
+24
+IllegalArgumentException
+:DivZero2
+ArithmeticException
+:DoWhileLoop
+..........:Dog
+:DuckForEach
+[D][u][c][k]
+:EasyKeys
+Employee(first=Bob, last=Dobbs, id=2)
+Employee(first=Lucia, last=Dubois, id=1)
+Employee(first=Ilsa, last=Schmidt, id=3)
+true
+:ElvisCall
+3
+3
+0
+0
+:ElvisOperator
+a
+No b
+:EmptyProgram
+:EnumImport
+Overflow
+High
+Medium
+Low
+Empty
+:EvaluationOrder
+true
+true
+false
+:EvenFilter
+[2, 4]
+:ExplicitCheck
+3
+:ExplicitDelegation
+forward 100
+turbo boost... boooooost!
+:ExpressionInTemplate
+a
+11 + 4 = 15
+:Facto
+479001600
+355687428096000
+265252859812191058636308480000000
+30414093201713378043612608166064768844377641568960512000000000000
+:Factorial
+479001600
+355687428096000
+265252859812191058636308480000000
+30414093201713378043612608166064768844377641568960512000000000000
+:Factorials
+479001600
+-288522240
+355687428096000
+-8764578968847253504
+:FantasyGame
+Dragon interacts with RockWall
+Viking Fights
+Dwarf Fights
+Dragon Flies, Fairy interacts with Dragon
+Viking interacts with Fairy
+:FaultySuitcase
+UninitializedPropertyAccessException
+:Fibo
+0
+17711
+:Fibonacci
+[0, 1, 1, 2, 3, 5, 8, 13]
+17711
+354224848179261915075
+:FibonacciProperty
+0
+17711
+354224848179261915075
+:FibonacciSequence
+354224848179261915075
+:Filter
+[2, 4]
+[3, 4]
+:FloatingPointRange
+0.999999 in 1.0..10.0? false
+5.0 in 1.0..10.0? true
+10.0 in 1.0..10.0? true
+10.0000001 in 1.0..10.0? false
+:ForIsAStatement
+:ForLoop
+1 = one, 2 = two,
+(1, one), (2, two),
+:ForWithCharRange
+abcdefghijklmnopqrstuvwxyz:ForWithRanges
+1 2 3 4 5 // 1..5
+0 1 2 3 4 // 0..4
+5 4 3 2 1 // 5 downTo 1 step 1
+0 2 4 6 8 // 0..8 step 2
+0 3 6 9 // 0..9 step 3
+9 6 3 // 9 downTo 3 step 3
+:FormatLambda
+[1][2][3][4]
+:FormatList
+[1][2][3][4][1][2][3][4]
+:FormatListWithLambda
+[1][2][3][4]
+:FullyQualify
+:GardenGnome
+In primary constructor
+20.0 110.0 false true
+In primary constructor
+15.0 100.0 true true
+:GreatApe
+weight: 100.0 age: 12
+weight: 100.0 age: 12
+weight: 100.0 age: 12
+weight: 100.0 age: 12
+:GreatApe2
+weight: 100.0 age: 12
+weight: 110.0 age: 13
+weight: 120.0 age: 14
+weight: 130.0 age: 15
+:GreatApe3
+Hoo!0
+Eep!10
+Yawp!20
+:GreaterThan2
+[3, 4]
+:GuaranteedCleanup
+false
+OK
+false
+Except1
+false
+Except2
+false
+Except3
+:Hamster
+squeak! squeak! Running on wheel
+:Hamsters
+false
+2
+true
+true
+true
+0
+false
+1
+:HasChar
+true
+false
+:HashCodeFailure
+685325104
+false
+Hello
+null
+65
+true
+Hello
+Hello
+:HelloWorld
+Hello, world!
+:HiddenArrayList
+java.util.ArrayList
+:If1
+It's true!
+:If2
+It's true!
+:If3
+It's negative or zero
+:If4
+It's negative
+:If5
+!y is true
+:If6
+42
+:IfExpression
+Operating hours: 9 - 20
+true
+:IfResult
+4
+:ImmutableAndPlus
+[1, 2, 3]
+[1, 2, 3, 4]
+[1, 2]
+:ImportClass
+8
+5
+3
+:ImportEverything
+:ImportLevel
+[Overflow, High, Medium, Low, Empty]
+Level Low OK
+Alert: Empty
+>>> Overflow!
+[0 - Overflow, 1 - High, 2 - Medium, 3 - Low, 4 - Empty]
+:ImportMultiple
+:ImportNameChange
+:ImportPythagorean
+5.0
+6.0
+:InString
+true
+false
+:IndexIntoString
+bcd:IndexWithZip
+[(0, H), (1, o), (2, w), (3, d), (4, y)]
+:InferInt
+1000000
+:Inference
+2.2
+:InitSection
+Initialized: X(i=1)
+Initialized: X(i=2)
+:InputCheck
+0
+0
+0
+:IntDivisionTruncates
+1
+:IntRange
+1 2 3 4 5 6 7 8 9 10 :IntRanges
+0..10
+5..7
+:IntegerMath
+Underweight
+:IntegerOverflow
+-2
+:InterfaceCollision
+9.9
+A.g
+24
+:Invoke
+invoke()
+invoke(22)
+invoke(22, Hi)
+invoke(22, Three, 3.1416)
+:IterateOverString
+Kotlin!:IterateThroughString
+K o t l i n :IterationVsMembership
+iteration 1
+iteration 2
+iteration 3
+2 is a member of 1..3
+:JavaList
+true
+:KeyFailure
+{Key(id=A)=Hello}
+Hello
+{Key(id=Goodbye)=Hello}
+null
+:LambdaAsReference
+:LambdaIt
+[1][2][3][4]
+:LambdaReference
+[2, 4]
+true
+:LambdaTypeInference
+[1][2][3][4]
+:LazyInt
+LazyInt Constructed
+Access 'value' 2x:
+Computing 5
+5
+5
+:LazySequence
+[1, 361, 1156, 484, 9409, 121, 5184, 9801]
+:LazySyntax
+'used' initialization value
+Initializing 'used'
+:Level
+Medium
+:ListCollection
+[19.2, 88.3, 22.1]
+88.3
+[22.1, 88.3, 19.2]
+[19.2, 22.1, 88.3]
+88.3
+19.2
+:ListOf
+[1]
+[a, b]
+:ListOperations
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[9, 9, 9, 9, 9, 9, 9, 9, 9, 9]
+[a, b, c, d, e, f, g, h, i, j]
+[a, b, c, a, b, c, a, b, c, a]
+0
+9
+a
+j
+[d, e, f, g, h, i, j]
+[a, b, c, d, e, f, g]
+[a, b, c]
+[h, i, j]
+true
+3
+[4, 6, 8]
+[a, b, c]
+[d, e, f, g, h, i, j]
+([0, 2, 4, 6, 8], [1, 3, 5, 7, 9])
+:Lists
+[1, 3, 5, 7, 11, 13]
+11
+1 3 5 7 11 13
+1.1
+4.4
+[Twas, Brillig, And, Slithy, Tove]
+[And, Brillig, Slithy, Tove, Twas]
+[Tove, Slithy, And, Brillig, Twas]
+Twas
+[Slithy, Tove]
+:LocalExtensions
+Hello!
+Hallo!
+Bonjour!
+Ciao!
+:LocalFunctions
+Starting computation
+Computation result: 42
+:LogChanges
+0
+0 becomes 2
+:MapUnpacking
+a1 b2 c3
+:Maps
+{Pi=3.141, e=2.718, phi=1.618}
+2.718
+[Pi, e, phi]
+[3.141, 2.718, 1.618]
+Pi=3.141, e=2.718, phi=1.618,
+Pi=3.141, e=2.718, phi=1.618,
+:MemberImplementations
+meow!?
+woof!
+:MemberOperator
+Num2(n=9)
+:MemberVsExtension
+1
+:MembershipInRange
+true
+:MembershipUsingBounds
+true
+:ModelingMI
+foo
+bar
+:Modulus
+9
+:Molecule
+Molecule(id=0, attached=Molecule(id=1, attached=null))
+:MoreReduce
+5050
+Duck
+:MultipleClassArgs
+84
+:MultipleExceptions
+OK
+Except1: Reason
+Except2: 11
+Except3: Wanted 1.618
+:MultipleListRefs
+[1]
+[1, 2]
+:MultiplyByFour
+20
+:MultiplyByThree
+15
+:MultiplyByTwo
+Inside multiplyByTwo
+10
+:MutListIsList
+[1, 2, 3]
+:MutableList
+[1, 2, 3, 4, 5, 6, 7, 8]
+:MutableMaps
+five
+5ive
+{5=5ive, 6=six, 4=four}
+:MutableSet
+[42]
+:NamedAndDefaultArgs
+(139, 0, 0)
+(0, 0, 139)
+(255, 165, 0)
+(128, 0, 128)
+:NamedArguments
+(76, 89, 0)
+(52, 34, 0)
+:NamedCompanionObject
+from Named
+from Named
+:NewAngle
+b
+b
+x
+true
+true
+:NickName
+'val propertydelegation.Person.name: kotlin.String' Barbara
+'val propertydelegation.Person.name: kotlin.String' Babs
+:NonNullAssert
+abc
+KotlinNullPointerException
+:NonNullAssertCall
+3
+:NullDereference
+KotlinNullPointerException
+:NullInMaps
+null
+:NullableTypes
+abc
+null
+abc
+abc
+:Num
+Num(n=9)
+Num(n=9)
+:NumberTypes
+1000 1000 1000.0
+:ObjectCounter
+[#0, #1, #2, #3, #4]
+:ObjectFunctions
+1
+2
+:ObjectInheritance
+Applying Green
+Acrylic, Applying Blue
+Scrape
+:ObjectKeyword
+2
+20
+40
+:ObjectNesting
+Outer.Inner1
+WithObject.Inner2
+:ObjectProperty
+1
+2
+3
+:ObserveAnimals
+Animal #0: Tiger
+Animal #1: Antelope
+2 animals are here!
+:OneOrTheOther
+True!
+False
+:OperatorPlus
+[1, 2, 3, 4, 5]
+[1]
+[1, 2]
+[1, 3]
+:Overflow
+-2147483648
+2147483648
+:Overloading
+88
+13
+99
+14
+:OverloadingAdd
+11
+101.0
+:PairDestructuring
+14
+High
+:Pairs
+(14, High)
+(8, Low)
+10
+Low
+:ParameterizedReturn
+[a, b]
+[y, z]
+:ParameterizedTypes
+[1, 2, 3]
+[one, two, three]
+:Pets
+Cat(name=Stanford, id=3)
+Rat(name=Freckly, id=4)
+Rat(name=Fuzzy, id=5)
+Rat(name=Fizzy, id=2)
+Cat(name=Elsie, id=0)
+Dog(name=Rufus, id=1)
+true
+false
+false
+:Phi
+37
+41
+:PropertyInInterface
+15
+:PropertyOptions
+Properties():
+Compute 1
+atDefinition:
+1
+1
+getter:
+Compute 2
+2
+Compute 2
+2
+lazyInit:
+Compute 3
+3
+3
+:Quote
+'Single'
+"Double"
+:Quoting
+'Hi'
+"Hi"
+:Random
+58
+:RangeMembership
+11 false
+100 true
+K true
+k false
+:RangeSum
+55
+:ReadOnlyCollections
+[1, 2, 3, 4]
+:ReadOnlyMaps
+five
+{5=five, 6=six}
+{5=five, 6=six, 4=four}
+:RecursiveEnumImport
+Gigantic
+[Tiny, Small, Medium, Large, Huge, Gigantic]
+:Reduce
+1111
+1111
+:References
+13
+97
+:RegularClasses
+Train line S1
+Bus number 11, size 90
+:RemoveDuplicates
+[3, 2, 1]
+[a, b, c]
+:RemoveNulls
+[a, null, b, null, c]
+[a, b, c]
+:RepeatThreeTimes
+Hey 1!
+Hey 2!
+Hey 3!
+:ST
+kotlin.KotlinNullPointerException
+	at STKt$main$1.invoke(ST.kt:7)
+	at STKt$main$1.invoke(ST.kt)
+	at atomictest.AtomicTestKt.stacktrace(AtomicTest.kt:78)
+	at STKt.main(ST.kt:6)
+
+:SafeCall
+3
+3
+null
+null
+:SafeOperation
+Howdy
+null
+:SayHello
+Hallo!
+Auf Wiedersehen!
+:SealedClasses
+Train line S1
+Bus number 11, size 90
+:Sets
+[1, 2, 3, 9, 4]
+[1, 2]
+true
+false
+true
+false
+true
+[1, 2, 3, 9, 4, 5, 6]
+[1, 2]
+[2, 3, 4]
+[2, 3, 4]
+:Simple
+Simple(arg1=Hi, arg2=29)
+:SimpleHashing
+25
+42
+[A, B, C, D, E, F]
+true
+false
+true
+[D, E, F]
+:SimpleMap
+[2, 3, 4, 5]
+:SmartCasts
+yip!
+not Dog
+:SpreadOperator
+21
+30
+:StateOfAClass
+0
+[0, 1]
+:StrTemplates
+Found 42!
+a
+printing a $1
+:StrangeQuote
+''Hi''
+:StringConcatenation
+first: hi
+second: 11, third: 3.14
+:StringHashCode
+69609650
+:StringInvoke
+MUMBLING
+:StringIsNullOr
+true
+true
+true
+true
+false
+true
+:StringPlusNumber
+Sally5.9
+:StringRange
+true
+false
+:StringTemplates
+Found 42!
+printing a $1
+:Suitcase
+true
+:SumOfSquares
+4984
+[11, 42, 47, 23, 19]
+[42, 47, 23, 19]
+[47, 23, 19]
+[23, 19]
+[19]
+[]
+:SumUsingRange
+sum = 5005
+:Surrey
+Surrey@28d93b30
+:Swearing
+howdy Rowzafrazaca Ma'am!
+:TDDFail
+Normal weight
+:TDDStillFails
+:TDDWorks
+Normal weight
+Underweight
+Overweight
+:Team
+var Team.captain: kotlin.String <none> to Adam
+var Team.captain: kotlin.String Adam to Amanda
+:TeamWithTraditions
+Amanda
+Adam -> Amanda
+It's tradition, sorry Bill
+:Temperature
+98.6
+37.0
+212.0
+:TestingExample
+11
+Ontology
+Ontology
+:ThreeQuotes
+{
+  "question" : "The Ultimate",
+  "answer" : 42
+}
+:TicTacToe
+successful move
+invalid move
+invalid move
+:ToString
+bob371.005
+bob371.005
+:Toss
+Except1
+Except2
+Except3
+:TripleQuotes
+s = "value".
+s = "value".
+:TrueOrFalse
+It's true!
+It's false
+:Truncation
+3.0
+3.4
+:TryFinally
+In finally clause for 0
+In finally clause for 5
+Exception
+:Tuple
+1
+3.14
+Mouse
+false
+[]
+Mouse
+:TwoArgLambda
+[0:D][1:u][2:c][3:k]
+:TwoFunctionsWithVarargs
+varargs: 7 9 32
+:Types
+11
+1.4
+true
+A value
+Triple quotes let
+you have many lines
+in your string
+:Underscore
+6
+:Unexpected
+[1, 2, 3]
+:UnitReturn
+returns Unit
+kotlin.Unit
+:UnitReturnType
+kotlin.Unit
+42
+kotlin.Unit
+:UnpredictableHashing
+[H,  , a, b, c, d, e, h, i, l, n, o, p, r, s, t, u]
+:UseALibrary
+:UseBeanClass
+100
+Bean
+10
+Smaller
+:UsingAtomicTest
+3.14
+A round dessert
+:UsingLongs
+4294967294
+1000000000000
+:Vals
+11
+1.4
+A value
+:ValueFromMap
+ONE
+ONE
+KotlinNullPointerException
+NoSuchElementException
+:VarargListMap
+[1][2][3][4]
+:VarargSum
+84
+36
+0
+:VariableArgLists
+:Vars
+11
+1.4
+A value
+:VisibleClassArgs
+20
+21
+24
+:WhenAndSmartCasts
+Int Less than 20: 5
+Some Other Int: 25
+String: Some text of length 9
+Dog: yip!
+I don't know what that is!
+:WhenExpressions
+UNKNOWN COLOR: white
+BLUE
+:WhileLoop
+..........:WhyFlatMap
+[[(1, 1), (1, 2), (1, 3)], [(2, 1), (2, 2), (2, 3)], [(3, 1), (3, 2), (3, 3)]]
+[(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
+[(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
+:WithDefaultArguments
+373
+:WithoutDefaultArguments
+373
+:ZipMap
+[Person(name=Bob, ID=1731), Person(name=Jill, ID=9274), Person(name=Jim, ID=8378)]
+:Zipper
+[(a, q), (b, r), (c, s), (d, t)]
+[(a, 0), (b, 1), (c, 2), (d, 3)]
+[(a, 0), (b, 1), (c, 2), (d, 3)]
+[(0, a), (1, b), (2, c), (3, d)]
+[(10, q), (11, r), (12, s), (13, t)]
+:run
+*** run complete ***
+
+BUILD SUCCESSFUL in 1m 11s
+301 actionable tasks: 299 executed, 2 up-to-date

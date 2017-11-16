@@ -1,8 +1,8 @@
 // Coroutines/LaunchMany.kt
 import kotlinx.coroutines.experimental.*
 
-fun main(args: Array<String>) =
-runBlocking<Unit> {
+fun
+main(a: Array<String>) = runBlocking<Unit> {
   val jobs = List(19) {
     launch {
       delay(1000)

@@ -14,14 +14,14 @@ def gradle(kname):
     ensure(kpath.exists(), f"{kpath.name} doesn't exist")
     ensure("fun main(" in kpath.read_text(), f"No main() in {kpath.name}")
     os.chdir(home.parent.parent)
-    call(f"gradle {kpath.stem}", shell=True)
+    call(f"gradlew {kpath.stem}", shell=True)
     os.chdir(home)
 
 def multiple(kname_list):
     knames = " ".join(kname_list)
     home = Path.cwd()
     os.chdir(home.parent.parent)
-    call(f"gradle {knames}", shell=True)
+    call(f"gradlew {knames}", shell=True)
     os.chdir(home)
 
 if len(sys.argv) > 1:
