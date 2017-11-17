@@ -88,6 +88,11 @@ task Backticks(type: JavaExec) {
     main = 'BackticksKt'
 }
 
+task Basic(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BasicKt'
+}
+
 task BasicFunctions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BasicFunctionsKt'
@@ -1283,6 +1288,11 @@ task Swearing(type: JavaExec) {
     main = 'SwearingKt'
 }
 
+task Syntax(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SyntaxKt'
+}
+
 task TDDFail(type: JavaExec) {
     classpath kotlinClassPath
     main = 'testing1.TDDFailKt'
@@ -1515,6 +1525,7 @@ task run (dependsOn: [
     'AuxiliaryInitialization',
     'BMI',
     'Backticks',
+    'Basic',
     'BasicFunctions',
     'BetterSuitcase',
     'BetterSurrey',
@@ -1754,6 +1765,7 @@ task run (dependsOn: [
     'SumUsingRange',
     'Surrey',
     'Swearing',
+    'Syntax',
     'TDDFail',
     'TDDStillFails',
     'TDDWorks',
