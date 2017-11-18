@@ -1,6 +1,7 @@
 // FromJava/UsingDataClass.java
 package FromJava;
 import java.util.HashMap;
+import static atomictest.AtomicTestKt.eq;
 
 public class UsingDataClass {
   public static void main(String[] args) {
@@ -9,14 +10,15 @@ public class UsingDataClass {
     d.setName("Bob");
     int age = d.getAge();
     d.setAge(age + 1);
-    System.out.println(d); // toString()
+     // toString():
+    eq(d, "Data(name=Bob, age=23)");
     HashMap<Data, Integer> hm =
       new HashMap<>();
     hm.put(d, 47);
     // Data objects work as hash keys:
-    System.out.println(hm.get(d));
+    eq((double)hm.get(d), (double)47);
     // copy() function from the Data class:
     Data d2 = d.copy("Sam", 24);
-    System.out.println(d2);
+    eq(d2, "Data(name=Sam, age=24)");
   }
 }

@@ -13,5 +13,5 @@ fun main(args: Array<String>) {
   val lc = LogChanges()
   lc.n eq 0 // Uses default get()
   lc.n = 2
-  trace.result eq "0 becomes 2"
+  trace eq "0 becomes 2"
 }

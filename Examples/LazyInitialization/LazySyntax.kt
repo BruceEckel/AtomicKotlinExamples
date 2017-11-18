@@ -14,5 +14,5 @@ val used: String by lazy {
 
 fun main(args: Array<String>) {
   used eq "'used' initialization value"
-  trace.result eq "Initializing 'used'"
+  trace eq "Initializing 'used'"
 }

@@ -1,4 +1,4 @@
-// PropertyDelegation/LazyInt.kt
+// LazyInitialization/LazyInt.kt
 import atomictest.*
 
 class LazyInt(val init: () -> Int) {
@@ -22,7 +22,7 @@ fun main(args: Array<String>) {
   trace("Access 'value' 2x:")
   trace(lazyInt.value)
   trace(lazyInt.value)
-  trace.result eq """
+  trace eq """
 LazyInt Constructed
 Access 'value' 2x:
 Computing 5

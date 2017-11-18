@@ -8,24 +8,27 @@ def ensure(test, msg):
         print(msg)
         sys.exit(1)
 
-def gradle(kname):
+def gradle(name):
     home = Path.cwd()
-    kpath = home / kname
-    ensure(kpath.exists(), f"{kpath.name} doesn't exist")
-    ensure("fun main(" in kpath.read_text(), f"No main() in {kpath.name}")
+    fpath = home / name
+    ensure(fpath.exists(), f"{fpath.name} doesn't exist")
+    ensure("main(" in fpath.read_text(), f"No main() in {fpath.name}")
     os.chdir(home.parent.parent)
-    call(f"gradlew {kpath.stem}", shell=True)
+    call(f"gradlew {fpath.stem}", shell=True)
     os.chdir(home)
 
-def multiple(kname_list):
-    knames = " ".join(kname_list)
+def multiple(name_list):
+    names = " ".join(name_list)
     home = Path.cwd()
     os.chdir(home.parent.parent)
-    call(f"gradlew {knames}", shell=True)
+    call(f"gradlew {names}", shell=True)
     os.chdir(home)
+
+def glob(ext):
+    return list(Path.cwd().glob("*." + ext))
 
 if len(sys.argv) > 1:
     gradle(sys.argv[1])
 else:
-    multiple([kpath.stem for kpath in Path.cwd().glob("*.kt")
-              if "fun main(" in kpath.read_text()])
+    multiple([fpath.stem for fpath in glob("kt") + glob("java")
+              if "main(" in fpath.read_text()])

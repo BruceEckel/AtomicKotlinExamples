@@ -26,7 +26,7 @@ fun main(args: Array<String>) {
   trace("lazyInit:")
   trace(p.lazyInit)
   trace(p.lazyInit)
-  trace.result eq """
+  trace eq """
 Properties():
 Compute 1
 atDefinition:

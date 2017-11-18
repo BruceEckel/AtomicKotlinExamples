@@ -153,9 +153,19 @@ task CallOtherConstructors(type: JavaExec) {
     main = 'baseclassinit.CallOtherConstructorsKt'
 }
 
+task CallTopLevelFunction(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FromJava.CallTopLevelFunction'
+}
+
 task Cat(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CatKt'
+}
+
+task CatchChecked(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'exceptions.CatchChecked'
 }
 
 task ChainedCalls(type: JavaExec) {
@@ -523,6 +533,11 @@ task GardenGnome(type: JavaExec) {
     main = 'GardenGnomeKt'
 }
 
+task GenericHolder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GenericHolder'
+}
+
 task GreatApe(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritance.GreatApeKt'
@@ -566,6 +581,11 @@ task HasChar(type: JavaExec) {
 task HashCodeFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HashCodeFailureKt'
+}
+
+task HelloCoroutines(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'HelloCoroutinesKt'
 }
 
 task HelloWorld(type: JavaExec) {
@@ -738,6 +758,11 @@ task IterationVsMembership(type: JavaExec) {
     main = 'IterationVsMembershipKt'
 }
 
+task JavaCheckedExceptions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'exceptions.JavaCheckedExceptions'
+}
+
 task JavaList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'JavaListKt'
@@ -766,6 +791,16 @@ task LambdaReference(type: JavaExec) {
 task LambdaTypeInference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LambdaTypeInferenceKt'
+}
+
+task LaunchMany(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LaunchManyKt'
+}
+
+task LaunchManyTimed(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LaunchManyTimedKt'
 }
 
 task LazyInt(type: JavaExec) {
@@ -823,6 +858,11 @@ task LogChanges(type: JavaExec) {
     main = 'LogChangesKt'
 }
 
+task MakeSalad(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FromJava.MakeSalad'
+}
+
 task MapUnpacking(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MapUnpackingKt'
@@ -876,6 +916,11 @@ task Molecule(type: JavaExec) {
 task MoreReduce(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MoreReduceKt'
+}
+
+task MoreWork(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MoreWork'
 }
 
 task MultipleClassArgs(type: JavaExec) {
@@ -1428,6 +1473,11 @@ task UsingAtomicTest(type: JavaExec) {
     main = 'UsingAtomicTestKt'
 }
 
+task UsingDataClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FromJava.UsingDataClass'
+}
+
 task UsingLongs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingLongsKt'
@@ -1538,7 +1588,9 @@ task run (dependsOn: [
     'Booleans3',
     'CallLater',
     'CallOtherConstructors',
+    'CallTopLevelFunction',
     'Cat',
+    'CatchChecked',
     'ChainedCalls',
     'ChangingAVal',
     'CharRange',
@@ -1612,6 +1664,7 @@ task run (dependsOn: [
     'FormatListWithLambda',
     'FullyQualify',
     'GardenGnome',
+    'GenericHolder',
     'GreatApe',
     'GreatApe2',
     'GreatApe3',
@@ -1621,6 +1674,7 @@ task run (dependsOn: [
     'Hamsters',
     'HasChar',
     'HashCodeFailure',
+    'HelloCoroutines',
     'HelloWorld',
     'HiddenArrayList',
     'If1',
@@ -1655,12 +1709,15 @@ task run (dependsOn: [
     'IterateOverString',
     'IterateThroughString',
     'IterationVsMembership',
+    'JavaCheckedExceptions',
     'JavaList',
     'KeyFailure',
     'LambdaAsReference',
     'LambdaIt',
     'LambdaReference',
     'LambdaTypeInference',
+    'LaunchMany',
+    'LaunchManyTimed',
     'LazyInt',
     'LazySequence',
     'LazySyntax',
@@ -1672,6 +1729,7 @@ task run (dependsOn: [
     'LocalExtensions',
     'LocalFunctions',
     'LogChanges',
+    'MakeSalad',
     'MapUnpacking',
     'Maps',
     'MemberImplementations',
@@ -1683,6 +1741,7 @@ task run (dependsOn: [
     'Modulus',
     'Molecule',
     'MoreReduce',
+    'MoreWork',
     'MultipleClassArgs',
     'MultipleExceptions',
     'MultipleListRefs',
@@ -1793,6 +1852,7 @@ task run (dependsOn: [
     'UseALibrary',
     'UseBeanClass',
     'UsingAtomicTest',
+    'UsingDataClass',
     'UsingLongs',
     'Vals',
     'ValueFromMap',

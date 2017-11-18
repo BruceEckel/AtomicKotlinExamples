@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
   team.captain = "Amanda"
   team.captain = "Bill"
   team.captain eq "Amanda"
-  trace.result eq """
+  trace eq """
 Adam -> Amanda
 It's tradition, sorry Bill
 """

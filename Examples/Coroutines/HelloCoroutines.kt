@@ -10,7 +10,7 @@ main(a: Array<String>) = runBlocking<Unit> {
   }
   trace("World!")
   coroutine.join()
-  trace.result eq
+  trace eq
 """
 World!
 Hello,

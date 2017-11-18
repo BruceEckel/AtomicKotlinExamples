@@ -96,8 +96,12 @@ stacktrace {
 // validated with:
 // trace.result eq "(trace contents)"
 object trace {
-  var result = ""
+  private var result = ""
   operator fun invoke(msg: Any) {
     result += msg.toString() + "\n"
   }
+  fun reset() {
+    result = ""
+  }
+  infix fun eq(msg: String) = result eq msg
 }

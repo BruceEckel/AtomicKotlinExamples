@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
   val d = Default()
   d.i = 2
   d.i eq 2
-  trace.result eq """
+  trace eq """
 set(2)
 get() called
 """

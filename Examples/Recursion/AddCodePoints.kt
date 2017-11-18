@@ -11,7 +11,7 @@ fun cpAdd(s: String): Int {
 
 fun main(args: Array<String>) {
   cpAdd("Kotlin") eq 625
-  trace.result eq """
+  trace eq """
 K: 75
 o: 111
 t: 116

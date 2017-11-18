@@ -11,7 +11,7 @@ fun sumSquares(nums: List<Int>): Int {
 
 fun main(args: Array<String>) {
   sumSquares(listOf(11,42,47,23,19)) eq 4984
-  trace.result eq """
+  trace eq """
 [11, 42, 47, 23, 19]
 [42, 47, 23, 19]
 [47, 23, 19]

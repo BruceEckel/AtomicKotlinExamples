@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
   val team = Team()
   team.captain = "Adam"
   team.captain = "Amanda"
-  trace.result eq """
+  trace eq """
 var Team.captain: kotlin.String <none> to Adam
 var Team.captain: kotlin.String Adam to Amanda
 """
