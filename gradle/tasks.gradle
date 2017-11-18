@@ -1478,6 +1478,11 @@ task UsingDataClass(type: JavaExec) {
     main = 'FromJava.UsingDataClass'
 }
 
+task UsingKotlinClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FromJava.UsingKotlinClass'
+}
+
 task UsingLongs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingLongsKt'
@@ -1853,6 +1858,7 @@ task run (dependsOn: [
     'UseBeanClass',
     'UsingAtomicTest',
     'UsingDataClass',
+    'UsingKotlinClass',
     'UsingLongs',
     'Vals',
     'ValueFromMap',
