@@ -40,4 +40,4 @@ gen.bat
 prep.bat
 redo.bat
 reinsert.bat
-*.txt
+test_output.txt
