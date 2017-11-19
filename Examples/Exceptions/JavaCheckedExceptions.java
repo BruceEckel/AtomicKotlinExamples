@@ -1,18 +1,26 @@
 // Exceptions/JavaCheckedExceptions.java
-package exceptions;
 import java.io.*;
+import java.nio.file.*;
+import static atomictest.AtomicTestKt.eq;
 
 public class JavaCheckedExceptions {
+  // Build path to current source file, based
+  // on directory where Gradle is invoked:
+  static Path thisFile = Paths.get(
+    "Examples", "Exceptions",
+    "JavaCheckedExceptions.java");
   public static void main(String[] args) {
-    InputStream source = null;
+    BufferedReader source = null;
     try {
-      source = new FileInputStream(new File(
-        "JavaCheckedExceptions.java"));
+      source = new BufferedReader(
+        new FileReader(thisFile.toFile()));
     } catch(FileNotFoundException e) {
       // Recover from file-open error
     }
     try {
-      int contents = source.read();
+      String first = source.readLine();
+      eq(first, "// Exceptions/" +
+        "JavaCheckedExceptions.java");
     } catch(IOException e) {
       // Recover from read() error
     }

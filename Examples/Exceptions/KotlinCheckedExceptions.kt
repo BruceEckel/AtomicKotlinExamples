@@ -1,10 +1,10 @@
 // Exceptions/KotlinCheckedExceptions.kt
-package exceptions
 import java.io.*
+import atomictest.eq
 
-fun noChecked() {
-  val source = FileInputStream(
-    File("KotlinCheckedExceptions.kt"))
-  println(source.read())
-  source.close()
+fun main(args: Array<String>) {
+  File("Examples/Exceptions/" +
+    "KotlinCheckedExceptions.kt")
+    .readLines()[0] eq
+    "// Exceptions/KotlinCheckedExceptions.kt"
 }

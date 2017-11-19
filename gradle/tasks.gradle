@@ -760,7 +760,7 @@ task IterationVsMembership(type: JavaExec) {
 
 task JavaCheckedExceptions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptions.JavaCheckedExceptions'
+    main = 'JavaCheckedExceptions'
 }
 
 task JavaList(type: JavaExec) {
@@ -771,6 +771,11 @@ task JavaList(type: JavaExec) {
 task KeyFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'KeyFailureKt'
+}
+
+task KotlinCheckedExceptions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'KotlinCheckedExceptionsKt'
 }
 
 task LambdaAsReference(type: JavaExec) {
@@ -1717,6 +1722,7 @@ task run (dependsOn: [
     'JavaCheckedExceptions',
     'JavaList',
     'KeyFailure',
+    'KotlinCheckedExceptions',
     'LambdaAsReference',
     'LambdaIt',
     'LambdaReference',

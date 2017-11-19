@@ -2,13 +2,14 @@
 package exceptions;
 import java.io.*;
 import checked.*;
+import static atomictest.AtomicTestKt.eq;
 
 public class CatchChecked {
   public static void main(String[] args) {
     try {
       AnnotateThrowsKt.hasCheckedException();
     } catch(IOException e) {
-      System.out.println("IOException");
+      eq(e, "java.io.IOException");
     }
   }
 }

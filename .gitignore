@@ -40,3 +40,4 @@ gen.bat
 prep.bat
 redo.bat
 reinsert.bat
+*.txt

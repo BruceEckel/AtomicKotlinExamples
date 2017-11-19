@@ -19,6 +19,9 @@ fun toss(which: Int) = when(which) {
   else -> "OK"
 }
 
+// Shoulding I be testing toss() here ????????
+// If not, shouldn't toss() be moved?
+
 fun main(args: Array<String>) {
   capture {
     throw Except1("One")
