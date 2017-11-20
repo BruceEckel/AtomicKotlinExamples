@@ -508,6 +508,11 @@ task FloatingPointRange(type: JavaExec) {
     main = 'FloatingPointRangeKt'
 }
 
+task ForEachLine(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ForEachLineKt'
+}
+
 task ForIsAStatement(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ForIsAStatementKt'
@@ -1188,6 +1193,11 @@ task ReadOnlyMaps(type: JavaExec) {
     main = 'ReadOnlyMapsKt'
 }
 
+task ReadTraceFile(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReadTraceFileKt'
+}
+
 task RecursiveEnumImport(type: JavaExec) {
     classpath kotlinClassPath
     main = 'enumerations.RecursiveEnumImportKt'
@@ -1679,6 +1689,7 @@ task run (dependsOn: [
     'FibonacciSequence',
     'Filter',
     'FloatingPointRange',
+    'ForEachLine',
     'ForIsAStatement',
     'ForLoop',
     'ForWithCharRange',
@@ -1815,6 +1826,7 @@ task run (dependsOn: [
     'RangeSum',
     'ReadOnlyCollections',
     'ReadOnlyMaps',
+    'ReadTraceFile',
     'RecursiveEnumImport',
     'Reduce',
     'References',
