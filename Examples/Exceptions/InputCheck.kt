@@ -8,4 +8,5 @@ fun main(args: Array<String>) {
   intAbleString("1.234").toInt() eq 0
   intAbleString("1,234").toInt() eq 0
   intAbleString("1234 ").toInt() eq 0
+  intAbleString("1234").toInt() eq 1234
 }

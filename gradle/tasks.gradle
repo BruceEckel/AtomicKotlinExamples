@@ -293,6 +293,11 @@ task Default(type: JavaExec) {
     main = 'DefaultKt'
 }
 
+task DefiningExceptions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'toss.DefiningExceptionsKt'
+}
+
 task DefiningRanges(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DefiningRangesKt'
@@ -416,6 +421,11 @@ task EvaluationOrder(type: JavaExec) {
 task EvenFilter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EvenFilterKt'
+}
+
+task ExceptionHandlers(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'toss.ExceptionHandlersKt'
 }
 
 task ExplicitCheck(type: JavaExec) {
@@ -933,11 +943,6 @@ task MultipleClassArgs(type: JavaExec) {
     main = 'MultipleClassArgsKt'
 }
 
-task MultipleExceptions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'MultipleExceptionsKt'
-}
-
 task MultipleListRefs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'readonlyandmutable.MultipleListRefsKt'
@@ -1393,11 +1398,6 @@ task ToString(type: JavaExec) {
     main = 'ToStringKt'
 }
 
-task Toss(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'toss.TossKt'
-}
-
 task TripleQuotes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TripleQuotesKt'
@@ -1626,6 +1626,7 @@ task run (dependsOn: [
     'DataClassCopy',
     'DataClasses',
     'Default',
+    'DefiningExceptions',
     'DefiningRanges',
     'Definition',
     'DelegatedControls',
@@ -1651,6 +1652,7 @@ task run (dependsOn: [
     'EnumImport',
     'EvaluationOrder',
     'EvenFilter',
+    'ExceptionHandlers',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExpressionInTemplate',
@@ -1754,7 +1756,6 @@ task run (dependsOn: [
     'MoreReduce',
     'MoreWork',
     'MultipleClassArgs',
-    'MultipleExceptions',
     'MultipleListRefs',
     'MultiplyByFour',
     'MultiplyByThree',
@@ -1846,7 +1847,6 @@ task run (dependsOn: [
     'ThreeQuotes',
     'TicTacToe',
     'ToString',
-    'Toss',
     'TripleQuotes',
     'TrueOrFalse',
     'Truncation',

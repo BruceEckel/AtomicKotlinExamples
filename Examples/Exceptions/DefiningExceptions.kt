@@ -1,4 +1,4 @@
-// Exceptions/Toss.kt
+// Exceptions/DefiningExceptions.kt
 package toss
 import atomictest.*
 
@@ -11,16 +11,6 @@ data class Except2(val n: Int):
 data class Except3(
   val msg: String, val d: Double):
   IllegalStateException("$msg: $d")
-
-fun toss(which: Int) = when(which) {
-  1 -> throw Except1("Reason")
-  2 -> throw Except2(11)
-  3 -> throw Except3("Wanted", 1.618)
-  else -> "OK"
-}
-
-// Shoulding I be testing toss() here ????????
-// If not, shouldn't toss() be moved?
 
 fun main(args: Array<String>) {
   capture {

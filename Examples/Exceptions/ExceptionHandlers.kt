@@ -1,6 +1,13 @@
-// Exceptions/MultipleExceptions.kt
+// Exceptions/ExceptionHandlers.kt
+package toss
 import atomictest.eq
-import toss.*
+
+fun toss(which: Int) = when(which) {
+  1 -> throw Except1("Reason")
+  2 -> throw Except2(11)
+  3 -> throw Except3("Wanted", 1.618)
+  else -> "OK"
+}
 
 fun test(which: Int) =
   try {
