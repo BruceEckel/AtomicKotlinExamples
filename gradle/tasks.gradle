@@ -193,6 +193,16 @@ task ClassBodies(type: JavaExec) {
     main = 'ClassBodiesKt'
 }
 
+task Cleanup(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CleanupKt'
+}
+
+task Cleanup2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Cleanup2Kt'
+}
+
 task Coffee(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CoffeeKt'
@@ -1606,6 +1616,8 @@ task run (dependsOn: [
     'CharRange',
     'ClassArg',
     'ClassBodies',
+    'Cleanup',
+    'Cleanup2',
     'Coffee',
     'ColorBlendMap',
     'ColorBlendMap2',

@@ -2,13 +2,13 @@
 import atomictest.eq
 import toss.*
 
-data class Switch(var state: Boolean = false,
+data class Switch(var on: Boolean = false,
   var result: String = "OK")
 
 fun testFinally(i: Int): String {
   val sw = Switch()
   try {
-    sw.state = true
+    sw.on = true
     toss(i)
   } catch(e: Except1) {
     sw.result = "Except1"
@@ -17,9 +17,9 @@ fun testFinally(i: Int): String {
   } catch(e: Except3) {
     sw.result = "Except3"
   } finally {
-    sw.state = false
+    sw.on = false
   }
-  sw.state eq false
+  sw.on eq false
   return sw.result
 }
 
