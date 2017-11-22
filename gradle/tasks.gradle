@@ -413,6 +413,11 @@ task ElvisOperator(type: JavaExec) {
     main = 'ElvisOperatorKt'
 }
 
+task ElvisWithException(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ElvisWithExceptionKt'
+}
+
 task EmptyProgram(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EmptyProgramKt'
@@ -848,6 +853,11 @@ task LazySyntax(type: JavaExec) {
     main = 'lazyinitialization.LazySyntaxKt'
 }
 
+task Let(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LetKt'
+}
+
 task Level(type: JavaExec) {
     classpath kotlinClassPath
     main = 'enumerations.LevelKt'
@@ -1238,6 +1248,11 @@ task RepeatThreeTimes(type: JavaExec) {
     main = 'RepeatThreeTimesKt'
 }
 
+task RequireNotNull(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RequireNotNullKt'
+}
+
 task ST(type: JavaExec) {
     classpath kotlinClassPath
     main = 'STKt'
@@ -1518,6 +1533,11 @@ task UsingLongs(type: JavaExec) {
     main = 'UsingLongsKt'
 }
 
+task UsingTODO(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UsingTODOKt'
+}
+
 task Vals(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ValsKt'
@@ -1675,6 +1695,7 @@ task run (dependsOn: [
     'EasyKeys',
     'ElvisCall',
     'ElvisOperator',
+    'ElvisWithException',
     'EmptyProgram',
     'EnumImport',
     'EvaluationOrder',
@@ -1762,6 +1783,7 @@ task run (dependsOn: [
     'LazyInt',
     'LazySequence',
     'LazySyntax',
+    'Let',
     'Level',
     'ListCollection',
     'ListOf',
@@ -1840,6 +1862,7 @@ task run (dependsOn: [
     'RemoveDuplicates',
     'RemoveNulls',
     'RepeatThreeTimes',
+    'RequireNotNull',
     'ST',
     'SafeCall',
     'SafeOperation',
@@ -1896,6 +1919,7 @@ task run (dependsOn: [
     'UsingDataClass',
     'UsingKotlinClass',
     'UsingLongs',
+    'UsingTODO',
     'Vals',
     'ValueFromMap',
     'VarargListMap',

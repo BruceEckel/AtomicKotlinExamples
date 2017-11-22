@@ -64,6 +64,8 @@ fun capture(f: () -> Unit): String =
     "[Error]: Expected an exception"
   } catch(e: Exception) {
     e.javaClass.simpleName
+  } catch(e: Error) {
+    e.javaClass.simpleName
   }
 
 /* Usage:
