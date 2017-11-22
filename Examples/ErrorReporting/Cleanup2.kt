@@ -1,5 +1,4 @@
 // ErrorReporting/Cleanup2.kt
-import java.io.*
 import errorreporting.*
 import atomictest.eq
 

@@ -1,12 +1,10 @@
 // ErrorReporting/ReadTraceFile.kt
-import java.io.*
-import java.nio.file.Paths
 import errorreporting.*
 import atomictest.*
 
 fun readTrace(fileName: String) {
   require(fileName.startsWith("trace_"),
-    { "File name must start with 'trace_'" })
+    { "$fileName must start with 'trace_'" })
   val trace = localFile(fileName)
   require(trace.exists(),
     { "$fileName doesn't exist" })

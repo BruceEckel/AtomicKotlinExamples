@@ -1,5 +1,4 @@
 // ErrorReporting/ForEachLine.kt
-import java.io.*
 import errorreporting.*
 import atomictest.*
 

@@ -1148,6 +1148,11 @@ task Phi(type: JavaExec) {
     main = 'PhiKt'
 }
 
+task Postconditions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'PostconditionsKt'
+}
+
 task PropertyInInterface(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces.PropertyInInterfaceKt'
@@ -1817,6 +1822,7 @@ task run (dependsOn: [
     'ParameterizedTypes',
     'Pets',
     'Phi',
+    'Postconditions',
     'PropertyInInterface',
     'PropertyOptions',
     'Quote',
