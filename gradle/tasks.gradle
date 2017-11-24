@@ -1513,6 +1513,11 @@ task UseBeanClass(type: JavaExec) {
     main = 'UseBeanClassKt'
 }
 
+task UseNullableJavaTool(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UseNullableJavaToolKt'
+}
+
 task UsingAtomicTest(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingAtomicTestKt'
@@ -1576,6 +1581,11 @@ task VisibleClassArgs(type: JavaExec) {
 task WhenAndSmartCasts(type: JavaExec) {
     classpath kotlinClassPath
     main = 'smartcasts.WhenAndSmartCastsKt'
+}
+
+task WhenAsStatement(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WhenAsStatementKt'
 }
 
 task WhenExpressions(type: JavaExec) {
@@ -1915,6 +1925,7 @@ task run (dependsOn: [
     'UnpredictableHashing',
     'UseALibrary',
     'UseBeanClass',
+    'UseNullableJavaTool',
     'UsingAtomicTest',
     'UsingDataClass',
     'UsingKotlinClass',
@@ -1928,6 +1939,7 @@ task run (dependsOn: [
     'Vars',
     'VisibleClassArgs',
     'WhenAndSmartCasts',
+    'WhenAsStatement',
     'WhenExpressions',
     'WhileLoop',
     'WhyFlatMap',

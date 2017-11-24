@@ -1,5 +1,5 @@
 // Constructors/Coffee.kt
-import atomictest.eq
+import atomictest.*
 
 class Coffee(
   val shots: Int = 2,
@@ -9,7 +9,7 @@ class Coffee(
   val syrup: String = "") {
   var result = ""
   init {
-    println(listOf(
+    trace(listOf(
       shots, decaf, milk, toGo, syrup))
     getCup()
     pourShots()
@@ -42,4 +42,8 @@ fun main(args: Array<String>) {
     toGo = true, syrup = "Chocolate")
   mocha.result eq
     "ToGoCup decaf shot decaf shot Chocolate"
+  trace eq """
+[2, false, false, false, ]
+[2, true, false, true, Chocolate]
+"""
 }
