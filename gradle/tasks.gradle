@@ -1513,9 +1513,9 @@ task UseBeanClass(type: JavaExec) {
     main = 'UseBeanClassKt'
 }
 
-task UseNullableJavaTool(type: JavaExec) {
+task UseJavaTool(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'UseNullableJavaToolKt'
+    main = 'UseJavaToolKt'
 }
 
 task UsingAtomicTest(type: JavaExec) {
@@ -1925,7 +1925,7 @@ task run (dependsOn: [
     'UnpredictableHashing',
     'UseALibrary',
     'UseBeanClass',
-    'UseNullableJavaTool',
+    'UseJavaTool',
     'UsingAtomicTest',
     'UsingDataClass',
     'UsingKotlinClass',
