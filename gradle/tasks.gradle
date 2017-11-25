@@ -728,6 +728,11 @@ task Inference(type: JavaExec) {
     main = 'InferenceKt'
 }
 
+task Info(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'InfoKt'
+}
+
 task InitSection(type: JavaExec) {
     classpath kotlinClassPath
     main = 'constructors.InitSectionKt'
@@ -1258,6 +1263,11 @@ task ST(type: JavaExec) {
     main = 'STKt'
 }
 
+task STUB(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'STUBKt'
+}
+
 task SafeCall(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SafeCallKt'
@@ -1301,6 +1311,11 @@ task SimpleMap(type: JavaExec) {
 task SmartCasts(type: JavaExec) {
     classpath kotlinClassPath
     main = 'smartcasts.SmartCastsKt'
+}
+
+task Solid(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SolidKt'
 }
 
 task SpreadOperator(type: JavaExec) {
@@ -1501,6 +1516,11 @@ task UnitReturnType(type: JavaExec) {
 task UnpredictableHashing(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UnpredictableHashingKt'
+}
+
+task Usable(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UsableKt'
 }
 
 task UseALibrary(type: JavaExec) {
@@ -1768,6 +1788,7 @@ task run (dependsOn: [
     'IndexWithZip',
     'InferInt',
     'Inference',
+    'Info',
     'InitSection',
     'InputCheck',
     'IntDivisionTruncates',
@@ -1874,6 +1895,7 @@ task run (dependsOn: [
     'RepeatThreeTimes',
     'RequireNotNull',
     'ST',
+    'STUB',
     'SafeCall',
     'SafeOperation',
     'SayHello',
@@ -1883,6 +1905,7 @@ task run (dependsOn: [
     'SimpleHashing',
     'SimpleMap',
     'SmartCasts',
+    'Solid',
     'SpreadOperator',
     'StateOfAClass',
     'StrTemplates',
@@ -1923,6 +1946,7 @@ task run (dependsOn: [
     'UnitReturn',
     'UnitReturnType',
     'UnpredictableHashing',
+    'Usable',
     'UseALibrary',
     'UseBeanClass',
     'UseJavaTool',

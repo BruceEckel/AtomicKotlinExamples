@@ -10,7 +10,7 @@ public class UsingDataClass {
     d.setName("Bob");
     int age = d.getAge();
     d.setAge(age + 1);
-     // toString():
+    // toString():
     eq(d, "Data(name=Bob, age=23)");
     HashMap<Data, Integer> hm =
       new HashMap<>();

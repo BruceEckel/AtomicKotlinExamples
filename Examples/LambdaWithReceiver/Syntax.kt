@@ -5,8 +5,11 @@ class Klass2 {
 }
 
 // Pass receiver to the lambda:
-fun useF1(k: Klass2, f: Klass2.() -> Int) = k.f()
-fun useF2(k: Klass2, f: Klass2.(n: Int) -> Int, na: Int) = k.f(na)
+fun useF1(k: Klass2,
+  f: Klass2.() -> Int) = k.f()
+fun useF2(k: Klass2,
+  f: Klass2.(n: Int) -> Int,
+  na: Int) = k.f(na)
 
 fun main(args: Array<String>) {
   val k = Klass2()
