@@ -5,7 +5,7 @@ fun STUB(vararg desc: String): Nothing {
   println("== ${desc[0]} ==")
   for(n in 1..(desc.size - 1))
     println("  ${desc[n]}")
-  throw NotImplementedError(s)
+  throw NotImplementedError("STUB")
 }
 
 fun incomplete(): Int = STUB(
@@ -15,7 +15,7 @@ fun incomplete(): Int = STUB(
   "3. Third item")
 
 fun main(args: Array<String>) {
-  capture {
+  stacktrace1 {
     incomplete()
-  } eq "NotImplementedError"
+  } eq "NotImplementedError: STUB"
 }

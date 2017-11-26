@@ -5,7 +5,7 @@ import atomictest.*
 fun main(args: Array<String>) {
   stacktrace {
     null!!
-  } ceq """
+  } eq """
 kotlin.KotlinNullPointerException
 at STKt${'$'}main${'$'}1.invoke(ST.kt:7)
 at STKt${'$'}main${'$'}1.invoke(ST.kt)

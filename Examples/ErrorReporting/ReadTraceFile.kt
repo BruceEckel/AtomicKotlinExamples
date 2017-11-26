@@ -17,14 +17,17 @@ fun main(args: Array<String>) {
   // Create dummy trace files:
   localFile("trace_empty.txt").writeText("")
   localFile("trace_real.txt").writeText("\n")
-  capture {
+  stacktrace1 {
     readTrace("foo.txt")
-  } eq "IllegalArgumentException"
-  capture {
+  } eq """IllegalArgumentException:
+  foo.txt must start with 'trace_'"""
+  stacktrace1 {
     readTrace("trace_foo.txt")
-  } eq "IllegalArgumentException"
-  capture {
+  } eq """IllegalArgumentException:
+  trace_foo.txt doesn't exist"""
+  stacktrace1 {
     readTrace("trace_empty.txt")
-  } eq "IllegalArgumentException"
+  } eq """IllegalArgumentException:
+  trace_empty.txt is empty"""
   readTrace("trace_real.txt")
 }

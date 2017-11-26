@@ -7,7 +7,7 @@ fun maybeNullString(s: String?) =
 
 fun main(args: Array<String>) {
   maybeNullString("Not a null String") eq 17
-  capture {
+  stacktrace1 {
     maybeNullString(null)
-  } eq "IllegalArgumentException"
+  } eq "IllegalArgumentException: s"
 }

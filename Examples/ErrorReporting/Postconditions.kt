@@ -9,14 +9,15 @@ fun createResultFile(create: Boolean) {
     resultFile.writeText("Results")
   // ... other execution paths
   check(resultFile.exists(),
-    { "$resultFile doesn't exist!" })
+  {"${resultFile.getName()} doesn't exist!"})
 }
 
 fun main(args: Array<String>) {
   if(resultFile.exists())
     resultFile.delete()
-  capture {
+  stacktrace1 {
     createResultFile(false)
-  } eq "IllegalStateException"
+  } eq """IllegalStateException:
+  results.txt doesn't exist!"""
   createResultFile(true)
 }

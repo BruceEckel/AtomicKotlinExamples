@@ -11,12 +11,13 @@ fun regular(n: Int) = n * 10
 
 fun main(args: Array<String>) {
   val n: Int? = null
-  capture {
+  stacktrace1 {
     maybeNull(n)
-  } eq "IllegalArgumentException"
+  } eq """IllegalArgumentException:
+  maybeNull(): n cannot be null"""
   maybeNull(11) eq 99
-  capture {
+  stacktrace1 {
     regular(requireNotNull(n, {"n is null!"}))
-  } eq "IllegalArgumentException"
+  } eq "IllegalArgumentException: n is null!"
   regular(7) eq 70
 }

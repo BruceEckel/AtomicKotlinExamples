@@ -15,17 +15,9 @@ equals(actual: L, expected: R) {
     println("[Error]: $actual != $expected")
 }
 
-infix fun <T: Any> T.eq(value: String) {
-  val lval = this.toString().trim()
-  val rval = value.trim()
-  println(lval)
-  if(lval.compareTo(rval.trim()) != 0) {
-    println("[Error]: \n[$lval]\n!=\n[$rval]")
-  }
-}
-
-// Character equals: removes all whitespace
-infix fun <T: Any> T.ceq(rv: String) {
+// Removes all whitespace, to allow for
+// embedded linefeeds & indentation:
+infix fun <T: Any> T.eq(rv: String) {
   val rws = "\\s".toRegex()
   val lval = this.toString().replace(rws, "")
   val rval = rv.toString().replace(rws, "")
@@ -62,9 +54,7 @@ fun capture(f: () -> Unit): String =
   try {
     f()
     "[Error]: Expected an exception"
-  } catch(e: Exception) {
-    e.javaClass.simpleName
-  } catch(e: Error) {
+  } catch(e: Throwable) {
     e.javaClass.simpleName
   }
 
@@ -74,12 +64,12 @@ capture {
 } eq "FailureException"
 */
 
-// Capture a a stack trace for comparison:
+// Capture a stack trace for comparison:
 fun stacktrace(f: () -> Unit): String =
   try {
     f()
     "[Error]: Expected an exception"
-  } catch(e: Exception) {
+  } catch(e: Throwable) {
     val trace = StringWriter()
     e.printStackTrace(PrintWriter(trace))
     trace.toString()
@@ -88,11 +78,26 @@ fun stacktrace(f: () -> Unit): String =
 /* Usage:
 stacktrace {
   // Code that fails
-} ceq
+} eq
 """
 (stack trace)
 """
 */
+
+// Capture first line of stack trace,
+// and extract just the essence:
+fun stacktrace1(f: () -> Unit): String =
+  try {
+    f()
+    "[Error]: Expected an exception"
+  } catch(e: Throwable) {
+    val name = e.javaClass.simpleName
+    val trace = StringWriter()
+    e.printStackTrace(PrintWriter(trace))
+    trace.toString().lines()
+      .first().replaceBefore(":", name)
+  }
+
 
 // Add messages via trace(msg), to be later
 // validated with:

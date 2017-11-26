@@ -15,8 +15,8 @@ fun processURL(url: String?): String {
 }
 
 fun main(args: Array<String>) {
-  capture {
+  stacktrace1 {
     processURL(null)
-  } eq "IllegalArgumentException"
+  } eq "IllegalArgumentException: url"
   processURL("url") eq "url"
 }

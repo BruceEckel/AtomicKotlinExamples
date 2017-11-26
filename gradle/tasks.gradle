@@ -58,6 +58,11 @@ task ArgumentOrder(type: JavaExec) {
     main = 'ArgumentOrderKt'
 }
 
+task ArrayListOf(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ArrayListOfKt'
+}
+
 task AssertTrue(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AssertTrueKt'
@@ -1654,6 +1659,7 @@ task run (dependsOn: [
     'Animals',
     'AnonymousFunction',
     'ArgumentOrder',
+    'ArrayListOf',
     'AssertTrue',
     'AssignAnonymous',
     'AssigningAnIf',
