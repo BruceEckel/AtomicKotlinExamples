@@ -1,107 +1,105 @@
 // AtomicTest/AtomicTest.kt
-/* A tiny little testing framework, to
-display results and to introduce & promote
-unit testing early in the learning curve.
-To use in your code, include:
-import atomictest.*
+/* A minimal test framework for the book, to
+display results and introduce & promote unit
+testing early in the learning curve.
 */
 package atomictest
 import java.util.*
 import java.io.*
 
-private fun <L, R>
-equals(actual: L, expected: R) {
-  if (actual != expected)
-    println("[Error]: $actual != $expected")
+private val errTag = "[Error]:"
+private val expectedException =
+  "$errTag Expected an exception"
+
+private fun <L, R> test(display: String,
+  actual: L, expected: R,
+  failTest: () -> Boolean,
+  altMsg: String = "") {
+  println(display)
+  if(failTest())
+    if(altMsg == "")
+      println("$errTag $actual != $expected")
+    else
+      println(altMsg)
 }
 
-// Removes all whitespace, to allow for
-// embedded linefeeds & indentation:
+// Compare as Strings. Removes all whitespace
+// to allow embedded linefeeds & indentation:
 infix fun <T: Any> T.eq(rv: String) {
   val rws = "\\s".toRegex()
   val lval = this.toString().replace(rws, "")
   val rval = rv.toString().replace(rws, "")
-  println(this.toString())
-  if(lval.compareTo(rval) != 0)
-    println("[Error]: \n[$lval]\n!=\n[$rval]")
+  test(this.toString(), lval, rval,
+    { lval.compareTo(rval) != 0 })
 }
 
 infix fun <T> T.eq(value: T) {
-  println(this)
-  equals(value, this)
+  test(this.toString(), this, value,
+    { this != value })
 }
+
+/* Unused:
+infix fun <T> Array<T>.eq(value: Array<T>) {
+  test(this.toString(), this, value,
+    { Arrays.equals(this, value) })
+}
+*/
 
 infix fun Double.eq(value: Double) {
-  println(this)
-  val diff = this - value
-  if (Math.abs(diff) > 0.0000001)
-    println("[Error]: $this != $value")
-}
-
-infix fun <T> Array<T>.eq(value: Array<T>) {
-  println(this)
-  equals(Arrays.equals(this, value), true)
+  test(this.toString(), this, value,
+    { Math.abs(this - value) > 0.0000001 })
 }
 
 infix fun <T> T.neq(value: T) {
-  println(this)
-  if (this == value)
-    println("[Error]: $this == $value")
+  test(this.toString(), this, value,
+    { this == value },
+    "$errTag $this == $value")
 }
 
-// Capture an exception and produce its name:
+// Capture an exception and produce its name.
+// Usage:
+//   capture {
+//     // Code that fails
+//   } eq "FailureException"
 fun capture(f: () -> Unit): String =
   try {
     f()
-    "[Error]: Expected an exception"
+    expectedException
   } catch(e: Throwable) {
     e.javaClass.simpleName
   }
 
-/* Usage:
-capture {
-  // Code that fails
-} eq "FailureException"
-*/
-
-// Capture a stack trace for comparison:
+// Capture a stack trace for comparison.
+// Usage:
+//   stacktrace {
+//     // Code that fails
+//   } eq """(stack trace)"""
 fun stacktrace(f: () -> Unit): String =
   try {
     f()
-    "[Error]: Expected an exception"
+    expectedException
   } catch(e: Throwable) {
     val trace = StringWriter()
     e.printStackTrace(PrintWriter(trace))
     trace.toString()
   }
 
-/* Usage:
-stacktrace {
-  // Code that fails
-} eq
-"""
-(stack trace)
-"""
-*/
-
 // Capture first line of stack trace,
 // and extract just the essence:
 fun stacktrace1(f: () -> Unit): String =
   try {
     f()
-    "[Error]: Expected an exception"
+    expectedException
   } catch(e: Throwable) {
-    val name = e.javaClass.simpleName
     val trace = StringWriter()
     e.printStackTrace(PrintWriter(trace))
-    trace.toString().lines()
-      .first().replaceBefore(":", name)
+    trace.toString().lines().first()
+      .replaceBefore(
+        ":", e.javaClass.simpleName)
   }
 
-
-// Add messages via trace(msg), to be later
-// validated with:
-// trace.result eq "(trace contents)"
+// Add messages via trace(msg). Validate with:
+// trace eq "(trace contents)"
 object trace {
   private var result = ""
   operator fun invoke(msg: Any) {

@@ -10,7 +10,7 @@ kotlin.KotlinNullPointerException
 at STKt${'$'}main${'$'}1.invoke(ST.kt:7)
 at STKt${'$'}main${'$'}1.invoke(ST.kt)
 at atomictest.AtomicTestKt
-.stacktrace(AtomicTest.kt:78)
+.stacktrace(AtomicTest.kt:77)
 at STKt.main(ST.kt:6)
 """
 }
