@@ -103,6 +103,11 @@ task BasicFunctions(type: JavaExec) {
     main = 'BasicFunctionsKt'
 }
 
+task BasicLogging(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'logging.BasicLoggingKt'
+}
+
 task BetterSuitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BetterSuitcaseKt'
@@ -1668,6 +1673,7 @@ task run (dependsOn: [
     'Backticks',
     'Basic',
     'BasicFunctions',
+    'BasicLogging',
     'BetterSuitcase',
     'BetterSurrey',
     'Bicycle',

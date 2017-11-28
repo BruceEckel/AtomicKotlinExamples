@@ -26,9 +26,9 @@ private fun <L, R> test(display: String,
 // Compare as Strings. Removes all whitespace
 // to allow embedded linefeeds & indentation:
 infix fun <T: Any> T.eq(rv: String) {
-  val rws = "\\s".toRegex()
-  val lval = this.toString().replace(rws, "")
-  val rval = rv.toString().replace(rws, "")
+  val ws = "\\s".toRegex()
+  val lval = this.toString().replace(ws, "")
+  val rval = rv.toString().replace(ws, "")
   test(this.toString(), lval, rval,
     { lval.compareTo(rval) != 0 })
 }
@@ -37,13 +37,6 @@ infix fun <T> T.eq(value: T) {
   test(this.toString(), this, value,
     { this != value })
 }
-
-/* Unused:
-infix fun <T> Array<T>.eq(value: Array<T>) {
-  test(this.toString(), this, value,
-    { Arrays.equals(this, value) })
-}
-*/
 
 infix fun Double.eq(value: Double) {
   test(this.toString(), this, value,
@@ -70,19 +63,37 @@ fun capture(f: () -> Unit): String =
   }
 
 // Capture a stack trace for comparison.
+// Ignore whitespace and line numbers.
 // Usage:
 //   stacktrace {
 //     // Code that fails
 //   } eq """(stack trace)"""
-fun stacktrace(f: () -> Unit): String =
-  try {
-    f()
-    expectedException
-  } catch(e: Throwable) {
-    val trace = StringWriter()
-    e.printStackTrace(PrintWriter(trace))
-    trace.toString()
+object stacktrace {
+  private var result = ""
+  operator fun
+  invoke(f: () -> Unit): stacktrace {
+    result = try {
+      f()
+      expectedException
+    } catch(e: Throwable) {
+      val trace = StringWriter()
+      e.printStackTrace(PrintWriter(trace))
+      trace.toString()
+    }
+    return this
   }
+  infix fun eq(rv: String) {
+    val ws = "\\s".toRegex()
+    val lineNum = ":\\d+".toRegex()
+    fun String.clean() = this
+      .replace(ws, "").replace(lineNum, "")
+    val lval = result.clean()
+    val rval = rv.clean()
+    test(result.toString(), lval, rval,
+      { lval.compareTo(rval) != 0 },
+      "$errTag\n[$lval]\n!=\n[$rval]")
+  }
+}
 
 // Capture first line of stack trace,
 // and extract just the essence:
@@ -105,8 +116,6 @@ object trace {
   operator fun invoke(msg: Any) {
     result += msg.toString() + "\n"
   }
-  fun reset() {
-    result = ""
-  }
-  infix fun eq(msg: String) = result eq msg
+  fun reset() { result = "" }
+  infix fun eq(rv: String) = result eq rv
 }
