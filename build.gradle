@@ -22,6 +22,7 @@ repositories {
 
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.suppressWarnings = true
 }
 
 compileTestKotlin {
