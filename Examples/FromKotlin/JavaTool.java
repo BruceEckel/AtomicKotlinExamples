@@ -2,8 +2,7 @@
 package FromKotlin;
 
 public class JavaTool {
-  public static
-  JavaTool get(String s) {
+  public static JavaTool get(String s) {
     if(s == null) return null;
     return new JavaTool();
   }

@@ -1,13 +1,13 @@
 // FromKotlin/UseBeanClass.kt
 import atomictest.eq
-import FromKotlin.BeanClass
+import FromKotlin.Chameleon
 
 fun main(args: Array<String>) {
-  val bean = BeanClass()
-  bean.size eq 100
-  bean.description eq "Bean"
-  bean.size = 10
-  bean.size eq 10
-  bean.description = "Smaller"
-  bean.description eq "Smaller"
+  val chameleon = Chameleon()
+  chameleon.size = 1
+  chameleon.size eq 1
+  chameleon.color = "green"
+  chameleon.color eq "green"
+  chameleon.color = "turquoise"
+  chameleon.color eq "turquoise"
 }

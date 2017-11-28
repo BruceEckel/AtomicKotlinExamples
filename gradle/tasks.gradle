@@ -368,11 +368,6 @@ task DisplayDuck(type: JavaExec) {
     main = 'DisplayDuckKt'
 }
 
-task DisplayList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FromKotlin.DisplayListKt'
-}
-
 task DisplayListBlemish(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DisplayListBlemishKt'
@@ -466,6 +461,11 @@ task ExplicitDelegation(type: JavaExec) {
 task ExpressionInTemplate(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExpressionInTemplateKt'
+}
+
+task ExtensionsToJavaClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FromKotlin.ExtensionsToJavaClassKt'
 }
 
 task Facto(type: JavaExec) {
@@ -1726,7 +1726,6 @@ task run (dependsOn: [
     'DestructuringDuo',
     'DestructuringMap',
     'DisplayDuck',
-    'DisplayList',
     'DisplayListBlemish',
     'DisplayListMap',
     'DivZero',
@@ -1746,6 +1745,7 @@ task run (dependsOn: [
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExpressionInTemplate',
+    'ExtensionsToJavaClass',
     'Facto',
     'Factorial',
     'Factorials',
