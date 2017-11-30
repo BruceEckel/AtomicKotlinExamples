@@ -1023,6 +1023,11 @@ task MutableSet(type: JavaExec) {
     main = 'MutableSetKt'
 }
 
+task NPEOnPlatformType(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NPEOnPlatformTypeKt'
+}
+
 task NamedAndDefaultArgs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NamedAndDefaultArgsKt'
@@ -1173,6 +1178,11 @@ task Phi(type: JavaExec) {
     main = 'PhiKt'
 }
 
+task PlatformTypes(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'PlatformTypesKt'
+}
+
 task Postconditions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PostconditionsKt'
@@ -1311,6 +1321,11 @@ task Simple(type: JavaExec) {
 task SimpleHashing(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SimpleHashingKt'
+}
+
+task SimpleLoggingStrategy(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'logging.SimpleLoggingStrategyKt'
 }
 
 task SimpleMap(type: JavaExec) {
@@ -1538,14 +1553,14 @@ task UseALibrary(type: JavaExec) {
     main = 'UseALibraryKt'
 }
 
+task UseAtomicLog(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UseAtomicLogKt'
+}
+
 task UseBeanClass(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UseBeanClassKt'
-}
-
-task UseJavaTool(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'UseJavaToolKt'
 }
 
 task UsingAtomicTest(type: JavaExec) {
@@ -1857,6 +1872,7 @@ task run (dependsOn: [
     'MutableList',
     'MutableMaps',
     'MutableSet',
+    'NPEOnPlatformType',
     'NamedAndDefaultArgs',
     'NamedArguments',
     'NamedCompanionObject',
@@ -1887,6 +1903,7 @@ task run (dependsOn: [
     'ParameterizedTypes',
     'Pets',
     'Phi',
+    'PlatformTypes',
     'Postconditions',
     'PropertyInInterface',
     'PropertyOptions',
@@ -1915,6 +1932,7 @@ task run (dependsOn: [
     'Sets',
     'Simple',
     'SimpleHashing',
+    'SimpleLoggingStrategy',
     'SimpleMap',
     'SmartCasts',
     'Solid',
@@ -1960,8 +1978,8 @@ task run (dependsOn: [
     'UnpredictableHashing',
     'Usable',
     'UseALibrary',
+    'UseAtomicLog',
     'UseBeanClass',
-    'UseJavaTool',
     'UsingAtomicTest',
     'UsingDataClass',
     'UsingKotlinClass',
