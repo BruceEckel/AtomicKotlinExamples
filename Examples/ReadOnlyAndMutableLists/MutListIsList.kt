@@ -7,7 +7,7 @@ fun getList(): List<Int> {
 }
 
 fun main(args: Array<String>) {
-  // getList() produces an immutable List:
+  // getList() produces a read-only List:
   val list = getList()
   // list += 3 // Error
   list eq listOf(1, 2, 3)
