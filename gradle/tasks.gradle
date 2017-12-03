@@ -583,6 +583,11 @@ task GenericHolder(type: JavaExec) {
     main = 'GenericHolder'
 }
 
+task GenericVsAny(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.GenericVsAnyKt'
+}
+
 task GreatApe(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritance.GreatApeKt'
@@ -1789,6 +1794,7 @@ task run (dependsOn: [
     'FullyQualify',
     'GardenGnome',
     'GenericHolder',
+    'GenericVsAny',
     'GreatApe',
     'GreatApe2',
     'GreatApe3',
