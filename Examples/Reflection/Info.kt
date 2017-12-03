@@ -10,7 +10,8 @@ fun info(a: Any) {
     println("$kcm")
   println("===")
   println("simpleName: ${kc.simpleName}")
-  println("qualifiedName: ${kc.qualifiedName}")
+  println(
+    "qualifiedName: ${kc.qualifiedName}")
   println("Constructors:")
   for(ctor in kc.constructors)
     println("  $ctor")

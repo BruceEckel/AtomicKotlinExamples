@@ -2,7 +2,7 @@
 import atomictest.eq
 
 fun matchColor(color: String) =
-  when(color) {                    // [1]
+  when(color) {                     // [1]
     "red" -> "RED"                  // [2]
     "blue" -> "BLUE"
     "green" -> "GREEN"

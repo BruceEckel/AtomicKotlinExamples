@@ -48,6 +48,11 @@ task Animals(type: JavaExec) {
     main = 'AnimalsKt'
 }
 
+task AnnotatedJava(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'usingannotatedtypes.AnnotatedJavaKt'
+}
+
 task AnonymousFunction(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnonymousFunctionKt'
@@ -1677,6 +1682,7 @@ task run (dependsOn: [
     'AllOperators',
     'AnUnchangingVar',
     'Animals',
+    'AnnotatedJava',
     'AnonymousFunction',
     'ArgumentOrder',
     'ArrayListOf',

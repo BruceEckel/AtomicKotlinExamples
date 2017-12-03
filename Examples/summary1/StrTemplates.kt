@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
   println("Found $answer!")            // [1]
   val condition = true
   println(
-    "${if (condition) 'a' else 'b'}")  // [2]
+    "${if(condition) 'a' else 'b'}")  // [2]
   println("printing a $1")             // [3]
 }
 /* Output:

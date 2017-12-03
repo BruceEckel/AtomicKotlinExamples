@@ -1,18 +1,18 @@
 // NullableTypesAndJava/NPEOnPlatformType.kt
-import FromKotlin.JavaTool
+import JavaCode.JTool
 import atomictest.*
 
 fun main(args: Array<String>) {
-  val cn = JavaTool.get(null)
-  cn?.method() eq null                    // [1]
+  val cn = JTool.get(null)
+  cn?.method() eq null              // [1]
   capture {
-    cn.method()                           // [2]
+    cn.method()                     // [2]
   } eq "NullPointerException"
 
-  val an: JavaTool? = JavaTool.get(null)
+  val an: JTool? = JTool.get(null)  // [3]
   an?.method() eq null
 
   capture {
-    val bn: JavaTool = JavaTool.get(null)
-  } eq "IllegalStateException"           // [3]
+    val bn: JTool = JTool.get(null) // [4]
+  } eq "IllegalStateException"
 }

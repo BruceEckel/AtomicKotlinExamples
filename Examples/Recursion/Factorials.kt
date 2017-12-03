@@ -1,5 +1,5 @@
 // Recursion/Factorials.kt
-import atomictest.*
+import atomictest.eq
 
 fun factorialInt(n: Int): Int {
   assert(n >= 0)

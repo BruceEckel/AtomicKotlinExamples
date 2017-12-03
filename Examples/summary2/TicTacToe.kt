@@ -22,7 +22,7 @@ class Grid {
     if(x < 0 || x > 2 || y < 0 || y > 2)
       "invalid move"
     else
-      cells[x][y].set(e)        // [3]
+      cells[x][y].set(e)          // [3]
 }
 
 fun main(args: Array<String>) {

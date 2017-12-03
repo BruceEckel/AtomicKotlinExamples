@@ -1,7 +1,7 @@
 // Recursion/Factorial.kt
 package recursion
 import bigint.*
-import atomictest.*
+import atomictest.eq
 
 tailrec fun
 factorial(n: Int, acc: BigInt = one): BigInt {

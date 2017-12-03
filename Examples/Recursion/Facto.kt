@@ -1,6 +1,6 @@
 // Recursion/Facto.kt
 import bigint.*
-import atomictest.*
+import atomictest.eq
 
 fun facto(n: BigInt): BigInt {
   assert(n >= zero)

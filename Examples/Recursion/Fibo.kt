@@ -1,6 +1,6 @@
 // Recursion/Fibo.kt
 import bigint.*
-import atomictest.*
+import atomictest.eq
 
 fun fibo(n: BigInt): BigInt {
   assert(n >= zero)

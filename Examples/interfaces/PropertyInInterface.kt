@@ -20,10 +20,8 @@ fun main(args: Array<String>) {
   val list: List<SignedInt> =
     listOf(C(10), C(-10), D())
   var sumPositive = 0
-  for(i in list) {
-    if(i.isPositive) {
+  for(i in list)
+    if(i.isPositive)
       sumPositive += i.number      // [5]
-    }
-  }
   sumPositive eq 15
 }

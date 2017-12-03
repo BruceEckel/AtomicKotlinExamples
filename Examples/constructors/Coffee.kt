@@ -21,14 +21,13 @@ class Coffee(
       if(toGo) "ToGoCup " else "HereCup "
   }
   fun pourShots() {
-    for (s in 1..shots)
+    for(s in 1..shots)
       result +=
         if(decaf) "decaf shot " else "shot "
   }
   fun addMilk() {
-    if (milk) {
+    if(milk)
       result += "milk "
-    }
   }
   fun addSyrup() {
     result += syrup

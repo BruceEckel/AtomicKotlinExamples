@@ -10,12 +10,12 @@ fun main(args: Array<String>) {
 
   // Select each element in the List:
   var result = ""
-  for (i in list1) {                    // [3]
+  for(i in list1)                       // [3]
     result += "$i "
-  }
   result eq "1 3 5 7 11 13 "
 
-  val list2 = listOf(1.1, 2.2, 3.3, 4.4)// [4]
+  val list2 =
+    listOf(1.1, 2.2, 3.3, 4.4)          // [4]
   list2.min() eq 1.1
   list2.max() eq 4.4
 

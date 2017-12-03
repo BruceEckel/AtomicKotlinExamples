@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
   do {
     print(".")
     i++
-  } while (condition(i))
+  } while(condition(i))
 }
 /* Output:
 ..........

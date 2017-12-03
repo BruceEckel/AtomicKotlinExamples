@@ -1,10 +1,11 @@
 // FromKotlin/ExtensionsToJavaClass.kt
 package FromKotlin
 
-import atomictest.*
+import atomictest.eq
 
-fun Chameleon.adjustToTemperature(isHot: Boolean) {
-  color = if (isHot) "grey" else "black"
+fun Chameleon.adjustToTemperature(
+  isHot: Boolean) {
+  color = if(isHot) "grey" else "black"
 }
 
 fun main(args: Array<String>) {

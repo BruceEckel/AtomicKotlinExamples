@@ -6,9 +6,8 @@ class Cup2 {
   val max = 100
   fun add(increase: Int): Int {
     percentFull += increase
-    if (percentFull > max) {
+    if(percentFull > max)
       percentFull = max
-    }
     return percentFull
   }
 }

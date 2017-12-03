@@ -1,21 +1,20 @@
 // NullableTypesAndJava/PlatformTypes.kt
-import FromKotlin.JavaTool
+import JavaCode.JTool
 import atomictest.eq
 
 object KotlinCode {
-  val a: JavaTool? = JavaTool.get("")
-  val b: JavaTool = JavaTool.get("")
-  val c = JavaTool.get("")
+  val a: JTool? = JTool.get("")
+  val b: JTool = JTool.get("")
+  val c = JTool.get("")
 }
 
 fun main(args: Array<String>) {
-  with (KotlinCode) {
+  with(KotlinCode) {
     a?.method() eq "Success"
     b.method() eq "Success"
     c.method() eq "Success"
-
-    ::a.returnType eq "FromKotlin.JavaTool?"
-    ::b.returnType eq "FromKotlin.JavaTool"
-    ::c.returnType eq "FromKotlin.JavaTool!"
+    ::a.returnType eq "JavaCode.JTool?"
+    ::b.returnType eq "JavaCode.JTool"
+    ::c.returnType eq "JavaCode.JTool!"
   }
 }
