@@ -1,6 +1,8 @@
 // LambdaWithReceiver/Basic.kt
+package lambdawithreceiver
+
 class Klass1 {
-  fun f() {}
+  fun f() { println("hi") }
 }
 
 // Pass receiver to lambda:

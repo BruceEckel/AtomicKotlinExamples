@@ -1,14 +1,23 @@
 // Generics/GenericVsAny.kt
 package generics
-import atomictest.eq
+import atomictest.*
 
-fun <T> g(arg: T) = arg
-fun a(arg: Any) = arg
+fun a(arg: Any): Any = arg
+fun <T> g(arg: T): T = arg
 
-data class DC(val n:Int = 47, val g:Int = 11)
+data class N(val n: Int = 47)
+val n = N()
 
 fun main(args: Array<String>) {
-  fun nm(a: Any) = a::class.simpleName
-  nm(g(DC())) eq "DC"
-  nm(a(DC())) eq "DC"
+  val da: Any = a(n)
+  // Won't compile:
+  // val da2: N = a(n)
+  // You can cast it:
+  val da3: N = a(n) as N
+  // But you can cast it to anything:
+  capture {
+    val da4: Int = a(n) as Int
+  } eq "ClassCastException"
+  // Generic retains the type information:
+  val dg: N = g(n)
 }

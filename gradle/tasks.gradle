@@ -58,6 +58,11 @@ task AnonymousFunction(type: JavaExec) {
     main = 'AnonymousFunctionKt'
 }
 
+task AnyInstead(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.AnyInsteadKt'
+}
+
 task ArgumentOrder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ArgumentOrderKt'
@@ -100,12 +105,17 @@ task Backticks(type: JavaExec) {
 
 task Basic(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'BasicKt'
+    main = 'lambdawithreceiver.BasicKt'
 }
 
 task BasicFunctions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BasicFunctionsKt'
+}
+
+task BasicGenerics(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.BasicGenericsKt'
 }
 
 task BasicLogging(type: JavaExec) {
@@ -348,11 +358,6 @@ task DereferenceNull(type: JavaExec) {
     main = 'DereferenceNullKt'
 }
 
-task Describe(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DescribeKt'
-}
-
 task DestructuringData(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.DestructuringDataKt'
@@ -578,9 +583,19 @@ task GardenGnome(type: JavaExec) {
     main = 'GardenGnomeKt'
 }
 
+task Generic(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.GenericKt'
+}
+
 task GenericHolder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GenericHolder'
+}
+
+task GenericSpeakers(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.GenericSpeakersKt'
 }
 
 task GenericVsAny(type: JavaExec) {
@@ -1223,6 +1238,11 @@ task Random(type: JavaExec) {
     main = 'RandomKt'
 }
 
+task RandomList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RandomListKt'
+}
+
 task RangeMembership(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RangeMembershipKt'
@@ -1351,6 +1371,11 @@ task SmartCasts(type: JavaExec) {
 task Solid(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SolidKt'
+}
+
+task Speakers(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.SpeakersKt'
 }
 
 task SpreadOperator(type: JavaExec) {
@@ -1689,6 +1714,7 @@ task run (dependsOn: [
     'Animals',
     'AnnotatedJava',
     'AnonymousFunction',
+    'AnyInstead',
     'ArgumentOrder',
     'ArrayListOf',
     'AssertTrue',
@@ -1699,6 +1725,7 @@ task run (dependsOn: [
     'Backticks',
     'Basic',
     'BasicFunctions',
+    'BasicGenerics',
     'BasicLogging',
     'BetterSuitcase',
     'BetterSurrey',
@@ -1747,7 +1774,6 @@ task run (dependsOn: [
     'DelegatedControls',
     'Dereference',
     'DereferenceNull',
-    'Describe',
     'DestructuringData',
     'DestructuringDuo',
     'DestructuringMap',
@@ -1793,7 +1819,9 @@ task run (dependsOn: [
     'FormatListWithLambda',
     'FullyQualify',
     'GardenGnome',
+    'Generic',
     'GenericHolder',
+    'GenericSpeakers',
     'GenericVsAny',
     'GreatApe',
     'GreatApe2',
@@ -1922,6 +1950,7 @@ task run (dependsOn: [
     'Quote',
     'Quoting',
     'Random',
+    'RandomList',
     'RangeMembership',
     'RangeSum',
     'ReadOnlyCollections',
@@ -1948,6 +1977,7 @@ task run (dependsOn: [
     'SimpleMap',
     'SmartCasts',
     'Solid',
+    'Speakers',
     'SpreadOperator',
     'StateOfAClass',
     'StrTemplates',

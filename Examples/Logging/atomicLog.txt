@@ -1,0 +1,5 @@
+Trace: Hello, Atomic Log!
+Debug: Hello, Atomic Log!
+Info: Hello, Atomic Log!
+Warn: Hello, Atomic Log!
+Error: Hello, Atomic Log!
