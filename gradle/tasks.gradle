@@ -583,14 +583,9 @@ task GardenGnome(type: JavaExec) {
     main = 'GardenGnomeKt'
 }
 
-task Generic(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdawithreceiver.GenericKt'
-}
-
 task GenericHolder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'GenericHolder'
+    main = 'generics.GenericHolderKt'
 }
 
 task GenericSpeakers(type: JavaExec) {
@@ -661,6 +656,11 @@ task HelloWorld(type: JavaExec) {
 task HiddenArrayList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HiddenArrayListKt'
+}
+
+task Holder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.HolderKt'
 }
 
 task If1(type: JavaExec) {
@@ -1193,6 +1193,11 @@ task ParameterizedTypes(type: JavaExec) {
     main = 'parameterizedtypes.ParameterizedTypesKt'
 }
 
+task Perform(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.PerformKt'
+}
+
 task Pets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'hashing.PetsKt'
@@ -1508,11 +1513,6 @@ task TicTacToe(type: JavaExec) {
     main = 'TicTacToeKt'
 }
 
-task ToString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ToStringKt'
-}
-
 task TripleQuotes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TripleQuotesKt'
@@ -1596,6 +1596,11 @@ task UseAtomicLog(type: JavaExec) {
 task UseBeanClass(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UseBeanClassKt'
+}
+
+task UseLater(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.UseLaterKt'
 }
 
 task UsingAtomicTest(type: JavaExec) {
@@ -1819,7 +1824,6 @@ task run (dependsOn: [
     'FormatListWithLambda',
     'FullyQualify',
     'GardenGnome',
-    'Generic',
     'GenericHolder',
     'GenericSpeakers',
     'GenericVsAny',
@@ -1835,6 +1839,7 @@ task run (dependsOn: [
     'HelloCoroutines',
     'HelloWorld',
     'HiddenArrayList',
+    'Holder',
     'If1',
     'If2',
     'If3',
@@ -1941,6 +1946,7 @@ task run (dependsOn: [
     'Pairs',
     'ParameterizedReturn',
     'ParameterizedTypes',
+    'Perform',
     'Pets',
     'Phi',
     'PlatformTypes',
@@ -2004,7 +2010,6 @@ task run (dependsOn: [
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
-    'ToString',
     'TripleQuotes',
     'TrueOrFalse',
     'Truncation',
@@ -2022,6 +2027,7 @@ task run (dependsOn: [
     'UseALibrary',
     'UseAtomicLog',
     'UseBeanClass',
+    'UseLater',
     'UsingAtomicTest',
     'UsingDataClass',
     'UsingKotlinClass',

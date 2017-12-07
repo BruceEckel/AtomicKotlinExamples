@@ -5,7 +5,6 @@ class Klass1 {
   fun f() { println("hi") }
 }
 
-// Pass receiver to lambda:
 fun useF(lwr: Klass1.() -> Unit): Klass1 {
   val k = Klass1()  // Create receiver
   k.lwr() // Call method on receiver

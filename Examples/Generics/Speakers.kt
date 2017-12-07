@@ -2,9 +2,18 @@
 package generics
 import atomictest.*
 
-class Person { fun speak() = "Hi!" }
-class Dog { fun bark() = "Ruff!" }
-class Robot { fun connect() = "Beep!" }
+class Person {
+  fun speak() = "Hi!"
+  fun sit() = true
+}
+class Dog {
+  fun bark() = "Ruff!"
+  fun lieDown() = true
+}
+class Robot {
+  fun connect() = "Beep!"
+  fun charge() = true
+}
 
 fun talk(speaker: Any) = when(speaker) {
   is Person -> speaker.speak()
