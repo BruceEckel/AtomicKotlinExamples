@@ -4,11 +4,15 @@ import atomictest.*
 
 fun <T> gFunc(arg: T): T = arg
 
-class gClass<T>(val x: T) {
+class GClass<T>(val x: T) {
   fun f(): T = x
 }
 
-interface gInterface<T> {
+class MFunc {
+  fun <T> f(arg: T): T = arg
+}
+
+interface GInterface<T> {
   val x: T
   fun f(): T
 }
@@ -18,7 +22,11 @@ fun main(args: Array<String>) {
   gFunc(1) eq 1
   gFunc(Dog()).bark() eq "Ruff!"       // [1]
 
-  gClass("Yellow").f() eq "Yellow"
-  gClass(1).f() eq 1
-  gClass(Dog()).f().bark() eq "Ruff!"  // [2]
+  GClass("Cyan").f() eq "Cyan"
+  GClass(11).f() eq 11
+  GClass(Dog()).f().bark() eq "Ruff!"  // [2]
+
+  MFunc().f("Amber") eq "Amber"
+  MFunc().f(111) eq 111
+  MFunc().f(Dog()).bark() eq "Ruff!"   // [3]
 }

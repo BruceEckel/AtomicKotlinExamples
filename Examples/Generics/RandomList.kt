@@ -13,17 +13,7 @@ fun main(args: Array<String>) {
     "brown", "dog")
   (0..11).map{rs.select()}.joinToString() eq
   """
-  brown,
-  over,
-  fox,
-  quick,
-  quick,
-  dog,
-  brown,
-  The,
-  brown,
-  lazy,
-  brown,
-  brown
+  brown, over, fox, quick, quick, dog, brown,
+  The, brown, lazy, brown, brown
   """
 }

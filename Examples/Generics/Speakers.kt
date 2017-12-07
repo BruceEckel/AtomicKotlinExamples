@@ -6,10 +6,12 @@ class Person {
   fun speak() = "Hi!"
   fun sit() = true
 }
+
 class Dog {
   fun bark() = "Ruff!"
   fun lieDown() = true
 }
+
 class Robot {
   fun connect() = "Beep!"
   fun charge() = true
