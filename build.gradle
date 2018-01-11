@@ -46,9 +46,12 @@ dependencies {
 sourceSets {
     main.java.srcDirs += 'Examples'
     main.kotlin.srcDirs += 'Examples'
+    test.kotlin.srcDirs += 'Tests'
+    test.java.srcDirs += 'Tests'
 }
 
 apply from: 'gradle/tasks.gradle'
+apply from: 'gradle/tests.gradle'
 
 kotlin {
     experimental {
