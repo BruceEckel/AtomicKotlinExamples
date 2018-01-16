@@ -42,3 +42,6 @@ redo.bat
 reinsert.bat
 test_output.txt
 test_output.txt
+Examples/ErrorReporting/trace_real.txt
+Examples/Logging/atomicLog.txt
+Examples/Logging/simpleLogFile.txt
