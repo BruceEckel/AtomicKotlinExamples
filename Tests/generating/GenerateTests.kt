@@ -58,7 +58,7 @@ fun generateTests(exampleInfoList: List<ExampleInfo>): String {
         tests += """
             @Test
             public void $exampleName() {
-                testExample("${exampleInfo.file.path}", ${exampleInfo.qualifiedName}::main);
+                testExample("${(exampleInfo.file.path).replace("\\", "/")}", ${exampleInfo.qualifiedName}::main);
             }""".replaceIndent("    ")
     }
 
@@ -72,6 +72,6 @@ fun generateTests(exampleInfoList: List<ExampleInfo>): String {
             appendln()
             appendln(test)
         }
-        append("}")
+        append("}\n")
     }
 }
