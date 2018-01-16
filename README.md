@@ -214,3 +214,17 @@ type:
 
 To compile and run examples using the Kotlin command-line tools, see
 [Command-Line Hello World](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Hello_World.md).
+
+# Testing
+
+The test system is built in so that we (the authors) can verify the correctness of what goes into the book. You don't
+need to run the tests, but if you want to:
+
+1. `gradlew GenerateTests` generates tests from the sources in this repository. 
+   It creates (or recreates) the file `TestExamples.java`. You normally don't need to run this; the 
+   `TestExamples.java` in the repository should be up to date.
+
+2. `gradlew TestExamples` runs the tests in `TestExamples.java`.
+
+Alternatively, `TestExamples.java` can be called as a regular **JUnit** test class.
+
