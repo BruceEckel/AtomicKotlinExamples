@@ -9,7 +9,7 @@ fun maybeNullString(s: String?) =
 
 fun main(args: Array<String>) {
   maybeNullString("Not a null String") eq 17
-  stacktrace1 {
+  capture {
     maybeNullString(null)
   } eq "ElvisException: s cannot be null"
 }

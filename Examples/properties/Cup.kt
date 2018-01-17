@@ -1,5 +1,4 @@
 // Properties/Cup.kt
-import atomictest.eq
 
 class Cup {
   var percentFull = 0
@@ -10,6 +9,11 @@ fun main(args: Array<String>) {
   c1.percentFull = 50
   val c2 = Cup()
   c2.percentFull = 100
-  c1.percentFull eq 50
-  c2.percentFull eq 100
+
+  println(c1.percentFull)
+  println(c2.percentFull)
 }
+/* Output:
+50
+100
+*/

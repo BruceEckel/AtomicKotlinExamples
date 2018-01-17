@@ -15,7 +15,7 @@ fun createResultFile(create: Boolean) {
 fun main(args: Array<String>) {
   if(resultFile.exists())
     resultFile.delete()
-  stacktrace1 {
+  capture {
     createResultFile(false)
   } eq """IllegalStateException:
   results.txt doesn't exist!"""

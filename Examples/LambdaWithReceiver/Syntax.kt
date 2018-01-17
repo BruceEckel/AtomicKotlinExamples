@@ -1,8 +1,8 @@
 // LambdaWithReceiver/Syntax.kt
 
 class Klass2 {
-  fun f1(): Int { return 1 }
-  fun f2(n: Int): Int { return 2 * n }
+  fun f1(): Int = 1
+  fun f2(n: Int): Int = 2 * n
 }
 
 // Pass receiver to the lambda:

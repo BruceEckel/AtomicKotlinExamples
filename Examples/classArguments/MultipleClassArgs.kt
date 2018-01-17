@@ -1,11 +1,23 @@
 // ClassArguments/MultipleClassArgs.kt
-import atomictest.eq
 
-class
-Sum(val a1: Int, val a2: Int, val a3: Int) {
-  fun result(): Int = a1 + a2 + a3
+class AlienSpecies(
+  val name: String, 
+  val eyes: Int, 
+  val hands: Int,
+  val legs: Int
+) {
+  fun represent(): String = 
+    "$name with $eyes eyes, " + 
+    "$hands hands and $legs legs"
 }
 
 fun main(args: Array<String>) {
-  Sum(13, 27, 44).result() eq 84
+  val shim = AlienSpecies("Shimshamian", 3, 2, 2)
+  val grung = AlienSpecies("Grunglokian", 2, 4, 2)
+  println(shim.represent())
+  println(grung.represent())
 }
+/* Output:
+Shimshamian with 3 eyes, 2 hands and 2 legs
+Grunglokian with 2 eyes, 4 hands and 2 legs
+*/

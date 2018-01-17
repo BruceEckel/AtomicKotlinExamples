@@ -1,6 +1,7 @@
 // ImportsAndPackages/FullyQualify.kt
 
 fun main(args: Array<String>) {
-  val r = java.util.Random()
-  val p = java.util.Properties()
+  println(kotlin.math.PI)
+  println(kotlin.math.cos(kotlin.math.PI))
+  println(kotlin.math.cos(2 * kotlin.math.PI))
 }

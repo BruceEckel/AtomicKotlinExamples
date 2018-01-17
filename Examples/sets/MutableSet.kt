@@ -6,4 +6,6 @@ fun main(args: Array<String>) {
   set += 42
   set += 42
   set eq setOf(42)
+  set -= 42
+  set eq setOf<Int>()
 }

@@ -1,17 +1,13 @@
 // ClassArguments/VisibleClassArgs.kt
-import atomictest.eq
 
-class ClassArg2(var a: Int)
-class ClassArg3(val a: Int)
+class AlienWithMutableName(var name: String)
+class AlienWithFixedName(val name: String)
 
 fun main(args: Array<String>) {
-  val ca2 = ClassArg2(20)
-  val ca3 = ClassArg3(21)
+  val alien1 = AlienWithMutableName("Reverse Giraffe")
+  val alien2 = AlienWithFixedName("Krombopolis Michael")
 
-  ca2.a eq 20
-  ca3.a eq 21
-  ca2.a = 24
-  ca2.a eq 24
+  alien1.name = "Parasite"
   // Can't do this:
-  // ca3.a = 35
+//  alien2.name = "Parasite"
 }

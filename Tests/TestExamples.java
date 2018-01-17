@@ -9,7 +9,7 @@ public class TestExamples extends AbstractTestExamples {
 
     @Test
     public void testAuxiliaryInitialization() {
-        testExample("Examples/BaseInit/AuxiliaryInitialization.kt", AuxiliaryInitializationKt::main);
+        testExample("Examples/BaseInit/AuxiliaryInitialization.kt", baseclassinit.AuxiliaryInitializationKt::main);
     }
 
     @Test
@@ -48,8 +48,18 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testGoodAlien() {
+        testExample("Examples/ClassArguments/GoodAlien.kt", GoodAlienKt::main);
+    }
+
+    @Test
     public void testMultipleClassArgs() {
         testExample("Examples/ClassArguments/MultipleClassArgs.kt", MultipleClassArgsKt::main);
+    }
+
+    @Test
+    public void testPrintAlienSpieces() {
+        testExample("Examples/ClassArguments/PrintAlienSpieces.kt", PrintAlienSpiecesKt::main);
     }
 
     @Test
@@ -73,16 +83,6 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testIntRanges() {
-        testExample("Examples/ClassesAndObjects/IntRanges.kt", IntRangesKt::main);
-    }
-
-    @Test
-    public void testRangeSum() {
-        testExample("Examples/ClassesAndObjects/RangeSum.kt", RangeSumKt::main);
-    }
-
-    @Test
     public void testHiddenArrayList() {
         testExample("Examples/CollectionsAndJava/HiddenArrayList.kt", HiddenArrayListKt::main);
     }
@@ -95,6 +95,16 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testReadOnlyCollections() {
         testExample("Examples/CollectionsAndJava/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
+    }
+
+    @Test
+    public void testMultiLineComment() {
+        testExample("Examples/Comments/MultiLineComment.kt", MultiLineCommentKt::main);
+    }
+
+    @Test
+    public void testSingleLineComment() {
+        testExample("Examples/Comments/SingleLineComment.kt", SingleLineCommentKt::main);
     }
 
     @Test
@@ -160,6 +170,21 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testAnimals() {
         testExample("Examples/CreatingClasses/Animals.kt", AnimalsKt::main);
+    }
+
+    @Test
+    public void testCat() {
+        testExample("Examples/CreatingClasses/Cat.kt", CatKt::main);
+    }
+
+    @Test
+    public void testDog() {
+        testExample("Examples/CreatingClasses/Dog.kt", DogKt::main);
+    }
+
+    @Test
+    public void testHamster() {
+        testExample("Examples/CreatingClasses/Hamster.kt", HamsterKt::main);
     }
 
     @Test
@@ -303,58 +328,73 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testAverageIncomeFirstVersion() {
+        testExample("Examples/Exceptions/AverageIncomeFirstVersion.kt", firstVersion.AverageIncomeFirstVersionKt::main);
+    }
+
+    @Test
+    public void testAverageIncomeWithNull() {
+        testExample("Examples/Exceptions/AverageIncomeWithNull.kt", withNull.AverageIncomeWithNullKt::main);
+    }
+
+    @Test
+    public void testAverageIncomeWithProperException() {
+        testExample("Examples/Exceptions/AverageIncomeWithProperException.kt", properException.AverageIncomeWithProperExceptionKt::main);
+    }
+
+    @Test
+    public void testExceptions1() {
+        testExample("Examples/Exceptions/Exceptions1.kt", Exceptions1Kt::main);
+    }
+
+    @Test
+    public void testExceptions2() {
+        testExample("Examples/Exceptions/Exceptions2.kt", Exceptions2Kt::main);
+    }
+
+    @Test
+    public void testIntroducingCapture() {
+        testExample("Examples/Exceptions/IntroducingCapture.kt", IntroducingCaptureKt::main);
+    }
+
+    @Test
+    public void testIntroducingNull() {
+        testExample("Examples/Exceptions/IntroducingNull.kt", IntroducingNullKt::main);
+    }
+
+    @Test
     public void testConversionFailure() {
-        testExample("Examples/Exceptions/ConversionFailure.kt", ConversionFailureKt::main);
+        testExample("Examples/ExceptionsHandling/ConversionFailure.kt", ConversionFailureKt::main);
     }
 
     @Test
     public void testDefiningExceptions() {
-        testExample("Examples/Exceptions/DefiningExceptions.kt", toss.DefiningExceptionsKt::main);
-    }
-
-    @Test
-    public void testDivZero() {
-        testExample("Examples/Exceptions/DivZero.kt", exceptions.DivZeroKt::main);
-    }
-
-    @Test
-    public void testDivZero2() {
-        testExample("Examples/Exceptions/DivZero2.kt", DivZero2Kt::main);
+        testExample("Examples/ExceptionsHandling/DefiningExceptions.kt", toss.DefiningExceptionsKt::main);
     }
 
     @Test
     public void testExceptionHandlers() {
-        testExample("Examples/Exceptions/ExceptionHandlers.kt", toss.ExceptionHandlersKt::main);
+        testExample("Examples/ExceptionsHandling/ExceptionHandlers.kt", toss.ExceptionHandlersKt::main);
     }
 
     @Test
     public void testGuaranteedCleanup() {
-        testExample("Examples/Exceptions/GuaranteedCleanup.kt", GuaranteedCleanupKt::main);
+        testExample("Examples/ExceptionsHandling/GuaranteedCleanup.kt", GuaranteedCleanupKt::main);
     }
 
     @Test
     public void testInputCheck() {
-        testExample("Examples/Exceptions/InputCheck.kt", InputCheckKt::main);
+        testExample("Examples/ExceptionsHandling/InputCheck.kt", InputCheckKt::main);
     }
 
     @Test
     public void testKotlinCheckedExceptions() {
-        testExample("Examples/Exceptions/KotlinCheckedExceptions.kt", KotlinCheckedExceptionsKt::main);
-    }
-
-    @Test
-    public void testNullDereference() {
-        testExample("Examples/Exceptions/NullDereference.kt", NullDereferenceKt::main);
-    }
-
-    @Test
-    public void testST() {
-        testExample("Examples/Exceptions/ST.kt", STKt::main);
+        testExample("Examples/ExceptionsHandling/KotlinCheckedExceptions.kt", KotlinCheckedExceptionsKt::main);
     }
 
     @Test
     public void testTryFinally() {
-        testExample("Examples/Exceptions/TryFinally.kt", TryFinallyKt::main);
+        testExample("Examples/ExceptionsHandling/TryFinally.kt", TryFinallyKt::main);
     }
 
     @Test
@@ -430,6 +470,11 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testIterateOverString() {
         testExample("Examples/ForAndRanges/IterateOverString.kt", IterateOverStringKt::main);
+    }
+
+    @Test
+    public void testRepeat() {
+        testExample("Examples/ForAndRanges/Repeat.kt", RepeatKt::main);
     }
 
     @Test
@@ -663,11 +708,6 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testImportMultiple() {
-        testExample("Examples/ImportsAndPackages/ImportMultiple.kt", ImportMultipleKt::main);
-    }
-
-    @Test
     public void testImportNameChange() {
         testExample("Examples/ImportsAndPackages/ImportNameChange.kt", ImportNameChangeKt::main);
     }
@@ -783,13 +823,33 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testExtensions() {
+        testExample("Examples/LambdaWithReceiver/Extensions.kt", lambdawithreceiver.ExtensionsKt::main);
+    }
+
+    @Test
+    public void testFunctionLiterals() {
+        testExample("Examples/LambdaWithReceiver/FunctionLiterals.kt", lambdawithreceiver.FunctionLiteralsKt::main);
+    }
+
+    @Test
     public void testSyntax() {
         testExample("Examples/LambdaWithReceiver/Syntax.kt", SyntaxKt::main);
     }
 
     @Test
+    public void testTestClass() {
+        testExample("Examples/LambdaWithReceiver/TestClass.kt", lambdawithreceiver.TestClassKt::main);
+    }
+
+    @Test
     public void testUseLater() {
         testExample("Examples/LambdaWithReceiver/UseLater.kt", lambdawithreceiver.UseLaterKt::main);
+    }
+
+    @Test
+    public void testWithReceiver() {
+        testExample("Examples/LambdaWithReceiver/WithReceiver.kt", lambdawithreceiver.WithReceiverKt::main);
     }
 
     @Test
@@ -848,13 +908,43 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testArrayListOf() {
-        testExample("Examples/Lists/ArrayListOf.kt", ArrayListOfKt::main);
+    public void testLists() {
+        testExample("Examples/Lists/Lists.kt", ListsKt::main);
     }
 
     @Test
-    public void testLists() {
-        testExample("Examples/Lists/Lists.kt", ListsKt::main);
+    public void testListUsefulFunction() {
+        testExample("Examples/Lists/ListUsefulFunction.kt", ListUsefulFunctionKt::main);
+    }
+
+    @Test
+    public void testMultipleListRefs() {
+        testExample("Examples/Lists/MultipleListRefs.kt", readonlyandmutable.MultipleListRefsKt::main);
+    }
+
+    @Test
+    public void testMutableList() {
+        testExample("Examples/Lists/MutableList.kt", MutableListKt::main);
+    }
+
+    @Test
+    public void testMutListIsList() {
+        testExample("Examples/Lists/MutListIsList.kt", readonlyandmutable.MutListIsListKt::main);
+    }
+
+    @Test
+    public void testOutOfBounds() {
+        testExample("Examples/Lists/OutOfBounds.kt", OutOfBoundsKt::main);
+    }
+
+    @Test
+    public void testParameterizedReturn() {
+        testExample("Examples/Lists/ParameterizedReturn.kt", parameterizedtypes.ParameterizedReturnKt::main);
+    }
+
+    @Test
+    public void testParameterizedTypes() {
+        testExample("Examples/Lists/ParameterizedTypes.kt", parameterizedtypes.ParameterizedTypesKt::main);
     }
 
     @Test
@@ -888,6 +978,11 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testGetValue() {
+        testExample("Examples/Maps/GetValue.kt", GetValueKt::main);
+    }
+
+    @Test
     public void testMaps() {
         testExample("Examples/Maps/Maps.kt", MapsKt::main);
     }
@@ -900,21 +995,6 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testReadOnlyMaps() {
         testExample("Examples/Maps/ReadOnlyMaps.kt", ReadOnlyMapsKt::main);
-    }
-
-    @Test
-    public void testCat() {
-        testExample("Examples/MemberFunctions/Cat.kt", CatKt::main);
-    }
-
-    @Test
-    public void testDog() {
-        testExample("Examples/MemberFunctions/Dog.kt", DogKt::main);
-    }
-
-    @Test
-    public void testHamster() {
-        testExample("Examples/MemberFunctions/Hamster.kt", HamsterKt::main);
     }
 
     @Test
@@ -1073,6 +1153,11 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testLongConstants() {
+        testExample("Examples/NumberTypes/LongConstants.kt", LongConstantsKt::main);
+    }
+
+    @Test
     public void testModulus() {
         testExample("Examples/NumberTypes/Modulus.kt", ModulusKt::main);
     }
@@ -1095,6 +1180,31 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testObjectNesting() {
         testExample("Examples/Objects/ObjectNesting.kt", ObjectNestingKt::main);
+    }
+
+    @Test
+    public void testIntRanges() {
+        testExample("Examples/ObjectsEverywhere/IntRanges.kt", IntRangesKt::main);
+    }
+
+    @Test
+    public void testNumberConversions() {
+        testExample("Examples/ObjectsEverywhere/NumberConversions.kt", NumberConversionsKt::main);
+    }
+
+    @Test
+    public void testRangeSum() {
+        testExample("Examples/ObjectsEverywhere/RangeSum.kt", RangeSumKt::main);
+    }
+
+    @Test
+    public void testStringAndNumberConversion() {
+        testExample("Examples/ObjectsEverywhere/StringAndNumberConversion.kt", StringAndNumberConversionKt::main);
+    }
+
+    @Test
+    public void testStrings() {
+        testExample("Examples/ObjectsEverywhere/Strings.kt", StringsKt::main);
     }
 
     @Test
@@ -1163,18 +1273,18 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testParameterizedReturn() {
-        testExample("Examples/ParameterizedTypes/ParameterizedReturn.kt", parameterizedtypes.ParameterizedReturnKt::main);
-    }
-
-    @Test
-    public void testParameterizedTypes() {
-        testExample("Examples/ParameterizedTypes/ParameterizedTypes.kt", parameterizedtypes.ParameterizedTypesKt::main);
-    }
-
-    @Test
     public void testFantasyGame() {
         testExample("Examples/Polymorphism/FantasyGame.kt", polymorphism.FantasyGameKt::main);
+    }
+
+    @Test
+    public void testAnUnchangingVar() {
+        testExample("Examples/Properties/AnUnchangingVar.kt", AnUnchangingVarKt::main);
+    }
+
+    @Test
+    public void testChangingAVal() {
+        testExample("Examples/Properties/ChangingAVal.kt", ChangingAValKt::main);
     }
 
     @Test
@@ -1185,6 +1295,11 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testCup2() {
         testExample("Examples/Properties/Cup2.kt", Cup2Kt::main);
+    }
+
+    @Test
+    public void testReferences() {
+        testExample("Examples/Properties/References.kt", ReferencesKt::main);
     }
 
     @Test
@@ -1228,21 +1343,6 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testMultipleListRefs() {
-        testExample("Examples/ReadOnlyAndMutableLists/MultipleListRefs.kt", readonlyandmutable.MultipleListRefsKt::main);
-    }
-
-    @Test
-    public void testMutableList() {
-        testExample("Examples/ReadOnlyAndMutableLists/MutableList.kt", MutableListKt::main);
-    }
-
-    @Test
-    public void testMutListIsList() {
-        testExample("Examples/ReadOnlyAndMutableLists/MutListIsList.kt", readonlyandmutable.MutListIsListKt::main);
-    }
-
-    @Test
     public void testAddCodePoints() {
         testExample("Examples/Recursion/AddCodePoints.kt", AddCodePointsKt::main);
     }
@@ -1283,21 +1383,6 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testAnUnchangingVar() {
-        testExample("Examples/ReferencesAndMutability/AnUnchangingVar.kt", AnUnchangingVarKt::main);
-    }
-
-    @Test
-    public void testChangingAVal() {
-        testExample("Examples/ReferencesAndMutability/ChangingAVal.kt", ChangingAValKt::main);
-    }
-
-    @Test
-    public void testReferences() {
-        testExample("Examples/ReferencesAndMutability/References.kt", ReferencesKt::main);
-    }
-
-    @Test
     public void testInfo() {
         testExample("Examples/Reflection/Info.kt", InfoKt::main);
     }
@@ -1308,8 +1393,18 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testAssignmentOperators() {
+        testExample("Examples/RepetitionWithWhile/AssignmentOperators.kt", AssignmentOperatorsKt::main);
+    }
+
+    @Test
     public void testDoWhileLoop() {
         testExample("Examples/RepetitionWithWhile/DoWhileLoop.kt", DoWhileLoopKt::main);
+    }
+
+    @Test
+    public void testIncrementOperator() {
+        testExample("Examples/RepetitionWithWhile/IncrementOperator.kt", IncrementOperatorKt::main);
     }
 
     @Test
@@ -1353,6 +1448,11 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
+    public void testIterable() {
+        testExample("Examples/Sets/Iterable.kt", IterableKt::main);
+    }
+
+    @Test
     public void testMutableSet() {
         testExample("Examples/Sets/MutableSet.kt", MutableSetKt::main);
     }
@@ -1375,21 +1475,6 @@ public class TestExamples extends AbstractTestExamples {
     @Test
     public void testWhenAndSmartCasts() {
         testExample("Examples/SmartCasts/WhenAndSmartCasts.kt", smartcasts.WhenAndSmartCastsKt::main);
-    }
-
-    @Test
-    public void testBetterSurrey() {
-        testExample("Examples/StringConversion/BetterSurrey.kt", BetterSurreyKt::main);
-    }
-
-    @Test
-    public void testBicycle() {
-        testExample("Examples/StringConversion/Bicycle.kt", BicycleKt::main);
-    }
-
-    @Test
-    public void testSurrey() {
-        testExample("Examples/StringConversion/Surrey.kt", SurreyKt::main);
     }
 
     @Test
@@ -1588,8 +1673,8 @@ public class TestExamples extends AbstractTestExamples {
     }
 
     @Test
-    public void testVarargListMap() {
-        testExample("Examples/Varargs/VarargListMap.kt", VarargListMapKt::main);
+    public void testVarargLikeList() {
+        testExample("Examples/Varargs/VarargLikeList.kt", VarargLikeListKt::main);
     }
 
     @Test

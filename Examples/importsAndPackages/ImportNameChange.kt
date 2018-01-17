@@ -1,8 +1,14 @@
 // ImportsAndPackages/ImportNameChange.kt
-import java.util.Random as Bob
-import java.util.Properties as Jill
+import kotlin.math.cos as foo
+import kotlin.math.PI as BAR
 
 fun main(args: Array<String>) {
-  val r = Bob()
-  val p = Jill()
+  println(BAR)
+  println(foo(BAR))
+  println(foo(2 * BAR))
 }
+/* Output:
+3.141592653589793
+-1.0
+1.0
+*/

@@ -10,5 +10,6 @@ fun main(args: Array<String>) {
   } eq "KotlinNullPointerException"
   capture {
     map.getValue(2).toUpperCase()
-  } eq "NoSuchElementException"
+  } eq "NoSuchElementException: " +
+      "Key 2 is missing in the map."
 }

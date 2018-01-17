@@ -1,7 +1,6 @@
 // PropertyAccessors/Hamsters.kt
 package propertyaccessors
 import atomictest.eq
-import java.util.*
 
 class Hamster(val name: String)
 
@@ -12,11 +11,11 @@ class Cage(private val maxCapacity: Int) {
   val capacity: Int
     get() = maxCapacity - hamsters.size
 
-  val full: Boolean
+  val isFull: Boolean
     get() = hamsters.size == maxCapacity
 
   fun put(hamster: Hamster): Boolean =
-    if(full)
+    if(isFull)
       false
     else {
       hamsters += hamster
@@ -24,17 +23,16 @@ class Cage(private val maxCapacity: Int) {
     }
 
   fun takeHamster(): Hamster =
-    hamsters.removeAt(
-      Random().nextInt(hamsters.size))
+    hamsters.removeAt(0)
 }
 
 fun main(args: Array<String>) {
   val cage = Cage(maxCapacity = 2)
-  cage.full eq false
+  cage.isFull eq false
   cage.capacity eq 2
   cage.put(Hamster("Alice")) eq true
   cage.put(Hamster("Bob")) eq true
-  cage.full eq true
+  cage.isFull eq true
   cage.capacity eq 0
   cage.put(Hamster("Charlie")) eq false
   cage.takeHamster()

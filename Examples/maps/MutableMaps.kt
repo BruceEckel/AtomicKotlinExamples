@@ -2,8 +2,7 @@
 import atomictest.eq
 
 fun main(args: Array<String>) {
-  val m =
-    mutableMapOf(5 to "five", 6 to "six")
+  val m = mutableMapOf(5 to "five", 6 to "six")
   m[5] eq "five"
   m[5] = "5ive"
   m[5] eq "5ive"

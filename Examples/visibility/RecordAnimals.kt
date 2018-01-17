@@ -1,16 +1,19 @@
 // Visibility/RecordAnimals.kt
 
-private var counter = 0                // [1]
+private var index = 0                           // [1]
 
-private fun
-recordAnimal(animal: Animal) =         // [2]
-  "\nAnimal #${counter++}: ${animal.name}"
+private class Animal(val name: String)          // [2]
 
-private class Animal(val name: String) // [3]
+private fun recordAnimal(animal: Animal) {      // [3]
+  println("Animal #$index: ${animal.name}")
+  index++
+}
 
-fun recordAnimals() =
-  recordAnimal(Animal("Tiger")) +
+fun recordAnimals() {
+  recordAnimal(Animal("Tiger"))
   recordAnimal(Animal("Antelope"))
+}
 
-fun recordAnimalsCount() =
-  "$counter animals are here!"
+fun recordAnimalsCount() {
+  println("$index animals are here!")
+}

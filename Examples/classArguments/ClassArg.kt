@@ -1,12 +1,14 @@
 // ClassArguments/ClassArg.kt
-import atomictest.eq
 
-class ClassArg(a: Int) {
-  val f = a * 10
+class Alien(name: String) {
+  val greeting = "Poor $name!"
 }
 
 fun main(args: Array<String>) {
-  val ca = ClassArg(19)
-  ca.f eq 190
-  // ca.a // error
+  val alien = Alien("Mr.Meeseeks")
+  println(alien.greeting)
+  // alien.name // error
 }
+/* Output:
+Poor Mr.Meeseeks!
+*/

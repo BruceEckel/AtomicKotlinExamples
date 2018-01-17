@@ -28,8 +28,6 @@ fun main(args: Array<String>) {
     setOf(1, 2)
 
   // Set difference:
-  set - setOf(0, 1, 9, 10) eq
-    setOf(2, 3, 4)
-  set.minus(setOf(0, 1, 9, 10)) eq
+  set subtract setOf(0, 1, 9, 10) eq
     setOf(2, 3, 4)
 }

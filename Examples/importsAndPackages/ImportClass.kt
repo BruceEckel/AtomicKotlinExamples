@@ -1,14 +1,14 @@
 // ImportsAndPackages/ImportClass.kt
-import java.util.Random
+import kotlin.math.cos
+import kotlin.math.PI
 
 fun main(args: Array<String>) {
-  val r = Random(47)
-  println(r.nextInt(10))
-  println(r.nextInt(10))
-  println(r.nextInt(10))
+  println(PI)
+  println(cos(PI))
+  println(cos(2 * PI))
 }
 /* Output:
-8
-5
-3
+3.141592653589793
+-1.0
+1.0
 */

@@ -1,7 +1,13 @@
 // ImportsAndPackages/ImportEverything.kt
-import java.util.*
+import kotlin.math.*
 
 fun main(args: Array<String>) {
-  val r = Random()
-  val p = Properties()
+  println(E)
+  println(E.roundToInt())
+  println(E.toInt())
 }
+/* Output:
+2.718281828459045
+3
+2
+*/

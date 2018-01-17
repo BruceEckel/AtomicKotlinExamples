@@ -1,5 +1,4 @@
 // Visibility/ObserveAnimals.kt
-import atomictest.eq
 
 fun main(args: Array<String>) {
   // Can't access private members
@@ -9,11 +8,13 @@ fun main(args: Array<String>) {
   // Function is private:
   // recordAnimal(rabbit)
   // Property is private:
-  // counter++
+  // index++
 
-  recordAnimals() eq """
-Animal #0: Tiger
-Animal #1: Antelope"""
-  recordAnimalsCount() eq
-    "2 animals are here!"
+  recordAnimals()
+  recordAnimalsCount()
 }
+/* Output:
+Animal #0: Tiger
+Animal #1: Antelope
+2 animals are here!
+*/

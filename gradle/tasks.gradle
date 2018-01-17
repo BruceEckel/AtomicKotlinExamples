@@ -68,11 +68,6 @@ task ArgumentOrder(type: JavaExec) {
     main = 'ArgumentOrderKt'
 }
 
-task ArrayListOf(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ArrayListOfKt'
-}
-
 task AssertTrue(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AssertTrueKt'
@@ -88,9 +83,29 @@ task AssigningAnIf(type: JavaExec) {
     main = 'AssigningAnIfKt'
 }
 
+task AssignmentOperators(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AssignmentOperatorsKt'
+}
+
 task AuxiliaryInitialization(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'AuxiliaryInitializationKt'
+    main = 'baseclassinit.AuxiliaryInitializationKt'
+}
+
+task AverageIncomeFirstVersion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'firstVersion.AverageIncomeFirstVersionKt'
+}
+
+task AverageIncomeWithNull(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'withNull.AverageIncomeWithNullKt'
+}
+
+task AverageIncomeWithProperException(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'properException.AverageIncomeWithProperExceptionKt'
 }
 
 task BMI(type: JavaExec) {
@@ -126,16 +141,6 @@ task BasicLogging(type: JavaExec) {
 task BetterSuitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BetterSuitcaseKt'
-}
-
-task BetterSurrey(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'BetterSurreyKt'
-}
-
-task Bicycle(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'BicycleKt'
 }
 
 task BiggestLong(type: JavaExec) {
@@ -190,7 +195,7 @@ task Cat(type: JavaExec) {
 
 task CatchChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptions.CatchChecked'
+    main = 'ExceptionsHandling.CatchChecked'
 }
 
 task ChainedCalls(type: JavaExec) {
@@ -388,16 +393,6 @@ task DisplayListMap(type: JavaExec) {
     main = 'DisplayListMapKt'
 }
 
-task DivZero(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'exceptions.DivZeroKt'
-}
-
-task DivZero2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DivZero2Kt'
-}
-
 task DoWhileLoop(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DoWhileLoopKt'
@@ -458,6 +453,16 @@ task ExceptionHandlers(type: JavaExec) {
     main = 'toss.ExceptionHandlersKt'
 }
 
+task Exceptions1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Exceptions1Kt'
+}
+
+task Exceptions2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Exceptions2Kt'
+}
+
 task ExplicitCheck(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExplicitCheckKt'
@@ -471,6 +476,11 @@ task ExplicitDelegation(type: JavaExec) {
 task ExpressionInTemplate(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExpressionInTemplateKt'
+}
+
+task Extensions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.ExtensionsKt'
 }
 
 task ExtensionsToJavaClass(type: JavaExec) {
@@ -578,6 +588,11 @@ task FullyQualify(type: JavaExec) {
     main = 'FullyQualifyKt'
 }
 
+task FunctionLiterals(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.FunctionLiteralsKt'
+}
+
 task GardenGnome(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GardenGnomeKt'
@@ -596,6 +611,16 @@ task GenericSpeakers(type: JavaExec) {
 task GenericVsAny(type: JavaExec) {
     classpath kotlinClassPath
     main = 'generics.GenericVsAnyKt'
+}
+
+task GetValue(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GetValueKt'
+}
+
+task GoodAlien(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GoodAlienKt'
 }
 
 task GreatApe(type: JavaExec) {
@@ -723,11 +748,6 @@ task ImportLevel(type: JavaExec) {
     main = 'ImportLevelKt'
 }
 
-task ImportMultiple(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ImportMultipleKt'
-}
-
 task ImportNameChange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ImportNameChangeKt'
@@ -741,6 +761,11 @@ task ImportPythagorean(type: JavaExec) {
 task InString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'InStringKt'
+}
+
+task IncrementOperator(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IncrementOperatorKt'
 }
 
 task IndexIntoString(type: JavaExec) {
@@ -808,9 +833,24 @@ task InterfaceCollision(type: JavaExec) {
     main = 'InterfaceCollisionKt'
 }
 
+task IntroducingCapture(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IntroducingCaptureKt'
+}
+
+task IntroducingNull(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IntroducingNullKt'
+}
+
 task Invoke(type: JavaExec) {
     classpath kotlinClassPath
     main = 'InvokeKt'
+}
+
+task Iterable(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'IterableKt'
 }
 
 task IterateOverString(type: JavaExec) {
@@ -830,7 +870,7 @@ task IterationVsMembership(type: JavaExec) {
 
 task JavaCheckedExceptions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'JavaCheckedExceptions'
+    main = 'ExceptionsHandling.JavaCheckedExceptions'
 }
 
 task JavaList(type: JavaExec) {
@@ -918,6 +958,11 @@ task ListOperations(type: JavaExec) {
     main = 'ListOperationsKt'
 }
 
+task ListUsefulFunction(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ListUsefulFunctionKt'
+}
+
 task Lists(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ListsKt'
@@ -936,6 +981,11 @@ task LocalFunctions(type: JavaExec) {
 task LogChanges(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LogChangesKt'
+}
+
+task LongConstants(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LongConstantsKt'
 }
 
 task MakeSalad(type: JavaExec) {
@@ -1001,6 +1051,11 @@ task MoreReduce(type: JavaExec) {
 task MoreWork(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MoreWork'
+}
+
+task MultiLineComment(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MultiLineCommentKt'
 }
 
 task MultipleClassArgs(type: JavaExec) {
@@ -1088,11 +1143,6 @@ task NonNullAssertCall(type: JavaExec) {
     main = 'NonNullAssertCallKt'
 }
 
-task NullDereference(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'NullDereferenceKt'
-}
-
 task NullInMaps(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NullInMapsKt'
@@ -1106,6 +1156,11 @@ task NullableTypes(type: JavaExec) {
 task Num(type: JavaExec) {
     classpath kotlinClassPath
     main = 'operators.NumKt'
+}
+
+task NumberConversions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NumberConversionsKt'
 }
 
 task NumberTypes(type: JavaExec) {
@@ -1156,6 +1211,11 @@ task OneOrTheOther(type: JavaExec) {
 task OperatorPlus(type: JavaExec) {
     classpath kotlinClassPath
     main = 'OperatorPlusKt'
+}
+
+task OutOfBounds(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'OutOfBoundsKt'
 }
 
 task Overflow(type: JavaExec) {
@@ -1216,6 +1276,11 @@ task PlatformTypes(type: JavaExec) {
 task Postconditions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PostconditionsKt'
+}
+
+task PrintAlienSpieces(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'PrintAlienSpiecesKt'
 }
 
 task PropertyInInterface(type: JavaExec) {
@@ -1303,6 +1368,11 @@ task RemoveNulls(type: JavaExec) {
     main = 'RemoveNullsKt'
 }
 
+task Repeat(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RepeatKt'
+}
+
 task RepeatThreeTimes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RepeatThreeTimesKt'
@@ -1311,11 +1381,6 @@ task RepeatThreeTimes(type: JavaExec) {
 task RequireNotNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RequireNotNullKt'
-}
-
-task ST(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'STKt'
 }
 
 task STUB(type: JavaExec) {
@@ -1368,6 +1433,11 @@ task SimpleMap(type: JavaExec) {
     main = 'SimpleMapKt'
 }
 
+task SingleLineComment(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SingleLineCommentKt'
+}
+
 task SmartCasts(type: JavaExec) {
     classpath kotlinClassPath
     main = 'smartcasts.SmartCastsKt'
@@ -1401,6 +1471,11 @@ task StrTemplates(type: JavaExec) {
 task StrangeQuote(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StrangeQuoteKt'
+}
+
+task StringAndNumberConversion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringAndNumberConversionKt'
 }
 
 task StringConcatenation(type: JavaExec) {
@@ -1438,6 +1513,11 @@ task StringTemplates(type: JavaExec) {
     main = 'StringTemplatesKt'
 }
 
+task Strings(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringsKt'
+}
+
 task Suitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SuitcaseKt'
@@ -1451,11 +1531,6 @@ task SumOfSquares(type: JavaExec) {
 task SumUsingRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SumUsingRangeKt'
-}
-
-task Surrey(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SurreyKt'
 }
 
 task Swearing(type: JavaExec) {
@@ -1496,6 +1571,11 @@ task TeamWithTraditions(type: JavaExec) {
 task Temperature(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TemperatureKt'
+}
+
+task TestClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.TestClassKt'
 }
 
 task TestingExample(type: JavaExec) {
@@ -1638,9 +1718,9 @@ task ValueFromMap(type: JavaExec) {
     main = 'ValueFromMapKt'
 }
 
-task VarargListMap(type: JavaExec) {
+task VarargLikeList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'VarargListMapKt'
+    main = 'VarargLikeListKt'
 }
 
 task VarargSum(type: JavaExec) {
@@ -1693,6 +1773,11 @@ task WithDefaultArguments(type: JavaExec) {
     main = 'WithDefaultArgumentsKt'
 }
 
+task WithReceiver(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.WithReceiverKt'
+}
+
 task WithoutDefaultArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'WithoutDefaultArgumentsKt'
@@ -1721,11 +1806,14 @@ task run (dependsOn: [
     'AnonymousFunction',
     'AnyInstead',
     'ArgumentOrder',
-    'ArrayListOf',
     'AssertTrue',
     'AssignAnonymous',
     'AssigningAnIf',
+    'AssignmentOperators',
     'AuxiliaryInitialization',
+    'AverageIncomeFirstVersion',
+    'AverageIncomeWithNull',
+    'AverageIncomeWithProperException',
     'BMI',
     'Backticks',
     'Basic',
@@ -1733,8 +1821,6 @@ task run (dependsOn: [
     'BasicGenerics',
     'BasicLogging',
     'BetterSuitcase',
-    'BetterSurrey',
-    'Bicycle',
     'BiggestLong',
     'BookExtensions',
     'Booleans',
@@ -1785,8 +1871,6 @@ task run (dependsOn: [
     'DisplayDuck',
     'DisplayListBlemish',
     'DisplayListMap',
-    'DivZero',
-    'DivZero2',
     'DoWhileLoop',
     'Dog',
     'DuckForEach',
@@ -1799,9 +1883,12 @@ task run (dependsOn: [
     'EvaluationOrder',
     'EvenFilter',
     'ExceptionHandlers',
+    'Exceptions1',
+    'Exceptions2',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExpressionInTemplate',
+    'Extensions',
     'ExtensionsToJavaClass',
     'Facto',
     'Factorial',
@@ -1823,10 +1910,13 @@ task run (dependsOn: [
     'FormatList',
     'FormatListWithLambda',
     'FullyQualify',
+    'FunctionLiterals',
     'GardenGnome',
     'GenericHolder',
     'GenericSpeakers',
     'GenericVsAny',
+    'GetValue',
+    'GoodAlien',
     'GreatApe',
     'GreatApe2',
     'GreatApe3',
@@ -1852,10 +1942,10 @@ task run (dependsOn: [
     'ImportClass',
     'ImportEverything',
     'ImportLevel',
-    'ImportMultiple',
     'ImportNameChange',
     'ImportPythagorean',
     'InString',
+    'IncrementOperator',
     'IndexIntoString',
     'IndexWithZip',
     'InferInt',
@@ -1869,7 +1959,10 @@ task run (dependsOn: [
     'IntegerMath',
     'IntegerOverflow',
     'InterfaceCollision',
+    'IntroducingCapture',
+    'IntroducingNull',
     'Invoke',
+    'Iterable',
     'IterateOverString',
     'IterateThroughString',
     'IterationVsMembership',
@@ -1891,10 +1984,12 @@ task run (dependsOn: [
     'ListCollection',
     'ListOf',
     'ListOperations',
+    'ListUsefulFunction',
     'Lists',
     'LocalExtensions',
     'LocalFunctions',
     'LogChanges',
+    'LongConstants',
     'MakeSalad',
     'MapUnpacking',
     'Maps',
@@ -1908,6 +2003,7 @@ task run (dependsOn: [
     'Molecule',
     'MoreReduce',
     'MoreWork',
+    'MultiLineComment',
     'MultipleClassArgs',
     'MultipleListRefs',
     'MultiplyByFour',
@@ -1925,10 +2021,10 @@ task run (dependsOn: [
     'NickName',
     'NonNullAssert',
     'NonNullAssertCall',
-    'NullDereference',
     'NullInMaps',
     'NullableTypes',
     'Num',
+    'NumberConversions',
     'NumberTypes',
     'ObjectCounter',
     'ObjectFunctions',
@@ -1939,6 +2035,7 @@ task run (dependsOn: [
     'ObserveAnimals',
     'OneOrTheOther',
     'OperatorPlus',
+    'OutOfBounds',
     'Overflow',
     'Overloading',
     'OverloadingAdd',
@@ -1951,6 +2048,7 @@ task run (dependsOn: [
     'Phi',
     'PlatformTypes',
     'Postconditions',
+    'PrintAlienSpieces',
     'PropertyInInterface',
     'PropertyOptions',
     'Quote',
@@ -1968,9 +2066,9 @@ task run (dependsOn: [
     'RegularClasses',
     'RemoveDuplicates',
     'RemoveNulls',
+    'Repeat',
     'RepeatThreeTimes',
     'RequireNotNull',
-    'ST',
     'STUB',
     'SafeCall',
     'SafeOperation',
@@ -1981,6 +2079,7 @@ task run (dependsOn: [
     'SimpleHashing',
     'SimpleLoggingStrategy',
     'SimpleMap',
+    'SingleLineComment',
     'SmartCasts',
     'Solid',
     'Speakers',
@@ -1988,6 +2087,7 @@ task run (dependsOn: [
     'StateOfAClass',
     'StrTemplates',
     'StrangeQuote',
+    'StringAndNumberConversion',
     'StringConcatenation',
     'StringHashCode',
     'StringInvoke',
@@ -1995,10 +2095,10 @@ task run (dependsOn: [
     'StringPlusNumber',
     'StringRange',
     'StringTemplates',
+    'Strings',
     'Suitcase',
     'SumOfSquares',
     'SumUsingRange',
-    'Surrey',
     'Swearing',
     'Syntax',
     'TDDFail',
@@ -2007,6 +2107,7 @@ task run (dependsOn: [
     'Team',
     'TeamWithTraditions',
     'Temperature',
+    'TestClass',
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
@@ -2035,7 +2136,7 @@ task run (dependsOn: [
     'UsingTODO',
     'Vals',
     'ValueFromMap',
-    'VarargListMap',
+    'VarargLikeList',
     'VarargSum',
     'VariableArgLists',
     'Vars',
@@ -2046,6 +2147,7 @@ task run (dependsOn: [
     'WhileLoop',
     'WhyFlatMap',
     'WithDefaultArguments',
+    'WithReceiver',
     'WithoutDefaultArguments',
     'ZipMap',
     'Zipper'

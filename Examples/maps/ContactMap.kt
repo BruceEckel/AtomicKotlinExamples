@@ -1,8 +1,14 @@
 // Maps/ContactMap.kt
 import atomictest.eq
 
-data class Contact(
-  val name: String, val number: String)
+class Contact(
+  val name: String, 
+  val number: String
+) {
+  override fun toString(): String {
+    return "Contact('$name', '$number')"
+  }
+}
 
 fun main(args: Array<String>) {
   val miffy = Contact("Miffy", "1-234-567890")
@@ -11,5 +17,5 @@ fun main(args: Array<String>) {
     miffy.number to miffy,
     cleo.number to cleo)
   contacts["1-234-567890"] eq miffy
-  contacts["1-111-111111"] eq null    // [1]
+  contacts["1-111-111111"] eq null
 }

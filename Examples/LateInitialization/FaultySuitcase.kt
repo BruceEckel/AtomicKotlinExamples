@@ -15,5 +15,6 @@ fun main(args: Array<String>) {
   suitcase.setUp()
   capture {
     suitcase.checkSocks()
-  } eq "UninitializedPropertyAccessException"
+  } eq "UninitializedPropertyAccessException: " +
+          "lateinit property items has not been initialized"
 }

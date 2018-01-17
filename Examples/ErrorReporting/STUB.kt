@@ -15,7 +15,7 @@ fun incomplete(): Int = STUB(
   "3. Third item")
 
 fun main(args: Array<String>) {
-  stacktrace1 {
+  capture {
     incomplete()
   } eq "NotImplementedError: STUB"
 }

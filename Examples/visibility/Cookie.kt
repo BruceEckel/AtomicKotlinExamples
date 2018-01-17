@@ -1,22 +1,30 @@
 // Visibility/Cookie.kt
-import atomictest.eq
+class Cookie(
+  private var isReady: Boolean   // [1]
+) {
+  private fun crumble() =        // [2]
+    println("crumble")
 
-class Cookie {
-  private fun crumble() =  // [1]
-    "crumble"
+  public fun bite() =            // [3]
+    println("bite")
 
-  public fun bite() =      // [2]
-    "bite"
-
-  fun eatUp() =            // [3]
-    crumble() +            // [4]
+  fun eatUp() {                  // [4]
+    isReady = true               // [5]
+    crumble()     
     bite()
+  }
 }
 
 fun main(args: Array<String>) {
-  val x = Cookie()
-  x.bite() eq "bite"
+  val x = Cookie(false)
+  x.bite()
   // Can't access private members:
+  // x.ready
   // x.crumble()
-  x.eatUp() eq "crumblebite"
+  x.eatUp()
 }
+/* Output:
+bite
+crumble
+bite
+*/

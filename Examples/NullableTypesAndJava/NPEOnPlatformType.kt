@@ -14,5 +14,6 @@ fun main(args: Array<String>) {
 
   capture {
     val bn: JTool = JTool.get(null) // [4]
-  } eq "IllegalStateException"
+  } eq "IllegalStateException: " +
+      "JTool.get(null) must not be null"
 }
