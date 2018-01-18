@@ -3,11 +3,11 @@ import atomictest.*
 
 fun tryFinally(i: Int) {
   try {
-    trace(i)
+    println(i)
     if(i > 1)
       throw Exception()
   } finally {
-    trace("In finally clause for $i")
+    println("In finally clause for $i")
   }
 }
 
@@ -16,11 +16,11 @@ fun main(args: Array<String>) {
   capture {
     tryFinally(5)
   } eq "Exception"
-  trace eq
-"""
+}
+/* Output:
 0
 In finally clause for 0
 5
 In finally clause for 5
-"""
-}
+Exception
+*/

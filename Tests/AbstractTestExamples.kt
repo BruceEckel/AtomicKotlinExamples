@@ -1,4 +1,3 @@
-import atomictest.trace
 import org.junit.Assert
 import java.io.ByteArrayOutputStream
 import java.io.File
@@ -32,7 +31,6 @@ abstract class AbstractTestExamples {
         val out = ByteArrayOutputStream()
         System.setOut(PrintStream(out))
 
-        trace.reset()
         main.accept(arrayOf())
 
         val toString = out.toString()

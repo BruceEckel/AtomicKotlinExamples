@@ -9,12 +9,11 @@ fun main(args: Array<String>) {
   log.info(msg)
   log.warn(msg)
   log.error(msg)
-  logFile.readLines()
-    .joinToString() eq """
-Trace: Hello, Atomic Log!,
-Debug: Hello, Atomic Log!,
-Info: Hello, Atomic Log!,
-Warn: Hello, Atomic Log!,
+  logFile.readText() eq
+"""Trace: Hello, Atomic Log!
+Debug: Hello, Atomic Log!
+Info: Hello, Atomic Log!
+Warn: Hello, Atomic Log!
 Error: Hello, Atomic Log!
 """
 }
