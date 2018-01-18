@@ -4,7 +4,7 @@ import atomictest.*
 class GardenGnome(val height: Double,
   val weight: Double, var happy: Boolean) {
   init {
-    trace("In primary constructor")
+    println("In primary constructor")
   }
   var painted = true
   fun magic(level: Int) = "Poof! $level"
@@ -22,9 +22,10 @@ fun main(args: Array<String>) {
     "20.0 110.0 false true"
   GardenGnome(happy=true).show() eq
     "15.0 100.0 true true"
-  trace eq
-"""
-In primary constructor
-In primary constructor
-"""
 }
+/* Output:
+In primary constructor
+20.0 110.0 false true
+In primary constructor
+15.0 100.0 true true
+*/

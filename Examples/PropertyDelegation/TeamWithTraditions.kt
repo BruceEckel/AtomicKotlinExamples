@@ -8,9 +8,9 @@ class TeamWithTraditions {
     _, old, new ->
     val canChange = new.startsWith("A")
     if(canChange)
-      trace("$old -> $new")
+      println("$old -> $new")
     else
-      trace("It's tradition, sorry $new")
+      println("It's tradition, sorry $new")
     canChange
   }
 }
@@ -20,8 +20,9 @@ fun main(args: Array<String>) {
   team.captain = "Amanda"
   team.captain = "Bill"
   team.captain eq "Amanda"
-  trace eq """
+}
+/* Output:
 Adam -> Amanda
 It's tradition, sorry Bill
-"""
-}
+Amanda
+*/

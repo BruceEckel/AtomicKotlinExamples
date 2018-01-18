@@ -1,16 +1,17 @@
 // WhenExpressions/WhenAsStatement.kt
-import atomictest.*
 
 fun checkColor(color: String) {
   when(color) {
-    "red" -> trace("RED")
-    "blue" -> trace("BLUE")
-    "green" -> trace("GREEN")
+    "red" -> println("RED")
+    "blue" -> println("BLUE")
+    "green" -> println("GREEN")
   }
 }
 
 fun main(args: Array<String>) {
   checkColor("white")
   checkColor("blue")
-  trace eq "BLUE"
 }
+/* Output:
+BLUE
+*/

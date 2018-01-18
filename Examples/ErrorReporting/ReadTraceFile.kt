@@ -19,15 +19,15 @@ fun main(args: Array<String>) {
   localFile("trace_real.txt").writeText("\n")
   capture {
     readTrace("foo.txt")
-  } eq """IllegalArgumentException:
-  foo.txt must start with 'trace_'"""
+  } eq "IllegalArgumentException: " +
+      "foo.txt must start with 'trace_'"
   capture {
     readTrace("trace_foo.txt")
-  } eq """IllegalArgumentException:
-  trace_foo.txt doesn't exist"""
+  } eq "IllegalArgumentException: " +
+      "trace_foo.txt doesn't exist"
   capture {
     readTrace("trace_empty.txt")
-  } eq """IllegalArgumentException:
-  trace_empty.txt is empty"""
+  } eq "IllegalArgumentException: " +
+      "trace_empty.txt is empty"
   readTrace("trace_real.txt")
 }

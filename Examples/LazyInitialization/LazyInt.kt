@@ -1,5 +1,4 @@
 // LazyInitialization/LazyInt.kt
-import atomictest.*
 
 class LazyInt(val init: () -> Int) {
   private var helper: Int? = null
@@ -12,21 +11,21 @@ class LazyInt(val init: () -> Int) {
 }
 
 fun compute(i: Int): Int {
-  trace("Computing $i")
+  println("Computing $i")
   return i
 }
 
 fun main(args: Array<String>) {
   val lazyInt = LazyInt { compute(5) }
-  trace("LazyInt Constructed")
-  trace("Access 'value' 2x:")
-  trace(lazyInt.value)
-  trace(lazyInt.value)
-  trace eq """
+  println("LazyInt Constructed")
+  println("Access 'value' 2x:")
+  println(lazyInt.value)
+  println(lazyInt.value)
+}
+/* Output:
 LazyInt Constructed
 Access 'value' 2x:
 Computing 5
 5
 5
-"""
-}
+*/

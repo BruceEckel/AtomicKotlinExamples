@@ -36,10 +36,8 @@ private fun <L, R> runTest(
  * linefeeds & indentation.
  */
 infix fun <T : Any> T.eq(value: String) {
-  val ws = "\\s".toRegex()
-  fun String.rmws() = this.replace(ws, "")
   runTest(this, value) {
-    this.toString().rmws() == value.rmws()
+    this.toString() == value
   }
 }
 
@@ -88,17 +86,3 @@ fun capture(f: () -> Unit): String =
     e.javaClass.simpleName +
       (e.message?.let { ": $it" } ?: "")
   }
-
-// Add messages via trace(msg). Validate with:
-// trace eq "(trace contents)"
-object trace {
-  private var result = ""
-  operator fun invoke(message: Any) {
-    result += message.toString() + "\n"
-  }
-  fun reset() {
-    result = ""
-  }
-  infix fun eq(value: String) =
-    result eq value
-}

@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
     resultFile.delete()
   capture {
     createResultFile(false)
-  } eq """IllegalStateException:
-  results.txt doesn't exist!"""
+  } eq "IllegalStateException: " +
+      "results.txt doesn't exist!"
   createResultFile(true)
 }
