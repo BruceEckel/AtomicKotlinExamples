@@ -17,14 +17,13 @@ abstract class AbstractTestExamples {
     private fun extractOutput(exampleCode: String) =
             exampleCode.substringAfter("/* Output:").substringBefore("*/").trim()
 
-    // todo: replace with normalizing line separators
-    fun String.removeWhitespaces() = replace("\\s".toRegex(), "")
+    private fun String.trimAndNormalizeLineSeparators() = trim().replace("\\R".toRegex(), System.getProperty("line.separator"))
 
     private fun testOutput(fileName: String, expectedOutput: String, main: Consumer<Array<String>>) {
         val actualOutput = runAndGetOutput(main)
-        Assert.assertEquals("Output is incorrect for $fileName:",
-                expectedOutput.removeWhitespaces(),
-                actualOutput.removeWhitespaces())
+        Assert.assertEquals("Incorrect output for '$fileName':\n",
+                expectedOutput.trimAndNormalizeLineSeparators(),
+                actualOutput.trimAndNormalizeLineSeparators())
     }
 
     private fun runAndGetOutput(main: Consumer<Array<String>>): String {
@@ -39,6 +38,6 @@ abstract class AbstractTestExamples {
 
     private fun testAtomicChecks(fileName: String, main: Consumer<Array<String>>) {
         val output = runAndGetOutput(main)
-        Assert.assertFalse("AtomicTest checks failed for $fileName:\n$output", output.contains("[Error]:"))
+        Assert.assertFalse("AtomicTest checks failed for '$fileName':\n$output", output.contains("[Error]:"))
     }
 }
