@@ -10,19 +10,22 @@ abstract class AbstractTestExamples {
         val exampleCode = File(fileName).readText()
         if (exampleCode.contains("/* Output:")) {
             val output = extractOutput(exampleCode)
-            testOutput(output, main, trim = true)
+            testOutput(fileName, output, main)
         }
-        testNoErrors(main)
+        testAtomicChecks(fileName, main)
     }
 
     private fun extractOutput(exampleCode: String) =
             exampleCode.substringAfter("/* Output:").substringBefore("*/").trim()
 
-    private fun testOutput(output: String, main: Consumer<Array<String>>, trim: Boolean) {
-        val result = runAndGetOutput(main).let {
-            if (trim) it.trim() else it
-        }
-        Assert.assertEquals(output, result)
+    // todo: replace with normalizing line separators
+    fun String.removeWhitespaces() = replace("\\s".toRegex(), "")
+
+    private fun testOutput(fileName: String, expectedOutput: String, main: Consumer<Array<String>>) {
+        val actualOutput = runAndGetOutput(main)
+        Assert.assertEquals("Output is incorrect for $fileName:",
+                expectedOutput.removeWhitespaces(),
+                actualOutput.removeWhitespaces())
     }
 
     private fun runAndGetOutput(main: Consumer<Array<String>>): String {
@@ -36,8 +39,8 @@ abstract class AbstractTestExamples {
         return toString
     }
 
-    private fun testNoErrors(main: Consumer<Array<String>>) {
+    private fun testAtomicChecks(fileName: String, main: Consumer<Array<String>>) {
         val output = runAndGetOutput(main)
-        Assert.assertFalse("Program completed with errors:\n$output", output.contains("[Error]:"))
+        Assert.assertFalse("AtomicTest checks failed for $fileName:\n$output", output.contains("[Error]:"))
     }
 }
