@@ -1,4 +1,4 @@
-// ExceptionsHandling/GuaranteedCleanup.kt
+// ExceptionHandling/GuaranteedCleanup.kt
 import atomictest.eq
 import toss.*
 

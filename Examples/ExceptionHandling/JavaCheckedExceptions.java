@@ -1,5 +1,5 @@
-// ExceptionsHandling/JavaCheckedExceptions.java
-package ExceptionsHandling;
+// ExceptionHandling/JavaCheckedExceptions.java
+package ExceptionHandling;
 import java.io.*;
 import java.nio.file.*;
 import static atomictest.AtomicTestKt.eq;
@@ -20,7 +20,7 @@ public class JavaCheckedExceptions {
     }
     try {
       String first = source.readLine();
-      eq(first, "// ExceptionsHandling/" +
+      eq(first, "// ExceptionHandling/" +
         "JavaCheckedExceptions.java");
     } catch(IOException e) {
       // Recover from read() error

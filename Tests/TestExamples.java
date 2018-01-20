@@ -333,6 +333,41 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testConversionFailure() {
+    testExample("Examples/ExceptionHandling/ConversionFailure.kt", ConversionFailureKt::main);
+  }
+
+  @Test
+  public void testDefiningExceptions() {
+    testExample("Examples/ExceptionHandling/DefiningExceptions.kt", toss.DefiningExceptionsKt::main);
+  }
+
+  @Test
+  public void testExceptionHandlers() {
+    testExample("Examples/ExceptionHandling/ExceptionHandlers.kt", toss.ExceptionHandlersKt::main);
+  }
+
+  @Test
+  public void testGuaranteedCleanup() {
+    testExample("Examples/ExceptionHandling/GuaranteedCleanup.kt", GuaranteedCleanupKt::main);
+  }
+
+  @Test
+  public void testInputCheck() {
+    testExample("Examples/ExceptionHandling/InputCheck.kt", InputCheckKt::main);
+  }
+
+  @Test
+  public void testKotlinCheckedExceptions() {
+    testExample("Examples/ExceptionHandling/KotlinCheckedExceptions.kt", KotlinCheckedExceptionsKt::main);
+  }
+
+  @Test
+  public void testTryFinally() {
+    testExample("Examples/ExceptionHandling/TryFinally.kt", TryFinallyKt::main);
+  }
+
+  @Test
   public void testAverageIncomeFirstVersion() {
     testExample("Examples/Exceptions/AverageIncomeFirstVersion.kt", firstVersion.AverageIncomeFirstVersionKt::main);
   }
@@ -365,41 +400,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testIntroducingNull() {
     testExample("Examples/Exceptions/IntroducingNull.kt", IntroducingNullKt::main);
-  }
-
-  @Test
-  public void testConversionFailure() {
-    testExample("Examples/ExceptionsHandling/ConversionFailure.kt", ConversionFailureKt::main);
-  }
-
-  @Test
-  public void testDefiningExceptions() {
-    testExample("Examples/ExceptionsHandling/DefiningExceptions.kt", toss.DefiningExceptionsKt::main);
-  }
-
-  @Test
-  public void testExceptionHandlers() {
-    testExample("Examples/ExceptionsHandling/ExceptionHandlers.kt", toss.ExceptionHandlersKt::main);
-  }
-
-  @Test
-  public void testGuaranteedCleanup() {
-    testExample("Examples/ExceptionsHandling/GuaranteedCleanup.kt", GuaranteedCleanupKt::main);
-  }
-
-  @Test
-  public void testInputCheck() {
-    testExample("Examples/ExceptionsHandling/InputCheck.kt", InputCheckKt::main);
-  }
-
-  @Test
-  public void testKotlinCheckedExceptions() {
-    testExample("Examples/ExceptionsHandling/KotlinCheckedExceptions.kt", KotlinCheckedExceptionsKt::main);
-  }
-
-  @Test
-  public void testTryFinally() {
-    testExample("Examples/ExceptionsHandling/TryFinally.kt", TryFinallyKt::main);
   }
 
   @Test

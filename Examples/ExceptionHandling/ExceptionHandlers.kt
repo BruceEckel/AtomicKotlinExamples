@@ -1,4 +1,4 @@
-// ExceptionsHandling/ExceptionHandlers.kt
+// ExceptionHandling/ExceptionHandlers.kt
 package toss
 import atomictest.eq
 

@@ -1,4 +1,4 @@
-// ExceptionsHandling/ConversionFailure.kt
+// ExceptionHandling/ConversionFailure.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {

@@ -8,6 +8,6 @@ fun main(args: Array<String>) {
   var sofa = Sofa()
   // Not allowed:
   // sofa.cover = "New cover"
-  // Reassigning a var: 
-  sofa = Sofa() 
+  // Reassigning a var:
+  sofa = Sofa()
 }

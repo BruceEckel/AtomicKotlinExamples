@@ -1,5 +1,5 @@
-// ExceptionsHandling/CatchChecked.java
-package ExceptionsHandling;
+// ExceptionHandling/CatchChecked.java
+package ExceptionHandling;
 import java.io.*;
 import checked.*;
 import static atomictest.AtomicTestKt.eq;

@@ -2,7 +2,7 @@
 import atomictest.eq
 
 class Contact(
-  val name: String, 
+  val name: String,
   val number: String
 ) {
   override fun toString(): String {

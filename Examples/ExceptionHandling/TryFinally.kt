@@ -1,4 +1,4 @@
-// ExceptionsHandling/TryFinally.kt
+// ExceptionHandling/TryFinally.kt
 import atomictest.*
 
 fun tryFinally(i: Int) {

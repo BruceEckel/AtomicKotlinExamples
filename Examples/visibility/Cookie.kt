@@ -10,7 +10,7 @@ class Cookie(
 
   fun eatUp() {                  // [4]
     isReady = true               // [5]
-    crumble()     
+    crumble()
     bite()
   }
 }

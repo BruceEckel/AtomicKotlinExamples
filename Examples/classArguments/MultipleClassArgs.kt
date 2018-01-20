@@ -1,13 +1,13 @@
 // ClassArguments/MultipleClassArgs.kt
 
 class AlienSpecies(
-  val name: String, 
-  val eyes: Int, 
+  val name: String,
+  val eyes: Int,
   val hands: Int,
   val legs: Int
 ) {
-  fun represent(): String = 
-    "$name with $eyes eyes, " + 
+  fun represent(): String =
+    "$name with $eyes eyes, " +
     "$hands hands and $legs legs"
 }
 

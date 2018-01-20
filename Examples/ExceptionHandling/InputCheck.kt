@@ -1,4 +1,4 @@
-// ExceptionsHandling/InputCheck.kt
+// ExceptionHandling/InputCheck.kt
 import atomictest.eq
 
 fun intAbleString(s: String) =

@@ -1,4 +1,4 @@
-// ExceptionsHandling/AnnotateThrows.kt
+// ExceptionHandling/AnnotateThrows.kt
 package checked
 import java.io.*
 

@@ -1,4 +1,4 @@
-// ExceptionsHandling/DefiningExceptions.kt
+// ExceptionHandling/DefiningExceptions.kt
 package toss
 import atomictest.*
 

@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
   house.sofa = "New leather sofa for $3,099.00"
   println(house.sofa)
   // Not allowed:
-  // house = House("Loveseat") 
+  // house = House("Loveseat")
 }
 /* Output:
 Simple sleeper sofa for $89.00
