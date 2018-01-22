@@ -1,2 +1,3 @@
+gradlew clean
 gradlew TestExamples
-gradlew build
+gradlew test
