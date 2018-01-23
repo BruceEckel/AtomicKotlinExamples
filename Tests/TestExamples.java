@@ -368,28 +368,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAverageIncomeFirstVersion() {
-    testExample("Examples/Exceptions/AverageIncomeFirstVersion.kt", firstVersion.AverageIncomeFirstVersionKt::main);
+  public void testAverageIncome() {
+    testExample("Examples/Exceptions/AverageIncome.kt", firstVersion.AverageIncomeKt::main);
+  }
+
+  @Test
+  public void testAverageIncomeWithException() {
+    testExample("Examples/Exceptions/AverageIncomeWithException.kt", properException.AverageIncomeWithExceptionKt::main);
   }
 
   @Test
   public void testAverageIncomeWithNull() {
     testExample("Examples/Exceptions/AverageIncomeWithNull.kt", withNull.AverageIncomeWithNullKt::main);
-  }
-
-  @Test
-  public void testAverageIncomeWithProperException() {
-    testExample("Examples/Exceptions/AverageIncomeWithProperException.kt", properException.AverageIncomeWithProperExceptionKt::main);
-  }
-
-  @Test
-  public void testExceptions1() {
-    testExample("Examples/Exceptions/Exceptions1.kt", Exceptions1Kt::main);
-  }
-
-  @Test
-  public void testExceptions2() {
-    testExample("Examples/Exceptions/Exceptions2.kt", Exceptions2Kt::main);
   }
 
   @Test
@@ -400,6 +390,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testIntroducingNull() {
     testExample("Examples/Exceptions/IntroducingNull.kt", IntroducingNullKt::main);
+  }
+
+  @Test
+  public void testToIntException() {
+    testExample("Examples/Exceptions/ToIntException.kt", ToIntExceptionKt::main);
+  }
+
+  @Test
+  public void testToIntException2() {
+    testExample("Examples/Exceptions/ToIntException2.kt", ToIntException2Kt::main);
   }
 
   @Test

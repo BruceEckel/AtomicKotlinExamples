@@ -93,19 +93,19 @@ task AuxiliaryInitialization(type: JavaExec) {
     main = 'baseclassinit.AuxiliaryInitializationKt'
 }
 
-task AverageIncomeFirstVersion(type: JavaExec) {
+task AverageIncome(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'firstVersion.AverageIncomeFirstVersionKt'
+    main = 'firstVersion.AverageIncomeKt'
+}
+
+task AverageIncomeWithException(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'properException.AverageIncomeWithExceptionKt'
 }
 
 task AverageIncomeWithNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'withNull.AverageIncomeWithNullKt'
-}
-
-task AverageIncomeWithProperException(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'properException.AverageIncomeWithProperExceptionKt'
 }
 
 task BMI(type: JavaExec) {
@@ -451,16 +451,6 @@ task EvenFilter(type: JavaExec) {
 task ExceptionHandlers(type: JavaExec) {
     classpath kotlinClassPath
     main = 'toss.ExceptionHandlersKt'
-}
-
-task Exceptions1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'Exceptions1Kt'
-}
-
-task Exceptions2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'Exceptions2Kt'
 }
 
 task ExplicitCheck(type: JavaExec) {
@@ -1593,6 +1583,16 @@ task TicTacToe(type: JavaExec) {
     main = 'TicTacToeKt'
 }
 
+task ToIntException(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ToIntExceptionKt'
+}
+
+task ToIntException2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ToIntException2Kt'
+}
+
 task TripleQuotes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TripleQuotesKt'
@@ -1811,9 +1811,9 @@ task run (dependsOn: [
     'AssigningAnIf',
     'AssignmentOperators',
     'AuxiliaryInitialization',
-    'AverageIncomeFirstVersion',
+    'AverageIncome',
+    'AverageIncomeWithException',
     'AverageIncomeWithNull',
-    'AverageIncomeWithProperException',
     'BMI',
     'Backticks',
     'Basic',
@@ -1883,8 +1883,6 @@ task run (dependsOn: [
     'EvaluationOrder',
     'EvenFilter',
     'ExceptionHandlers',
-    'Exceptions1',
-    'Exceptions2',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExpressionInTemplate',
@@ -2111,6 +2109,8 @@ task run (dependsOn: [
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
+    'ToIntException',
+    'ToIntException2',
     'TripleQuotes',
     'TrueOrFalse',
     'Truncation',

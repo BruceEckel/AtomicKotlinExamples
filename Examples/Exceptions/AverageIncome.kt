@@ -1,10 +1,9 @@
-// Exceptions/AverageIncomeFirstVersion.kt
+// Exceptions/AverageIncome.kt
 package firstVersion
-
 import atomictest.*
 
 fun averageIncome(income: Int, months: Int) =
-    income / months
+  income / months
 
 fun main(args: Array<String>) {
   averageIncome(3300, 3) eq 1100
