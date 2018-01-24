@@ -408,8 +408,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testConfusingOperator() {
+    testExample("Examples/ExpressionsAndStatements/ConfusingOperator.kt", ConfusingOperatorKt::main);
+  }
+
+  @Test
   public void testForIsAStatement() {
     testExample("Examples/ExpressionsAndStatements/ForIsAStatement.kt", ForIsAStatementKt::main);
+  }
+
+  @Test
+  public void testPostfixVsPrefix() {
+    testExample("Examples/ExpressionsAndStatements/PostfixVsPrefix.kt", PostfixVsPrefixKt::main);
   }
 
   @Test
@@ -1305,6 +1315,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testReferences() {
     testExample("Examples/Properties/References.kt", ReferencesKt::main);
+  }
+
+  @Test
+  public void testCounter() {
+    testExample("Examples/PropertyAccessors/Counter.kt", propertyaccessors.CounterKt::main);
   }
 
   @Test

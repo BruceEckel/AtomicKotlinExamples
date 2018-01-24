@@ -283,6 +283,11 @@ task ComputationResult(type: JavaExec) {
     main = 'ComputationResultKt'
 }
 
+task ConfusingOperator(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ConfusingOperatorKt'
+}
+
 task ContactMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ContactMapKt'
@@ -301,6 +306,11 @@ task Cookie(type: JavaExec) {
 task CopyDataClass(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CopyDataClassKt'
+}
+
+task Counter(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertyaccessors.CounterKt'
 }
 
 task Cup(type: JavaExec) {
@@ -1268,6 +1278,11 @@ task Postconditions(type: JavaExec) {
     main = 'PostconditionsKt'
 }
 
+task PostfixVsPrefix(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'PostfixVsPrefixKt'
+}
+
 task PrintAlienSpieces(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PrintAlienSpiecesKt'
@@ -1849,10 +1864,12 @@ task run (dependsOn: [
     'CompareSlowFib',
     'CompareTo',
     'ComputationResult',
+    'ConfusingOperator',
     'ContactMap',
     'ConversionFailure',
     'Cookie',
     'CopyDataClass',
+    'Counter',
     'Cup',
     'Cup2',
     'Data',
@@ -2046,6 +2063,7 @@ task run (dependsOn: [
     'Phi',
     'PlatformTypes',
     'Postconditions',
+    'PostfixVsPrefix',
     'PrintAlienSpieces',
     'PropertyInInterface',
     'PropertyOptions',
