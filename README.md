@@ -121,22 +121,6 @@ If you see a message that the command is not found or not recognized, review
 the installation instructions. If you still can't get it to work, check
 [StackOverflow](http://stackoverflow.com/search?q=installing+java).
 
-## Install Kotlin
-
-In this book, we use Kotlin version 1.1, the latest available at the time. The
-detailed installation instructions for the command-line compiler are available
-at [The Kotlin Site](https://kotlinlang.org/docs/tutorials/command-line.html).
-
-To check your installation, open a new shell and type:
-
-```
-kotlin -version
-```
-
-at the shell prompt. You'll see the version information for your Kotlin
-installation.
-
-
 ## Installing and Running the Book Examples
 
 Once you have Java installed, the process to install and run the book examples
@@ -183,9 +167,31 @@ has a `main()`).
 
 # Running Kotlin from the Command Line
 
-The Kotlin interpreter is also called the REPL (for
-*Read-Evaluate-Print-Loop*). You get the REPL when you type `kotlinc` by
-itself on the command line. You should see something like the following:
+The Kotlin interpreter is also called the REPL (for *Read-Evaluate-Print-
+Loop*). To use this you must first install the command-line version of Kotlin.
+
+> NOTE: You do not need to install command-line Kotlin for the operations
+> described previously in this README.
+
+## Install Kotlin
+
+In this book, we use Kotlin version 1.1, the latest available at the time. The
+detailed installation instructions for the command-line compiler are available
+at [The Kotlin Site](https://kotlinlang.org/docs/tutorials/command-line.html).
+
+To check your installation, open a new shell and type:
+
+```
+kotlin -version
+```
+
+at the shell prompt. You'll see the version information for your Kotlin
+installation.
+
+## The REPL
+
+You get the REPL when you type `kotlinc` by itself on the command line. You
+should see something like the following:
 
 ```
 Welcome to Kotlin version 1.1.51 (JRE 1.8.0_144-b01)
@@ -217,11 +223,12 @@ To compile and run examples using the Kotlin command-line tools, see
 
 # Testing
 
-The test system is built in so that we (the authors) can verify the correctness of what goes into the book. You don't
-need to run the tests, but if you want to:
+The test system is built in so that we (the authors) can verify the correctness
+of what goes into the book. You don't need to run the tests, but if you want
+to:
 
-1. `gradlew GenerateTests` generates tests from the sources in this repository. 
-   It creates (or recreates) the file `TestExamples.java`. You normally don't need to run this; the 
+1. `gradlew GenerateTests` generates tests from the sources in this repository.
+   It creates (or recreates) the file `TestExamples.java`. You normally don't need to run this; the
    `TestExamples.java` in the repository should be up to date.
 
 2. `gradlew TestExamples` runs the tests in `TestExamples.java`.
