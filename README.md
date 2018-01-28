@@ -35,6 +35,8 @@ On Mac/Linux, enter:
 ./gradlew run
 ```
 
+(If you get a *Permission denied*, run `chmod +x ./gradlew`)
+
 On Windows, enter
 
 ```
