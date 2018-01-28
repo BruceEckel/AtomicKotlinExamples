@@ -1,6 +1,6 @@
 // Generics/Speakers.kt
 package generics
-import atomictest.*
+import atomictest.eq
 
 class Person {
   fun speak() = "Hi!"
@@ -17,7 +17,7 @@ class Robot {
   fun charge() = true
 }
 
-fun talk(speaker: Any) = when(speaker) {
+fun talk(speaker: Any) = when (speaker) {
   is Person -> speaker.speak()
   is Dog -> speaker.bark()
   is Robot -> speaker.connect()

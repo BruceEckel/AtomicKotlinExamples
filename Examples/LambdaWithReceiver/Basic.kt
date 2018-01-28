@@ -2,7 +2,9 @@
 package lambdawithreceiver
 
 class Klass1 {
-  fun f() { println("hi") }
+  fun f() {
+    println("hi")
+  }
 }
 
 fun useF(lwr: Klass1.() -> Unit): Klass1 {

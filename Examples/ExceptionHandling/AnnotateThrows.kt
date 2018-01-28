@@ -1,6 +1,6 @@
 // ExceptionHandling/AnnotateThrows.kt
 package checked
-import java.io.*
+import java.io.IOException
 
 @Throws(IOException::class)
 fun hasCheckedException() {

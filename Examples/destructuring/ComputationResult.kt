@@ -5,7 +5,7 @@ data class ComputationResult(
   val data: Int, val info: String)
 
 fun compute3(input: Int) =
-  if(input > 5)
+  if (input > 5)
     ComputationResult(input * 2, "High")
   else
     ComputationResult(input * 2, "Low")

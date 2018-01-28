@@ -1,11 +1,11 @@
 // MoreAboutWhen/ColorBlendTest.kt
 package colorblendtest
 import atomictest.eq
+import colorblend.blend
 import paintcolors.Color
 import paintcolors.Color.*
-import colorblend.blend
 
-fun test(mix: (a: Color, b: Color) -> Color?){
+fun test(mix: (a: Color, b: Color) -> Color?) {
   mix(red, red) eq red
   mix(purple, brown) eq brown
   mix(red, yellow) eq orange

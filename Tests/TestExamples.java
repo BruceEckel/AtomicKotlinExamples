@@ -168,6 +168,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testLaunchMany() {
+    testExample("Examples/Coroutines/LaunchMany.kt", LaunchManyKt::main);
+  }
+
+  @Test
+  public void testLaunchManyTimed() {
+    testExample("Examples/Coroutines/LaunchManyTimed.kt", LaunchManyTimedKt::main);
+  }
+
+  @Test
   public void testLazySequence() {
     testExample("Examples/Coroutines/LazySequence.kt", LazySequenceKt::main);
   }
@@ -369,17 +379,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAverageIncome() {
-    testExample("Examples/Exceptions/AverageIncome.kt", firstVersion.AverageIncomeKt::main);
+    testExample("Examples/Exceptions/AverageIncome.kt", firstversion.AverageIncomeKt::main);
   }
 
   @Test
   public void testAverageIncomeWithException() {
-    testExample("Examples/Exceptions/AverageIncomeWithException.kt", properException.AverageIncomeWithExceptionKt::main);
+    testExample("Examples/Exceptions/AverageIncomeWithException.kt", properexception.AverageIncomeWithExceptionKt::main);
   }
 
   @Test
   public void testAverageIncomeWithNull() {
-    testExample("Examples/Exceptions/AverageIncomeWithNull.kt", withNull.AverageIncomeWithNullKt::main);
+    testExample("Examples/Exceptions/AverageIncomeWithNull.kt", withnull.AverageIncomeWithNullKt::main);
   }
 
   @Test
@@ -504,17 +514,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testExtensionsToJavaClass() {
-    testExample("Examples/FromKotlin/ExtensionsToJavaClass.kt", FromKotlin.ExtensionsToJavaClassKt::main);
+    testExample("Examples/fromkotlin/ExtensionsToJavaClass.kt", fromkotlin.ExtensionsToJavaClassKt::main);
   }
 
   @Test
   public void testRandom() {
-    testExample("Examples/FromKotlin/Random.kt", RandomKt::main);
+    testExample("Examples/fromkotlin/Random.kt", RandomKt::main);
   }
 
   @Test
   public void testUseBeanClass() {
-    testExample("Examples/FromKotlin/UseBeanClass.kt", UseBeanClassKt::main);
+    testExample("Examples/fromkotlin/UseBeanClass.kt", UseBeanClassKt::main);
   }
 
   @Test

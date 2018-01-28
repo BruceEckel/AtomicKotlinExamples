@@ -10,7 +10,7 @@ fun blend(a: Color, b: Color) = when {
 }
 
 private fun blendRest(a: Color, b: Color) =
-  when(a to b) {
+  when (a to b) {
     red to blue, blue to red -> purple
     red to yellow, yellow to red -> orange
     blue to yellow, yellow to blue -> green

@@ -1,15 +1,15 @@
 // Visibility/Cookie.kt
 class Cookie(
-  private var isReady: Boolean   // [1]
+  private var isReady: Boolean     // [1]
 ) {
-  private fun crumble() =        // [2]
+  private fun crumble() =          // [2]
     println("crumble")
 
-  public fun bite() =            // [3]
+  public fun bite() =              // [3]
     println("bite")
 
-  fun eatUp() {                  // [4]
-    isReady = true               // [5]
+  fun eatUp() {                    // [4]
+    isReady = true                 // [5]
     crumble()
     bite()
   }

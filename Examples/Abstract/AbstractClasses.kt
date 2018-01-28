@@ -5,6 +5,7 @@ import atomictest.eq
 abstract class Animal {
   fun templateFunction() =
     "The ${animal()} goes ${sound()}"
+
   abstract fun animal(): String
   abstract fun sound(): String
 }

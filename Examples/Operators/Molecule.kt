@@ -3,7 +3,8 @@ import atomictest.eq
 
 data class Molecule(
   val id: Int = idCount++,
-  var attached: Molecule? = null) {
+  var attached: Molecule? = null
+) {
   companion object {
     private var idCount = 0
   }

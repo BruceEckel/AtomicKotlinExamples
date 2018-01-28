@@ -4,7 +4,7 @@ class LazyInt(val init: () -> Int) {
   private var helper: Int? = null
   val value: Int
     get() {
-      if(helper == null)
+      if (helper == null)
         helper = init()
       return helper!!
     }

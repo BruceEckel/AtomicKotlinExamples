@@ -1,6 +1,6 @@
 // Reflection/Solid.kt
-import reflection.className
 import atomictest.eq
+import reflection.className
 
 class Solid {
   override fun toString() = className(this)

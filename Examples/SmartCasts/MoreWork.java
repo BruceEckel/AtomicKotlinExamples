@@ -1,18 +1,15 @@
 // SmartCasts/MoreWork.java
-
-class Dog {
-  public String bark() { return "yip!"; }
-}
+package smartcasts;
 
 public class MoreWork {
-  static String barkIfDog(Object a) {
-    if(a instanceof Dog)
-      return ((Dog)a).bark();        // [1]
+  static String barkIfJDog(Object a) {
+    if(a instanceof JDog)
+      return ((JDog)a).bark();        // [1]
     else
-      return "not Dog";
+      return "not JDog";
   }
   public static void main(String[] args) {
-    System.out.println(barkIfDog(new Dog()));
-    System.out.println(barkIfDog(42));
+    System.out.println(barkIfJDog(new Dog()));
+    System.out.println(barkIfJDog(42));
   }
 }

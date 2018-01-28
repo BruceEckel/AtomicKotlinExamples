@@ -3,7 +3,7 @@ import atomictest.*
 
 fun STUB(vararg desc: String): Nothing {
   println("== ${desc[0]} ==")
-  for(n in 1..(desc.size - 1))
+  for (n in 1..(desc.size - 1))
     println("  ${desc[n]}")
   throw NotImplementedError("STUB")
 }

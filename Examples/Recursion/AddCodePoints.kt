@@ -1,8 +1,8 @@
 // Recursion/AddCodePoints.kt
-import atomictest.*
+import atomictest.eq
 
 fun cpAdd(s: String): Int {
-  if(s.length == 0)
+  if (s.length == 0)
     return 0
   val cp = s.codePointAt(0)
   println("${s[0]}: $cp")

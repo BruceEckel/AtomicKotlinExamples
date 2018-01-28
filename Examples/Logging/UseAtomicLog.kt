@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
   log.warn(msg)
   log.error(msg)
   logFile.readText() eq
-"""Trace: Hello, Atomic Log!
+    """Trace: Hello, Atomic Log!
 Debug: Hello, Atomic Log!
 Info: Hello, Atomic Log!
 Warn: Hello, Atomic Log!

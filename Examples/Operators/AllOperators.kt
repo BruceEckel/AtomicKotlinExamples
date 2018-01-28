@@ -10,15 +10,18 @@ class C {
 
 // Unary operators:
 operator fun C.unaryPlus() = this
+
 operator fun C.unaryMinus() = this
 operator fun C.not() = this
 
 // Increment/decrement:
 operator fun C.inc() = this
+
 operator fun C.dec() = this
 
 // Binary operators:
 operator fun C.plus(rv: C) = rv
+
 operator fun C.minus(rv: C) = rv
 operator fun C.times(rv: C) = rv
 operator fun C.div(rv: C) = rv
@@ -30,10 +33,12 @@ operator fun C.contains(rv: C) = true
 
 // Indexed access:
 operator fun C.get(i: Int) = this
+
 operator fun C.set(i: Int, c: C) = this
 
 // Augmented assignment:
 operator fun C.plusAssign(rv: C) = Unit
+
 operator fun C.minusAssign(rv: C) = Unit
 operator fun C.timesAssign(rv: C) = Unit
 operator fun C.divAssign(rv: C) = Unit

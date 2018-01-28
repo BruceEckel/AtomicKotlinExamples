@@ -1,7 +1,7 @@
 // ExceptionHandling/CatchChecked.java
-package ExceptionHandling;
-import java.io.*;
-import checked.*;
+package exceptionhandling;
+import checked.AnnotateThrowsKt;
+import java.io.IOException;
 import static atomictest.AtomicTestKt.eq;
 
 public class CatchChecked {

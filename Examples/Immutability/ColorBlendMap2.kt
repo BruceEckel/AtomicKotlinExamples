@@ -1,7 +1,6 @@
 // Immutability/ColorBlendMap2.kt
 package immutability
 import paintcolors.Color
-import paintcolors.Color.*
 
 /* Original (mutable) version:
 private fun createBlendMap():

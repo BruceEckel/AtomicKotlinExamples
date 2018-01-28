@@ -1,6 +1,6 @@
 // Generics/AnyInstead.kt
 package generics
-import atomictest.*
+import atomictest.eq
 
 fun aFunc(arg: Any): Any = arg
 

@@ -1,10 +1,10 @@
 // Recursion/Facto.kt
-import bigint.*
 import atomictest.eq
+import bigint.*
 
 fun facto(n: BigInt): BigInt {
   assert(n >= zero)
-  if(n <= one)
+  if (n <= one)
     return one
   return n * facto(n - one)
 }
@@ -16,5 +16,5 @@ fun main(args: Array<String>) {
     "265252859812191058636308480000000".big
   facto(50.big) eq
     ("3041409320171337804361260816606476" +
-    "8844377641568960512000000000000").big
+      "8844377641568960512000000000000").big
 }

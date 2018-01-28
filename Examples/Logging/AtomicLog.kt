@@ -8,11 +8,13 @@ val logFile = Paths.get("Examples",
 object log {
   init {
     // Reset for each run:
-    if(logFile.exists())
+    if (logFile.exists())
       logFile.delete()
   }
+
   private fun log(type: String, msg: String) =
-    logFile.appendText("$type: " + msg + "\n")
+    logFile.appendText("$type: $msg\n")
+
   fun trace(msg: String) = log("Trace", msg)
   fun debug(msg: String) = log("Debug", msg)
   fun info(msg: String) = log("Info", msg)

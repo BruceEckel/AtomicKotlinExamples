@@ -1,5 +1,4 @@
 // Varargs/VarargLikeList.kt
-import atomictest.eq
 
 fun checkOperations(vararg ints: Int) {
   println("Size: ${ints.size}")

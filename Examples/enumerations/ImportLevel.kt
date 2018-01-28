@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     "[Overflow, High, Medium, Low, Empty]"
 
   fun checkLevel(level: Level) =
-    when(level) {
+    when (level) {
       Overflow -> ">>> Overflow!"
       Empty -> "Alert: Empty"
       else -> "Level $level OK"

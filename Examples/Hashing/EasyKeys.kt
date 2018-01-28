@@ -2,8 +2,10 @@
 package hashing
 import atomictest.eq
 
-data class Employee(val first: String,
-  val last: String, val id: Int)
+data class Employee(
+  val first: String,
+  val last: String, val id: Int
+)
 
 fun main(args: Array<String>) {
   val employees = HashSet(setOf(

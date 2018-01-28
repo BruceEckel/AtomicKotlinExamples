@@ -19,13 +19,13 @@ fun main(args: Array<String>) {
 
   var s = ""
   // Iterate through key-value pairs:
-  for(entry in constants)
+  for (entry in constants)
     s += "${entry.key}=${entry.value}, "
   s eq "Pi=3.141, e=2.718, phi=1.618, "
 
   s = ""
   // Unpack during iteration:
-  for((key, value) in constants)
+  for ((key, value) in constants)
     s += "$key=$value, "
   s eq "Pi=3.141, e=2.718, phi=1.618, "
 }

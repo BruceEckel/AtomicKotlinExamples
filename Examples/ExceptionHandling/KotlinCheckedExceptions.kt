@@ -1,6 +1,6 @@
 // ExceptionHandling/KotlinCheckedExceptions.kt
-import java.io.*
 import atomictest.eq
+import java.io.File
 
 fun main(args: Array<String>) {
   File("Examples/ExceptionHandling/" +

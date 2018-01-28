@@ -22,7 +22,7 @@ class BarImpl : Bar {
 // in a supertype list.
 // class B : FooImpl(), BarImpl()
 
-class FooBar(val foo: Foo, val bar: Bar):
+class FooBar(val foo: Foo, val bar: Bar) :
   Foo by foo, Bar by bar
 
 fun main(args: Array<String>) {

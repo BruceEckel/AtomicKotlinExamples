@@ -1,5 +1,4 @@
 // Varargs/TwoFunctionsWithVarargs.kt
-import atomictest.eq
 
 fun first(vararg numbers: Int) {
   for (i in numbers) {

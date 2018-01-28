@@ -7,5 +7,5 @@ fun main(args: Array<String>) {
   capture {
     map.getValue('b')
   } eq "NoSuchElementException: " +
-          "Key b is missing in the map."
+    "Key b is missing in the map."
 }

@@ -11,5 +11,5 @@ fun main(args: Array<String>) {
   capture {
     map.getValue(2).toUpperCase()
   } eq "NoSuchElementException: " +
-      "Key 2 is missing in the map."
+    "Key 2 is missing in the map."
 }

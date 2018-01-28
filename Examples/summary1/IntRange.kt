@@ -1,7 +1,7 @@
 // Summary1/IntRange.kt
 
 fun main(args: Array<String>) {
-  for(i in 1..10)
+  for (i in 1..10)
     print("$i ")
 }
 /* Output:

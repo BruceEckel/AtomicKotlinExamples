@@ -1,5 +1,5 @@
-// FromJava/UsingKotlinClass.java
-package FromJava;
+// fromjava/UsingKotlinClass.java
+package fromjava;
 import mypackage.Basic;
 import static atomictest.AtomicTestKt.eq;
 

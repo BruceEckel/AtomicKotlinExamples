@@ -1,8 +1,12 @@
 // Immutability/DataClassCopy.kt
 import atomictest.eq
 
-data class DC(val a: String, val b: String,
-  val c: String, val d: String)
+data class DC(
+  val a: String,
+  val b: String,
+  val c: String,
+  val d: String
+)
 
 fun main(args: Array<String>) {
   val dc = DC("one", "two", "three", "four")

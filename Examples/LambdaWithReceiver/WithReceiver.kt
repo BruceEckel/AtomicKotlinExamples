@@ -5,8 +5,10 @@ import atomictest.eq
 val tc = TC()
 fun f0r(lwr: TC.() -> Int) = tc.lwr()
 fun f1r(lwr: TC.(Int) -> Int) = tc.lwr(2)
-fun f2r(lwr: TC.(Int, Int) -> Int) = tc.lwr(3, 3)
-fun f3r(lwr: TC.(Int, Int, Int) -> Int) = tc.lwr(4, 4, 4)
+fun f2r(lwr: TC.(Int, Int) -> Int) =
+  tc.lwr(3, 3)
+fun f3r(lwr: TC.(Int, Int, Int) -> Int) =
+  tc.lwr(4, 4, 4)
 
 fun main(args: Array<String>) {
   f0r(TC::f0) eq 47

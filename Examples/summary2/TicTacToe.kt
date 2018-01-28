@@ -4,7 +4,7 @@ import atomictest.eq
 class Cell {
   var entry = ' '                 // [1]
   fun set(e: Char): String =      // [2]
-    if(entry == ' ' && (
+    if (entry == ' ' && (
       e == 'X' || e == 'O')) {
       entry = e
       "successful move"
@@ -18,11 +18,12 @@ class Grid {
     listOf(Cell(), Cell(), Cell()),
     listOf(Cell(), Cell(), Cell())
   )
+
   fun play(e: Char, x: Int, y: Int): String =
-    if(x < 0 || x > 2 || y < 0 || y > 2)
+    if (x < 0 || x > 2 || y < 0 || y > 2)
       "invalid move"
     else
-      cells[x][y].set(e)          // [3]
+      cells[x][y].set(e)            // [3]
 }
 
 fun main(args: Array<String>) {

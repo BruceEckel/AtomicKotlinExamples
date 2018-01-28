@@ -1,4 +1,4 @@
-// FromJava/ChangeName.kt
+// fromjava/ChangeName.kt
 @file:JvmName("Utils")
 package mypackage
 

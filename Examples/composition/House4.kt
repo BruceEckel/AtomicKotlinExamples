@@ -9,8 +9,8 @@ interface Cook<T>
 interface Clean<T>
 interface Kitchen :
   Store<Food>, Cook<Food>, Clean<Utensil>
-  // Oops. Can't do this:
-  // , Store<Utensil>, Clean<Food>
+// Oops. Can't do this:
+// , Store<Utensil>, Clean<Food>
 
 interface House : Building {
   val kitchens: List<Kitchen>

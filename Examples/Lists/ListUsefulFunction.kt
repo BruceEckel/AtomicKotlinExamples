@@ -7,14 +7,14 @@ fun main(args: Array<String>) {
   doubles.min() eq 1.1
   doubles.max() eq 4.4
 
-  val strings = listOf("Twas", "Brillig", "And",
-    "Slithy", "Tove")
+  val strings = listOf("Twas", "Brillig",
+    "And", "Slithy", "Tove")
   strings eq listOf("Twas", "Brillig", "And",
     "Slithy", "Tove")
   strings.sorted() eq listOf("And", "Brillig",
     "Slithy", "Tove", "Twas")
-  strings.reversed() eq listOf("Tove", "Slithy",
-    "And", "Brillig", "Twas")
+  strings.reversed() eq listOf("Tove",
+    "Slithy", "And", "Brillig", "Twas")
   strings.first() eq "Twas"
   strings.takeLast(2) eq
     listOf("Slithy", "Tove")

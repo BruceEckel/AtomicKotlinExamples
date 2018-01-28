@@ -1,15 +1,21 @@
 // PropertyDelegation/FibonacciProperty.kt
 import atomictest.eq
-import kotlin.reflect.KProperty
 import bigint.*
 import recursion.fibonacci
+import kotlin.reflect.KProperty
 
 class Fibonacci {
   private var current: BigInt = zero
-  operator fun getValue(dgtor: Any?,
-    prop: KProperty<*>) = current
-  operator fun setValue(dgtor: Any?,
-    prop: KProperty<*>, n: BigInt) {
+  operator fun getValue(
+    dgtor: Any?,
+    prop: KProperty<*>
+  ) = current
+
+  operator fun setValue(
+    dgtor: Any?,
+    prop: KProperty<*>,
+    n: BigInt
+  ) {
     current = fibonacci(n.toInt())
   }
 }

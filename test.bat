@@ -5,6 +5,9 @@ echo:
 echo bb code extract
 bb code extract
 echo:
+echo rm Tests\TestExamples.java
+call rm Tests\TestExamples.java
+echo:
 echo gradlew GenerateTests
 call gradlew GenerateTests
 echo:

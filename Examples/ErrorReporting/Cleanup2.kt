@@ -1,6 +1,6 @@
 // ErrorReporting/Cleanup2.kt
-import errorreporting.*
 import atomictest.eq
+import errorreporting.localFile
 
 fun main(args: Array<String>) {
   localFile("Cleanup2.kt").useLines {

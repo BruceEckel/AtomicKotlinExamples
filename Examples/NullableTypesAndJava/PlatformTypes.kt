@@ -1,5 +1,5 @@
 // NullableTypesAndJava/PlatformTypes.kt
-import JavaCode.JTool
+import javacode.JTool
 import atomictest.eq
 
 object KotlinCode {
@@ -13,8 +13,8 @@ fun main(args: Array<String>) {
     a?.method() eq "Success"
     b.method() eq "Success"
     c.method() eq "Success"
-    ::a.returnType eq "JavaCode.JTool?"
-    ::b.returnType eq "JavaCode.JTool"
-    ::c.returnType eq "JavaCode.JTool!"
+    ::a.returnType eq "javacode.JTool?"
+    ::b.returnType eq "javacode.JTool"
+    ::c.returnType eq "javacode.JTool!"
   }
 }

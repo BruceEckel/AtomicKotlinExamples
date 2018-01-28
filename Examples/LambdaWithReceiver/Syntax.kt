@@ -6,26 +6,37 @@ class Klass2 {
 }
 
 // Pass receiver to the lambda:
-fun useF1(k: Klass2,
-  f: Klass2.() -> Int) = k.f()
-fun useF2(k: Klass2,
+fun useF1(
+  k: Klass2,
+  f: Klass2.() -> Int
+) = k.f()
+
+fun useF2(
+  k: Klass2,
   f: Klass2.(n: Int) -> Int,
-  na: Int) = k.f(na)
-fun useBoth(k: Klass2,
+  na: Int
+) = k.f(na)
+
+fun useBoth(
+  k: Klass2,
   f1: Klass2.() -> Int,
   f2: Klass2.(n: Int) -> Int,
-  na: Int) = k.f1() + k.f2(na)
+  na: Int
+) = k.f1() + k.f2(na)
 
 // Use extension methods:
-fun Klass2.useF1e(
-  f: Klass2.() -> Int) = f()
+fun Klass2.useF1e(f: Klass2.() -> Int) = f()
+
 fun Klass2.useF2e(
   f: Klass2.(n: Int) -> Int,
-  na: Int) = f(na)
+  na: Int
+) = f(na)
+
 fun Klass2.useBothe(
   f1: Klass2.() -> Int,
   f2: Klass2.(n: Int) -> Int,
-  na: Int) = f1() + f2(na)
+  na: Int
+) = f1() + f2(na)
 
 
 fun main(args: Array<String>) {

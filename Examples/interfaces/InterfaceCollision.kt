@@ -15,7 +15,7 @@ interface B {
     get() = 17
 }
 
-class C: A, B {
+class C : A, B {
   override fun f() = 9.9
   override fun g() = super<A>.g()
   override val n: Int

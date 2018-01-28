@@ -4,7 +4,7 @@ import atomictest.*
 fun tryFinally(i: Int) {
   try {
     println(i)
-    if(i > 1)
+    if (i > 1)
       throw Exception()
   } finally {
     println("In finally clause for $i")

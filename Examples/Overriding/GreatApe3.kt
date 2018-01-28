@@ -8,6 +8,7 @@ open class GreatApe {
     energy += 10
     return energy
   }
+
   fun climb(x: Int) {
     energy -= x
   }
@@ -21,6 +22,7 @@ class Bonobo : GreatApe() {
     // Call the base-class version:
     return super.eat()
   }
+
   // Add a function():
   fun run() = "Bonobo run"
 }
@@ -32,6 +34,7 @@ class Chimpanzee : GreatApe() {
     energy += additionalEnergy
     return super.eat()
   }
+
   fun jump() = "Chimp jump"
 }
 

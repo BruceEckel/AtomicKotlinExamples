@@ -1,7 +1,7 @@
 // IfExpressions/OneOrTheOther.kt
 
 fun oneOrTheOther(exp: Boolean): String =
-  if(exp)
+  if (exp)
     "True!" // No 'return' necessary
   else
     "False"

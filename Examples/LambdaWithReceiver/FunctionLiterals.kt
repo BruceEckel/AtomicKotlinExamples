@@ -5,7 +5,8 @@ import atomictest.eq
 fun f0(fl: () -> Unit) = fl()
 fun f1(fl: (Int) -> Int) = fl(1)
 fun f2(fl: (Int, Int) -> Int) = fl(2, 3)
-fun f3(fl: (Int, Int, Int) -> Int) = fl(4,5,6)
+fun f3(fl: (Int, Int, Int) -> Int) =
+  fl(4, 5, 6)
 
 fun main(args: Array<String>) {
   f0 { 1 } eq Unit

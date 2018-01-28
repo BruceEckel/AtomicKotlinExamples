@@ -1,10 +1,10 @@
 // Recursion/Fibo.kt
-import bigint.*
 import atomictest.eq
+import bigint.*
 
 fun fibo(n: BigInt): BigInt {
   assert(n >= zero)
-  return when(n) {
+  return when (n) {
     zero -> zero
     one -> one
     else -> fibo(n - one) + fibo(n - two)

@@ -1,6 +1,6 @@
 // ImportsAndPackages/ImportNameChange.kt
-import kotlin.math.cos as foo
 import kotlin.math.PI as BAR
+import kotlin.math.cos as foo
 
 fun main(args: Array<String>) {
   println(BAR)

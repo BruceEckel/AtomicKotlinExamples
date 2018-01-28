@@ -3,11 +3,11 @@ package smartcasts
 import atomictest.eq
 
 fun acceptAnything(a: Any) =
-  when(a) {
+  when (a) {
     is String ->
       "String: $a of length ${a.length}"
     is Int ->
-      if(a < 20) "Int Less than 20: $a"
+      if (a < 20) "Int Less than 20: $a"
       else "Some Other Int: $a"
     is Dog -> "Dog: ${a.bark()}"
     else -> "I don't know what that is!"

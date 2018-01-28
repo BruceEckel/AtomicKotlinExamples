@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
   val activity = "swimming"
   val hour = 10
 
-  val isOpen = if(
+  val isOpen = if (
     activity == "swimming" ||
     activity == "ice skating") {
     val opens = 9

@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
 
   // Select each element in the List:
   var result = ""
-  for(i in ints)                       // [2]
+  for (i in ints)                      // [2]
     result += "$i "
   result eq "1 3 5 7 11 13 "
 

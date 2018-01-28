@@ -2,7 +2,7 @@
 package toss
 import atomictest.eq
 
-fun toss(which: Int) = when(which) {
+fun toss(which: Int) = when (which) {
   1 -> throw Except1("Reason")
   2 -> throw Except2(11)
   3 -> throw Except3("Wanted", 1.618)
@@ -12,11 +12,11 @@ fun toss(which: Int) = when(which) {
 fun test(which: Int) =
   try {
     toss(which)
-  } catch(e: Except1) {
+  } catch (e: Except1) {
     "Except1: ${e.why}"
-  } catch(e: Except2) {
+  } catch (e: Except2) {
     "Except2: ${e.n}"
-  } catch(e: Except3) {
+  } catch (e: Except3) {
     "Except3: ${e.msg} ${e.d}"
   }
 

@@ -1,5 +1,5 @@
-// JavaCode/AnnotatedJTool.java
-package JavaCode;
+// javacode/AnnotatedJTool.java
+package javacode;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

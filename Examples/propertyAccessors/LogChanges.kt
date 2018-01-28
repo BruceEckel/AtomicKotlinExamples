@@ -1,5 +1,5 @@
 // PropertyAccessors/LogChanges.kt
-import atomictest.*
+import atomictest.eq
 
 class LogChanges {
   var n: Int = 0

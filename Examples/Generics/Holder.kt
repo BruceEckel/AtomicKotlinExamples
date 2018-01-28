@@ -10,5 +10,5 @@ class Holder(private val a: Automobile) {
 
 fun main(arg: Array<String>) {
   Holder(Automobile("Peugot")).get() eq
-  "Automobile(brand=Peugot)"
+    "Automobile(brand=Peugot)"
 }

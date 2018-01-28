@@ -2,7 +2,7 @@
 import atomictest.eq
 
 fun compute2(input: Int): Pair<Int, String> =
-  if(input > 5)
+  if (input > 5)
     Pair(input * 2, "High")
   else
     Pair(input * 2, "Low")

@@ -7,14 +7,14 @@ interface Animal {
   fun talk() = "$sound!"
 }
 
-class Cat: Animal {
+class Cat : Animal {
   override val sound = "meow"
   override fun talk() = "${super.talk()}?"
 }
 
 class Dog(
   override val sound: String
-): Animal
+) : Animal
 
 fun main(args: Array<String>) {
   val cat = Cat()

@@ -1,5 +1,5 @@
 // Exceptions/AverageIncomeWithNull.kt
-package withNull
+package withnull
 import atomictest.eq
 
 fun averageIncome(income: Int, months: Int) =

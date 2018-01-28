@@ -1,12 +1,12 @@
 // Coroutines/CompareSlowFib.kt
+import bigint.*
 import kotlinx.coroutines.experimental.*
 import kotlin.system.measureTimeMillis
-import bigint.*
 
 // Slow Fibonacci function:
 fun fibs(n: BigInt): BigInt {
   assert(n >= zero)
-  return when(n) {
+  return when (n) {
     zero -> zero
     one -> one
     else -> fibs(n - one) + fibs(n - two)
@@ -43,7 +43,7 @@ fun parallelFibs() = runBlocking<Double> {
 fun main(args: Array<String>) {
   val seq = sequentialFibs()
   val par = parallelFibs()
-  println("Ratio: ${round2dp(seq/par)}")
+  println("Ratio: ${round2dp(seq / par)}")
 }
 /* Sample output: (2 core machine)
 Ratio: 1.68

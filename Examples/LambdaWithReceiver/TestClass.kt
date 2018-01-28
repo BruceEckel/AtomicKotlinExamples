@@ -14,7 +14,8 @@ fun lwr(
   wr0: TC.() -> Int,
   wr1: TC.(Int) -> Int,
   wr2: TC.(Int, Int) -> Int,
-  wr3: TC.(Int, Int, Int) -> Int) {
+  wr3: TC.(Int, Int, Int) -> Int
+) {
   val tc = TC()
   tc.wr0() eq 47
   tc.wr1(11) eq 58

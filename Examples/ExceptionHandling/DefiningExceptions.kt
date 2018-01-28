@@ -2,14 +2,14 @@
 package toss
 import atomictest.*
 
-data class Except1(val why: String):
+data class Except1(val why: String) :
   Exception(why)
 
-data class Except2(val n: Int):
+data class Except2(val n: Int) :
   IllegalArgumentException(n.toString())
 
 data class Except3(
-  val msg: String, val d: Double):
+  val msg: String, val d: Double) :
   IllegalStateException("$msg: $d")
 
 fun main(args: Array<String>) {

@@ -10,6 +10,6 @@ enum class Size {
 fun main(args: Array<String>) {
   Gigantic eq "Gigantic"               // [2]
   Size.values().toList() eq            // [3]
-  listOf(Tiny, Small, Medium,
-    Large, Huge, Gigantic)
+    listOf(Tiny, Small, Medium,
+      Large, Huge, Gigantic)
 }

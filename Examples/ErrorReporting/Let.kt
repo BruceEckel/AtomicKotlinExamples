@@ -10,8 +10,7 @@ fun processURL(url: String?): String =
     getURL(it)
     process(it)
     storeURL(it)
-  } ?:
-    throw IllegalArgumentException("url")
+  } ?: throw IllegalArgumentException("url")
 
 fun main(args: Array<String>) {
   capture {

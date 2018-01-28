@@ -1,5 +1,5 @@
-// FromJava/CallTopLevelFunction.java
-package FromJava;
+// fromjava/CallTopLevelFunction.java
+package fromjava;
 import mypackage.TopLevelFunctionKt;
 import static atomictest.AtomicTestKt.eq;
 

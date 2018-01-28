@@ -1,5 +1,5 @@
 // Exceptions/AverageIncome.kt
-package firstVersion
+package firstversion
 import atomictest.*
 
 fun averageIncome(income: Int, months: Int) =

@@ -1,5 +1,5 @@
-// JavaCode/JTool.java
-package JavaCode;
+// javacode/JTool.java
+package javacode;
 
 public class JTool {
   public static JTool get(String s) {

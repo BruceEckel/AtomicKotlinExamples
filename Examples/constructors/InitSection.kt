@@ -4,6 +4,7 @@ import atomictest.eq
 
 class X(i: Int) {
   var s: String
+
   init {
     s = "Initialized: X(i=$i)"
   }

@@ -6,6 +6,7 @@ class BetterSuitcase : Bag {
   override fun setUp() {
     items = "socks, jacket, laptop"
   }
+
   fun checkSocks(): Boolean =
     items.contains("socks")
 }

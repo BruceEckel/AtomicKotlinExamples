@@ -1,9 +1,9 @@
 // Exceptions/AverageIncomeWithException.kt
-package properException
+package properexception
 import atomictest.*
 
 fun averageIncome(income: Int, months: Int) =
-  if(months == 0)
+  if (months == 0)
     throw IllegalArgumentException(    // [1]
       "Months can't be zero")
   else
@@ -14,5 +14,5 @@ fun main(args: Array<String>) {
   capture {
     averageIncome(5000, 0)
   } eq "IllegalArgumentException: " +
-  "Months can't be zero"
+    "Months can't be zero"
 }

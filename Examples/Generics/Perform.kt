@@ -2,8 +2,10 @@
 package generics
 import atomictest.eq
 
-fun <T> T.perform(spk: T.() -> String,
-  sit: T.() -> Boolean) = spk() + " " + sit()
+fun <T> T.perform(
+  spk: T.() -> String,
+  sit: T.() -> Boolean
+) = spk() + " " + sit()
 
 fun main(arg: Array<String>) {
   val p = Person()

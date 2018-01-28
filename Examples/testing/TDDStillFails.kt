@@ -1,6 +1,5 @@
 // Testing/TDDStillFails.kt
 package testing2
-import atomictest.eq
 
 fun main(args: Array<String>) {
   // Everything fails:

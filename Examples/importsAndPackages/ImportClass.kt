@@ -1,6 +1,6 @@
 // ImportsAndPackages/ImportClass.kt
-import kotlin.math.cos
 import kotlin.math.PI
+import kotlin.math.cos
 
 fun main(args: Array<String>) {
   println(PI)

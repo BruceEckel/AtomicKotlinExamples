@@ -5,10 +5,12 @@ class Duo(val x: Int, val y: Int) {
   companion object {
     var msg = ""
   }
+
   operator fun component1(): Int {
     msg += "component1()"
     return x
   }
+
   operator fun component2(): Int {
     msg += "component2()"
     return y

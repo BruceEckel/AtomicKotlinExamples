@@ -1,12 +1,13 @@
 // Constructors/Coffee.kt
-import atomictest.*
+import atomictest.eq
 
 class Coffee(
   val shots: Int = 2,
   val decaf: Boolean = false,
   val milk: Boolean = false,
   val toGo: Boolean = false,
-  val syrup: String = "") {
+  val syrup: String = ""
+) {
   var result = ""
   init {
     println(listOf(
@@ -16,19 +17,23 @@ class Coffee(
     addMilk()
     addSyrup()
   }
+
   fun getCup() {
     result +=
-      if(toGo) "ToGoCup" else "HereCup"
+      if (toGo) "ToGoCup" else "HereCup"
   }
+
   fun pourShots() {
-    for(s in 1..shots)
+    for (s in 1..shots)
       result +=
-        if(decaf) " decaf shot" else " shot"
+        if (decaf) " decaf shot" else " shot"
   }
+
   fun addMilk() {
-    if(milk)
+    if (milk)
       result += " milk"
   }
+
   fun addSyrup() {
     if (syrup.isNotEmpty()) {
       result += " $syrup"

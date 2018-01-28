@@ -1,7 +1,7 @@
 // Coroutines/CompareDelayingTask.kt
+import atomictest.eq
 import kotlinx.coroutines.experimental.*
 import kotlin.system.measureTimeMillis
-import atomictest.eq
 
 suspend fun task(): Int {
   delay(1000L) // Performing work...
@@ -11,7 +11,7 @@ suspend fun task(): Int {
 fun sequentialTasks() = runBlocking<Double> {
   measureTimeMillis {
     val result =
-      List(5){task()}.sumBy{it}
+      List(5) { task() }.sumBy { it }
     result eq 555
   }.toDouble()
 }
@@ -19,7 +19,8 @@ fun sequentialTasks() = runBlocking<Double> {
 fun parallelTasks() = runBlocking<Double> {
   measureTimeMillis {
     val result =
-      List(5){async{task()}}.sumBy{it.await()}
+      List(5) { async { task() } }
+        .sumBy { it.await() }
     result eq 555
   }.toDouble()
 }
@@ -31,7 +32,7 @@ fun round2dp(d: Double) =
 fun main(args: Array<String>) {
   val seq = sequentialTasks()
   val par = parallelTasks()
-  println("Ratio: ${round2dp(seq/par)}")
+  println("Ratio: ${round2dp(seq / par)}")
 }
 /* Sample output:
 555

@@ -95,17 +95,17 @@ task AuxiliaryInitialization(type: JavaExec) {
 
 task AverageIncome(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'firstVersion.AverageIncomeKt'
+    main = 'firstversion.AverageIncomeKt'
 }
 
 task AverageIncomeWithException(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'properException.AverageIncomeWithExceptionKt'
+    main = 'properexception.AverageIncomeWithExceptionKt'
 }
 
 task AverageIncomeWithNull(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'withNull.AverageIncomeWithNullKt'
+    main = 'withnull.AverageIncomeWithNullKt'
 }
 
 task BMI(type: JavaExec) {
@@ -185,7 +185,7 @@ task CallOtherConstructors(type: JavaExec) {
 
 task CallTopLevelFunction(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FromJava.CallTopLevelFunction'
+    main = 'fromjava.CallTopLevelFunction'
 }
 
 task Cat(type: JavaExec) {
@@ -195,7 +195,7 @@ task Cat(type: JavaExec) {
 
 task CatchChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ExceptionHandling.CatchChecked'
+    main = 'exceptionhandling.CatchChecked'
 }
 
 task ChainedCalls(type: JavaExec) {
@@ -485,7 +485,7 @@ task Extensions(type: JavaExec) {
 
 task ExtensionsToJavaClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FromKotlin.ExtensionsToJavaClassKt'
+    main = 'fromkotlin.ExtensionsToJavaClassKt'
 }
 
 task Facto(type: JavaExec) {
@@ -870,7 +870,7 @@ task IterationVsMembership(type: JavaExec) {
 
 task JavaCheckedExceptions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ExceptionHandling.JavaCheckedExceptions'
+    main = 'exceptionhandling.JavaCheckedExceptions'
 }
 
 task JavaList(type: JavaExec) {
@@ -990,7 +990,7 @@ task LongConstants(type: JavaExec) {
 
 task MakeSalad(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FromJava.MakeSalad'
+    main = 'fromjava.MakeSalad'
 }
 
 task MapUnpacking(type: JavaExec) {
@@ -1050,7 +1050,7 @@ task MoreReduce(type: JavaExec) {
 
 task MoreWork(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'MoreWork'
+    main = 'smartcasts.MoreWork'
 }
 
 task MultiLineComment(type: JavaExec) {
@@ -1705,12 +1705,12 @@ task UsingAtomicTest(type: JavaExec) {
 
 task UsingDataClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FromJava.UsingDataClass'
+    main = 'fromjava.UsingDataClass'
 }
 
 task UsingKotlinClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FromJava.UsingKotlinClass'
+    main = 'fromjava.UsingKotlinClass'
 }
 
 task UsingLongs(type: JavaExec) {

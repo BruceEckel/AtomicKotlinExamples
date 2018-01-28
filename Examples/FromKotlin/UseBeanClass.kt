@@ -1,6 +1,6 @@
-// FromKotlin/UseBeanClass.kt
+// fromkotlin/UseBeanClass.kt
+import fromkotlin.Chameleon
 import atomictest.eq
-import FromKotlin.Chameleon
 
 fun main(args: Array<String>) {
   val chameleon = Chameleon()

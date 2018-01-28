@@ -1,6 +1,7 @@
 // ErrorReporting/ReadTraceFile.kt
-import errorreporting.*
-import atomictest.*
+import atomictest.capture
+import atomictest.eq
+import errorreporting.localFile
 
 fun readTrace(fileName: String) {
   require(fileName.startsWith("trace_"),
@@ -20,14 +21,14 @@ fun main(args: Array<String>) {
   capture {
     readTrace("foo.txt")
   } eq "IllegalArgumentException: " +
-      "foo.txt must start with 'trace_'"
+    "foo.txt must start with 'trace_'"
   capture {
     readTrace("trace_foo.txt")
   } eq "IllegalArgumentException: " +
-      "trace_foo.txt doesn't exist"
+    "trace_foo.txt doesn't exist"
   capture {
     readTrace("trace_empty.txt")
   } eq "IllegalArgumentException: " +
-      "trace_empty.txt is empty"
+    "trace_empty.txt is empty"
   readTrace("trace_real.txt")
 }

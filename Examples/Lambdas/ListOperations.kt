@@ -26,11 +26,11 @@ fun main(args: Array<String>) {
   list3.contains('d') eq true
   list4.distinct().count() eq 3
   list1.filter { it > 3 && it % 2 == 0 } eq
-  "[4, 6, 8]"
+    "[4, 6, 8]"
   list3.intersect(list4) eq "[a, b, c]"
   list3.minus(list4) eq
-  "[d, e, f, g, h, i, j]"
+    "[d, e, f, g, h, i, j]"
   list1.partition { it % 2 == 0 } eq
-  "([0, 2, 4, 6, 8], [1, 3, 5, 7, 9])"
+    "([0, 2, 4, 6, 8], [1, 3, 5, 7, 9])"
   // And many more ...
 }

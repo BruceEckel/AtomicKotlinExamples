@@ -9,9 +9,9 @@ fun main(args: Array<String>) {
   capture {
     later("Hello")
   } eq "NotImplementedError: " +
-      "An operation is not implemented: later()"
+    "An operation is not implemented: later()"
   capture {
     later2("Hello!")
   } eq "NotImplementedError: " +
-      "An operation is not implemented."
+    "An operation is not implemented."
 }

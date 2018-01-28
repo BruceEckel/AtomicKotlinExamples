@@ -4,25 +4,27 @@ import atomictest.eq
 import kotlin.reflect.KProperty
 
 class Person(
-  val formal: String, val nickName: String) {
+  val formal: String,
+  val nickName: String
+) {
   var casual = false
   val name by NickName()
 }
 
 class NickName() {
   operator fun
-  getValue(p: Person, prop: KProperty<*>) =
+    getValue(p: Person, prop: KProperty<*>) =
     "'$prop' " +
-      if(p.casual) p.nickName else p.formal
+    if (p.casual) p.nickName else p.formal
 }
 
 fun main(args: Array<String>) {
   val babs = Person("Barbara", "Babs")
   babs.name eq
-  "'val propertydelegation.Person.name: " +
-  "kotlin.String' Barbara"
+    "'val propertydelegation.Person.name: " +
+    "kotlin.String' Barbara"
   babs.casual = true
   babs.name eq
-  "'val propertydelegation.Person.name: " +
-  "kotlin.String' Babs"
+    "'val propertydelegation.Person.name: " +
+    "kotlin.String' Babs"
 }

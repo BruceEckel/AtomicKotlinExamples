@@ -1,5 +1,4 @@
 // PropertyAccessors/Default.kt
-import atomictest.*
 
 class Default {
   var i: Int = 0

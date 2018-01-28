@@ -11,7 +11,7 @@ interface Adder {
 fun addEleven(adder: Adder) =
   adder.sum() + 11
 
-class Calculation: Adder {
+class Calculation : Adder {
   override val part1 = 42
   override fun part2() = 2.71828
 }

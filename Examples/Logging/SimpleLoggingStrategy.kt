@@ -11,7 +11,7 @@ fun debug(msg: String) =
 // fun debug(msg: String) = Unit
 
 fun trace(msg: String) =
-  logFile.appendText("Trace: " + msg + "\n")
+  logFile.appendText("Trace: $msg\n")
 
 fun main(args: Array<String>) {
   debug("Simple Logging Strategy")

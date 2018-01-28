@@ -77,10 +77,10 @@ infix fun <T> T.neq(value: T) {
  *   ```
  */
 fun capture(f: () -> Unit): String =
-  try {
-    f()
-    expectedExceptionMessage
-  } catch (e: Throwable) {
-    e.javaClass.simpleName +
-      (e.message?.let { ": $it" } ?: "")
-  }
+    try {
+      f()
+      expectedExceptionMessage
+    } catch (e: Throwable) {
+      e.javaClass.simpleName +
+          (e.message?.let { ": $it" } ?: "")
+    }

@@ -1,8 +1,10 @@
 // SafeCalls/ChainedCalls.kt
 import atomictest.eq
 
-class Person(val name: String,
-  var bestFriend: Person? = null)
+class Person(
+  val name: String,
+  var bestFriend: Person? = null
+)
 
 fun main(args: Array<String>) {
   val alice = Person("Alice")

@@ -1,6 +1,6 @@
 // Generics/BasicGenerics.kt
 package generics
-import atomictest.*
+import atomictest.eq
 
 fun <T> gFunc(arg: T): T = arg
 

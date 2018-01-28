@@ -1,6 +1,6 @@
 // NullabilityAnnotations/AnnotatedJava.kt
 package usingannotatedtypes
-import JavaCode.AnnotatedJTool
+import javacode.AnnotatedJTool
 import atomictest.eq
 
 object KotlinCode {
@@ -13,8 +13,8 @@ object KotlinCode {
 
 fun main(args: Array<String>) {
   with(KotlinCode) {
-    ::a.returnType eq "JavaCode.JTool"
-    ::c.returnType eq "JavaCode.JTool?"
-    ::d.returnType eq "JavaCode.JTool?"
+    ::a.returnType eq "javacode.JTool"
+    ::c.returnType eq "javacode.JTool?"
+    ::d.returnType eq "javacode.JTool?"
   }
 }

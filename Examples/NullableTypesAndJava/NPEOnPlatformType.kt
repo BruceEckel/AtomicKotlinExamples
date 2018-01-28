@@ -1,5 +1,5 @@
 // NullableTypesAndJava/NPEOnPlatformType.kt
-import JavaCode.JTool
+import javacode.JTool
 import atomictest.*
 
 fun main(args: Array<String>) {
@@ -15,5 +15,5 @@ fun main(args: Array<String>) {
   capture {
     val bn: JTool = JTool.get(null) // [4]
   } eq "IllegalStateException: " +
-      "JTool.get(null) must not be null"
+    "JTool.get(null) must not be null"
 }

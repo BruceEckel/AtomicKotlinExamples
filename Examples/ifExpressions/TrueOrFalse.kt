@@ -1,7 +1,7 @@
 // IfExpressions/TrueOrFalse.kt
 
 fun trueOrFalse(exp: Boolean): String {
-  if(exp)
+  if (exp)
     return "It's true!"          // [1]
   return "It's false"
 }

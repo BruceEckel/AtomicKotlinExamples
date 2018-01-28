@@ -1,4 +1,4 @@
-// FromJava/KotlinClass.kt
+// fromjava/KotlinClass.kt
 package mypackage
 
 class Basic {

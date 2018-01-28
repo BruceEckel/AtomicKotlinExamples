@@ -1,5 +1,5 @@
-// FromJava/MakeSalad.java
-package FromJava;
+// fromjava/MakeSalad.java
+package fromjava;
 import mypackage.Utils;
 import static atomictest.AtomicTestKt.eq;
 

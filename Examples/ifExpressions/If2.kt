@@ -2,7 +2,7 @@
 
 fun main(args: Array<String>) {
   val x: Boolean = 1 >= 1
-  if(x)
+  if (x)
     println("It's true!")
 }
 /* Output:

@@ -3,8 +3,8 @@ import atomictest.eq
 
 class DelegatedControls(
   private val controls: SpaceShipControls =
-    SpaceShipControls()
-): ShipControls by controls {
+  SpaceShipControls()
+) : ShipControls by controls {
   override fun turboBoost(): String =
     "${controls.turboBoost()}... boooooost!"
 }
