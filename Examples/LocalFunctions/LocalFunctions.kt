@@ -11,7 +11,9 @@ fun main(args: Array<String>) {
   val x = 42
   log("Computation result: $x")
   logMsg eq
-    """|Starting computation
-       |Computation result: 42
-       |""".trimMargin()
+    """
+    |Starting computation
+    |Computation result: 42
+    |
+    """.trimMargin()
 }
