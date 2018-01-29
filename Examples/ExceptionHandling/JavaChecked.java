@@ -1,15 +1,15 @@
-// ExceptionHandling/JavaCheckedExceptions.java
+// ExceptionHandling/JavaChecked.java
 package exceptionhandling;
 import java.io.*;
 import java.nio.file.*;
 import static atomictest.AtomicTestKt.eq;
 
-public class JavaCheckedExceptions {
+public class JavaChecked {
   // Build path to current source file, based
   // on directory where Gradle is invoked:
   static Path thisFile = Paths.get(
-    "Examples", "Exceptions",
-    "JavaCheckedExceptions.java");
+    "Examples", "ExceptionHandling",
+    "JavaChecked.java");
   public static void main(String[] args) {
     BufferedReader source = null;
     try {
@@ -21,7 +21,7 @@ public class JavaCheckedExceptions {
     try {
       String first = source.readLine();
       eq(first, "// ExceptionHandling/" +
-        "JavaCheckedExceptions.java");
+        "JavaChecked.java");
     } catch(IOException e) {
       // Recover from read() error
     }

@@ -368,8 +368,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testKotlinCheckedExceptions() {
-    testExample("Examples/ExceptionHandling/KotlinCheckedExceptions.kt", KotlinCheckedExceptionsKt::main);
+  public void testKotlinChecked() {
+    testExample("Examples/ExceptionHandling/KotlinChecked.kt", KotlinCheckedKt::main);
   }
 
   @Test

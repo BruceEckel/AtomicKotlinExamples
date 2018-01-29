@@ -1,10 +1,10 @@
-// ExceptionHandling/KotlinCheckedExceptions.kt
+// ExceptionHandling/KotlinChecked.kt
 import atomictest.eq
 import java.io.File
 
 fun main(args: Array<String>) {
   File("Examples/ExceptionHandling/" +
-    "KotlinCheckedExceptions.kt")
+    "KotlinChecked.kt")
     .readLines()[0] eq
-    "// ExceptionHandling/KotlinCheckedExceptions.kt"
+    "// ExceptionHandling/KotlinChecked.kt"
 }
