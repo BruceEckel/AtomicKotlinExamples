@@ -5,7 +5,10 @@ import java.io.File
 import java.io.PrintStream
 import java.util.function.Consumer
 
+private val LINE_SEPARATOR = System.lineSeparator()
+
 abstract class AbstractTestExamples {
+
   protected fun testExample(fileName: String, main: Consumer<Array<String>>) {
     val exampleCode = File(fileName).readText()
     val outputComment = "/* Output:"
@@ -25,8 +28,9 @@ abstract class AbstractTestExamples {
   private fun extractOutput(exampleCode: String, outputComment: String) =
           exampleCode.substringAfter(outputComment).substringBefore("*/").trim()
 
-  private fun String.trimAndNormalizeLineSeparators() =
-      trim().replace("\\R".toRegex(), System.getProperty("line.separator"))
+  private fun String.trimAndNormalizeLineSeparators(): String {
+    return trim().replace("\\R".toRegex(), LINE_SEPARATOR)
+  }
 
   private fun testOutput(fileName: String, expectedOutput: String, main: Consumer<Array<String>>) {
     val actualOutput = runAndGetOutput(main)
@@ -46,8 +50,8 @@ abstract class AbstractTestExamples {
 
   private fun testInputOutput(inputAndOutput: String, main: Consumer<Array<String>>) {
     val (inputLines, outputLines) = inputAndOutput.lines().partition { it.startsWith(">>>") }
-    val input = inputLines.map { it.substringAfter(">>> ") }.joinToString("\n")
-    val output = outputLines.joinToString("\n")
+    val input = inputLines.map { it.substringAfter(">>> ") }.joinToString(LINE_SEPARATOR)
+    val output = outputLines.joinToString(LINE_SEPARATOR)
 
     val inputStream = ByteArrayInputStream(input.toByteArray())
     System.setIn(inputStream)
