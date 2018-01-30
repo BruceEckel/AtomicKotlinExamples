@@ -1528,6 +1528,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAVariableIsMutable() {
+    testExample("Examples/Storage/AVariableIsMutable.kt", AVariableIsMutableKt::main);
+  }
+
+  @Test
+  public void testVals() {
+    testExample("Examples/Storage/Vals.kt", ValsKt::main);
+  }
+
+  @Test
+  public void testVars() {
+    testExample("Examples/Storage/Vars.kt", VarsKt::main);
+  }
+
+  @Test
   public void testExpressionInTemplate() {
     testExample("Examples/StringTemplates/ExpressionInTemplate.kt", ExpressionInTemplateKt::main);
   }
@@ -1735,21 +1750,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testVariableArgLists() {
     testExample("Examples/Varargs/VariableArgLists.kt", VariableArgListsKt::main);
-  }
-
-  @Test
-  public void testAVariableIsMutable() {
-    testExample("Examples/Variables/AVariableIsMutable.kt", AVariableIsMutableKt::main);
-  }
-
-  @Test
-  public void testVals() {
-    testExample("Examples/Variables/Vals.kt", ValsKt::main);
-  }
-
-  @Test
-  public void testVars() {
-    testExample("Examples/Variables/Vars.kt", VarsKt::main);
   }
 
   @Test
