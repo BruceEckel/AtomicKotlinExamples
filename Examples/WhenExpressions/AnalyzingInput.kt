@@ -24,10 +24,25 @@ fun main(args: Array<String>) {
       }
       "nowhere" -> {}                  // [4]
       "exit" -> return                 // [5]
-      else -> { println("Sorry, " +
+      else -> println("Sorry, " +
         "I don't understand you")
-        return                         // [6]
-      }
     }
   }
 }
+/* Input/Output:
+Welcome! Type 'up', 'down',
+'left', 'right' or 'nowhere' to move;
+'exit' to exit.
+Your coordinates: (0, 0)
+Where do you move?
+>>> right
+Your coordinates: (1, 0)
+Where do you move?
+>>> d
+Your coordinates: (1, 1)
+Where do you move?
+>>> nowhere
+Your coordinates: (1, 1)
+Where do you move?
+>>> exit
+*/
