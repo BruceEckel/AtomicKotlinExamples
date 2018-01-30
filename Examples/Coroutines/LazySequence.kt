@@ -1,6 +1,6 @@
 // Coroutines/LazySequence.kt
 import atomictest.eq
-import kotlin.coroutines.experimental.buildSequence
+import kotlin.coroutines.experimental.*
 
 val items = listOf(
   1, 19, 34, 22, 97, 11, 72)
