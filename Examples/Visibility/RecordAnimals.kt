@@ -4,8 +4,9 @@ private var index = 0                   // [1]
 
 private class Animal(val name: String)  // [2]
 
-private fun
-recordAnimal(animal: Animal) {          // [3]
+private fun recordAnimal(               // [3]
+  animal: Animal
+) {
   println("Animal #$index: ${animal.name}")
   index++
 }

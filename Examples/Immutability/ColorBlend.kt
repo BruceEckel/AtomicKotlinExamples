@@ -1,4 +1,4 @@
-// MoreAboutWhen/ColorBlend.kt
+// Immutability/ColorBlend.kt
 package colorblend
 import paintcolors.Color
 import paintcolors.Color.*

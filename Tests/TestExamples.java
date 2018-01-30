@@ -688,6 +688,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testColorBlendTest() {
+    testExample("Examples/Immutability/ColorBlendTest.kt", colorblendtest.ColorBlendTestKt::main);
+  }
+
+  @Test
   public void testDataClassCopy() {
     testExample("Examples/Immutability/DataClassCopy.kt", DataClassCopyKt::main);
   }
@@ -1063,16 +1068,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testColorBlendMap() {
-    testExample("Examples/MoreAboutWhen/ColorBlendMap.kt", colorblendmap.ColorBlendMapKt::main);
-  }
-
-  @Test
-  public void testColorBlendTest() {
-    testExample("Examples/MoreAboutWhen/ColorBlendTest.kt", colorblendtest.ColorBlendTestKt::main);
-  }
-
-  @Test
   public void testArgumentOrder() {
     testExample("Examples/NamedAndDefaultArgs/ArgumentOrder.kt", namedanddefaultargs1.ArgumentOrderKt::main);
   }
@@ -1130,6 +1125,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testExplicitCheck() {
     testExample("Examples/Nullable/ExplicitCheck.kt", ExplicitCheckKt::main);
+  }
+
+  @Test
+  public void testNullableInMap() {
+    testExample("Examples/Nullable/NullableInMap.kt", NullableInMapKt::main);
   }
 
   @Test

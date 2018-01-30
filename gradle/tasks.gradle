@@ -253,11 +253,6 @@ task Coffee(type: JavaExec) {
     main = 'CoffeeKt'
 }
 
-task ColorBlendMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'colorblendmap.ColorBlendMapKt'
-}
-
 task ColorBlendMap2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'immutability.ColorBlendMap2Kt'
@@ -1188,6 +1183,11 @@ task NullInMaps(type: JavaExec) {
     main = 'NullInMapsKt'
 }
 
+task NullableInMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NullableInMapKt'
+}
+
 task NullableTypes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NullableTypesKt'
@@ -1893,7 +1893,6 @@ task run (dependsOn: [
     'Cleanup',
     'Cleanup2',
     'Coffee',
-    'ColorBlendMap',
     'ColorBlendMap2',
     'ColorBlendTest',
     'CompanionFactory',
@@ -2080,6 +2079,7 @@ task run (dependsOn: [
     'NonNullAssert',
     'NonNullAssertCall',
     'NullInMaps',
+    'NullableInMap',
     'NullableTypes',
     'Num',
     'NumberConversions',

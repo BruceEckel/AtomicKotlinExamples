@@ -1,4 +1,4 @@
-// MoreAboutWhen/PaintColors.kt
+// Immutability/PaintColors.kt
 package paintcolors
 
 enum class Color {

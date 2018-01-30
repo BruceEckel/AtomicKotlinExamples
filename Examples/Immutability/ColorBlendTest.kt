@@ -1,4 +1,4 @@
-// MoreAboutWhen/ColorBlendTest.kt
+// Immutability/ColorBlendTest.kt
 package colorblendtest
 import atomictest.eq
 import colorblend.blend

@@ -2,8 +2,10 @@
 package dataclasses
 import atomictest.*
 
-data class
-Contact(val name: String, val number: String)
+data class Contact(
+  val name: String, 
+  val number: String
+)
 
 class Person(val name: String)
 
