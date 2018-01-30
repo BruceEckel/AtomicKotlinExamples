@@ -1,4 +1,4 @@
-// ExpressionsAndStatements/UnitReturnType.kt
+// ExpressionsStatements/UnitReturnType.kt
 
 fun foo() = Unit
 

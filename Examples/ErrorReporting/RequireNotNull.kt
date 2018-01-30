@@ -17,7 +17,8 @@ fun main(args: Array<String>) {
     "maybeNull(): n cannot be null"
   maybeNull(11) eq 99
   capture {
-    regular(requireNotNull(n, { "n is null!" }))
+    regular(requireNotNull(n,
+      { "n is null!" }))
   } eq "IllegalArgumentException: n is null!"
   regular(7) eq 70
 }

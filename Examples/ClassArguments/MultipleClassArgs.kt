@@ -12,8 +12,10 @@ class AlienSpecies(
 }
 
 fun main(args: Array<String>) {
-  val shim = AlienSpecies("Shimshamian", 3, 2, 2)
-  val grung = AlienSpecies("Grunglokian", 2, 4, 2)
+  val shim =
+    AlienSpecies("Shimshamian", 3, 2, 2)
+  val grung =
+    AlienSpecies("Grunglokian", 2, 4, 2)
   println(shim.represent())
   println(grung.represent())
 }

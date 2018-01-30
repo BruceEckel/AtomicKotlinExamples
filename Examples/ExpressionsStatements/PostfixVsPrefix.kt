@@ -1,4 +1,4 @@
-// ExpressionsAndStatements/PostfixVsPrefix.kt
+// ExpressionsStatements/PostfixVsPrefix.kt
 
 fun main(args: Array<String>) {
   var i = 10

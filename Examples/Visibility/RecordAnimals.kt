@@ -1,10 +1,11 @@
 // Visibility/RecordAnimals.kt
 
-private var index = 0                           // [1]
+private var index = 0                   // [1]
 
-private class Animal(val name: String)          // [2]
+private class Animal(val name: String)  // [2]
 
-private fun recordAnimal(animal: Animal) {      // [3]
+private fun
+recordAnimal(animal: Animal) {          // [3]
   println("Animal #$index: ${animal.name}")
   index++
 }

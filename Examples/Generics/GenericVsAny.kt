@@ -18,8 +18,8 @@ fun main(args: Array<String>) {
   // But you can cast it to anything:
   capture {
     val da4: Int = a(n) as Int
-  } eq "ClassCastException: " +
-    "generics.N cannot be cast to java.lang.Integer"
+  } eq "ClassCastException: generics.N " +
+    "cannot be cast to java.lang.Integer"
   // Generic retains the type information:
   val dg: N = g(n)
 }

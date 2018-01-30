@@ -1,4 +1,4 @@
-// ObjectsEverywhere/StringAndNumberConversion.kt
+// ObjectsEverywhere/StringNumberConversion.kt
 
 fun main(args: Array<String>) {
   val s = "123"

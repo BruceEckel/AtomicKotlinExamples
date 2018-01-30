@@ -1,4 +1,4 @@
-// ExpressionsAndStatements/ForIsAStatement.kt
+// ExpressionsStatements/ForIsAStatement.kt
 
 fun main(args: Array<String>) {
   // Can't do this:

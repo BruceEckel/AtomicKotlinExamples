@@ -8,7 +8,9 @@ fun processIterable(iterable: Iterable<Int>) {
   print(")")
 }
 
-fun processCollection(collection: Collection<Int>) {
+fun processCollection(
+  collection: Collection<Int>
+) {
   processIterable(collection)
 }
 

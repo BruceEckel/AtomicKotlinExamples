@@ -8,8 +8,9 @@ fun createResultFile(create: Boolean) {
   if (create)
     resultFile.writeText("Results")
   // ... other execution paths
-  check(resultFile.exists(),
-    { "${resultFile.getName()} doesn't exist!" })
+  check(resultFile.exists(), {
+    "${resultFile.getName()} doesn't exist!"
+  })
 }
 
 fun main(args: Array<String>) {

@@ -268,13 +268,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testEnumImport() {
-    testExample("Examples/Enumerations/EnumImport.kt", EnumImportKt::main);
+  public void testCheckingOptions() {
+    testExample("Examples/Enumerations/CheckingOptions.kt", CheckingOptionsKt::main);
   }
 
   @Test
-  public void testImportLevel() {
-    testExample("Examples/Enumerations/ImportLevel.kt", ImportLevelKt::main);
+  public void testDirection() {
+    testExample("Examples/Enumerations/Direction.kt", enumerations.DirectionKt::main);
+  }
+
+  @Test
+  public void testEnumImport() {
+    testExample("Examples/Enumerations/EnumImport.kt", EnumImportKt::main);
   }
 
   @Test
@@ -414,27 +419,27 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAssigningAnIf() {
-    testExample("Examples/ExpressionsAndStatements/AssigningAnIf.kt", AssigningAnIfKt::main);
+    testExample("Examples/ExpressionsStatements/AssigningAnIf.kt", AssigningAnIfKt::main);
   }
 
   @Test
   public void testConfusingOperator() {
-    testExample("Examples/ExpressionsAndStatements/ConfusingOperator.kt", ConfusingOperatorKt::main);
+    testExample("Examples/ExpressionsStatements/ConfusingOperator.kt", ConfusingOperatorKt::main);
   }
 
   @Test
   public void testForIsAStatement() {
-    testExample("Examples/ExpressionsAndStatements/ForIsAStatement.kt", ForIsAStatementKt::main);
+    testExample("Examples/ExpressionsStatements/ForIsAStatement.kt", ForIsAStatementKt::main);
   }
 
   @Test
   public void testPostfixVsPrefix() {
-    testExample("Examples/ExpressionsAndStatements/PostfixVsPrefix.kt", PostfixVsPrefixKt::main);
+    testExample("Examples/ExpressionsStatements/PostfixVsPrefix.kt", PostfixVsPrefixKt::main);
   }
 
   @Test
   public void testUnitReturnType() {
-    testExample("Examples/ExpressionsAndStatements/UnitReturnType.kt", UnitReturnTypeKt::main);
+    testExample("Examples/ExpressionsStatements/UnitReturnType.kt", UnitReturnTypeKt::main);
   }
 
   @Test
@@ -1069,17 +1074,32 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testArgumentOrder() {
-    testExample("Examples/NamedAndDefaultArgs/ArgumentOrder.kt", ArgumentOrderKt::main);
+    testExample("Examples/NamedAndDefaultArgs/ArgumentOrder.kt", namedanddefaultargs1.ArgumentOrderKt::main);
+  }
+
+  @Test
+  public void testJoiningToString() {
+    testExample("Examples/NamedAndDefaultArgs/JoiningToString.kt", JoiningToStringKt::main);
+  }
+
+  @Test
+  public void testJoiningToString2() {
+    testExample("Examples/NamedAndDefaultArgs/JoiningToString2.kt", JoiningToString2Kt::main);
   }
 
   @Test
   public void testNamedAndDefaultArgs() {
-    testExample("Examples/NamedAndDefaultArgs/NamedAndDefaultArgs.kt", NamedAndDefaultArgsKt::main);
+    testExample("Examples/NamedAndDefaultArgs/NamedAndDefaultArgs.kt", namedanddefaultargs2.NamedAndDefaultArgsKt::main);
   }
 
   @Test
   public void testNamedArguments() {
-    testExample("Examples/NamedAndDefaultArgs/NamedArguments.kt", NamedArgumentsKt::main);
+    testExample("Examples/NamedAndDefaultArgs/NamedArguments.kt", namedanddefaultargs1.NamedArgumentsKt::main);
+  }
+
+  @Test
+  public void testTrimMargin() {
+    testExample("Examples/NamedAndDefaultArgs/TrimMargin.kt", TrimMarginKt::main);
   }
 
   @Test
@@ -1223,8 +1243,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testStringAndNumberConversion() {
-    testExample("Examples/ObjectsEverywhere/StringAndNumberConversion.kt", StringAndNumberConversionKt::main);
+  public void testStringNumberConversion() {
+    testExample("Examples/ObjectsEverywhere/StringNumberConversion.kt", StringNumberConversionKt::main);
   }
 
   @Test
@@ -1743,13 +1763,28 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testWhenAsStatement() {
-    testExample("Examples/WhenExpressions/WhenAsStatement.kt", WhenAsStatementKt::main);
+  public void testAnalyzingInput() {
+    testExample("Examples/WhenExpressions/AnalyzingInput.kt", AnalyzingInputKt::main);
   }
 
   @Test
-  public void testWhenExpressions() {
-    testExample("Examples/WhenExpressions/WhenExpressions.kt", WhenExpressionsKt::main);
+  public void testBmiWhen() {
+    testExample("Examples/WhenExpressions/BmiWhen.kt", BmiWhenKt::main);
+  }
+
+  @Test
+  public void testGermanOrdinals() {
+    testExample("Examples/WhenExpressions/GermanOrdinals.kt", GermanOrdinalsKt::main);
+  }
+
+  @Test
+  public void testMatchingAgainstVals() {
+    testExample("Examples/WhenExpressions/MatchingAgainstVals.kt", MatchingAgainstValsKt::main);
+  }
+
+  @Test
+  public void testMixColors() {
+    testExample("Examples/WhenExpressions/MixColors.kt", MixColorsKt::main);
   }
 
   @Test

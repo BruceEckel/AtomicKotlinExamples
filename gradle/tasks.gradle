@@ -43,6 +43,11 @@ task AnUnchangingVar(type: JavaExec) {
     main = 'AnUnchangingVarKt'
 }
 
+task AnalyzingInput(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AnalyzingInputKt'
+}
+
 task Animals(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnimalsKt'
@@ -65,7 +70,7 @@ task AnyInstead(type: JavaExec) {
 
 task ArgumentOrder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ArgumentOrderKt'
+    main = 'namedanddefaultargs1.ArgumentOrderKt'
 }
 
 task AssertTrue(type: JavaExec) {
@@ -148,6 +153,11 @@ task BiggestLong(type: JavaExec) {
     main = 'BiggestLongKt'
 }
 
+task BmiWhen(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BmiWhenKt'
+}
+
 task BookExtensions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BookExtensionsKt'
@@ -211,6 +221,11 @@ task ChangingAVal(type: JavaExec) {
 task CharRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CharRangeKt'
+}
+
+task CheckingOptions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CheckingOptionsKt'
 }
 
 task ClassArg(type: JavaExec) {
@@ -386,6 +401,11 @@ task DestructuringDuo(type: JavaExec) {
 task DestructuringMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.DestructuringMapKt'
+}
+
+task Direction(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'enumerations.DirectionKt'
 }
 
 task DisplayDuck(type: JavaExec) {
@@ -613,6 +633,11 @@ task GenericVsAny(type: JavaExec) {
     main = 'generics.GenericVsAnyKt'
 }
 
+task GermanOrdinals(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GermanOrdinalsKt'
+}
+
 task GetValue(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GetValueKt'
@@ -741,11 +766,6 @@ task ImportClass(type: JavaExec) {
 task ImportEverything(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ImportEverythingKt'
-}
-
-task ImportLevel(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ImportLevelKt'
 }
 
 task ImportNameChange(type: JavaExec) {
@@ -878,6 +898,16 @@ task JavaList(type: JavaExec) {
     main = 'JavaListKt'
 }
 
+task JoiningToString(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'JoiningToStringKt'
+}
+
+task JoiningToString2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'JoiningToString2Kt'
+}
+
 task KeyFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'KeyFailureKt'
@@ -1003,6 +1033,11 @@ task Maps(type: JavaExec) {
     main = 'MapsKt'
 }
 
+task MatchingAgainstVals(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MatchingAgainstValsKt'
+}
+
 task MemberImplementations(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces4.MemberImplementationsKt'
@@ -1026,6 +1061,11 @@ task MembershipInRange(type: JavaExec) {
 task MembershipUsingBounds(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MembershipUsingBoundsKt'
+}
+
+task MixColors(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MixColorsKt'
 }
 
 task ModelingMI(type: JavaExec) {
@@ -1110,12 +1150,12 @@ task NPEOnPlatformType(type: JavaExec) {
 
 task NamedAndDefaultArgs(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NamedAndDefaultArgsKt'
+    main = 'namedanddefaultargs2.NamedAndDefaultArgsKt'
 }
 
 task NamedArguments(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NamedArgumentsKt'
+    main = 'namedanddefaultargs1.NamedArgumentsKt'
 }
 
 task NamedCompanionObject(type: JavaExec) {
@@ -1478,11 +1518,6 @@ task StrangeQuote(type: JavaExec) {
     main = 'StrangeQuoteKt'
 }
 
-task StringAndNumberConversion(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'StringAndNumberConversionKt'
-}
-
 task StringConcatenation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringConcatenationKt'
@@ -1501,6 +1536,11 @@ task StringInvoke(type: JavaExec) {
 task StringIsNullOr(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringIsNullOrKt'
+}
+
+task StringNumberConversion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringNumberConversionKt'
 }
 
 task StringPlusNumber(type: JavaExec) {
@@ -1606,6 +1646,11 @@ task ToIntException(type: JavaExec) {
 task ToIntException2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ToIntException2Kt'
+}
+
+task TrimMargin(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TrimMarginKt'
 }
 
 task TripleQuotes(type: JavaExec) {
@@ -1763,16 +1808,6 @@ task WhenAndSmartCasts(type: JavaExec) {
     main = 'smartcasts.WhenAndSmartCastsKt'
 }
 
-task WhenAsStatement(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'WhenAsStatementKt'
-}
-
-task WhenExpressions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'WhenExpressionsKt'
-}
-
 task WhileLoop(type: JavaExec) {
     classpath kotlinClassPath
     main = 'WhileLoopKt'
@@ -1816,6 +1851,7 @@ task run (dependsOn: [
     'AddingIntToChar',
     'AllOperators',
     'AnUnchangingVar',
+    'AnalyzingInput',
     'Animals',
     'AnnotatedJava',
     'AnonymousFunction',
@@ -1837,6 +1873,7 @@ task run (dependsOn: [
     'BasicLogging',
     'BetterSuitcase',
     'BiggestLong',
+    'BmiWhen',
     'BookExtensions',
     'Booleans',
     'Booleans1',
@@ -1850,6 +1887,7 @@ task run (dependsOn: [
     'ChainedCalls',
     'ChangingAVal',
     'CharRange',
+    'CheckingOptions',
     'ClassArg',
     'ClassBodies',
     'Cleanup',
@@ -1885,6 +1923,7 @@ task run (dependsOn: [
     'DestructuringData',
     'DestructuringDuo',
     'DestructuringMap',
+    'Direction',
     'DisplayDuck',
     'DisplayListBlemish',
     'DisplayListMap',
@@ -1930,6 +1969,7 @@ task run (dependsOn: [
     'GenericHolder',
     'GenericSpeakers',
     'GenericVsAny',
+    'GermanOrdinals',
     'GetValue',
     'GoodAlien',
     'GreatApe',
@@ -1956,7 +1996,6 @@ task run (dependsOn: [
     'ImmutableAndPlus',
     'ImportClass',
     'ImportEverything',
-    'ImportLevel',
     'ImportNameChange',
     'ImportPythagorean',
     'InString',
@@ -1983,6 +2022,8 @@ task run (dependsOn: [
     'IterationVsMembership',
     'JavaChecked',
     'JavaList',
+    'JoiningToString',
+    'JoiningToString2',
     'KeyFailure',
     'KotlinChecked',
     'LambdaAsReference',
@@ -2008,11 +2049,13 @@ task run (dependsOn: [
     'MakeSalad',
     'MapUnpacking',
     'Maps',
+    'MatchingAgainstVals',
     'MemberImplementations',
     'MemberOperator',
     'MemberVsExtension',
     'MembershipInRange',
     'MembershipUsingBounds',
+    'MixColors',
     'ModelingMI',
     'Modulus',
     'Molecule',
@@ -2103,11 +2146,11 @@ task run (dependsOn: [
     'StateOfAClass',
     'StrTemplates',
     'StrangeQuote',
-    'StringAndNumberConversion',
     'StringConcatenation',
     'StringHashCode',
     'StringInvoke',
     'StringIsNullOr',
+    'StringNumberConversion',
     'StringPlusNumber',
     'StringRange',
     'StringTemplates',
@@ -2129,6 +2172,7 @@ task run (dependsOn: [
     'TicTacToe',
     'ToIntException',
     'ToIntException2',
+    'TrimMargin',
     'TripleQuotes',
     'TrueOrFalse',
     'Truncation',
@@ -2160,8 +2204,6 @@ task run (dependsOn: [
     'Vars',
     'VisibleClassArgs',
     'WhenAndSmartCasts',
-    'WhenAsStatement',
-    'WhenExpressions',
     'WhileLoop',
     'WhyFlatMap',
     'WithDefaultArguments',
