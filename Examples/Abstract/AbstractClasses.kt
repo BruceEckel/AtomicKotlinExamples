@@ -1,5 +1,5 @@
 // Abstract/AbstractClasses.kt
-package abstractcasses
+package abstractclasses
 import atomictest.eq
 
 abstract class Animal {

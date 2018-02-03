@@ -3,7 +3,7 @@ package dataclasses
 import atomictest.*
 
 data class Contact(
-  val name: String, 
+  val name: String,
   val number: String
 )
 

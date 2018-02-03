@@ -4,7 +4,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAbstractClasses() {
-    testExample("Examples/Abstract/AbstractClasses.kt", abstractcasses.AbstractClassesKt::main);
+    testExample("Examples/Abstract/AbstractClasses.kt", abstractclasses.AbstractClassesKt::main);
   }
 
   @Test

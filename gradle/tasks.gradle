@@ -15,7 +15,7 @@ task AVariableIsMutable(type: JavaExec) {
 
 task AbstractClasses(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'abstractcasses.AbstractClassesKt'
+    main = 'abstractclasses.AbstractClassesKt'
 }
 
 task AddCodePoints(type: JavaExec) {
