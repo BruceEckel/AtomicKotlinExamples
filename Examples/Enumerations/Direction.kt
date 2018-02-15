@@ -4,9 +4,8 @@ import atomictest.eq
 import enumerations.Direction.*
 
 enum class Direction(val notation: String) {
-
-  NORTH("N"), SOUTH("S"), EAST("E"), WEST("W");
-
+  NORTH("N"), SOUTH("S"),
+  EAST("E"), WEST("W");
   val opposite: Direction
     get() = when (this) {
       NORTH -> SOUTH
@@ -18,9 +17,7 @@ enum class Direction(val notation: String) {
 
 fun main(args: Array<String>) {
   NORTH.notation eq "N"
-
   NORTH.opposite eq SOUTH
   WEST.opposite.opposite eq WEST
-
   NORTH.opposite.notation eq "S"
 }

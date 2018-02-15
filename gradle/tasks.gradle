@@ -303,6 +303,11 @@ task ContactMap(type: JavaExec) {
     main = 'ContactMapKt'
 }
 
+task Conversion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ConversionKt'
+}
+
 task ConversionFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ConversionFailureKt'
@@ -1088,11 +1093,6 @@ task MoreWork(type: JavaExec) {
     main = 'smartcasts.MoreWork'
 }
 
-task MultiLineComment(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'MultiLineCommentKt'
-}
-
 task MultipleClassArgs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MultipleClassArgsKt'
@@ -1478,11 +1478,6 @@ task SimpleMap(type: JavaExec) {
     main = 'SimpleMapKt'
 }
 
-task SingleLineComment(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SingleLineCommentKt'
-}
-
 task SmartCasts(type: JavaExec) {
     classpath kotlinClassPath
     main = 'smartcasts.SmartCastsKt'
@@ -1536,11 +1531,6 @@ task StringInvoke(type: JavaExec) {
 task StringIsNullOr(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringIsNullOrKt'
-}
-
-task StringNumberConversion(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'StringNumberConversionKt'
 }
 
 task StringPlusNumber(type: JavaExec) {
@@ -1903,6 +1893,7 @@ task run (dependsOn: [
     'ComputationResult',
     'ConfusingOperator',
     'ContactMap',
+    'Conversion',
     'ConversionFailure',
     'Cookie',
     'CopyDataClass',
@@ -2060,7 +2051,6 @@ task run (dependsOn: [
     'Molecule',
     'MoreReduce',
     'MoreWork',
-    'MultiLineComment',
     'MultipleClassArgs',
     'MultipleListRefs',
     'MultiplyByFour',
@@ -2138,7 +2128,6 @@ task run (dependsOn: [
     'SimpleHashing',
     'SimpleLoggingStrategy',
     'SimpleMap',
-    'SingleLineComment',
     'SmartCasts',
     'Solid',
     'Speakers',
@@ -2150,7 +2139,6 @@ task run (dependsOn: [
     'StringHashCode',
     'StringInvoke',
     'StringIsNullOr',
-    'StringNumberConversion',
     'StringPlusNumber',
     'StringRange',
     'StringTemplates',

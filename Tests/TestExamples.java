@@ -98,16 +98,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testMultiLineComment() {
-    testExample("Examples/Comments/MultiLineComment.kt", MultiLineCommentKt::main);
-  }
-
-  @Test
-  public void testSingleLineComment() {
-    testExample("Examples/Comments/SingleLineComment.kt", SingleLineCommentKt::main);
-  }
-
-  @Test
   public void testCompanionFactory() {
     testExample("Examples/Companions/CompanionFactory.kt", companions.CompanionFactoryKt::main);
   }
@@ -1228,6 +1218,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testConversion() {
+    testExample("Examples/ObjectsEverywhere/Conversion.kt", ConversionKt::main);
+  }
+
+  @Test
   public void testIntRanges() {
     testExample("Examples/ObjectsEverywhere/IntRanges.kt", IntRangesKt::main);
   }
@@ -1240,11 +1235,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testRangeSum() {
     testExample("Examples/ObjectsEverywhere/RangeSum.kt", RangeSumKt::main);
-  }
-
-  @Test
-  public void testStringNumberConversion() {
-    testExample("Examples/ObjectsEverywhere/StringNumberConversion.kt", StringNumberConversionKt::main);
   }
 
   @Test
