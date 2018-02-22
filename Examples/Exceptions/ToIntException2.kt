@@ -5,3 +5,7 @@ fun main(args: Array<String>) {
   println("456".toInt())
   //  println("1$".toInt())   // [1]
 }
+/* Output:
+123
+456
+*/

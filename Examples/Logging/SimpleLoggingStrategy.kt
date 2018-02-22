@@ -18,3 +18,6 @@ fun main(args: Array<String>) {
   trace("Line 1")
   trace("Line 2")
 }
+/* Sample output:
+Debug: Simple Logging Strategy
+*/

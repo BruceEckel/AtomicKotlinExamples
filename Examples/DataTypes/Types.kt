@@ -6,6 +6,7 @@ fun main(args: Array<String>) {
   // true or false:
   val trueOrFalse: Boolean = true  // [3]
   val words: String = "A value"    // [4]
+  val character: Char = 'z'   // [5]
   val lines: String = """Triple quotes let
 you have many lines
 in your string"""                  // [5]
@@ -14,6 +15,7 @@ in your string"""                  // [5]
   println(fractional)
   println(trueOrFalse)
   println(words)
+  println(character)
   println(lines)
 }
 /* Output:
@@ -21,6 +23,7 @@ in your string"""                  // [5]
 1.4
 true
 A value
+z
 Triple quotes let
 you have many lines
 in your string
