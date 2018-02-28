@@ -14,14 +14,14 @@ def gradle(name):
     ensure(fpath.exists(), f"{fpath.name} doesn't exist")
     ensure("main(" in fpath.read_text(), f"No main() in {fpath.name}")
     os.chdir(home.parent.parent)
-    call(f"gradlew {fpath.stem}", shell=True)
+    call(f"./gradlew {fpath.stem}", shell=True)
     os.chdir(home)
 
 def multiple(name_list):
     names = " ".join(name_list)
     home = Path.cwd()
     os.chdir(home.parent.parent)
-    call(f"gradlew {names}", shell=True)
+    call(f"./gradlew {names}", shell=True)
     os.chdir(home)
 
 def glob(ext):
