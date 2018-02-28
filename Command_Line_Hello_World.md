@@ -20,26 +20,6 @@ prompt, with no other messages. If you get error messages, try to discover
 where you've mis-typed the code, correct it and try again. Once you are
 successful, you're ready to run the program.
 
-Display the directory using `ls` for Mac/Linux and `dir` for Windows. You'll
-see there's a new subdirectory called `helloworld`. The name of the
-subdirectory that appears when you run `kotlinc` corresponds to the `package`
-name in the program that was compiled.
-
-If the program is in a package, the package name is also required to run the
-program. That is, if `HelloWorld.kt` contains a `package` statement:
-
-```
-package helloworld
-```
-
-then you cannot simply say:
-
-```
-kotlin HelloWorld
-```
-
-Try it---you'll get a message starting with `error: could not find or load`...
-
 There's one more thing: When you run `kotlinc`, the resulting program doesn't
 have the same name as the source program. Instead, the compiler appends a `Kt`
 to the name. To see it, run `ls` or `dir` on the `helloworld` subdirectory.
@@ -59,9 +39,32 @@ And you'll see the output on the console:
 Hello, world!
 ```
 
-If the program is packaged using the aformentioned `helloworld` package, we
+## Packages
+
+If the program is in a package, the package name is also required to run the
+program. That is, if `Foo.kt` contains a `package` statement:
+
+```
+package bar
+```
+
+then you cannot simply say:
+
+```
+kotlin Foo
+```
+
+You'll get a message starting with `error: could not find or load`...
+
+If you were to compile this program, you'd
+see there's a new subdirectory called `bar`. The name of the
+subdirectory that appears when you run `kotlinc` corresponds to the `package`
+name in the program that was compiled.
+
+If the program is packaged under `bar`, we
 give the package name followed by a "dot," then the program's name:
 
 ```
-kotlin helloworld.HelloWorldKt
+kotlin bar.FooKt
 ```
+
