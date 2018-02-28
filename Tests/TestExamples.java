@@ -1753,11 +1753,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAnalyzingInput() {
-    testExample("Examples/WhenExpressions/AnalyzingInput.kt", AnalyzingInputKt::main);
-  }
-
-  @Test
   public void testBmiWhen() {
     testExample("Examples/WhenExpressions/BmiWhen.kt", BmiWhenKt::main);
   }
