@@ -16,8 +16,7 @@ apply plugin: 'kotlin'
 apply plugin: 'java'
 
 repositories {
-    mavenCentral()
-    jcenter()
+    jcenter() // A superset of mavenCentral
 }
 
 compileKotlin {

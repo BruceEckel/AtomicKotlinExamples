@@ -57,6 +57,12 @@ corresponding to the atom names.
 To compile and run examples using the Kotlin command-line tools, see
 [Command-Line Hello World](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Hello_World.md).
 
+## Using JetBrains IDEA
+
+{{ More here }}
+
+You need at least version 2017.3 of IDEA to successfully compile the examples.
+
 # Detailed Instructions
 
 If you are not familiar with the command line, first read [Command-Line
