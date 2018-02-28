@@ -46,6 +46,7 @@ task AnUnchangingVar(type: JavaExec) {
 task AnalyzingInput(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnalyzingInputKt'
+    standardInput = System.in
 }
 
 task Animals(type: JavaExec) {
