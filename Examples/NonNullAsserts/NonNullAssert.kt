@@ -9,6 +9,6 @@ fun main(args: Array<String>) {
   // Compiles, but produces a
   // KotlinNullPointerException:
   capture {
-    val s3 = s2!!
+    val s3: String = s2!!
   } eq "KotlinNullPointerException"
 }

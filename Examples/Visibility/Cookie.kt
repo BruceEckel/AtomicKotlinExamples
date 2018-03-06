@@ -19,7 +19,7 @@ fun main(args: Array<String>) {
   val x = Cookie(false)
   x.bite()
   // Can't access private members:
-  // x.ready
+  // x.isReady
   // x.crumble()
   x.eatUp()
 }

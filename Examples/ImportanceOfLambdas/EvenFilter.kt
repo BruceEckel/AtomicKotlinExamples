@@ -3,9 +3,11 @@ import atomictest.eq
 
 fun evenFilter(nums: List<Int>): List<Int> {
   val result = mutableListOf<Int>()
-  for (i in nums)
-    if (i % 2 == 0)          // [1]
+  for (i in nums) {
+    if (i % 2 == 0) {          // [1]
       result += i
+    }
+  }
   return result
 }
 

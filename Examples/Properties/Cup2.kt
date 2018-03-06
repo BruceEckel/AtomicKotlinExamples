@@ -3,10 +3,11 @@
 class Cup2 {
   var percentFull = 0
   val max = 100
-  fun add(increase: Int) {
+  fun add(increase: Int): Int {
     percentFull += increase
     if (percentFull > max)
       percentFull = max
+    return percentFull
   }
 }
 

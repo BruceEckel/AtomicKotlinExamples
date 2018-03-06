@@ -83,6 +83,41 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testByOperations() {
+    testExample("Examples/CollectionOperations/ByOperations.kt", ByOperationsKt::main);
+  }
+
+  @Test
+  public void testCreatingList() {
+    testExample("Examples/CollectionOperations/CreatingList.kt", CreatingListKt::main);
+  }
+
+  @Test
+  public void testPairOfLists() {
+    testExample("Examples/CollectionOperations/PairOfLists.kt", pairs.PairOfListsKt::main);
+  }
+
+  @Test
+  public void testPartition() {
+    testExample("Examples/CollectionOperations/Partition.kt", PartitionKt::main);
+  }
+
+  @Test
+  public void testPredicates() {
+    testExample("Examples/CollectionOperations/Predicates.kt", PredicatesKt::main);
+  }
+
+  @Test
+  public void testSetsAndMaps() {
+    testExample("Examples/CollectionOperations/SetsAndMaps.kt", SetsAndMapsKt::main);
+  }
+
+  @Test
+  public void testTakeOrDrop() {
+    testExample("Examples/CollectionOperations/TakeOrDrop.kt", TakeOrDropKt::main);
+  }
+
+  @Test
   public void testHiddenArrayList() {
     testExample("Examples/CollectionsAndJava/HiddenArrayList.kt", HiddenArrayListKt::main);
   }
@@ -245,16 +280,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTuple() {
     testExample("Examples/Destructuring/Tuple.kt", destructuring.TupleKt::main);
-  }
-
-  @Test
-  public void testElvisCall() {
-    testExample("Examples/Elvis/ElvisCall.kt", ElvisCallKt::main);
-  }
-
-  @Test
-  public void testElvisOperator() {
-    testExample("Examples/Elvis/ElvisOperator.kt", ElvisOperatorKt::main);
   }
 
   @Test
@@ -433,6 +458,26 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testGenericListExt() {
+    testExample("Examples/ExtensionProperties/GenericListExt.kt", extensionproperties.GenericListExtKt::main);
+  }
+
+  @Test
+  public void testIndices() {
+    testExample("Examples/ExtensionProperties/Indices.kt", extensionproperties.IndicesKt::main);
+  }
+
+  @Test
+  public void testListIndices() {
+    testExample("Examples/ExtensionProperties/ListIndices.kt", extensionproperties.ListIndicesKt::main);
+  }
+
+  @Test
+  public void testStringIndices() {
+    testExample("Examples/ExtensionProperties/StringIndices.kt", extensionproperties.StringIndicesKt::main);
+  }
+
+  @Test
   public void testBookExtensions() {
     testExample("Examples/Extensions/BookExtensions.kt", BookExtensionsKt::main);
   }
@@ -543,18 +588,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAnyInstead() {
-    testExample("Examples/Generics/AnyInstead.kt", generics.AnyInsteadKt::main);
-  }
-
-  @Test
   public void testBasicGenerics() {
     testExample("Examples/Generics/BasicGenerics.kt", generics.BasicGenericsKt::main);
-  }
-
-  @Test
-  public void testGenericHolder() {
-    testExample("Examples/Generics/GenericHolder.kt", generics.GenericHolderKt::main);
   }
 
   @Test
@@ -563,23 +598,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGenericVsAny() {
-    testExample("Examples/Generics/GenericVsAny.kt", generics.GenericVsAnyKt::main);
-  }
-
-  @Test
-  public void testHolder() {
-    testExample("Examples/Generics/Holder.kt", generics.HolderKt::main);
-  }
-
-  @Test
   public void testPerform() {
     testExample("Examples/Generics/Perform.kt", generics.PerformKt::main);
-  }
-
-  @Test
-  public void testRandomList() {
-    testExample("Examples/Generics/RandomList.kt", RandomListKt::main);
   }
 
   @Test
@@ -693,6 +713,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testClosures() {
+    testExample("Examples/ImportanceOfLambdas/Closures.kt", ClosuresKt::main);
+  }
+
+  @Test
   public void testEvenFilter() {
     testExample("Examples/ImportanceOfLambdas/EvenFilter.kt", EvenFilterKt::main);
   }
@@ -713,8 +738,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testLambdaReference() {
-    testExample("Examples/ImportanceOfLambdas/LambdaReference.kt", LambdaReferenceKt::main);
+  public void testStoringLambda() {
+    testExample("Examples/ImportanceOfLambdas/StoringLambda.kt", StoringLambdaKt::main);
+  }
+
+  @Test
+  public void testSum() {
+    testExample("Examples/ImportanceOfLambdas/Sum.kt", SumKt::main);
   }
 
   @Test
@@ -773,6 +803,31 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAnyInstead() {
+    testExample("Examples/IntroToGenerics/AnyInstead.kt", introtogenerics.AnyInsteadKt::main);
+  }
+
+  @Test
+  public void testGenericFunction() {
+    testExample("Examples/IntroToGenerics/GenericFunction.kt", introtogenerics.GenericFunctionKt::main);
+  }
+
+  @Test
+  public void testGenericHolder() {
+    testExample("Examples/IntroToGenerics/GenericHolder.kt", introtogenerics.GenericHolderKt::main);
+  }
+
+  @Test
+  public void testGenericListExtensions() {
+    testExample("Examples/IntroToGenerics/GenericListExtensions.kt", introtogenerics.GenericListExtensionsKt::main);
+  }
+
+  @Test
+  public void testRigidHolder() {
+    testExample("Examples/IntroToGenerics/RigidHolder.kt", introtogenerics.RigidHolderKt::main);
+  }
+
+  @Test
   public void testAnonymousFunction() {
     testExample("Examples/Lambdas/AnonymousFunction.kt", AnonymousFunctionKt::main);
   }
@@ -798,8 +853,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testFormatLambda() {
-    testExample("Examples/Lambdas/FormatLambda.kt", FormatLambdaKt::main);
+  public void testFirstExample() {
+    testExample("Examples/Lambdas/FirstExample.kt", FirstExampleKt::main);
   }
 
   @Test
@@ -808,8 +863,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testFormatListWithLambda() {
-    testExample("Examples/Lambdas/FormatListWithLambda.kt", FormatListWithLambdaKt::main);
+  public void testJoinToString() {
+    testExample("Examples/Lambdas/JoinToString.kt", JoinToStringKt::main);
+  }
+
+  @Test
+  public void testLambdaAndNamedArgs() {
+    testExample("Examples/Lambdas/LambdaAndNamedArgs.kt", LambdaAndNamedArgsKt::main);
   }
 
   @Test
@@ -823,13 +883,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testListOperations() {
-    testExample("Examples/Lambdas/ListOperations.kt", ListOperationsKt::main);
+  public void testMapping() {
+    testExample("Examples/Lambdas/Mapping.kt", MappingKt::main);
   }
 
   @Test
   public void testMapUnpacking() {
     testExample("Examples/Lambdas/MapUnpacking.kt", MapUnpackingKt::main);
+  }
+
+  @Test
+  public void testOmittingParentheses() {
+    testExample("Examples/Lambdas/OmittingParentheses.kt", OmittingParenthesesKt::main);
   }
 
   @Test
@@ -1135,6 +1200,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testDefinition() {
     testExample("Examples/NullableExtensions/Definition.kt", DefinitionKt::main);
+  }
+
+  @Test
+  public void testReceiverVsParameter() {
+    testExample("Examples/NullableExtensions/ReceiverVsParameter.kt", ReceiverVsParameterKt::main);
   }
 
   @Test
@@ -1454,22 +1524,32 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testChainedCalls() {
-    testExample("Examples/SafeCalls/ChainedCalls.kt", ChainedCallsKt::main);
+    testExample("Examples/SafeCallsAndElvis/ChainedCalls.kt", ChainedCallsKt::main);
   }
 
   @Test
   public void testDereferenceNull() {
-    testExample("Examples/SafeCalls/DereferenceNull.kt", DereferenceNullKt::main);
+    testExample("Examples/SafeCallsAndElvis/DereferenceNull.kt", DereferenceNullKt::main);
+  }
+
+  @Test
+  public void testElvisCall() {
+    testExample("Examples/SafeCallsAndElvis/ElvisCall.kt", elvisoperator.ElvisCallKt::main);
+  }
+
+  @Test
+  public void testElvisOperator() {
+    testExample("Examples/SafeCallsAndElvis/ElvisOperator.kt", ElvisOperatorKt::main);
   }
 
   @Test
   public void testSafeCall() {
-    testExample("Examples/SafeCalls/SafeCall.kt", SafeCallKt::main);
+    testExample("Examples/SafeCallsAndElvis/SafeCall.kt", safecalls.SafeCallKt::main);
   }
 
   @Test
   public void testSafeOperation() {
-    testExample("Examples/SafeCalls/SafeOperation.kt", SafeOperationKt::main);
+    testExample("Examples/SafeCallsAndElvis/SafeOperation.kt", SafeOperationKt::main);
   }
 
   @Test

@@ -1,4 +1,4 @@
-// ImportanceOfLambdas/LambdaReference.kt
+// ImportanceOfLambdas/StoringLambda.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {

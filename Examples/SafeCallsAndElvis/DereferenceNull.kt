@@ -1,4 +1,4 @@
-// SafeCalls/DereferenceNull.kt
+// SafeCallsAndElvis/DereferenceNull.kt
 
 fun main(args: Array<String>) {
   val s: String? = null
