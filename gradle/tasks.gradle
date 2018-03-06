@@ -43,6 +43,11 @@ task AnUnchangingVar(type: JavaExec) {
     main = 'AnUnchangingVarKt'
 }
 
+task AnalyzingInput(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AnalyzingInputKt'
+}
+
 task Animals(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnimalsKt'
@@ -1916,6 +1921,7 @@ task run (dependsOn: [
     'AddingIntToChar',
     'AllOperators',
     'AnUnchangingVar',
+    'AnalyzingInput',
     'Animals',
     'AnnotatedJava',
     'AnonymousFunction',
