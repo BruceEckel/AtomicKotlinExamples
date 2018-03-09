@@ -16,4 +16,8 @@ fun main(args: Array<String>) {
 
   val sum = products.sumByDouble { it.price }
   sum eq 7.0
+  
+  products.sortedByDescending { it.price } eq
+    "[Product(description=wine, price=5.0)," +
+    " Product(description=bread, price=2.0)]"
 }

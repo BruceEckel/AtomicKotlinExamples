@@ -1,4 +1,4 @@
-// Zipping/Zipper.kt
+// ManipulatingLists/Zipper.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {
@@ -11,12 +11,6 @@ fun main(args: Array<String>) {
   left.zip(0..4) eq                  // [2]
     "[(a, 0), (b, 1), (c, 2), (d, 3)]"
 
-  left.zip(left.indices) eq          // [3]
-    "[(a, 0), (b, 1), (c, 2), (d, 3)]"
-
-  left.indices.zip(left) eq          // [4]
-    "[(0, a), (1, b), (2, c), (3, d)]"
-
-  (10..100).zip(right) eq            // [5]
+  (10..100).zip(right) eq            // [3]
     "[(10, q), (11, r), (12, s), (13, t)]"
 }

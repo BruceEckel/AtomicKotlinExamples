@@ -503,6 +503,26 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testFoldAndReduce() {
+    testExample("Examples/FoldingElements/FoldAndReduce.kt", FoldAndReduceKt::main);
+  }
+
+  @Test
+  public void testFoldRight() {
+    testExample("Examples/FoldingElements/FoldRight.kt", FoldRightKt::main);
+  }
+
+  @Test
+  public void testFoldVsForLoop() {
+    testExample("Examples/FoldingElements/FoldVsForLoop.kt", FoldVsForLoopKt::main);
+  }
+
+  @Test
+  public void testSumViaFold() {
+    testExample("Examples/FoldingElements/SumViaFold.kt", SumViaFoldKt::main);
+  }
+
+  @Test
   public void testAddingIntToChar() {
     testExample("Examples/ForAndRanges/AddingIntToChar.kt", AddingIntToCharKt::main);
   }
@@ -585,6 +605,31 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSayHello() {
     testExample("Examples/Functions/SayHello.kt", SayHelloKt::main);
+  }
+
+  @Test
+  public void testAnyFunImplementation() {
+    testExample("Examples/FunctionTypes/AnyFunImplementation.kt", AnyFunImplementationKt::main);
+  }
+
+  @Test
+  public void testFunctionTypeExamples() {
+    testExample("Examples/FunctionTypes/FunctionTypeExamples.kt", FunctionTypeExamplesKt::main);
+  }
+
+  @Test
+  public void testNullableFunctionType() {
+    testExample("Examples/FunctionTypes/NullableFunctionType.kt", NullableFunctionTypeKt::main);
+  }
+
+  @Test
+  public void testNullableReturnType() {
+    testExample("Examples/FunctionTypes/NullableReturnType.kt", NullableReturnTypeKt::main);
+  }
+
+  @Test
+  public void testSimpleOperation() {
+    testExample("Examples/FunctionTypes/SimpleOperation.kt", SimpleOperationKt::main);
   }
 
   @Test
@@ -705,11 +750,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testDataClassCopy() {
     testExample("Examples/Immutability/DataClassCopy.kt", DataClassCopyKt::main);
-  }
-
-  @Test
-  public void testWhyFlatMap() {
-    testExample("Examples/Immutability/WhyFlatMap.kt", immutability.WhyFlatMapKt::main);
   }
 
   @Test
@@ -973,31 +1013,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDisplayListBlemish() {
-    testExample("Examples/ListOperations/DisplayListBlemish.kt", DisplayListBlemishKt::main);
-  }
-
-  @Test
-  public void testDisplayListMap() {
-    testExample("Examples/ListOperations/DisplayListMap.kt", DisplayListMapKt::main);
-  }
-
-  @Test
-  public void testMoreReduce() {
-    testExample("Examples/ListOperations/MoreReduce.kt", MoreReduceKt::main);
-  }
-
-  @Test
-  public void testReduce() {
-    testExample("Examples/ListOperations/Reduce.kt", ReduceKt::main);
-  }
-
-  @Test
-  public void testSimpleMap() {
-    testExample("Examples/ListOperations/SimpleMap.kt", SimpleMapKt::main);
-  }
-
-  @Test
   public void testLists() {
     testExample("Examples/Lists/Lists.kt", ListsKt::main);
   }
@@ -1060,6 +1075,36 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUseAtomicLog() {
     testExample("Examples/Logging/UseAtomicLog.kt", UseAtomicLogKt::main);
+  }
+
+  @Test
+  public void testFlatten() {
+    testExample("Examples/ManipulatingLists/Flatten.kt", FlattenKt::main);
+  }
+
+  @Test
+  public void testFlattenAndFlatMap() {
+    testExample("Examples/ManipulatingLists/FlattenAndFlatMap.kt", FlattenAndFlatMapKt::main);
+  }
+
+  @Test
+  public void testWhyFlatMap() {
+    testExample("Examples/ManipulatingLists/WhyFlatMap.kt", manipulatinglists.WhyFlatMapKt::main);
+  }
+
+  @Test
+  public void testZipAndTransform() {
+    testExample("Examples/ManipulatingLists/ZipAndTransform.kt", manipulatinglists.ZipAndTransformKt::main);
+  }
+
+  @Test
+  public void testZipper() {
+    testExample("Examples/ManipulatingLists/Zipper.kt", ZipperKt::main);
+  }
+
+  @Test
+  public void testZippingWithNext() {
+    testExample("Examples/ManipulatingLists/ZippingWithNext.kt", ZippingWithNextKt::main);
   }
 
   @Test
@@ -1205,11 +1250,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testReceiverVsParameter() {
     testExample("Examples/NullableExtensions/ReceiverVsParameter.kt", ReceiverVsParameterKt::main);
-  }
-
-  @Test
-  public void testRemoveNulls() {
-    testExample("Examples/NullableExtensions/RemoveNulls.kt", RemoveNullsKt::main);
   }
 
   @Test
@@ -1855,20 +1895,5 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testMixColors() {
     testExample("Examples/WhenExpressions/MixColors.kt", MixColorsKt::main);
-  }
-
-  @Test
-  public void testIndexWithZip() {
-    testExample("Examples/Zipping/IndexWithZip.kt", IndexWithZipKt::main);
-  }
-
-  @Test
-  public void testZipMap() {
-    testExample("Examples/Zipping/ZipMap.kt", zipping.ZipMapKt::main);
-  }
-
-  @Test
-  public void testZipper() {
-    testExample("Examples/Zipping/Zipper.kt", ZipperKt::main);
   }
 }

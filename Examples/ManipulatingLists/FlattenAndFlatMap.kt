@@ -1,5 +1,4 @@
-// Immutability/WhyFlatMap.kt
-package immutability
+// ManipulatingLists/FlattenAndFlatMap.kt
 import atomictest.eq
 
 val intRange = 1..3
