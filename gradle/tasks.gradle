@@ -215,7 +215,7 @@ task Cat(type: JavaExec) {
 
 task CatchChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptionhandling.CatchChecked'
+    main = 'CatchChecked'
 }
 
 task ChainedCalls(type: JavaExec) {
@@ -930,7 +930,7 @@ task IterationVsMembership(type: JavaExec) {
 
 task JavaChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptionhandling.JavaChecked'
+    main = 'JavaChecked'
 }
 
 task JavaList(type: JavaExec) {
@@ -1135,7 +1135,7 @@ task Molecule(type: JavaExec) {
 
 task MoreWork(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartcasts.MoreWork'
+    main = 'MoreWork'
 }
 
 task MultipleClassArgs(type: JavaExec) {

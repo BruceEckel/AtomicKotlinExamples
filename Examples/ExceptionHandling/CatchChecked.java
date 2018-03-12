@@ -1,5 +1,4 @@
 // ExceptionHandling/CatchChecked.java
-package exceptionhandling;
 import checked.AnnotateThrowsKt;
 import java.io.IOException;
 import static atomictest.AtomicTestKt.eq;

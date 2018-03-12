@@ -1,5 +1,4 @@
 // ExceptionHandling/JavaChecked.java
-package exceptionhandling;
 import java.io.*;
 import java.nio.file.*;
 import static atomictest.AtomicTestKt.eq;

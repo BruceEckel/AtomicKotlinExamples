@@ -1,5 +1,4 @@
 // SmartCasts/MoreWork.java
-package smartcasts;
 
 public class MoreWork {
   static String barkIfJDog(Object a) {
