@@ -1,4 +1,4 @@
-// FoldingElements/FoldAndReduce.kt
+// FoldingLists/FoldAndReduce.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {

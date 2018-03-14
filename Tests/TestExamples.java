@@ -504,22 +504,22 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testFoldAndReduce() {
-    testExample("Examples/FoldingElements/FoldAndReduce.kt", FoldAndReduceKt::main);
+    testExample("Examples/FoldingLists/FoldAndReduce.kt", FoldAndReduceKt::main);
   }
 
   @Test
   public void testFoldRight() {
-    testExample("Examples/FoldingElements/FoldRight.kt", FoldRightKt::main);
+    testExample("Examples/FoldingLists/FoldRight.kt", FoldRightKt::main);
   }
 
   @Test
   public void testFoldVsForLoop() {
-    testExample("Examples/FoldingElements/FoldVsForLoop.kt", FoldVsForLoopKt::main);
+    testExample("Examples/FoldingLists/FoldVsForLoop.kt", FoldVsForLoopKt::main);
   }
 
   @Test
   public void testSumViaFold() {
-    testExample("Examples/FoldingElements/SumViaFold.kt", SumViaFoldKt::main);
+    testExample("Examples/FoldingLists/SumViaFold.kt", SumViaFoldKt::main);
   }
 
   @Test

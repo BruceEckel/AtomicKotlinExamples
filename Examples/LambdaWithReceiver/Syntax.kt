@@ -38,7 +38,6 @@ fun Klass2.useBothe(
   na: Int
 ) = f1() + f2(na)
 
-
 fun main(args: Array<String>) {
   val k = Klass2()
   useF1(k, Klass2::f1)

@@ -1,4 +1,4 @@
-// FoldingElements/FoldVsForLoop.kt
+// FoldingLists/FoldVsForLoop.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {

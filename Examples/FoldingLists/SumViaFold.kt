@@ -1,4 +1,4 @@
-// FoldingElements/SumViaFold.kt
+// FoldingLists/SumViaFold.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {
