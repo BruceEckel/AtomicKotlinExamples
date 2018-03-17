@@ -1,4 +1,4 @@
-// Lambdas/MapUnpacking.kt
+// FunctionReferences/MapUnpacking.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {

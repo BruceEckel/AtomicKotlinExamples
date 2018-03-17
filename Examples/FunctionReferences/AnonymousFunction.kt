@@ -1,4 +1,4 @@
-// Lambdas/AnonymousFunction.kt
+// FunctionReferences/AnonymousFunction.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {

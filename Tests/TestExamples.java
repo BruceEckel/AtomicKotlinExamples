@@ -588,6 +588,41 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAnonymousFunction() {
+    testExample("Examples/FunctionReferences/AnonymousFunction.kt", AnonymousFunctionKt::main);
+  }
+
+  @Test
+  public void testCallLater() {
+    testExample("Examples/FunctionReferences/CallLater.kt", CallLaterKt::main);
+  }
+
+  @Test
+  public void testDisplayDuck() {
+    testExample("Examples/FunctionReferences/DisplayDuck.kt", DisplayDuckKt::main);
+  }
+
+  @Test
+  public void testDuckForEach() {
+    testExample("Examples/FunctionReferences/DuckForEach.kt", DuckForEachKt::main);
+  }
+
+  @Test
+  public void testFormatList() {
+    testExample("Examples/FunctionReferences/FormatList.kt", FormatListKt::main);
+  }
+
+  @Test
+  public void testLambdaAsReference() {
+    testExample("Examples/FunctionReferences/LambdaAsReference.kt", importanceoflambdas.LambdaAsReferenceKt::main);
+  }
+
+  @Test
+  public void testMapUnpacking() {
+    testExample("Examples/FunctionReferences/MapUnpacking.kt", MapUnpackingKt::main);
+  }
+
+  @Test
   public void testMultiplyByFour() {
     testExample("Examples/Functions/MultiplyByFour.kt", MultiplyByFourKt::main);
   }
@@ -773,11 +808,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testLambdaAsReference() {
-    testExample("Examples/ImportanceOfLambdas/LambdaAsReference.kt", importanceoflambdas.LambdaAsReferenceKt::main);
-  }
-
-  @Test
   public void testStoringLambda() {
     testExample("Examples/ImportanceOfLambdas/StoringLambda.kt", StoringLambdaKt::main);
   }
@@ -868,38 +898,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAnonymousFunction() {
-    testExample("Examples/Lambdas/AnonymousFunction.kt", AnonymousFunctionKt::main);
-  }
-
-  @Test
   public void testAssignAnonymous() {
     testExample("Examples/Lambdas/AssignAnonymous.kt", AssignAnonymousKt::main);
   }
 
   @Test
-  public void testCallLater() {
-    testExample("Examples/Lambdas/CallLater.kt", CallLaterKt::main);
-  }
-
-  @Test
-  public void testDisplayDuck() {
-    testExample("Examples/Lambdas/DisplayDuck.kt", DisplayDuckKt::main);
-  }
-
-  @Test
-  public void testDuckForEach() {
-    testExample("Examples/Lambdas/DuckForEach.kt", DuckForEachKt::main);
-  }
-
-  @Test
   public void testFirstExample() {
     testExample("Examples/Lambdas/FirstExample.kt", FirstExampleKt::main);
-  }
-
-  @Test
-  public void testFormatList() {
-    testExample("Examples/Lambdas/FormatList.kt", FormatListKt::main);
   }
 
   @Test
@@ -925,11 +930,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testMapping() {
     testExample("Examples/Lambdas/Mapping.kt", MappingKt::main);
-  }
-
-  @Test
-  public void testMapUnpacking() {
-    testExample("Examples/Lambdas/MapUnpacking.kt", MapUnpackingKt::main);
   }
 
   @Test

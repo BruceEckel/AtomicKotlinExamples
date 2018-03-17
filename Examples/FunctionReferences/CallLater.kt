@@ -1,4 +1,4 @@
-// Lambdas/CallLater.kt
+// FunctionReferences/CallLater.kt
 import atomictest.eq
 
 class Later(val call: () -> String)

@@ -1,4 +1,4 @@
-// Lambdas/FormatList.kt
+// FunctionReferences/FormatList.kt
 import atomictest.eq
 
 var s = ""
