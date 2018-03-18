@@ -633,6 +633,11 @@ task FormatList(type: JavaExec) {
     main = 'FormatListKt'
 }
 
+task FormatListLambda(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FormatListLambdaKt'
+}
+
 task FullyQualify(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FullyQualifyKt'
@@ -641,6 +646,11 @@ task FullyQualify(type: JavaExec) {
 task FunctionLiterals(type: JavaExec) {
     classpath kotlinClassPath
     main = 'lambdawithreceiver.FunctionLiteralsKt'
+}
+
+task FunctionReferences(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'functionreferences.FunctionReferencesKt'
 }
 
 task FunctionTypeExamples(type: JavaExec) {
@@ -968,11 +978,6 @@ task LambdaAndNamedArgs(type: JavaExec) {
     main = 'LambdaAndNamedArgsKt'
 }
 
-task LambdaAsReference(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'importanceoflambdas.LambdaAsReferenceKt'
-}
-
 task LambdaIt(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LambdaItKt'
@@ -1096,6 +1101,11 @@ task MemberImplementations(type: JavaExec) {
 task MemberOperator(type: JavaExec) {
     classpath kotlinClassPath
     main = 'operators.MemberOperatorKt'
+}
+
+task MemberReference(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MemberReferenceKt'
 }
 
 task MemberVsExtension(type: JavaExec) {
@@ -2064,8 +2074,10 @@ task run (dependsOn: [
     'ForWithCharRange',
     'ForWithRanges',
     'FormatList',
+    'FormatListLambda',
     'FullyQualify',
     'FunctionLiterals',
+    'FunctionReferences',
     'FunctionTypeExamples',
     'GardenGnome',
     'GenericFunction',
@@ -2131,7 +2143,6 @@ task run (dependsOn: [
     'KeyFailure',
     'KotlinChecked',
     'LambdaAndNamedArgs',
-    'LambdaAsReference',
     'LambdaIt',
     'LambdaTypeInference',
     'LaunchMany',
@@ -2157,6 +2168,7 @@ task run (dependsOn: [
     'MatchingAgainstVals',
     'MemberImplementations',
     'MemberOperator',
+    'MemberReference',
     'MemberVsExtension',
     'MembershipInRange',
     'MembershipUsingBounds',

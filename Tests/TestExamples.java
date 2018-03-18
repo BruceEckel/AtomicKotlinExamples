@@ -613,13 +613,23 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testLambdaAsReference() {
-    testExample("Examples/FunctionReferences/LambdaAsReference.kt", importanceoflambdas.LambdaAsReferenceKt::main);
+  public void testFormatListLambda() {
+    testExample("Examples/FunctionReferences/FormatListLambda.kt", FormatListLambdaKt::main);
+  }
+
+  @Test
+  public void testFunctionReferences() {
+    testExample("Examples/FunctionReferences/FunctionReferences.kt", functionreferences.FunctionReferencesKt::main);
   }
 
   @Test
   public void testMapUnpacking() {
     testExample("Examples/FunctionReferences/MapUnpacking.kt", MapUnpackingKt::main);
+  }
+
+  @Test
+  public void testMemberReference() {
+    testExample("Examples/FunctionReferences/MemberReference.kt", MemberReferenceKt::main);
   }
 
   @Test
