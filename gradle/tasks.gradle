@@ -35,7 +35,7 @@ task AddingIntToChar(type: JavaExec) {
 
 task AllOperators(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'operators.AllOperatorsKt'
+    main = 'operatoroverloading.AllOperatorsKt'
 }
 
 task AnUnchangingVar(type: JavaExec) {
@@ -55,7 +55,7 @@ task Animals(type: JavaExec) {
 
 task AnnotatedJava(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingannotatedtypes.AnnotatedJavaKt'
+    main = 'nullabilityannotations.AnnotatedJavaKt'
 }
 
 task AnonymousFunction(type: JavaExec) {
@@ -98,9 +98,9 @@ task AssignmentOperators(type: JavaExec) {
     main = 'AssignmentOperatorsKt'
 }
 
-task AuxiliaryInitialization(type: JavaExec) {
+task AuxiliaryInit(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'baseclassinit.AuxiliaryInitializationKt'
+    main = 'baseinit.AuxiliaryInitKt'
 }
 
 task AverageIncome(type: JavaExec) {
@@ -198,11 +198,6 @@ task CallLater(type: JavaExec) {
     main = 'CallLaterKt'
 }
 
-task CallOtherConstructors(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseclassinit.CallOtherConstructorsKt'
-}
-
 task CallTopLevelFunction(type: JavaExec) {
     classpath kotlinClassPath
     main = 'fromjava.CallTopLevelFunction'
@@ -263,6 +258,11 @@ task Closures(type: JavaExec) {
     main = 'ClosuresKt'
 }
 
+task Closures2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Closures2Kt'
+}
+
 task Coffee(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CoffeeKt'
@@ -280,7 +280,7 @@ task ColorBlendTest(type: JavaExec) {
 
 task CompanionFactory(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companions.CompanionFactoryKt'
+    main = 'companionobjects.CompanionFactoryKt'
 }
 
 task CompanionObject(type: JavaExec) {
@@ -568,6 +568,11 @@ task Filter(type: JavaExec) {
     main = 'FilterKt'
 }
 
+task FilterNotNull(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FilterNotNullKt'
+}
+
 task FirstExample(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FirstExampleKt'
@@ -710,7 +715,7 @@ task GreatApe(type: JavaExec) {
 
 task GreatApe2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'baseclassinit.GreatApe2Kt'
+    main = 'baseinit.GreatApe2Kt'
 }
 
 task GreatApe3(type: JavaExec) {
@@ -865,7 +870,7 @@ task Info(type: JavaExec) {
 
 task InitSection(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'constructors.InitSectionKt'
+    main = 'primaryconstructor.InitSectionKt'
 }
 
 task InputCheck(type: JavaExec) {
@@ -1100,7 +1105,7 @@ task MemberImplementations(type: JavaExec) {
 
 task MemberOperator(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'operators.MemberOperatorKt'
+    main = 'operatoroverloading.MemberOperatorKt'
 }
 
 task MemberReference(type: JavaExec) {
@@ -1155,7 +1160,7 @@ task MultipleClassArgs(type: JavaExec) {
 
 task MultipleListRefs(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'readonlyandmutable.MultipleListRefsKt'
+    main = 'MultipleListRefsKt'
 }
 
 task MultiplyByFour(type: JavaExec) {
@@ -1175,7 +1180,7 @@ task MultiplyByTwo(type: JavaExec) {
 
 task MutListIsList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'readonlyandmutable.MutListIsListKt'
+    main = 'MutListIsListKt'
 }
 
 task MutableList(type: JavaExec) {
@@ -1260,7 +1265,7 @@ task NullableTypes(type: JavaExec) {
 
 task Num(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'operators.NumKt'
+    main = 'operatoroverloading.NumKt'
 }
 
 task NumberConversions(type: JavaExec) {
@@ -1323,6 +1328,11 @@ task OperatorPlus(type: JavaExec) {
     main = 'OperatorPlusKt'
 }
 
+task OtherConstructors(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'baseinit.OtherConstructorsKt'
+}
+
 task OutOfBounds(type: JavaExec) {
     classpath kotlinClassPath
     main = 'OutOfBoundsKt'
@@ -1350,7 +1360,7 @@ task PairDestructuring(type: JavaExec) {
 
 task PairOfLists(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'pairs.PairOfListsKt'
+    main = 'PairOfListsKt'
 }
 
 task Pairs(type: JavaExec) {
@@ -1360,12 +1370,12 @@ task Pairs(type: JavaExec) {
 
 task ParameterizedReturn(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'parameterizedtypes.ParameterizedReturnKt'
+    main = 'ParameterizedReturnKt'
 }
 
 task ParameterizedTypes(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'parameterizedtypes.ParameterizedTypesKt'
+    main = 'ParameterizedTypesKt'
 }
 
 task Partition(type: JavaExec) {
@@ -1967,7 +1977,7 @@ task run (dependsOn: [
     'AssignAnonymous',
     'AssigningAnIf',
     'AssignmentOperators',
-    'AuxiliaryInitialization',
+    'AuxiliaryInit',
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
@@ -1987,7 +1997,6 @@ task run (dependsOn: [
     'Booleans3',
     'ByOperations',
     'CallLater',
-    'CallOtherConstructors',
     'CallTopLevelFunction',
     'Cat',
     'CatchChecked',
@@ -2000,6 +2009,7 @@ task run (dependsOn: [
     'Cleanup',
     'Cleanup2',
     'Closures',
+    'Closures2',
     'Coffee',
     'ColorBlendMap2',
     'ColorBlendTest',
@@ -2061,6 +2071,7 @@ task run (dependsOn: [
     'FibonacciProperty',
     'FibonacciSequence',
     'Filter',
+    'FilterNotNull',
     'FirstExample',
     'Flatten',
     'FlattenAndFlatMap',
@@ -2212,6 +2223,7 @@ task run (dependsOn: [
     'OmittingParentheses',
     'OneOrTheOther',
     'OperatorPlus',
+    'OtherConstructors',
     'OutOfBounds',
     'Overflow',
     'Overloading',

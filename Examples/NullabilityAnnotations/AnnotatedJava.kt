@@ -1,5 +1,5 @@
 // NullabilityAnnotations/AnnotatedJava.kt
-package usingannotatedtypes
+package nullabilityannotations
 import javacode.AnnotatedJTool
 import atomictest.eq
 

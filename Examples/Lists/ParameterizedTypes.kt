@@ -1,5 +1,4 @@
 // Lists/ParameterizedTypes.kt
-package parameterizedtypes
 import atomictest.eq
 
 fun main(args: Array<String>) {

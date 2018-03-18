@@ -1,5 +1,4 @@
 // Lists/MutListIsList.kt
-package readonlyandmutable
 import atomictest.eq
 
 fun getList(): List<Int> {

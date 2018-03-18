@@ -1,4 +1,5 @@
 // SafeCallsAndElvis/SafeOperation.kt
+
 fun String.echo() {
   println(this.toUpperCase())
   println(this)
@@ -8,7 +9,6 @@ fun String.echo() {
 fun main(args: Array<String>) {
   val s1: String? = "Howdy!"
   s1?.echo()                     // [1]
-
   val s2: String? = null
   s2?.echo()                     // [2]
 }
