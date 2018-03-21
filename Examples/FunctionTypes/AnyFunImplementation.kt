@@ -8,12 +8,12 @@ fun <T> List<T>.any(                    // [1]
     if (predicate(element))             // [3]
       return true
   return false
-} 
+}
 
 fun main(args: Array<String>) {
   val ints = listOf(1, 2, -3)
   ints.any { it > 0 } eq true           // [4]
 
   val strings = listOf("abc", " ")
-  strings.any { it.isBlank() } eq true  // [5]  
+  strings.any { it.isBlank() } eq true  // [5]
 }

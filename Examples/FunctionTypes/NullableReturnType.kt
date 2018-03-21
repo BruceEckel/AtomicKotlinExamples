@@ -2,7 +2,7 @@
 import atomictest.eq
 
 fun main(args: Array<String>) {
-  val transform: (String) -> Int? = 
+  val transform: (String) -> Int? =
     { it.toIntOrNull() }
 
   transform("112") eq 112

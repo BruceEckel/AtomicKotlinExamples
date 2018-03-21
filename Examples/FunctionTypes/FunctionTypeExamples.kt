@@ -1,14 +1,12 @@
 // FunctionTypes/FunctionTypeExamples.kt
+import atomictest.eq
+
 fun main(args: Array<String>) {
-  val helloWorld: () -> Unit =
-    { println("Hello, world!") }
-  helloWorld()
+  val helloWorld: () -> String =
+    { "Hello, world!" }
+  helloWorld() eq "Hello, world!"
 
   val sum: (Int, Int) -> Int =
     { x, y -> x + y }
-  println(sum(1, 2))
+  sum(1, 2) eq 3
 }
-/* Output:
-Hello, world!
-3
-*/
