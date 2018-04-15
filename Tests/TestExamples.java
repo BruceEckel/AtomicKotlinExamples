@@ -43,31 +43,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testClassArg() {
-    testExample("Examples/ClassArguments/ClassArg.kt", ClassArgKt::main);
-  }
-
-  @Test
-  public void testGoodAlien() {
-    testExample("Examples/ClassArguments/GoodAlien.kt", GoodAlienKt::main);
-  }
-
-  @Test
-  public void testMultipleClassArgs() {
-    testExample("Examples/ClassArguments/MultipleClassArgs.kt", MultipleClassArgsKt::main);
-  }
-
-  @Test
-  public void testPrintAlienSpieces() {
-    testExample("Examples/ClassArguments/PrintAlienSpieces.kt", PrintAlienSpiecesKt::main);
-  }
-
-  @Test
-  public void testVisibleClassArgs() {
-    testExample("Examples/ClassArguments/VisibleClassArgs.kt", VisibleClassArgsKt::main);
-  }
-
-  @Test
   public void testDelegatedControls() {
     testExample("Examples/ClassDelegation/DelegatedControls.kt", DelegatedControlsKt::main);
   }
@@ -125,6 +100,31 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testObjectProperty() {
     testExample("Examples/CompanionObjects/ObjectProperty.kt", ObjectPropertyKt::main);
+  }
+
+  @Test
+  public void testArg() {
+    testExample("Examples/Constructors/Arg.kt", ArgKt::main);
+  }
+
+  @Test
+  public void testGoodAlien() {
+    testExample("Examples/Constructors/GoodAlien.kt", GoodAlienKt::main);
+  }
+
+  @Test
+  public void testMultipleArgs() {
+    testExample("Examples/Constructors/MultipleArgs.kt", MultipleArgsKt::main);
+  }
+
+  @Test
+  public void testPrintAlienSpieces() {
+    testExample("Examples/Constructors/PrintAlienSpieces.kt", PrintAlienSpiecesKt::main);
+  }
+
+  @Test
+  public void testVisibleArgs() {
+    testExample("Examples/Constructors/VisibleArgs.kt", VisibleArgsKt::main);
   }
 
   @Test
@@ -283,8 +283,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testLet() {
-    testExample("Examples/ErrorReporting/Let.kt", LetKt::main);
+  public void testLetNotNull() {
+    testExample("Examples/ErrorReporting/LetNotNull.kt", LetNotNullKt::main);
   }
 
   @Test
@@ -543,48 +543,38 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAnonymousFunction() {
-    testExample("Examples/FunctionReferences/AnonymousFunction.kt", AnonymousFunctionKt::main);
+  public void testAssociateBy() {
+    testExample("Examples/FromListsToMaps/AssociateBy.kt", fromliststomaps2.AssociateByKt::main);
   }
 
   @Test
-  public void testCallLater() {
-    testExample("Examples/FunctionReferences/CallLater.kt", CallLaterKt::main);
+  public void testFilteringMap() {
+    testExample("Examples/FromListsToMaps/FilteringMap.kt", FilteringMapKt::main);
   }
 
   @Test
-  public void testDisplayDuck() {
-    testExample("Examples/FunctionReferences/DisplayDuck.kt", DisplayDuckKt::main);
+  public void testGetOrPut() {
+    testExample("Examples/FromListsToMaps/GetOrPut.kt", GetOrPutKt::main);
   }
 
   @Test
-  public void testDuckForEach() {
-    testExample("Examples/FunctionReferences/DuckForEach.kt", DuckForEachKt::main);
+  public void testGroupBy() {
+    testExample("Examples/FromListsToMaps/GroupBy.kt", fromliststomaps1.GroupByKt::main);
   }
 
   @Test
-  public void testFormatList() {
-    testExample("Examples/FunctionReferences/FormatList.kt", FormatListKt::main);
+  public void testGroupByVsFilter() {
+    testExample("Examples/FromListsToMaps/GroupByVsFilter.kt", GroupByVsFilterKt::main);
   }
 
   @Test
-  public void testFormatListLambda() {
-    testExample("Examples/FunctionReferences/FormatListLambda.kt", FormatListLambdaKt::main);
+  public void testSimilarOperation() {
+    testExample("Examples/FromListsToMaps/SimilarOperation.kt", SimilarOperationKt::main);
   }
 
   @Test
-  public void testFunctionReferences() {
-    testExample("Examples/FunctionReferences/FunctionReferences.kt", functionreferences.FunctionReferencesKt::main);
-  }
-
-  @Test
-  public void testMapUnpacking() {
-    testExample("Examples/FunctionReferences/MapUnpacking.kt", MapUnpackingKt::main);
-  }
-
-  @Test
-  public void testMemberReference() {
-    testExample("Examples/FunctionReferences/MemberReference.kt", MemberReferenceKt::main);
+  public void testTransformingMap() {
+    testExample("Examples/FromListsToMaps/TransformingMap.kt", TransformingMapKt::main);
   }
 
   @Test
@@ -625,6 +615,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testNullableReturnType() {
     testExample("Examples/FunctionTypes/NullableReturnType.kt", NullableReturnTypeKt::main);
+  }
+
+  @Test
+  public void testRepeatDeclaration() {
+    testExample("Examples/FunctionTypes/RepeatDeclaration.kt", repeatdeclaration.RepeatDeclarationKt::main);
+  }
+
+  @Test
+  public void testRepeatExample() {
+    testExample("Examples/FunctionTypes/RepeatExample.kt", RepeatExampleKt::main);
+  }
+
+  @Test
+  public void testRepeatVerbose() {
+    testExample("Examples/FunctionTypes/RepeatVerbose.kt", RepeatVerboseKt::main);
   }
 
   @Test
@@ -763,13 +768,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testEvenFilter() {
-    testExample("Examples/ImportanceOfLambdas/EvenFilter.kt", EvenFilterKt::main);
+  public void testFilter() {
+    testExample("Examples/ImportanceOfLambdas/Filter.kt", FilterKt::main);
   }
 
   @Test
-  public void testFilter() {
-    testExample("Examples/ImportanceOfLambdas/Filter.kt", FilterKt::main);
+  public void testFilterEven() {
+    testExample("Examples/ImportanceOfLambdas/FilterEven.kt", FilterEvenKt::main);
   }
 
   @Test
@@ -918,38 +923,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBasic() {
-    testExample("Examples/LambdaWithReceiver/Basic.kt", lambdawithreceiver.BasicKt::main);
-  }
-
-  @Test
-  public void testExtensions() {
-    testExample("Examples/LambdaWithReceiver/Extensions.kt", lambdawithreceiver.ExtensionsKt::main);
-  }
-
-  @Test
-  public void testFunctionLiterals() {
-    testExample("Examples/LambdaWithReceiver/FunctionLiterals.kt", lambdawithreceiver.FunctionLiteralsKt::main);
-  }
-
-  @Test
-  public void testSyntax() {
-    testExample("Examples/LambdaWithReceiver/Syntax.kt", SyntaxKt::main);
-  }
-
-  @Test
-  public void testTestClass() {
-    testExample("Examples/LambdaWithReceiver/TestClass.kt", lambdawithreceiver.TestClassKt::main);
-  }
-
-  @Test
-  public void testUseLater() {
-    testExample("Examples/LambdaWithReceiver/UseLater.kt", lambdawithreceiver.UseLaterKt::main);
-  }
-
-  @Test
-  public void testWithReceiver() {
-    testExample("Examples/LambdaWithReceiver/WithReceiver.kt", lambdawithreceiver.WithReceiverKt::main);
+  public void testDeclarations() {
+    testExample("Examples/LambdaWithReceiver/Declarations.kt", lambdawithreceiver.DeclarationsKt::main);
   }
 
   @Test
@@ -980,6 +955,36 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testPropertyOptions() {
     testExample("Examples/LazyInitialization/PropertyOptions.kt", lazyinitialization.PropertyOptionsKt::main);
+  }
+
+  @Test
+  public void testApplyIfNotNull() {
+    testExample("Examples/LibraryHelpers/ApplyIfNotNull.kt", libraryhelpers.ApplyIfNotNullKt::main);
+  }
+
+  @Test
+  public void testApplyVsAlso() {
+    testExample("Examples/LibraryHelpers/ApplyVsAlso.kt", libraryhelpers.ApplyVsAlsoKt::main);
+  }
+
+  @Test
+  public void testLet() {
+    testExample("Examples/LibraryHelpers/Let.kt", libraryhelpers.LetKt::main);
+  }
+
+  @Test
+  public void testNullableReceiver() {
+    testExample("Examples/LibraryHelpers/NullableReceiver.kt", libraryhelpers.NullableReceiverKt::main);
+  }
+
+  @Test
+  public void testResultOfApply() {
+    testExample("Examples/LibraryHelpers/ResultOfApply.kt", libraryhelpers.ResultOfApplyKt::main);
+  }
+
+  @Test
+  public void testResultOfWith() {
+    testExample("Examples/LibraryHelpers/ResultOfWith.kt", libraryhelpers.ResultOfWithKt::main);
   }
 
   @Test
@@ -1100,6 +1105,31 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testReadOnlyMaps() {
     testExample("Examples/Maps/ReadOnlyMaps.kt", ReadOnlyMapsKt::main);
+  }
+
+  @Test
+  public void testConstructorReference() {
+    testExample("Examples/MemberReferences/ConstructorReference.kt", memberreferences3.ConstructorReferenceKt::main);
+  }
+
+  @Test
+  public void testFunctionReference() {
+    testExample("Examples/MemberReferences/FunctionReference.kt", memberreferences2.FunctionReferenceKt::main);
+  }
+
+  @Test
+  public void testPropertyReference() {
+    testExample("Examples/MemberReferences/PropertyReference.kt", memberreferences1.PropertyReferenceKt::main);
+  }
+
+  @Test
+  public void testSortWith() {
+    testExample("Examples/MemberReferences/SortWith.kt", memberreferences1.SortWithKt::main);
+  }
+
+  @Test
+  public void testTopLevelFunctionRef() {
+    testExample("Examples/MemberReferences/TopLevelFunctionRef.kt", memberreferences2.TopLevelFunctionRefKt::main);
   }
 
   @Test
@@ -1328,13 +1358,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCreatingList() {
-    testExample("Examples/OperationsOnCollections/CreatingList.kt", CreatingListKt::main);
+  public void testCreatingLists() {
+    testExample("Examples/OperationsOnCollections/CreatingLists.kt", CreatingListsKt::main);
   }
 
   @Test
   public void testFilterNotNull() {
     testExample("Examples/OperationsOnCollections/FilterNotNull.kt", FilterNotNullKt::main);
+  }
+
+  @Test
+  public void testOperationsOnSets() {
+    testExample("Examples/OperationsOnCollections/OperationsOnSets.kt", OperationsOnSetsKt::main);
   }
 
   @Test
@@ -1350,11 +1385,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testPredicates() {
     testExample("Examples/OperationsOnCollections/Predicates.kt", PredicatesKt::main);
-  }
-
-  @Test
-  public void testSetsAndMaps() {
-    testExample("Examples/OperationsOnCollections/SetsAndMaps.kt", SetsAndMapsKt::main);
   }
 
   @Test
@@ -1584,7 +1614,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testChainedCalls() {
-    testExample("Examples/SafeCallsAndElvis/ChainedCalls.kt", ChainedCallsKt::main);
+    testExample("Examples/SafeCallsAndElvis/ChainedCalls.kt", safecalls.ChainedCallsKt::main);
   }
 
   @Test
@@ -1625,6 +1655,26 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testGardenGnome() {
     testExample("Examples/SecondaryConstructors/GardenGnome.kt", GardenGnomeKt::main);
+  }
+
+  @Test
+  public void testEagerIteration() {
+    testExample("Examples/Sequences/EagerIteration.kt", EagerIterationKt::main);
+  }
+
+  @Test
+  public void testEagerVsLazyIteration() {
+    testExample("Examples/Sequences/EagerVsLazyIteration.kt", sequences.EagerVsLazyIterationKt::main);
+  }
+
+  @Test
+  public void testNoComputationYet() {
+    testExample("Examples/Sequences/NoComputationYet.kt", sequences.NoComputationYetKt::main);
+  }
+
+  @Test
+  public void testTerminalOperations() {
+    testExample("Examples/Sequences/TerminalOperations.kt", sequences.TerminalOperationsKt::main);
   }
 
   @Test
@@ -1915,5 +1965,20 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testMixColors() {
     testExample("Examples/WhenExpressions/MixColors.kt", MixColorsKt::main);
+  }
+
+  @Test
+  public void testExplicitWording() {
+    testExample("Examples/WithFunction/ExplicitWording.kt", withfunction.ExplicitWordingKt::main);
+  }
+
+  @Test
+  public void testUsingWith() {
+    testExample("Examples/WithFunction/UsingWith.kt", withfunction.UsingWithKt::main);
+  }
+
+  @Test
+  public void testWithCleanup() {
+    testExample("Examples/WithFunction/WithCleanup.kt", withfunction.WithCleanupKt::main);
   }
 }

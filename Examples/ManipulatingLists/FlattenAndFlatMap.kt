@@ -1,34 +1,30 @@
 // ManipulatingLists/FlattenAndFlatMap.kt
 import atomictest.eq
 
-val intRange = 1..3
-
-val unflat = intRange.map {
-  a -> intRange.map { b -> a to b }
-}
-
-val flat1 = intRange.map {
-  a -> intRange.map { b -> a to b }
-}.flatten()
-
-val flat2 = intRange.flatMap {
-  a -> intRange.map { b -> a to b }
-}
-
 fun main(args: Array<String>) {
-  unflat eq "[" +
+  val intRange = 1..3
+
+  intRange.map {               // [1]
+    a -> intRange.map { b -> a to b }
+  } eq "[" +
     "[(1, 1), (1, 2), (1, 3)], " +
     "[(2, 1), (2, 2), (2, 3)], " +
     "[(3, 1), (3, 2), (3, 3)]" +
-    "]"
-  flat1 eq "[" +
+  "]"
+
+  intRange.map {               // [2]
+    a -> intRange.map { b -> a to b }
+  }.flatten() eq "[" +
     "(1, 1), (1, 2), (1, 3), " +
     "(2, 1), (2, 2), (2, 3), " +
     "(3, 1), (3, 2), (3, 3)" +
-    "]"
-  flat2 eq "[" +
+  "]"
+
+  intRange.flatMap {           // [3]
+    a -> intRange.map { b -> a to b }
+  } eq "[" +
     "(1, 1), (1, 2), (1, 3), " +
     "(2, 1), (2, 2), (2, 3), " +
     "(3, 1), (3, 2), (3, 3)" +
-    "]"
+  "]"
 }

@@ -1,4 +1,5 @@
 // SafeCallsAndElvis/ChainedCalls.kt
+package safecalls
 import atomictest.eq
 
 class Person(

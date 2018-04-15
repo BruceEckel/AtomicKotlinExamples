@@ -30,7 +30,7 @@ private fun <L, R> runTest(
 }
 
 /**
- * Compares string representation
+ * Compares the string representation
  * of the object with the string `value`.
  */
 infix fun <T : Any> T.eq(value: String) {
@@ -40,7 +40,8 @@ infix fun <T : Any> T.eq(value: String) {
 }
 
 /**
- * Checks that object is equal to `value`.
+ * Checks that this object is
+ * equal to `value`.
  */
 infix fun <T> T.eq(value: T) {
   runTest(this, value) {
@@ -49,21 +50,22 @@ infix fun <T> T.eq(value: T) {
 }
 
 /**
- * Checks that `Double` number is equal
+ * Checks that this object is not
+ * equal to `value`.
+ */
+infix fun <T> T.neq(value: T) {
+  runTest(this, value, checkEquals = false) {
+    this != value
+  }
+}
+
+/**
+ * Checks that a `Double` number is equal
  * to `value` within a positive delta.
  */
 infix fun Double.eq(value: Double) {
   runTest(this, value) {
     abs(this - value) < 0.0000001
-  }
-}
-
-/**
- * Checks that object isn't equal to `value`.
- */
-infix fun <T> T.neq(value: T) {
-  runTest(this, value, checkEquals = false) {
-    this != value
   }
 }
 

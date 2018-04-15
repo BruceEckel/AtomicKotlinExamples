@@ -58,11 +58,6 @@ task AnnotatedJava(type: JavaExec) {
     main = 'nullabilityannotations.AnnotatedJavaKt'
 }
 
-task AnonymousFunction(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'AnonymousFunctionKt'
-}
-
 task AnyFunImplementation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnyFunImplementationKt'
@@ -71,6 +66,21 @@ task AnyFunImplementation(type: JavaExec) {
 task AnyInstead(type: JavaExec) {
     classpath kotlinClassPath
     main = 'introtogenerics.AnyInsteadKt'
+}
+
+task ApplyIfNotNull(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'libraryhelpers.ApplyIfNotNullKt'
+}
+
+task ApplyVsAlso(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'libraryhelpers.ApplyVsAlsoKt'
+}
+
+task Arg(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ArgKt'
 }
 
 task ArgumentOrder(type: JavaExec) {
@@ -96,6 +106,11 @@ task AssigningAnIf(type: JavaExec) {
 task AssignmentOperators(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AssignmentOperatorsKt'
+}
+
+task AssociateBy(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'fromliststomaps2.AssociateByKt'
 }
 
 task AuxiliaryInit(type: JavaExec) {
@@ -126,11 +141,6 @@ task BMI(type: JavaExec) {
 task Backticks(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BackticksKt'
-}
-
-task Basic(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdawithreceiver.BasicKt'
 }
 
 task BasicFunctions(type: JavaExec) {
@@ -193,11 +203,6 @@ task ByOperations(type: JavaExec) {
     main = 'ByOperationsKt'
 }
 
-task CallLater(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'CallLaterKt'
-}
-
 task CallTopLevelFunction(type: JavaExec) {
     classpath kotlinClassPath
     main = 'fromjava.CallTopLevelFunction'
@@ -215,7 +220,7 @@ task CatchChecked(type: JavaExec) {
 
 task ChainedCalls(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ChainedCallsKt'
+    main = 'safecalls.ChainedCallsKt'
 }
 
 task ChangingAVal(type: JavaExec) {
@@ -231,11 +236,6 @@ task CharRange(type: JavaExec) {
 task CheckingOptions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CheckingOptionsKt'
-}
-
-task ClassArg(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ClassArgKt'
 }
 
 task ClassBodies(type: JavaExec) {
@@ -313,6 +313,11 @@ task ConfusingOperator(type: JavaExec) {
     main = 'ConfusingOperatorKt'
 }
 
+task ConstructorReference(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'memberreferences3.ConstructorReferenceKt'
+}
+
 task ContactMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ContactMapKt'
@@ -343,9 +348,9 @@ task Counter(type: JavaExec) {
     main = 'propertyaccessors.CounterKt'
 }
 
-task CreatingList(type: JavaExec) {
+task CreatingLists(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'CreatingListKt'
+    main = 'CreatingListsKt'
 }
 
 task Cup(type: JavaExec) {
@@ -371,6 +376,11 @@ task DataClassCopy(type: JavaExec) {
 task DataClasses(type: JavaExec) {
     classpath kotlinClassPath
     main = 'dataclasses.DataClassesKt'
+}
+
+task Declarations(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.DeclarationsKt'
 }
 
 task Default(type: JavaExec) {
@@ -428,11 +438,6 @@ task Direction(type: JavaExec) {
     main = 'enumerations.DirectionKt'
 }
 
-task DisplayDuck(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DisplayDuckKt'
-}
-
 task DoWhileLoop(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DoWhileLoopKt'
@@ -443,9 +448,14 @@ task Dog(type: JavaExec) {
     main = 'DogKt'
 }
 
-task DuckForEach(type: JavaExec) {
+task EagerIteration(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'DuckForEachKt'
+    main = 'EagerIterationKt'
+}
+
+task EagerVsLazyIteration(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sequences.EagerVsLazyIterationKt'
 }
 
 task EasyKeys(type: JavaExec) {
@@ -483,11 +493,6 @@ task EvaluationOrder(type: JavaExec) {
     main = 'EvaluationOrderKt'
 }
 
-task EvenFilter(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'EvenFilterKt'
-}
-
 task ExceptionHandlers(type: JavaExec) {
     classpath kotlinClassPath
     main = 'toss.ExceptionHandlersKt'
@@ -503,14 +508,14 @@ task ExplicitDelegation(type: JavaExec) {
     main = 'ExplicitDelegationKt'
 }
 
+task ExplicitWording(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'withfunction.ExplicitWordingKt'
+}
+
 task ExpressionInTemplate(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExpressionInTemplateKt'
-}
-
-task Extensions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdawithreceiver.ExtensionsKt'
 }
 
 task ExtensionsToJavaClass(type: JavaExec) {
@@ -568,9 +573,19 @@ task Filter(type: JavaExec) {
     main = 'FilterKt'
 }
 
+task FilterEven(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FilterEvenKt'
+}
+
 task FilterNotNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FilterNotNullKt'
+}
+
+task FilteringMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FilteringMapKt'
 }
 
 task FirstExample(type: JavaExec) {
@@ -633,29 +648,14 @@ task ForWithRanges(type: JavaExec) {
     main = 'ForWithRangesKt'
 }
 
-task FormatList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FormatListKt'
-}
-
-task FormatListLambda(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FormatListLambdaKt'
-}
-
 task FullyQualify(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FullyQualifyKt'
 }
 
-task FunctionLiterals(type: JavaExec) {
+task FunctionReference(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lambdawithreceiver.FunctionLiteralsKt'
-}
-
-task FunctionReferences(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'functionreferences.FunctionReferencesKt'
+    main = 'memberreferences2.FunctionReferenceKt'
 }
 
 task FunctionTypeExamples(type: JavaExec) {
@@ -698,6 +698,11 @@ task GermanOrdinals(type: JavaExec) {
     main = 'GermanOrdinalsKt'
 }
 
+task GetOrPut(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GetOrPutKt'
+}
+
 task GetValue(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GetValueKt'
@@ -726,6 +731,16 @@ task GreatApe3(type: JavaExec) {
 task GreaterThan2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GreaterThan2Kt'
+}
+
+task GroupBy(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'fromliststomaps1.GroupByKt'
+}
+
+task GroupByVsFilter(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GroupByVsFilterKt'
 }
 
 task GuaranteedCleanup(type: JavaExec) {
@@ -1020,7 +1035,12 @@ task LazySyntax(type: JavaExec) {
 
 task Let(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'LetKt'
+    main = 'libraryhelpers.LetKt'
+}
+
+task LetNotNull(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LetNotNullKt'
 }
 
 task Level(type: JavaExec) {
@@ -1078,11 +1098,6 @@ task MakeSalad(type: JavaExec) {
     main = 'fromjava.MakeSalad'
 }
 
-task MapUnpacking(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'MapUnpackingKt'
-}
-
 task Mapping(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MappingKt'
@@ -1106,11 +1121,6 @@ task MemberImplementations(type: JavaExec) {
 task MemberOperator(type: JavaExec) {
     classpath kotlinClassPath
     main = 'operatoroverloading.MemberOperatorKt'
-}
-
-task MemberReference(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'MemberReferenceKt'
 }
 
 task MemberVsExtension(type: JavaExec) {
@@ -1153,9 +1163,9 @@ task MoreWork(type: JavaExec) {
     main = 'MoreWork'
 }
 
-task MultipleClassArgs(type: JavaExec) {
+task MultipleArgs(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'MultipleClassArgsKt'
+    main = 'MultipleArgsKt'
 }
 
 task MultipleListRefs(type: JavaExec) {
@@ -1228,6 +1238,11 @@ task NickName(type: JavaExec) {
     main = 'propertydelegation.NickNameKt'
 }
 
+task NoComputationYet(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sequences.NoComputationYetKt'
+}
+
 task NonNullAssert(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NonNullAssertKt'
@@ -1251,6 +1266,11 @@ task NullableFunctionType(type: JavaExec) {
 task NullableInMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NullableInMapKt'
+}
+
+task NullableReceiver(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'libraryhelpers.NullableReceiverKt'
 }
 
 task NullableReturnType(type: JavaExec) {
@@ -1321,6 +1341,11 @@ task OmittingParentheses(type: JavaExec) {
 task OneOrTheOther(type: JavaExec) {
     classpath kotlinClassPath
     main = 'OneOrTheOtherKt'
+}
+
+task OperationsOnSets(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'OperationsOnSetsKt'
 }
 
 task OperatorPlus(type: JavaExec) {
@@ -1433,6 +1458,11 @@ task PropertyOptions(type: JavaExec) {
     main = 'lazyinitialization.PropertyOptionsKt'
 }
 
+task PropertyReference(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'memberreferences1.PropertyReferenceKt'
+}
+
 task Quote(type: JavaExec) {
     classpath kotlinClassPath
     main = 'other.QuoteKt'
@@ -1503,14 +1533,39 @@ task Repeat(type: JavaExec) {
     main = 'RepeatKt'
 }
 
+task RepeatDeclaration(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'repeatdeclaration.RepeatDeclarationKt'
+}
+
+task RepeatExample(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RepeatExampleKt'
+}
+
 task RepeatThreeTimes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RepeatThreeTimesKt'
 }
 
+task RepeatVerbose(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RepeatVerboseKt'
+}
+
 task RequireNotNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RequireNotNullKt'
+}
+
+task ResultOfApply(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'libraryhelpers.ResultOfApplyKt'
+}
+
+task ResultOfWith(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'libraryhelpers.ResultOfWithKt'
 }
 
 task RigidHolder(type: JavaExec) {
@@ -1548,9 +1603,9 @@ task Sets(type: JavaExec) {
     main = 'SetsKt'
 }
 
-task SetsAndMaps(type: JavaExec) {
+task SimilarOperation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'SetsAndMapsKt'
+    main = 'SimilarOperationKt'
 }
 
 task Simple(type: JavaExec) {
@@ -1581,6 +1636,11 @@ task SmartCasts(type: JavaExec) {
 task Solid(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SolidKt'
+}
+
+task SortWith(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'memberreferences1.SortWithKt'
 }
 
 task Speakers(type: JavaExec) {
@@ -1688,11 +1748,6 @@ task Swearing(type: JavaExec) {
     main = 'SwearingKt'
 }
 
-task Syntax(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SyntaxKt'
-}
-
 task TDDFail(type: JavaExec) {
     classpath kotlinClassPath
     main = 'testing1.TDDFailKt'
@@ -1728,9 +1783,9 @@ task Temperature(type: JavaExec) {
     main = 'TemperatureKt'
 }
 
-task TestClass(type: JavaExec) {
+task TerminalOperations(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lambdawithreceiver.TestClassKt'
+    main = 'sequences.TerminalOperationsKt'
 }
 
 task TestingExample(type: JavaExec) {
@@ -1756,6 +1811,16 @@ task ToIntException(type: JavaExec) {
 task ToIntException2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ToIntException2Kt'
+}
+
+task TopLevelFunctionRef(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'memberreferences2.TopLevelFunctionRefKt'
+}
+
+task TransformingMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TransformingMapKt'
 }
 
 task TrimMargin(type: JavaExec) {
@@ -1848,11 +1913,6 @@ task UseBeanClass(type: JavaExec) {
     main = 'UseBeanClassKt'
 }
 
-task UseLater(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdawithreceiver.UseLaterKt'
-}
-
 task UsingAtomicTest(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingAtomicTestKt'
@@ -1876,6 +1936,11 @@ task UsingLongs(type: JavaExec) {
 task UsingTODO(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingTODOKt'
+}
+
+task UsingWith(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'withfunction.UsingWithKt'
 }
 
 task Vals(type: JavaExec) {
@@ -1908,9 +1973,9 @@ task Vars(type: JavaExec) {
     main = 'VarsKt'
 }
 
-task VisibleClassArgs(type: JavaExec) {
+task VisibleArgs(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'VisibleClassArgsKt'
+    main = 'VisibleArgsKt'
 }
 
 task WhenAndSmartCasts(type: JavaExec) {
@@ -1928,14 +1993,14 @@ task WhyFlatMap(type: JavaExec) {
     main = 'manipulatinglists.WhyFlatMapKt'
 }
 
+task WithCleanup(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'withfunction.WithCleanupKt'
+}
+
 task WithDefaultArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'WithDefaultArgumentsKt'
-}
-
-task WithReceiver(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'lambdawithreceiver.WithReceiverKt'
 }
 
 task WithoutDefaultArguments(type: JavaExec) {
@@ -1969,21 +2034,23 @@ task run (dependsOn: [
     'AnalyzingInput',
     'Animals',
     'AnnotatedJava',
-    'AnonymousFunction',
     'AnyFunImplementation',
     'AnyInstead',
+    'ApplyIfNotNull',
+    'ApplyVsAlso',
+    'Arg',
     'ArgumentOrder',
     'AssertTrue',
     'AssignAnonymous',
     'AssigningAnIf',
     'AssignmentOperators',
+    'AssociateBy',
     'AuxiliaryInit',
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
     'BMI',
     'Backticks',
-    'Basic',
     'BasicFunctions',
     'BasicGenerics',
     'BasicLogging',
@@ -1996,7 +2063,6 @@ task run (dependsOn: [
     'Booleans2',
     'Booleans3',
     'ByOperations',
-    'CallLater',
     'CallTopLevelFunction',
     'Cat',
     'CatchChecked',
@@ -2004,7 +2070,6 @@ task run (dependsOn: [
     'ChangingAVal',
     'CharRange',
     'CheckingOptions',
-    'ClassArg',
     'ClassBodies',
     'Cleanup',
     'Cleanup2',
@@ -2020,18 +2085,20 @@ task run (dependsOn: [
     'CompareTo',
     'ComputationResult',
     'ConfusingOperator',
+    'ConstructorReference',
     'ContactMap',
     'Conversion',
     'ConversionFailure',
     'Cookie',
     'CopyDataClass',
     'Counter',
-    'CreatingList',
+    'CreatingLists',
     'Cup',
     'Cup2',
     'Data',
     'DataClassCopy',
     'DataClasses',
+    'Declarations',
     'Default',
     'DefiningExceptions',
     'DefiningRanges',
@@ -2043,10 +2110,10 @@ task run (dependsOn: [
     'DestructuringDuo',
     'DestructuringMap',
     'Direction',
-    'DisplayDuck',
     'DoWhileLoop',
     'Dog',
-    'DuckForEach',
+    'EagerIteration',
+    'EagerVsLazyIteration',
     'EasyKeys',
     'ElvisCall',
     'ElvisOperator',
@@ -2054,12 +2121,11 @@ task run (dependsOn: [
     'EmptyProgram',
     'EnumImport',
     'EvaluationOrder',
-    'EvenFilter',
     'ExceptionHandlers',
     'ExplicitCheck',
     'ExplicitDelegation',
+    'ExplicitWording',
     'ExpressionInTemplate',
-    'Extensions',
     'ExtensionsToJavaClass',
     'Facto',
     'Factorial',
@@ -2071,7 +2137,9 @@ task run (dependsOn: [
     'FibonacciProperty',
     'FibonacciSequence',
     'Filter',
+    'FilterEven',
     'FilterNotNull',
+    'FilteringMap',
     'FirstExample',
     'Flatten',
     'FlattenAndFlatMap',
@@ -2084,11 +2152,8 @@ task run (dependsOn: [
     'ForLoop',
     'ForWithCharRange',
     'ForWithRanges',
-    'FormatList',
-    'FormatListLambda',
     'FullyQualify',
-    'FunctionLiterals',
-    'FunctionReferences',
+    'FunctionReference',
     'FunctionTypeExamples',
     'GardenGnome',
     'GenericFunction',
@@ -2097,12 +2162,15 @@ task run (dependsOn: [
     'GenericListExtensions',
     'GenericSpeakers',
     'GermanOrdinals',
+    'GetOrPut',
     'GetValue',
     'GoodAlien',
     'GreatApe',
     'GreatApe2',
     'GreatApe3',
     'GreaterThan2',
+    'GroupBy',
+    'GroupByVsFilter',
     'GuaranteedCleanup',
     'Hamster',
     'Hamsters',
@@ -2162,6 +2230,7 @@ task run (dependsOn: [
     'LazySequence',
     'LazySyntax',
     'Let',
+    'LetNotNull',
     'Level',
     'ListCollection',
     'ListIndices',
@@ -2173,13 +2242,11 @@ task run (dependsOn: [
     'LogChanges',
     'LongConstants',
     'MakeSalad',
-    'MapUnpacking',
     'Mapping',
     'Maps',
     'MatchingAgainstVals',
     'MemberImplementations',
     'MemberOperator',
-    'MemberReference',
     'MemberVsExtension',
     'MembershipInRange',
     'MembershipUsingBounds',
@@ -2188,7 +2255,7 @@ task run (dependsOn: [
     'Modulus',
     'Molecule',
     'MoreWork',
-    'MultipleClassArgs',
+    'MultipleArgs',
     'MultipleListRefs',
     'MultiplyByFour',
     'MultiplyByThree',
@@ -2203,11 +2270,13 @@ task run (dependsOn: [
     'NamedCompanionObject',
     'NewAngle',
     'NickName',
+    'NoComputationYet',
     'NonNullAssert',
     'NonNullAssertCall',
     'NullInMaps',
     'NullableFunctionType',
     'NullableInMap',
+    'NullableReceiver',
     'NullableReturnType',
     'NullableTypes',
     'Num',
@@ -2222,6 +2291,7 @@ task run (dependsOn: [
     'ObserveAnimals',
     'OmittingParentheses',
     'OneOrTheOther',
+    'OperationsOnSets',
     'OperatorPlus',
     'OtherConstructors',
     'OutOfBounds',
@@ -2244,6 +2314,7 @@ task run (dependsOn: [
     'PrintAlienSpieces',
     'PropertyInInterface',
     'PropertyOptions',
+    'PropertyReference',
     'Quote',
     'Quoting',
     'Random',
@@ -2258,8 +2329,13 @@ task run (dependsOn: [
     'RegularClasses',
     'RemoveDuplicates',
     'Repeat',
+    'RepeatDeclaration',
+    'RepeatExample',
     'RepeatThreeTimes',
+    'RepeatVerbose',
     'RequireNotNull',
+    'ResultOfApply',
+    'ResultOfWith',
     'RigidHolder',
     'STUB',
     'SafeCall',
@@ -2267,13 +2343,14 @@ task run (dependsOn: [
     'SayHello',
     'SealedClasses',
     'Sets',
-    'SetsAndMaps',
+    'SimilarOperation',
     'Simple',
     'SimpleHashing',
     'SimpleLoggingStrategy',
     'SimpleOperation',
     'SmartCasts',
     'Solid',
+    'SortWith',
     'Speakers',
     'SpreadOperator',
     'StateOfAClass',
@@ -2295,7 +2372,6 @@ task run (dependsOn: [
     'SumUsingRange',
     'SumViaFold',
     'Swearing',
-    'Syntax',
     'TDDFail',
     'TDDStillFails',
     'TDDWorks',
@@ -2303,12 +2379,14 @@ task run (dependsOn: [
     'Team',
     'TeamWithTraditions',
     'Temperature',
-    'TestClass',
+    'TerminalOperations',
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
     'ToIntException',
     'ToIntException2',
+    'TopLevelFunctionRef',
+    'TransformingMap',
     'TrimMargin',
     'TripleQuotes',
     'TrueOrFalse',
@@ -2327,24 +2405,24 @@ task run (dependsOn: [
     'UseALibrary',
     'UseAtomicLog',
     'UseBeanClass',
-    'UseLater',
     'UsingAtomicTest',
     'UsingDataClass',
     'UsingKotlinClass',
     'UsingLongs',
     'UsingTODO',
+    'UsingWith',
     'Vals',
     'ValueFromMap',
     'VarargLikeList',
     'VarargSum',
     'VariableArgLists',
     'Vars',
-    'VisibleClassArgs',
+    'VisibleArgs',
     'WhenAndSmartCasts',
     'WhileLoop',
     'WhyFlatMap',
+    'WithCleanup',
     'WithDefaultArguments',
-    'WithReceiver',
     'WithoutDefaultArguments',
     'ZipAndTransform',
     'Zipper',

@@ -4,9 +4,10 @@ import atomictest.eq
 fun <T> List<T>.any(                    // [1]
   predicate: (T) -> Boolean             // [2]
 ): Boolean {
-  for (element in this)
+  for (element in this) {
     if (predicate(element))             // [3]
       return true
+  }    
   return false
 }
 
@@ -16,4 +17,8 @@ fun main(args: Array<String>) {
 
   val strings = listOf("abc", " ")
   strings.any { it.isBlank() } eq true  // [5]
+  strings.any { it.isBlank() } eq true  // [5]
+
+  strings.any(String::isNotBlank) eq    // [6]
+    true
 }
