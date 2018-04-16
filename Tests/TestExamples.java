@@ -923,8 +923,28 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testBuildString() {
+    testExample("Examples/LambdaWithReceiver/BuildString.kt", BuildStringKt::main);
+  }
+
+  @Test
+  public void testBuildStringAndThis() {
+    testExample("Examples/LambdaWithReceiver/BuildStringAndThis.kt", BuildStringAndThisKt::main);
+  }
+
+  @Test
   public void testDeclarations() {
     testExample("Examples/LambdaWithReceiver/Declarations.kt", lambdawithreceiver.DeclarationsKt::main);
+  }
+
+  @Test
+  public void testRegularLambda() {
+    testExample("Examples/LambdaWithReceiver/RegularLambda.kt", regularLambda.RegularLambdaKt::main);
+  }
+
+  @Test
+  public void testStringBuilder() {
+    testExample("Examples/LambdaWithReceiver/StringBuilder.kt", StringBuilderKt::main);
   }
 
   @Test
@@ -1165,6 +1185,41 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testStringRange() {
     testExample("Examples/MoreAboutRanges/StringRange.kt", StringRangeKt::main);
+  }
+
+  @Test
+  public void testInputLines1() {
+    testExample("Examples/MoreLibraryFunctions/InputLines1.kt", InputLines1Kt::main);
+  }
+
+  @Test
+  public void testInputLines2() {
+    testExample("Examples/MoreLibraryFunctions/InputLines2.kt", InputLines2Kt::main);
+  }
+
+  @Test
+  public void testNumberSequence1() {
+    testExample("Examples/MoreLibraryFunctions/NumberSequence1.kt", NumberSequence1Kt::main);
+  }
+
+  @Test
+  public void testNumberSequence2() {
+    testExample("Examples/MoreLibraryFunctions/NumberSequence2.kt", NumberSequence2Kt::main);
+  }
+
+  @Test
+  public void testReadingName() {
+    testExample("Examples/MoreLibraryFunctions/ReadingName.kt", ReadingNameKt::main);
+  }
+
+  @Test
+  public void testReadingNameWithIf() {
+    testExample("Examples/MoreLibraryFunctions/ReadingNameWithIf.kt", ReadingNameWithIfKt::main);
+  }
+
+  @Test
+  public void testTakeIfDeclaration() {
+    testExample("Examples/MoreLibraryFunctions/TakeIfDeclaration.kt", takeIfDeclaration.TakeIfDeclarationKt::main);
   }
 
   @Test

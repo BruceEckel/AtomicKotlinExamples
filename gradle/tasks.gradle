@@ -198,6 +198,16 @@ task Booleans3(type: JavaExec) {
     main = 'Booleans3Kt'
 }
 
+task BuildString(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BuildStringKt'
+}
+
+task BuildStringAndThis(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BuildStringAndThisKt'
+}
+
 task ByOperations(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ByOperationsKt'
@@ -893,6 +903,16 @@ task InputCheck(type: JavaExec) {
     main = 'InputCheckKt'
 }
 
+task InputLines1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'InputLines1Kt'
+}
+
+task InputLines2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'InputLines2Kt'
+}
+
 task IntDivisionTruncates(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IntDivisionTruncatesKt'
@@ -1293,6 +1313,16 @@ task NumberConversions(type: JavaExec) {
     main = 'NumberConversionsKt'
 }
 
+task NumberSequence1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NumberSequence1Kt'
+}
+
+task NumberSequence2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NumberSequence2Kt'
+}
+
 task NumberTypes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NumberTypesKt'
@@ -1503,6 +1533,16 @@ task ReadTraceFile(type: JavaExec) {
     main = 'ReadTraceFileKt'
 }
 
+task ReadingName(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReadingNameKt'
+}
+
+task ReadingNameWithIf(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReadingNameWithIfKt'
+}
+
 task ReceiverVsParameter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReceiverVsParameterKt'
@@ -1521,6 +1561,11 @@ task References(type: JavaExec) {
 task RegularClasses(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RegularClassesKt'
+}
+
+task RegularLambda(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'regularLambda.RegularLambdaKt'
 }
 
 task RemoveDuplicates(type: JavaExec) {
@@ -1673,6 +1718,11 @@ task StrangeQuote(type: JavaExec) {
     main = 'StrangeQuoteKt'
 }
 
+task StringBuilder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringBuilderKt'
+}
+
 task StringConcatenation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringConcatenationKt'
@@ -1761,6 +1811,11 @@ task TDDStillFails(type: JavaExec) {
 task TDDWorks(type: JavaExec) {
     classpath kotlinClassPath
     main = 'testing3.TDDWorksKt'
+}
+
+task TakeIfDeclaration(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'takeIfDeclaration.TakeIfDeclarationKt'
 }
 
 task TakeOrDrop(type: JavaExec) {
@@ -2062,6 +2117,8 @@ task run (dependsOn: [
     'Booleans1',
     'Booleans2',
     'Booleans3',
+    'BuildString',
+    'BuildStringAndThis',
     'ByOperations',
     'CallTopLevelFunction',
     'Cat',
@@ -2201,6 +2258,8 @@ task run (dependsOn: [
     'Info',
     'InitSection',
     'InputCheck',
+    'InputLines1',
+    'InputLines2',
     'IntDivisionTruncates',
     'IntRange',
     'IntRanges',
@@ -2281,6 +2340,8 @@ task run (dependsOn: [
     'NullableTypes',
     'Num',
     'NumberConversions',
+    'NumberSequence1',
+    'NumberSequence2',
     'NumberTypes',
     'ObjectCounter',
     'ObjectFunctions',
@@ -2323,10 +2384,13 @@ task run (dependsOn: [
     'ReadOnlyCollections',
     'ReadOnlyMaps',
     'ReadTraceFile',
+    'ReadingName',
+    'ReadingNameWithIf',
     'ReceiverVsParameter',
     'RecursiveEnumImport',
     'References',
     'RegularClasses',
+    'RegularLambda',
     'RemoveDuplicates',
     'Repeat',
     'RepeatDeclaration',
@@ -2357,6 +2421,7 @@ task run (dependsOn: [
     'StoringLambda',
     'StrTemplates',
     'StrangeQuote',
+    'StringBuilder',
     'StringConcatenation',
     'StringHashCode',
     'StringIndices',
@@ -2375,6 +2440,7 @@ task run (dependsOn: [
     'TDDFail',
     'TDDStillFails',
     'TDDWorks',
+    'TakeIfDeclaration',
     'TakeOrDrop',
     'Team',
     'TeamWithTraditions',

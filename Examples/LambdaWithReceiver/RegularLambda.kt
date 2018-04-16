@@ -1,0 +1,19 @@
+// LambdaWithReceiver/RegularLambda.kt
+package regularLambda
+import atomictest.eq
+
+fun buildString(
+  builderAction: (StringBuilder) -> Unit
+): String {
+  val sb = StringBuilder()
+  builderAction(sb)
+  return sb.toString()
+}
+
+fun main(args: Array<String>) {
+  buildString { sb ->
+    sb.append("Alphabet: ")
+    for (ch in 'a'..'z')
+      sb.append(ch)
+  } eq "Alphabet: abcdefghijklmnopqrstuvwxyz"
+}
