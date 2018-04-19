@@ -1048,13 +1048,43 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAnonymousFunction() {
+    testExample("Examples/LocalFunctions/AnonymousFunction.kt", anonymousFunctions.AnonymousFunctionKt::main);
+  }
+
+  @Test
+  public void testCustomLabel() {
+    testExample("Examples/LocalFunctions/CustomLabel.kt", CustomLabelKt::main);
+  }
+
+  @Test
+  public void testInterestingSessions() {
+    testExample("Examples/LocalFunctions/InterestingSessions.kt", anonymousFunctions.InterestingSessionsKt::main);
+  }
+
+  @Test
+  public void testLabeledReturn() {
+    testExample("Examples/LocalFunctions/LabeledReturn.kt", anonymousFunctions.LabeledReturnKt::main);
+  }
+
+  @Test
   public void testLocalExtensions() {
     testExample("Examples/LocalFunctions/LocalExtensions.kt", LocalExtensionsKt::main);
   }
 
   @Test
-  public void testLocalFunctions() {
-    testExample("Examples/LocalFunctions/LocalFunctions.kt", LocalFunctionsKt::main);
+  public void testReturnFromFun() {
+    testExample("Examples/LocalFunctions/ReturnFromFun.kt", ReturnFromFunKt::main);
+  }
+
+  @Test
+  public void testReturnFromHelperFunctions() {
+    testExample("Examples/LocalFunctions/ReturnFromHelperFunctions.kt", anonymousFunctions.ReturnFromHelperFunctionsKt::main);
+  }
+
+  @Test
+  public void testReturnFromLambda() {
+    testExample("Examples/LocalFunctions/ReturnFromLambda.kt", ReturnFromLambdaKt::main);
   }
 
   @Test

@@ -58,6 +58,11 @@ task AnnotatedJava(type: JavaExec) {
     main = 'nullabilityannotations.AnnotatedJavaKt'
 }
 
+task AnonymousFunction(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'anonymousFunctions.AnonymousFunctionKt'
+}
+
 task AnyFunImplementation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnyFunImplementationKt'
@@ -371,6 +376,11 @@ task Cup(type: JavaExec) {
 task Cup2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'Cup2Kt'
+}
+
+task CustomLabel(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CustomLabelKt'
 }
 
 task Data(type: JavaExec) {
@@ -938,6 +948,11 @@ task IntegerOverflow(type: JavaExec) {
     main = 'IntegerOverflowKt'
 }
 
+task InterestingSessions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'anonymousFunctions.InterestingSessionsKt'
+}
+
 task InterfaceCollision(type: JavaExec) {
     classpath kotlinClassPath
     main = 'InterfaceCollisionKt'
@@ -1011,6 +1026,11 @@ task KeyFailure(type: JavaExec) {
 task KotlinChecked(type: JavaExec) {
     classpath kotlinClassPath
     main = 'KotlinCheckedKt'
+}
+
+task LabeledReturn(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'anonymousFunctions.LabeledReturnKt'
 }
 
 task LambdaAndNamedArgs(type: JavaExec) {
@@ -1096,11 +1116,6 @@ task Lists(type: JavaExec) {
 task LocalExtensions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LocalExtensionsKt'
-}
-
-task LocalFunctions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'LocalFunctionsKt'
 }
 
 task LogChanges(type: JavaExec) {
@@ -1613,6 +1628,21 @@ task ResultOfWith(type: JavaExec) {
     main = 'libraryhelpers.ResultOfWithKt'
 }
 
+task ReturnFromFun(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReturnFromFunKt'
+}
+
+task ReturnFromHelperFunctions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'anonymousFunctions.ReturnFromHelperFunctionsKt'
+}
+
+task ReturnFromLambda(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReturnFromLambdaKt'
+}
+
 task RigidHolder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'introtogenerics.RigidHolderKt'
@@ -2089,6 +2119,7 @@ task run (dependsOn: [
     'AnalyzingInput',
     'Animals',
     'AnnotatedJava',
+    'AnonymousFunction',
     'AnyFunImplementation',
     'AnyInstead',
     'ApplyIfNotNull',
@@ -2152,6 +2183,7 @@ task run (dependsOn: [
     'CreatingLists',
     'Cup',
     'Cup2',
+    'CustomLabel',
     'Data',
     'DataClassCopy',
     'DataClasses',
@@ -2265,6 +2297,7 @@ task run (dependsOn: [
     'IntRanges',
     'IntegerMath',
     'IntegerOverflow',
+    'InterestingSessions',
     'InterfaceCollision',
     'IntroducingCapture',
     'IntroducingNull',
@@ -2280,6 +2313,7 @@ task run (dependsOn: [
     'JoiningToString2',
     'KeyFailure',
     'KotlinChecked',
+    'LabeledReturn',
     'LambdaAndNamedArgs',
     'LambdaIt',
     'LambdaTypeInference',
@@ -2297,7 +2331,6 @@ task run (dependsOn: [
     'ListUsefulFunction',
     'Lists',
     'LocalExtensions',
-    'LocalFunctions',
     'LogChanges',
     'LongConstants',
     'MakeSalad',
@@ -2400,6 +2433,9 @@ task run (dependsOn: [
     'RequireNotNull',
     'ResultOfApply',
     'ResultOfWith',
+    'ReturnFromFun',
+    'ReturnFromHelperFunctions',
+    'ReturnFromLambda',
     'RigidHolder',
     'STUB',
     'SafeCall',
