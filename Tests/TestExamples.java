@@ -903,6 +903,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testListIndicesMap() {
+    testExample("Examples/Lambdas/ListIndicesMap.kt", ListIndicesMapKt::main);
+  }
+
+  @Test
   public void testMapping() {
     testExample("Examples/Lambdas/Mapping.kt", MappingKt::main);
   }

@@ -1098,6 +1098,11 @@ task ListIndices(type: JavaExec) {
     main = 'extensionproperties.ListIndicesKt'
 }
 
+task ListIndicesMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ListIndicesMapKt'
+}
+
 task ListOf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ListOfKt'
@@ -2327,6 +2332,7 @@ task run (dependsOn: [
     'Level',
     'ListCollection',
     'ListIndices',
+    'ListIndicesMap',
     'ListOf',
     'ListUsefulFunction',
     'Lists',
