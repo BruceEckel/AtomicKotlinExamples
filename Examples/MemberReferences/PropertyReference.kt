@@ -12,7 +12,6 @@ fun main(args: Array<String>) {
   val messages = listOf(
     Message("Kitty", "Hey!", true),
     Message("Kitty", "Where are you?", false))
-
   val unread =
     messages.filterNot(Message::isRead)
   unread.size eq 1
