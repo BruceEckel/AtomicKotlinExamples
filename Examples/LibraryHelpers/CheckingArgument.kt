@@ -12,5 +12,5 @@ fun showGreetingWindow(
   // The similar check with let():
   greetingWindow?.let {
     showWindow(it)
-  }  
+  }
 }

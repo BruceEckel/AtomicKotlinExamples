@@ -2,11 +2,11 @@
 
 fun main(args: Array<String>) {
   val hour = 6
-  val opens = 9
-  val closes = 20
-  println("Operating hours: $opens - $closes")
+  val open = 9
+  val closed = 20
+  println("Operating hours: $open - $closed")
   val isOpen =
-    if (hour >= opens && hour <= closes) //[1]
+    if (hour >= open && hour <= closed) // [1]
       true
     else
       false

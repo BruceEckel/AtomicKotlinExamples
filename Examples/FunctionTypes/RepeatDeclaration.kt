@@ -2,7 +2,7 @@
 package repeatdeclaration
 
 fun repeat(
-  times: Int, 
+  times: Int,
   action: (Int) -> Unit           // [1]
 ) {
   for (index in 0 until times) {

@@ -3,7 +3,7 @@ import atomictest.eq
 
 fun main(args: Array<String>) {
   val set = setOf("a", "ab", "ac")
-  
+
   set.maxBy { it.length }?.length eq 2
 
   set.filter { it.contains('b') } eq

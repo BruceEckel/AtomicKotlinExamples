@@ -1398,6 +1398,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testOpOrder() {
+    testExample("Examples/NumberTypes/OpOrder.kt", OpOrderKt::main);
+  }
+
+  @Test
+  public void testOpOrderParens() {
+    testExample("Examples/NumberTypes/OpOrderParens.kt", OpOrderParensKt::main);
+  }
+
+  @Test
   public void testUsingLongs() {
     testExample("Examples/NumberTypes/UsingLongs.kt", UsingLongsKt::main);
   }
@@ -1798,21 +1808,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAVariableIsMutable() {
-    testExample("Examples/Storage/AVariableIsMutable.kt", AVariableIsMutableKt::main);
-  }
-
-  @Test
-  public void testVals() {
-    testExample("Examples/Storage/Vals.kt", ValsKt::main);
-  }
-
-  @Test
-  public void testVars() {
-    testExample("Examples/Storage/Vars.kt", VarsKt::main);
-  }
-
-  @Test
   public void testExpressionInTemplate() {
     testExample("Examples/StringTemplates/ExpressionInTemplate.kt", ExpressionInTemplateKt::main);
   }
@@ -1990,6 +1985,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUnexpected() {
     testExample("Examples/UsingOperators/Unexpected.kt", UnexpectedKt::main);
+  }
+
+  @Test
+  public void testAVarIsMutable() {
+    testExample("Examples/VarAndVal/AVarIsMutable.kt", AVarIsMutableKt::main);
+  }
+
+  @Test
+  public void testVals() {
+    testExample("Examples/VarAndVal/Vals.kt", ValsKt::main);
+  }
+
+  @Test
+  public void testVars() {
+    testExample("Examples/VarAndVal/Vars.kt", VarsKt::main);
   }
 
   @Test

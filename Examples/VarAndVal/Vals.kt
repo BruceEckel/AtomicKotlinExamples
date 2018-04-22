@@ -1,4 +1,4 @@
-// Storage/Vals.kt
+// VarAndVal/Vals.kt
 
 fun main(args: Array<String>) {
   val whole = 11

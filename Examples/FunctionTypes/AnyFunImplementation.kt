@@ -7,7 +7,7 @@ fun <T> List<T>.any(                    // [1]
   for (element in this) {
     if (predicate(element))             // [3]
       return true
-  }    
+  }
   return false
 }
 

@@ -8,9 +8,9 @@ dependencies {
 
 def kotlinClassPath = configurations.kotlinRuntime + sourceSets.main.runtimeClasspath
 
-task AVariableIsMutable(type: JavaExec) {
+task AVarIsMutable(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'AVariableIsMutableKt'
+    main = 'AVarIsMutableKt'
 }
 
 task AbstractClasses(type: JavaExec) {
@@ -1393,6 +1393,16 @@ task OneOrTheOther(type: JavaExec) {
     main = 'OneOrTheOtherKt'
 }
 
+task OpOrder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'OpOrderKt'
+}
+
+task OpOrderParens(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'OpOrderParensKt'
+}
+
 task OperationsOnSets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'OperationsOnSetsKt'
@@ -2114,7 +2124,7 @@ task ZippingWithNext(type: JavaExec) {
 }
 
 task run (dependsOn: [
-    'AVariableIsMutable',
+    'AVarIsMutable',
     'AbstractClasses',
     'AddCodePoints',
     'Adder',
@@ -2391,6 +2401,8 @@ task run (dependsOn: [
     'ObserveAnimals',
     'OmittingParentheses',
     'OneOrTheOther',
+    'OpOrder',
+    'OpOrderParens',
     'OperationsOnSets',
     'OperatorPlus',
     'OtherConstructors',

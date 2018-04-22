@@ -1,4 +1,4 @@
-// Storage/AVariableIsMutable.kt
+// VarAndVal/AVarIsMutable.kt
 
 fun main(args: Array<String>) {
   var sum = 1
