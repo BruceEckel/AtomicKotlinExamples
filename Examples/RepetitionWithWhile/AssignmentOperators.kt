@@ -3,7 +3,7 @@
 fun main(args: Array<String>) {
   var n = 10
   val d = 3
-  print("$n")
+  print(n)
   while (n > d) {
     n -= d
     print(" - $d")

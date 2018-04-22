@@ -823,6 +823,41 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCharRange() {
+    testExample("Examples/InKeyword/CharRange.kt", CharRangeKt::main);
+  }
+
+  @Test
+  public void testFloatingPointRange() {
+    testExample("Examples/InKeyword/FloatingPointRange.kt", FloatingPointRangeKt::main);
+  }
+
+  @Test
+  public void testInString() {
+    testExample("Examples/InKeyword/InString.kt", InStringKt::main);
+  }
+
+  @Test
+  public void testIterationVsMembership() {
+    testExample("Examples/InKeyword/IterationVsMembership.kt", IterationVsMembershipKt::main);
+  }
+
+  @Test
+  public void testMembershipInRange() {
+    testExample("Examples/InKeyword/MembershipInRange.kt", MembershipInRangeKt::main);
+  }
+
+  @Test
+  public void testMembershipUsingBounds() {
+    testExample("Examples/InKeyword/MembershipUsingBounds.kt", MembershipUsingBoundsKt::main);
+  }
+
+  @Test
+  public void testStringRange() {
+    testExample("Examples/InKeyword/StringRange.kt", StringRangeKt::main);
+  }
+
+  @Test
   public void testAdder() {
     testExample("Examples/Interfaces/Adder.kt", interfaces.AdderKt::main);
   }
@@ -1185,41 +1220,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTopLevelFunctionRef() {
     testExample("Examples/MemberReferences/TopLevelFunctionRef.kt", memberreferences2.TopLevelFunctionRefKt::main);
-  }
-
-  @Test
-  public void testCharRange() {
-    testExample("Examples/MoreAboutRanges/CharRange.kt", CharRangeKt::main);
-  }
-
-  @Test
-  public void testFloatingPointRange() {
-    testExample("Examples/MoreAboutRanges/FloatingPointRange.kt", FloatingPointRangeKt::main);
-  }
-
-  @Test
-  public void testInString() {
-    testExample("Examples/MoreAboutRanges/InString.kt", InStringKt::main);
-  }
-
-  @Test
-  public void testIterationVsMembership() {
-    testExample("Examples/MoreAboutRanges/IterationVsMembership.kt", IterationVsMembershipKt::main);
-  }
-
-  @Test
-  public void testMembershipInRange() {
-    testExample("Examples/MoreAboutRanges/MembershipInRange.kt", MembershipInRangeKt::main);
-  }
-
-  @Test
-  public void testMembershipUsingBounds() {
-    testExample("Examples/MoreAboutRanges/MembershipUsingBounds.kt", MembershipUsingBoundsKt::main);
-  }
-
-  @Test
-  public void testStringRange() {
-    testExample("Examples/MoreAboutRanges/StringRange.kt", StringRangeKt::main);
   }
 
   @Test

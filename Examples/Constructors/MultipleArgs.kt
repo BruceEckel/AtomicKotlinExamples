@@ -6,7 +6,7 @@ class AlienSpecies(
   val hands: Int,
   val legs: Int
 ) {
-  fun represent(): String =
+  fun represent() =
     "$name with $eyes eyes, " +
     "$hands hands and $legs legs"
 }

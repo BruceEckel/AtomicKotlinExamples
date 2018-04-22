@@ -1,4 +1,4 @@
-// MoreAboutRanges/InString.kt
+// InKeyword/InString.kt
 
 fun main(args: Array<String>) {
   println('t' in "kotlin")
