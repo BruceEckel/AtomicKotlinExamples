@@ -1,6 +1,5 @@
 // ImportsAndPackages/PythagoreanTheorem.kt
 package pythagorean
-
 import kotlin.math.sqrt
 
 class RightTriangle(
@@ -8,6 +7,5 @@ class RightTriangle(
   val b: Double
 ) {
   fun hypotenuse() = sqrt(a * a + b * b)
-
   fun area() = a * b / 2
 }

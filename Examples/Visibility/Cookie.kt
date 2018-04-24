@@ -1,4 +1,5 @@
 // Visibility/Cookie.kt
+
 class Cookie(
   private var isReady: Boolean     // [1]
 ) {

@@ -1,11 +1,11 @@
 // ImportsAndPackages/ImportNameChange.kt
-import kotlin.math.PI as BAR
-import kotlin.math.cos as foo
+import kotlin.math.PI as circleRatio
+import kotlin.math.cos as cosine
 
 fun main(args: Array<String>) {
-  println(BAR)
-  println(foo(BAR))
-  println(foo(2 * BAR))
+  println(circleRatio)
+  println(cosine(circleRatio))
+  println(cosine(2 * circleRatio))
 }
 /* Output:
 3.141592653589793

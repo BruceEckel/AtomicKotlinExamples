@@ -383,11 +383,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testToIntException2() {
-    testExample("Examples/Exceptions/ToIntException2.kt", ToIntException2Kt::main);
-  }
-
-  @Test
   public void testAssigningAnIf() {
     testExample("Examples/ExpressionsStatements/AssigningAnIf.kt", AssigningAnIfKt::main);
   }
@@ -2055,6 +2050,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testCookie() {
     testExample("Examples/Visibility/Cookie.kt", CookieKt::main);
+  }
+
+  @Test
+  public void testMultipleRef() {
+    testExample("Examples/Visibility/MultipleRef.kt", MultipleRefKt::main);
   }
 
   @Test
