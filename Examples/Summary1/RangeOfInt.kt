@@ -1,4 +1,4 @@
-// Summary1/IntRange.kt
+// Summary1/RangeOfInt.kt
 
 fun main(args: Array<String>) {
   for (i in 1..10)

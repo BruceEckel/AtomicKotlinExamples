@@ -1,4 +1,4 @@
-// Summary1/RangeMembership.kt
+// Summary1/Membership.kt
 
 fun inNumRange(n: Int) = n in 50..100
 

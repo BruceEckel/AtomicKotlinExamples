@@ -1,13 +1,13 @@
 // Constructors/VisibleArgs.kt
 
-class AlienWithMutableName(var name: String)
-class AlienWithFixedName(val name: String)
+class MutableNameAlien(var name: String)
+class FixedNameAlien(val name: String)
 
 fun main(args: Array<String>) {
   val alien1 =
-    AlienWithMutableName("Reverse Giraffe")
+    MutableNameAlien("Reverse Giraffe")
   val alien2 =
-    AlienWithFixedName("Krombopolis Michael")
+    FixedNameAlien("Krombopolis Michael")
 
   alien1.name = "Parasite"
   // Can't do this:

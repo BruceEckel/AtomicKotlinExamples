@@ -108,6 +108,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDisplayAlienSpieces() {
+    testExample("Examples/Constructors/DisplayAlienSpieces.kt", DisplayAlienSpiecesKt::main);
+  }
+
+  @Test
   public void testGoodAlien() {
     testExample("Examples/Constructors/GoodAlien.kt", GoodAlienKt::main);
   }
@@ -115,11 +120,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testMultipleArgs() {
     testExample("Examples/Constructors/MultipleArgs.kt", MultipleArgsKt::main);
-  }
-
-  @Test
-  public void testPrintAlienSpieces() {
-    testExample("Examples/Constructors/PrintAlienSpieces.kt", PrintAlienSpiecesKt::main);
   }
 
   @Test
@@ -1623,6 +1623,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testFibonacci() {
+    testExample("Examples/PropertyDelegation/Fibonacci.kt", recursion.FibonacciKt::main);
+  }
+
+  @Test
   public void testFibonacciProperty() {
     testExample("Examples/PropertyDelegation/FibonacciProperty.kt", FibonacciPropertyKt::main);
   }
@@ -1643,43 +1648,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAddCodePoints() {
-    testExample("Examples/Recursion/AddCodePoints.kt", AddCodePointsKt::main);
-  }
-
-  @Test
-  public void testFacto() {
-    testExample("Examples/Recursion/Facto.kt", FactoKt::main);
+  public void testCallStack() {
+    testExample("Examples/Recursion/CallStack.kt", recursion.CallStackKt::main);
   }
 
   @Test
   public void testFactorial() {
     testExample("Examples/Recursion/Factorial.kt", recursion.FactorialKt::main);
-  }
-
-  @Test
-  public void testFactorials() {
-    testExample("Examples/Recursion/Factorials.kt", FactorialsKt::main);
-  }
-
-  @Test
-  public void testFibo() {
-    testExample("Examples/Recursion/Fibo.kt", FiboKt::main);
-  }
-
-  @Test
-  public void testFibonacci() {
-    testExample("Examples/Recursion/Fibonacci.kt", recursion.FibonacciKt::main);
-  }
-
-  @Test
-  public void testPhi() {
-    testExample("Examples/Recursion/Phi.kt", PhiKt::main);
-  }
-
-  @Test
-  public void testSumOfSquares() {
-    testExample("Examples/Recursion/SumOfSquares.kt", SumOfSquaresKt::main);
   }
 
   @Test
@@ -1838,6 +1813,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDoWhile() {
+    testExample("Examples/Summary1/DoWhile.kt", DoWhileKt::main);
+  }
+
+  @Test
+  public void testHello() {
+    testExample("Examples/Summary1/Hello.kt", HelloKt::main);
+  }
+
+  @Test
   public void testIfExpression() {
     testExample("Examples/Summary1/IfExpression.kt", IfExpressionKt::main);
   }
@@ -1848,13 +1833,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testIntRange() {
-    testExample("Examples/Summary1/IntRange.kt", IntRangeKt::main);
-  }
-
-  @Test
-  public void testIterateThroughString() {
-    testExample("Examples/Summary1/IterateThroughString.kt", IterateThroughStringKt::main);
+  public void testMembership() {
+    testExample("Examples/Summary1/Membership.kt", MembershipKt::main);
   }
 
   @Test
@@ -1868,8 +1848,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testRangeMembership() {
-    testExample("Examples/Summary1/RangeMembership.kt", RangeMembershipKt::main);
+  public void testRangeOfInt() {
+    testExample("Examples/Summary1/RangeOfInt.kt", RangeOfIntKt::main);
+  }
+
+  @Test
+  public void testStringIteration() {
+    testExample("Examples/Summary1/StringIteration.kt", StringIterationKt::main);
   }
 
   @Test
@@ -1890,6 +1875,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUnitReturn() {
     testExample("Examples/Summary1/UnitReturn.kt", UnitReturnKt::main);
+  }
+
+  @Test
+  public void testWhile() {
+    testExample("Examples/Summary1/While.kt", WhileKt::main);
   }
 
   @Test
@@ -1920,6 +1910,36 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsingAtomicTest() {
     testExample("Examples/Summary2/UsingAtomicTest.kt", UsingAtomicTestKt::main);
+  }
+
+  @Test
+  public void testFibonacci1() {
+    testExample("Examples/TailRecursion/Fibonacci.kt", tailrecursion.FibonacciKt::main);
+  }
+
+  @Test
+  public void testInfiniteRecursion() {
+    testExample("Examples/TailRecursion/InfiniteRecursion.kt", recursion.InfiniteRecursionKt::main);
+  }
+
+  @Test
+  public void testIteration() {
+    testExample("Examples/TailRecursion/Iteration.kt", iteration.IterationKt::main);
+  }
+
+  @Test
+  public void testRecursionConstraints() {
+    testExample("Examples/TailRecursion/RecursionConstraints.kt", recursion.RecursionConstraintsKt::main);
+  }
+
+  @Test
+  public void testTailRecursiveSum() {
+    testExample("Examples/TailRecursion/TailRecursiveSum.kt", tailrecursion.TailRecursiveSumKt::main);
+  }
+
+  @Test
+  public void testVerySlowFibonacci() {
+    testExample("Examples/TailRecursion/VerySlowFibonacci.kt", slowfibonacci.VerySlowFibonacciKt::main);
   }
 
   @Test

@@ -1,4 +1,4 @@
-// Summary1/IterateThroughString.kt
+// Summary1/StringIteration.kt
 
 fun main(args: Array<String>) {
   for (c in "Kotlin") {

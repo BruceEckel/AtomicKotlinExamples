@@ -10,8 +10,8 @@ fun main(args: Array<String>) {
   println(house.sofa)
   house.sofa = "New leather sofa: $3,099.00"
   println(house.sofa)
-  // Not allowed:
-  // house = House("Loveseat")
+  // Cannot reassign the val to a new House:
+  // house = House()
 }
 /* Output:
 Simple sleeper sofa: $89.00

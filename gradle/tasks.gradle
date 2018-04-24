@@ -18,11 +18,6 @@ task AbstractClasses(type: JavaExec) {
     main = 'abstractclasses.AbstractClassesKt'
 }
 
-task AddCodePoints(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'AddCodePointsKt'
-}
-
 task Adder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces.AdderKt'
@@ -216,6 +211,11 @@ task BuildStringAndThis(type: JavaExec) {
 task ByOperations(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ByOperationsKt'
+}
+
+task CallStack(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'recursion.CallStackKt'
 }
 
 task CallTopLevelFunction(type: JavaExec) {
@@ -458,6 +458,11 @@ task Direction(type: JavaExec) {
     main = 'enumerations.DirectionKt'
 }
 
+task DoWhile(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DoWhileKt'
+}
+
 task DoWhileLoop(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DoWhileLoopKt'
@@ -543,19 +548,9 @@ task ExtensionsToJavaClass(type: JavaExec) {
     main = 'fromkotlin.ExtensionsToJavaClassKt'
 }
 
-task Facto(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FactoKt'
-}
-
 task Factorial(type: JavaExec) {
     classpath kotlinClassPath
     main = 'recursion.FactorialKt'
-}
-
-task Factorials(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FactorialsKt'
 }
 
 task FantasyGame(type: JavaExec) {
@@ -568,14 +563,9 @@ task FaultySuitcase(type: JavaExec) {
     main = 'FaultySuitcaseKt'
 }
 
-task Fibo(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FiboKt'
-}
-
 task Fibonacci(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'recursion.FibonacciKt'
+    main = 'tailrecursion.FibonacciKt'
 }
 
 task FibonacciProperty(type: JavaExec) {
@@ -788,6 +778,11 @@ task HashCodeFailure(type: JavaExec) {
     main = 'HashCodeFailureKt'
 }
 
+task Hello(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'HelloKt'
+}
+
 task HelloCoroutines(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HelloCoroutinesKt'
@@ -898,6 +893,11 @@ task Inference(type: JavaExec) {
     main = 'InferenceKt'
 }
 
+task InfiniteRecursion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'recursion.InfiniteRecursionKt'
+}
+
 task Info(type: JavaExec) {
     classpath kotlinClassPath
     main = 'InfoKt'
@@ -926,11 +926,6 @@ task InputLines2(type: JavaExec) {
 task IntDivisionTruncates(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IntDivisionTruncatesKt'
-}
-
-task IntRange(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'IntRangeKt'
 }
 
 task IntRanges(type: JavaExec) {
@@ -983,9 +978,9 @@ task IterateOverString(type: JavaExec) {
     main = 'IterateOverStringKt'
 }
 
-task IterateThroughString(type: JavaExec) {
+task Iteration(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'IterateThroughStringKt'
+    main = 'iteration.IterationKt'
 }
 
 task IterationVsMembership(type: JavaExec) {
@@ -1166,6 +1161,11 @@ task MemberOperator(type: JavaExec) {
 task MemberVsExtension(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MemberVsExtensionKt'
+}
+
+task Membership(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MembershipKt'
 }
 
 task MembershipInRange(type: JavaExec) {
@@ -1478,11 +1478,6 @@ task Pets(type: JavaExec) {
     main = 'hashing.PetsKt'
 }
 
-task Phi(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'PhiKt'
-}
-
 task PlatformTypes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PlatformTypesKt'
@@ -1538,9 +1533,9 @@ task Random(type: JavaExec) {
     main = 'RandomKt'
 }
 
-task RangeMembership(type: JavaExec) {
+task RangeOfInt(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'RangeMembershipKt'
+    main = 'RangeOfIntKt'
 }
 
 task RangeSum(type: JavaExec) {
@@ -1576,6 +1571,11 @@ task ReadingNameWithIf(type: JavaExec) {
 task ReceiverVsParameter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReceiverVsParameterKt'
+}
+
+task RecursionConstraints(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'recursion.RecursionConstraintsKt'
 }
 
 task RecursiveEnumImport(type: JavaExec) {
@@ -1793,6 +1793,11 @@ task StringIsNullOr(type: JavaExec) {
     main = 'StringIsNullOrKt'
 }
 
+task StringIteration(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'StringIterationKt'
+}
+
 task StringPlusNumber(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringPlusNumberKt'
@@ -1823,11 +1828,6 @@ task Sum(type: JavaExec) {
     main = 'SumKt'
 }
 
-task SumOfSquares(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SumOfSquaresKt'
-}
-
 task SumUsingRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SumUsingRangeKt'
@@ -1856,6 +1856,11 @@ task TDDStillFails(type: JavaExec) {
 task TDDWorks(type: JavaExec) {
     classpath kotlinClassPath
     main = 'testing3.TDDWorksKt'
+}
+
+task TailRecursiveSum(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'tailrecursion.TailRecursiveSumKt'
 }
 
 task TakeIfDeclaration(type: JavaExec) {
@@ -2073,6 +2078,11 @@ task Vars(type: JavaExec) {
     main = 'VarsKt'
 }
 
+task VerySlowFibonacci(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'slowfibonacci.VerySlowFibonacciKt'
+}
+
 task VisibleArgs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'VisibleArgsKt'
@@ -2081,6 +2091,11 @@ task VisibleArgs(type: JavaExec) {
 task WhenAndSmartCasts(type: JavaExec) {
     classpath kotlinClassPath
     main = 'smartcasts.WhenAndSmartCastsKt'
+}
+
+task While(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WhileKt'
 }
 
 task WhileLoop(type: JavaExec) {
@@ -2126,7 +2141,6 @@ task ZippingWithNext(type: JavaExec) {
 task run (dependsOn: [
     'AVarIsMutable',
     'AbstractClasses',
-    'AddCodePoints',
     'Adder',
     'AddingIntToChar',
     'AllOperators',
@@ -2166,6 +2180,7 @@ task run (dependsOn: [
     'BuildString',
     'BuildStringAndThis',
     'ByOperations',
+    'CallStack',
     'CallTopLevelFunction',
     'Cat',
     'CatchChecked',
@@ -2214,6 +2229,7 @@ task run (dependsOn: [
     'DestructuringDuo',
     'DestructuringMap',
     'Direction',
+    'DoWhile',
     'DoWhileLoop',
     'Dog',
     'EagerIteration',
@@ -2231,12 +2247,9 @@ task run (dependsOn: [
     'ExplicitWording',
     'ExpressionInTemplate',
     'ExtensionsToJavaClass',
-    'Facto',
     'Factorial',
-    'Factorials',
     'FantasyGame',
     'FaultySuitcase',
-    'Fibo',
     'Fibonacci',
     'FibonacciProperty',
     'FibonacciSequence',
@@ -2280,6 +2293,7 @@ task run (dependsOn: [
     'Hamsters',
     'HasChar',
     'HashCodeFailure',
+    'Hello',
     'HelloCoroutines',
     'HelloWorld',
     'HiddenArrayList',
@@ -2302,13 +2316,13 @@ task run (dependsOn: [
     'Indices',
     'InferInt',
     'Inference',
+    'InfiniteRecursion',
     'Info',
     'InitSection',
     'InputCheck',
     'InputLines1',
     'InputLines2',
     'IntDivisionTruncates',
-    'IntRange',
     'IntRanges',
     'IntegerMath',
     'IntegerOverflow',
@@ -2319,7 +2333,7 @@ task run (dependsOn: [
     'Invoke',
     'Iterable',
     'IterateOverString',
-    'IterateThroughString',
+    'Iteration',
     'IterationVsMembership',
     'JavaChecked',
     'JavaList',
@@ -2356,6 +2370,7 @@ task run (dependsOn: [
     'MemberImplementations',
     'MemberOperator',
     'MemberVsExtension',
+    'Membership',
     'MembershipInRange',
     'MembershipUsingBounds',
     'MixColors',
@@ -2418,7 +2433,6 @@ task run (dependsOn: [
     'Partition',
     'Perform',
     'Pets',
-    'Phi',
     'PlatformTypes',
     'Postconditions',
     'PostfixVsPrefix',
@@ -2430,7 +2444,7 @@ task run (dependsOn: [
     'Quote',
     'Quoting',
     'Random',
-    'RangeMembership',
+    'RangeOfInt',
     'RangeSum',
     'ReadOnlyCollections',
     'ReadOnlyMaps',
@@ -2438,6 +2452,7 @@ task run (dependsOn: [
     'ReadingName',
     'ReadingNameWithIf',
     'ReceiverVsParameter',
+    'RecursionConstraints',
     'RecursiveEnumImport',
     'References',
     'RegularClasses',
@@ -2481,19 +2496,20 @@ task run (dependsOn: [
     'StringIndices',
     'StringInvoke',
     'StringIsNullOr',
+    'StringIteration',
     'StringPlusNumber',
     'StringRange',
     'StringTemplates',
     'Strings',
     'Suitcase',
     'Sum',
-    'SumOfSquares',
     'SumUsingRange',
     'SumViaFold',
     'Swearing',
     'TDDFail',
     'TDDStillFails',
     'TDDWorks',
+    'TailRecursiveSum',
     'TakeIfDeclaration',
     'TakeOrDrop',
     'Team',
@@ -2537,8 +2553,10 @@ task run (dependsOn: [
     'VarargSum',
     'VariableArgLists',
     'Vars',
+    'VerySlowFibonacci',
     'VisibleArgs',
     'WhenAndSmartCasts',
+    'While',
     'WhileLoop',
     'WhyFlatMap',
     'WithCleanup',
