@@ -1,5 +1,5 @@
 // Summary2/UsingAtomicTest.kt
-import atomictest.eq
+import atomictest.*
 
 fun main(args: Array<String>) {
   val pi = 3.14
@@ -7,5 +7,5 @@ fun main(args: Array<String>) {
 
   pi eq 3.14
   pie eq "A round dessert"
-  // pie eq "Square" // Produces error
+  pie neq "Square"
 }

@@ -1,4 +1,4 @@
-// TailRecursion/TailRecursiveSum.kt
+// Recursion/TailRecursiveSum.kt
 package tailrecursion
 import atomictest.eq
 

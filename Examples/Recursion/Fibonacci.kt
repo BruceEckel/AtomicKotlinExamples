@@ -1,5 +1,5 @@
-// TailRecursion/Fibonacci.kt
-package tailrecursion
+// Recursion/Fibonacci.kt
+package recursion
 import atomictest.eq
 
 fun fibonacci(n: Int): Long {

@@ -1,4 +1,4 @@
-// TailRecursion/InfiniteRecursion.kt
+// Recursion/InfiniteRecursion.kt
 package recursion
 
 fun foo(i: Int): Int = foo(i + 1)

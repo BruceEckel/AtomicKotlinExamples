@@ -9,10 +9,10 @@ fun main(args: Array<String>) {
 
   val strings = listOf("Twas", "Brillig",
     "And", "Slithy", "Tove")
-  strings eq listOf("Twas", "Brillig", "And",
-    "Slithy", "Tove")
-  strings.sorted() eq listOf("And", "Brillig",
-    "Slithy", "Tove", "Twas")
+  strings eq listOf("Twas", "Brillig",
+    "And", "Slithy", "Tove")
+  strings.sorted() eq listOf("And",
+    "Brillig", "Slithy", "Tove", "Twas")
   strings.reversed() eq listOf("Tove",
     "Slithy", "And", "Brillig", "Twas")
   strings.first() eq "Twas"

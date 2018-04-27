@@ -5,10 +5,7 @@ import atomictest.eq
 class Counter {
   var value: Int = 0
     private set
-
-  fun inc() {
-    value++
-  }
+  fun inc() = value++
 }
 
 fun main(args: Array<String>) {

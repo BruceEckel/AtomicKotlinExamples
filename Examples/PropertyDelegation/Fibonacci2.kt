@@ -1,5 +1,5 @@
-// PropertyDelegation/Fibonacci.kt
-package recursion
+// PropertyDelegation/Fibonacci2.kt
+package propertydelegation
 import atomictest.eq
 import bigint.*
 

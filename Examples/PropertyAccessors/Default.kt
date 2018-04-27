@@ -3,12 +3,12 @@
 class Default {
   var i: Int = 0
     get() {
-      println("get() called")
-      return field       // [1]
+      println("get()")
+      return field         // [1]
     }
     set(value) {
       println("set($value)")
-      field = value      // [2]
+      field = value        // [2]
     }
 }
 
@@ -19,6 +19,6 @@ fun main(args: Array<String>) {
 }
 /* Output:
 set(2)
-get() called
+get()
 2
 */

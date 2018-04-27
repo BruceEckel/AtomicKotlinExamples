@@ -1,4 +1,4 @@
-// TailRecursion/VerySlowFibonacci.kt
+// Recursion/VerySlowFibonacci.kt
 package slowfibonacci
 import atomictest.eq
 

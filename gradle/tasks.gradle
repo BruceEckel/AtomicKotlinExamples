@@ -458,6 +458,11 @@ task Direction(type: JavaExec) {
     main = 'enumerations.DirectionKt'
 }
 
+task DisplayAlienSpieces(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DisplayAlienSpiecesKt'
+}
+
 task DoWhile(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DoWhileKt'
@@ -565,7 +570,12 @@ task FaultySuitcase(type: JavaExec) {
 
 task Fibonacci(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'tailrecursion.FibonacciKt'
+    main = 'recursion.FibonacciKt'
+}
+
+task Fibonacci2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.Fibonacci2Kt'
 }
 
 task FibonacciProperty(type: JavaExec) {
@@ -968,11 +978,6 @@ task Invoke(type: JavaExec) {
     main = 'InvokeKt'
 }
 
-task Iterable(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'IterableKt'
-}
-
 task IterateOverString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IterateOverStringKt'
@@ -1211,6 +1216,11 @@ task MultipleArgs(type: JavaExec) {
 task MultipleListRefs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MultipleListRefsKt'
+}
+
+task MultipleRef(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MultipleRefKt'
 }
 
 task MultiplyByFour(type: JavaExec) {
@@ -1496,11 +1506,6 @@ task PostfixVsPrefix(type: JavaExec) {
 task Predicates(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PredicatesKt'
-}
-
-task PrintAlienSpieces(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'PrintAlienSpiecesKt'
 }
 
 task PropertyInInterface(type: JavaExec) {
@@ -1913,11 +1918,6 @@ task ToIntException(type: JavaExec) {
     main = 'ToIntExceptionKt'
 }
 
-task ToIntException2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ToIntException2Kt'
-}
-
 task TopLevelFunctionRef(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences2.TopLevelFunctionRefKt'
@@ -2108,6 +2108,11 @@ task WhyFlatMap(type: JavaExec) {
     main = 'manipulatinglists.WhyFlatMapKt'
 }
 
+task WildAnimals(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WildAnimalsKt'
+}
+
 task WithCleanup(type: JavaExec) {
     classpath kotlinClassPath
     main = 'withfunction.WithCleanupKt'
@@ -2229,6 +2234,7 @@ task run (dependsOn: [
     'DestructuringDuo',
     'DestructuringMap',
     'Direction',
+    'DisplayAlienSpieces',
     'DoWhile',
     'DoWhileLoop',
     'Dog',
@@ -2251,6 +2257,7 @@ task run (dependsOn: [
     'FantasyGame',
     'FaultySuitcase',
     'Fibonacci',
+    'Fibonacci2',
     'FibonacciProperty',
     'FibonacciSequence',
     'Filter',
@@ -2331,7 +2338,6 @@ task run (dependsOn: [
     'IntroducingCapture',
     'IntroducingNull',
     'Invoke',
-    'Iterable',
     'IterateOverString',
     'Iteration',
     'IterationVsMembership',
@@ -2380,6 +2386,7 @@ task run (dependsOn: [
     'MoreWork',
     'MultipleArgs',
     'MultipleListRefs',
+    'MultipleRef',
     'MultiplyByFour',
     'MultiplyByThree',
     'MultiplyByTwo',
@@ -2437,7 +2444,6 @@ task run (dependsOn: [
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',
-    'PrintAlienSpieces',
     'PropertyInInterface',
     'PropertyOptions',
     'PropertyReference',
@@ -2520,7 +2526,6 @@ task run (dependsOn: [
     'ThreeQuotes',
     'TicTacToe',
     'ToIntException',
-    'ToIntException2',
     'TopLevelFunctionRef',
     'TransformingMap',
     'TrimMargin',
@@ -2559,6 +2564,7 @@ task run (dependsOn: [
     'While',
     'WhileLoop',
     'WhyFlatMap',
+    'WildAnimals',
     'WithCleanup',
     'WithDefaultArguments',
     'WithoutDefaultArguments',

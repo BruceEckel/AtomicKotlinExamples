@@ -1,4 +1,4 @@
-// TailRecursion/Iteration.kt
+// Recursion/Iteration.kt
 package iteration
 import atomictest.eq
 

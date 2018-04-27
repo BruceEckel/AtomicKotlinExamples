@@ -1,7 +1,7 @@
 // PropertyDelegation/FibonacciProperty.kt
 import atomictest.eq
 import bigint.*
-import recursion.fibonacci
+import propertydelegation.fibonacci
 import kotlin.reflect.KProperty
 
 class Fibonacci {

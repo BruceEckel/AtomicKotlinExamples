@@ -18,7 +18,6 @@ class Grid {
     listOf(Cell(), Cell(), Cell()),
     listOf(Cell(), Cell(), Cell())
   )
-
   fun play(e: Char, x: Int, y: Int): String =
     if (x < 0 || x > 2 || y < 0 || y > 2)
       "invalid move"

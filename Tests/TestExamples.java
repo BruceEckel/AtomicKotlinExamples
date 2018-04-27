@@ -1618,8 +1618,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testFibonacci() {
-    testExample("Examples/PropertyDelegation/Fibonacci.kt", recursion.FibonacciKt::main);
+  public void testFibonacci2() {
+    testExample("Examples/PropertyDelegation/Fibonacci2.kt", propertydelegation.Fibonacci2Kt::main);
   }
 
   @Test
@@ -1650,6 +1650,36 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testFactorial() {
     testExample("Examples/Recursion/Factorial.kt", recursion.FactorialKt::main);
+  }
+
+  @Test
+  public void testFibonacci() {
+    testExample("Examples/Recursion/Fibonacci.kt", recursion.FibonacciKt::main);
+  }
+
+  @Test
+  public void testInfiniteRecursion() {
+    testExample("Examples/Recursion/InfiniteRecursion.kt", recursion.InfiniteRecursionKt::main);
+  }
+
+  @Test
+  public void testIteration() {
+    testExample("Examples/Recursion/Iteration.kt", iteration.IterationKt::main);
+  }
+
+  @Test
+  public void testRecursionConstraints() {
+    testExample("Examples/Recursion/RecursionConstraints.kt", recursion.RecursionConstraintsKt::main);
+  }
+
+  @Test
+  public void testTailRecursiveSum() {
+    testExample("Examples/Recursion/TailRecursiveSum.kt", tailrecursion.TailRecursiveSumKt::main);
+  }
+
+  @Test
+  public void testVerySlowFibonacci() {
+    testExample("Examples/Recursion/VerySlowFibonacci.kt", slowfibonacci.VerySlowFibonacciKt::main);
   }
 
   @Test
@@ -1745,11 +1775,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTerminalOperations() {
     testExample("Examples/Sequences/TerminalOperations.kt", sequences.TerminalOperationsKt::main);
-  }
-
-  @Test
-  public void testIterable() {
-    testExample("Examples/Sets/Iterable.kt", IterableKt::main);
   }
 
   @Test
@@ -1908,33 +1933,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testFibonacci1() {
-    testExample("Examples/TailRecursion/Fibonacci.kt", tailrecursion.FibonacciKt::main);
-  }
-
-  @Test
-  public void testInfiniteRecursion() {
-    testExample("Examples/TailRecursion/InfiniteRecursion.kt", recursion.InfiniteRecursionKt::main);
-  }
-
-  @Test
-  public void testIteration() {
-    testExample("Examples/TailRecursion/Iteration.kt", iteration.IterationKt::main);
-  }
-
-  @Test
-  public void testRecursionConstraints() {
-    testExample("Examples/TailRecursion/RecursionConstraints.kt", recursion.RecursionConstraintsKt::main);
-  }
-
-  @Test
-  public void testTailRecursiveSum() {
-    testExample("Examples/TailRecursion/TailRecursiveSum.kt", tailrecursion.TailRecursiveSumKt::main);
-  }
-
-  @Test
-  public void testVerySlowFibonacci() {
-    testExample("Examples/TailRecursion/VerySlowFibonacci.kt", slowfibonacci.VerySlowFibonacciKt::main);
+  public void testWildAnimals() {
+    testExample("Examples/Summary2/WildAnimals.kt", WildAnimalsKt::main);
   }
 
   @Test

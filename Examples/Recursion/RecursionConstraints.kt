@@ -1,4 +1,4 @@
-// TailRecursion/RecursionConstraints.kt
+// Recursion/RecursionConstraints.kt
 package recursion
 import atomictest.eq
 
