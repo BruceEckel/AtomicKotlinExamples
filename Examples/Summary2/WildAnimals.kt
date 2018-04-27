@@ -1,17 +1,17 @@
 // Summary2/WildAnimals.kt
 import atomictest.eq
 
-class Badger(name: String, age: Int) {
-  val name = name
-  val age = age
+class Badger(id: String, years: Int) {
+  val name = id
+  val age = years
   override fun toString(): String {
     return "Badger: $name, age: $age"
   }
 }
 
 class Snake(
-  val type: String,
-  val length: Double
+  var type: String,
+  var length: Double
 ) {
   override fun toString(): String {
     return "Snake: $type, length: $length"

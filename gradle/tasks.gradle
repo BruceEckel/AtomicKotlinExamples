@@ -198,6 +198,11 @@ task Booleans3(type: JavaExec) {
     main = 'Booleans3Kt'
 }
 
+task Boxes(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BoxesKt'
+}
+
 task BuildString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BuildStringKt'
@@ -1001,6 +1006,11 @@ task JavaChecked(type: JavaExec) {
 task JavaList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'JavaListKt'
+}
+
+task JetPack(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'JetPackKt'
 }
 
 task JoinToString(type: JavaExec) {
@@ -2182,6 +2192,7 @@ task run (dependsOn: [
     'Booleans1',
     'Booleans2',
     'Booleans3',
+    'Boxes',
     'BuildString',
     'BuildStringAndThis',
     'ByOperations',
@@ -2343,6 +2354,7 @@ task run (dependsOn: [
     'IterationVsMembership',
     'JavaChecked',
     'JavaList',
+    'JetPack',
     'JoinToString',
     'JoiningToString',
     'JoiningToString2',

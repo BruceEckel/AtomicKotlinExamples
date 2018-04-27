@@ -1903,8 +1903,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testBoxes() {
+    testExample("Examples/Summary2/Boxes.kt", BoxesKt::main);
+  }
+
+  @Test
   public void testClassBodies() {
     testExample("Examples/Summary2/ClassBodies.kt", ClassBodiesKt::main);
+  }
+
+  @Test
+  public void testJetPack() {
+    testExample("Examples/Summary2/JetPack.kt", JetPackKt::main);
   }
 
   @Test
