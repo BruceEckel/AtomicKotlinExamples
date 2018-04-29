@@ -1903,6 +1903,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAtomicTestCapture() {
+    testExample("Examples/Summary2/AtomicTestCapture.kt", AtomicTestCaptureKt::main);
+  }
+
+  @Test
   public void testBoxes() {
     testExample("Examples/Summary2/Boxes.kt", BoxesKt::main);
   }
@@ -1910,6 +1915,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testClassBodies() {
     testExample("Examples/Summary2/ClassBodies.kt", ClassBodiesKt::main);
+  }
+
+  @Test
+  public void testExplicitTyping() {
+    testExample("Examples/Summary2/ExplicitTyping.kt", ExplicitTypingKt::main);
   }
 
   @Test
@@ -1923,6 +1933,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testListOfStrings() {
+    testExample("Examples/Summary2/ListOfStrings.kt", ListOfStringsKt::main);
+  }
+
+  @Test
+  public void testMustableVsImmutableList() {
+    testExample("Examples/Summary2/MustableVsImmutableList.kt", MustableVsImmutableListKt::main);
+  }
+
+  @Test
+  public void testQuadratic() {
+    testExample("Examples/Summary2/Quadratic.kt", QuadraticKt::main);
+  }
+
+  @Test
   public void testTemperature() {
     testExample("Examples/Summary2/Temperature.kt", TemperatureKt::main);
   }
@@ -1930,6 +1955,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTicTacToe() {
     testExample("Examples/Summary2/TicTacToe.kt", TicTacToeKt::main);
+  }
+
+  @Test
+  public void testToDoubleException() {
+    testExample("Examples/Summary2/ToDoubleException.kt", ToDoubleExceptionKt::main);
   }
 
   @Test

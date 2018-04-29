@@ -8,14 +8,14 @@ fun main(args: Array<String>) {
   doubles.max() eq 4.4
 
   val strings = listOf("Twas", "Brillig",
-    "And", "Slithy", "Tove")
+    "And", "Slithy", "Toves")
   strings eq listOf("Twas", "Brillig",
-    "And", "Slithy", "Tove")
+    "And", "Slithy", "Toves")
   strings.sorted() eq listOf("And",
-    "Brillig", "Slithy", "Tove", "Twas")
-  strings.reversed() eq listOf("Tove",
+    "Brillig", "Slithy", "Toves", "Twas")
+  strings.reversed() eq listOf("Toves",
     "Slithy", "And", "Brillig", "Twas")
   strings.first() eq "Twas"
   strings.takeLast(2) eq
-    listOf("Slithy", "Tove")
+    listOf("Slithy", "Toves")
 }

@@ -113,6 +113,11 @@ task AssociateBy(type: JavaExec) {
     main = 'fromliststomaps2.AssociateByKt'
 }
 
+task AtomicTestCapture(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AtomicTestCaptureKt'
+}
+
 task AuxiliaryInit(type: JavaExec) {
     classpath kotlinClassPath
     main = 'baseinit.AuxiliaryInitKt'
@@ -541,6 +546,11 @@ task ExplicitCheck(type: JavaExec) {
 task ExplicitDelegation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExplicitDelegationKt'
+}
+
+task ExplicitTyping(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ExplicitTypingKt'
 }
 
 task ExplicitWording(type: JavaExec) {
@@ -1118,6 +1128,11 @@ task ListOf(type: JavaExec) {
     main = 'ListOfKt'
 }
 
+task ListOfStrings(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ListOfStringsKt'
+}
+
 task ListUsefulFunction(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ListUsefulFunctionKt'
@@ -1246,6 +1261,11 @@ task MultiplyByThree(type: JavaExec) {
 task MultiplyByTwo(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MultiplyByTwoKt'
+}
+
+task MustableVsImmutableList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MustableVsImmutableListKt'
 }
 
 task MutListIsList(type: JavaExec) {
@@ -1531,6 +1551,11 @@ task PropertyOptions(type: JavaExec) {
 task PropertyReference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences1.PropertyReferenceKt'
+}
+
+task Quadratic(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'QuadraticKt'
 }
 
 task Quote(type: JavaExec) {
@@ -1923,6 +1948,11 @@ task TicTacToe(type: JavaExec) {
     main = 'TicTacToeKt'
 }
 
+task ToDoubleException(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ToDoubleExceptionKt'
+}
+
 task ToIntException(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ToIntExceptionKt'
@@ -2175,6 +2205,7 @@ task run (dependsOn: [
     'AssigningAnIf',
     'AssignmentOperators',
     'AssociateBy',
+    'AtomicTestCapture',
     'AuxiliaryInit',
     'AverageIncome',
     'AverageIncomeWithException',
@@ -2261,6 +2292,7 @@ task run (dependsOn: [
     'ExceptionHandlers',
     'ExplicitCheck',
     'ExplicitDelegation',
+    'ExplicitTyping',
     'ExplicitWording',
     'ExpressionInTemplate',
     'ExtensionsToJavaClass',
@@ -2376,6 +2408,7 @@ task run (dependsOn: [
     'ListIndices',
     'ListIndicesMap',
     'ListOf',
+    'ListOfStrings',
     'ListUsefulFunction',
     'Lists',
     'LocalExtensions',
@@ -2402,6 +2435,7 @@ task run (dependsOn: [
     'MultiplyByFour',
     'MultiplyByThree',
     'MultiplyByTwo',
+    'MustableVsImmutableList',
     'MutListIsList',
     'MutableList',
     'MutableMaps',
@@ -2459,6 +2493,7 @@ task run (dependsOn: [
     'PropertyInInterface',
     'PropertyOptions',
     'PropertyReference',
+    'Quadratic',
     'Quote',
     'Quoting',
     'Random',
@@ -2537,6 +2572,7 @@ task run (dependsOn: [
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
+    'ToDoubleException',
     'ToIntException',
     'TopLevelFunctionRef',
     'TransformingMap',
