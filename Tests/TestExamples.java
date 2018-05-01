@@ -1903,6 +1903,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testArraySpread() {
+    testExample("Examples/Summary2/ArraySpread.kt", ArraySpreadKt::main);
+  }
+
+  @Test
   public void testAtomicTestCapture() {
     testExample("Examples/Summary2/AtomicTestCapture.kt", AtomicTestCaptureKt::main);
   }
@@ -1970,6 +1975,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsingAtomicTest() {
     testExample("Examples/Summary2/UsingAtomicTest.kt", UsingAtomicTestKt::main);
+  }
+
+  @Test
+  public void testVarArgs() {
+    testExample("Examples/Summary2/VarArgs.kt", VarArgsKt::main);
   }
 
   @Test

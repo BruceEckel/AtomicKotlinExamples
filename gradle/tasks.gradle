@@ -88,6 +88,11 @@ task ArgumentOrder(type: JavaExec) {
     main = 'namedanddefaultargs1.ArgumentOrderKt'
 }
 
+task ArraySpread(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ArraySpreadKt'
+}
+
 task AssertTrue(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AssertTrueKt'
@@ -2098,6 +2103,11 @@ task ValueFromMap(type: JavaExec) {
     main = 'ValueFromMapKt'
 }
 
+task VarArgs(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'VarArgsKt'
+}
+
 task VarargLikeList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'VarargLikeListKt'
@@ -2200,6 +2210,7 @@ task run (dependsOn: [
     'ApplyVsAlso',
     'Arg',
     'ArgumentOrder',
+    'ArraySpread',
     'AssertTrue',
     'AssignAnonymous',
     'AssigningAnIf',
@@ -2602,6 +2613,7 @@ task run (dependsOn: [
     'UsingWith',
     'Vals',
     'ValueFromMap',
+    'VarArgs',
     'VarargLikeList',
     'VarargSum',
     'VariableArgLists',
