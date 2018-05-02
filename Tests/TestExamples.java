@@ -1923,6 +1923,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testColorSet() {
+    testExample("Examples/Summary2/ColorSet.kt", ColorSetKt::main);
+  }
+
+  @Test
   public void testExplicitTyping() {
     testExample("Examples/Summary2/ExplicitTyping.kt", ExplicitTypingKt::main);
   }

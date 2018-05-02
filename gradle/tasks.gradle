@@ -308,6 +308,11 @@ task ColorBlendTest(type: JavaExec) {
     main = 'colorblendtest.ColorBlendTestKt'
 }
 
+task ColorSet(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ColorSetKt'
+}
+
 task CompanionFactory(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjects.CompanionFactoryKt'
@@ -2254,6 +2259,7 @@ task run (dependsOn: [
     'Coffee',
     'ColorBlendMap2',
     'ColorBlendTest',
+    'ColorSet',
     'CompanionFactory',
     'CompanionObject',
     'CompareDelayingTask',
