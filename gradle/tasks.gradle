@@ -8,6 +8,11 @@ dependencies {
 
 def kotlinClassPath = configurations.kotlinRuntime + sourceSets.main.runtimeClasspath
 
+task ASCIIMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ASCIIMapKt'
+}
+
 task AVarIsMutable(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AVarIsMutableKt'
@@ -751,6 +756,11 @@ task GetOrPut(type: JavaExec) {
 task GetValue(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GetValueKt'
+}
+
+task GettersAndSetter(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'summary2.GettersAndSetterKt'
 }
 
 task GoodAlien(type: JavaExec) {
@@ -1558,6 +1568,11 @@ task PropertyOptions(type: JavaExec) {
     main = 'lazyinitialization.PropertyOptionsKt'
 }
 
+task PropertyReadWrite(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'summary2.PropertyReadWriteKt'
+}
+
 task PropertyReference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences1.PropertyReferenceKt'
@@ -2199,6 +2214,7 @@ task ZippingWithNext(type: JavaExec) {
 }
 
 task run (dependsOn: [
+    'ASCIIMap',
     'AVarIsMutable',
     'AbstractClasses',
     'Adder',
@@ -2348,6 +2364,7 @@ task run (dependsOn: [
     'GermanOrdinals',
     'GetOrPut',
     'GetValue',
+    'GettersAndSetter',
     'GoodAlien',
     'GreatApe',
     'GreatApe2',
@@ -2509,6 +2526,7 @@ task run (dependsOn: [
     'Predicates',
     'PropertyInInterface',
     'PropertyOptions',
+    'PropertyReadWrite',
     'PropertyReference',
     'Quadratic',
     'Quote',

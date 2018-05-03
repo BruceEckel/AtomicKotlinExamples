@@ -1908,6 +1908,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testASCIIMap() {
+    testExample("Examples/Summary2/ASCIIMap.kt", ASCIIMapKt::main);
+  }
+
+  @Test
   public void testAtomicTestCapture() {
     testExample("Examples/Summary2/AtomicTestCapture.kt", AtomicTestCaptureKt::main);
   }
@@ -1933,6 +1938,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testGettersAndSetter() {
+    testExample("Examples/Summary2/GettersAndSetter.kt", summary2.GettersAndSetterKt::main);
+  }
+
+  @Test
   public void testJetPack() {
     testExample("Examples/Summary2/JetPack.kt", JetPackKt::main);
   }
@@ -1950,6 +1960,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testMustableVsImmutableList() {
     testExample("Examples/Summary2/MustableVsImmutableList.kt", MustableVsImmutableListKt::main);
+  }
+
+  @Test
+  public void testPropertyReadWrite() {
+    testExample("Examples/Summary2/PropertyReadWrite.kt", summary2.PropertyReadWriteKt::main);
   }
 
   @Test
