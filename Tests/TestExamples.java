@@ -1258,13 +1258,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testJoiningToString() {
-    testExample("Examples/NamedAndDefaultArgs/JoiningToString.kt", JoiningToStringKt::main);
+  public void testCreateString() {
+    testExample("Examples/NamedAndDefaultArgs/CreateString.kt", CreateStringKt::main);
   }
 
   @Test
-  public void testJoiningToString2() {
-    testExample("Examples/NamedAndDefaultArgs/JoiningToString2.kt", JoiningToString2Kt::main);
+  public void testCreateString2() {
+    testExample("Examples/NamedAndDefaultArgs/CreateString2.kt", CreateString2Kt::main);
   }
 
   @Test

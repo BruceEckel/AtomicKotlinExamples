@@ -388,6 +388,16 @@ task Counter(type: JavaExec) {
     main = 'propertyaccessors.CounterKt'
 }
 
+task CreateString(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CreateStringKt'
+}
+
+task CreateString2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'CreateString2Kt'
+}
+
 task CreatingLists(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CreatingListsKt'
@@ -1046,16 +1056,6 @@ task JetPack(type: JavaExec) {
 task JoinToString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'JoinToStringKt'
-}
-
-task JoiningToString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'JoiningToStringKt'
-}
-
-task JoiningToString2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'JoiningToString2Kt'
 }
 
 task KeyFailure(type: JavaExec) {
@@ -2290,6 +2290,8 @@ task run (dependsOn: [
     'Cookie',
     'CopyDataClass',
     'Counter',
+    'CreateString',
+    'CreateString2',
     'CreatingLists',
     'Cup',
     'Cup2',
@@ -2422,8 +2424,6 @@ task run (dependsOn: [
     'JavaList',
     'JetPack',
     'JoinToString',
-    'JoiningToString',
-    'JoiningToString2',
     'KeyFailure',
     'KotlinChecked',
     'LabeledReturn',

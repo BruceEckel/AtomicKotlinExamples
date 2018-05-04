@@ -1,4 +1,4 @@
-// NamedAndDefaultArgs/JoiningToString2.kt
+// NamedAndDefaultArgs/CreateString2.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {

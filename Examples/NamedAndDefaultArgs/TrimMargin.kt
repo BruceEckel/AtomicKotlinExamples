@@ -3,13 +3,13 @@ import atomictest.eq
 
 fun main(args: Array<String>) {
   val poem = """
-    |I went down to the river,
-    |I sat down on the bank.
-    |I tried to think but couldn't,
-    |So I jumped in and sank.""".trimMargin()
+    |Last night I saw upon the stair
+          |A little man who wasn't there
+                |He wasn't there again today
+|Oh, how I wish he'd go away.""".trimMargin()
   poem eq
-"""I went down to the river,
-I sat down on the bank.
-I tried to think but couldn't,
-So I jumped in and sank."""
+"""Last night I saw upon the stair
+A little man who wasn't there
+He wasn't there again today
+Oh, how I wish he'd go away."""
 }
