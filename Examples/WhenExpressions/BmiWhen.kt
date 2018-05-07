@@ -25,5 +25,5 @@ fun getBmiStatusWithWhen(
 
 fun main(args: Array<String>) {
   getBmiStatusOld(72.57, 1.727) eq
-    getBmiStatusWithWhen(72.57, 1.727)
+  getBmiStatusWithWhen(72.57, 1.727)
 }

@@ -16,4 +16,7 @@ fun main(args: Array<String>) {
     listOf("abc", "ahh")
   strings.filter { it.first() == 'b' } eq
     listOf()
+
+  strings.partition { it.first() == 'a' } eq
+    "([abc, ahh], [never])"
 }

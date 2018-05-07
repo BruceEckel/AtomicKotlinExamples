@@ -1,7 +1,7 @@
 // ExtensionFunctions/BookExtensions.kt
 import atomictest.eq
 
-data class Book(val title: String)
+class Book(val title: String)
 
 fun Book.categorize(category: String) =
   """title: "$title", category: $category"""

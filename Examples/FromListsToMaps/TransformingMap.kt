@@ -7,8 +7,8 @@ fun main(args: Array<String>) {
     "${entry.key}=${entry.value}"
   } eq listOf("2=two", "4=four")
 
-  even.map { (key, value) ->
-    "$key=$value"                       // [2]
+  even.map { (key, value) ->            // [2]
+    "$key=$value"
   } eq listOf("2=two", "4=four")
 
   even.mapKeys { (num, _) -> -num }     // [3]

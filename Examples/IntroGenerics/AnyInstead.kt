@@ -1,5 +1,5 @@
-// IntroToGenerics/AnyInstead.kt
-package introtogenerics
+// IntroGenerics/AnyInstead.kt
+package introgenerics
 import atomictest.eq
 
 class AnyHolder(private val value: Any) {

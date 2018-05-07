@@ -1,9 +1,10 @@
 // FromListsToMaps/GroupBy.kt
-package fromliststomaps1
+package fromliststomaps
 import atomictest.eq
 
 data class Person(
-  val name: String, val age: Int
+  val name: String,
+  val age: Int
 )
 
 fun main(args: Array<String>) {

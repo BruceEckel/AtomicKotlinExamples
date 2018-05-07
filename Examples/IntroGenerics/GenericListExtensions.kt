@@ -1,5 +1,5 @@
-// IntroToGenerics/GenericListExtensions.kt
-package introtogenerics
+// IntroGenerics/GenericListExtensions.kt
+package introgenerics
 import atomictest.eq
 
 fun <T> List<T>.first(): T {

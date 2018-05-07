@@ -13,9 +13,8 @@ fun main(args: Array<String>) {
   val coordinates = Coordinates(0, 0)
   while (true) {
     println("Your coordinates: $coordinates")
-    println("Where do you move?")
-    val choice = readLine()            // [1]
-    when (choice) {
+    println("Where do you want to move?")
+    when (readLine()) {                // [1]
       "up", "u" -> coordinates.y--     // [2]
       "down", "d" -> coordinates.y++
       "left", "l" -> coordinates.x--
@@ -34,15 +33,15 @@ Welcome! Type 'up', 'down',
 'left', 'right' or 'nowhere' to move;
 'exit' to exit.
 Your coordinates: (0, 0)
-Where do you move?
+Where do you want to move?
 >>> right
 Your coordinates: (1, 0)
-Where do you move?
+Where do you want to move?
 >>> d
 Your coordinates: (1, 1)
-Where do you move?
+Where do you want to move?
 >>> nowhere
 Your coordinates: (1, 1)
-Where do you move?
+Where do you want to move?
 >>> exit
 */

@@ -2,7 +2,8 @@
 import atomictest.eq
 
 fun main(args: Array<String>) {
-  val list = listOf(listOf(1, 2, 3),
+  val list = listOf(
+    listOf(1, 2, 3),
     listOf(4, 5, 6))
   list.flatten() eq listOf(1, 2, 3, 4, 5, 6)
 }

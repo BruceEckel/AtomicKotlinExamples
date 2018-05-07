@@ -63,6 +63,11 @@ task AnonymousFunction(type: JavaExec) {
     main = 'anonymousFunctions.AnonymousFunctionKt'
 }
 
+task AnyFromListOfStar(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionproperties.AnyFromListOfStarKt'
+}
+
 task AnyFunImplementation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnyFunImplementationKt'
@@ -70,7 +75,7 @@ task AnyFunImplementation(type: JavaExec) {
 
 task AnyInstead(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'introtogenerics.AnyInsteadKt'
+    main = 'introgenerics.AnyInsteadKt'
 }
 
 task ApplyIfNotNull(type: JavaExec) {
@@ -103,11 +108,6 @@ task AssertTrue(type: JavaExec) {
     main = 'AssertTrueKt'
 }
 
-task AssignAnonymous(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'AssignAnonymousKt'
-}
-
 task AssigningAnIf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AssigningAnIfKt'
@@ -120,7 +120,7 @@ task AssignmentOperators(type: JavaExec) {
 
 task AssociateBy(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'fromliststomaps2.AssociateByKt'
+    main = 'fromliststomaps.AssociateByKt'
 }
 
 task AtomicTestCapture(type: JavaExec) {
@@ -166,6 +166,11 @@ task BasicFunctions(type: JavaExec) {
 task BasicGenerics(type: JavaExec) {
     classpath kotlinClassPath
     main = 'generics.BasicGenericsKt'
+}
+
+task BasicLambda(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BasicLambdaKt'
 }
 
 task BasicLogging(type: JavaExec) {
@@ -296,6 +301,11 @@ task Closures(type: JavaExec) {
 task Closures2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'Closures2Kt'
+}
+
+task Closures3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Closures3Kt'
 }
 
 task Coffee(type: JavaExec) {
@@ -648,11 +658,6 @@ task FilteringMap(type: JavaExec) {
     main = 'FilteringMapKt'
 }
 
-task FirstExample(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FirstExampleKt'
-}
-
 task Flatten(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FlattenKt'
@@ -730,12 +735,12 @@ task GardenGnome(type: JavaExec) {
 
 task GenericFunction(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'introtogenerics.GenericFunctionKt'
+    main = 'introgenerics.GenericFunctionKt'
 }
 
 task GenericHolder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'introtogenerics.GenericHolderKt'
+    main = 'introgenerics.GenericHolderKt'
 }
 
 task GenericListExt(type: JavaExec) {
@@ -745,7 +750,7 @@ task GenericListExt(type: JavaExec) {
 
 task GenericListExtensions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'introtogenerics.GenericListExtensionsKt'
+    main = 'introgenerics.GenericListExtensionsKt'
 }
 
 task GenericSpeakers(type: JavaExec) {
@@ -800,7 +805,7 @@ task GreaterThan2(type: JavaExec) {
 
 task GroupBy(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'fromliststomaps1.GroupByKt'
+    main = 'fromliststomaps.GroupByKt'
 }
 
 task GroupByVsFilter(type: JavaExec) {
@@ -931,11 +936,6 @@ task IncrementOperator(type: JavaExec) {
 task IndexIntoString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IndexIntoStringKt'
-}
-
-task Indices(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionproperties.IndicesKt'
 }
 
 task InferInt(type: JavaExec) {
@@ -1133,11 +1133,6 @@ task ListCollection(type: JavaExec) {
     main = 'ListCollectionKt'
 }
 
-task ListIndices(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionproperties.ListIndicesKt'
-}
-
 task ListIndicesMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ListIndicesMapKt'
@@ -1146,6 +1141,11 @@ task ListIndicesMap(type: JavaExec) {
 task ListOf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ListOfKt'
+}
+
+task ListOfStar(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionproperties.ListOfStarKt'
 }
 
 task ListOfStrings(type: JavaExec) {
@@ -1366,6 +1366,11 @@ task NullableFunctionType(type: JavaExec) {
 task NullableInMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NullableInMapKt'
+}
+
+task NullableParameter(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'NullableParameterKt'
 }
 
 task NullableReceiver(type: JavaExec) {
@@ -1633,11 +1638,6 @@ task ReadingNameWithIf(type: JavaExec) {
     main = 'ReadingNameWithIfKt'
 }
 
-task ReceiverVsParameter(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ReceiverVsParameterKt'
-}
-
 task RecursionConstraints(type: JavaExec) {
     classpath kotlinClassPath
     main = 'recursion.RecursionConstraintsKt'
@@ -1673,14 +1673,14 @@ task Repeat(type: JavaExec) {
     main = 'RepeatKt'
 }
 
-task RepeatDeclaration(type: JavaExec) {
+task RepeatByInt(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'repeatdeclaration.RepeatDeclarationKt'
+    main = 'RepeatByIntKt'
 }
 
-task RepeatExample(type: JavaExec) {
+task RepeatDefinition(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'RepeatExampleKt'
+    main = 'repeatdeclaration.RepeatDefinitionKt'
 }
 
 task RepeatThreeTimes(type: JavaExec) {
@@ -1725,7 +1725,7 @@ task ReturnFromLambda(type: JavaExec) {
 
 task RigidHolder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'introtogenerics.RigidHolderKt'
+    main = 'introgenerics.RigidHolderKt'
 }
 
 task STUB(type: JavaExec) {
@@ -2198,6 +2198,11 @@ task WithoutDefaultArguments(type: JavaExec) {
     main = 'WithoutDefaultArgumentsKt'
 }
 
+task ZeroArguments(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ZeroArgumentsKt'
+}
+
 task ZipAndTransform(type: JavaExec) {
     classpath kotlinClassPath
     main = 'manipulatinglists.ZipAndTransformKt'
@@ -2225,6 +2230,7 @@ task run (dependsOn: [
     'Animals',
     'AnnotatedJava',
     'AnonymousFunction',
+    'AnyFromListOfStar',
     'AnyFunImplementation',
     'AnyInstead',
     'ApplyIfNotNull',
@@ -2233,7 +2239,6 @@ task run (dependsOn: [
     'ArgumentOrder',
     'ArraySpread',
     'AssertTrue',
-    'AssignAnonymous',
     'AssigningAnIf',
     'AssignmentOperators',
     'AssociateBy',
@@ -2246,6 +2251,7 @@ task run (dependsOn: [
     'Backticks',
     'BasicFunctions',
     'BasicGenerics',
+    'BasicLambda',
     'BasicLogging',
     'BetterSuitcase',
     'BiggestLong',
@@ -2272,6 +2278,7 @@ task run (dependsOn: [
     'Cleanup2',
     'Closures',
     'Closures2',
+    'Closures3',
     'Coffee',
     'ColorBlendMap2',
     'ColorBlendTest',
@@ -2342,7 +2349,6 @@ task run (dependsOn: [
     'FilterEven',
     'FilterNotNull',
     'FilteringMap',
-    'FirstExample',
     'Flatten',
     'FlattenAndFlatMap',
     'FloatingPointRange',
@@ -2399,7 +2405,6 @@ task run (dependsOn: [
     'InString',
     'IncrementOperator',
     'IndexIntoString',
-    'Indices',
     'InferInt',
     'Inference',
     'InfiniteRecursion',
@@ -2439,9 +2444,9 @@ task run (dependsOn: [
     'LetNotNull',
     'Level',
     'ListCollection',
-    'ListIndices',
     'ListIndicesMap',
     'ListOf',
+    'ListOfStar',
     'ListOfStrings',
     'ListUsefulFunction',
     'Lists',
@@ -2486,6 +2491,7 @@ task run (dependsOn: [
     'NullInMaps',
     'NullableFunctionType',
     'NullableInMap',
+    'NullableParameter',
     'NullableReceiver',
     'NullableReturnType',
     'NullableTypes',
@@ -2539,7 +2545,6 @@ task run (dependsOn: [
     'ReadTraceFile',
     'ReadingName',
     'ReadingNameWithIf',
-    'ReceiverVsParameter',
     'RecursionConstraints',
     'RecursiveEnumImport',
     'References',
@@ -2547,8 +2552,8 @@ task run (dependsOn: [
     'RegularLambda',
     'RemoveDuplicates',
     'Repeat',
-    'RepeatDeclaration',
-    'RepeatExample',
+    'RepeatByInt',
+    'RepeatDefinition',
     'RepeatThreeTimes',
     'RepeatVerbose',
     'RequireNotNull',
@@ -2652,6 +2657,7 @@ task run (dependsOn: [
     'WithCleanup',
     'WithDefaultArguments',
     'WithoutDefaultArguments',
+    'ZeroArguments',
     'ZipAndTransform',
     'Zipper',
     'ZippingWithNext'

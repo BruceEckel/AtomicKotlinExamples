@@ -2,8 +2,10 @@
 package usingoperators
 import atomictest.eq
 
-data class
-Person(val name: String, val age: Int) {
+data class Person(
+  val name: String,
+  val age: Int
+) {
   // Compiler generates:
   // fun component1() = name
   // fun component2() = age

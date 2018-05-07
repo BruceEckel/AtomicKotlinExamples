@@ -1,4 +1,4 @@
-// ExtensionProperties/Indices.kt
+// ExtensionProperties/AnyFromListOfStar.kt
 package extensionproperties
 import atomictest.eq
 

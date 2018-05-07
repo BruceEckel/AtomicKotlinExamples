@@ -7,5 +7,5 @@ enum class Level {
 }
 
 fun main(args: Array<String>) {
-  Level.Medium.toString() eq "Medium"
+  Level.Medium eq "Medium"
 }

@@ -2,7 +2,9 @@
 import atomictest.eq
 
 data class ComputationResult(
-  val data: Int, val info: String)
+  val data: Int,
+  val info: String
+)
 
 fun compute3(input: Int) =
   if (input > 5)

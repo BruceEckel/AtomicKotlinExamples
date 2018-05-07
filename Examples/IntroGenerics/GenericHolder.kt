@@ -1,5 +1,5 @@
-// IntroToGenerics/GenericHolder.kt
-package introtogenerics
+// IntroGenerics/GenericHolder.kt
+package introgenerics
 import atomictest.eq
 
 class GenericHolder<T>(              // [1]

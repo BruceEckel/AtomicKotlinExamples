@@ -15,6 +15,5 @@ fun main(args: Array<String>) {
   val unread =
     messages.filterNot(Message::isRead)
   unread.size eq 1
-  unread.single().text eq
-    "Where are you?"
+  unread.single().text eq "Where are you?"
 }

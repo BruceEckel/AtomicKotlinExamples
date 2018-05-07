@@ -1,5 +1,5 @@
-// IntroToGenerics/RigidHolder.kt
-package introtogenerics
+// IntroGenerics/RigidHolder.kt
+package introgenerics
 import atomictest.eq
 
 data class Automobile(val brand: String)

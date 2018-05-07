@@ -2,7 +2,7 @@
 import atomictest.eq
 
 fun main(args: Array<String>) {
-  // Index is passed as lambda argument:
+  // The lambda argument is the element index:
   val list1 = List(10) { it }
   list1 eq "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
 

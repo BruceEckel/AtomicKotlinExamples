@@ -433,18 +433,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAnyFromListOfStar() {
+    testExample("Examples/ExtensionProperties/AnyFromListOfStar.kt", extensionproperties.AnyFromListOfStarKt::main);
+  }
+
+  @Test
   public void testGenericListExt() {
     testExample("Examples/ExtensionProperties/GenericListExt.kt", extensionproperties.GenericListExtKt::main);
   }
 
   @Test
-  public void testIndices() {
-    testExample("Examples/ExtensionProperties/Indices.kt", extensionproperties.IndicesKt::main);
-  }
-
-  @Test
-  public void testListIndices() {
-    testExample("Examples/ExtensionProperties/ListIndices.kt", extensionproperties.ListIndicesKt::main);
+  public void testListOfStar() {
+    testExample("Examples/ExtensionProperties/ListOfStar.kt", extensionproperties.ListOfStarKt::main);
   }
 
   @Test
@@ -539,7 +539,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAssociateBy() {
-    testExample("Examples/FromListsToMaps/AssociateBy.kt", fromliststomaps2.AssociateByKt::main);
+    testExample("Examples/FromListsToMaps/AssociateBy.kt", fromliststomaps.AssociateByKt::main);
   }
 
   @Test
@@ -554,7 +554,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testGroupBy() {
-    testExample("Examples/FromListsToMaps/GroupBy.kt", fromliststomaps1.GroupByKt::main);
+    testExample("Examples/FromListsToMaps/GroupBy.kt", fromliststomaps.GroupByKt::main);
   }
 
   @Test
@@ -613,13 +613,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testRepeatDeclaration() {
-    testExample("Examples/FunctionTypes/RepeatDeclaration.kt", repeatdeclaration.RepeatDeclarationKt::main);
+  public void testRepeatByInt() {
+    testExample("Examples/FunctionTypes/RepeatByInt.kt", RepeatByIntKt::main);
   }
 
   @Test
-  public void testRepeatExample() {
-    testExample("Examples/FunctionTypes/RepeatExample.kt", RepeatExampleKt::main);
+  public void testRepeatDefinition() {
+    testExample("Examples/FunctionTypes/RepeatDefinition.kt", repeatdeclaration.RepeatDefinitionKt::main);
   }
 
   @Test
@@ -763,6 +763,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testClosures3() {
+    testExample("Examples/ImportanceOfLambdas/Closures3.kt", Closures3Kt::main);
+  }
+
+  @Test
   public void testFilter() {
     testExample("Examples/ImportanceOfLambdas/Filter.kt", FilterKt::main);
   }
@@ -879,37 +884,32 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAnyInstead() {
-    testExample("Examples/IntroToGenerics/AnyInstead.kt", introtogenerics.AnyInsteadKt::main);
+    testExample("Examples/IntroGenerics/AnyInstead.kt", introgenerics.AnyInsteadKt::main);
   }
 
   @Test
   public void testGenericFunction() {
-    testExample("Examples/IntroToGenerics/GenericFunction.kt", introtogenerics.GenericFunctionKt::main);
+    testExample("Examples/IntroGenerics/GenericFunction.kt", introgenerics.GenericFunctionKt::main);
   }
 
   @Test
   public void testGenericHolder() {
-    testExample("Examples/IntroToGenerics/GenericHolder.kt", introtogenerics.GenericHolderKt::main);
+    testExample("Examples/IntroGenerics/GenericHolder.kt", introgenerics.GenericHolderKt::main);
   }
 
   @Test
   public void testGenericListExtensions() {
-    testExample("Examples/IntroToGenerics/GenericListExtensions.kt", introtogenerics.GenericListExtensionsKt::main);
+    testExample("Examples/IntroGenerics/GenericListExtensions.kt", introgenerics.GenericListExtensionsKt::main);
   }
 
   @Test
   public void testRigidHolder() {
-    testExample("Examples/IntroToGenerics/RigidHolder.kt", introtogenerics.RigidHolderKt::main);
+    testExample("Examples/IntroGenerics/RigidHolder.kt", introgenerics.RigidHolderKt::main);
   }
 
   @Test
-  public void testAssignAnonymous() {
-    testExample("Examples/Lambdas/AssignAnonymous.kt", AssignAnonymousKt::main);
-  }
-
-  @Test
-  public void testFirstExample() {
-    testExample("Examples/Lambdas/FirstExample.kt", FirstExampleKt::main);
+  public void testBasicLambda() {
+    testExample("Examples/Lambdas/BasicLambda.kt", BasicLambdaKt::main);
   }
 
   @Test
@@ -955,6 +955,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUnderscore() {
     testExample("Examples/Lambdas/Underscore.kt", UnderscoreKt::main);
+  }
+
+  @Test
+  public void testZeroArguments() {
+    testExample("Examples/Lambdas/ZeroArguments.kt", ZeroArgumentsKt::main);
   }
 
   @Test
@@ -1308,8 +1313,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testReceiverVsParameter() {
-    testExample("Examples/NullableExtensions/ReceiverVsParameter.kt", ReceiverVsParameterKt::main);
+  public void testNullableParameter() {
+    testExample("Examples/NullableExtensions/NullableParameter.kt", NullableParameterKt::main);
   }
 
   @Test

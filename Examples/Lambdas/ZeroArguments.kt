@@ -1,4 +1,4 @@
-// Lambdas/AssignAnonymous.kt
+// Lambdas/ZeroArguments.kt
 import atomictest.eq
 
 fun main(args: Array<String>) {

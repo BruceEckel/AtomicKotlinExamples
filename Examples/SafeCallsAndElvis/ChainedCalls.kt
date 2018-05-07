@@ -4,22 +4,18 @@ import atomictest.eq
 
 class Person(
   val name: String,
-  var bestFriend: Person? = null
+  var friend: Person? = null
 )
 
 fun main(args: Array<String>) {
   val alice = Person("Alice")
-
-  alice.bestFriend
-    ?.bestFriend?.name eq null         // [1]
+  alice.friend?.friend?.name eq null  // [1]
 
   val bob = Person("Bob")
   val charlie = Person("Charlie", bob)
-  bob.bestFriend = charlie
+  bob.friend = charlie
+  bob.friend?.friend?.name eq "Bob"   // [2]
 
-  bob.bestFriend
-    ?.bestFriend?.name eq "Bob"        // [2]
-
-  (alice.bestFriend?.bestFriend?.name
-    ?: "Unknown") eq "Unknown"         // [3]
+  (alice.friend?.friend?.name
+    ?: "Unknown") eq "Unknown"        // [3]
 }

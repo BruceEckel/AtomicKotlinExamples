@@ -10,6 +10,7 @@ fun mixColors(first: String, second: String) =
   }
 
 fun main(args: Array<String>) {
+  mixColors("red", "blue") eq "purple"
   mixColors("blue", "red") eq "purple"
   mixColors("blue", "purple") eq "unknown"
 }
