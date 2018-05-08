@@ -3,16 +3,26 @@ package fromliststomaps
 import atomictest.eq
 
 fun main(args: Array<String>) {
-  val people = listOf(Person("Alice", 21),
-    Person("Bob", 25), Person("Charlie", 25))
-
   val map: Map<String, Person> =
-    people.associateBy { it.name }
-  map["Alice"] eq Person("Alice", 21)
+    people().associateBy { it.name }
+  map eq mapOf(
+    "Alice" to Person("Alice", 21),
+    "Arthricia" to Person("Arthricia", 15),
+    "Bob" to Person("Bob", 25),
+    "Bill" to Person("Bill", 25),
+    "Birdperson" to Person("Birdperson", 42),
+    "Charlie" to Person("Charlie", 21),
+    "Crocubot" to Person("Crocubot", 42),
+    "Franz" to Person("Franz", 21),
+    "Revolio" to Person("Revolio", 33))
 
-  // Shouldn't be used if the key isn't unique
-  // because elements might be lost:
-  people.associateBy { it.age } eq
-    mapOf(21 to Person("Alice", 21),
-      25 to Person("Charlie", 25))
+  // Don't use associateBy() when key isn't
+  // unique -- elements will disappear:
+  val ages = people().associateBy { it.age }
+  ages eq mapOf(
+    21 to Person("Franz", 21),
+    15 to Person("Arthricia", 15),
+    25 to Person("Bill", 25),
+    42 to Person("Crocubot", 42),
+    33 to Person("Revolio", 33))
 }

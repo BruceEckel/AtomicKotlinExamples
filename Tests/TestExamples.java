@@ -559,7 +559,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testGroupByVsFilter() {
-    testExample("Examples/FromListsToMaps/GroupByVsFilter.kt", GroupByVsFilterKt::main);
+    testExample("Examples/FromListsToMaps/GroupByVsFilter.kt", fromliststomaps.GroupByVsFilterKt::main);
   }
 
   @Test

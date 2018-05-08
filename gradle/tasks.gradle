@@ -810,7 +810,7 @@ task GroupBy(type: JavaExec) {
 
 task GroupByVsFilter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'GroupByVsFilterKt'
+    main = 'fromliststomaps.GroupByVsFilterKt'
 }
 
 task GuaranteedCleanup(type: JavaExec) {
