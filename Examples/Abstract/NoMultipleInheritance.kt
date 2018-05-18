@@ -1,5 +1,5 @@
-// Interfaces/NoMultipleInheritance.kt
-package interfaces1
+// Abstract/NoMultipleInheritance.kt
+package multipleinheritance1
 
 open class Animal
 open class Mammal : Animal()

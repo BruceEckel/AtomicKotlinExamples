@@ -1,30 +1,31 @@
-// Interfaces/InterfaceCollision.kt
+// Abstract/InterfaceCollision.kt
+package collision
 import atomictest.eq
 
 interface A {
-  fun f() = 1.1
+  fun f() = 1
   fun g() = "A.g"
-  val n: Int
-    get() = 7
+  val n: Double
+    get() = 1.1
 }
 
 interface B {
-  fun f() = 7.7
+  fun f() = 2
   fun g() = "B.g"
-  val n: Int
-    get() = 17
+  val n: Double
+    get() = 2.2
 }
 
 class C : A, B {
-  override fun f() = 9.9
+  override fun f() = 0
   override fun g() = super<A>.g()
-  override val n: Int
+  override val n: Double
     get() = super<A>.n + super<B>.n
 }
 
 fun main(args: Array<String>) {
   val c = C()
-  c.f() eq 9.9
+  c.f() eq 0
   c.g() eq "A.g"
-  c.n eq 24
+  c.n eq 3.3
 }

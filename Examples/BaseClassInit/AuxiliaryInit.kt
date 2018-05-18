@@ -8,48 +8,47 @@ open class House(
   val state: String,
   val zip: String
 ) {
-  constructor(state: String, zip: String) :
-    this("address?", state, zip)
+  constructor(fullAddress: String) :
+    this(fullAddress.substringBefore(", "),
+      fullAddress.substringAfter(", ")
+        .substringBefore(" "),
+      fullAddress.substringAfterLast(" "))
 
-  constructor(zip: String) :
-    this("address?", "state?", zip)
-}
-
-class Home(
-  address: String,
-  state: String,
-  zip: String,
-  val name: String
-) : House(address, state, zip) {
-  override fun toString() =
-    "$name: $address, $state $zip"
+  val fullAddress: String
+    get() = "$address, $state $zip"
 }
 
 class VacationHouse(
+  address: String,
   state: String,
   zip: String,
-  val startMonth: Int,
-  val endMonth: Int
-) : House(state, zip)
+  val startMonth: String,
+  val endMonth: String
+) : House(address, state, zip) {
+  override fun toString() =
+    "Vacation house at $fullAddress " +
+      "from $startMonth to $endMonth"
+}
 
 class TreeHouse(
-  val name: String, zip: String
-) : House(zip)
+  val name: String
+) : House("Tree Street, TR 00000") {
+  override fun toString() =
+    "$name tree house at $fullAddress"
+}
 
 fun main(args: Array<String>) {
-  val h = Home("88 Target St.", "KS",
-    "66632", "Metropolis")
-  h.address eq "88 Target St."
-  h.state eq "KS"
-  h.name eq "Metropolis"
-  h eq "Metropolis: 88 Target St., KS 66632"
+  val vacationHouse = VacationHouse(
+    address = "8 Target St.",
+    state = "KS",
+    zip = "66632",
+    startMonth = "May",
+    endMonth = "September")
+  vacationHouse eq
+    "Vacation house at 8 Target St., " +
+    "KS 66632 from May to September"
 
-  val v = VacationHouse("KS", "66632", 6, 8)
-  v.state eq "KS"
-  v.startMonth eq 6
-  v.endMonth eq 8
-
-  val tree = TreeHouse("Oak", "48104")
-  tree.name eq "Oak"
-  tree.zip eq "48104"
+  val tree = TreeHouse("Oak")
+  tree eq
+    "Oak tree house at Tree Street, TR 00000"
 }

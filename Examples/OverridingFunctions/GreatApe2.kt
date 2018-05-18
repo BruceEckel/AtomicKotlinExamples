@@ -1,26 +1,21 @@
-// OverridingFunctions/GreatApe3.kt
+// OverridingFunctions/GreatApe2.kt
 import atomictest.eq
 
 open class GreatApe {
   protected var energy = 0
   open fun call() = "Hoo!"
-  open fun eat(): Int {
-    energy += 10
-    return energy
-  }
-
-  fun climb(x: Int) {
-    energy -= x
-  }
+  open fun eat() { energy += 10 }
+  fun climb(x: Int) { energy -= x }
+  fun energyLevel() = "Energy: $energy"
 }
 
 class Bonobo : GreatApe() {
   override fun call() = "Eep!"
-  override fun eat(): Int {
+  override fun eat() {
     // Modify the base-class var:
     energy += 10
     // Call the base-class version:
-    return super.eat()
+    super.eat()
   }
 
   // Add a function():
@@ -28,11 +23,12 @@ class Bonobo : GreatApe() {
 }
 
 class Chimpanzee : GreatApe() {
-  val additionalEnergy = 20 // New property
+  // New property
+  val additionalEnergy = 20
   override fun call() = "Yawp!"
-  override fun eat(): Int {
+  override fun eat() {
     energy += additionalEnergy
-    return super.eat()
+    super.eat()
   }
 
   fun jump() = "Chimp jump"
@@ -41,12 +37,16 @@ class Chimpanzee : GreatApe() {
 fun talk(ape: GreatApe): String {
   // ape.run()  // Not an ape function
   // ape.jump // Nor this
+  ape.eat()
   ape.climb(10)
-  return ape.call() + ape.eat()
+  return "${ape.call()} ${ape.energyLevel()}"
 }
 
 fun main(args: Array<String>) {
-  talk(GreatApe()) eq "Hoo!0"
-  talk(Bonobo()) eq "Eep!10"
-  talk(Chimpanzee()) eq "Yawp!20"
+  // Cannot access 'energy':
+  // GreatApe().energy
+
+  talk(GreatApe()) eq "Hoo! Energy: 0"
+  talk(Bonobo()) eq "Eep! Energy: 10"
+  talk(Chimpanzee()) eq "Yawp! Energy: 20"
 }

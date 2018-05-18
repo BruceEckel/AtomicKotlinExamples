@@ -1,4 +1,4 @@
-// BaseClassInit/GreatApe2.kt
+// BaseClassInit/GreatApe3.kt
 package baseinit
 import atomictest.eq
 

@@ -3,8 +3,18 @@ import org.junit.Test;
 public class TestExamples extends AbstractTestExamples {
 
   @Test
-  public void testAbstractClasses() {
-    testExample("Examples/AbstractClasses/AbstractClasses.kt", abstractclasses.AbstractClassesKt::main);
+  public void testGadget() {
+    testExample("Examples/Abstract/Gadget.kt", GadgetKt::main);
+  }
+
+  @Test
+  public void testInterfaceCollision() {
+    testExample("Examples/Abstract/InterfaceCollision.kt", collision.InterfaceCollisionKt::main);
+  }
+
+  @Test
+  public void testStateOfAClass() {
+    testExample("Examples/Abstract/StateOfAClass.kt", state.StateOfAClassKt::main);
   }
 
   @Test
@@ -13,8 +23,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGreatApe2() {
-    testExample("Examples/BaseClassInit/GreatApe2.kt", baseinit.GreatApe2Kt::main);
+  public void testGreatApe3() {
+    testExample("Examples/BaseClassInit/GreatApe3.kt", baseinit.GreatApe3Kt::main);
   }
 
   @Test
@@ -539,7 +549,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAssociateBy() {
-    testExample("Examples/FromListsToMaps/AssociateBy.kt", fromliststomaps.AssociateByKt::main);
+    testExample("Examples/FromListsToMaps/AssociateBy.kt", AssociateByKt::main);
   }
 
   @Test
@@ -554,12 +564,12 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testGroupBy() {
-    testExample("Examples/FromListsToMaps/GroupBy.kt", fromliststomaps.GroupByKt::main);
+    testExample("Examples/FromListsToMaps/GroupBy.kt", GroupByKt::main);
   }
 
   @Test
   public void testGroupByVsFilter() {
-    testExample("Examples/FromListsToMaps/GroupByVsFilter.kt", fromliststomaps.GroupByVsFilterKt::main);
+    testExample("Examples/FromListsToMaps/GroupByVsFilter.kt", GroupByVsFilterKt::main);
   }
 
   @Test
@@ -858,28 +868,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAdder() {
-    testExample("Examples/Interfaces/Adder.kt", interfaces.AdderKt::main);
-  }
-
-  @Test
-  public void testInterfaceCollision() {
-    testExample("Examples/Interfaces/InterfaceCollision.kt", InterfaceCollisionKt::main);
-  }
-
-  @Test
-  public void testMemberImplementations() {
-    testExample("Examples/Interfaces/MemberImplementations.kt", interfaces4.MemberImplementationsKt::main);
-  }
-
-  @Test
-  public void testPropertyInInterface() {
-    testExample("Examples/Interfaces/PropertyInInterface.kt", interfaces.PropertyInInterfaceKt::main);
-  }
-
-  @Test
-  public void testStateOfAClass() {
-    testExample("Examples/Interfaces/StateOfAClass.kt", StateOfAClassKt::main);
+  public void testSyntax() {
+    testExample("Examples/Interfaces/Syntax.kt", interfaces.SyntaxKt::main);
   }
 
   @Test
@@ -1303,6 +1293,26 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testGardenGnome() {
+    testExample("Examples/NontrivialConstructors/GardenGnome.kt", nontrivialconstructors.GardenGnomeKt::main);
+  }
+
+  @Test
+  public void testInitSection() {
+    testExample("Examples/NontrivialConstructors/InitSection.kt", primaryconstructor.InitSectionKt::main);
+  }
+
+  @Test
+  public void testMatrixInitialization() {
+    testExample("Examples/NontrivialConstructors/MatrixInitialization.kt", nontrivialconstructors.MatrixInitializationKt::main);
+  }
+
+  @Test
+  public void testTrivialConstructor() {
+    testExample("Examples/NontrivialConstructors/TrivialConstructor.kt", primaryconstructor.TrivialConstructorKt::main);
+  }
+
+  @Test
   public void testAnnotatedJava() {
     testExample("Examples/NullabilityAnnotations/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
   }
@@ -1544,32 +1554,22 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testWithDefaultArguments() {
-    testExample("Examples/Overloading/WithDefaultArguments.kt", WithDefaultArgumentsKt::main);
+    testExample("Examples/Overloading/WithDefaultArguments.kt", withdefaultarguments.WithDefaultArgumentsKt::main);
   }
 
   @Test
   public void testWithoutDefaultArguments() {
-    testExample("Examples/Overloading/WithoutDefaultArguments.kt", WithoutDefaultArgumentsKt::main);
+    testExample("Examples/Overloading/WithoutDefaultArguments.kt", withoutdefaultarguments.WithoutDefaultArgumentsKt::main);
   }
 
   @Test
-  public void testGreatApe3() {
-    testExample("Examples/OverridingFunctions/GreatApe3.kt", GreatApe3Kt::main);
+  public void testGreatApe2() {
+    testExample("Examples/OverridingFunctions/GreatApe2.kt", GreatApe2Kt::main);
   }
 
   @Test
   public void testFantasyGame() {
     testExample("Examples/Polymorphism/FantasyGame.kt", polymorphism.FantasyGameKt::main);
-  }
-
-  @Test
-  public void testCoffee() {
-    testExample("Examples/PrimaryConstructor/Coffee.kt", CoffeeKt::main);
-  }
-
-  @Test
-  public void testInitSection() {
-    testExample("Examples/PrimaryConstructor/InitSection.kt", primaryconstructor.InitSectionKt::main);
   }
 
   @Test
@@ -1755,11 +1755,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSealedClasses() {
     testExample("Examples/SealedClasses/SealedClasses.kt", sealedclasses.SealedClassesKt::main);
-  }
-
-  @Test
-  public void testGardenGnome() {
-    testExample("Examples/SecondaryConstructors/GardenGnome.kt", GardenGnomeKt::main);
   }
 
   @Test

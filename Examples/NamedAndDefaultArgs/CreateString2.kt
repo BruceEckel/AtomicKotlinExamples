@@ -6,5 +6,5 @@ fun main(args: Array<String>) {
   list.joinToString(". ", "", "!") eq
     "1. 2. 3!"
   list.joinToString(separator = ". ",
-    prefix = "", postfix = "!") eq "1. 2. 3!"
+    postfix = "!") eq "1. 2. 3!"
 }

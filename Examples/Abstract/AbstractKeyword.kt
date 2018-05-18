@@ -1,8 +1,7 @@
-// AbstractClasses/AbstractKeyword.kt
+// Abstract/AbstractKeyword.kt
 
-abstract class WithReferences {
+abstract class WithProperty {
   abstract val x: Int
-  abstract var y: Int
 }
 
 abstract class WithFunctions {

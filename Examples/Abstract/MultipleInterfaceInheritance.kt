@@ -1,5 +1,5 @@
-// Interfaces/MultipleInterfaceInheritance.kt
-package interfaces2
+// Abstract/MultipleInterfaceInheritance.kt
+package multipleinheritance2
 
 interface Animal
 interface Mammal : Animal

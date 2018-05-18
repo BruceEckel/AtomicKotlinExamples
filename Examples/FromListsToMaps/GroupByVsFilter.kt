@@ -1,12 +1,11 @@
 // FromListsToMaps/GroupByVsFilter.kt
-package fromliststomaps
+import fromliststomaps.*
 import atomictest.eq
 
 fun main(args: Array<String>) {
   val groups =
     people().groupBy { it.name.first() }
-
-  // After groupBy(), you have fast access:
+  // groupBy() produces map-speed access:
   groups['A'] eq listOf(Person("Alice", 21),
     Person("Arthricia", 15))
   groups['Z'] eq null

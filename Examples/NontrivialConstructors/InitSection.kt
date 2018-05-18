@@ -1,4 +1,4 @@
-// PrimaryConstructor/InitSection.kt
+// NontrivialConstructors/InitSection.kt
 package primaryconstructor
 import atomictest.eq
 

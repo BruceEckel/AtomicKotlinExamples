@@ -1,8 +1,9 @@
 // Overloading/WithDefaultArguments.kt
+package withdefaultarguments
 import atomictest.eq
 
-fun g(n: Int = 0) = n + 373
+fun f(n: Int = 0) = n + 373
 
 fun main(args: Array<String>) {
-  g() eq 373
+  f() eq 373
 }

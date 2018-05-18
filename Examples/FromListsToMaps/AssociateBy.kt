@@ -1,5 +1,5 @@
 // FromListsToMaps/AssociateBy.kt
-package fromliststomaps
+import fromliststomaps.*
 import atomictest.eq
 
 fun main(args: Array<String>) {
@@ -16,8 +16,8 @@ fun main(args: Array<String>) {
     "Franz" to Person("Franz", 21),
     "Revolio" to Person("Revolio", 33))
 
-  // Don't use associateBy() when key isn't
-  // unique -- elements will disappear:
+  // associateBy() fails when the key isn't
+  // unique -- elements disappear:
   val ages = people().associateBy { it.age }
   ages eq mapOf(
     21 to Person("Franz", 21),
