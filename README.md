@@ -18,9 +18,10 @@ See *AtomicKotlin.com* for the IDEA examples {{ To be configured }}.
 
 Before you can run the examples from this repository, you must install:
 
-1. [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+1. The current version of [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html),
+although earlier versions should also work.
 
-2. The latest version (1.1 or better) of the [Kotlin command-line
+2. The latest version (1.2 or higher) of the [Kotlin command-line
 compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 If you just want to download and check the code, [Download
@@ -35,7 +36,7 @@ On Mac/Linux, enter:
 ./gradlew run
 ```
 
-(If you get a *Permission denied*, run `chmod +x ./gradlew`)
+(If you get a *Permission denied* error, run `chmod +x ./gradlew`)
 
 On Windows, enter
 
@@ -48,8 +49,7 @@ because Gradle needs to first install itself, then all the support libraries.
 Once these are installed you can perform additional compiling and running
 offline.
 
-If all goes well, you will see a bunch of warning messages, and then the
-examples will run. Everything should complete without errors.
+If all goes well, the examples will run. Everything should complete without errors.
 
 All the book examples are in the subdirectory `Examples` in subdirectories
 corresponding to the atom names.
@@ -71,21 +71,20 @@ Basics](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_L
 ## Install Java
 
 Kotlin runs on top of Java, so you must first install Java (you only need basic
-Java; the development kit also works but is not required). In this book we use
-JDK8 (Java 1.8).
+Java; the development kit also works but is not required).
 
 ### Windows
 
 1. Follow the instructions at this link to [Install Chocolatey](https://chocolatey.org/).
 
-2. At a shell prompt, type: `choco install jdk8`. This  takes some time,
+2. At a shell prompt, type: `choco install jdk8` (you may also select a more recent version). This  takes some time,
 but when it's finished Java is installed and the necessary environment
 variables are set.
 
 ### Macintosh
 
 The Mac comes with a much older version of Java that won't work for the
-examples in this book, so you'll need to update it to Java 8.
+examples in this book, so you'll need to update it to (at least) Java 8.
 
   1.  Follow the instructions at this link to [Install HomeBrew](http://brew.sh/)
 
@@ -173,6 +172,8 @@ Gradle) compile and run all the examples in the directory. You can also type
 `run AnExample.kt` to compile and run the example `AnExample.kt` (assuming it
 has a `main()`).
 
+If you get a *Permission denied* error on OSX or Linux, run `chmod +x ./run.sh`
+
 # Running Kotlin from the Command Line
 
 The Kotlin interpreter is also called the REPL (for *Read-Evaluate-Print-
@@ -183,7 +184,7 @@ Loop*). To use this you must first install the command-line version of Kotlin.
 
 ## Install Kotlin
 
-In this book, we use Kotlin version 1.1, the latest available at the time. The
+In this book, we use Kotlin version 1.2, the latest available at the time. The
 detailed installation instructions for the command-line compiler are available
 at [The Kotlin Site](https://kotlinlang.org/docs/tutorials/command-line.html).
 
@@ -202,13 +203,13 @@ You get the REPL when you type `kotlinc` by itself on the command line. You
 should see something like the following:
 
 ```
-Welcome to Kotlin version 1.1.51 (JRE 1.8.0_144-b01)
+Welcome to Kotlin version 1.2.41 (JRE 1.8.0_144-b01)
 Type :help for help, :quit for quit
 >>>
 ```
 
 The exact version numbers will vary depending on the versions of Kotlin
-and Java you've installed, but make sure that you're running Kotlin 1.1
+and Java you've installed, but make sure that you're running Kotlin 1.2
 or greater.
 
 The REPL gives you immediate interactive feedback, which is helpful for
