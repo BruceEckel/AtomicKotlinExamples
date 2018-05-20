@@ -7,7 +7,7 @@ interface Maze {
 
 interface GameElement {
   fun handleTurn(
-    maze: Maze, 
+    maze: Maze,
     sameCellElements: Set<GameElement>
   )
 }
@@ -32,7 +32,7 @@ class Bomb : ImmovableElement() {
   ) {
     if (sameCellElements.isEmpty()) return
     sameCellElements.forEach {   // [4]
-      maze.destroyElement(it) 
+      maze.destroyElement(it)
     }
     maze.destroyElement(this)    // [5]
   }

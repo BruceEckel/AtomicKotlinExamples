@@ -2,7 +2,7 @@
 package regularLambda
 import atomictest.eq
 
-fun buildString(
+fun buildStr(
   builderAction: (StringBuilder) -> Unit
 ): String {
   val sb = StringBuilder()
@@ -11,7 +11,7 @@ fun buildString(
 }
 
 fun main(args: Array<String>) {
-  buildString { sb ->
+  buildStr { sb ->
     sb.append("Alphabet: ")
     for (ch in 'a'..'z')
       sb.append(ch)

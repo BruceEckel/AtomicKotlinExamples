@@ -2,7 +2,7 @@
 package lambdawithreceiver
 
 fun StringBuilder.appendAlphabet() {
-  this.append("Alphabet:")     // [1]
+  this.append("Alphabet:")   // Explicit
   for (ch in 'a'..'z')
-    append(ch)                 // [2]
+    append(ch)               // Implicit
 }

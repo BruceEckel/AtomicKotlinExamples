@@ -1,7 +1,7 @@
 // Overloading/Overloading.kt
 import atomictest.eq
 
-class Overloading {            
+class Overloading {
   fun f() = 0
   fun f(n: Int) = n + 2
 }

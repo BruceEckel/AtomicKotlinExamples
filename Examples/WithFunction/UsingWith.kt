@@ -2,7 +2,7 @@
 package withfunction
 import atomictest.eq
 
-fun betterAdjust(window: Window) {
+fun withAdjust(window: Window) {
   with(window) {
     x = 10
     y = 10
@@ -13,7 +13,7 @@ fun betterAdjust(window: Window) {
 
 fun main(args: Array<String>) {
   val window = Window("my")
-  betterAdjust(window)
+  withAdjust(window)
   window.x eq 10
   window.width eq 400
 }

@@ -19,7 +19,7 @@ class Robot : GameElement {
 
 class Food : GameElement {
   override fun handleTurn(
-    maze: Maze, 
+    maze: Maze,
     sameCellElements: Set<GameElement>
   ) {
     // Do nothing
