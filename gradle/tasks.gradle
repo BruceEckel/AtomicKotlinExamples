@@ -85,7 +85,7 @@ task Arg(type: JavaExec) {
 
 task ArgumentOrder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'namedanddefaultargs1.ArgumentOrderKt'
+    main = 'color1.ArgumentOrderKt'
 }
 
 task ArraySpread(type: JavaExec) {
@@ -298,6 +298,16 @@ task Closures3(type: JavaExec) {
     main = 'Closures3Kt'
 }
 
+task Color2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'color2.Color2Kt'
+}
+
+task Color3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'color3.Color3Kt'
+}
+
 task ColorBlendMap2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'immutability.ColorBlendMap2Kt'
@@ -448,6 +458,11 @@ task DefiningRanges(type: JavaExec) {
     main = 'DefiningRangesKt'
 }
 
+task DefiningRepeat(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'definingrepeat.DefiningRepeatKt'
+}
+
 task Definition(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DefinitionKt'
@@ -488,9 +503,9 @@ task Direction(type: JavaExec) {
     main = 'enumerations.DirectionKt'
 }
 
-task DisplayAlienSpieces(type: JavaExec) {
+task DisplayAlienSpecies(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'DisplayAlienSpiecesKt'
+    main = 'DisplayAlienSpeciesKt'
 }
 
 task DoWhile(type: JavaExec) {
@@ -1303,14 +1318,9 @@ task NPEOnPlatformType(type: JavaExec) {
     main = 'NPEOnPlatformTypeKt'
 }
 
-task NamedAndDefaultArgs(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'namedanddefaultargs2.NamedAndDefaultArgsKt'
-}
-
 task NamedArguments(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'namedanddefaultargs1.NamedArgumentsKt'
+    main = 'color1.NamedArgumentsKt'
 }
 
 task NamedCompanionObject(type: JavaExec) {
@@ -1645,7 +1655,7 @@ task RegularClasses(type: JavaExec) {
 
 task RegularLambda(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'regularLambda.RegularLambdaKt'
+    main = 'regularlambda.RegularLambdaKt'
 }
 
 task RemoveDuplicates(type: JavaExec) {
@@ -1661,11 +1671,6 @@ task Repeat(type: JavaExec) {
 task RepeatByInt(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RepeatByIntKt'
-}
-
-task RepeatDefinition(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'repeatdeclaration.RepeatDefinitionKt'
 }
 
 task RepeatThreeTimes(type: JavaExec) {
@@ -2272,6 +2277,8 @@ task run (dependsOn: [
     'Closures',
     'Closures2',
     'Closures3',
+    'Color2',
+    'Color3',
     'ColorBlendMap2',
     'ColorBlendTest',
     'ColorSet',
@@ -2302,6 +2309,7 @@ task run (dependsOn: [
     'Default',
     'DefiningExceptions',
     'DefiningRanges',
+    'DefiningRepeat',
     'Definition',
     'DelegatedControls',
     'Dereference',
@@ -2310,7 +2318,7 @@ task run (dependsOn: [
     'DestructuringDuo',
     'DestructuringMap',
     'Direction',
-    'DisplayAlienSpieces',
+    'DisplayAlienSpecies',
     'DoWhile',
     'DoWhileLoop',
     'Dog',
@@ -2473,7 +2481,6 @@ task run (dependsOn: [
     'MutableMaps',
     'MutableSet',
     'NPEOnPlatformType',
-    'NamedAndDefaultArgs',
     'NamedArguments',
     'NamedCompanionObject',
     'NewAngle',
@@ -2545,7 +2552,6 @@ task run (dependsOn: [
     'RemoveDuplicates',
     'Repeat',
     'RepeatByInt',
-    'RepeatDefinition',
     'RepeatThreeTimes',
     'RepeatVerbose',
     'RequireNotNull',

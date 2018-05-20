@@ -1,5 +1,5 @@
-// FunctionTypes/RepeatDefinition.kt
-package repeatdeclaration
+// FunctionTypes/DefiningRepeat.kt
+package definingrepeat
 
 fun repeat(
   times: Int,

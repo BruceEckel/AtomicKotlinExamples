@@ -118,8 +118,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDisplayAlienSpieces() {
-    testExample("Examples/Constructors/DisplayAlienSpieces.kt", DisplayAlienSpiecesKt::main);
+  public void testDisplayAlienSpecies() {
+    testExample("Examples/Constructors/DisplayAlienSpecies.kt", DisplayAlienSpeciesKt::main);
   }
 
   @Test
@@ -423,11 +423,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testMemberVsExtension() {
-    testExample("Examples/ExtensionFunctions/MemberVsExtension.kt", MemberVsExtensionKt::main);
-  }
-
-  @Test
   public void testQuote() {
     testExample("Examples/ExtensionFunctions/Quote.kt", other.QuoteKt::main);
   }
@@ -608,6 +603,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDefiningRepeat() {
+    testExample("Examples/FunctionTypes/DefiningRepeat.kt", definingrepeat.DefiningRepeatKt::main);
+  }
+
+  @Test
   public void testFunctionTypeExamples() {
     testExample("Examples/FunctionTypes/FunctionTypeExamples.kt", FunctionTypeExamplesKt::main);
   }
@@ -625,11 +625,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testRepeatByInt() {
     testExample("Examples/FunctionTypes/RepeatByInt.kt", RepeatByIntKt::main);
-  }
-
-  @Test
-  public void testRepeatDefinition() {
-    testExample("Examples/FunctionTypes/RepeatDefinition.kt", repeatdeclaration.RepeatDefinitionKt::main);
   }
 
   @Test
@@ -969,7 +964,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testRegularLambda() {
-    testExample("Examples/LambdaWithReceiver/RegularLambda.kt", regularLambda.RegularLambdaKt::main);
+    testExample("Examples/LambdaWithReceiver/RegularLambda.kt", regularlambda.RegularLambdaKt::main);
   }
 
   @Test
@@ -1249,7 +1244,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testArgumentOrder() {
-    testExample("Examples/NamedAndDefaultArgs/ArgumentOrder.kt", namedanddefaultargs1.ArgumentOrderKt::main);
+    testExample("Examples/NamedAndDefaultArgs/ArgumentOrder.kt", color1.ArgumentOrderKt::main);
+  }
+
+  @Test
+  public void testColor2() {
+    testExample("Examples/NamedAndDefaultArgs/Color2.kt", color2.Color2Kt::main);
+  }
+
+  @Test
+  public void testColor3() {
+    testExample("Examples/NamedAndDefaultArgs/Color3.kt", color3.Color3Kt::main);
   }
 
   @Test
@@ -1263,13 +1268,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testNamedAndDefaultArgs() {
-    testExample("Examples/NamedAndDefaultArgs/NamedAndDefaultArgs.kt", namedanddefaultargs2.NamedAndDefaultArgsKt::main);
-  }
-
-  @Test
   public void testNamedArguments() {
-    testExample("Examples/NamedAndDefaultArgs/NamedArguments.kt", namedanddefaultargs1.NamedArgumentsKt::main);
+    testExample("Examples/NamedAndDefaultArgs/NamedArguments.kt", color1.NamedArgumentsKt::main);
   }
 
   @Test
@@ -1540,6 +1540,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSwearing() {
     testExample("Examples/OperatorOverloading/Swearing.kt", SwearingKt::main);
+  }
+
+  @Test
+  public void testMemberVsExtension() {
+    testExample("Examples/Overloading/MemberVsExtension.kt", MemberVsExtensionKt::main);
   }
 
   @Test

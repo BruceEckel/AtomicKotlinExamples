@@ -1,4 +1,4 @@
-// Constructors/DisplayAlienSpieces.kt
+// Constructors/DisplayAlienSpecies.kt
 
 fun main(args: Array<String>) {
   val alien =

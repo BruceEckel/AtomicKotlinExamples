@@ -1,5 +1,5 @@
 // LambdaWithReceiver/RegularLambda.kt
-package regularLambda
+package regularlambda
 import atomictest.eq
 
 fun buildStr(

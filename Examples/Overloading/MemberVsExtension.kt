@@ -1,4 +1,4 @@
-// ExtensionFunctions/MemberVsExtension.kt
+// Overloading/MemberVsExtension.kt
 import atomictest.eq
 
 class My {
