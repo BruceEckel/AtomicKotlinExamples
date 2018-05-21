@@ -523,14 +523,14 @@ task Dog(type: JavaExec) {
     main = 'DogKt'
 }
 
-task EagerIteration(type: JavaExec) {
+task EagerEvaluation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'EagerIterationKt'
+    main = 'EagerEvaluationKt'
 }
 
-task EagerVsLazyIteration(type: JavaExec) {
+task EagerVsLazyEvaluation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'sequences.EagerVsLazyIterationKt'
+    main = 'sequences.EagerVsLazyEvaluationKt'
 }
 
 task EasyKeys(type: JavaExec) {
@@ -1633,9 +1633,9 @@ task ReadingNameWithIf(type: JavaExec) {
     main = 'ReadingNameWithIfKt'
 }
 
-task RecursionConstraints(type: JavaExec) {
+task RecursionLimits(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'recursion.RecursionConstraintsKt'
+    main = 'recursion.RecursionLimitsKt'
 }
 
 task RecursiveEnumImport(type: JavaExec) {
@@ -2322,8 +2322,8 @@ task run (dependsOn: [
     'DoWhile',
     'DoWhileLoop',
     'Dog',
-    'EagerIteration',
-    'EagerVsLazyIteration',
+    'EagerEvaluation',
+    'EagerVsLazyEvaluation',
     'EasyKeys',
     'ElvisCall',
     'ElvisOperator',
@@ -2544,7 +2544,7 @@ task run (dependsOn: [
     'ReadTraceFile',
     'ReadingName',
     'ReadingNameWithIf',
-    'RecursionConstraints',
+    'RecursionLimits',
     'RecursiveEnumImport',
     'References',
     'RegularClasses',

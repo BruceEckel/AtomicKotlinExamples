@@ -1,4 +1,4 @@
-// Sequences/EagerVsLazyIteration.kt
+// Sequences/EagerVsLazyEvaluation.kt
 package sequences
 
 fun Int.isEven(): Boolean {

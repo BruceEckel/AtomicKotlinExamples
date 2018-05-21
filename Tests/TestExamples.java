@@ -1678,8 +1678,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testRecursionConstraints() {
-    testExample("Examples/Recursion/RecursionConstraints.kt", recursion.RecursionConstraintsKt::main);
+  public void testRecursionLimits() {
+    testExample("Examples/Recursion/RecursionLimits.kt", recursion.RecursionLimitsKt::main);
   }
 
   @Test
@@ -1763,13 +1763,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testEagerIteration() {
-    testExample("Examples/Sequences/EagerIteration.kt", EagerIterationKt::main);
+  public void testEagerEvaluation() {
+    testExample("Examples/Sequences/EagerEvaluation.kt", EagerEvaluationKt::main);
   }
 
   @Test
-  public void testEagerVsLazyIteration() {
-    testExample("Examples/Sequences/EagerVsLazyIteration.kt", sequences.EagerVsLazyIterationKt::main);
+  public void testEagerVsLazyEvaluation() {
+    testExample("Examples/Sequences/EagerVsLazyEvaluation.kt", sequences.EagerVsLazyEvaluationKt::main);
   }
 
   @Test

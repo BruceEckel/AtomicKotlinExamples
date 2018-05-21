@@ -1,15 +1,12 @@
 // Recursion/CallStack.kt
 package recursion
 
-fun foo() {
-  // Uncomment this line to get an exception:
-  // throw IllegalStateException("Foo")
+fun illegalState() {
+  // throw IllegalStateException()
 }
 
-fun bar() {
-  foo()
-}
+fun fail() = illegalState()
 
 fun main(args: Array<String>) {
-  bar()
+  fail()
 }

@@ -4,9 +4,8 @@ import atomictest.eq
 
 fun sum(n: Long): Long {
   var accumulator = 0L
-  for (i in 1..n) {
+  for (i in 1..n)
     accumulator += i
-  }
   return accumulator
 }
 
