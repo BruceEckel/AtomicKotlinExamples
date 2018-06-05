@@ -21,7 +21,7 @@ interface Maze {
 }
 
 interface GameElement {
-  fun handleTurn(
+  fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   )

@@ -6,14 +6,14 @@ interface Maze {
 }
 
 interface GameElement {
-  fun handleTurn(
+  fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   )
 }
 
 open class ImmovableElement : GameElement {
-  override fun handleTurn(
+  override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   ) {
@@ -26,7 +26,7 @@ class Wall : ImmovableElement()  // [1]
 class Food : ImmovableElement()  // [2]
 
 class Bomb : ImmovableElement() {
-  override fun handleTurn(       // [3]
+  override fun interact(       // [3]
     maze: Maze,
     sameCellElements: Set<GameElement>
   ) {

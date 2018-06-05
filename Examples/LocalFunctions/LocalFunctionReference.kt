@@ -1,5 +1,5 @@
-// LocalFunctions/AnonymousFunction.kt
-package anonymousFunctions
+// LocalFunctions/LocalFunctionReference.kt
+package localfunctions
 import atomictest.eq
 
 class Session(

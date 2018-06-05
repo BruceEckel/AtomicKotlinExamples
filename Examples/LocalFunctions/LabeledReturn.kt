@@ -1,5 +1,5 @@
 // LocalFunctions/LabeledReturn.kt
-package anonymousFunctions
+package localfunctions
 import atomictest.eq
 
 fun main(args: Array<String>) {

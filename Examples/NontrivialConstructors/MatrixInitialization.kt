@@ -1,4 +1,4 @@
-// NontrivialConstructors/MatrixInitialization.kt
+// NonTrivialConstructors/MatrixInitialization.kt
 package nontrivialconstructors
 import atomictest.eq
 

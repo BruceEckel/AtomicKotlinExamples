@@ -1,4 +1,4 @@
-// NontrivialConstructors/TrivialConstructor.kt
+// NonTrivialConstructors/TrivialConstructor.kt
 package primaryconstructor
 import atomictest.eq
 

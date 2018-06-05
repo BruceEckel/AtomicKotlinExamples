@@ -1,4 +1,4 @@
-// NontrivialConstructors/GardenGnome.kt
+// NonTrivialConstructors/GardenGnome.kt
 package nontrivialconstructors
 import atomictest.eq
 

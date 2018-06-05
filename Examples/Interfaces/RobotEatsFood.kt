@@ -4,7 +4,7 @@ package game
 class Robot : GameElement {
   private var eatenFoodItems: Int = 0
 
-  override fun handleTurn(
+  override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   ) {
@@ -18,7 +18,7 @@ class Robot : GameElement {
 }
 
 class Food : GameElement {
-  override fun handleTurn(
+  override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   ) {

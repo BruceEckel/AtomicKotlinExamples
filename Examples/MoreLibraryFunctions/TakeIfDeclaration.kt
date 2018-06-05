@@ -1,5 +1,5 @@
 // MoreLibraryFunctions/TakeIfDeclaration.kt
-package takeIfDeclaration
+package takeifdeclaration
 
 import atomictest.eq
 

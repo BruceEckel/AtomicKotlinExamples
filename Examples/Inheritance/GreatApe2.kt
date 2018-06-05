@@ -1,4 +1,4 @@
-// OverridingFunctions/GreatApe2.kt
+// Inheritance/GreatApe2.kt
 import atomictest.eq
 
 open class GreatApe {

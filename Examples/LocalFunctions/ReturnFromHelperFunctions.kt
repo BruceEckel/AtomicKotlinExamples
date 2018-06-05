@@ -1,5 +1,5 @@
 // LocalFunctions/ReturnFromHelperFunctions.kt
-package anonymousFunctions
+package localfunctions
 import atomictest.eq
 
 class Window(

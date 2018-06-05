@@ -1,4 +1,4 @@
-// WithFunction/WithCleanup.kt
+// ExceptionHandling/WithCleanup.kt
 package withfunction
 
 class Cleanup(n: Int) : AutoCloseable {

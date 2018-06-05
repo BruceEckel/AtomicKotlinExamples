@@ -3,15 +3,13 @@ package tailrecursion
 import atomictest.eq
 
 private tailrec fun sum(
-    n: Long,
-    accumulator: Long
+  n: Long,
+  accumulator: Long
 ): Long =
   if (n == 0L) accumulator
   else sum(n - 1, accumulator + n)
 
-fun sum(n: Long): Long {
-  return sum(n, 0)
-}
+fun sum(n: Long) = sum(n, 0)
 
 fun main(args: Array<String>) {
   sum(2) eq 3

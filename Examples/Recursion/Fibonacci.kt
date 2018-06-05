@@ -12,7 +12,6 @@ fun fibonacci(n: Int): Long {
     return fibonacci(
       n - 1, next, current + next)
   }
-
   return fibonacci(n, 0L, 1L)
 }
 

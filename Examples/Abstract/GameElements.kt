@@ -8,7 +8,7 @@ interface GameElement {
   val symbol: Char
   val preventMovement: Boolean
 
-  fun handleTurn(
+  fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   )
@@ -18,7 +18,7 @@ abstract class ImmovableElement(
   override val preventMovement: Boolean  // [1]
 ) : GameElement {
 
-  override fun handleTurn(
+  override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   ) {

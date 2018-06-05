@@ -363,6 +363,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testWithCleanup() {
+    testExample("Examples/ExceptionHandling/WithCleanup.kt", withfunction.WithCleanupKt::main);
+  }
+
+  @Test
   public void testAverageIncome() {
     testExample("Examples/Exceptions/AverageIncome.kt", firstversion.AverageIncomeKt::main);
   }
@@ -828,6 +833,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testGreatApe2() {
+    testExample("Examples/Inheritance/GreatApe2.kt", GreatApe2Kt::main);
+  }
+
+  @Test
   public void testCharRange() {
     testExample("Examples/InKeyword/CharRange.kt", CharRangeKt::main);
   }
@@ -1073,28 +1083,33 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAnonymousFunction() {
-    testExample("Examples/LocalFunctions/AnonymousFunction.kt", anonymousFunctions.AnonymousFunctionKt::main);
-  }
-
-  @Test
   public void testCustomLabel() {
     testExample("Examples/LocalFunctions/CustomLabel.kt", CustomLabelKt::main);
   }
 
   @Test
   public void testInterestingSessions() {
-    testExample("Examples/LocalFunctions/InterestingSessions.kt", anonymousFunctions.InterestingSessionsKt::main);
+    testExample("Examples/LocalFunctions/InterestingSessions.kt", localfunctions.InterestingSessionsKt::main);
   }
 
   @Test
   public void testLabeledReturn() {
-    testExample("Examples/LocalFunctions/LabeledReturn.kt", anonymousFunctions.LabeledReturnKt::main);
+    testExample("Examples/LocalFunctions/LabeledReturn.kt", localfunctions.LabeledReturnKt::main);
   }
 
   @Test
   public void testLocalExtensions() {
     testExample("Examples/LocalFunctions/LocalExtensions.kt", LocalExtensionsKt::main);
+  }
+
+  @Test
+  public void testLocalFunctionReference() {
+    testExample("Examples/LocalFunctions/LocalFunctionReference.kt", localfunctions.LocalFunctionReferenceKt::main);
+  }
+
+  @Test
+  public void testLocalFunctions() {
+    testExample("Examples/LocalFunctions/LocalFunctions.kt", LocalFunctionsKt::main);
   }
 
   @Test
@@ -1104,7 +1119,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testReturnFromHelperFunctions() {
-    testExample("Examples/LocalFunctions/ReturnFromHelperFunctions.kt", anonymousFunctions.ReturnFromHelperFunctionsKt::main);
+    testExample("Examples/LocalFunctions/ReturnFromHelperFunctions.kt", localfunctions.ReturnFromHelperFunctionsKt::main);
   }
 
   @Test
@@ -1239,7 +1254,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testTakeIfDeclaration() {
-    testExample("Examples/MoreLibraryFunctions/TakeIfDeclaration.kt", takeIfDeclaration.TakeIfDeclarationKt::main);
+    testExample("Examples/MoreLibraryFunctions/TakeIfDeclaration.kt", takeifdeclaration.TakeIfDeclarationKt::main);
   }
 
   @Test
@@ -1294,22 +1309,22 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testGardenGnome() {
-    testExample("Examples/NontrivialConstructors/GardenGnome.kt", nontrivialconstructors.GardenGnomeKt::main);
+    testExample("Examples/NonTrivialConstructors/GardenGnome.kt", nontrivialconstructors.GardenGnomeKt::main);
   }
 
   @Test
   public void testInitSection() {
-    testExample("Examples/NontrivialConstructors/InitSection.kt", primaryconstructor.InitSectionKt::main);
+    testExample("Examples/NonTrivialConstructors/InitSection.kt", primaryconstructor.InitSectionKt::main);
   }
 
   @Test
   public void testMatrixInitialization() {
-    testExample("Examples/NontrivialConstructors/MatrixInitialization.kt", nontrivialconstructors.MatrixInitializationKt::main);
+    testExample("Examples/NonTrivialConstructors/MatrixInitialization.kt", nontrivialconstructors.MatrixInitializationKt::main);
   }
 
   @Test
   public void testTrivialConstructor() {
-    testExample("Examples/NontrivialConstructors/TrivialConstructor.kt", primaryconstructor.TrivialConstructorKt::main);
+    testExample("Examples/NonTrivialConstructors/TrivialConstructor.kt", primaryconstructor.TrivialConstructorKt::main);
   }
 
   @Test
@@ -1565,16 +1580,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testWithoutDefaultArguments() {
     testExample("Examples/Overloading/WithoutDefaultArguments.kt", withoutdefaultarguments.WithoutDefaultArgumentsKt::main);
-  }
-
-  @Test
-  public void testGreatApe2() {
-    testExample("Examples/OverridingFunctions/GreatApe2.kt", GreatApe2Kt::main);
-  }
-
-  @Test
-  public void testFantasyGame() {
-    testExample("Examples/Polymorphism/FantasyGame.kt", polymorphism.FantasyGameKt::main);
   }
 
   @Test
@@ -2170,10 +2175,5 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsingWith() {
     testExample("Examples/WithFunction/UsingWith.kt", withfunction.UsingWithKt::main);
-  }
-
-  @Test
-  public void testWithCleanup() {
-    testExample("Examples/WithFunction/WithCleanup.kt", withfunction.WithCleanupKt::main);
   }
 }

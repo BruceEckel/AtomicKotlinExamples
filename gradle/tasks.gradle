@@ -48,11 +48,6 @@ task AnnotatedJava(type: JavaExec) {
     main = 'nullabilityannotations.AnnotatedJavaKt'
 }
 
-task AnonymousFunction(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'anonymousFunctions.AnonymousFunctionKt'
-}
-
 task AnyFromListOfStar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'extensionproperties.AnyFromListOfStarKt'
@@ -608,11 +603,6 @@ task Factorial(type: JavaExec) {
     main = 'recursion.FactorialKt'
 }
 
-task FantasyGame(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'polymorphism.FantasyGameKt'
-}
-
 task FaultySuitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FaultySuitcaseKt'
@@ -1005,7 +995,7 @@ task IntegerOverflow(type: JavaExec) {
 
 task InterestingSessions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'anonymousFunctions.InterestingSessionsKt'
+    main = 'localfunctions.InterestingSessionsKt'
 }
 
 task InterfaceCollision(type: JavaExec) {
@@ -1075,7 +1065,7 @@ task KotlinChecked(type: JavaExec) {
 
 task LabeledReturn(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'anonymousFunctions.LabeledReturnKt'
+    main = 'localfunctions.LabeledReturnKt'
 }
 
 task LambdaAndNamedArgs(type: JavaExec) {
@@ -1171,6 +1161,16 @@ task Lists(type: JavaExec) {
 task LocalExtensions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LocalExtensionsKt'
+}
+
+task LocalFunctionReference(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'localfunctions.LocalFunctionReferenceKt'
+}
+
+task LocalFunctions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'LocalFunctionsKt'
 }
 
 task LogChanges(type: JavaExec) {
@@ -1705,7 +1705,7 @@ task ReturnFromFun(type: JavaExec) {
 
 task ReturnFromHelperFunctions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'anonymousFunctions.ReturnFromHelperFunctionsKt'
+    main = 'localfunctions.ReturnFromHelperFunctionsKt'
 }
 
 task ReturnFromLambda(type: JavaExec) {
@@ -1925,7 +1925,7 @@ task TailRecursiveSum(type: JavaExec) {
 
 task TakeIfDeclaration(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'takeIfDeclaration.TakeIfDeclarationKt'
+    main = 'takeifdeclaration.TakeIfDeclarationKt'
 }
 
 task TakeOrDrop(type: JavaExec) {
@@ -2227,7 +2227,6 @@ task run (dependsOn: [
     'AnalyzingInput',
     'Animals',
     'AnnotatedJava',
-    'AnonymousFunction',
     'AnyFromListOfStar',
     'AnyFunImplementation',
     'AnyInstead',
@@ -2339,7 +2338,6 @@ task run (dependsOn: [
     'ExpressionInTemplate',
     'ExtensionsToJavaClass',
     'Factorial',
-    'FantasyGame',
     'FaultySuitcase',
     'Fibonacci',
     'Fibonacci2',
@@ -2452,6 +2450,8 @@ task run (dependsOn: [
     'ListUsefulFunction',
     'Lists',
     'LocalExtensions',
+    'LocalFunctionReference',
+    'LocalFunctions',
     'LogChanges',
     'LongConstants',
     'MakeSalad',

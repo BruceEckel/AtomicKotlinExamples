@@ -16,7 +16,7 @@ class Robot : MovableElement() {
 
   override val symbol: Char get() = 'R'
 
-  override fun handleTurn(
+  override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   ) {
