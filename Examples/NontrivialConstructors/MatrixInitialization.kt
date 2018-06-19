@@ -4,7 +4,7 @@ import atomictest.eq
 
 class GameElement(val symbol: Char)
 
-class Matrix(
+class ElementsMatrix(
   val width: Int,                       // [1]
   val height: Int,
   representation: String                // [2]
@@ -34,7 +34,7 @@ class Matrix(
 }
 
 fun main(args: Array<String>) {
-  val matrix = Matrix(4, 3, """
+  val matrix = ElementsMatrix(4, 3, """
     # ##
        #
     #.##

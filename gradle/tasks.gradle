@@ -848,6 +848,11 @@ task HelloWorld(type: JavaExec) {
     main = 'HelloWorldKt'
 }
 
+task HelperFunction(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'localfunctions.HelperFunctionKt'
+}
+
 task HiddenArrayList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HiddenArrayListKt'
@@ -1703,16 +1708,6 @@ task ReturnFromFun(type: JavaExec) {
     main = 'ReturnFromFunKt'
 }
 
-task ReturnFromHelperFunctions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'localfunctions.ReturnFromHelperFunctionsKt'
-}
-
-task ReturnFromLambda(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ReturnFromLambdaKt'
-}
-
 task RigidHolder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'introgenerics.RigidHolderKt'
@@ -2387,6 +2382,7 @@ task run (dependsOn: [
     'Hello',
     'HelloCoroutines',
     'HelloWorld',
+    'HelperFunction',
     'HiddenArrayList',
     'If1',
     'If2',
@@ -2558,8 +2554,6 @@ task run (dependsOn: [
     'ResultOfApply',
     'ResultOfWith',
     'ReturnFromFun',
-    'ReturnFromHelperFunctions',
-    'ReturnFromLambda',
     'RigidHolder',
     'STUB',
     'SafeCall',

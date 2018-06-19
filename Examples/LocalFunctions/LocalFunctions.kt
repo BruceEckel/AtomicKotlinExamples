@@ -2,9 +2,8 @@
 
 fun main(args: Array<String>) {
   val logMsg = StringBuilder()
-  fun log(message: String) {
+  fun log(message: String) =
     logMsg.appendln(message)
-  }
   log("Starting computation")
   // Imitating computation
   val x = 42

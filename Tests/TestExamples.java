@@ -1088,6 +1088,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testHelperFunction() {
+    testExample("Examples/LocalFunctions/HelperFunction.kt", localfunctions.HelperFunctionKt::main);
+  }
+
+  @Test
   public void testInterestingSessions() {
     testExample("Examples/LocalFunctions/InterestingSessions.kt", localfunctions.InterestingSessionsKt::main);
   }
@@ -1115,16 +1120,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testReturnFromFun() {
     testExample("Examples/LocalFunctions/ReturnFromFun.kt", ReturnFromFunKt::main);
-  }
-
-  @Test
-  public void testReturnFromHelperFunctions() {
-    testExample("Examples/LocalFunctions/ReturnFromHelperFunctions.kt", localfunctions.ReturnFromHelperFunctionsKt::main);
-  }
-
-  @Test
-  public void testReturnFromLambda() {
-    testExample("Examples/LocalFunctions/ReturnFromLambda.kt", ReturnFromLambdaKt::main);
   }
 
   @Test

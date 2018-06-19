@@ -1,4 +1,4 @@
-// LocalFunctions/ReturnFromHelperFunctions.kt
+// LocalFunctions/HelperFunction.kt
 package localfunctions
 import atomictest.eq
 

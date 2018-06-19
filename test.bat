@@ -2,8 +2,8 @@
 echo gradlew clean
 call gradlew clean
 echo:
-echo bb code extract
-bb code extract
+echo bb code extract no_duplicates
+bb code extract no_duplicates
 echo:
 echo rm Tests\TestExamples.java
 call rm Tests\TestExamples.java
