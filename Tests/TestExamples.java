@@ -1304,22 +1304,22 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testGardenGnome() {
-    testExample("Examples/NonTrivialConstructors/GardenGnome.kt", nontrivialconstructors.GardenGnomeKt::main);
+    testExample("Examples/NontrivialConstructors/GardenGnome.kt", nontrivialconstructors.GardenGnomeKt::main);
   }
 
   @Test
   public void testInitSection() {
-    testExample("Examples/NonTrivialConstructors/InitSection.kt", primaryconstructor.InitSectionKt::main);
+    testExample("Examples/NontrivialConstructors/InitSection.kt", primaryconstructor.InitSectionKt::main);
   }
 
   @Test
   public void testMatrixInitialization() {
-    testExample("Examples/NonTrivialConstructors/MatrixInitialization.kt", nontrivialconstructors.MatrixInitializationKt::main);
+    testExample("Examples/NontrivialConstructors/MatrixInitialization.kt", nontrivialconstructors.MatrixInitializationKt::main);
   }
 
   @Test
   public void testTrivialConstructor() {
-    testExample("Examples/NonTrivialConstructors/TrivialConstructor.kt", primaryconstructor.TrivialConstructorKt::main);
+    testExample("Examples/NontrivialConstructors/TrivialConstructor.kt", primaryconstructor.TrivialConstructorKt::main);
   }
 
   @Test
