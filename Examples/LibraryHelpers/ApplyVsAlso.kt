@@ -2,20 +2,33 @@
 package libraryhelpers
 import atomictest.eq
 
-fun Window.copy() =
-  Window("copy of $id").also {
+fun Window.dup() =
+  Window("dup of $id").also {
     it.x = this.x               // [1]
     it.y = this.y
-    it.width = this.width
-    it.height = this.height
+    it.w = this.w
+    it.h = this.h
+  }
+
+fun Window.dup2() =
+  Window("dup of $id").also { win ->
+    win.x = this.x
+    win.y = this.y
+    win.w = this.w
+    win.h = this.h
   }
 
 fun main(args: Array<String>) {
   val first = Window("first").apply {
-    width = 500
-    height = 500
+    w = 500
+    h = 100
   }
-  val second = first.copy()
-  second.id eq "copy of first"
-  second.width eq 500
+  val second = first.dup()
+  second.id eq "dup of first"
+  second.w eq 500
+  second.h eq 100
+  val third = second.dup()
+  third.id eq "dup of dup of first"
+  third.w eq 500
+  third.h eq 100
 }

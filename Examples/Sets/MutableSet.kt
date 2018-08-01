@@ -2,10 +2,10 @@
 import atomictest.eq
 
 fun main(args: Array<String>) {
-  val set = mutableSetOf<Int>()
-  set += 42
-  set += 42
-  set eq setOf(42)
-  set -= 42
-  set eq setOf<Int>()
+  val mutableSet = mutableSetOf<Int>()
+  mutableSet += 42
+  mutableSet += 42
+  mutableSet eq setOf(42)
+  mutableSet -= 42
+  mutableSet eq setOf<Int>()
 }

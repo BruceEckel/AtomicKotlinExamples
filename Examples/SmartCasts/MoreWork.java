@@ -8,7 +8,7 @@ public class MoreWork {
       return "not JDog";
   }
   public static void main(String[] args) {
-    System.out.println(barkIfJDog(new Dog()));
+    System.out.println(barkIfJDog(new JDog()));
     System.out.println(barkIfJDog(42));
   }
 }

@@ -3,7 +3,7 @@ package introgenerics
 import atomictest.eq
 
 class AnyHolder(private val value: Any) {
-  fun get(): Any = value
+  fun getValue(): Any = value
 }
 
 class Dog {
@@ -12,11 +12,11 @@ class Dog {
 
 fun main(args: Array<String>) {
   val holder = AnyHolder(Dog())
-  val any = holder.get()
+  val any = holder.getValue()
   // Won't compile:
   // any.bark()
 
   val genericHolder = GenericHolder(Dog())
-  val dog = genericHolder.get()
+  val dog = genericHolder.getValue()
   dog.bark() eq "Ruff!"
 }

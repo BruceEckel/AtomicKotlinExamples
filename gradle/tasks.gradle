@@ -28,6 +28,11 @@ task AllOperators(type: JavaExec) {
     main = 'operatoroverloading.AllOperatorsKt'
 }
 
+task Also(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'libraryhelpers.AlsoKt'
+}
+
 task AnUnchangingVar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnUnchangingVarKt'
@@ -258,6 +263,11 @@ task CharRange(type: JavaExec) {
     main = 'CharRangeKt'
 }
 
+task CheckingArgument(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'libraryhelpers.CheckingArgumentKt'
+}
+
 task CheckingOptions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CheckingOptionsKt'
@@ -443,6 +453,11 @@ task Default(type: JavaExec) {
     main = 'DefaultKt'
 }
 
+task DefineTakeIf(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'definetakeif.DefineTakeIfKt'
+}
+
 task DefiningExceptions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'toss.DefiningExceptionsKt'
@@ -581,11 +596,6 @@ task ExplicitDelegation(type: JavaExec) {
 task ExplicitTyping(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExplicitTypingKt'
-}
-
-task ExplicitWording(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'withfunction.ExplicitWordingKt'
 }
 
 task ExpressionInTemplate(type: JavaExec) {
@@ -965,7 +975,7 @@ task InitSection(type: JavaExec) {
 
 task InputCheck(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'InputCheckKt'
+    main = 'exceptionhandling.InputCheckKt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -1268,6 +1278,11 @@ task MultipleArgs(type: JavaExec) {
     main = 'MultipleArgsKt'
 }
 
+task MultipleListReferences(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MultipleListReferencesKt'
+}
+
 task MultipleListRefs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MultipleListRefsKt'
@@ -1293,9 +1308,9 @@ task MultiplyByTwo(type: JavaExec) {
     main = 'MultiplyByTwoKt'
 }
 
-task MustableVsImmutableList(type: JavaExec) {
+task MustableVsReadonlyList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'MustableVsImmutableListKt'
+    main = 'MustableVsReadonlyListKt'
 }
 
 task MutListIsList(type: JavaExec) {
@@ -1688,6 +1703,11 @@ task RepeatVerbose(type: JavaExec) {
     main = 'RepeatVerboseKt'
 }
 
+task Repetitive(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'withfunction.RepetitiveKt'
+}
+
 task RequireNotNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RequireNotNullKt'
@@ -1916,11 +1936,6 @@ task TDDWorks(type: JavaExec) {
 task TailRecursiveSum(type: JavaExec) {
     classpath kotlinClassPath
     main = 'tailrecursion.TailRecursiveSumKt'
-}
-
-task TakeIfDeclaration(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'takeifdeclaration.TakeIfDeclarationKt'
 }
 
 task TakeOrDrop(type: JavaExec) {
@@ -2218,6 +2233,7 @@ task run (dependsOn: [
     'AVarIsMutable',
     'AddingIntToChar',
     'AllOperators',
+    'Also',
     'AnUnchangingVar',
     'AnalyzingInput',
     'Animals',
@@ -2264,6 +2280,7 @@ task run (dependsOn: [
     'ChainedCalls',
     'ChangingAVal',
     'CharRange',
+    'CheckingArgument',
     'CheckingOptions',
     'ClassBodies',
     'Cleanup',
@@ -2301,6 +2318,7 @@ task run (dependsOn: [
     'DataClasses',
     'Declarations',
     'Default',
+    'DefineTakeIf',
     'DefiningExceptions',
     'DefiningRanges',
     'DefiningRepeat',
@@ -2329,7 +2347,6 @@ task run (dependsOn: [
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',
-    'ExplicitWording',
     'ExpressionInTemplate',
     'ExtensionsToJavaClass',
     'Factorial',
@@ -2466,12 +2483,13 @@ task run (dependsOn: [
     'Molecule',
     'MoreWork',
     'MultipleArgs',
+    'MultipleListReferences',
     'MultipleListRefs',
     'MultipleRef',
     'MultiplyByFour',
     'MultiplyByThree',
     'MultiplyByTwo',
-    'MustableVsImmutableList',
+    'MustableVsReadonlyList',
     'MutListIsList',
     'MutableList',
     'MutableMaps',
@@ -2550,6 +2568,7 @@ task run (dependsOn: [
     'RepeatByInt',
     'RepeatThreeTimes',
     'RepeatVerbose',
+    'Repetitive',
     'RequireNotNull',
     'ResultOfApply',
     'ResultOfWith',
@@ -2596,7 +2615,6 @@ task run (dependsOn: [
     'TDDStillFails',
     'TDDWorks',
     'TailRecursiveSum',
-    'TakeIfDeclaration',
     'TakeOrDrop',
     'Team',
     'TeamWithTraditions',

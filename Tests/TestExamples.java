@@ -349,7 +349,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testInputCheck() {
-    testExample("Examples/ExceptionHandling/InputCheck.kt", InputCheckKt::main);
+    testExample("Examples/ExceptionHandling/InputCheck.kt", exceptionhandling.InputCheckKt::main);
   }
 
   @Test
@@ -1013,6 +1013,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAlso() {
+    testExample("Examples/LibraryHelpers/Also.kt", libraryhelpers.AlsoKt::main);
+  }
+
+  @Test
   public void testApplyIfNotNull() {
     testExample("Examples/LibraryHelpers/ApplyIfNotNull.kt", libraryhelpers.ApplyIfNotNullKt::main);
   }
@@ -1020,6 +1025,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testApplyVsAlso() {
     testExample("Examples/LibraryHelpers/ApplyVsAlso.kt", libraryhelpers.ApplyVsAlsoKt::main);
+  }
+
+  @Test
+  public void testCheckingArgument() {
+    testExample("Examples/LibraryHelpers/CheckingArgument.kt", libraryhelpers.CheckingArgumentKt::main);
   }
 
   @Test
@@ -1218,6 +1228,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDefineTakeIf() {
+    testExample("Examples/MoreLibraryFunctions/DefineTakeIf.kt", definetakeif.DefineTakeIfKt::main);
+  }
+
+  @Test
   public void testInputLines1() {
     testExample("Examples/MoreLibraryFunctions/InputLines1.kt", InputLines1Kt::main);
   }
@@ -1245,11 +1260,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testReadingNameWithIf() {
     testExample("Examples/MoreLibraryFunctions/ReadingNameWithIf.kt", ReadingNameWithIfKt::main);
-  }
-
-  @Test
-  public void testTakeIfDeclaration() {
-    testExample("Examples/MoreLibraryFunctions/TakeIfDeclaration.kt", takeifdeclaration.TakeIfDeclarationKt::main);
   }
 
   @Test
@@ -1963,8 +1973,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testMustableVsImmutableList() {
-    testExample("Examples/Summary2/MustableVsImmutableList.kt", MustableVsImmutableListKt::main);
+  public void testMultipleListReferences() {
+    testExample("Examples/Summary2/MultipleListReferences.kt", MultipleListReferencesKt::main);
+  }
+
+  @Test
+  public void testMustableVsReadonlyList() {
+    testExample("Examples/Summary2/MustableVsReadonlyList.kt", MustableVsReadonlyListKt::main);
   }
 
   @Test
@@ -2163,8 +2178,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testExplicitWording() {
-    testExample("Examples/WithFunction/ExplicitWording.kt", withfunction.ExplicitWordingKt::main);
+  public void testRepetitive() {
+    testExample("Examples/WithFunction/Repetitive.kt", withfunction.RepetitiveKt::main);
   }
 
   @Test

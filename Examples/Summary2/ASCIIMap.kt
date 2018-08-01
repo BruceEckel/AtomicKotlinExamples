@@ -11,23 +11,23 @@ fun main(args: Array<String>) {
     "K" to 75
   )
   println(ascii)
-  println(ascii["B"])                // [1]
+  println(ascii["B"])                 // [1]
   println(ascii.keys)
   println(ascii.values)
-  for (entry in ascii)               // [2]
+  for (entry in ascii)                // [2]
     print("${entry.key}:${entry.value},")
   println()
-  for ((key, value) in ascii)        // [3]
+  for ((key, value) in ascii)         // [3]
     print("$key:$value,")
   println()
-  val mascii = ascii.toMutableMap()  // [4]
-  mascii.remove("I")
-  println(mascii)
-  mascii.put("Z", 90)
-  println(mascii)
-  mascii.clear()
-  mascii["A"] = 100
-  println(mascii)
+  val mutable = ascii.toMutableMap()  // [4]
+  mutable.remove("I")
+  println(mutable)
+  mutable.put("Z", 90)
+  println(mutable)
+  mutable.clear()
+  mutable["A"] = 100
+  println(mutable)
 }
 /* Output:
 {A=65, B=66, C=67, D=68, I=73, J=74, K=75}

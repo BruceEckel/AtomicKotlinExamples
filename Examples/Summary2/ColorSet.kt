@@ -1,27 +1,27 @@
 // Summary2/ColorSet.kt
 import atomictest.eq
 
-val colors = """
-  Yellow Red Blue Green Orange Cyan
-""".split(Regex("\\W+")).sorted()      // [1]
+val colors =
+  "Yellow Green Green Blue"
+    .split(Regex("""\W+""")).sorted()  // [1]
 
 fun main(args: Array<String>) {
-  println(colors)
-  val iSet = colors.toSet() - ""       // [2]
-  println(iSet)
-  println(iSet + iSet)                 // [3]
-  val mSet = iSet.toMutableSet()       // [4]
-  mSet += colors.slice(3..5)           // [5]
-  println(mSet)
+  colors eq
+    listOf("Blue", "Green", "Green", "Yellow")
+
+  val colorSet = colors.toSet()        // [2]
+  colorSet eq
+    setOf("Yellow", "Green", "Blue")
+
+  (colorSet + colorSet) eq colorSet    // [3]
+
+  val mSet = colorSet.toMutableSet()   // [4]
+  mSet -= "Blue"
+  mSet += "Red"                        // [5]
+  mSet eq
+    setOf("Yellow", "Green", "Red")
+
   // Set membership:
-  println("Red" in iSet)               // [6]
-  println(iSet.contains("Chartreuse"))
+  ("Green" in colorSet) eq true        // [6]
+  colorSet.contains("Red") eq false
 }
-/* Output:
-[, , Blue, Cyan, Green, Orange, Red, Yellow]
-[Blue, Cyan, Green, Orange, Red, Yellow]
-[Blue, Cyan, Green, Orange, Red, Yellow]
-[Blue, Cyan, Green, Orange, Red, Yellow]
-true
-false
-*/

@@ -1,5 +1,9 @@
 // ExceptionHandling/InputCheck.kt
+package exceptionhandling
+
 import atomictest.eq
+
+fun isDigit(ch: Char) = ch in '0'..'9'
 
 fun intAbleString(s: String) =
   if (s.all(::isDigit)) s else "0"

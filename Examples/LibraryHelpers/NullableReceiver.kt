@@ -1,20 +1,21 @@
 // LibraryHelpers/NullableReceiver.kt
 package libraryhelpers
 
-class Window(
-  val id: String,
-  var x: Int = 0,
-  var y: Int = 0,
-  var width: Int = 200,
-  var height: Int = 100
+data class Window(  // Makes it displayable
+  val id: String = "none",
+  var x: Int = 0,   // Horizontal location
+  var y: Int = 0,   // Vertical Location
+  var w: Int = 200, // Width
+  var h: Int = 100  // Height
 )
 
 fun adjustWindowIfNotNull(window: Window?) {
-  window?.run {
-    this.x = 10          // [1]
+  window?.run {          // [1]
+    this.x = 10          // [2]
     y = 10
-    width *= 2
-    height *= 2
+    w *= 2
+    h *= 2
+    println(this)
   }
 }
 

@@ -11,9 +11,10 @@ fun buildStr(
 }
 
 fun main(args: Array<String>) {
-  buildStr { sb ->
-    sb.append("Alphabet: ")
+  buildStr {
+    it.append("Alphabet: ")
     for (ch in 'a'..'z')
-      sb.append(ch)
-  } eq "Alphabet: abcdefghijklmnopqrstuvwxyz"
+      it.append(ch)
+  } eq
+  "Alphabet: abcdefghijklmnopqrstuvwxyz"
 }

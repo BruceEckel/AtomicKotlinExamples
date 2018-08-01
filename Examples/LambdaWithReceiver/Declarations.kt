@@ -21,8 +21,8 @@ fun buildString2(
 }
 
 fun main(args: Array<String>) {
-  buildString1 { sb ->
-    sb.append("Regular lambda")
+  buildString1 {
+    it.append("Regular lambda")
   } eq "Regular lambda"
 
   buildString2 {

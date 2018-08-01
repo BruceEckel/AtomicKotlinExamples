@@ -1,6 +1,5 @@
 // LibraryHelpers/ResultOfWith.kt
 package libraryhelpers
-
 import atomictest.eq
 
 fun main(args: Array<String>) {

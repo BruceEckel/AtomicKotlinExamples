@@ -2,10 +2,10 @@
 import atomictest.eq
 
 class Cell {
-  var entry = ' '                 // [1]
-  fun set(e: Char): String =      // [2]
-    if (entry == ' ' && (
-      e == 'X' || e == 'O')) {
+  var entry = ' '                   // [1]
+  fun setValue(e: Char): String =   // [2]
+    if (entry == ' ' &&
+      (e == 'X' || e == 'O')) {
       entry = e
       "successful move"
     } else
@@ -19,10 +19,10 @@ class Grid {
     listOf(Cell(), Cell(), Cell())
   )
   fun play(e: Char, x: Int, y: Int): String =
-    if (x < 0 || x > 2 || y < 0 || y > 2)
+    if (x !in 0..2 || y !in 0..2)
       "invalid move"
     else
-      cells[x][y].set(e)            // [3]
+      cells[x][y].setValue(e)       // [3]
 }
 
 fun main(args: Array<String>) {

@@ -1,4 +1,4 @@
-// WithFunction/ExplicitWording.kt
+// WithFunction/Repetitive.kt
 package withfunction
 import atomictest.eq
 

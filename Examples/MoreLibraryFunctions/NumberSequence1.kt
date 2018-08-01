@@ -6,5 +6,5 @@ fun main(args: Array<String>) {
     generateSequence(1) { it + 1 }
   naturalNumbers.take(3).toList() eq
     listOf(1, 2, 3)
-  naturalNumbers.take(10).count() eq 10
+  naturalNumbers.take(10).sum() eq 55
 }

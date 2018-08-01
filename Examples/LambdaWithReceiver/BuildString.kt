@@ -6,5 +6,6 @@ fun main(args: Array<String>) {
     append("Alphabet: ")
     for (ch in 'a'..'z')
       append(ch)
-  } eq "Alphabet: abcdefghijklmnopqrstuvwxyz"
+  } eq
+  "Alphabet: abcdefghijklmnopqrstuvwxyz"
 }
