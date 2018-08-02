@@ -53,6 +53,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testForControl() {
+    testExample("Examples/BreakAndContinue/ForControl.kt", ForControlKt::main);
+  }
+
+  @Test
+  public void testJustTesting() {
+    testExample("Examples/BreakAndContinue/JustTesting.kt", JustTestingKt::main);
+  }
+
+  @Test
+  public void testWhileControl() {
+    testExample("Examples/BreakAndContinue/WhileControl.kt", WhileControlKt::main);
+  }
+
+  @Test
   public void testDelegatedControls() {
     testExample("Examples/ClassDelegation/DelegatedControls.kt", DelegatedControlsKt::main);
   }

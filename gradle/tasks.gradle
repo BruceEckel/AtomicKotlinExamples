@@ -688,6 +688,11 @@ task FoldVsForLoop(type: JavaExec) {
     main = 'FoldVsForLoopKt'
 }
 
+task ForControl(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ForControlKt'
+}
+
 task ForEachLine(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ForEachLineKt'
@@ -1066,6 +1071,11 @@ task JetPack(type: JavaExec) {
 task JoinToString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'JoinToStringKt'
+}
+
+task JustTesting(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'JustTestingKt'
 }
 
 task KeyFailure(type: JavaExec) {
@@ -2178,6 +2188,11 @@ task While(type: JavaExec) {
     main = 'WhileKt'
 }
 
+task WhileControl(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WhileControlKt'
+}
+
 task WhileLoop(type: JavaExec) {
     classpath kotlinClassPath
     main = 'WhileLoopKt'
@@ -2365,6 +2380,7 @@ task run (dependsOn: [
     'FoldAndReduce',
     'FoldRight',
     'FoldVsForLoop',
+    'ForControl',
     'ForEachLine',
     'ForIsAStatement',
     'ForLoop',
@@ -2441,6 +2457,7 @@ task run (dependsOn: [
     'JavaList',
     'JetPack',
     'JoinToString',
+    'JustTesting',
     'KeyFailure',
     'KotlinChecked',
     'LabeledReturn',
@@ -2663,6 +2680,7 @@ task run (dependsOn: [
     'VisibleArgs',
     'WhenAndSmartCasts',
     'While',
+    'WhileControl',
     'WhileLoop',
     'WhyFlatMap',
     'WildAnimals',
