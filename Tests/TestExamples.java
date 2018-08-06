@@ -53,18 +53,33 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDoControl() {
+    testExample("Examples/BreakAndContinue/DoControl.kt", DoControlKt::main);
+  }
+
+  @Test
+  public void testDoLabeled() {
+    testExample("Examples/BreakAndContinue/DoLabeled.kt", DoLabeledKt::main);
+  }
+
+  @Test
   public void testForControl() {
     testExample("Examples/BreakAndContinue/ForControl.kt", ForControlKt::main);
   }
 
   @Test
-  public void testJustTesting() {
-    testExample("Examples/BreakAndContinue/JustTesting.kt", JustTestingKt::main);
+  public void testForLabeled() {
+    testExample("Examples/BreakAndContinue/ForLabeled.kt", ForLabeledKt::main);
   }
 
   @Test
   public void testWhileControl() {
     testExample("Examples/BreakAndContinue/WhileControl.kt", WhileControlKt::main);
+  }
+
+  @Test
+  public void testWhileLabeled() {
+    testExample("Examples/BreakAndContinue/WhileLabeled.kt", WhileLabeledKt::main);
   }
 
   @Test
@@ -915,6 +930,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testRigidHolder() {
     testExample("Examples/IntroGenerics/RigidHolder.kt", introgenerics.RigidHolderKt::main);
+  }
+
+  @Test
+  public void testLabeledThis() {
+    testExample("Examples/LabeledThis/LabeledThis.kt", labeledthis.LabeledThisKt::main);
   }
 
   @Test

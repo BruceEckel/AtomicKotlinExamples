@@ -518,6 +518,16 @@ task DisplayAlienSpecies(type: JavaExec) {
     main = 'DisplayAlienSpeciesKt'
 }
 
+task DoControl(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DoControlKt'
+}
+
+task DoLabeled(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DoLabeledKt'
+}
+
 task DoWhile(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DoWhileKt'
@@ -701,6 +711,11 @@ task ForEachLine(type: JavaExec) {
 task ForIsAStatement(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ForIsAStatementKt'
+}
+
+task ForLabeled(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ForLabeledKt'
 }
 
 task ForLoop(type: JavaExec) {
@@ -1073,11 +1088,6 @@ task JoinToString(type: JavaExec) {
     main = 'JoinToStringKt'
 }
 
-task JustTesting(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'JustTestingKt'
-}
-
 task KeyFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'KeyFailureKt'
@@ -1091,6 +1101,11 @@ task KotlinChecked(type: JavaExec) {
 task LabeledReturn(type: JavaExec) {
     classpath kotlinClassPath
     main = 'localfunctions.LabeledReturnKt'
+}
+
+task LabeledThis(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'labeledthis.LabeledThisKt'
 }
 
 task LambdaAndNamedArgs(type: JavaExec) {
@@ -2193,6 +2208,11 @@ task WhileControl(type: JavaExec) {
     main = 'WhileControlKt'
 }
 
+task WhileLabeled(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WhileLabeledKt'
+}
+
 task WhileLoop(type: JavaExec) {
     classpath kotlinClassPath
     main = 'WhileLoopKt'
@@ -2346,6 +2366,8 @@ task run (dependsOn: [
     'DestructuringMap',
     'Direction',
     'DisplayAlienSpecies',
+    'DoControl',
+    'DoLabeled',
     'DoWhile',
     'DoWhileLoop',
     'Dog',
@@ -2383,6 +2405,7 @@ task run (dependsOn: [
     'ForControl',
     'ForEachLine',
     'ForIsAStatement',
+    'ForLabeled',
     'ForLoop',
     'ForWithCharRange',
     'ForWithRanges',
@@ -2457,10 +2480,10 @@ task run (dependsOn: [
     'JavaList',
     'JetPack',
     'JoinToString',
-    'JustTesting',
     'KeyFailure',
     'KotlinChecked',
     'LabeledReturn',
+    'LabeledThis',
     'LambdaAndNamedArgs',
     'LambdaIt',
     'LambdaTypeInference',
@@ -2681,6 +2704,7 @@ task run (dependsOn: [
     'WhenAndSmartCasts',
     'While',
     'WhileControl',
+    'WhileLabeled',
     'WhileLoop',
     'WhyFlatMap',
     'WildAnimals',
