@@ -1,4 +1,4 @@
-// Interfaces/InterfaceDependency.kt
+// Interfaces/InterfaceIndependence.kt
 package game
 
 interface Position
