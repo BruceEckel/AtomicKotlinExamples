@@ -53,6 +53,11 @@ task AnnotatedJava(type: JavaExec) {
     main = 'nullabilityannotations.AnnotatedJavaKt'
 }
 
+task AnotherComputer(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.AnotherComputerKt'
+}
+
 task AnyFromListOfStar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'extensionproperties.AnyFromListOfStarKt'
@@ -1933,14 +1938,14 @@ task SumViaFold(type: JavaExec) {
     main = 'SumViaFoldKt'
 }
 
+task SuperComputer(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.SuperComputerKt'
+}
+
 task Swearing(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SwearingKt'
-}
-
-task Syntax(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'interfaces.SyntaxKt'
 }
 
 task TDDFail(type: JavaExec) {
@@ -2273,6 +2278,7 @@ task run (dependsOn: [
     'AnalyzingInput',
     'Animals',
     'AnnotatedJava',
+    'AnotherComputer',
     'AnyFromListOfStar',
     'AnyFunImplementation',
     'AnyInstead',
@@ -2649,8 +2655,8 @@ task run (dependsOn: [
     'Sum',
     'SumUsingRange',
     'SumViaFold',
+    'SuperComputer',
     'Swearing',
-    'Syntax',
     'TDDFail',
     'TDDStillFails',
     'TDDWorks',

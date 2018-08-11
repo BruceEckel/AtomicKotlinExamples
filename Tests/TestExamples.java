@@ -903,8 +903,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testSyntax() {
-    testExample("Examples/Interfaces/Syntax.kt", interfaces.SyntaxKt::main);
+  public void testAnotherComputer() {
+    testExample("Examples/Interfaces/AnotherComputer.kt", interfaces.AnotherComputerKt::main);
+  }
+
+  @Test
+  public void testSuperComputer() {
+    testExample("Examples/Interfaces/SuperComputer.kt", interfaces.SuperComputerKt::main);
   }
 
   @Test

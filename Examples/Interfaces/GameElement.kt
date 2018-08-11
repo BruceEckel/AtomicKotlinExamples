@@ -1,4 +1,4 @@
-// Interfaces/AnotherImplementation.kt
+// Interfaces/GameElement.kt
 package propertiesininterfaces
 
 interface GameElement {

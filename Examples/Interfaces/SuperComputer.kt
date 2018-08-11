@@ -1,6 +1,5 @@
-// Interfaces/Syntax.kt
+// Interfaces/SuperComputer.kt
 package interfaces
-
 import atomictest.eq
 
 interface SuperComputer {

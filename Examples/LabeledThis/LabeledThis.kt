@@ -2,29 +2,30 @@
 package labeledthis
 import atomictest.eq
 
-class A { // implicit label @A
-    inner class B { // implicit label @B
-        fun Int.foo() { // implicit label @foo
-            val a = this@A // A's this
-            val b = this@B // B's this
+class Outer { // implicit label @Outer
+  inner class Inner { // implicit label @Inner
+    fun Int.ext() { // implicit label @ext
+      val a = this@Outer
+      val b = this@Inner
+      val c = this // Int ext() receiver
+      val c1 = this@ext // Int ext() receiver
 
-            val c = this // foo()'s receiver, an Int
-            val c1 = this@foo // foo()'s receiver, an Int
+      val func = lambda@ fun String.() {
+        val d = this // func's receiver
+        val d2 = this@lambda
+        d eq d2
+      }
 
-            val funLit = lambda@ fun String.() {
-                val d = this // funLit's receiver
-            }
-
-
-            val funLit2 = { s: String ->
-                // foo()'s receiver, since enclosing lambda expression
-                // doesn't have any receiver
-                val d1 = this
-            }
-        }
+      val func2 = { s: String ->
+        // ext()'s receiver; enclosing
+        // lambda doesn't have a receiver
+        val d1 = this
+      }
     }
+  }
 }
 
 fun main(args: Array<String>) {
-  A()
+  val outer = Outer()
+  val inner = outer.Inner()
 }
