@@ -1,5 +1,5 @@
-// NonTrivialConstructors/TrivialConstructor.kt
-package primaryconstructor
+// ComplexConstructors/SimpleConstructor.kt
+package complexconstructors
 import atomictest.eq
 
 class Alien(val name: String)

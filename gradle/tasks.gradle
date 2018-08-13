@@ -173,6 +173,11 @@ task BasicLogging(type: JavaExec) {
     main = 'logging.BasicLoggingKt'
 }
 
+task Bear(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.BearKt'
+}
+
 task BetterSuitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BetterSuitcaseKt'
@@ -458,6 +463,11 @@ task Default(type: JavaExec) {
     main = 'DefaultKt'
 }
 
+task DefaultArgPrimary(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.DefaultArgPrimaryKt'
+}
+
 task DefineTakeIf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'definetakeif.DefineTakeIfKt'
@@ -561,6 +571,11 @@ task EagerVsLazyEvaluation(type: JavaExec) {
 task EasyKeys(type: JavaExec) {
     classpath kotlinClassPath
     main = 'hashing.EasyKeysKt'
+}
+
+task ElementMatrix(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.ElementMatrixKt'
 }
 
 task ElvisCall(type: JavaExec) {
@@ -760,7 +775,7 @@ task Gadget(type: JavaExec) {
 
 task GardenGnome(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nontrivialconstructors.GardenGnomeKt'
+    main = 'complexconstructors.GardenGnomeKt'
 }
 
 task GenericFunction(type: JavaExec) {
@@ -995,7 +1010,7 @@ task Info(type: JavaExec) {
 
 task InitSection(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'primaryconstructor.InitSectionKt'
+    main = 'complexconstructors.InitSectionKt'
 }
 
 task InputCheck(type: JavaExec) {
@@ -1246,11 +1261,6 @@ task Maps(type: JavaExec) {
 task MatchingAgainstVals(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MatchingAgainstValsKt'
-}
-
-task MatrixInitialization(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nontrivialconstructors.MatrixInitializationKt'
 }
 
 task MemberOperator(type: JavaExec) {
@@ -1803,6 +1813,11 @@ task Simple(type: JavaExec) {
     main = 'SimpleKt'
 }
 
+task SimpleConstructor(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.SimpleConstructorKt'
+}
+
 task SimpleHashing(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SimpleHashingKt'
@@ -2038,11 +2053,6 @@ task TripleQuotes(type: JavaExec) {
     main = 'TripleQuotesKt'
 }
 
-task TrivialConstructor(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'primaryconstructor.TrivialConstructorKt'
-}
-
 task TrueOrFalse(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TrueOrFalseKt'
@@ -2243,6 +2253,11 @@ task WithDefaultArguments(type: JavaExec) {
     main = 'withdefaultarguments.WithDefaultArgumentsKt'
 }
 
+task WithSecondary(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.WithSecondaryKt'
+}
+
 task WithoutDefaultArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'withoutdefaultarguments.WithoutDefaultArgumentsKt'
@@ -2302,6 +2317,7 @@ task run (dependsOn: [
     'BasicGenerics',
     'BasicLambda',
     'BasicLogging',
+    'Bear',
     'BetterSuitcase',
     'BiggestLong',
     'BmiWhen',
@@ -2359,6 +2375,7 @@ task run (dependsOn: [
     'DataClasses',
     'Declarations',
     'Default',
+    'DefaultArgPrimary',
     'DefineTakeIf',
     'DefiningExceptions',
     'DefiningRanges',
@@ -2380,6 +2397,7 @@ task run (dependsOn: [
     'EagerEvaluation',
     'EagerVsLazyEvaluation',
     'EasyKeys',
+    'ElementMatrix',
     'ElvisCall',
     'ElvisOperator',
     'ElvisWithException',
@@ -2517,7 +2535,6 @@ task run (dependsOn: [
     'Mapping',
     'Maps',
     'MatchingAgainstVals',
-    'MatrixInitialization',
     'MemberOperator',
     'MemberVsExtension',
     'Membership',
@@ -2628,6 +2645,7 @@ task run (dependsOn: [
     'Sets',
     'SimilarOperation',
     'Simple',
+    'SimpleConstructor',
     'SimpleHashing',
     'SimpleLoggingStrategy',
     'SimpleOperation',
@@ -2675,7 +2693,6 @@ task run (dependsOn: [
     'TransformingMap',
     'TrimMargin',
     'TripleQuotes',
-    'TrivialConstructor',
     'TrueOrFalse',
     'Truncation',
     'TryFinally',
@@ -2716,6 +2733,7 @@ task run (dependsOn: [
     'WildAnimals',
     'WithCleanup',
     'WithDefaultArguments',
+    'WithSecondary',
     'WithoutDefaultArguments',
     'ZeroArguments',
     'ZipAndTransform',

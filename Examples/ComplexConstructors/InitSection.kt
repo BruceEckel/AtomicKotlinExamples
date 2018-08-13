@@ -1,10 +1,9 @@
-// NonTrivialConstructors/InitSection.kt
-package primaryconstructor
+// ComplexConstructors/InitSection.kt
+package complexconstructors
 import atomictest.eq
 
 class X(i: Int) {
   var s: String
-
   init {
     s = "Initialized: X(i=$i)"
   }

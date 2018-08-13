@@ -1,6 +1,7 @@
 // Constructors/VisibleArgs.kt
 
 class MutableNameAlien(var name: String)
+
 class FixedNameAlien(val name: String)
 
 fun main(args: Array<String>) {

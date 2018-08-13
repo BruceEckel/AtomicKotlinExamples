@@ -143,6 +143,41 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testBear() {
+    testExample("Examples/ComplexConstructors/Bear.kt", complexconstructors.BearKt::main);
+  }
+
+  @Test
+  public void testDefaultArgPrimary() {
+    testExample("Examples/ComplexConstructors/DefaultArgPrimary.kt", complexconstructors.DefaultArgPrimaryKt::main);
+  }
+
+  @Test
+  public void testElementMatrix() {
+    testExample("Examples/ComplexConstructors/ElementMatrix.kt", complexconstructors.ElementMatrixKt::main);
+  }
+
+  @Test
+  public void testGardenGnome() {
+    testExample("Examples/ComplexConstructors/GardenGnome.kt", complexconstructors.GardenGnomeKt::main);
+  }
+
+  @Test
+  public void testInitSection() {
+    testExample("Examples/ComplexConstructors/InitSection.kt", complexconstructors.InitSectionKt::main);
+  }
+
+  @Test
+  public void testSimpleConstructor() {
+    testExample("Examples/ComplexConstructors/SimpleConstructor.kt", complexconstructors.SimpleConstructorKt::main);
+  }
+
+  @Test
+  public void testWithSecondary() {
+    testExample("Examples/ComplexConstructors/WithSecondary.kt", complexconstructors.WithSecondaryKt::main);
+  }
+
+  @Test
   public void testArg() {
     testExample("Examples/Constructors/Arg.kt", ArgKt::main);
   }
@@ -1350,26 +1385,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testValueFromMap() {
     testExample("Examples/NonNullAssertions/ValueFromMap.kt", ValueFromMapKt::main);
-  }
-
-  @Test
-  public void testGardenGnome() {
-    testExample("Examples/NonTrivialConstructors/GardenGnome.kt", nontrivialconstructors.GardenGnomeKt::main);
-  }
-
-  @Test
-  public void testInitSection() {
-    testExample("Examples/NonTrivialConstructors/InitSection.kt", primaryconstructor.InitSectionKt::main);
-  }
-
-  @Test
-  public void testMatrixInitialization() {
-    testExample("Examples/NonTrivialConstructors/MatrixInitialization.kt", nontrivialconstructors.MatrixInitializationKt::main);
-  }
-
-  @Test
-  public void testTrivialConstructor() {
-    testExample("Examples/NonTrivialConstructors/TrivialConstructor.kt", primaryconstructor.TrivialConstructorKt::main);
   }
 
   @Test

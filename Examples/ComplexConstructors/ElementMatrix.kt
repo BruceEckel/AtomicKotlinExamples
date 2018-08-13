@@ -1,10 +1,10 @@
-// NonTrivialConstructors/MatrixInitialization.kt
-package nontrivialconstructors
+// ComplexConstructors/ElementMatrix.kt
+package complexconstructors
 import atomictest.eq
 
 class GameElement(val symbol: Char)
 
-class ElementsMatrix(
+class ElementMatrix(
   val width: Int,                       // [1]
   val height: Int,
   representation: String                // [2]
@@ -34,7 +34,7 @@ class ElementsMatrix(
 }
 
 fun main(args: Array<String>) {
-  val matrix = ElementsMatrix(4, 3, """
+  val matrix = ElementMatrix(4, 3, """
     # ##
        #
     #.##
