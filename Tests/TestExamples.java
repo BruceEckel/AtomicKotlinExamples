@@ -148,18 +148,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDefaultArgPrimary() {
-    testExample("Examples/ComplexConstructors/DefaultArgPrimary.kt", complexconstructors.DefaultArgPrimaryKt::main);
-  }
-
-  @Test
   public void testElementMatrix() {
     testExample("Examples/ComplexConstructors/ElementMatrix.kt", complexconstructors.ElementMatrixKt::main);
-  }
-
-  @Test
-  public void testGardenGnome() {
-    testExample("Examples/ComplexConstructors/GardenGnome.kt", complexconstructors.GardenGnomeKt::main);
   }
 
   @Test
@@ -168,13 +158,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testSimpleConstructor() {
-    testExample("Examples/ComplexConstructors/SimpleConstructor.kt", complexconstructors.SimpleConstructorKt::main);
+  public void testMultipleInits() {
+    testExample("Examples/ComplexConstructors/MultipleInits.kt", complexconstructors.MultipleInitsKt::main);
   }
 
   @Test
-  public void testWithSecondary() {
-    testExample("Examples/ComplexConstructors/WithSecondary.kt", complexconstructors.WithSecondaryKt::main);
+  public void testSimpleConstructor() {
+    testExample("Examples/ComplexConstructors/SimpleConstructor.kt", complexconstructors.SimpleConstructorKt::main);
   }
 
   @Test
@@ -1825,6 +1815,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSealedClasses() {
     testExample("Examples/SealedClasses/SealedClasses.kt", sealedclasses.SealedClassesKt::main);
+  }
+
+  @Test
+  public void testDefaultArgPrimary() {
+    testExample("Examples/SecondaryConstructors/DefaultArgPrimary.kt", secondaryconstructors.DefaultArgPrimaryKt::main);
+  }
+
+  @Test
+  public void testGardenGnome() {
+    testExample("Examples/SecondaryConstructors/GardenGnome.kt", secondaryconstructors.GardenGnomeKt::main);
+  }
+
+  @Test
+  public void testWithSecondary() {
+    testExample("Examples/SecondaryConstructors/WithSecondary.kt", secondaryconstructors.WithSecondaryKt::main);
   }
 
   @Test

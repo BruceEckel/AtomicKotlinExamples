@@ -1,5 +1,5 @@
-// ComplexConstructors/DefaultArgPrimary.kt
-package complexconstructors
+// SecondaryConstructors/DefaultArgPrimary.kt
+package secondaryconstructors
 import atomictest.eq
 
 class DefaultArgPrimary(n: Int = 99) {

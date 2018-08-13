@@ -1,4 +1,4 @@
-// Abstract/MoreGameElements.kt
+// Abstract/MovableElement.kt
 package gameelements
 
 abstract class MovableElement : GameElement {

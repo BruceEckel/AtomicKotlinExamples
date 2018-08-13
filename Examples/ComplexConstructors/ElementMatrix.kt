@@ -18,9 +18,8 @@ class ElementMatrix(
     for (y in 0 until height) {
       for (x in 0 until width) {
         val ch = lines[y][x]
-        if (ch != ' ') {
+        if (ch != ' ')
           cells[y][x] = GameElement(ch) // [6]
-        }
       }
     }
   }
@@ -39,10 +38,10 @@ fun main(args: Array<String>) {
        #
     #.##
     """.trimIndent())
-  matrix.cells[1][1] = GameElement('R')
-  matrix.toString() eq """
+  matrix.cells[1][0] = GameElement('R')
+  matrix eq """
     # ##
-     R #
+    R  #
     #.##
     """.trimIndent()
 }

@@ -1,5 +1,5 @@
-// ComplexConstructors/GardenGnome.kt
-package complexconstructors
+// SecondaryConstructors/GardenGnome.kt
+package secondaryconstructors
 import atomictest.eq
 
 enum class Material {

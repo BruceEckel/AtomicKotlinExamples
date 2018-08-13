@@ -465,7 +465,7 @@ task Default(type: JavaExec) {
 
 task DefaultArgPrimary(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'complexconstructors.DefaultArgPrimaryKt'
+    main = 'secondaryconstructors.DefaultArgPrimaryKt'
 }
 
 task DefineTakeIf(type: JavaExec) {
@@ -775,7 +775,7 @@ task Gadget(type: JavaExec) {
 
 task GardenGnome(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'complexconstructors.GardenGnomeKt'
+    main = 'secondaryconstructors.GardenGnomeKt'
 }
 
 task GenericFunction(type: JavaExec) {
@@ -1316,6 +1316,11 @@ task MoreWork(type: JavaExec) {
 task MultipleArgs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MultipleArgsKt'
+}
+
+task MultipleInits(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.MultipleInitsKt'
 }
 
 task MultipleListReferences(type: JavaExec) {
@@ -2255,7 +2260,7 @@ task WithDefaultArguments(type: JavaExec) {
 
 task WithSecondary(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'complexconstructors.WithSecondaryKt'
+    main = 'secondaryconstructors.WithSecondaryKt'
 }
 
 task WithoutDefaultArguments(type: JavaExec) {
@@ -2546,6 +2551,7 @@ task run (dependsOn: [
     'Molecule',
     'MoreWork',
     'MultipleArgs',
+    'MultipleInits',
     'MultipleListReferences',
     'MultipleListRefs',
     'MultipleRef',
