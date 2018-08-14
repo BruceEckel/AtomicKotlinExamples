@@ -93,6 +93,11 @@ task ArgumentOrder(type: JavaExec) {
     main = 'color1.ArgumentOrderKt'
 }
 
+task ArrayInit(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ArrayInitKt'
+}
+
 task ArraySpread(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ArraySpreadKt'
@@ -2306,6 +2311,7 @@ task run (dependsOn: [
     'ApplyVsAlso',
     'Arg',
     'ArgumentOrder',
+    'ArrayInit',
     'ArraySpread',
     'AssertTrue',
     'AssigningAnIf',

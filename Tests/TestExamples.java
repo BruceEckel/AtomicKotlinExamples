@@ -143,6 +143,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testArrayInit() {
+    testExample("Examples/ComplexConstructors/ArrayInit.kt", ArrayInitKt::main);
+  }
+
+  @Test
   public void testBear() {
     testExample("Examples/ComplexConstructors/Bear.kt", complexconstructors.BearKt::main);
   }

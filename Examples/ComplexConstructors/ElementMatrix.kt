@@ -5,21 +5,21 @@ import atomictest.eq
 class GameElement(val symbol: Char)
 
 class ElementMatrix(
-  val width: Int,                       // [1]
+  val width: Int,
   val height: Int,
-  representation: String                // [2]
+  representation: String
 ) {
-  val cells = Array(height) {           // [3]
+  val cells = Array(height) {           // [1]
     Array<GameElement?>(width) { null }
   }
 
-  init {                                // [4]
-    val lines = representation.lines()  // [5]
+  init {
+    val lines = representation.lines()  // [2]
     for (y in 0 until height) {
       for (x in 0 until width) {
         val ch = lines[y][x]
         if (ch != ' ')
-          cells[y][x] = GameElement(ch) // [6]
+          cells[y][x] = GameElement(ch) // [3]
       }
     }
   }
