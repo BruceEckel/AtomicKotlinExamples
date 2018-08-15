@@ -9,12 +9,12 @@ class WithSecondary(val1: Int, val2: Int) {
   constructor(value: Int): this(0, value) {
     println("Secondary: $value")
   }
-  constructor(s: String): this(11) {
+  constructor(s: String): this(11) { // [1]
     println("Secondary: $s")
   }
   /* Won't compile without a call
      to the primary constructor:
-  constructor(f: Float) {            // [1]
+  constructor(f: Float) {            // [2]
     println("Secondary: $f")
   }
   */

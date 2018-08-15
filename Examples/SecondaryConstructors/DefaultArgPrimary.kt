@@ -9,11 +9,11 @@ class DefaultArgPrimary(n: Int = 99) {
   constructor(s: String): this() {
     println("Secondary: $s")
   }
-  constructor(): this(14) {
+  constructor(): this(14) {     // [1]
     println("Secondary()")
   }
   /* Ambiguous; won't compile:
-  constructor(): this() {
+  constructor(): this() {       // [2]
     println("Secondary()")
   }
   */
