@@ -1,6 +1,5 @@
 // SecondaryConstructors/WithSecondary.kt
 package secondaryconstructors
-import atomictest.eq
 
 class WithSecondary(val1: Int, val2: Int) {
   init {

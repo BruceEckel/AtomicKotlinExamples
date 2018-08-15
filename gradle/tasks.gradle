@@ -778,9 +778,9 @@ task Gadget(type: JavaExec) {
     main = 'GadgetKt'
 }
 
-task GardenGnome(type: JavaExec) {
+task GardenItem(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'secondaryconstructors.GardenGnomeKt'
+    main = 'secondaryconstructors.GardenItemKt'
 }
 
 task GenericFunction(type: JavaExec) {
@@ -2448,7 +2448,7 @@ task run (dependsOn: [
     'FunctionReference',
     'FunctionTypeExamples',
     'Gadget',
-    'GardenGnome',
+    'GardenItem',
     'GenericFunction',
     'GenericHolder',
     'GenericListExt',

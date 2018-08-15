@@ -1828,8 +1828,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGardenGnome() {
-    testExample("Examples/SecondaryConstructors/GardenGnome.kt", secondaryconstructors.GardenGnomeKt::main);
+  public void testGardenItem() {
+    testExample("Examples/SecondaryConstructors/GardenItem.kt", secondaryconstructors.GardenItemKt::main);
   }
 
   @Test

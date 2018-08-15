@@ -1,11 +1,13 @@
 // SecondaryConstructors/DefaultArgPrimary.kt
 package secondaryconstructors
-import atomictest.eq
 
 class DefaultArgPrimary(n: Int = 99) {
   init {
     println("Primary: $n")
   }
+  // this() does NOT call the primary
+  // constructor with a default argument
+  // of 99, but instead calls constructor():
   constructor(s: String): this() {
     println("Secondary: $s")
   }
