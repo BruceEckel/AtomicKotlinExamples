@@ -17,8 +17,7 @@ class Bonobo : GreatApe() {
     // Call the base-class version:
     super.eat()
   }
-
-  // Add a function():
+  // Add a function:
   fun run() = "Bonobo run"
 }
 
@@ -30,7 +29,7 @@ class Chimpanzee : GreatApe() {
     energy += additionalEnergy
     super.eat()
   }
-
+  // Add a function:
   fun jump() = "Chimp jump"
 }
 
@@ -45,7 +44,6 @@ fun talk(ape: GreatApe): String {
 fun main(args: Array<String>) {
   // Cannot access 'energy':
   // GreatApe().energy
-
   talk(GreatApe()) eq "Hoo! Energy: 0"
   talk(Bonobo()) eq "Eep! Energy: 10"
   talk(Chimpanzee()) eq "Yawp! Energy: 20"

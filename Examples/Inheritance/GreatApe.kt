@@ -11,16 +11,16 @@ open class Bonobo : GreatApe()
 class Chimpanzee : GreatApe()
 class BonoboB : Bonobo()
 
-fun display(ape: GreatApe) =
+fun info(ape: GreatApe) =
   "weight: ${ape.weight} age: ${ape.age}"
 
 fun main(args: Array<String>) {
-  display(GreatApe()) eq
+  info(GreatApe()) eq
     "weight: 100.0 age: 12"
-  display(Bonobo()) eq
+  info(Bonobo()) eq
     "weight: 100.0 age: 12"
-  display(Chimpanzee()) eq
+  info(Chimpanzee()) eq
     "weight: 100.0 age: 12"
-  display(BonoboB()) eq
+  info(BonoboB()) eq
     "weight: 100.0 age: 12"
 }
