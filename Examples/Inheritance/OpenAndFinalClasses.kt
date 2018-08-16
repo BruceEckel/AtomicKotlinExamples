@@ -5,7 +5,7 @@ open class Parent
 
 class Child : Parent()
 
-// Child is not open, so this won't work:
+// Child is not open, so this fails:
 // class GrandChild : Child()
 
 // This class can't be inherited:

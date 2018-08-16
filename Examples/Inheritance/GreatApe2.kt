@@ -35,7 +35,7 @@ class Chimpanzee : GreatApe() {
 
 fun talk(ape: GreatApe): String {
   // ape.run()  // Not an ape function
-  // ape.jump // Nor this
+  // ape.jump() // Nor this
   ape.eat()
   ape.climb(10)
   return "${ape.call()} ${ape.energyLevel()}"
