@@ -128,11 +128,6 @@ task AtomicTestCapture(type: JavaExec) {
     main = 'AtomicTestCaptureKt'
 }
 
-task AuxiliaryInit(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseinit.AuxiliaryInitKt'
-}
-
 task AverageIncome(type: JavaExec) {
     classpath kotlinClassPath
     main = 'firstversion.AverageIncomeKt'
@@ -845,7 +840,7 @@ task GreatApe2(type: JavaExec) {
 
 task GreatApe3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'baseinit.GreatApe3Kt'
+    main = 'baseclassinit.GreatApe3Kt'
 }
 
 task GreaterThan2(type: JavaExec) {
@@ -911,6 +906,11 @@ task HelperFunction(type: JavaExec) {
 task HiddenArrayList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HiddenArrayListKt'
+}
+
+task House(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'baseclassinit.HouseKt'
 }
 
 task If1(type: JavaExec) {
@@ -1550,7 +1550,7 @@ task OperatorPlus(type: JavaExec) {
 
 task OtherConstructors(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'baseinit.OtherConstructorsKt'
+    main = 'baseclassinit.OtherConstructorsKt'
 }
 
 task OutOfBounds(type: JavaExec) {
@@ -2318,7 +2318,6 @@ task run (dependsOn: [
     'AssignmentOperators',
     'AssociateBy',
     'AtomicTestCapture',
-    'AuxiliaryInit',
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
@@ -2475,6 +2474,7 @@ task run (dependsOn: [
     'HelloWorld',
     'HelperFunction',
     'HiddenArrayList',
+    'House',
     'If1',
     'If2',
     'If3',

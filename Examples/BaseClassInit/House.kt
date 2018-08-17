@@ -1,6 +1,5 @@
-// BaseClassInit/AuxiliaryInit.kt
-package baseinit
-
+// BaseClassInit/House.kt
+package baseclassinit
 import atomictest.eq
 
 open class House(
@@ -27,7 +26,7 @@ class VacationHouse(
 ) : House(address, state, zip) {
   override fun toString() =
     "Vacation house at $fullAddress " +
-      "from $startMonth to $endMonth"
+    "from $startMonth to $endMonth"
 }
 
 class TreeHouse(

@@ -18,18 +18,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAuxiliaryInit() {
-    testExample("Examples/BaseClassInit/AuxiliaryInit.kt", baseinit.AuxiliaryInitKt::main);
+  public void testGreatApe3() {
+    testExample("Examples/BaseClassInit/GreatApe3.kt", baseclassinit.GreatApe3Kt::main);
   }
 
   @Test
-  public void testGreatApe3() {
-    testExample("Examples/BaseClassInit/GreatApe3.kt", baseinit.GreatApe3Kt::main);
+  public void testHouse() {
+    testExample("Examples/BaseClassInit/House.kt", baseclassinit.HouseKt::main);
   }
 
   @Test
   public void testOtherConstructors() {
-    testExample("Examples/BaseClassInit/OtherConstructors.kt", baseinit.OtherConstructorsKt::main);
+    testExample("Examples/BaseClassInit/OtherConstructors.kt", baseclassinit.OtherConstructorsKt::main);
   }
 
   @Test
