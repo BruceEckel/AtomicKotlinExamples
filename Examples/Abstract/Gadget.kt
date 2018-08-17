@@ -5,11 +5,11 @@ interface Gadget {
   val model: String
   val productionYear: Int
 
-  val isOutdated: Boolean
-    get() = productionYear < 2050
-
   fun isOverpriced() =
     model.startsWith("i")
+
+  val isOutdated: Boolean
+    get() = productionYear < 2050
 }
 
 class MyGadget(

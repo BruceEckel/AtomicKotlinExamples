@@ -1,5 +1,5 @@
 // Abstract/StateOfAClass.kt
-package state
+package abstractstate
 import atomictest.eq
 
 class IntList(val name: String) {
@@ -7,8 +7,8 @@ class IntList(val name: String) {
 }
 
 fun main(args: Array<String>) {
-  val ints = IntList("fav numbers")
-  ints.name eq "fav numbers"
+  val ints = IntList("numbers")
+  ints.name eq "numbers"
   ints.list += 7
   ints.list eq listOf(7)
 }

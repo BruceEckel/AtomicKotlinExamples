@@ -1,10 +1,10 @@
 // Abstract/AbstractKeyword.kt
 
-abstract class WithProperty {
+abstract class Property {
   abstract val x: Int
 }
 
-abstract class WithFunctions {
+abstract class Functions {
   abstract fun f(): Int
   abstract fun g(n: Double)
 }

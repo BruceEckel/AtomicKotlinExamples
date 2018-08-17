@@ -14,7 +14,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testStateOfAClass() {
-    testExample("Examples/Abstract/StateOfAClass.kt", state.StateOfAClassKt::main);
+    testExample("Examples/Abstract/StateOfAClass.kt", abstractstate.StateOfAClassKt::main);
   }
 
   @Test

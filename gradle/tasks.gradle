@@ -1870,7 +1870,7 @@ task SpreadOperator(type: JavaExec) {
 
 task StateOfAClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'state.StateOfAClassKt'
+    main = 'abstractstate.StateOfAClassKt'
 }
 
 task StoringLambda(type: JavaExec) {

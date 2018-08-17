@@ -6,28 +6,26 @@ interface Position
 
 interface GameElement {
   val symbol: Char
-  val preventMovement: Boolean
-
+  val mobile: Boolean
   fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   )
 }
 
-abstract class ImmovableElement(
-  override val preventMovement: Boolean  // [1]
+abstract class StaticElement(
+  override val mobile: Boolean    // [1]
 ) : GameElement {
-
   override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
   ) {
-    // Default implementation: do nothing
+    // Default: do nothing
   }
 }
 
-class Wall :                             // [2]
-  ImmovableElement(preventMovement = true) {
-
-  override val symbol: Char get() = '#'  // [3]
+class Wall :
+  StaticElement(mobile = false) { // [2]
+  override val symbol: Char
+    get() = '#'                   // [3]
 }
