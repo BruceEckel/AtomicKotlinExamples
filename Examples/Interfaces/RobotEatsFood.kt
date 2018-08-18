@@ -12,7 +12,7 @@ class Robot : GameElement {
       .filterIsInstance<Food>()
       .forEach { food ->
         eatenFoodItems++
-        maze.destroyElement(food)
+        maze.destroy(food)
       }
   }
 }

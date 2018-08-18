@@ -153,8 +153,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testElementMatrix() {
-    testExample("Examples/ComplexConstructors/ElementMatrix.kt", complexconstructors.ElementMatrixKt::main);
+  public void testGameMatrix() {
+    testExample("Examples/ComplexConstructors/GameMatrix.kt", complexconstructors.GameMatrixKt::main);
   }
 
   @Test

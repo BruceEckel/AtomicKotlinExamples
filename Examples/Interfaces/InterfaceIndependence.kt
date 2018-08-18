@@ -5,19 +5,19 @@ interface Position
 
 interface Maze {
 
-  fun getAllElements(): Set<GameElement>
+  fun getAll(): Set<GameElement>
 
-  fun getElements(
+  fun getAllAt(
     position: Position): Set<GameElement>
 
   fun getPosition(
     element: GameElement): Position
 
-  fun moveElement(
+  fun move(
     element: GameElement,
     newPosition: Position)
 
-  fun destroyElement(element: GameElement)
+  fun destroy(element: GameElement)
 }
 
 interface GameElement {

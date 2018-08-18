@@ -4,16 +4,16 @@ package prefercomposition
 interface Element
 class Position
 
-interface ElementMatrix { /* ... */ }
+interface GameMatrix { /* ... */ }
 
-class ElementMatrixImpl(
+class GameMatrixImpl(
   width: Int, height: Int
-) : ElementMatrix {
+) : GameMatrix {
 
   private val cells = Array(height) {
     Array(width) { mutableSetOf<Element>() }
   }
-  // Functions implementing ElementMatrix
+  // Functions implementing GameMatrix
 }
 
 interface Maze { /* ... */ }
@@ -24,8 +24,8 @@ class MazeImpl(
   val height: Int
 ): Maze {
 
-  private val matrix: ElementMatrix =
-    ElementMatrixImpl(width, height)
+  private val matrix: GameMatrix =
+    GameMatrixImpl(width, height)
 
   private val elementToPosition =
     mutableMapOf<Element, Position>()

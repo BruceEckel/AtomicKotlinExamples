@@ -2,7 +2,7 @@
 
 interface Maze {
   // Omitting other members for simplicity
-  fun destroyElement(element: GameElement)
+  fun destroy(element: GameElement)
 }
 
 interface GameElement {
@@ -32,8 +32,8 @@ class Bomb : StaticElement() {
   ) {
     if (sameCellElements.isEmpty()) return
     sameCellElements.forEach {    // [3]
-      maze.destroyElement(it)
+      maze.destroy(it)
     }
-    maze.destroyElement(this)    // [4]
+    maze.destroy(this)    // [4]
   }
 }

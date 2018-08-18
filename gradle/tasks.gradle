@@ -573,11 +573,6 @@ task EasyKeys(type: JavaExec) {
     main = 'hashing.EasyKeysKt'
 }
 
-task ElementMatrix(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'complexconstructors.ElementMatrixKt'
-}
-
 task ElvisCall(type: JavaExec) {
     classpath kotlinClassPath
     main = 'elvisoperator.ElvisCallKt'
@@ -771,6 +766,11 @@ task FunctionTypeExamples(type: JavaExec) {
 task Gadget(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GadgetKt'
+}
+
+task GameMatrix(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.GameMatrixKt'
 }
 
 task GardenItem(type: JavaExec) {
@@ -2407,7 +2407,6 @@ task run (dependsOn: [
     'EagerEvaluation',
     'EagerVsLazyEvaluation',
     'EasyKeys',
-    'ElementMatrix',
     'ElvisCall',
     'ElvisOperator',
     'ElvisWithException',
@@ -2447,6 +2446,7 @@ task run (dependsOn: [
     'FunctionReference',
     'FunctionTypeExamples',
     'Gadget',
+    'GameMatrix',
     'GardenItem',
     'GenericFunction',
     'GenericHolder',
