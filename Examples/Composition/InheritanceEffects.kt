@@ -4,13 +4,13 @@ package inheritanceeffects
 interface Element
 data class Position(val x: Int, val y: Int)
 
-interface ElementsMatrix {
+interface ElementMatrix {
   fun addElement(e: Element, p: Position)
   fun removeElement(e: Element, p: Position)
   fun getElements(p: Position): Set<Element>
 }
 
-interface Maze : ElementsMatrix {
+interface Maze : ElementMatrix {
   fun moveElement(e: Element, p: Position)
   fun destroyElement(e: Element)
   fun getPosition(e: Element): Position?

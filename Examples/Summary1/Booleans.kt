@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
   println("Operating hours: $opens - $closes")
   val hour = 6
   println("Current time: " + hour)
-  
+
   val isOpen = hour >= opens && hour <= closes
   println("Open: " + isOpen)
   println("Not open: " + !isOpen)
