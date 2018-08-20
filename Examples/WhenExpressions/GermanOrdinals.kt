@@ -12,7 +12,7 @@ val numbers = mapOf(
   19 to "neunzehn", 20 to "zwanzig"
 )
 
-fun getOrdinal(i: Int): String =
+fun ordinal(i: Int): String =
   when (i) {                            // [1]
     1 -> "erste"                        // [2]
     3 -> "dritte"
@@ -23,7 +23,7 @@ fun getOrdinal(i: Int): String =
   }
 
 fun main(args: Array<String>) {
-  getOrdinal(2) eq "zweite"
-  getOrdinal(3) eq "dritte"
-  getOrdinal(11) eq "elfte"
+  ordinal(2) eq "zweite"
+  ordinal(3) eq "dritte"
+  ordinal(11) eq "elfte"
 }

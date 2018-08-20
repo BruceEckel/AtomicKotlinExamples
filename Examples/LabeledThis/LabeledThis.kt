@@ -2,9 +2,9 @@
 package labeledthis
 import atomictest.eq
 
-class Outer { // implicit label @Outer
-  inner class Inner { // implicit label @Inner
-    fun Int.ext() { // implicit label @ext
+class Outer { // Implicit label @Outer
+  inner class Inner { // Implicit label @Inner
+    fun Int.ext() { // Implicit label @ext
       val a = this@Outer
       val b = this@Inner
       val c = this // Int ext() receiver

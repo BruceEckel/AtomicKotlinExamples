@@ -1,7 +1,7 @@
 // WhenExpressions/BmiWhen.kt
 import atomictest.eq
 
-fun getBmiStatusOld(
+fun bmiStatusOld(
   kg: Double,
   heightM: Double
 ): String {
@@ -11,7 +11,7 @@ fun getBmiStatusOld(
     else "Overweight"
 }
 
-fun getBmiStatusWithWhen(
+fun bmiStatusWithWhen(
   kg: Double,
   heightM: Double
 ): String {
@@ -24,6 +24,6 @@ fun getBmiStatusWithWhen(
 }
 
 fun main(args: Array<String>) {
-  getBmiStatusOld(72.57, 1.727) eq
-  getBmiStatusWithWhen(72.57, 1.727)
+  bmiStatusOld(72.57, 1.727) eq
+  bmiStatusWithWhen(72.57, 1.727)
 }

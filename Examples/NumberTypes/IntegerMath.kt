@@ -1,6 +1,6 @@
 // NumberTypes/IntegerMath.kt
 
-fun getBmiStatusInt(
+fun bmiStatusInt(
   lbs: Int,
   height: Int
 ): String {
@@ -14,7 +14,7 @@ fun getBmiStatusInt(
 fun main(args: Array<String>) {
   val lbs = 160
   val height = 68
-  val status = getBmiStatusInt(lbs, height)
+  val status = bmiStatusInt(lbs, height)
   println(status)
 }
 /* Output:

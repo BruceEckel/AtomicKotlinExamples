@@ -1,6 +1,6 @@
 // NumberTypes/BMI.kt
 
-fun getBmiStatus(
+fun bmiStatus(
   kg: Double,
   heightM: Double
 ): String {
@@ -13,7 +13,7 @@ fun getBmiStatus(
 fun main(args: Array<String>) {
   val kg = 72.57 // 160 lbs
   val heightM = 1.727 // 68 inches
-  val status = getBmiStatus(kg, heightM)
+  val status = bmiStatus(kg, heightM)
   println(status)
 }
 /* Output:
