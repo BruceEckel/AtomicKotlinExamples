@@ -1608,6 +1608,11 @@ task Perform(type: JavaExec) {
     main = 'generics.PerformKt'
 }
 
+task Pet(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'polymorphism.PetKt'
+}
+
 task Pets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'hashing.PetsKt'
@@ -2614,6 +2619,7 @@ task run (dependsOn: [
     'ParameterizedTypes',
     'Partition',
     'Perform',
+    'Pet',
     'Pets',
     'PlatformTypes',
     'Postconditions',

@@ -1638,6 +1638,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testPet() {
+    testExample("Examples/Polymorphism/Pet.kt", polymorphism.PetKt::main);
+  }
+
+  @Test
   public void testAnUnchangingVar() {
     testExample("Examples/Properties/AnUnchangingVar.kt", AnUnchangingVarKt::main);
   }
