@@ -3,7 +3,6 @@ package game
 
 class Robot : GameElement {
   private var eatenFoodItems: Int = 0
-
   override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>

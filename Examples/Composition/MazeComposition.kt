@@ -1,4 +1,4 @@
-// Composition/PreferComposition.kt
+// Composition/MazeComposition.kt
 package prefercomposition
 
 interface Element
@@ -9,7 +9,6 @@ interface GameMatrix { /* ... */ }
 class GameMatrixImpl(
   width: Int, height: Int
 ) : GameMatrix {
-
   private val cells = Array(height) {
     Array(width) { mutableSetOf<Element>() }
   }
@@ -23,12 +22,9 @@ class MazeImpl(
   val width: Int,
   val height: Int
 ): Maze {
-
   private val matrix: GameMatrix =
     GameMatrixImpl(width, height)
-
   private val elementToPosition =
     mutableMapOf<Element, Position>()
-
   // Functions implementing Maze
 }

@@ -1,32 +1,43 @@
 // ClassDelegation/ModelingMI.kt
 import atomictest.eq
 
-interface Foo {
-  fun foo(): String
+interface Rectangle {
+  fun paint(): Boolean
 }
 
-class FooImpl : Foo {
-  override fun foo() = "foo"
+class ButtonImage(
+  val width: Int,
+  val height: Int) :
+Rectangle {
+  override fun paint() = true
 }
 
-interface Bar {
-  fun bar(): String
+interface MouseManager {
+  fun clicked(): Boolean
+  fun hovering(): Boolean
 }
 
-class BarImpl : Bar {
-  override fun bar() = "bar"
+class UserInput : MouseManager {
+  override fun clicked() = true
+  override fun hovering() = true
 }
 
 // Even if we make the classes open, we'll
 // get an error: Only one class may appear
 // in a supertype list.
-// class B : FooImpl(), BarImpl()
+// class Button : ButtonImage(), UserInput()
 
-class FooBar(val foo: Foo, val bar: Bar) :
-  Foo by foo, Bar by bar
+class Button(
+  val width: Int,
+  val height: Int,
+  val image: Rectangle =
+    ButtonImage(width, height),
+  val input: MouseManager = UserInput()) :
+  Rectangle by image, MouseManager by input
 
 fun main(args: Array<String>) {
-  val fooBar = FooBar(FooImpl(), BarImpl())
-  fooBar.foo() eq "foo"
-  fooBar.bar() eq "bar"
+  val button = Button(10, 5)
+  button.paint() eq true
+  button.clicked() eq true
+  button.hovering() eq true
 }

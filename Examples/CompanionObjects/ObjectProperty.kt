@@ -6,7 +6,6 @@ class WithObjectProperty {
     n += 1
     return n
   }
-
   companion object {
     private var n: Int = 0 // Only one
   }
