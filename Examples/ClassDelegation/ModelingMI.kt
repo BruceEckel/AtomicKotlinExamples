@@ -2,14 +2,13 @@
 import atomictest.eq
 
 interface Rectangle {
-  fun paint(): Boolean
+  fun paint(): Int
 }
 
 class ButtonImage(
   val width: Int,
-  val height: Int) :
-Rectangle {
-  override fun paint() = true
+  val height: Int) : Rectangle {
+  override fun paint() = width * height
 }
 
 interface MouseManager {
@@ -37,7 +36,7 @@ class Button(
 
 fun main(args: Array<String>) {
   val button = Button(10, 5)
-  button.paint() eq true
+  button.paint() eq 50
   button.clicked() eq true
   button.hovering() eq true
 }
