@@ -26,5 +26,5 @@ class MazeImpl(
     GameMatrixImpl(width, height)
   private val elementToPosition =
     mutableMapOf<Element, Position>()
-  // Functions implementing Maze
+  // Functions implementing Maze ...
 }
