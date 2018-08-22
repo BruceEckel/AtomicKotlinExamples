@@ -913,6 +913,11 @@ task House(type: JavaExec) {
     main = 'baseclassinit.HouseKt'
 }
 
+task HumanAlice(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'smartcasts.HumanAliceKt'
+}
+
 task If1(type: JavaExec) {
     classpath kotlinClassPath
     main = 'If1Kt'
@@ -2480,6 +2485,7 @@ task run (dependsOn: [
     'HelperFunction',
     'HiddenArrayList',
     'House',
+    'HumanAlice',
     'If1',
     'If2',
     'If3',

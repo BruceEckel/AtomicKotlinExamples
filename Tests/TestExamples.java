@@ -1878,6 +1878,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testHumanAlice() {
+    testExample("Examples/SmartCasts/HumanAlice.kt", smartcasts.HumanAliceKt::main);
+  }
+
+  @Test
   public void testSmartCasts() {
     testExample("Examples/SmartCasts/SmartCasts.kt", smartcasts.SmartCastsKt::main);
   }
