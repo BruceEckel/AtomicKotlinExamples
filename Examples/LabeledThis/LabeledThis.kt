@@ -2,9 +2,10 @@
 package labeledthis
 import atomictest.eq
 
-class Outer { // Implicit label @Outer
-  inner class Inner { // Implicit label @Inner
-    fun Int.ext() { // Implicit label @ext
+class Outer { // implicit label @Outer
+  inner class Inner { // implicit label @Inner
+    // implicit label @ext:
+    fun Int.ext(): String.() -> Unit {
       val a = this@Outer
       val b = this@Inner
       val c = this // Int ext() receiver
@@ -21,6 +22,11 @@ class Outer { // Implicit label @Outer
         // lambda doesn't have a receiver
         val d1 = this
       }
+
+      "abc".func()               // [1]
+      func2("abc")
+
+      return func                // [2]
     }
   }
 }
@@ -28,4 +34,13 @@ class Outer { // Implicit label @Outer
 fun main(args: Array<String>) {
   val outer = Outer()
   val inner = outer.Inner()
+  with (inner) {
+    1.ext()                // [3]
+  }
+}
+
+fun Outer.Inner.extension() {
+  1.ext()                    // [4]
+  val funcHere = 1.ext()
+  "abc".funcHere()           // [5]
 }

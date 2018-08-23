@@ -12,7 +12,6 @@ class GameMatrix(
   val cells = Array(height) {           // [1]
     Array<GameElement?>(width) { null }
   }
-
   init {
     val lines = representation.lines()  // [2]
     for (y in 0 until height) {
@@ -23,7 +22,6 @@ class GameMatrix(
       }
     }
   }
-
   override fun toString() =
     cells.joinToString("\n") { row ->
       row.joinToString("") { element ->

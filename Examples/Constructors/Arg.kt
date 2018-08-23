@@ -5,10 +5,10 @@ class Alien(name: String) {
 }
 
 fun main(args: Array<String>) {
-  val alien = Alien("Mr.Meeseeks")
+  val alien = Alien("Mr. Meeseeks")
   println(alien.greeting)
   // alien.name // Error     // [1]
 }
 /* Output:
-Poor Mr.Meeseeks!
+Poor Mr. Meeseeks!
 */

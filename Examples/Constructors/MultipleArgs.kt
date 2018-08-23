@@ -6,7 +6,7 @@ class AlienSpecies(
   val hands: Int,
   val legs: Int
 ) {
-  fun represent() =
+  fun describe() =
     "$name with $eyes eyes, " +
     "$hands hands and $legs legs"
 }
@@ -16,8 +16,8 @@ fun main(args: Array<String>) {
     AlienSpecies("Shimshamian", 3, 2, 2)
   val grung =
     AlienSpecies("Grunglokian", 2, 4, 2)
-  println(shim.represent())
-  println(grung.represent())
+  println(shim.describe())
+  println(grung.describe())
 }
 /* Output:
 Shimshamian with 3 eyes, 2 hands and 2 legs
