@@ -1,25 +1,20 @@
 # Atomic Kotlin Examples
 
-**NOTE:** Currently the *AtomicKotlin.com* URL brings you to this repository,
-but eventually that will take you to the support site for the book.
-
-These are the code examples from the book *Atomic Kotlin*, created by an
+These are the code examples from the book [Atomic Kotlin](www.AtomicKotlin.com), created by an
 automatic extraction process directly from the book. This repository provides
 a test of the code that is shown in the book, to verify that it is correct.
 
 Although you can download this repository and run the build system, the
 examples are more conveniently available pre-integrated with the Intellij IDEA
 development environment, along with the exercises and solutions for the book.
-See *AtomicKotlin.com* for the IDEA examples {{ To be configured }}.
-
-{{ There may be additional convenient ways of using the examples }}
+See *AtomicKotlin.com* for the IDEA examples.
 
 ## Quick Version
 
 Before you can run the examples from this repository, you must install:
 
 1. The current version of [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html),
-although earlier versions should also work.
+although some earlier versions should also work.
 
 2. The latest version (1.2 or higher) of the [Kotlin command-line
 compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
@@ -119,9 +114,9 @@ You should see something like the following (Version numbers and actual text
 will vary):
 
 ```
-java version "1.8.0_144"
-Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
-Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
+java version "10.0.2" 2018-07-17
+Java(TM) SE Runtime Environment 18.3 (build 10.0.2+13)
+Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.2+13, mixed mode)
 ```
 
 If you see a message that the command is not found or not recognized, review
