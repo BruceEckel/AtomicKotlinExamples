@@ -1,5 +1,5 @@
 // CollectionsAndJava/ImmutableByDefault.kt
-package kotlincollections
+package collectionsandjava
 
 data class Animal(val name: String)
 
