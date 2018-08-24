@@ -248,6 +248,11 @@ task CallTopLevelFunction(type: JavaExec) {
     main = 'fromjava.CallTopLevelFunction'
 }
 
+task CallTopLevelFunction2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'fromjava.CallTopLevelFunction2'
+}
+
 task Cat(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CatKt'
@@ -596,6 +601,11 @@ task EmptyProgram(type: JavaExec) {
 task EnumImport(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EnumImportKt'
+}
+
+task Evaluation(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'EvaluationKt'
 }
 
 task EvaluationOrder(type: JavaExec) {
@@ -2352,6 +2362,7 @@ task run (dependsOn: [
     'ByOperations',
     'CallStack',
     'CallTopLevelFunction',
+    'CallTopLevelFunction2',
     'Cat',
     'CatchChecked',
     'ChainedCalls',
@@ -2422,6 +2433,7 @@ task run (dependsOn: [
     'ElvisWithException',
     'EmptyProgram',
     'EnumImport',
+    'Evaluation',
     'EvaluationOrder',
     'ExceptionHandlers',
     'ExplicitCheck',

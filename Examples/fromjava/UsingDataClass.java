@@ -17,7 +17,7 @@ public class UsingDataClass {
     hm.put(d, 47);
     // Data objects work as hash keys:
     eq((double)hm.get(d), (double)47);
-    // copy() function from the Data class:
+    // Call copy() from the Data class:
     Data d2 = d.copy("Sam", 24);
     eq(d2, "Data(name=Sam, age=24)");
   }

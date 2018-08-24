@@ -1358,6 +1358,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testEvaluation() {
+    testExample("Examples/NamedAndDefaultArgs/Evaluation.kt", EvaluationKt::main);
+  }
+
+  @Test
   public void testNamedArguments() {
     testExample("Examples/NamedAndDefaultArgs/NamedArguments.kt", color1.NamedArgumentsKt::main);
   }

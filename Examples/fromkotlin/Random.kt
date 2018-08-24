@@ -1,6 +1,6 @@
 // fromkotlin/Random.kt
 import atomictest.eq
-import java.util.*
+import java.util.Random
 
 fun main(args: Array<String>) {
   val rand = Random(47)
