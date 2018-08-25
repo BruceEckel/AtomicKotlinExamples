@@ -1433,16 +1433,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testNPEOnPlatformType() {
-    testExample("Examples/NullableTypesAndJava/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
-  }
-
-  @Test
-  public void testPlatformTypes() {
-    testExample("Examples/NullableTypesAndJava/PlatformTypes.kt", PlatformTypesKt::main);
-  }
-
-  @Test
   public void testBiggestLong() {
     testExample("Examples/NumberTypes/BiggestLong.kt", BiggestLongKt::main);
   }
@@ -1640,6 +1630,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testWithoutDefaultArguments() {
     testExample("Examples/Overloading/WithoutDefaultArguments.kt", withoutdefaultarguments.WithoutDefaultArgumentsKt::main);
+  }
+
+  @Test
+  public void testNPEOnPlatformType() {
+    testExample("Examples/PlatformTypes/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
+  }
+
+  @Test
+  public void testPlatformTypes() {
+    testExample("Examples/PlatformTypes/PlatformTypes.kt", PlatformTypesKt::main);
   }
 
   @Test
