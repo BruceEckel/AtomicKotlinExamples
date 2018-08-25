@@ -1,17 +1,17 @@
 // Destructuring/Pairs.kt
+package destructuring
 import atomictest.eq
 
-fun compute1(input: Int) =
+fun compute(input: Int): Pair<Int, String> =
   if (input > 5)
     Pair(input * 2, "High")
   else
     Pair(input * 2, "Low")
 
 fun main(args: Array<String>) {
-  compute1(7) eq Pair(14, "High")
-  compute1(4) eq Pair(8, "Low")
-
-  val result = compute1(5)
+  compute(7) eq Pair(14, "High")
+  compute(4) eq Pair(8, "Low")
+  val result = compute(5)
   result.first eq 10
   result.second eq "Low"
 }

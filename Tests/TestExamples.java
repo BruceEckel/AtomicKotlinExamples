@@ -283,8 +283,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testComputationResult() {
-    testExample("Examples/Destructuring/ComputationResult.kt", ComputationResultKt::main);
+  public void testComputation() {
+    testExample("Examples/Destructuring/Computation.kt", destructuring.ComputationKt::main);
   }
 
   @Test
@@ -294,12 +294,12 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testPairDestructuring() {
-    testExample("Examples/Destructuring/PairDestructuring.kt", PairDestructuringKt::main);
+    testExample("Examples/Destructuring/PairDestructuring.kt", destructuring.PairDestructuringKt::main);
   }
 
   @Test
   public void testPairs() {
-    testExample("Examples/Destructuring/Pairs.kt", PairsKt::main);
+    testExample("Examples/Destructuring/Pairs.kt", destructuring.PairsKt::main);
   }
 
   @Test

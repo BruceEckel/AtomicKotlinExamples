@@ -368,9 +368,9 @@ task CompareTo(type: JavaExec) {
     main = 'usingoperators.CompareToKt'
 }
 
-task ComputationResult(type: JavaExec) {
+task Computation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ComputationResultKt'
+    main = 'destructuring.ComputationKt'
 }
 
 task ConfusingOperator(type: JavaExec) {
@@ -1590,7 +1590,7 @@ task OverloadingAdd(type: JavaExec) {
 
 task PairDestructuring(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'PairDestructuringKt'
+    main = 'destructuring.PairDestructuringKt'
 }
 
 task PairOfLists(type: JavaExec) {
@@ -1600,7 +1600,7 @@ task PairOfLists(type: JavaExec) {
 
 task Pairs(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'PairsKt'
+    main = 'destructuring.PairsKt'
 }
 
 task ParameterizedReturn(type: JavaExec) {
@@ -2386,7 +2386,7 @@ task run (dependsOn: [
     'CompareDelayingTask',
     'CompareSlowFib',
     'CompareTo',
-    'ComputationResult',
+    'Computation',
     'ConfusingOperator',
     'ConstructorReference',
     'ContactMap',
