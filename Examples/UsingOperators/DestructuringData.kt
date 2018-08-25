@@ -15,10 +15,10 @@ fun main(args: Array<String>) {
   val person = Person("Alice", 29)
   val (name, age) = person
   // Destructuring assignment compiles to:
-  val namex = person.component1()
-  val agex = person.component2()
+  val name_ = person.component1()
+  val age_ = person.component2()
   name eq "Alice"
   age eq 29
-  namex eq "Alice"
-  agex eq 29
+  name_ eq "Alice"
+  age_ eq 29
 }
