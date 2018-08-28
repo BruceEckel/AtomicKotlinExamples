@@ -1,4 +1,5 @@
 // LateInitialization/Suitcase.kt
+package lateinitialization
 import atomictest.eq
 
 class Suitcase : Bag {

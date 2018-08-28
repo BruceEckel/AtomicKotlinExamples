@@ -1054,17 +1054,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testBetterSuitcase() {
-    testExample("Examples/LateInitialization/BetterSuitcase.kt", BetterSuitcaseKt::main);
+    testExample("Examples/LateInitialization/BetterSuitcase.kt", lateinitialization.BetterSuitcaseKt::main);
   }
 
   @Test
   public void testFaultySuitcase() {
-    testExample("Examples/LateInitialization/FaultySuitcase.kt", FaultySuitcaseKt::main);
+    testExample("Examples/LateInitialization/FaultySuitcase.kt", lateinitialization.FaultySuitcaseKt::main);
   }
 
   @Test
   public void testSuitcase() {
-    testExample("Examples/LateInitialization/Suitcase.kt", SuitcaseKt::main);
+    testExample("Examples/LateInitialization/Suitcase.kt", lateinitialization.SuitcaseKt::main);
   }
 
   @Test

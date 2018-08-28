@@ -1,4 +1,5 @@
 // LateInitialization/BetterSuitcase.kt
+package lateinitialization
 import atomictest.eq
 
 class BetterSuitcase : Bag {
@@ -6,7 +7,6 @@ class BetterSuitcase : Bag {
   override fun setUp() {
     items = "socks, jacket, laptop"
   }
-
   fun checkSocks(): Boolean =
     items.contains("socks")
 }

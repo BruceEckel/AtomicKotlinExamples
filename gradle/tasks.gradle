@@ -180,7 +180,7 @@ task Bear(type: JavaExec) {
 
 task BetterSuitcase(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'BetterSuitcaseKt'
+    main = 'lateinitialization.BetterSuitcaseKt'
 }
 
 task BiggestLong(type: JavaExec) {
@@ -650,7 +650,7 @@ task Factorial(type: JavaExec) {
 
 task FaultySuitcase(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FaultySuitcaseKt'
+    main = 'lateinitialization.FaultySuitcaseKt'
 }
 
 task Fibonacci(type: JavaExec) {
@@ -1965,7 +1965,7 @@ task Strings(type: JavaExec) {
 
 task Suitcase(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'SuitcaseKt'
+    main = 'lateinitialization.SuitcaseKt'
 }
 
 task Sum(type: JavaExec) {
