@@ -4,7 +4,7 @@ import atomictest.eq
 import kotlin.reflect.KProperty
 
 class Person(
-  val formal: String,
+  val formalName: String,
   val nickName: String
 ) {
   var casual = false
@@ -14,8 +14,9 @@ class Person(
 class NickName() {
   operator fun
     getValue(p: Person, prop: KProperty<*>) =
-    "'$prop' " +
-    if (p.casual) p.nickName else p.formal
+      "'$prop' " +
+      if(p.casual)
+        p.nickName else p.formalName
 }
 
 fun main(args: Array<String>) {

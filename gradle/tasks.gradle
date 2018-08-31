@@ -183,6 +183,11 @@ task BetterSuitcase(type: JavaExec) {
     main = 'lateinitialization.BetterSuitcaseKt'
 }
 
+task BigFibonacci(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.BigFibonacciKt'
+}
+
 task BiggestLong(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BiggestLongKt'
@@ -656,11 +661,6 @@ task FaultySuitcase(type: JavaExec) {
 task Fibonacci(type: JavaExec) {
     classpath kotlinClassPath
     main = 'recursion.FibonacciKt'
-}
-
-task Fibonacci2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'propertydelegation.Fibonacci2Kt'
 }
 
 task FibonacciProperty(type: JavaExec) {
@@ -2349,6 +2349,7 @@ task run (dependsOn: [
     'BasicLogging',
     'Bear',
     'BetterSuitcase',
+    'BigFibonacci',
     'BiggestLong',
     'BmiWhen',
     'BookExtensions',
@@ -2444,7 +2445,6 @@ task run (dependsOn: [
     'Factorial',
     'FaultySuitcase',
     'Fibonacci',
-    'Fibonacci2',
     'FibonacciProperty',
     'FibonacciSequence',
     'Filter',

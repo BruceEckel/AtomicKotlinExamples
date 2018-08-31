@@ -1,4 +1,4 @@
-// PropertyDelegation/Fibonacci2.kt
+// PropertyDelegation/BigFibonacci.kt
 package propertydelegation
 import atomictest.eq
 import bigint.*

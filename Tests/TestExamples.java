@@ -1698,8 +1698,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testFibonacci2() {
-    testExample("Examples/PropertyDelegation/Fibonacci2.kt", propertydelegation.Fibonacci2Kt::main);
+  public void testBigFibonacci() {
+    testExample("Examples/PropertyDelegation/BigFibonacci.kt", propertydelegation.BigFibonacciKt::main);
   }
 
   @Test
