@@ -18,6 +18,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testBigFibonacci() {
+    testExample("Examples/AdaptingJava/BigFibonacci.kt", adaptingjava.BigFibonacciKt::main);
+  }
+
+  @Test
   public void testGreatApe3() {
     testExample("Examples/BaseClassInit/GreatApe3.kt", baseclassinit.GreatApe3Kt::main);
   }
@@ -1695,11 +1700,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testLogChanges() {
     testExample("Examples/PropertyAccessors/LogChanges.kt", LogChangesKt::main);
-  }
-
-  @Test
-  public void testBigFibonacci() {
-    testExample("Examples/PropertyDelegation/BigFibonacci.kt", propertydelegation.BigFibonacciKt::main);
   }
 
   @Test

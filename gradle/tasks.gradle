@@ -185,7 +185,7 @@ task BetterSuitcase(type: JavaExec) {
 
 task BigFibonacci(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertydelegation.BigFibonacciKt'
+    main = 'adaptingjava.BigFibonacciKt'
 }
 
 task BiggestLong(type: JavaExec) {

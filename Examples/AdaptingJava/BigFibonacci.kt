@@ -1,5 +1,5 @@
-// PropertyDelegation/BigFibonacci.kt
-package propertydelegation
+// AdaptingJava/BigFibonacci.kt
+package adaptingjava
 import atomictest.eq
 import bigint.*
 

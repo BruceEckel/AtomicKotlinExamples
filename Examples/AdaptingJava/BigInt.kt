@@ -1,4 +1,4 @@
-// PropertyDelegation/BigInt.kt
+// AdaptingJava/BigInt.kt
 package bigint
 import java.math.BigInteger
 
