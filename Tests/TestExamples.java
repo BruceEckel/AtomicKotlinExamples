@@ -813,11 +813,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testColorBlendMap2() {
-    testExample("Examples/Immutability/ColorBlendMap2.kt", immutability.ColorBlendMap2Kt::main);
-  }
-
-  @Test
   public void testColorBlendTest() {
     testExample("Examples/Immutability/ColorBlendTest.kt", colorblendtest.ColorBlendTestKt::main);
   }
@@ -825,6 +820,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testDataClassCopy() {
     testExample("Examples/Immutability/DataClassCopy.kt", DataClassCopyKt::main);
+  }
+
+  @Test
+  public void testImmutableColorBlendMap() {
+    testExample("Examples/Immutability/ImmutableColorBlendMap.kt", immutablecolorblendmap.ImmutableColorBlendMapKt::main);
+  }
+
+  @Test
+  public void testMutableColorBlendMap() {
+    testExample("Examples/Immutability/MutableColorBlendMap.kt", mutablecolorblendmap.MutableColorBlendMapKt::main);
   }
 
   @Test

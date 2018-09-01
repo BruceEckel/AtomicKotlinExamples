@@ -333,11 +333,6 @@ task Color3(type: JavaExec) {
     main = 'color3.Color3Kt'
 }
 
-task ColorBlendMap2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'immutability.ColorBlendMap2Kt'
-}
-
 task ColorBlendTest(type: JavaExec) {
     classpath kotlinClassPath
     main = 'colorblendtest.ColorBlendTestKt'
@@ -973,6 +968,11 @@ task ImmutableAndPlus(type: JavaExec) {
     main = 'ImmutableAndPlusKt'
 }
 
+task ImmutableColorBlendMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'immutablecolorblendmap.ImmutableColorBlendMapKt'
+}
+
 task ImportClass(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ImportClassKt'
@@ -1381,6 +1381,11 @@ task MustableVsReadonlyList(type: JavaExec) {
 task MutListIsList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MutListIsListKt'
+}
+
+task MutableColorBlendMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'mutablecolorblendmap.MutableColorBlendMapKt'
 }
 
 task MutableList(type: JavaExec) {
@@ -2379,7 +2384,6 @@ task run (dependsOn: [
     'Closures3',
     'Color2',
     'Color3',
-    'ColorBlendMap2',
     'ColorBlendTest',
     'ColorSet',
     'CompanionFactory',
@@ -2507,6 +2511,7 @@ task run (dependsOn: [
     'IfExpression',
     'IfResult',
     'ImmutableAndPlus',
+    'ImmutableColorBlendMap',
     'ImportClass',
     'ImportEverything',
     'ImportNameChange',
@@ -2589,6 +2594,7 @@ task run (dependsOn: [
     'MultiplyByTwo',
     'MustableVsReadonlyList',
     'MutListIsList',
+    'MutableColorBlendMap',
     'MutableList',
     'MutableMaps',
     'MutableSet',
