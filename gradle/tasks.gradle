@@ -333,9 +333,9 @@ task Color3(type: JavaExec) {
     main = 'color3.Color3Kt'
 }
 
-task ColorBlendTest(type: JavaExec) {
+task ColorBlend(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'colorblendtest.ColorBlendTestKt'
+    main = 'colorblend.ColorBlendKt'
 }
 
 task ColorSet(type: JavaExec) {
@@ -968,9 +968,19 @@ task ImmutableAndPlus(type: JavaExec) {
     main = 'ImmutableAndPlusKt'
 }
 
-task ImmutableColorBlendMap(type: JavaExec) {
+task ImmutableBlendMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'immutablecolorblendmap.ImmutableColorBlendMapKt'
+    main = 'immutableblendmap.ImmutableBlendMapKt'
+}
+
+task ImmutableBlendMap2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'immutableblendmap2.ImmutableBlendMap2Kt'
+}
+
+task ImmutableBlendMap3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'immutableblendmap3.ImmutableBlendMap3Kt'
 }
 
 task ImportClass(type: JavaExec) {
@@ -1383,9 +1393,14 @@ task MutListIsList(type: JavaExec) {
     main = 'MutListIsListKt'
 }
 
-task MutableColorBlendMap(type: JavaExec) {
+task MutableBlendMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'mutablecolorblendmap.MutableColorBlendMapKt'
+    main = 'mutableblendmap.MutableBlendMapKt'
+}
+
+task MutableBlendMap2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'mutableblendmap2.MutableBlendMap2Kt'
 }
 
 task MutableList(type: JavaExec) {
@@ -2384,7 +2399,7 @@ task run (dependsOn: [
     'Closures3',
     'Color2',
     'Color3',
-    'ColorBlendTest',
+    'ColorBlend',
     'ColorSet',
     'CompanionFactory',
     'CompanionObject',
@@ -2511,7 +2526,9 @@ task run (dependsOn: [
     'IfExpression',
     'IfResult',
     'ImmutableAndPlus',
-    'ImmutableColorBlendMap',
+    'ImmutableBlendMap',
+    'ImmutableBlendMap2',
+    'ImmutableBlendMap3',
     'ImportClass',
     'ImportEverything',
     'ImportNameChange',
@@ -2594,7 +2611,8 @@ task run (dependsOn: [
     'MultiplyByTwo',
     'MustableVsReadonlyList',
     'MutListIsList',
-    'MutableColorBlendMap',
+    'MutableBlendMap',
+    'MutableBlendMap2',
     'MutableList',
     'MutableMaps',
     'MutableSet',

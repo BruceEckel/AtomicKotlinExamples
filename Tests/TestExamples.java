@@ -813,8 +813,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testColorBlendTest() {
-    testExample("Examples/Immutability/ColorBlendTest.kt", colorblendtest.ColorBlendTestKt::main);
+  public void testColorBlend() {
+    testExample("Examples/Immutability/ColorBlend.kt", colorblend.ColorBlendKt::main);
   }
 
   @Test
@@ -823,13 +823,28 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testImmutableColorBlendMap() {
-    testExample("Examples/Immutability/ImmutableColorBlendMap.kt", immutablecolorblendmap.ImmutableColorBlendMapKt::main);
+  public void testImmutableBlendMap() {
+    testExample("Examples/Immutability/ImmutableBlendMap.kt", immutableblendmap.ImmutableBlendMapKt::main);
   }
 
   @Test
-  public void testMutableColorBlendMap() {
-    testExample("Examples/Immutability/MutableColorBlendMap.kt", mutablecolorblendmap.MutableColorBlendMapKt::main);
+  public void testImmutableBlendMap2() {
+    testExample("Examples/Immutability/ImmutableBlendMap2.kt", immutableblendmap2.ImmutableBlendMap2Kt::main);
+  }
+
+  @Test
+  public void testImmutableBlendMap3() {
+    testExample("Examples/Immutability/ImmutableBlendMap3.kt", immutableblendmap3.ImmutableBlendMap3Kt::main);
+  }
+
+  @Test
+  public void testMutableBlendMap() {
+    testExample("Examples/Immutability/MutableBlendMap.kt", mutableblendmap.MutableBlendMapKt::main);
+  }
+
+  @Test
+  public void testMutableBlendMap2() {
+    testExample("Examples/Immutability/MutableBlendMap2.kt", mutableblendmap2.MutableBlendMap2Kt::main);
   }
 
   @Test
