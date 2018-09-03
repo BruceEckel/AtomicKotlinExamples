@@ -8,8 +8,7 @@ class BlendMap {
   }.map {
     it to colorblend.blend(it.first,it.second)
   }.toMap()
-  fun blend(a: Color, b: Color) =
-    map[a to b]
+  fun blend(a: Color, b: Color) = map[a to b]
 }
 
 fun main(args: Array<String>) {

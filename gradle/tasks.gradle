@@ -2313,6 +2313,16 @@ task WithoutDefaultArguments(type: JavaExec) {
     main = 'withoutdefaultarguments.WithoutDefaultArgumentsKt'
 }
 
+task XYZFlatMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'xyzflatmap.XYZFlatMapKt'
+}
+
+task XYZMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'xyzmap.XYZMapKt'
+}
+
 task ZeroArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ZeroArgumentsKt'
@@ -2795,6 +2805,8 @@ task run (dependsOn: [
     'WithDefaultArguments',
     'WithSecondary',
     'WithoutDefaultArguments',
+    'XYZFlatMap',
+    'XYZMap',
     'ZeroArguments',
     'ZipAndTransform',
     'Zipper',

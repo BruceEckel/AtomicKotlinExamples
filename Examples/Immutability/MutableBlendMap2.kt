@@ -4,16 +4,16 @@ import paintcolors.Color
 
 class BlendMap {
   private val
-    map: Map<Pair<Color, Color>, Color>
+    imap: Map<Pair<Color, Color>, Color>
   init {
-    val imap =
+    val map =
       mutableMapOf<Pair<Color,Color>,Color>()
     for(a in Color.values())
       for(b in Color.values())
-        imap[a to b] = colorblend.blend(a, b)
-    map = imap.toMap()
+        map[a to b] = colorblend.blend(a, b)
+    imap = map.toMap()  // Immutable Map
   }
-  fun blend(a: Color, b: Color) = map[a to b]
+  fun blend(a: Color, b: Color) = imap[a to b]
 }
 
 fun main(args: Array<String>) {

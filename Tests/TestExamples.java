@@ -848,6 +848,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testXYZFlatMap() {
+    testExample("Examples/Immutability/XYZFlatMap.kt", xyzflatmap.XYZFlatMapKt::main);
+  }
+
+  @Test
+  public void testXYZMap() {
+    testExample("Examples/Immutability/XYZMap.kt", xyzmap.XYZMapKt::main);
+  }
+
+  @Test
   public void testClosures() {
     testExample("Examples/ImportanceOfLambdas/Closures.kt", ClosuresKt::main);
   }
