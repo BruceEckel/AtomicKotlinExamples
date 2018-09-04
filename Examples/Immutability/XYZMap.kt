@@ -11,8 +11,7 @@ fun main(args: Array<String>) {
     }
   }
   println()
-  for(f in normal)
-    println(f)
+  normal.forEach { println(it) }
 }
 /* Output:
 x:x,x:y,x:z,

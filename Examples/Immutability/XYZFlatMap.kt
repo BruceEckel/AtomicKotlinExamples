@@ -9,8 +9,7 @@ fun main(args: Array<String>) {
       b -> a to b
     }
   }
-  for(s in flat)
-    println(s)
+  flat.forEach { println(it) }
 }
 /* Output:
 (x, x)
