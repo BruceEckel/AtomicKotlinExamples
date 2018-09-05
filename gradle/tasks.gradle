@@ -93,11 +93,6 @@ task ArgumentOrder(type: JavaExec) {
     main = 'color1.ArgumentOrderKt'
 }
 
-task ArrayInit(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ArrayInitKt'
-}
-
 task ArraySpread(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ArraySpreadKt'
@@ -1221,6 +1216,11 @@ task ListCollection(type: JavaExec) {
 task ListIndicesMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ListIndicesMapKt'
+}
+
+task ListInit(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ListInitKt'
 }
 
 task ListOf(type: JavaExec) {
@@ -2361,7 +2361,6 @@ task run (dependsOn: [
     'ApplyVsAlso',
     'Arg',
     'ArgumentOrder',
-    'ArrayInit',
     'ArraySpread',
     'AssertTrue',
     'AssigningAnIf',
@@ -2587,6 +2586,7 @@ task run (dependsOn: [
     'Level',
     'ListCollection',
     'ListIndicesMap',
+    'ListInit',
     'ListOf',
     'ListOfStar',
     'ListOfStrings',

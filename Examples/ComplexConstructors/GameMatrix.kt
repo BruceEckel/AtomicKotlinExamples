@@ -9,8 +9,8 @@ class GameMatrix(
   val height: Int,
   representation: String
 ) {
-  val cells = Array(height) {           // [1]
-    Array<GameElement?>(width) { null }
+  val cells = MutableList(height) {     // [1]
+    MutableList<GameElement?>(width) { null }
   }
   init {
     val lines = representation.lines()  // [2]

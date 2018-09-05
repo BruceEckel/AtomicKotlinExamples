@@ -9,8 +9,10 @@ interface GameMatrix { /* ... */ }
 class GameMatrixImpl(
   width: Int, height: Int
 ) : GameMatrix {
-  private val cells = Array(height) {
-    Array(width) { mutableSetOf<Element>() }
+  private val cells = MutableList(height) {
+    MutableList(width) {
+      mutableSetOf<Element>()
+    }
   }
   // Functions implementing GameMatrix
 }

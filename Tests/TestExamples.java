@@ -148,11 +148,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testArrayInit() {
-    testExample("Examples/ComplexConstructors/ArrayInit.kt", ArrayInitKt::main);
-  }
-
-  @Test
   public void testBear() {
     testExample("Examples/ComplexConstructors/Bear.kt", complexconstructors.BearKt::main);
   }
@@ -1575,6 +1570,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testFilterNotNull() {
     testExample("Examples/OperationsOnCollections/FilterNotNull.kt", FilterNotNullKt::main);
+  }
+
+  @Test
+  public void testListInit() {
+    testExample("Examples/OperationsOnCollections/ListInit.kt", ListInitKt::main);
   }
 
   @Test
