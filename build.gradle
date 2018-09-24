@@ -2,15 +2,13 @@ group 'Examples'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.3.0-rc-57'
+    ext.kotlin_version = '1.2.70'
 
     repositories {
-        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
-        jcenter()
+        mavenCentral()
     }
     dependencies {
-        // classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.70"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -18,7 +16,6 @@ apply plugin: 'kotlin'
 apply plugin: 'java'
 
 repositories {
-    maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
     jcenter() // A superset of mavenCentral
 }
 
