@@ -1,7 +1,7 @@
 // ErrorReporting/ForEachLine.kt
 import errorreporting.localFile
 
-fun main(args: Array<String>) {
+fun main() {
   localFile("ForEachLine.kt").forEachLine {
     if (it.startsWith("//"))
       println("'$it'")

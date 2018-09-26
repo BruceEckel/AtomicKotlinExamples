@@ -5,7 +5,7 @@ fun json(q: String, a: Int) = """{
   "answer" : $a
 }"""
 
-fun main(args: Array<String>) {
+fun main() {
   println(json("The Ultimate", 42))
 }
 /* Output:

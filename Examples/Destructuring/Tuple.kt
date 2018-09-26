@@ -10,7 +10,7 @@ data class Tuple(
   val l: List<Int>
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val tuple = Tuple(
     1, 3.14, "Mouse", false, listOf())
   val (i, d, s, b, l) = tuple

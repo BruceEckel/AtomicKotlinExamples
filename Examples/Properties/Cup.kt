@@ -4,7 +4,7 @@ class Cup {
   var percentFull = 0
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val c1 = Cup()
   c1.percentFull = 50
   val c2 = Cup()

@@ -36,7 +36,7 @@ class TreeHouse(
     "$name tree house at $fullAddress"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val vacationHouse = VacationHouse(
     address = "8 Target St.",
     state = "KS",

@@ -9,7 +9,7 @@ fun maybeNull(n: Int?): Int {
 
 fun regular(n: Int) = n * 10
 
-fun main(args: Array<String>) {
+fun main() {
   val n: Int? = null
   capture {
     maybeNull(n)

@@ -2,7 +2,7 @@
 import javacode.JTool
 import atomictest.*
 
-fun main(args: Array<String>) {
+fun main() {
   val xn = JTool.get(null)          // [1]
   xn?.method() eq null              // [2]
   capture {

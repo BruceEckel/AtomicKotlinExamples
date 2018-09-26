@@ -23,7 +23,7 @@ class C : A, B {
     get() = super<A>.n + super<B>.n
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val c = C()
   c.f() eq 0
   c.g() eq "A.g"

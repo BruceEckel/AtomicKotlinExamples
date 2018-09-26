@@ -8,7 +8,7 @@ fun checkOperations(vararg ints: Int) {
   println("Average: ${ints.average()}")
 }
 
-fun main(args: Array<String>) {
+fun main() {
   checkOperations(10, -3, 8, 1, 9)
 }
 /* Output:

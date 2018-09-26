@@ -8,7 +8,7 @@ fun compute(input: Int): Pair<Int, String> =
   else
     Pair(input * 2, "Low")
 
-fun main(args: Array<String>) {
+fun main() {
   compute(7) eq Pair(14, "High")
   compute(4) eq Pair(8, "Low")
   val result = compute(5)

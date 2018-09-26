@@ -6,7 +6,7 @@ class Overloading {
   fun f(n: Int) = n + 2
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val o = Overloading()
   o.f() eq 0
   o.f(11) eq 13

@@ -1,6 +1,6 @@
 // DataTypes/StringPlusNumber.kt
 
-fun main(args: Array<String>) {
+fun main() {
   println("Sally" + 5.9)
 }
 /* Output:

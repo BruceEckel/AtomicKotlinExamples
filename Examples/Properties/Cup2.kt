@@ -11,7 +11,7 @@ class Cup2 {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val cup = Cup2()
   cup.add(50)
   println(cup.percentFull)

@@ -5,7 +5,7 @@ fun later(s: String): String = TODO("later()")
 
 fun later2(s: String): String = TODO()
 
-fun main(args: Array<String>) {
+fun main() {
   capture {
     later("Hello")
   } eq "NotImplementedError: " +

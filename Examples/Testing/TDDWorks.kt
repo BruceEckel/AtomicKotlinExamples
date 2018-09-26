@@ -2,7 +2,7 @@
 package testing3
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   calculateBMI(160.0, 68.0) eq "Normal weight"
   calculateBMI(100.0, 68.0) eq "Underweight"
   calculateBMI(200.0, 68.0) eq "Overweight"

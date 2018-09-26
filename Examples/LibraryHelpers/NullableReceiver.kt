@@ -19,7 +19,7 @@ fun adjustWindowIfNotNull(window: Window?) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val windowOrNull: Window? = null
   // Nothing happens:
   adjustWindowIfNotNull(windowOrNull)

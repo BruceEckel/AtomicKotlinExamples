@@ -11,7 +11,7 @@ private tailrec fun sum(
 
 fun sum(n: Long) = sum(n, 0)
 
-fun main(args: Array<String>) {
+fun main() {
   sum(2) eq 3
   sum(10000) eq 50005000
   sum(100000) eq 5000050000

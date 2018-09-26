@@ -8,7 +8,7 @@ data class Message(
   val isRead: Boolean
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val messages = listOf(
     Message("Kitty", "Hey!", true),
     Message("Kitty", "Where are you?", false))

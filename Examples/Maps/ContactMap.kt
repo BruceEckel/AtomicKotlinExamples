@@ -10,7 +10,7 @@ class Contact(
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val miffy = Contact("Miffy", "1-234-567890")
   val cleo = Contact("Cleo", "098-765-4321")
   val contacts = mapOf(

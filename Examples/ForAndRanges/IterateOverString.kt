@@ -1,6 +1,6 @@
 // ForAndRanges/IterateOverString.kt
 
-fun main(args: Array<String>) {
+fun main() {
   for (ch in "Jnskhm ")
     print(ch + 1)
 }

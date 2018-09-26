@@ -1,6 +1,6 @@
 // InKeyword/InString.kt
 
-fun main(args: Array<String>) {
+fun main() {
   println('t' in "kotlin")
   println('a' in "kotlin")
 }

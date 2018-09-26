@@ -10,7 +10,7 @@ fun bmiStatus(
     else "Overweight"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val kg = 72.57 // 160 lbs
   val heightM = 1.727 // 68 inches
   val status = bmiStatus(kg, heightM)

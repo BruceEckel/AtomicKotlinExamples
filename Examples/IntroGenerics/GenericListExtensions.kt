@@ -12,7 +12,7 @@ fun <T> List<T>.firstOrNull(): T? {
   return if (isEmpty()) null else this[0]
 }
 
-fun main(args: Array<String>) {
+fun main() {
   listOf(1, 2, 3).first() eq 1
 
   val i: Int? =                     // [1]

@@ -4,7 +4,7 @@ import atomictest.eq
 
 class Holder(var i: Int)
 
-fun main(args: Array<String>) {
+fun main() {
   val holder = Holder(10)
   holder.i eq 10 // Read the 'i' property
   holder.i = 20  // Write to the 'i' property

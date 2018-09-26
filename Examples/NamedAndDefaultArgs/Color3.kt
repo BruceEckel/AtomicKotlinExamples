@@ -12,6 +12,6 @@ class Color(
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   Color(red = 77).toString() eq "(77, 0, 0)"
 }

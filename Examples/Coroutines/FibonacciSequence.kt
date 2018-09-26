@@ -3,7 +3,7 @@ import atomictest.eq
 import bigint.*
 import kotlin.coroutines.*
 
-fun main(args: Array<String>) {
+fun main() {
   val fibonacciSeq = sequence {
     var n = Pair(zero, one)
     while (true) {

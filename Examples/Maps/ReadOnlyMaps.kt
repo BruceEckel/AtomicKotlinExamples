@@ -1,7 +1,7 @@
 // Maps/ReadOnlyMaps.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val m = mapOf(5 to "five", 6 to "six")
   m[5] eq "five"
   // m[5] = "5ive" // Fails

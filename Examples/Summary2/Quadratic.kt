@@ -25,7 +25,7 @@ fun quadraticZeroes(
   return Roots(root1, root2)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   capture {
     quadraticZeroes(0.0, 4.0, 5.0)
   } eq "IllegalArgumentException: " +

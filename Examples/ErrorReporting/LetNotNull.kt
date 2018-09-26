@@ -12,7 +12,7 @@ fun processURL(url: String?): String =
     storeURL(it)
   } ?: throw IllegalArgumentException("url")
 
-fun main(args: Array<String>) {
+fun main() {
   capture {
     processURL(null)
   } eq "IllegalArgumentException: url"

@@ -8,7 +8,7 @@ class Counter {
   fun inc() = value++
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val counter = Counter()
   repeat(10) {
     counter.inc()

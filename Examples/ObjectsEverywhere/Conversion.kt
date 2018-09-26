@@ -1,6 +1,6 @@
 // ObjectsEverywhere/Conversion.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val s = "123"
   println(s.toInt())
   val i = 123

@@ -11,7 +11,7 @@ class Func {
     "invoke($i, $j, $k)"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val f = Func()
   f() eq "invoke()"
   f(22) eq "invoke(22)"

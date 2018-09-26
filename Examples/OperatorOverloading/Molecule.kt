@@ -13,7 +13,7 @@ data class Molecule(
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val m1 = Molecule()
   val m2 = Molecule()
   m1 + m2                      // [1]

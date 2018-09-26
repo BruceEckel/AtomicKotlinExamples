@@ -13,7 +13,7 @@ fun createResultFile(create: Boolean) {
   })
 }
 
-fun main(args: Array<String>) {
+fun main() {
   if (resultFile.exists())
     resultFile.delete()
   capture {

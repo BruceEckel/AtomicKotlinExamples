@@ -1,6 +1,6 @@
 // InKeyword/IterationVsMembership.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val values = 1..3
   for (v in values)
     println("iteration $v")

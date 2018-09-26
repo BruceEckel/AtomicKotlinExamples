@@ -19,7 +19,7 @@ fun showGreetingWindow(
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   showGreetingWindow(mapOf(
     "greeting" to Window("greeting")))
   println("no Window:")

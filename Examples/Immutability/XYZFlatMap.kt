@@ -3,7 +3,7 @@ package xyzflatmap
 
 enum class XYZ { x, y, z }
 
-fun main(args: Array<String>) {
+fun main() {
   val flat = XYZ.values().flatMap { a ->
     XYZ.values().map {
       b -> a to b

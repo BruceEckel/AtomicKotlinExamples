@@ -15,7 +15,7 @@ fun fibonacci(n: Int): Long {
   return fibonacci(n, 0L, 1L)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   (0..8).map { fibonacci(it) } eq
     "[0, 1, 1, 2, 3, 5, 8, 13, 21]"
   fibonacci(22) eq 17711

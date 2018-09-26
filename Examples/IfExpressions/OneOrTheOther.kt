@@ -6,7 +6,7 @@ fun oneOrTheOther(exp: Boolean): String =
   else
     "False"
 
-fun main(args: Array<String>) {
+fun main() {
   val x = 1
   println(oneOrTheOther(x == 1))
   println(oneOrTheOther(x == 2))

@@ -1,7 +1,7 @@
 // Lists/Lists.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   // Lists hold other objects:
   val ints = listOf(99, 3, 5, 7, 11, 13)
   ints eq "[99, 3, 5, 7, 11, 13]"      // [1]

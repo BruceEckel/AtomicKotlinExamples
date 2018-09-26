@@ -3,6 +3,6 @@ package complexconstructors
 
 class Bear
 
-fun main(args: Array<String>) {
+fun main() {
   val bear = Bear()
 }

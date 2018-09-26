@@ -9,7 +9,7 @@ fun showGreetingWindow2(
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   showGreetingWindow2(mapOf(
     "greeting" to Window("greeting")))
   println("no Window:")

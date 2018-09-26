@@ -1,6 +1,6 @@
 // VarAndVal/Vals.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val whole = 11
   // whole = 15 // Error      // [1]
   val fractional = 1.4

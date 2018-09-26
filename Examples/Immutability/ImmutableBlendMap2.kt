@@ -11,6 +11,6 @@ val blendMap = Color.values().flatMap {
 fun blend(a: Color, b: Color) =
   blendMap[a to b]
 
-fun main(args: Array<String>) {
+fun main() {
   colorblend.test(::blend)
 }

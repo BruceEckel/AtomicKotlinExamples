@@ -1,7 +1,7 @@
 // BreakAndContinue/ForLabeled.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val nums = mutableListOf(0)
   outer@ for(i in 0..4) {
     for(j in 1..10) {

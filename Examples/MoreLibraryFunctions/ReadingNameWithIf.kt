@@ -1,5 +1,5 @@
 // MoreLibraryFunctions/ReadingNameWithIf.kt
-fun main(args: Array<String>) {
+fun main() {
   println("Enter your name:")
   val line = readLine()
   if (line?.isNotBlank() == true) {

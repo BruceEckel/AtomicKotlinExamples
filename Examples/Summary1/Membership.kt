@@ -4,7 +4,7 @@ fun inNumRange(n: Int) = n in 50..100
 
 fun notLowerCase(ch: Char) = ch !in 'a'..'z'
 
-fun main(args: Array<String>) {
+fun main() {
   val i1 = 11
   val i2 = 100
   val c1 = 'K'

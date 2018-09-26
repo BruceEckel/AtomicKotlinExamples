@@ -8,7 +8,7 @@ fun `'when' is a keyword`() = Unit
 
 // fun `Illegal characters :<>`() = Unit
 
-fun main(args: Array<String>) {
+fun main() {
   `A long name with spaces`()
   `*how* is this working?`()
   `'when' is a keyword`()

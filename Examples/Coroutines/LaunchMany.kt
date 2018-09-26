@@ -1,7 +1,7 @@
 // Coroutines/LaunchMany.kt
 import kotlinx.coroutines.*
 
-fun main(a: Array<String>) =
+fun main() =
   runBlocking<Unit> {
     val jobs = List(19) {
       launch {

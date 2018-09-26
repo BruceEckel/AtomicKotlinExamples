@@ -1,7 +1,7 @@
 // FromListsToMaps/GetOrPut.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val map = mapOf(1 to "one", 2 to "two")
 
   map.getOrElse(0) { "zero" } eq "zero"

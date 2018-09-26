@@ -1,6 +1,6 @@
 // Summary1/UnitReturn.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val result = println("returns Unit")
   println(result)
 }

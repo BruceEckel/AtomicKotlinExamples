@@ -1,6 +1,6 @@
 // SafeCallsAndElvis/DereferenceNull.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val s: String? = null
   // Won't compile:
   // s.length        // [1]

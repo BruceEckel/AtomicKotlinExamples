@@ -1,6 +1,6 @@
 // WhenExpressions/MatchingAgainstVals.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val yes = "yes"
   val no = "no"
   val choice = readLine()

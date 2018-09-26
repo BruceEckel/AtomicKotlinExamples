@@ -6,7 +6,7 @@ fun cube(x: Int): Int {
 
 fun bang(s: String) = s + "!"
 
-fun main(args: Array<String>) {
+fun main() {
   println(cube(3))
   println(bang("pop"))
 }

@@ -1,7 +1,7 @@
 // FunctionTypes/NullableFunctionType.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val returnTypeNullable: (String) -> Int? =
     { null }
   val mightBeNull: ((String) -> Int)? = null

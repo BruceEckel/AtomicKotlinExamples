@@ -1,7 +1,7 @@
 // Sequences/EagerEvaluation.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf(1, 2, 3, 4)
 
   list.filter { it % 2 == 0 }

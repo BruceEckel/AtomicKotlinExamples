@@ -13,7 +13,7 @@ class GettersAndSetter {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val gs = GettersAndSetter()
   gs.i = 2
   println(gs.i)

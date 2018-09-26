@@ -8,7 +8,7 @@ class GenericHolder<T>(              // [1]
   fun getValue(): T = value
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val h1 = GenericHolder(Automobile("Ford"))
   val a: Automobile = h1.getValue()  // [2]
   a eq "Automobile(brand=Ford)"

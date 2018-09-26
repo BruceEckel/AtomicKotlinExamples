@@ -2,7 +2,7 @@
 package memberreferences1
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val messages = listOf(
     Message("Kitty", "Hey!", true),
     Message("Kitty", "Where are you?", false),

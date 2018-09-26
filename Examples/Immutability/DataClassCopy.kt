@@ -8,7 +8,7 @@ data class DC(
   val d: String
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val dc = DC("one", "two", "three", "four")
   val dc2 = dc.copy(b = "bouncy", d = "red")
   dc eq "DC(a=one, b=two, c=three, d=four)"

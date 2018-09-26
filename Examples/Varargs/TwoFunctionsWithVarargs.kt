@@ -9,7 +9,7 @@ fun first(vararg numbers: Int) {
 fun second(vararg numbers: Int) =
   first(*numbers)
 
-fun main(args: Array<String>) {
+fun main() {
   second(7, 9, 32)
 }
 /* Output:

@@ -1,7 +1,7 @@
 // ExceptionHandling/ConversionFailure.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   // These fail:
   try {
     "1.234".toInt()

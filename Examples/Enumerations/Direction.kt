@@ -15,7 +15,7 @@ enum class Direction(val notation: String) {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   NORTH.notation eq "N"
   NORTH.opposite eq SOUTH
   WEST.opposite.opposite eq WEST

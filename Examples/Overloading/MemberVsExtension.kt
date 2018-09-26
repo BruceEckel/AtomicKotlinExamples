@@ -9,7 +9,7 @@ fun My.foo() = 1             // [1]
 
 fun My.foo(i: Int) = i + 2   // [2]
 
-fun main(args: Array<String>) {
+fun main() {
   My().foo() eq 0
   My().foo(1) eq 3
 }

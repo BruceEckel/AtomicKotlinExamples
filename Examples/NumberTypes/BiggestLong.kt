@@ -1,6 +1,6 @@
 // NumberTypes/BiggestLong.kt
 
-fun main(args: Array<String>) {
+fun main() {
   println(Long.MAX_VALUE)
 }
 /* Output:

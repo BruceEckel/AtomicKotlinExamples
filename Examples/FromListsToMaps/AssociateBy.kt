@@ -2,7 +2,7 @@
 import fromliststomaps.*
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val map: Map<String, Person> =
     people().associateBy { it.name }
   map eq mapOf(

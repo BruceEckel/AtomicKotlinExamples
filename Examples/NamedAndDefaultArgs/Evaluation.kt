@@ -5,7 +5,7 @@ class DefaultArg
 fun h(d: DefaultArg = DefaultArg()) =
   println(d)
 
-fun main(args: Array<String>) {
+fun main() {
   h()
   h()
 }

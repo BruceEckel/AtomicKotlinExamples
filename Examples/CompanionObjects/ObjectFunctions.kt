@@ -11,7 +11,7 @@ class CompanionObjectFunction {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   CompanionObjectFunction.increment() eq 1
   CompanionObjectFunction.increment() eq 2
 }

@@ -3,6 +3,6 @@ package recursion
 
 fun recurse(i: Int): Int = recurse(i + 1)
 
-fun main(args: Array<String>) {
+fun main() {
   // println(recurse(1))
 }

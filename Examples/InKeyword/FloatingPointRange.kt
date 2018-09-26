@@ -5,7 +5,7 @@ fun inFloatRange(n: Double) {
   println("$n in $r? ${n in r}")
 }
 
-fun main(args: Array<String>) {
+fun main() {
   inFloatRange(0.999999)
   inFloatRange(5.0)
   inFloatRange(10.0)

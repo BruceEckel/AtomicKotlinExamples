@@ -1,7 +1,7 @@
 // Summary2/MustableVsReadonlyList.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val ints = listOf(5, 13, 9)
   // ints.add(11) // 'add()' not available
   for (i in ints)

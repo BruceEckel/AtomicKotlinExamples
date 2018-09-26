@@ -25,7 +25,7 @@ fun testFinally(i: Int): String {
   return sw.result
 }
 
-fun main(args: Array<String>) {
+fun main() {
   testFinally(0) eq "OK"
   testFinally(1) eq "Except1"
   testFinally(2) eq "Except2"

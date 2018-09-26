@@ -7,7 +7,7 @@ data class Student(
   val name: String
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val names = listOf("Alice", "Bob")
   val students =
     names.mapIndexed { index, name ->

@@ -11,7 +11,7 @@ fun withAdjust(window: Window) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val window = Window("my")
   withAdjust(window)
   window.x eq 10

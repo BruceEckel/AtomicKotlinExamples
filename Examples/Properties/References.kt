@@ -4,7 +4,7 @@ class Kitchen {
   var table: String = "Round table"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val kitchen1 = Kitchen()
   val kitchen2 = kitchen1
   println("kitchen1: ${kitchen1.table}")

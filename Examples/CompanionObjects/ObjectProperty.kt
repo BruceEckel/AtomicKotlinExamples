@@ -11,7 +11,7 @@ class WithObjectProperty {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val a = WithObjectProperty()
   val b = WithObjectProperty()
   a.increment() eq 1

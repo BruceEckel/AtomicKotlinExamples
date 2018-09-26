@@ -5,7 +5,7 @@ operator fun String.invoke(
   f: (s: String) -> String
 ) = f(this)
 
-fun main(args: Array<String>) {
+fun main() {
   "mumbling" { it.toUpperCase() } eq
     "MUMBLING"
 }

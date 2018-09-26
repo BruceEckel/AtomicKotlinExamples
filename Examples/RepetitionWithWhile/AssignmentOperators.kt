@@ -1,6 +1,6 @@
 // RepetitionWithWhile/AssignmentOperators.kt
 
-fun main(args: Array<String>) {
+fun main() {
   var n = 10
   val d = 3
   print(n)

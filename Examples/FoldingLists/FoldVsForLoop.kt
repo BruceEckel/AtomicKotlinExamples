@@ -1,7 +1,7 @@
 // FoldingLists/FoldVsForLoop.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf(1, 10, 100, 1000)
 
   val initial = 0

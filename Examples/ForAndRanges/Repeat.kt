@@ -1,6 +1,6 @@
 // ForAndRanges/Repeat.kt
 
-fun main(args: Array<String>) {
+fun main() {
   repeat(2) {
     println("hi!")
   }

@@ -1,6 +1,6 @@
 // UnitTesting/AssertTrue.kt
 import kotlin.test.assertTrue
 
-fun main(args: Array<String>) {
+fun main() {
   assertTrue(1 == 1)
 }

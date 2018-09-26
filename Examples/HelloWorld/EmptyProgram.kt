@@ -1,5 +1,5 @@
 // HelloWorld/EmptyProgram.kt
 
-fun main(args: Array<String>) {
+fun main() {
   // Program code here ...
 }

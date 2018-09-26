@@ -7,7 +7,7 @@ fun factorial(n: Long): Long {
   return n * factorial(n - 1)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   factorial(5) eq 120
   factorial(17) eq 355687428096000
 }

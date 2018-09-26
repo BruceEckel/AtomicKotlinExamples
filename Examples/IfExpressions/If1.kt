@@ -1,6 +1,6 @@
 // IfExpressions/If1.kt
 
-fun main(args: Array<String>) {
+fun main() {
   if (1 > 0)
     println("It's true!")
   if (10 < 11) {

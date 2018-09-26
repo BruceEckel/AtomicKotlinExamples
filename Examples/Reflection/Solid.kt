@@ -11,7 +11,7 @@ class Solid2(val size: Int) {
     "${className(this)}($size)"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   Solid() eq "Solid"
   Solid2(47) eq "Solid2(47)"
 }

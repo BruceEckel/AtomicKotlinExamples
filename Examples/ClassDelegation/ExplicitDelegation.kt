@@ -21,7 +21,7 @@ class ExplicitControls : ShipControls {
     controls.turboBoost() + "... boooooost!"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val controls = ExplicitControls()
   controls.forward(100) eq "forward 100"
   controls.turboBoost() eq

@@ -10,7 +10,7 @@ class DeepThought : SuperComputer {
   override fun calculateAnswer() = 42
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val deepThought = DeepThought()
   deepThought.calculateAnswer() eq 42
 }

@@ -1,6 +1,6 @@
 // Summary2/ArraySpread.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val array = intArrayOf(4, 5)
   varargs("x", 1, 2, 3, *array, 6)  // [1]
   val list = listOf(9, 10, 11)

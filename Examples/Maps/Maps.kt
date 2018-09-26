@@ -1,7 +1,7 @@
 // Maps/Maps.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val constants = mapOf(
     "Pi" to 3.141,
     "e" to 2.718,

@@ -7,7 +7,7 @@ class Book(
   val authors: List<String>
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val books = listOf(
     Book("1984", listOf("George Orwell")),
     Book("Ulysses", listOf("James Joyce"))

@@ -2,7 +2,7 @@
 import atomiclog.*
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val msg = "Hello, Atomic Log!"
   log.trace(msg)
   log.debug(msg)

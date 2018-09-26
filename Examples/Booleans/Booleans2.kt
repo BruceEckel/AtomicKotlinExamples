@@ -1,6 +1,6 @@
 // Booleans/Booleans2.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val hour = 6
   val open = 9
   val closed = 20

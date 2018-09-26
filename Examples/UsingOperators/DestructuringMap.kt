@@ -2,7 +2,7 @@
 package usingoperators
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val map = mapOf("a" to 1)
   for ((key, value) in map) {
     key eq "a"

@@ -7,7 +7,7 @@ class Person(
   var friend: Person? = null
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val alice = Person("Alice")
   alice.friend?.friend?.name eq null  // [1]
 

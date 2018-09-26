@@ -12,7 +12,7 @@ class Default {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val d = Default()
   d.i = 2
   println(d.i)

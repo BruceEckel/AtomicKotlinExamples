@@ -1,7 +1,7 @@
 // ManipulatingLists/Flatten.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf(
     listOf(1, 2, 3),
     listOf(4, 5, 6))

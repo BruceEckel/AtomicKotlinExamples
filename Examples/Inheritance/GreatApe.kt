@@ -14,7 +14,7 @@ class BonoboB : Bonobo()
 fun info(ape: GreatApe) =
   "weight: ${ape.weight} age: ${ape.age}"
 
-fun main(args: Array<String>) {
+fun main() {
   info(GreatApe()) eq
     "weight: 100.0 age: 12"
   info(Bonobo()) eq

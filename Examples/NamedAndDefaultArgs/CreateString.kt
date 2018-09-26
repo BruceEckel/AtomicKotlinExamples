@@ -1,7 +1,7 @@
 // NamedAndDefaultArgs/CreateString.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf(1, 2, 3)
   list.toString() eq "[1, 2, 3]"
   list.joinToString() eq "1, 2, 3"

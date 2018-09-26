@@ -10,7 +10,7 @@ fun String.strangeQuote() =
 fun String.tooManyQuotes() =
   doubleQuote().doubleQuote()        // [2]
 
-fun main(args: Array<String>) {
+fun main() {
   "Hi".strangeQuote() eq "''Hi''"
   "Hi".tooManyQuotes() eq "\"\"Hi\"\""
 }

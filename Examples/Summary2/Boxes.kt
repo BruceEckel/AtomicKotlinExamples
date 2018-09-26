@@ -19,7 +19,7 @@ fun countBoxes() {
   countBox(Box(5))
 }
 
-fun main(args: Array<String>) {
+fun main() {
   countBoxes()
   println("$count boxes")
 }

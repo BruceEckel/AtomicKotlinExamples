@@ -9,7 +9,7 @@ fun filterEven(nums: List<Int>): List<Int> {
   return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
   filterEven(listOf(1, 2, 3, 4)) eq
   listOf(2, 4)
 }

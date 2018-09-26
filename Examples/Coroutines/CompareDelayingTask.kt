@@ -29,7 +29,7 @@ fun parallelTasks() = runBlocking<Double> {
 fun round2dp(d: Double) =
   Math.round(d * 100) / 100.0
 
-fun main(args: Array<String>) {
+fun main() {
   val seq = sequentialTasks()
   val par = parallelTasks()
   println("Ratio: ${round2dp(seq / par)}")

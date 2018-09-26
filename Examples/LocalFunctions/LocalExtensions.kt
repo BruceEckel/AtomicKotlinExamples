@@ -1,7 +1,7 @@
 // LocalFunctions/LocalExtensions.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   fun String.exclaim() = "$this!"
   "Hello".exclaim() eq "Hello!"
   "Hallo".exclaim() eq "Hallo!"

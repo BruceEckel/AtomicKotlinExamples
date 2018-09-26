@@ -11,6 +11,6 @@ data class Num2(private val n: Int) {
 // operator fun Num2.minus(rval: Num2) =
 //  Num2(n - rval.n)
 
-fun main(args: Array<String>) {
+fun main() {
   Num2(4) + Num2(5) eq Num2(9)
 }

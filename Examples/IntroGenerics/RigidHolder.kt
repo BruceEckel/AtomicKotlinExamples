@@ -8,7 +8,7 @@ class RigidHolder(private val a: Automobile) {
   fun getValue() = a
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val holder = RigidHolder(Automobile("BMW"))
   holder.getValue() eq
     "Automobile(brand=BMW)"

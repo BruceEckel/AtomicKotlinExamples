@@ -7,7 +7,7 @@ data class Employee(
   val last: String, val id: Int
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val employees = HashSet(setOf(
     Employee("Lucia", "Dubois", 1),
     Employee("Bob", "Dobbs", 2),

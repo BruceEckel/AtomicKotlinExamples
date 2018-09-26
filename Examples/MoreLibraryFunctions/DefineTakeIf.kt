@@ -8,7 +8,7 @@ fun <T> T.takeIf(
   return if (predicate(this)) this else null
 }
 
-fun main(args: Array<String>) {
+fun main() {
   "abc".takeIf { it != "XXX" } eq "abc"
   "XXX".takeIf { it != "XXX" } eq null
 }

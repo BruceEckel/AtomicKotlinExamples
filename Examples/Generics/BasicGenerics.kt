@@ -17,7 +17,7 @@ interface GInterface<T> {
   fun f(): T
 }
 
-fun main(args: Array<String>) {
+fun main() {
   gFunc("Yellow") eq "Yellow"
   gFunc(1) eq 1
   gFunc(Dog()).bark() eq "Ruff!"       // [1]

@@ -2,7 +2,7 @@
 package libraryhelpers
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val mutableList = mutableListOf<Int>()
   val result = mutableList.apply {
     add(17)

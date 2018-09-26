@@ -13,7 +13,7 @@ fun debug(msg: String) =
 fun trace(msg: String) =
   logFile.appendText("Trace: $msg\n")
 
-fun main(args: Array<String>) {
+fun main() {
   debug("Simple Logging Strategy")
   trace("Line 1")
   trace("Line 2")

@@ -4,7 +4,7 @@ class House {
   var sofa: String = ""
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val house = House()
   house.sofa = "Simple sleeper sofa: $89.00"
   println(house.sofa)

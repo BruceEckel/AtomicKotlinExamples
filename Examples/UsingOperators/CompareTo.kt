@@ -11,7 +11,7 @@ data class Contact(
     name.compareTo(other.name)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val alice = Contact("Alice", "0123456789")
   val bob = Contact("Bob", "9876543210")
   (alice < bob) eq true

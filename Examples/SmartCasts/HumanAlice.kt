@@ -8,7 +8,7 @@ class Alice: Human {
   fun name() = "I'm Alice"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val human: Human = Alice()  // [1]
   if (human is Alice) {
     // Code in this block assumes

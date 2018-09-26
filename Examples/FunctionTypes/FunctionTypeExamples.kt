@@ -1,7 +1,7 @@
 // FunctionTypes/FunctionTypeExamples.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val helloWorld: () -> String =
     { "Hello, world!" }
   helloWorld() eq "Hello, world!"

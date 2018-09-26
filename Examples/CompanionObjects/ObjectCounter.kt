@@ -9,7 +9,7 @@ class Numbered {
   override fun toString() = "#$id"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   listOf(Numbered(), Numbered(),
     Numbered(), Numbered(), Numbered()) eq
     "[#0, #1, #2, #3, #4]"

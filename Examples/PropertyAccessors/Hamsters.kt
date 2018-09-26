@@ -22,7 +22,7 @@ class Cage(private val maxCapacity: Int) {
     hamsters.removeAt(0)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val cage = Cage(2)
   cage.full eq false
   cage.capacity eq 2

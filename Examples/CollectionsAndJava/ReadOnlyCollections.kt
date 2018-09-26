@@ -1,7 +1,7 @@
 // CollectionsAndJava/ReadOnlyCollections.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val mutableList = mutableListOf(1, 2, 3)
   // Read-only reference to a mutable list:
   val list: List<Int> = mutableList

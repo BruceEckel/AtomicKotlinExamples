@@ -30,7 +30,7 @@ class GameMatrix(
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val matrix = GameMatrix(4, 3, """
     # ##
        #

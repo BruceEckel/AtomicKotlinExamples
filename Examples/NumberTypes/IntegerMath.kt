@@ -11,7 +11,7 @@ fun bmiStatusInt(
     else "Overweight"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val lbs = 160
   val height = 68
   val status = bmiStatusInt(lbs, height)

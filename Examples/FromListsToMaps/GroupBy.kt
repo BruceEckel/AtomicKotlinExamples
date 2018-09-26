@@ -2,7 +2,7 @@
 import fromliststomaps.*
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val map: Map<Int, List<Person>> =
     people().groupBy(Person::age)
   map[15] eq listOf(Person("Arthricia", 15))

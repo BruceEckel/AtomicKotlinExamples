@@ -20,7 +20,7 @@ fun test(which: Int) =
     "Except3: ${e.msg} ${e.d}"
   }
 
-fun main(args: Array<String>) {
+fun main() {
   test(0) eq "OK"
   test(1) eq "Except1: Reason"
   test(2) eq "Except2: 11"

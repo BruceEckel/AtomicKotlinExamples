@@ -1,7 +1,7 @@
 // BreakAndContinue/ForControl.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val nums = mutableListOf(0)
   for(i in 4 until 100 step 4) { // [2]
     if (i == 8) continue         // [1]

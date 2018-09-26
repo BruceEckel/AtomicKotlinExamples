@@ -1,7 +1,7 @@
 // Lists/OutOfBounds.kt
 import atomictest.*
 
-fun main(args: Array<String>) {
+fun main() {
   val ints = listOf(1, 2, 3)
   capture {
     ints[3]

@@ -19,7 +19,7 @@ class NickName() {
         p.nickName else p.formalName
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val babs = Person("Barbara", "Babs")
   babs.name eq
     "'val propertydelegation.Person.name: " +

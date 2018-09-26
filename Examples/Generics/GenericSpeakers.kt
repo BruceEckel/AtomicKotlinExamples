@@ -9,7 +9,7 @@ fun <T> talkg(spkr: T, spk: T.() -> String) =
 // Extension function on the target object:
 fun <T> T.talkge(spk: T.() -> String) = spk()
 
-fun main(arg: Array<String>) {
+fun main() {
   val person = Person()
   val dog = Dog()
   val robot = Robot()

@@ -9,7 +9,7 @@ fun repeat(
     action(index)                 // [2]
 }
 
-fun main(args: Array<String>) {
+fun main() {
   repeat(3) { println("#$it") }   // [3]
 }
 /* Output:

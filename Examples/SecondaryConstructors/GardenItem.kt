@@ -19,7 +19,7 @@ class GardenItem(
   override fun toString() = "$material $name"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   GardenItem("Snowman") eq "Plastic Snowman"
   GardenItem("Elf") eq "Plastic Elf"
   GardenItem(Material.Metal, "Gazing Ball") eq

@@ -8,7 +8,7 @@ fun color(
   blue: Int = 0
 ) = "($red, $green, $blue)"
 
-fun main(args: Array<String>) {
+fun main() {
   color(139) eq "(139, 0, 0)"
   color(blue = 139) eq "(0, 0, 139)"
   color(255, 165) eq "(255, 165, 0)"

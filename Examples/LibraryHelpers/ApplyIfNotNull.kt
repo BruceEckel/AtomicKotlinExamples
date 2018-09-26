@@ -21,7 +21,7 @@ fun showWindow(window: Window) {
   println(window)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val mainWindow = Window("main")
   showMainWindow(mapOf("main" to mainWindow))
   mainWindow.x eq 10

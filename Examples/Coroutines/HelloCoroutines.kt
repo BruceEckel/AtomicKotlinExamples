@@ -1,7 +1,7 @@
 // Coroutines/HelloCoroutines.kt
 import kotlinx.coroutines.*
 
-fun main(a: Array<String>) =
+fun main() =
   runBlocking<Unit> {
     val coroutine = launch {
       delay(10)

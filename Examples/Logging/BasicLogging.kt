@@ -3,7 +3,7 @@ package logging
 
 private val log = mu.KLogging().logger
 
-fun main(args: Array<String>) {
+fun main() {
   val msg = "Hello, Kotlin Logging!"
   log.trace(msg)
   log.debug(msg)

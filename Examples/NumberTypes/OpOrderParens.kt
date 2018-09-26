@@ -1,6 +1,6 @@
 // NumberTypes/OpOrderParens.kt
 
-fun main(args: Array<String>) {
+fun main() {
   println( (45 + 5) * 6 )
 }
 /* Output:

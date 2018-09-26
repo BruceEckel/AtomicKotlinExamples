@@ -22,7 +22,7 @@ fun ordinal(i: Int): String =
     else -> numbers.getValue(i) + "te"  // [3]
   }
 
-fun main(args: Array<String>) {
+fun main() {
   ordinal(2) eq "zweite"
   ordinal(3) eq "dritte"
   ordinal(11) eq "elfte"

@@ -7,7 +7,7 @@ fun hasChar(s: String, ch: Char): Boolean {
   return false
 }
 
-fun main(args: Array<String>) {
+fun main() {
   println(hasChar("kotlin", 't'))
   println(hasChar("kotlin", 'a'))
 }

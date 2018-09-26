@@ -9,7 +9,7 @@ data class Contact(
 
 class Person(val name: String)
 
-fun main(args: Array<String>) {
+fun main() {
   Contact("Miffy", "1-234-567890") eq
   Contact("Miffy", "1-234-567890")
 

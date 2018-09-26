@@ -24,7 +24,7 @@ data class Rat(
   val id: Int = Pet.next()
 ) : Pet
 
-fun main(args: Array<String>) {
+fun main() {
   val pets = HashSet(setOf(
     Cat("Elsie"),
     Dog("Rufus"),

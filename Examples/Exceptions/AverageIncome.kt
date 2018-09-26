@@ -5,7 +5,7 @@ import atomictest.*
 fun averageIncome(income: Int, months: Int) =
   income / months
 
-fun main(args: Array<String>) {
+fun main() {
   averageIncome(3300, 3) eq 1100
   capture {
     averageIncome(5000, 0)

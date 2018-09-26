@@ -1,6 +1,6 @@
 // ExpressionsStatements/ForIsAStatement.kt
 
-fun main(args: Array<String>) {
+fun main() {
   // Can't do this:
   // val f = for(i in 1..10) {}
   // Compiler error message:

@@ -1,7 +1,7 @@
 // Lambdas/TwoArgLambda.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf('a', 'b', 'c')
   list.mapIndexed { index, element ->
     "[$index: $element]"

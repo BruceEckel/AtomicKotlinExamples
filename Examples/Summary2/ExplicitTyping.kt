@@ -1,7 +1,7 @@
 // Summary2/ExplicitTyping.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val numbers: List<Int> = listOf(1, 2, 3)
   val strings: List<String> =
     listOf("one", "two", "three")

@@ -1,7 +1,7 @@
 // Summary2/ListCollection.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val lst = listOf(19.2, 88.3, 22.1)
   lst[1] eq 88.3  // Indexing
   lst.reversed() eq listOf(22.1, 88.3, 19.2)

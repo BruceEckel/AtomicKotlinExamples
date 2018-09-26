@@ -1,7 +1,7 @@
 // ManipulatingLists/Zipper.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val left = listOf("a", "b", "c", "d")
   val right = listOf("q", "r", "s", "t")
 

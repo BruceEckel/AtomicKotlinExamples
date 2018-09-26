@@ -41,7 +41,7 @@ fun talk(ape: GreatApe): String {
   return "${ape.call()} ${ape.energyLevel()}"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   // Cannot access 'energy':
   // GreatApe().energy
   talk(GreatApe()) eq "Hoo! Energy: 0"

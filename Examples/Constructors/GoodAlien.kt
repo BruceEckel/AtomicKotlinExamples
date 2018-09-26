@@ -6,7 +6,7 @@ class GoodAlien(val name: String) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val birdPerson = GoodAlien("Birdperson")
   println(birdPerson)
 }

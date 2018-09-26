@@ -10,7 +10,7 @@ fun checkLength(s: String?, expected: Int) {
   length2 eq expected
 }
 
-fun main(args: Array<String>) {
+fun main() {
   checkLength("abc", 3)
   checkLength(null, 0)
 }

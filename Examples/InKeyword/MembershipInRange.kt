@@ -1,6 +1,6 @@
 // InKeyword/MembershipInRange.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val percent = 35
   println(percent in 1..100)
 }

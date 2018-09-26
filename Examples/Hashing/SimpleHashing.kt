@@ -1,7 +1,7 @@
 // Hashing/SimpleHashing.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val keys = 'A'..'z'
   val hm = HashMap(
     keys.associate { it to keys.indexOf(it) })

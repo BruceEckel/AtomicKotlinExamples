@@ -9,7 +9,7 @@ fun sum(n: Long): Long {
   return accumulator
 }
 
-fun main(args: Array<String>) {
+fun main() {
   sum(10000) eq 50005000
   sum(100000) eq 5000050000
 }

@@ -1,6 +1,6 @@
 // IfExpressions/If5.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val y: Boolean = false
   if (!y)
     println("!y is true")

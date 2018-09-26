@@ -21,7 +21,7 @@ fun Message.isImportant(): Boolean =
       it.name.contains("cat")
     }
 
-fun main(args: Array<String>) {
+fun main() {
   val messages = listOf(Message(
     "Boss", "Let's discuss goals " +
     "for next year", false,

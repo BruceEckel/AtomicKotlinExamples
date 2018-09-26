@@ -16,7 +16,7 @@ class Cat: Pet() {
 
 fun talk(pet: Pet) = pet.speak()
 
-fun main(args: Array<String>) {
+fun main() {
   talk(Dog()) eq "Bark!"     // [1]
   talk(Cat()) eq "Meow"      // [2]
 }

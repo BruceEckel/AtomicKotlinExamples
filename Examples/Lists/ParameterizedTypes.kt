@@ -1,7 +1,7 @@
 // Lists/ParameterizedTypes.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   // Type is inferred:
   val numbers = listOf(1, 2, 3)
   val strings =

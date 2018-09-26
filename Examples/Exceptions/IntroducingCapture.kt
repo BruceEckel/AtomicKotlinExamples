@@ -1,7 +1,7 @@
 // Exceptions/IntroducingCapture.kt
 import atomictest.*
 
-fun main(args: Array<String>) {
+fun main() {
   capture {
     "1$".toInt()
   } eq "NumberFormatException: " +

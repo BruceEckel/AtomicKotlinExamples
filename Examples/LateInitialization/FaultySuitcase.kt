@@ -9,7 +9,7 @@ class FaultySuitcase : Bag {
     items.contains("socks")
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val suitcase = FaultySuitcase()
   suitcase.setUp()
   capture {

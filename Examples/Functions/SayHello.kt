@@ -8,7 +8,7 @@ fun sayGoodbye(): Unit {
   println("Auf Wiedersehen!")
 }
 
-fun main(args: Array<String>) {
+fun main() {
   sayHello()
   sayGoodbye()
 }

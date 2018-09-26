@@ -1,7 +1,7 @@
 // UsingOperators/OperatorPlus.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val mutableList = mutableListOf(1, 2, 3)
   mutableList += 4 // operator plusAssign()
   mutableList.plusAssign(5) // Explicit

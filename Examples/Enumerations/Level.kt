@@ -6,6 +6,6 @@ enum class Level {
   Overflow, High, Medium, Low, Empty
 }
 
-fun main(args: Array<String>) {
+fun main() {
   Level.Medium eq "Medium"
 }

@@ -9,7 +9,7 @@ fun mixColors(first: String, second: String) =
     else -> "unknown"
   }
 
-fun main(args: Array<String>) {
+fun main() {
   mixColors("red", "blue") eq "purple"
   mixColors("blue", "red") eq "purple"
   mixColors("blue", "purple") eq "unknown"

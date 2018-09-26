@@ -18,7 +18,7 @@ object Prepare : PaintPreparation {
   override fun prepare() = "Scrape"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   Paint("Green").apply() eq
     "Applying Green"
   Acrylic.apply() eq

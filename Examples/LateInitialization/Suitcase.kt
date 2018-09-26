@@ -11,7 +11,7 @@ class Suitcase : Bag {
     items?.contains("socks") ?: false
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val suitcase = Suitcase()
   suitcase.setUp()
   suitcase.checkSocks() eq true

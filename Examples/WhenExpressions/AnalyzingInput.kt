@@ -6,7 +6,7 @@ class Coordinates(var x: Int, var y: Int) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   println("""|Welcome! Type 'up', 'down',
     |'left', 'right' or 'nowhere' to move;
     |'exit' to exit.""".trimMargin())

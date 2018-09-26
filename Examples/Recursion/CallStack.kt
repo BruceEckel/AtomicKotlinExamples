@@ -7,6 +7,6 @@ fun illegalState() {
 
 fun fail() = illegalState()
 
-fun main(args: Array<String>) {
+fun main() {
   fail()
 }

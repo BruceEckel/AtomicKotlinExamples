@@ -2,7 +2,7 @@
 import atomictest.eq
 import java.util.Random
 
-fun main(args: Array<String>) {
+fun main() {
   val rand = Random(47)
   rand.nextInt(100) eq 58
 }

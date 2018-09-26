@@ -25,7 +25,7 @@ class Grid {
       cells[x][y].setValue(e)       // [3]
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val grid = Grid()
   grid.play('X', 1, 1) eq "successful move"
   grid.play('X', 1, 1) eq "invalid move"

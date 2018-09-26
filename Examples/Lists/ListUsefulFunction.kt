@@ -1,7 +1,7 @@
 // Lists/ListUsefulFunction.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val doubles =
     listOf(1.1, 2.2, 3.3, 4.4)
   doubles.min() eq 1.1

@@ -13,7 +13,7 @@ fun acceptAny(a: Any) =
     else -> "I don't know what that is!"
   }
 
-fun main(args: Array<String>) {
+fun main() {
   acceptAny(5) eq "Int Less than 20: 5"
   acceptAny(25) eq "Some Other Int: 25"
   acceptAny("Some text") eq

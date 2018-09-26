@@ -16,7 +16,7 @@ fun fibonacci(n: Int): BigInt {
   return fibonacci(n, zero, one)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   (0..7).map { fibonacci(it) } eq
   "[0, 1, 1, 2, 3, 5, 8, 13]"
   fibonacci(22) eq 17711.big

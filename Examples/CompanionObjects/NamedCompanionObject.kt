@@ -7,7 +7,7 @@ class WithNamed {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   WithNamed.s() eq "from Named"
   WithNamed.Named.s() eq "from Named"
 }

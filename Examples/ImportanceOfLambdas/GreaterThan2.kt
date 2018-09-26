@@ -9,7 +9,7 @@ fun greaterThan2(nums: List<Int>): List<Int> {
   return result
 }
 
-fun main(args: Array<String>) {
+fun main() {
   greaterThan2(listOf(1, 2, 3, 4)) eq
     listOf(3, 4)
 }

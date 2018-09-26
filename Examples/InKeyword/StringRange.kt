@@ -1,6 +1,6 @@
 // InKeyword/StringRange.kt
 
-fun main(args: Array<String>) {
+fun main() {
   println("ab" in "aa".."az")
   println("ba" in "aa".."az")
 }

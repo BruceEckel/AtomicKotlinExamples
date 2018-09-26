@@ -7,7 +7,7 @@ data class Person(
   val id: Int
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val names = listOf("Bob", "Jill", "Jim")
   val ids = listOf(1731, 9274, 8378)
   names.zip(ids) {

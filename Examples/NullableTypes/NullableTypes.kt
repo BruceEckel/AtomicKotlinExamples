@@ -1,7 +1,7 @@
 // NullableTypes/NullableTypes.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val s1 = "abc"            // [1]
 
   // Compile-time error:

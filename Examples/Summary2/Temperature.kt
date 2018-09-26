@@ -24,7 +24,7 @@ class Temperature {
       (current - 32.0) * 5.0 / 9.0
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val temp = Temperature()     // [1]
   temp.setFahrenheit(98.6)
   temp.getFahrenheit() eq 98.6

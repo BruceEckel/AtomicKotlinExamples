@@ -9,7 +9,7 @@ fun inferred(c1: Char, c2: Char) =
 fun explicit(c1: Char, c2: Char): List<Char> =
   listOf(c1, c2)
 
-fun main(args: Array<String>) {
+fun main() {
   inferred('a', 'b') eq "[a, b]"
   explicit('y', 'z') eq "[y, z]"
 }

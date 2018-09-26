@@ -6,7 +6,7 @@ fun trueOrFalse(exp: Boolean): String {
   return "It's false"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val b = 1
   println(trueOrFalse(b < 3))
   println(trueOrFalse(b >= 3))

@@ -2,7 +2,7 @@
 import atomictest.eq
 import java.io.File
 
-fun main(args: Array<String>) {
+fun main() {
   File("Examples/ExceptionHandling/" +
     "KotlinChecked.kt")
     .readLines()[0] eq

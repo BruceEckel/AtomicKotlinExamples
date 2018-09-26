@@ -1,7 +1,7 @@
 // NullableExtensions/StringIsNullOr.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val s1: String? = null
   s1.isNullOrEmpty() eq true
   s1.isNullOrBlank() eq true

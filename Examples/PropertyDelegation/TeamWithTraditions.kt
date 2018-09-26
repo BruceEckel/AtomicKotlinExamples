@@ -15,7 +15,7 @@ class TeamWithTraditions {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val team = TeamWithTraditions()
   team.captain = "Amanda"
   team.captain = "Bill"

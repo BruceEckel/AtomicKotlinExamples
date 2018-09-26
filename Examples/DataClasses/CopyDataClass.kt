@@ -8,7 +8,7 @@ data class DetailedContact(
   val address: String
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val contact = DetailedContact(
     "Miffy",
     "Miller",

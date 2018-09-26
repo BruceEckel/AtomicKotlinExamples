@@ -12,7 +12,7 @@ fun showAdjustedWindow(window: Window) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val w = Window()
   println(w)
   showAdjustedWindow(w)

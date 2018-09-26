@@ -7,7 +7,7 @@ fun showRange(r: IntProgression) {
   println()
 }
 
-fun main(args: Array<String>) {
+fun main() {
   showRange(1..5)
   showRange(0 until 5)
   showRange(5 downTo 1)           // [1]

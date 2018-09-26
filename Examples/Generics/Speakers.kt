@@ -24,7 +24,7 @@ fun talk(speaker: Any) = when (speaker) {
   else -> "Not a speaker" // Or exception
 }
 
-fun main(arg: Array<String>) {
+fun main() {
   talk(Person()) eq "Hi!"
   talk(Dog()) eq "Ruff!"
   talk(Robot()) eq "Beep!"

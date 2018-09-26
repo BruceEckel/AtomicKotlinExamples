@@ -1,7 +1,7 @@
 // LambdaWithReceiver/StringBuilder.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val stringBuilder = StringBuilder()  // [1]
   stringBuilder.append("Alphabet: ")   // [2]
   for (ch in 'a'..'z')

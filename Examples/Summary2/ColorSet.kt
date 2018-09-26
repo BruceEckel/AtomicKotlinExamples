@@ -5,7 +5,7 @@ val colors =
   "Yellow Green Green Blue"
     .split(Regex("""\W+""")).sorted()  // [1]
 
-fun main(args: Array<String>) {
+fun main() {
   colors eq
     listOf("Blue", "Green", "Green", "Yellow")
 

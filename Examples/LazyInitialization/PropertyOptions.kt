@@ -13,7 +13,7 @@ class Properties {
   val lazyInit by lazy { compute(3) }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   println("Properties():")
   val p = Properties()
   println("atDefinition:")

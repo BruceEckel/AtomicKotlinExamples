@@ -14,7 +14,7 @@ fun incomplete(): Int = STUB(
   "2. Second item",
   "3. Third item")
 
-fun main(args: Array<String>) {
+fun main() {
   capture {
     incomplete()
   } eq "NotImplementedError: STUB"

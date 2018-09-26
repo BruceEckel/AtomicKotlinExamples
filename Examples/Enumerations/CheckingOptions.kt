@@ -11,7 +11,7 @@ fun checkLevel(level: Level) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   checkLevel(Empty)
   checkLevel(Low)
   checkLevel(Overflow)

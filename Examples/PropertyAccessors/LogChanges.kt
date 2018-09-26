@@ -9,7 +9,7 @@ class LogChanges {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val lc = LogChanges()
   lc.n eq 0
   lc.n = 2

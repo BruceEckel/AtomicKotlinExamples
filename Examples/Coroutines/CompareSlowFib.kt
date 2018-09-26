@@ -40,7 +40,7 @@ fun parallelFibs() = runBlocking<Double> {
   }.toDouble()
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val seq = sequentialFibs()
   val par = parallelFibs()
   println("Ratio: ${round2dp(seq / par)}")

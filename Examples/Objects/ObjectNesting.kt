@@ -13,7 +13,7 @@ class WithObject {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   Outer.Inner1.a eq "Outer.Inner1"
   WithObject.Inner2.b eq "WithObject.Inner2"
 }

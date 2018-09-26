@@ -2,7 +2,7 @@
 import kotlin.math.PI
 import kotlin.math.cos  // Cosine
 
-fun main(args: Array<String>) {
+fun main() {
   println(PI)
   println(cos(PI))
   println(cos(2 * PI))

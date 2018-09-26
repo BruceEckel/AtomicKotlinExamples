@@ -1,6 +1,6 @@
 // Hashing/StringHashCode.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   "Hello".hashCode() eq "Hello".hashCode();
 }

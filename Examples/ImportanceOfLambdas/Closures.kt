@@ -1,7 +1,7 @@
 // ImportanceOfLambdas/Closures.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf(1, 5, 7, 10)
   val divider = 5
 

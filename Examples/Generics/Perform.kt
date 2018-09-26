@@ -7,7 +7,7 @@ fun <T> T.perform(
   sit: T.() -> Boolean
 ) = spk() + " " + sit()
 
-fun main(arg: Array<String>) {
+fun main() {
   val p = Person()
   val d = Dog()
   val r = Robot()

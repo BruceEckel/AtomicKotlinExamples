@@ -1,6 +1,6 @@
 // Summary2/ASCIIMap.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val ascii = mapOf(
     "A" to 65,
     "B" to 66,

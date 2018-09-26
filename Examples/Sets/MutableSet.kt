@@ -1,7 +1,7 @@
 // Sets/MutableSet.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val mutableSet = mutableSetOf<Int>()
   mutableSet += 42
   mutableSet += 42

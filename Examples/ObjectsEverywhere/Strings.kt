@@ -1,6 +1,6 @@
 // ObjectsEverywhere/Strings.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val s = "AbcD"
   println(s.reversed())
   println(s.toLowerCase())

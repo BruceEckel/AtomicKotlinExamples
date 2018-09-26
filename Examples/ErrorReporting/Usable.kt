@@ -9,7 +9,7 @@ class Usable(val msg: String) : Closeable {
     println("closing Usable $msg")
 }
 
-fun main(args: Array<String>) {
+fun main() {
   Usable("Done").use { it.operation() }
 }
 /* Output:

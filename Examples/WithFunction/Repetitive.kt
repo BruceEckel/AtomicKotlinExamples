@@ -17,7 +17,7 @@ fun adjustWindow(window: Window) {
   window.height *= 2
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val window = Window("my")
   adjustWindow(window)
   window.x eq 10

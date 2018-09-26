@@ -4,7 +4,7 @@ class Sofa {
   val cover: String = "Loveseat cover"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   var sofa = Sofa()
   // Not allowed:
   // sofa.cover = "New cover"

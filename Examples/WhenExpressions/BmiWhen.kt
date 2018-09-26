@@ -23,7 +23,7 @@ fun bmiStatusWithWhen(
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   bmiStatusOld(72.57, 1.727) eq
   bmiStatusWithWhen(72.57, 1.727)
 }

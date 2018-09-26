@@ -1,6 +1,6 @@
 // ExpressionsStatements/PostfixVsPrefix.kt
 
-fun main(args: Array<String>) {
+fun main() {
   var i = 10
   println(i++)
   println(i)

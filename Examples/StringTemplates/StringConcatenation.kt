@@ -1,6 +1,6 @@
 // StringTemplates/StringConcatenation.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val s = "hi\n"                // [1]
   val n = 11
   val d = 3.14

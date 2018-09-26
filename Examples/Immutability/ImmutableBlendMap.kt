@@ -13,6 +13,6 @@ val blendMap = combinations.map {
 fun blend(a: Color, b: Color) =
   blendMap[a to b]
 
-fun main(args: Array<String>) {
+fun main() {
   colorblend.test(::blend)
 }

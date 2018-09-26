@@ -2,7 +2,7 @@
 import fromkotlin.Chameleon
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val chameleon = Chameleon()
   chameleon.size = 1
   chameleon.size eq 1

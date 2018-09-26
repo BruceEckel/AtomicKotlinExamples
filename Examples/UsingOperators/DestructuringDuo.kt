@@ -17,7 +17,7 @@ class Duo(val x: Int, val y: Int) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val (a, b) = Duo(1, 2)
   a eq 1
   b eq 2

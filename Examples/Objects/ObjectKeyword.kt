@@ -7,7 +7,7 @@ object JustOne {
   fun g() = this.n * 20
 }
 
-fun main(args: Array<String>) {
+fun main() {
   // val x = JustOne() // Error
   JustOne.n eq 2
   JustOne.f() eq 20

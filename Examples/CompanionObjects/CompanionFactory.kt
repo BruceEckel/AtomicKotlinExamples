@@ -16,7 +16,7 @@ private constructor(private val id: Int) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   Numbered2.create(0) eq "[]"
   Numbered2.create(5) eq
     "[#0, #1, #2, #3, #4]"

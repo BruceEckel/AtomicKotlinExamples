@@ -16,7 +16,7 @@ class Cookie(
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val x = Cookie(false)
   x.bite()
   // Can't access private members:

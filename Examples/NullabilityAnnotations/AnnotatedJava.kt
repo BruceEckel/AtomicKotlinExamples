@@ -11,7 +11,7 @@ object KotlinCode {
   val d = AnnotatedJTool.getUnsafe(null)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   with(KotlinCode) {
     ::a.returnType eq "javacode.JTool"
     ::c.returnType eq "javacode.JTool?"

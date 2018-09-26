@@ -5,7 +5,7 @@ fun multiplyByTwo(x: Int): Int {  // [1]
   return x * 2
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val r = multiplyByTwo(5)        // [3]
   println(r)
 }

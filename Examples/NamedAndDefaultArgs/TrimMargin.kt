@@ -1,7 +1,7 @@
 // NamedAndDefaultArgs/TrimMargin.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val poem = """
     |Last night I saw upon the stair
           |A little man who wasn't there

@@ -1,7 +1,7 @@
 // NonNullAssertions/ValueFromMap.kt
 import atomictest.*
 
-fun main(args: Array<String>) {
+fun main() {
   val map = mapOf(1 to "one")
   map[1]!!.toUpperCase() eq "ONE"
   map.getValue(1).toUpperCase() eq "ONE"

@@ -1,7 +1,7 @@
 // Sets/Sets.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val intSet = setOf(1, 1, 2, 3, 9, 9, 4)
   // No duplicates:
   intSet eq setOf(1, 2, 3, 4, 9)

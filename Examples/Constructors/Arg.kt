@@ -4,7 +4,7 @@ class Alien(name: String) {
   val greeting = "Poor $name!"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val alien = Alien("Mr. Meeseeks")
   println(alien.greeting)
   // alien.name // Error     // [1]

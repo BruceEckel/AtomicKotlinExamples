@@ -10,7 +10,7 @@ class Dog {
   fun bark() = "Ruff!"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val holder = AnyHolder(Dog())
   val any = holder.getValue()
   // Won't compile:

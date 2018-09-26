@@ -1,6 +1,6 @@
 // Booleans/EvaluationOrder.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val sunny = true
   val hoursSleep = 6
   val exercise = false

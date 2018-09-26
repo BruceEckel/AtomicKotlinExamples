@@ -1,7 +1,7 @@
 // FromListsToMaps/FilteringMap.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val map = mapOf(1 to "one",
     2 to "two", 3 to "three", 4 to "four")
 

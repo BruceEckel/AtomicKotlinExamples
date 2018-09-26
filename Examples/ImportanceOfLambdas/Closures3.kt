@@ -7,7 +7,7 @@ fun useX() {
   x++
 }
 
-fun main(args: Array<String>) {
+fun main() {
   useX()
   x eq 101
 }

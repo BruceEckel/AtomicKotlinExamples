@@ -14,7 +14,7 @@ data class Except3(
 ) :
   IllegalStateException("$msg: $d")
 
-fun main(args: Array<String>) {
+fun main() {
   capture {
     throw Except1("One")
   } eq "Except1: One"

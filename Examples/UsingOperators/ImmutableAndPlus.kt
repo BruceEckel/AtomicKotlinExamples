@@ -1,7 +1,7 @@
 // UsingOperators/ImmutableAndPlus.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   var list = listOf(1, 2)
   val initial = list
   list += 3

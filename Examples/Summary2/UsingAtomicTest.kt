@@ -1,7 +1,7 @@
 // Summary2/UsingAtomicTest.kt
 import atomictest.*
 
-fun main(args: Array<String>) {
+fun main() {
   val pi = 3.14
   val pie = "A round dessert"
   pi eq 3.14

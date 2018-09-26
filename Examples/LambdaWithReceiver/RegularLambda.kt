@@ -10,7 +10,7 @@ fun buildStr(
   return sb.toString()
 }
 
-fun main(args: Array<String>) {
+fun main() {
   buildStr {
     it.append("Alphabet: ")
     for (ch in 'a'..'z')

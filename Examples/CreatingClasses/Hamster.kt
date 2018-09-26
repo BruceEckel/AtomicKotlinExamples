@@ -8,7 +8,7 @@ class Hamster {
     "Running on wheel"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val hamster = Hamster()
   println(hamster.exercise())
 }

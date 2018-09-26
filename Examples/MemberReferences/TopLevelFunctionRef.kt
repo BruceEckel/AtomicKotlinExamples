@@ -6,7 +6,7 @@ fun ignore(message: Message) =
   !message.isImportant() &&
     message.sender in setOf("Boss", "Mom")
 
-fun main(args: Array<String>) {
+fun main() {
   val text = "Let's discuss goals " +
     "for the next year"
   val msgs = listOf(

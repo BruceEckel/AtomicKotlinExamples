@@ -1,6 +1,6 @@
 // LocalFunctions/LocalFunctions.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val logMsg = StringBuilder()
   fun log(message: String) =
     logMsg.appendln(message)

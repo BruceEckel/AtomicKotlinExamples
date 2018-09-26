@@ -6,7 +6,7 @@ data class Simple(
   var arg2: Int
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val s1 = Simple("Hi", 29)
   val s2 = Simple("Hi", 29)
   s1 eq s2

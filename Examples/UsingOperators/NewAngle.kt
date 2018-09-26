@@ -1,7 +1,7 @@
 // UsingOperators/NewAngle.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = mutableListOf('a', 'b', 'c')
   list[1] eq 'b' // operator get()
   list.get(1) eq 'b' // Explicit call

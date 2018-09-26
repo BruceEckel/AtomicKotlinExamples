@@ -11,7 +11,7 @@ fun fibonacci(n: Long): Long {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   fibonacci(0) eq 0
   fibonacci(22) eq 17711
   // Very time-consuming:

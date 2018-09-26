@@ -8,7 +8,7 @@ class WithCompanion {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   WithCompanion.i eq 3
   WithCompanion.f() eq 9
   // The default name is "Companion":

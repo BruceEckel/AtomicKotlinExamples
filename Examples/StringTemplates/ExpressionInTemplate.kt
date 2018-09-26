@@ -1,6 +1,6 @@
 // StringTemplates/ExpressionInTemplate.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val condition = true
   println(
     "${if (condition) 'a' else 'b'}")  // [1]

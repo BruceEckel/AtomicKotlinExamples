@@ -11,7 +11,7 @@ class EveryBody {
     SomeBody(), SomeBody())
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val nb = NoBody()
   val sb = SomeBody()
   val eb = EveryBody()

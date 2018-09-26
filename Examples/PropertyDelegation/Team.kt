@@ -9,7 +9,7 @@ class Team {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val team = Team()
   team.captain = "Adam"
   team.captain = "Amanda"

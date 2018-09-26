@@ -4,7 +4,7 @@ class MutableNameAlien(var name: String)
 
 class FixedNameAlien(val name: String)
 
-fun main(args: Array<String>) {
+fun main() {
   val alien1 =
     MutableNameAlien("Reverse Giraffe")
   val alien2 =

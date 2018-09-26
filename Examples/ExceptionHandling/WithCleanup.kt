@@ -8,7 +8,7 @@ class Cleanup(n: Int) : AutoCloseable {
   override fun close() = println("Close $id")
 }
 
-fun main(args: Array<String>) {
+fun main() {
   with(Cleanup(1)) { show() }
   Cleanup(2).use { it.show() }
 }

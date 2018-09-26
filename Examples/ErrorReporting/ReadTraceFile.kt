@@ -14,7 +14,7 @@ fun readTrace(fileName: String) {
     { "$fileName is empty" })
 }
 
-fun main(args: Array<String>) {
+fun main() {
   // Create dummy trace files:
   localFile("trace_empty.txt").writeText("")
   localFile("trace_real.txt").writeText("\n")

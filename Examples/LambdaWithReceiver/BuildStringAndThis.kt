@@ -1,7 +1,7 @@
 // LambdaWithReceiver/BuildStringAndThis.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   buildString {
     this.append("Alphabet: ")     // [1]
     for (ch in 'a'..'z')

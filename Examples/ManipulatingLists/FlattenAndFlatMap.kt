@@ -1,7 +1,7 @@
 // ManipulatingLists/FlattenAndFlatMap.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val intRange = 1..3
 
   intRange.map {               // [1]

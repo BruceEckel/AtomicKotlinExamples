@@ -9,7 +9,7 @@ class X(val i: Int, msg: String) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val x1 = X(9, "x1")
   x1.s eq "x1: 9"
   val x2 = X(15, "x2")

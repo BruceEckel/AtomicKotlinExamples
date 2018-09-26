@@ -1,7 +1,7 @@
 // BreakAndContinue/WhileControl.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val nums = mutableListOf(0)
   var i = 0
   while(i < 100) {

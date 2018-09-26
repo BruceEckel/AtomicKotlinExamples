@@ -1,6 +1,6 @@
 // Summary1/DoWhile.kt
 
-fun main(args: Array<String>) {
+fun main() {
   var i = 0
   do {
     print(".")

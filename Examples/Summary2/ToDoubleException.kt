@@ -1,5 +1,5 @@
 // Summary2/ToDoubleException.kt
 
-fun main(args: Array<String>) {
+fun main() {
   // val i = "$1.9".toDouble()
 }

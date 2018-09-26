@@ -6,7 +6,7 @@ fun String.echo() {
   println(this.toLowerCase())
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val s1: String? = "Howdy!"
   s1?.echo()                     // [1]
   val s2: String? = null

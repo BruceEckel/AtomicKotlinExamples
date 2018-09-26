@@ -15,7 +15,7 @@ fun compute(i: Int): Int {
   return i
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val lazyInt = LazyInt { compute(5) }
   println("LazyInt Constructed")
   println("Access 'value' 2x:")

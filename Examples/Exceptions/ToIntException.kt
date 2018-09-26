@@ -5,6 +5,6 @@ fun erroneousCode() {
   // val i = "1$".toInt()        // [1]
 }
 
-fun main(args: Array<String>) {
+fun main() {
   erroneousCode()
 }

@@ -1,7 +1,7 @@
 // Destructuring/ForLoop.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   var result = ""
   val map = mapOf(1 to "one", 2 to "two")
   for ((key, value) in map)

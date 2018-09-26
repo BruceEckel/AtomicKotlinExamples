@@ -2248,6 +2248,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testGameItem() {
+    testExample("Examples/Variance/GameItem.kt", variance.GameItemKt::main);
+  }
+
+  @Test
   public void testCookie() {
     testExample("Examples/Visibility/Cookie.kt", CookieKt::main);
   }

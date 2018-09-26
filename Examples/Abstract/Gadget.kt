@@ -17,7 +17,7 @@ class MyGadget(
   override val productionYear: Int
 ) : Gadget
 
-fun main(args: Array<String>) {
+fun main() {
   val gadget: Gadget =
     MyGadget("my first phone", 2000)
   gadget.isOutdated eq true

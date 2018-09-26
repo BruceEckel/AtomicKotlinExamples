@@ -1,7 +1,7 @@
 // Lists/MultipleListRefs.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val first = mutableListOf(1)
   val second: List<Int> = first
   second eq listOf(1)

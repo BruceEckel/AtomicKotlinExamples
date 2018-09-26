@@ -1,6 +1,6 @@
 // Summary1/Hello.kt
 
-fun main(args: Array<String>) {
+fun main() {
   println("Hello, world!")
 }
 /* Output:

@@ -1,7 +1,7 @@
 // Lists/MutableList.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = mutableListOf<Int>()
 
   list.add(1)

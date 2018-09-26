@@ -21,7 +21,7 @@ class DefaultArgPrimary(n: Int = 99) {
   */
 }
 
-fun main(args: Array<String>) {
+fun main() {
   fun sep() = println("-".repeat(10))
   DefaultArgPrimary(11)
   sep()

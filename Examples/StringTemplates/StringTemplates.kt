@@ -1,6 +1,6 @@
 // StringTemplates/StringTemplates.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val answer = 42
   println("Found $answer!")     // [1]
   println("printing a $1")      // [2]

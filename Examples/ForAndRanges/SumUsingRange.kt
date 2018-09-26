@@ -1,6 +1,6 @@
 // ForAndRanges/SumUsingRange.kt
 
-fun main(args: Array<String>) {
+fun main() {
   var sum = 0
   for (n in 10..100)
     sum += n

@@ -1,6 +1,6 @@
 // Summary1/IfExpression.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val activity = "swimming"
   val hour = 10
 

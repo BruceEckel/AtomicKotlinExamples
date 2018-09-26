@@ -9,7 +9,7 @@ class Derived : Base {
   constructor() : this(9)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val d1 = Derived(11)
   d1.i eq 11
   val d2 = Derived()

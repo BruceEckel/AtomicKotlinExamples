@@ -7,7 +7,7 @@ class AnotherComputer : SuperComputer {
     throw IllegalStateException("No answer")
 }
 
-fun main(args: Array<String>) {
+fun main() {
   capture {
     AnotherComputer().calculateAnswer()
   } eq "IllegalStateException: No answer"

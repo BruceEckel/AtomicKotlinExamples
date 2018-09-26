@@ -7,7 +7,7 @@ fun sum(n: Long): Long {
   return n + sum(n - 1)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   sum(2) eq 3
   sum(1000) eq 500500
   // sum(100_000) eq 500050000       // [1]

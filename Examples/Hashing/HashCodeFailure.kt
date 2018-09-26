@@ -4,7 +4,7 @@ import atomictest.*
 class NotDataClass(id: String)
 data class DataClass(val id: String)
 
-fun main(args: Array<String>) {
+fun main() {
   val key = NotDataClass("A")
   val key2 = NotDataClass("A")
   key.hashCode() neq key2.hashCode()    // [1]

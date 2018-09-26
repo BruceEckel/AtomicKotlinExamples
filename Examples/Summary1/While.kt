@@ -2,7 +2,7 @@
 
 fun testCondition(i: Int) = i < 100
 
-fun main(args: Array<String>) {
+fun main() {
   var i = 0
   while (testCondition(i)) {
     print(".")

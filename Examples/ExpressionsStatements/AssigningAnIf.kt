@@ -1,6 +1,6 @@
 // ExpressionsStatements/AssigningAnIf.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val result1 = if (11 > 42) 9 else 5
 
   val result2 = if (1 < 2) {

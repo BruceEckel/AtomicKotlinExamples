@@ -11,7 +11,7 @@ data class Person(
   // fun component2() = age
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val person = Person("Alice", 29)
   val (name, age) = person
   // Destructuring assignment compiles to:

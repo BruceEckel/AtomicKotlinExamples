@@ -11,6 +11,6 @@ class BlendMap {
   fun blend(a: Color, b: Color) = map[a to b]
 }
 
-fun main(args: Array<String>) {
+fun main() {
   colorblend.test(BlendMap()::blend)
 }

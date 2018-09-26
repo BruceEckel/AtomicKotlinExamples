@@ -20,7 +20,7 @@ fun buildString2(
   return sb.toString()
 }
 
-fun main(args: Array<String>) {
+fun main() {
   buildString1 {
     it.append("Regular lambda")
   } eq "Regular lambda"

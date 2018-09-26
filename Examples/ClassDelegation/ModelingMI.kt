@@ -34,7 +34,7 @@ class Button(
   val input: MouseManager = UserInput()) :
   Rectangle by image, MouseManager by input
 
-fun main(args: Array<String>) {
+fun main() {
   val button = Button(10, 5)
   button.paint() eq 50
   button.clicked() eq true

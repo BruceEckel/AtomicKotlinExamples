@@ -5,7 +5,7 @@ class Giraffe
 class Bear
 class Hippo
 
-fun main(args: Array<String>) {
+fun main() {
   // Create some objects:
   val g1 = Giraffe()
   val g2 = Giraffe()

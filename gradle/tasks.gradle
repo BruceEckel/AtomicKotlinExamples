@@ -768,6 +768,11 @@ task Gadget(type: JavaExec) {
     main = 'GadgetKt'
 }
 
+task GameItem(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'variance.GameItemKt'
+}
+
 task GameMatrix(type: JavaExec) {
     classpath kotlinClassPath
     main = 'complexconstructors.GameMatrixKt'
@@ -2496,6 +2501,7 @@ task run (dependsOn: [
     'FunctionReference',
     'FunctionTypeExamples',
     'Gadget',
+    'GameItem',
     'GameMatrix',
     'GardenItem',
     'GenericFunction',

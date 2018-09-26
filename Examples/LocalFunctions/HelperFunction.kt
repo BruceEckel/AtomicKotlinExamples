@@ -17,7 +17,7 @@ fun minimizeWindow(window: Window) {
   // ...                            // [2]
 }
 
-fun main(args: Array<String>) {
+fun main() {
   Window(100, 100, true)
     .also { minimizeWindow(it) }
     .height eq 0

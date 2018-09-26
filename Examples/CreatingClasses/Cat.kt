@@ -4,7 +4,7 @@ class Cat {
   fun meow() = "mew!"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val cat = Cat()
   // Call 'meow()' for 'cat':
   val m1 = cat.meow()

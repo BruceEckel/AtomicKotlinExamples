@@ -1,5 +1,5 @@
 // MoreLibraryFunctions/ReadingName.kt
-fun main(args: Array<String>) {
+fun main() {
   println("Enter your name:")
   readLine()
     ?.takeUnless { it.isBlank() }

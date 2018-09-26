@@ -1,7 +1,7 @@
 // OperationsOnCollections/TakeOrDrop.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf('a', 'b', 'c', 'X', 'Z')
 
   list.takeLast(3) eq "[c, X, Z]"

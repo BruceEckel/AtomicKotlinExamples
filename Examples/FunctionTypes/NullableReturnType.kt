@@ -1,7 +1,7 @@
 // FunctionTypes/NullableReturnType.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val transform: (String) -> Int? =
     { s: String -> s.toIntOrNull() }
   transform("112") eq 112

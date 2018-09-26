@@ -1,6 +1,6 @@
 // Summary1/NumberTypes.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val n = 1000    // Int
   val l = 1000L   // Long
   val d = 1000.0  // Double

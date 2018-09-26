@@ -11,7 +11,7 @@ class AlienSpecies(
     "$hands hands and $legs legs"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val shim =
     AlienSpecies("Shimshamian", 3, 2, 2)
   val grung =

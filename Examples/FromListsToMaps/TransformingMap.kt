@@ -1,7 +1,7 @@
 // FromListsToMaps/TransformingMap.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val even = mapOf(2 to "two", 4 to "four")
   even.map {                            // [1]
     "${it.key}=${it.value}"

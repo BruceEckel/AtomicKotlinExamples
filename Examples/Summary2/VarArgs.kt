@@ -6,7 +6,7 @@ fun varargs(s: String, vararg ints: Int) {
   println(s)
 }
 
-fun main(args: Array<String>) {
+fun main() {
   varargs("primes", 5, 7, 11, 13, 17, 19, 23)
 }
 /* Output:

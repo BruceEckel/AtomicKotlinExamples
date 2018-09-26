@@ -8,7 +8,7 @@ object KotlinCode {
   val c = JTool.get("")          // [3]
 }
 
-fun main(args: Array<String>) {
+fun main() {
   with(KotlinCode) {
     a?.method() eq "Success"     // [4]
     b.method() eq "Success"

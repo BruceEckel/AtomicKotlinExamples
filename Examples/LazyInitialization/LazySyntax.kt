@@ -11,7 +11,7 @@ val used: String by lazy {
   "'used' initialization value"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   println(used)
 }
 /* Output:

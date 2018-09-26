@@ -28,6 +28,6 @@ fun test(mix: (a: Color, b: Color)-> Color?) {
   mix(purple, orange) eq blue // Not accurate
 }
 
-fun main(args: Array<String>) {
+fun main() {
   test(::blend)
 }

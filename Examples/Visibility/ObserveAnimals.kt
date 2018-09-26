@@ -1,6 +1,6 @@
 // Visibility/ObserveAnimals.kt
 
-fun main(args: Array<String>) {
+fun main() {
   // Can't access private members
   // declared in another file.
   // Class is private:

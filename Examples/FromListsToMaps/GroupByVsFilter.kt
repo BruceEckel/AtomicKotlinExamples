@@ -2,7 +2,7 @@
 import fromliststomaps.*
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val groups =
     people().groupBy { it.name.first() }
   // groupBy() produces map-speed access:

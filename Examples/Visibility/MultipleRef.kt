@@ -11,7 +11,7 @@ class CounterHolder(counter: Counter) {
     "CounterHolder: " + ctr
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val c = Counter(11)                 // [1]
   val ch = CounterHolder(c)           // [2]
   println(ch)

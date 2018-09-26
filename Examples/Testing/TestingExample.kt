@@ -1,7 +1,7 @@
 // Testing/TestingExample.kt
 import atomictest.*
 
-fun main(args: Array<String>) {
+fun main() {
   val v1 = 11
   val v2 = "Ontology"
 

@@ -3,7 +3,7 @@ import atomictest.eq
 
 data class Key(var id: String)
 
-fun main(args: Array<String>) {
+fun main() {
   val key = Key("A")
   val hm = hashMapOf(key to "Hello")
   hm eq "{Key(id=A)=Hello}"

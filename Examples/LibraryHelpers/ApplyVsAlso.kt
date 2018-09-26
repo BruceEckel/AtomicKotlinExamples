@@ -18,7 +18,7 @@ fun Window.dup2() =
     win.h = this.h
   }
 
-fun main(args: Array<String>) {
+fun main() {
   val first = Window("first").apply {
     w = 500
     h = 100

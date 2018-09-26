@@ -2,7 +2,7 @@
 package localfunctions
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   sessions.any(
     fun(session: Session): Boolean {    // [1]
       if (session.title.contains("Kotlin") &&

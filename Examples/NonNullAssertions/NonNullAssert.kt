@@ -1,7 +1,7 @@
 // NonNullAssertions/NonNullAssert.kt
 import atomictest.*
 
-fun main(args: Array<String>) {
+fun main() {
   val s1: String? = "abc"
   s1!! eq "abc"
 

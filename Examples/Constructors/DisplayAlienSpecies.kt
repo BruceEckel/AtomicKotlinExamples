@@ -1,6 +1,6 @@
 // Constructors/DisplayAlienSpecies.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val alien =
     AlienSpecies("Narduarvian", 2, 2, 4)
   println(alien)

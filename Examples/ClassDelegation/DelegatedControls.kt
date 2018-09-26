@@ -9,7 +9,7 @@ class DelegatedControls(
     "${controls.turboBoost()}... boooooost!"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val controls = DelegatedControls()
   controls.forward(100) eq "forward 100"
   controls.turboBoost() eq

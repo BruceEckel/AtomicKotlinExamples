@@ -1,7 +1,7 @@
 // Sequences/TerminalOperations.kt
 package sequences
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf(1, 2, 3, 4)
   val r = list.asSequence()
     .filter(Int::isEven)

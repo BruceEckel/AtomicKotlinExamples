@@ -1,7 +1,7 @@
 // OperationsOnCollections/OperationsOnSets.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val set = setOf("a", "ab", "ac")
   set.maxBy { it.length }?.length eq 2
   set.filter {

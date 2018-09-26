@@ -2,7 +2,7 @@
 
 fun unitFun() = Unit
 
-fun main(args: Array<String>) {
+fun main() {
   println(unitFun())
   val u1: Unit = println(42)
   println(u1)

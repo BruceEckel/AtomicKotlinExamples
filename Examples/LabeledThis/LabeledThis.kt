@@ -31,7 +31,7 @@ class Outer { // implicit label @Outer
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val outer = Outer()
   val inner = outer.Inner()
   with (inner) {

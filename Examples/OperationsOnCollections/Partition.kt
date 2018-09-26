@@ -1,7 +1,7 @@
 // OperationsOnCollections/Partition.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf(-3, -1, 5, 7, 10)
   val isPositive = { i: Int -> i > 0 }
 

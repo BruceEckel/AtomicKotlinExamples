@@ -1,6 +1,6 @@
 // NumberTypes/InferInt.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val million = 1_000_000  // Infers Int
   println(million)
 }

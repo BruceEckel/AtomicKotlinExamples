@@ -1,6 +1,6 @@
 // RepetitionWithWhile/IncrementOperator.kt
 
-fun main(args: Array<String>) {
+fun main() {
   var i = 0
   while (i < 4) {
     print(".")

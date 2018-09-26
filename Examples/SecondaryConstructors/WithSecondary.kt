@@ -19,7 +19,7 @@ class WithSecondary(val1: Int, val2: Int) {
   */
 }
 
-fun main(args: Array<String>) {
+fun main() {
   fun sep() = println("-".repeat(10))
   WithSecondary(1, 2)
   sep()

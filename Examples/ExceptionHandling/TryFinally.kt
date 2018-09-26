@@ -11,7 +11,7 @@ fun tryFinally(i: Int) {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   tryFinally(0)
   capture {
     tryFinally(5)

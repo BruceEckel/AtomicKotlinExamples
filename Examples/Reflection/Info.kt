@@ -31,6 +31,6 @@ data class Baz(val i: Int, val s: String) {
   constructor() : this(11, "Joy")
 }
 
-fun main(args: Array<String>) {
+fun main() {
   info(Baz(1, "Happy"))
 }

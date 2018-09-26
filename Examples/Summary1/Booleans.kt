@@ -1,6 +1,6 @@
 // Summary1/Booleans.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val opens = 9
   val closes = 20
   println("Operating hours: $opens - $closes")

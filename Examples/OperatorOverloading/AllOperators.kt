@@ -42,7 +42,7 @@ operator fun C.remAssign(rv: C) = Unit
 // Comparison, must return Int:
 operator fun C.compareTo(rv: C) = 1
 
-fun main(args: Array<String>) {
+fun main() {
   val c = C()
   +c               // unaryPlus()
   -c               // unaryMinus()

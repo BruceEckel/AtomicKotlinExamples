@@ -3,7 +3,7 @@ package xyzmap
 
 enum class XYZ { x, y, z }
 
-fun main(args: Array<String>) {
+fun main() {
   val normal = XYZ.values().map { a ->
     println()
     XYZ.values().map {

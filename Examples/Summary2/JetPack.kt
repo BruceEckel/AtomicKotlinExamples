@@ -18,7 +18,7 @@ class JetPack(
       "OK"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val jetPack = JetPack(3.0)
   while(jetPack.check() != "Warning") {
     println(jetPack.check())

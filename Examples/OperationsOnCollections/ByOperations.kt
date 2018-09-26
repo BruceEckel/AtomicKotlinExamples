@@ -6,7 +6,7 @@ data class Product(
   val price: Double
 )
 
-fun main(args: Array<String>) {
+fun main() {
   val products = listOf(
     Product("bread", 2.0),
     Product("wine", 5.0)

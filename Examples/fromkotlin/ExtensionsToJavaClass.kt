@@ -8,7 +8,7 @@ fun Chameleon.adjustToTemperature(
   color = if (isHot) "grey" else "black"
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val chameleon = Chameleon()
   chameleon.size = 2
   chameleon.size

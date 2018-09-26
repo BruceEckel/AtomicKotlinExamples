@@ -1,6 +1,6 @@
 // ForAndRanges/AddingIntToChar.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val ch: Char = 'a'
   println(ch + 25)
   println(ch < 'z')

@@ -13,7 +13,7 @@ fun evaluate(input: Int) =
   else
     Computation(input * 2, "Low")
 
-fun main(args: Array<String>) {
+fun main() {
   val (value, description) = evaluate(7)
   value eq 14
   description eq "High"

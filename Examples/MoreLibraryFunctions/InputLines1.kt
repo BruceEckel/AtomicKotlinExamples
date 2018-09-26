@@ -1,6 +1,6 @@
 // MoreLibraryFunctions/InputLines1.kt
 
-fun main(args: Array<String>) {
+fun main() {
   val lines = generateSequence {
     val line = readLine()
     if (line != "XXX") line else null

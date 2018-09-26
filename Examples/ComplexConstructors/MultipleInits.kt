@@ -22,7 +22,7 @@ class Inits(i: Int, var s: String = "") {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   var ti = Inits(1)
   ti.s eq "1st: 1, 2nd: 2, 3rd: 2"
   ti = Inits(2)

@@ -19,7 +19,7 @@ class Fibonacci {
   }
 }
 
-fun main(args: Array<String>) {
+fun main() {
   var f by Fibonacci()
   f eq 0L
   f = 22L

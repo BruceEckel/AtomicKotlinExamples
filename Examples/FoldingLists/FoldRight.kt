@@ -1,7 +1,7 @@
 // FoldingLists/FoldRight.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   val list = listOf('a', 'b', 'c', 'd')
 
   list.fold("*") {

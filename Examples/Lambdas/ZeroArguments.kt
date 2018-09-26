@@ -1,7 +1,7 @@
 // Lambdas/ZeroArguments.kt
 import atomictest.eq
 
-fun main(args: Array<String>) {
+fun main() {
   run { -> println("A Lambda") }
   run { println("Without args") }
 }

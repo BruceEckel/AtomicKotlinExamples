@@ -11,7 +11,7 @@ fun <T> List<T>.any(                    // [1]
   return false
 }
 
-fun main(args: Array<String>) {
+fun main() {
   val ints = listOf(1, 2, -3)
   ints.any { it > 0 } eq true           // [4]
 
