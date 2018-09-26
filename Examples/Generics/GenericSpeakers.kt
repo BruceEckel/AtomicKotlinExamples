@@ -21,11 +21,11 @@ fun main(arg: Array<String>) {
   person.talkge(Person::speak) eq "Hi!"
   dog.talkge(Dog::bark) eq "Ruff!"
   robot.talkge(Robot::connect) eq "Beep!"
-  // Pass lambda:
+  // Pass a lambda:
   talkg(person) { speak() } eq "Hi!"
   talkg(dog) { bark() } eq "Ruff!"
   talkg(robot) { connect() } eq "Beep!"
-  // Use extension function:
+  // Use the extension function:
   person.talkge { speak() } eq "Hi!"
   dog.talkge { bark() } eq "Ruff!"
   robot.talkge { connect() } eq "Beep!"

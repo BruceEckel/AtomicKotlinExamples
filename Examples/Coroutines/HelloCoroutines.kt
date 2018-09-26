@@ -1,8 +1,9 @@
 // Coroutines/HelloCoroutines.kt
 import kotlinx.coroutines.*
 
-fun main(args: Array<String>) = runBlocking<Unit> {
-    val coroutine = GlobalScope.launch {
+fun main(a: Array<String>) =
+  runBlocking<Unit> {
+    val coroutine = launch {
       delay(10)
       println("Hello,")
     }

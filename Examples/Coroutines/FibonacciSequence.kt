@@ -1,6 +1,7 @@
 // Coroutines/FibonacciSequence.kt
 import atomictest.eq
 import bigint.*
+import kotlin.coroutines.*
 
 fun main(args: Array<String>) {
   val fibonacciSeq = sequence {
