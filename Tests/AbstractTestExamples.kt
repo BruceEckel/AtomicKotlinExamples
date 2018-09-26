@@ -7,6 +7,10 @@ import java.util.function.Consumer
 
 abstract class AbstractTestExamples {
 
+  protected fun testExample(fileName: String, main: Runnable) {
+    testExample(fileName, Consumer { main.run() })
+  }
+
   protected fun testExample(fileName: String, main: Consumer<Array<String>>) {
     val exampleCode = File(fileName).readText()
     val outputComment = "/* Output:"

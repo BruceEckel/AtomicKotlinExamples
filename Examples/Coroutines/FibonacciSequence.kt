@@ -1,10 +1,9 @@
 // Coroutines/FibonacciSequence.kt
 import atomictest.eq
 import bigint.*
-import kotlin.coroutines.experimental.*
 
 fun main(args: Array<String>) {
-  val fibonacciSeq = buildSequence {
+  val fibonacciSeq = sequence {
     var n = Pair(zero, one)
     while (true) {
       yield(n.first)

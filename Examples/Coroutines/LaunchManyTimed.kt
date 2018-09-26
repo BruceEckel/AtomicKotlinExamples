@@ -1,5 +1,5 @@
 // Coroutines/LaunchManyTimed.kt
-import kotlinx.coroutines.experimental.*
+import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
 
 fun main(a: Array<String>) =

@@ -1,6 +1,6 @@
 // Coroutines/CompareDelayingTask.kt
 import atomictest.eq
-import kotlinx.coroutines.experimental.*
+import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
 
 suspend fun task(): Int {

@@ -1,12 +1,11 @@
 // Coroutines/LazySequence.kt
 import atomictest.eq
-import kotlin.coroutines.experimental.*
 
 val items = listOf(
   1, 19, 34, 22, 97, 11, 72)
 
 fun main(args: Array<String>) {
-  val squares = buildSequence {
+  val squares = sequence {
     for (n in items)
       yield(n * n)
   }

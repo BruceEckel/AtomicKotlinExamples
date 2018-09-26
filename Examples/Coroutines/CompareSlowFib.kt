@@ -1,6 +1,6 @@
 // Coroutines/CompareSlowFib.kt
 import bigint.*
-import kotlinx.coroutines.experimental.*
+import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
 
 // Slow Fibonacci function:
