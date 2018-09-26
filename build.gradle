@@ -1,22 +1,16 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.3.0-rc-57'
+}
+
 group 'Examples'
 version '1.0-SNAPSHOT'
 
-buildscript {
-    ext.kotlin_version = '1.2.70'
-
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
-apply plugin: 'kotlin'
-apply plugin: 'java'
+sourceCompatibility = 1.8
 
 repositories {
-    jcenter() // A superset of mavenCentral
+    maven { url 'http://dl.bintray.com/kotlin/kotlin-eap' }
+    mavenCentral()
 }
 
 compileKotlin {
@@ -28,15 +22,19 @@ compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
 
+sourceSets {
+    main.java.srcDirs += 'Examples'
+    main.kotlin.srcDirs += 'Examples'
+    test.kotlin.srcDirs += 'Tests'
+    test.java.srcDirs += 'Tests'
+}
+
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
-    compile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile "org.jetbrains.kotlin:kotlin-reflect"
+    compile "org.jetbrains.kotlin:kotlin-test-junit"
     // Coroutine extensions
-    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.19.3'
-    // Junit support:
-    // compile "junit:junit:4.12"
+    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.26.1-eap13'
 
     // Logging support:
     compile 'io.github.microutils:kotlin-logging:1.4.6'
@@ -54,18 +52,5 @@ dependencies {
     testCompile("org.junit.platform:junit-platform-runner:1.0.0")
 }
 
-sourceSets {
-    main.java.srcDirs += 'Examples'
-    main.kotlin.srcDirs += 'Examples'
-    test.kotlin.srcDirs += 'Tests'
-    test.java.srcDirs += 'Tests'
-}
-
 apply from: 'gradle/tasks.gradle'
 apply from: 'gradle/tests.gradle'
-
-kotlin {
-    experimental {
-        coroutines "enable"
-    }
-}

@@ -3,7 +3,7 @@ configurations {
 }
 
 dependencies {
-    kotlinRuntime "org.jetbrains.kotlin:kotlin-runtime:$kotlin_version"
+    kotlinRuntime "org.jetbrains.kotlin:kotlin-runtime"
 }
 
 tasks.withType(Test) {
