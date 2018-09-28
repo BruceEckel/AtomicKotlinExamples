@@ -1278,6 +1278,16 @@ task LongConstants(type: JavaExec) {
     main = 'LongConstantsKt'
 }
 
+task MainArgConversion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MainArgConversionKt'
+}
+
+task MainArgs(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MainArgsKt'
+}
+
 task MakeSalad(type: JavaExec) {
     classpath kotlinClassPath
     main = 'fromjava.MakeSalad'
@@ -2243,9 +2253,9 @@ task VarargSum(type: JavaExec) {
     main = 'VarargSumKt'
 }
 
-task VariableArgLists(type: JavaExec) {
+task VariableArgList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'VariableArgListsKt'
+    main = 'VariableArgListKt'
 }
 
 task Vars(type: JavaExec) {
@@ -2603,6 +2613,8 @@ task run (dependsOn: [
     'LocalFunctions',
     'LogChanges',
     'LongConstants',
+    'MainArgConversion',
+    'MainArgs',
     'MakeSalad',
     'Mapping',
     'Maps',
@@ -2796,7 +2808,7 @@ task run (dependsOn: [
     'VarArgs',
     'VarargLikeList',
     'VarargSum',
-    'VariableArgLists',
+    'VariableArgList',
     'Vars',
     'VerySlowFibonacci',
     'VisibleArgs',

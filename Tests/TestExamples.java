@@ -2223,6 +2223,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testMainArgConversion() {
+    testExample("Examples/Varargs/MainArgConversion.kt", MainArgConversionKt::main);
+  }
+
+  @Test
+  public void testMainArgs() {
+    testExample("Examples/Varargs/MainArgs.kt", MainArgsKt::main);
+  }
+
+  @Test
   public void testSpreadOperator() {
     testExample("Examples/Varargs/SpreadOperator.kt", SpreadOperatorKt::main);
   }
@@ -2243,8 +2253,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testVariableArgLists() {
-    testExample("Examples/Varargs/VariableArgLists.kt", VariableArgListsKt::main);
+  public void testVariableArgList() {
+    testExample("Examples/Varargs/VariableArgList.kt", VariableArgListKt::main);
   }
 
   @Test
