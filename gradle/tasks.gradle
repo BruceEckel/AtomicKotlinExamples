@@ -123,6 +123,11 @@ task AtomicTestCapture(type: JavaExec) {
     main = 'AtomicTestCaptureKt'
 }
 
+task AutoHolder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.AutoHolderKt'
+}
+
 task AverageIncome(type: JavaExec) {
     classpath kotlinClassPath
     main = 'firstversion.AverageIncomeKt'
@@ -911,6 +916,11 @@ task HelperFunction(type: JavaExec) {
 task HiddenArrayList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HiddenArrayListKt'
+}
+
+task Holder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.HolderKt'
 }
 
 task House(type: JavaExec) {
@@ -2148,6 +2158,11 @@ task TwoFunctionsWithVarargs(type: JavaExec) {
     main = 'TwoFunctionsWithVarargsKt'
 }
 
+task TypeOfT(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.TypeOfTKt'
+}
+
 task Types(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TypesKt'
@@ -2382,6 +2397,7 @@ task run (dependsOn: [
     'AssignmentOperators',
     'AssociateBy',
     'AtomicTestCapture',
+    'AutoHolder',
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
@@ -2540,6 +2556,7 @@ task run (dependsOn: [
     'HelloWorld',
     'HelperFunction',
     'HiddenArrayList',
+    'Holder',
     'House',
     'HumanAlice',
     'If1',
@@ -2787,6 +2804,7 @@ task run (dependsOn: [
     'Tuple',
     'TwoArgLambda',
     'TwoFunctionsWithVarargs',
+    'TypeOfT',
     'Types',
     'Underscore',
     'Unexpected',

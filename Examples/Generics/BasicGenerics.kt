@@ -21,12 +21,15 @@ fun main() {
   gFunc("Yellow") eq "Yellow"
   gFunc(1) eq 1
   gFunc(Dog()).bark() eq "Ruff!"       // [1]
+  gFunc<Dog>(Dog()).bark() eq "Ruff!"
 
   GClass("Cyan").f() eq "Cyan"
   GClass(11).f() eq 11
   GClass(Dog()).f().bark() eq "Ruff!"  // [2]
+  GClass<Dog>(Dog()).f().bark() eq "Ruff!"
 
   MFunc().f("Amber") eq "Amber"
   MFunc().f(111) eq 111
   MFunc().f(Dog()).bark() eq "Ruff!"   // [3]
+  MFunc().f<Dog>(Dog()).bark() eq "Ruff!"
 }
