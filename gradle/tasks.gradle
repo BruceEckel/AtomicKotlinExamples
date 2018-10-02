@@ -123,11 +123,6 @@ task AtomicTestCapture(type: JavaExec) {
     main = 'AtomicTestCaptureKt'
 }
 
-task AutoHolder(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'generics.AutoHolderKt'
-}
-
 task AverageIncome(type: JavaExec) {
     classpath kotlinClassPath
     main = 'firstversion.AverageIncomeKt'
@@ -256,6 +251,11 @@ task CallTopLevelFunction(type: JavaExec) {
 task CallTopLevelFunction2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'fromjava.CallTopLevelFunction2'
+}
+
+task CarHolder(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.CarHolderKt'
 }
 
 task Cat(type: JavaExec) {
@@ -601,6 +601,11 @@ task EmptyProgram(type: JavaExec) {
 task EnumImport(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EnumImportKt'
+}
+
+task ErasedTypeEquivalence(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ErasedTypeEquivalenceKt'
 }
 
 task Evaluation(type: JavaExec) {
@@ -2397,7 +2402,6 @@ task run (dependsOn: [
     'AssignmentOperators',
     'AssociateBy',
     'AtomicTestCapture',
-    'AutoHolder',
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
@@ -2424,6 +2428,7 @@ task run (dependsOn: [
     'CallStack',
     'CallTopLevelFunction',
     'CallTopLevelFunction2',
+    'CarHolder',
     'Cat',
     'CatchChecked',
     'ChainedCalls',
@@ -2493,6 +2498,7 @@ task run (dependsOn: [
     'ElvisWithException',
     'EmptyProgram',
     'EnumImport',
+    'ErasedTypeEquivalence',
     'Evaluation',
     'EvaluationOrder',
     'ExceptionHandlers',

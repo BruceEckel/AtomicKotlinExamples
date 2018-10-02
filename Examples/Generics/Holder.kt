@@ -7,8 +7,8 @@ class Holder<T>(val a: T) {
 }
 
 fun main() {
-  val ah = Holder(Auto())
-  val x: Auto = ah.a
-  val y: Auto = ah.get()
-  y eq "Auto(name=Car)"
+  val ch = Holder(Car())
+  val x: Car = ch.a
+  val y: Car = ch.get()
+  y eq "Car(name=Car)"
 }
