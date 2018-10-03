@@ -3,27 +3,21 @@
 fun info(a: Any) {
   val kc = a::class
   println("${kc::class}")
-  for (st in kc::class.supertypes)
-    println("$st")
+  kc::class.supertypes.forEach {
+    println("$it")
+  }
   println("---")
-  for (kcm in kc::class.members)
-    println("$kcm")
+  kc::class.members.forEach { println("$it") }
   println("===")
   println("simpleName: ${kc.simpleName}")
   println(
     "qualifiedName: ${kc.qualifiedName}")
   println("Constructors:")
-  for (ctor in kc.constructors)
-    println("  $ctor")
+  kc.constructors.forEach { println("$it") }
   println("Members:")
-  for (memb in kc.members)
-    println("  $memb")
-//  println("Declared Functions:")
-//  for(df in kc.declaredFunctions)
-//    println("  $df")
+  kc.members.forEach { println("  $it") }
   println("Super Types:")
-  for (st in kc.supertypes)
-    println("  $st")
+  kc.supertypes.forEach { println("  $it") }
   println("isData: ${kc.isData}")
 }
 

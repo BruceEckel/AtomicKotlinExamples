@@ -23,6 +23,21 @@ interface Insect: GameItem {
   fun fly()
 }
 
+interface Humanoid: Animal
+interface Elf: Humanoid
+interface Human: Humanoid
+interface Dwarf: Humanoid
+
+interface Creature: Animal
+interface Goblin: Creature
+interface Imp: Creature
+interface Brownie: Creature
+interface Troll: Creature
+interface Pixie: Creature
+interface Bogie: Creature
+
+interface Pukwudgie : Goblin
+
 // error: variance annotations are only allowed for type parameters of classes and interfaces
 // fun <in GameItem> f(item: GameItem) = item.id()
 
