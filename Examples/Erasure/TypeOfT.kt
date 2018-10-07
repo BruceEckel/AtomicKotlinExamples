@@ -1,4 +1,4 @@
-// Generics/TypeOfT.kt
+// Erasure/TypeOfT.kt
 package generics
 import atomictest.eq
 

@@ -14,7 +14,7 @@ fun main() {
   people().filter {
     it.name.first() == 'A'
   } eq listOf(Person("Alice", 21),
-      Person("Arthricia", 15))
+    Person("Arthricia", 15))
   people().filter {
     it.name.first() == 'F'
   } eq listOf(Person("Franz", 21))

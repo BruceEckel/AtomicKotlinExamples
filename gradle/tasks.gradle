@@ -1018,6 +1018,11 @@ task ImportPythagorean(type: JavaExec) {
     main = 'ImportPythagoreanKt'
 }
 
+task InAndOut(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'variance.InAndOutKt'
+}
+
 task InString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'InStringKt'
@@ -1165,7 +1170,7 @@ task KotlinChecked(type: JavaExec) {
 
 task LabeledReturn(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'localfunctions.LabeledReturnKt'
+    main = 'LabeledReturnKt'
 }
 
 task LabeledThis(type: JavaExec) {
@@ -1413,11 +1418,6 @@ task MultiplyByTwo(type: JavaExec) {
     main = 'MultiplyByTwoKt'
 }
 
-task MustableVsReadonlyList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'MustableVsReadonlyListKt'
-}
-
 task MutListIsList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MutListIsListKt'
@@ -1446,6 +1446,11 @@ task MutableMaps(type: JavaExec) {
 task MutableSet(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MutableSetKt'
+}
+
+task MutableVsReadonlyList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'MutableVsReadonlyListKt'
 }
 
 task NPEOnPlatformType(type: JavaExec) {
@@ -1846,6 +1851,11 @@ task ResultOfWith(type: JavaExec) {
 task ReturnFromFun(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReturnFromFunKt'
+}
+
+task ReturnInsideLambda(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'localfunctions.ReturnInsideLambdaKt'
 }
 
 task RigidHolder(type: JavaExec) {
@@ -2581,6 +2591,7 @@ task run (dependsOn: [
     'ImportEverything',
     'ImportNameChange',
     'ImportPythagorean',
+    'InAndOut',
     'InString',
     'IncrementOperator',
     'IndexIntoString',
@@ -2660,13 +2671,13 @@ task run (dependsOn: [
     'MultiplyByFour',
     'MultiplyByThree',
     'MultiplyByTwo',
-    'MustableVsReadonlyList',
     'MutListIsList',
     'MutableBlendMap',
     'MutableBlendMap2',
     'MutableList',
     'MutableMaps',
     'MutableSet',
+    'MutableVsReadonlyList',
     'NPEOnPlatformType',
     'NamedArguments',
     'NamedCompanionObject',
@@ -2747,6 +2758,7 @@ task run (dependsOn: [
     'ResultOfApply',
     'ResultOfWith',
     'ReturnFromFun',
+    'ReturnInsideLambda',
     'RigidHolder',
     'STUB',
     'SafeCall',

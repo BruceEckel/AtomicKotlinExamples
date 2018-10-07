@@ -1,14 +1,13 @@
 // LocalFunctions/LabeledReturn.kt
-package localfunctions
-import atomictest.eq
 
 fun main() {
-  sessions.any { session ->
-    if (session.title.contains("Kotlin") &&
-      session.speaker in myFavSpeakers) {
-      return@any true
-    }
-    // ... more checks
-    false
-  } eq true
+  val list = listOf(1, 2, 3, 4, 5)
+  val value = 3
+  list.forEach {
+    if (it == value) return@forEach
+  }
+  println("This line is called")
 }
+/* Output:
+This line is called
+*/

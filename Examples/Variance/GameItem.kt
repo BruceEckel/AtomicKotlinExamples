@@ -38,13 +38,10 @@ interface Bogie: Creature
 
 interface Pukwudgie : Goblin
 
-// error: variance annotations are only allowed for type parameters of classes and interfaces
-// fun <in GI> f(item: GI) = item.id()
-
 // GameItem is the upper bound:
-fun <GI: GameItem> g(item: GI) = item.id()
+fun <GI: GameItem> f(item: GI) = item.id()
 
 // Or just use polymorphism:
-fun h(item: GameItem) = item.id()
+fun g(item: GameItem) = item.id()
 
 fun main() {}

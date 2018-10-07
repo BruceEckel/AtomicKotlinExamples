@@ -1,4 +1,4 @@
-// Generics/ErasedTypeEquivalence.kt
+// Erasure/ErasedTypeEquivalence.kt
 import atomictest.eq
 
 fun main() {

@@ -1,4 +1,4 @@
-// Generics/perform.cpp
+// Erasure/perform.cpp
 // C++ code, not Kotlin:
 
 template<class T> void perform(T anything) {

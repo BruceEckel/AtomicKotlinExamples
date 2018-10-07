@@ -333,6 +333,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testErasedTypeEquivalence() {
+    testExample("Examples/Erasure/ErasedTypeEquivalence.kt", ErasedTypeEquivalenceKt::main);
+  }
+
+  @Test
+  public void testTypeOfT() {
+    testExample("Examples/Erasure/TypeOfT.kt", generics.TypeOfTKt::main);
+  }
+
+  @Test
   public void testCleanup() {
     testExample("Examples/ErrorReporting/Cleanup.kt", CleanupKt::main);
   }
@@ -713,11 +723,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testErasedTypeEquivalence() {
-    testExample("Examples/Generics/ErasedTypeEquivalence.kt", ErasedTypeEquivalenceKt::main);
-  }
-
-  @Test
   public void testGenericSpeakers() {
     testExample("Examples/Generics/GenericSpeakers.kt", generics.GenericSpeakersKt::main);
   }
@@ -735,11 +740,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSpeakers() {
     testExample("Examples/Generics/Speakers.kt", generics.SpeakersKt::main);
-  }
-
-  @Test
-  public void testTypeOfT() {
-    testExample("Examples/Generics/TypeOfT.kt", generics.TypeOfTKt::main);
   }
 
   @Test
@@ -1229,7 +1229,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testLabeledReturn() {
-    testExample("Examples/LocalFunctions/LabeledReturn.kt", localfunctions.LabeledReturnKt::main);
+    testExample("Examples/LocalFunctions/LabeledReturn.kt", LabeledReturnKt::main);
   }
 
   @Test
@@ -1250,6 +1250,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testReturnFromFun() {
     testExample("Examples/LocalFunctions/ReturnFromFun.kt", ReturnFromFunKt::main);
+  }
+
+  @Test
+  public void testReturnInsideLambda() {
+    testExample("Examples/LocalFunctions/ReturnInsideLambda.kt", localfunctions.ReturnInsideLambdaKt::main);
   }
 
   @Test
@@ -2108,8 +2113,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testMustableVsReadonlyList() {
-    testExample("Examples/Summary2/MustableVsReadonlyList.kt", MustableVsReadonlyListKt::main);
+  public void testMutableVsReadonlyList() {
+    testExample("Examples/Summary2/MutableVsReadonlyList.kt", MutableVsReadonlyListKt::main);
   }
 
   @Test
@@ -2280,6 +2285,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testGameItem() {
     testExample("Examples/Variance/GameItem.kt", variance.GameItemKt::main);
+  }
+
+  @Test
+  public void testInAndOut() {
+    testExample("Examples/Variance/InAndOut.kt", variance.InAndOutKt::main);
   }
 
   @Test
