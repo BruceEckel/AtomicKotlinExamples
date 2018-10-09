@@ -54,9 +54,7 @@ To compile and run examples using the Kotlin command-line tools, see
 
 ## Using JetBrains IDEA
 
-{{ More here }}
-
-You need at least version 2017.3 of IDEA to successfully compile the examples.
+Follow the tutorials [Here](https://www.atomickotlin.com/exercises/).
 
 # Detailed Instructions
 
