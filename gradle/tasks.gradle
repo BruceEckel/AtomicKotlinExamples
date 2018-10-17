@@ -388,6 +388,11 @@ task ContactMap(type: JavaExec) {
     main = 'ContactMapKt'
 }
 
+task Contravariance(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'variance.ContravarianceKt'
+}
+
 task Conversion(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ConversionKt'
@@ -411,6 +416,11 @@ task CopyDataClass(type: JavaExec) {
 task Counter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'propertyaccessors.CounterKt'
+}
+
+task Covariance(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'variance.CovarianceKt'
 }
 
 task CreateString(type: JavaExec) {
@@ -2465,11 +2475,13 @@ task run (dependsOn: [
     'ConfusingOperator',
     'ConstructorReference',
     'ContactMap',
+    'Contravariance',
     'Conversion',
     'ConversionFailure',
     'Cookie',
     'CopyDataClass',
     'Counter',
+    'Covariance',
     'CreateString',
     'CreateString2',
     'CreatingLists',
