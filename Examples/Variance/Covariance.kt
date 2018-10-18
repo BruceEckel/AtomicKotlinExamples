@@ -2,21 +2,29 @@
 package variance
 
 interface Create {
-  fun makeItem(): GameItem
+  fun create(): Shape
 }
 
-interface CreateCreature : Create {
-  override fun makeItem(): Creature
+interface CreateEllipse : Create {
+  override fun create(): Ellipse
 }
 
-interface CreatePukwudgie : CreateCreature {
-  override fun makeItem(): Pukwudgie
+interface CreateCircle : CreateEllipse {
+  override fun create(): Circle
 }
 
-// Fails because Animal is not a subtype
-// of Creature:
-// interface CreateAnimal : CreateCreature {
-//   override fun makeItem(): Animal
+interface CreateDot : CreateEllipse {
+  override fun create(): Dot
+}
+
+interface CreateDot2 : CreateCircle {
+  override fun create(): Dot
+}
+
+// Fails because Ellipse is not a subtype
+// of Circle:
+// interface CreateDot3 : CreateCircle {
+//   override fun create(): Ellipse
 // }
 
 fun main() {}

@@ -788,11 +788,6 @@ task Gadget(type: JavaExec) {
     main = 'GadgetKt'
 }
 
-task GameItem(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variance.GameItemKt'
-}
-
 task GameMatrix(type: JavaExec) {
     classpath kotlinClassPath
     main = 'complexconstructors.GameMatrixKt'
@@ -1026,11 +1021,6 @@ task ImportNameChange(type: JavaExec) {
 task ImportPythagorean(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ImportPythagoreanKt'
-}
-
-task InAndOut(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variance.InAndOutKt'
 }
 
 task InString(type: JavaExec) {
@@ -2555,7 +2545,6 @@ task run (dependsOn: [
     'FunctionReference',
     'FunctionTypeExamples',
     'Gadget',
-    'GameItem',
     'GameMatrix',
     'GardenItem',
     'GenericFunction',
@@ -2603,7 +2592,6 @@ task run (dependsOn: [
     'ImportEverything',
     'ImportNameChange',
     'ImportPythagorean',
-    'InAndOut',
     'InString',
     'IncrementOperator',
     'IndexIntoString',

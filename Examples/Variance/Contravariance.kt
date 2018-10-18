@@ -3,15 +3,17 @@
 package variance
 
 interface Consume {
-  fun consume(gi: GameItem)
+  fun consume(s: Dot)
 }
 
-interface ConsumeCreature : Consume {
-  override fun consume(gi: GameItem)
+/*
+interface ConsumeCircle : Consume {
+  override fun consume(s: Circle)
 }
 
-interface ConsumePukwudgie : ConsumeCreature {
-  override fun consume(gi: GameItem)
+interface ConsumeEllipse : ConsumeCircle {
+  override fun consume(s: Ellipse)
 }
+*/
 
 fun main() {}
