@@ -2,35 +2,39 @@
 package variance1
 import variance.*
 
-open class MakeShape {
+open class CreateShape {
   open fun create(): Shape = Shape()
 }
 
-open class MakeEllipse : MakeShape() {
+open class CreateEllipse : CreateShape() {
   override fun create(): Shape = Ellipse()
 }
 
-open class MakeCircle : MakeEllipse() {
+open class CreateCircle : CreateEllipse() {
   override fun create(): Shape = Circle()
 }
 
-open class MakeDot : MakeCircle() {
+open class CreateDot : CreateCircle() {
   override fun create(): Shape = Dot()
 }
 
 fun main() {
-  val shapeMakers = listOf(
-    MakeShape(),
-    MakeEllipse(),
-    MakeCircle(),
-    MakeDot()
-  )
-  shapeMakers
-    .map(MakeShape::create)
-    .forEach {
-      println(it::class.simpleName)
-    }
+  listOf(
+    CreateShape(),
+    CreateEllipse(),
+    CreateCircle(),
+    CreateDot())
+      .map(CreateShape::create)
+      .forEach {
+        println(it::class.simpleName)
+      }
   // Type mismatch: inferred type is
   // Shape but Dot was expected:
-  // val dot: Dot = MakeDot().create()
+  // val dot: Dot = CreateDot().create()
 }
+/* Output:
+Shape
+Ellipse
+Circle
+Dot
+*/
