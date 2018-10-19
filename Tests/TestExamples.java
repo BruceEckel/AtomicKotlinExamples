@@ -2283,13 +2283,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testContravariance() {
-    testExample("Examples/Variance/Contravariance.kt", variance.ContravarianceKt::main);
+  public void testCovariantReturnTypes() {
+    testExample("Examples/Variance/CovariantReturnTypes.kt", variance2.CovariantReturnTypesKt::main);
   }
 
   @Test
-  public void testCovariance() {
-    testExample("Examples/Variance/Covariance.kt", variance.CovarianceKt::main);
+  public void testSameReturnTypes() {
+    testExample("Examples/Variance/SameReturnTypes.kt", variance1.SameReturnTypesKt::main);
   }
 
   @Test

@@ -1,7 +1,7 @@
 // Variance/Shape.kt
 package variance
 
-interface Shape
-interface Ellipse: Shape
-interface Circle: Ellipse
-interface Dot: Circle
+open class Shape
+open class Ellipse: Shape()
+open class Circle: Ellipse()
+open class Dot: Circle()
