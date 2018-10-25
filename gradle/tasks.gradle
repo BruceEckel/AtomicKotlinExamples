@@ -33,6 +33,11 @@ task Also(type: JavaExec) {
     main = 'libraryhelpers.AlsoKt'
 }
 
+task Amphibian(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AmphibianKt'
+}
+
 task AnUnchangingVar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnUnchangingVarKt'
@@ -2394,6 +2399,7 @@ task run (dependsOn: [
     'AddingIntToChar',
     'AllOperators',
     'Also',
+    'Amphibian',
     'AnUnchangingVar',
     'AnalyzingInput',
     'Animals',

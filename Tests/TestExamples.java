@@ -1463,6 +1463,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAmphibian() {
+    testExample("Examples/NullableTypes/Amphibian.kt", AmphibianKt::main);
+  }
+
+  @Test
   public void testDereference() {
     testExample("Examples/NullableTypes/Dereference.kt", DereferenceKt::main);
   }
