@@ -1,5 +1,5 @@
-// Polymorphism/Pet.kt
-package polymorphism
+// DynamicBinding/Pet.kt
+package dynamicbinding
 import atomictest.eq
 
 open class Pet {

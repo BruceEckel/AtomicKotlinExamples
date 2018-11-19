@@ -523,6 +523,16 @@ task DereferenceNull(type: JavaExec) {
     main = 'DereferenceNullKt'
 }
 
+task Dessert(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'upcasting.DessertKt'
+}
+
+task Dessert2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'upcasting.Dessert2Kt'
+}
+
 task DestructuringData(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.DestructuringDataKt'
@@ -1680,7 +1690,7 @@ task Perform(type: JavaExec) {
 
 task Pet(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'polymorphism.PetKt'
+    main = 'dynamicbinding.PetKt'
 }
 
 task Pets(type: JavaExec) {
@@ -2497,6 +2507,8 @@ task run (dependsOn: [
     'DelegatedControls',
     'Dereference',
     'DereferenceNull',
+    'Dessert',
+    'Dessert2',
     'DestructuringData',
     'DestructuringDuo',
     'DestructuringMap',

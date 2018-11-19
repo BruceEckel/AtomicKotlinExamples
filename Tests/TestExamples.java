@@ -308,6 +308,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testPet() {
+    testExample("Examples/DynamicBinding/Pet.kt", dynamicbinding.PetKt::main);
+  }
+
+  @Test
   public void testCheckingOptions() {
     testExample("Examples/Enumerations/CheckingOptions.kt", CheckingOptionsKt::main);
   }
@@ -1708,11 +1713,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testPet() {
-    testExample("Examples/Polymorphism/Pet.kt", polymorphism.PetKt::main);
-  }
-
-  @Test
   public void testAnUnchangingVar() {
     testExample("Examples/Properties/AnUnchangingVar.kt", AnUnchangingVarKt::main);
   }
@@ -2190,6 +2190,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testAssertTrue() {
     testExample("Examples/UnitTesting/AssertTrue.kt", AssertTrueKt::main);
+  }
+
+  @Test
+  public void testDessert() {
+    testExample("Examples/Upcasting/Dessert.kt", upcasting.DessertKt::main);
+  }
+
+  @Test
+  public void testDessert2() {
+    testExample("Examples/Upcasting/Dessert2.kt", upcasting.Dessert2Kt::main);
   }
 
   @Test
