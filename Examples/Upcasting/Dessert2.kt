@@ -15,5 +15,5 @@ fun main() {
   pie.total() eq 300
   eater.eatDessert(pie) eq
     "cutting Pie: 700 calories"
-  eater.calories() eq 700
+  eater.calories eq 700
 }

@@ -2203,6 +2203,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDowncasting() {
+    testExample("Examples/Upcasting/Downcasting.kt", upcasting.DowncastingKt::main);
+  }
+
+  @Test
   public void testCompareTo() {
     testExample("Examples/UsingOperators/CompareTo.kt", usingoperators.CompareToKt::main);
   }

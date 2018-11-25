@@ -32,8 +32,8 @@ class IceCream(calories: Int) :
 }
 
 class Eater {
-  private var calories = 0
-  fun calories() = calories
+  var calories = 0
+    private set        // [1]
   fun eatDessert(dessert: Dessert): String {
     calories += dessert.total()
     return "${dessert.serve()}: " +
@@ -49,5 +49,5 @@ fun main() {
     "cutting Pie: 550 calories"
   eater.eatDessert(Candy(200)) eq
     "unwrapping Candy: 750 calories"
-  eater.calories() eq 750
+  eater.calories eq 750
 }

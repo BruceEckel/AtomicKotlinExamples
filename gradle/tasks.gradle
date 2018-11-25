@@ -583,6 +583,11 @@ task Dog(type: JavaExec) {
     main = 'DogKt'
 }
 
+task Downcasting(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'upcasting.DowncastingKt'
+}
+
 task EagerEvaluation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EagerEvaluationKt'
@@ -2519,6 +2524,7 @@ task run (dependsOn: [
     'DoWhile',
     'DoWhileLoop',
     'Dog',
+    'Downcasting',
     'EagerEvaluation',
     'EagerVsLazyEvaluation',
     'EasyKeys',
