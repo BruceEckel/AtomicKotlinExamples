@@ -16,7 +16,7 @@ Before you can run the examples from this repository, you must install:
 1. The current version of [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html),
 although some earlier versions should also work.
 
-2. The latest version (1.2 or higher) of the [Kotlin command-line
+2. The latest version (1.3 or higher) of the [Kotlin command-line
 compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 If you just want to download and check the code, [Download
@@ -177,7 +177,7 @@ Loop*). To use this you must first install the command-line version of Kotlin.
 
 ## Install Kotlin
 
-In this book, we use Kotlin version 1.2, the latest available at the time. The
+In this book, we use Kotlin version 1.3, the latest available at the time. The
 detailed installation instructions for the command-line compiler are available
 at [The Kotlin Site](https://kotlinlang.org/docs/tutorials/command-line.html).
 
@@ -196,13 +196,13 @@ You get the REPL when you type `kotlinc` by itself on the command line. You
 should see something like the following:
 
 ```
-Welcome to Kotlin version 1.2.41 (JRE 1.8.0_144-b01)
+Welcome to Kotlin version 1.3 (JRE 1.8.0_144-b01)
 Type :help for help, :quit for quit
 >>>
 ```
 
 The exact version numbers will vary depending on the versions of Kotlin
-and Java you've installed, but make sure that you're running Kotlin 1.2
+and Java you've installed, but make sure that you're running Kotlin 1.3
 or greater.
 
 The REPL gives you immediate interactive feedback, which is helpful for
