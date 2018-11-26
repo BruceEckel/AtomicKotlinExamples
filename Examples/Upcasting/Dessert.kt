@@ -8,13 +8,15 @@ open class Dessert(val calories: Int) {
   fun total() = calories + additionalCalories
 }
 
-class Candy(calories: Int) :
-  Dessert(calories) {
+class Candy(
+  calories: Int
+) : Dessert(calories) {
   override fun serve() = "unwrapping Candy"
 }
 
-class Pie(calories: Int) :
-  Dessert(calories) {
+class Pie(
+  calories: Int
+) : Dessert(calories) {
   override fun serve() = "cutting Pie"
   fun addWhippedCream(): String {
     additionalCalories += 50
@@ -22,8 +24,9 @@ class Pie(calories: Int) :
   }
 }
 
-class IceCream(calories: Int) :
-  Dessert(calories) {
+class IceCream(
+  calories: Int
+) : Dessert(calories) {
   override fun serve() = "scooping IceCream"
   fun addSyrup(): String {
     additionalCalories += 100
