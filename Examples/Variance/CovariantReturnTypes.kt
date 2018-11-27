@@ -2,25 +2,20 @@
 package variance2
 import variance.*
 
-open class CreateShape {
-  open fun create(): Shape = Shape()
+open class MakeBird {
+  open fun create(): Bird = Bird()
 }
 
-open class CreateEllipse : CreateShape() {
-  override fun create(): Ellipse = Ellipse()
+open class MakeGoose : MakeBird() {
+  override fun create(): Goose = Goose()
 }
 
-open class CreateCircle : CreateEllipse() {
-  override fun create(): Circle = Circle()
-}
-
-open class CreateDot : CreateCircle() {
-  override fun create(): Dot = Dot()
+open class MakeCanadaGoose : MakeGoose() {
+  override fun create(): CanadaGoose = CanadaGoose()
 }
 
 fun main() {
-  val s: Shape = CreateShape().create()
-  val e: Ellipse = CreateEllipse().create()
-  val c: Circle = CreateCircle().create()
-  val d: Dot = CreateDot().create()
+  val s: Bird = MakeBird().create()
+  val e: Goose = MakeGoose().create()
+  val c: CanadaGoose = MakeCanadaGoose().create()
 }
