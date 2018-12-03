@@ -1,17 +1,14 @@
 // Variance/SameReturnTypes.kt
 package variance1
 import variance.*
-
-open class MakeBird {
-  open fun create(): Bird = Bird()
-}
+import atomictest.eq
 
 open class MakeGoose : MakeBird() {
-  override fun create(): Bird = Goose()
+  override fun new(): Bird = Goose()
 }
 
 open class MakeCanadaGoose : MakeGoose() {
-  override fun create(): Bird = CanadaGoose()
+  override fun new(): Bird = CanadaGoose()
 }
 
 fun main() {
@@ -19,16 +16,14 @@ fun main() {
     MakeBird(),
     MakeGoose(),
     MakeCanadaGoose())
-      .map(MakeBird::create)
-      .forEach {
-        println(it::class.simpleName)
-      }
-  // Type mismatch: inferred type is
-  // Bird but Goose was expected:
-  // val g: Goose = MakeGoose().create()
+    .map(::Make)
+    .map { it.second } eq
+  listOf(
+    "Bird",
+    "Goose",
+    "CanadaGoose")
+
+  val b: Bird = MakeBird().new()
+  val g: Bird = MakeGoose().new()
+  val c: Bird = MakeCanadaGoose().new()
 }
-/* Output:
-Bird
-Goose
-CanadaGoose
-*/
