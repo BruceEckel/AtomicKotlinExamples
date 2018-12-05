@@ -16,7 +16,7 @@ fun main() {
     MakeBird(),
     MakeGoose(),
     MakeCanadaGoose())
-    .map(::Make)
+    .map(::make)
     .map { it.second } eq
   listOf(
     "Bird",
