@@ -1,29 +1,18 @@
 // Variance/CovariantReturnTypes.kt
 package variance2
 import variance.*
-import atomictest.eq
 
-open class MakeGoose : MakeBird() {
-  override fun new(): Goose = Goose()
+open class NewDuck : NewBird() {
+  override fun new(): Duck = Duck()
 }
 
-open class MakeCanadaGoose : MakeGoose() {
-  override fun new(): CanadaGoose = CanadaGoose()
+open class NewMallard : NewDuck() {
+  override fun new(): Mallard = Mallard()
 }
 
 fun main() {
-  listOf(
-    MakeBird(),
-    MakeGoose(),
-    MakeCanadaGoose())
-    .map(::make)
-    .map { it.second } eq
-  listOf(
-    "Bird",
-    "Goose",
-    "CanadaGoose")
-
-  val b: Bird = MakeBird().new()
-  val g: Goose = MakeGoose().new()
-  val c: CanadaGoose = MakeCanadaGoose().new()
+  test(NewBird(), NewDuck(), NewMallard())
+  val b: Bird = NewBird().new()
+  val g: Duck = NewDuck().new()
+  val c: Mallard = NewMallard().new()
 }

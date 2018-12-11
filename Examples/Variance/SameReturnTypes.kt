@@ -1,29 +1,18 @@
 // Variance/SameReturnTypes.kt
 package variance1
 import variance.*
-import atomictest.eq
 
-open class MakeGoose : MakeBird() {
-  override fun new(): Bird = Goose()
+open class NewDuck : NewBird() {
+  override fun new(): Bird = Duck()
 }
 
-open class MakeCanadaGoose : MakeGoose() {
-  override fun new(): Bird = CanadaGoose()
+open class NewMallard : NewDuck() {
+  override fun new(): Bird = Mallard()
 }
 
 fun main() {
-  listOf(
-    MakeBird(),
-    MakeGoose(),
-    MakeCanadaGoose())
-    .map(::make)
-    .map { it.second } eq
-  listOf(
-    "Bird",
-    "Goose",
-    "CanadaGoose")
-
-  val b: Bird = MakeBird().new()
-  val g: Bird = MakeGoose().new()
-  val c: Bird = MakeCanadaGoose().new()
+  test(NewBird(), NewDuck(), NewMallard())
+  val b: Bird = NewBird().new()
+  val g: Bird = NewDuck().new()
+  val c: Bird = NewMallard().new()
 }

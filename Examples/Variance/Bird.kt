@@ -1,20 +1,24 @@
 // Variance/Bird.kt
 package variance
+import atomictest.eq
 
 open class Bird
-open class Goose: Bird()
-open class CanadaGoose: Goose()
+open class Duck: Bird()
+open class Mallard: Duck()
 
-open class MakeBird {
+open class NewBird {
   open fun new(): Bird = Bird()
 }
 
-fun make(m: MakeBird): Pair<Bird, String> {
+fun make(m: NewBird): Pair<Bird, String> {
   val bird = m.new()
   val name = bird::class.simpleName ?: ""
   return Pair(bird, name)
 }
 
-fun birds(makerList: List<MakeBird>):
-List<String> = makerList.map(::make)
-  .map { it.second }
+fun test(vararg makers: NewBird) {
+  makers
+    .map(::make)
+    .map { it.second } eq
+    listOf("Bird", "Duck", "Mallard")
+}
