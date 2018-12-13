@@ -1,18 +1,18 @@
 // Variance/CovariantReturnTypes.kt
-package variance2
-import variance.*
+package variance
 
-open class NewDuck : NewBird() {
+open class NewDuck2 : NewBird() {
   override fun new(): Duck = Duck()
 }
 
-open class NewMallard : NewDuck() {
+class NewMallard2 : NewDuck2() {
   override fun new(): Mallard = Mallard()
 }
 
 fun main() {
-  test(NewBird(), NewDuck(), NewMallard())
+  test(NewDuck2(), "Duck")
+  test(NewMallard2(), "Mallard")
   val b: Bird = NewBird().new()
-  val g: Duck = NewDuck().new()
-  val c: Mallard = NewMallard().new()
+  val g: Duck = NewDuck2().new()
+  val c: Mallard = NewMallard2().new()
 }

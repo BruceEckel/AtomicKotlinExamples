@@ -193,6 +193,11 @@ task BiggestLong(type: JavaExec) {
     main = 'BiggestLongKt'
 }
 
+task Bird(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'variance.BirdKt'
+}
+
 task BmiWhen(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BmiWhenKt'
@@ -425,7 +430,7 @@ task Counter(type: JavaExec) {
 
 task CovariantReturnTypes(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'variance2.CovariantReturnTypesKt'
+    main = 'variance.CovariantReturnTypesKt'
 }
 
 task CreateString(type: JavaExec) {
@@ -1900,7 +1905,7 @@ task SafeOperation(type: JavaExec) {
 
 task SameReturnTypes(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'variance1.SameReturnTypesKt'
+    main = 'variance.SameReturnTypesKt'
 }
 
 task SayHello(type: JavaExec) {
@@ -2451,6 +2456,7 @@ task run (dependsOn: [
     'BetterSuitcase',
     'BigFibonacci',
     'BiggestLong',
+    'Bird',
     'BmiWhen',
     'BookExtensions',
     'Booleans',
