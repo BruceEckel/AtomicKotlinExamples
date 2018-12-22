@@ -1,19 +1,12 @@
 // Variance/Contravariance.kt
-// (Incomplete)
 package variance
 
-interface ConsumeMallard {
-  fun consume(s: Mallard)
+interface MallardString {
+  fun string(s: Mallard): String
 }
 
-/*
-interface ConsumeDuck : ConsumeMallard {
-  override fun consume(s: Duck)
+interface DuckString : MallardString {
+  /* override */ fun string(s: Duck): String
 }
-
-interface ConsumeBird : ConsumeDuck {
-  override fun consume(s: Bird)
-}
-*/
 
 fun main() {}
