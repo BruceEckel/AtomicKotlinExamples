@@ -2,11 +2,21 @@
 package variance
 
 interface MallardString {
-  fun string(s: Mallard): String
+  fun string(b: Mallard): String
 }
 
 interface DuckString : MallardString {
-  /* override */ fun string(s: Duck): String
+  /* override */ fun string(b: Duck): String
+}
+
+interface BirdString : DuckString {
+  /* override */ fun string(b: Bird): String
+}
+
+fun makeString(bs: BirdString) {
+  bs.string(Mallard())
+  bs.string(Duck())
+  bs.string(Bird())
 }
 
 fun main() {}
