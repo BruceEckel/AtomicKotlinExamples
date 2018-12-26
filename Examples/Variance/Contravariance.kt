@@ -1,22 +1,45 @@
 // Variance/Contravariance.kt
 package variance
+import atomictest.eq
 
-interface MallardString {
-  fun string(b: Mallard): String
+open class Base {
+  fun f(b: Mallard) = "Base::f"
 }
 
-interface DuckString : MallardString {
-  /* override */ fun string(b: Duck): String
+open class Derived : Base() {
+  /* override */ fun f(b: Duck) =
+    "Derived::f"
 }
 
-interface BirdString : DuckString {
-  /* override */ fun string(b: Bird): String
+class Derived2 : Derived() {
+  /* override */ fun f(b: Bird) =
+    "Derived2::f"
 }
 
-fun makeString(bs: BirdString) {
-  bs.string(Mallard())
-  bs.string(Duck())
-  bs.string(Bird())
+fun contraTest(b: Derived2) {
+  b.f(Mallard()) eq "Base::f"
+  b.f(Duck()) eq "Derived::f"
+  b.f(Bird()) eq "Derived2::f"
 }
 
-fun main() {}
+fun main() {
+  val base = Base()
+  val derived = Derived()
+  val derived2 = Derived2()
+
+  val bird = Bird()
+  val duck = Duck()
+  val mallard = Mallard()
+
+  derived2.f(mallard) eq "Base::f"
+  derived2.f(duck) eq "Derived::f"
+  derived2.f(bird) eq "Derived2::f"
+
+  derived.f(mallard) eq "Base::f"
+  derived.f(duck) eq "Derived::f"
+  // derived.f(bird) eq "Derived2::f"
+
+  base.f(mallard) eq "Base::f"
+  // base.f(duck) eq "Derived::f"
+  // base.f(bird) eq "Derived2::f"
+}
