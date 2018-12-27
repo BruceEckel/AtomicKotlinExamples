@@ -3,11 +3,11 @@ package variance
 import atomictest.eq
 
 open class Base {
-  fun f(b: Mallard) = "Base::f"
+  open fun f(b: Mallard) = "Base::f"
 }
 
 open class Derived : Base() {
-  /* override */ fun f(b: Duck) =
+  override fun f(b: Duck) =
     "Derived::f"
 }
 
