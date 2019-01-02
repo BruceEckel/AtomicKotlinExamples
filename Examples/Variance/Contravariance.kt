@@ -7,7 +7,7 @@ open class Base {
 }
 
 open class Derived : Base() {
-  override fun f(b: Duck) =
+  /* override */ fun f(b: Duck) =
     "Derived::f"
 }
 

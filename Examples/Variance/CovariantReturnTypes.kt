@@ -9,6 +9,18 @@ class MakeMallard2 : MakeDuck2() {
   override fun make(): Mallard = Mallard()
 }
 
+class Bicycle
+
+class MakeBicycle : MakeBird() {
+  // Produces error:
+  // override fun make(): Bicycle = Bicycle()
+  val errorMsg = """
+  Return type of 'make' is not a subtype of
+  the return type of the overridden member
+  'public open fun make(): Bird
+  """
+}
+
 fun main() {
   test(MakeDuck2(), "Duck")
   test(MakeMallard2(), "Mallard")
