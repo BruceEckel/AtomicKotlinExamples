@@ -72,7 +72,7 @@ key.
 Once the Windows Explorer is running, move through the folders on your computer
 by double-clicking on them with the mouse. Navigate to the desired folder. Now
 click the file tab at the top left of the Explorer window and select "Open
-command prompt." This opens a shell in the destination directory.
+Windows Powershell." This opens a shell in the destination directory.
 
 **Linux**: To open a shell in your home directory:
 
