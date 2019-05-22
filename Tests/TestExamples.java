@@ -23,6 +23,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTeaPartyTexting() {
+    testExample("Examples/asyncandawait/TeaPartyTexting.kt", asyncandawait.TeaPartyTextingKt::main);
+  }
+
+  @Test
   public void testGreatApe3() {
     testExample("Examples/BaseClassInit/GreatApe3.kt", baseclassinit.GreatApe3Kt::main);
   }
@@ -85,6 +90,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testWhileLabeled() {
     testExample("Examples/BreakAndContinue/WhileLabeled.kt", WhileLabeledKt::main);
+  }
+
+  @Test
+  public void testPostconditions() {
+    testExample("Examples/CheckingRequirements/Postconditions.kt", checkingrequirements.PostconditionsKt::main);
+  }
+
+  @Test
+  public void testReadTraceFile() {
+    testExample("Examples/CheckingRequirements/ReadTraceFile.kt", checkingrequirements.ReadTraceFileKt::main);
+  }
+
+  @Test
+  public void testRequireNotNull() {
+    testExample("Examples/CheckingRequirements/RequireNotNull.kt", checkingrequirements.RequireNotNullKt::main);
   }
 
   @Test
@@ -160,11 +180,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testInitSection() {
     testExample("Examples/ComplexConstructors/InitSection.kt", complexconstructors.InitSectionKt::main);
-  }
-
-  @Test
-  public void testMultipleInits() {
-    testExample("Examples/ComplexConstructors/MultipleInits.kt", complexconstructors.MultipleInitsKt::main);
   }
 
   @Test
@@ -348,73 +363,23 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCleanup() {
-    testExample("Examples/ErrorReporting/Cleanup.kt", CleanupKt::main);
-  }
-
-  @Test
-  public void testCleanup2() {
-    testExample("Examples/ErrorReporting/Cleanup2.kt", Cleanup2Kt::main);
-  }
-
-  @Test
-  public void testElvisWithException() {
-    testExample("Examples/ErrorReporting/ElvisWithException.kt", ElvisWithExceptionKt::main);
-  }
-
-  @Test
-  public void testForEachLine() {
-    testExample("Examples/ErrorReporting/ForEachLine.kt", ForEachLineKt::main);
-  }
-
-  @Test
-  public void testLetNotNull() {
-    testExample("Examples/ErrorReporting/LetNotNull.kt", LetNotNullKt::main);
-  }
-
-  @Test
-  public void testPostconditions() {
-    testExample("Examples/ErrorReporting/Postconditions.kt", PostconditionsKt::main);
-  }
-
-  @Test
-  public void testReadTraceFile() {
-    testExample("Examples/ErrorReporting/ReadTraceFile.kt", ReadTraceFileKt::main);
-  }
-
-  @Test
-  public void testRequireNotNull() {
-    testExample("Examples/ErrorReporting/RequireNotNull.kt", RequireNotNullKt::main);
-  }
-
-  @Test
-  public void testSTUB() {
-    testExample("Examples/ErrorReporting/STUB.kt", STUBKt::main);
-  }
-
-  @Test
-  public void testUsable() {
-    testExample("Examples/ErrorReporting/Usable.kt", UsableKt::main);
-  }
-
-  @Test
-  public void testUsingTODO() {
-    testExample("Examples/ErrorReporting/UsingTODO.kt", UsingTODOKt::main);
-  }
-
-  @Test
-  public void testConversionFailure() {
-    testExample("Examples/ExceptionHandling/ConversionFailure.kt", ConversionFailureKt::main);
+  public void testCaptureImpelementation() {
+    testExample("Examples/ExceptionHandling/CaptureImpelementation.kt", exceptionhandling.CaptureImpelementationKt::main);
   }
 
   @Test
   public void testDefiningExceptions() {
-    testExample("Examples/ExceptionHandling/DefiningExceptions.kt", toss.DefiningExceptionsKt::main);
+    testExample("Examples/ExceptionHandling/DefiningExceptions.kt", exceptionhandling.DefiningExceptionsKt::main);
   }
 
   @Test
   public void testExceptionHandlers() {
-    testExample("Examples/ExceptionHandling/ExceptionHandlers.kt", toss.ExceptionHandlersKt::main);
+    testExample("Examples/ExceptionHandling/ExceptionHandlers.kt", exceptionhandling.ExceptionHandlersKt::main);
+  }
+
+  @Test
+  public void testExceptionsHierarchy() {
+    testExample("Examples/ExceptionHandling/ExceptionsHierarchy.kt", exceptionhandling.ExceptionsHierarchyKt::main);
   }
 
   @Test
@@ -423,18 +388,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testInputCheck() {
-    testExample("Examples/ExceptionHandling/InputCheck.kt", exceptionhandling.InputCheckKt::main);
-  }
-
-  @Test
   public void testKotlinChecked() {
     testExample("Examples/ExceptionHandling/KotlinChecked.kt", KotlinCheckedKt::main);
   }
 
   @Test
+  public void testNewVsLibraryExceptions() {
+    testExample("Examples/ExceptionHandling/NewVsLibraryExceptions.kt", errorHandling.NewVsLibraryExceptionsKt::main);
+  }
+
+  @Test
   public void testTryFinally() {
-    testExample("Examples/ExceptionHandling/TryFinally.kt", TryFinallyKt::main);
+    testExample("Examples/ExceptionHandling/TryFinally.kt", exceptionhandling.TryFinallyKt::main);
   }
 
   @Test
@@ -1448,6 +1413,26 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testFunctionReturningNothing() {
+    testExample("Examples/NothingType/FunctionReturningNothing.kt", nothingtype.FunctionReturningNothingKt::main);
+  }
+
+  @Test
+  public void testThrowAsPartOfOtherExpressions1() {
+    testExample("Examples/NothingType/ThrowAsPartOfOtherExpressions1.kt", nothingtype.ThrowAsPartOfOtherExpressions1Kt::main);
+  }
+
+  @Test
+  public void testThrowAsPartOfOtherExpressions2() {
+    testExample("Examples/NothingType/ThrowAsPartOfOtherExpressions2.kt", nothingtype.ThrowAsPartOfOtherExpressions2Kt::main);
+  }
+
+  @Test
+  public void testUsingTODO() {
+    testExample("Examples/NothingType/UsingTODO.kt", nothingtype.UsingTODOKt::main);
+  }
+
+  @Test
   public void testAnnotatedJava() {
     testExample("Examples/NullabilityAnnotations/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
   }
@@ -1683,6 +1668,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testOverloadedVsDefaultArg() {
+    testExample("Examples/Overloading/OverloadedVsDefaultArg.kt", overloadingvsdefaultargs.OverloadedVsDefaultArgKt::main);
+  }
+
+  @Test
   public void testOverloading() {
     testExample("Examples/Overloading/Overloading.kt", OverloadingKt::main);
   }
@@ -1853,6 +1843,26 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCleanup() {
+    testExample("Examples/ResourceCleanup/Cleanup.kt", resourcecleanup.CleanupKt::main);
+  }
+
+  @Test
+  public void testCleanup2() {
+    testExample("Examples/ResourceCleanup/Cleanup2.kt", resourcecleanup.Cleanup2Kt::main);
+  }
+
+  @Test
+  public void testForEachLine() {
+    testExample("Examples/ResourceCleanup/ForEachLine.kt", resourcecleanup.ForEachLineKt::main);
+  }
+
+  @Test
+  public void testUsable() {
+    testExample("Examples/ResourceCleanup/Usable.kt", resourcecleanup.UsableKt::main);
+  }
+
+  @Test
   public void testChainedCalls() {
     testExample("Examples/SafeCallsAndElvis/ChainedCalls.kt", safecalls.ChainedCallsKt::main);
   }
@@ -1890,11 +1900,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSealedClasses() {
     testExample("Examples/SealedClasses/SealedClasses.kt", sealedclasses.SealedClassesKt::main);
-  }
-
-  @Test
-  public void testDefaultArgPrimary() {
-    testExample("Examples/SecondaryConstructors/DefaultArgPrimary.kt", secondaryconstructors.DefaultArgPrimaryKt::main);
   }
 
   @Test
@@ -2185,11 +2190,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTestingExample() {
     testExample("Examples/Testing/TestingExample.kt", TestingExampleKt::main);
-  }
-
-  @Test
-  public void testAssertTrue() {
-    testExample("Examples/UnitTesting/AssertTrue.kt", AssertTrueKt::main);
   }
 
   @Test

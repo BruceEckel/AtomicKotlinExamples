@@ -3,7 +3,7 @@ package atomiclog
 import java.nio.file.Paths
 
 val logFile = Paths.get("Examples",
-  "Logging", "atomicLog.txt").toFile()
+  "ErrorReporting", "atomicLog.txt").toFile()
 
 object log {
   init {

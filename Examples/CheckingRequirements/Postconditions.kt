@@ -1,16 +1,16 @@
-// ErrorReporting/Postconditions.kt
+// CheckingRequirements/Postconditions.kt
+package checkingrequirements
 import atomictest.*
-import errorreporting.localFile
 
 val resultFile = localFile("results.txt")
 
 fun createResultFile(create: Boolean) {
   if (create)
-    resultFile.writeText("Results")
+    resultFile.writeText("Results\n# ok")
   // ... other execution paths
-  check(resultFile.exists(), {
-    "${resultFile.getName()} doesn't exist!"
-  })
+  check(resultFile.exists()) {
+    "${resultFile.name} doesn't exist!"
+  }
 }
 
 fun main() {

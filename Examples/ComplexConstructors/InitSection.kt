@@ -2,16 +2,19 @@
 package complexconstructors
 import atomictest.eq
 
-class X(val i: Int, msg: String) {
-  var s: String
+private var counter = 0
+class Message(text: String) {
+  private val content: String
   init {
-    s = "$msg: $i"
+    counter += 10
+    content = "[$counter] $text"
   }
+  override fun toString() = content
 }
 
 fun main() {
-  val x1 = X(9, "x1")
-  x1.s eq "x1: 9"
-  val x2 = X(15, "x2")
-  x2.s eq "x2: 15"
+  val m1 = Message("Big ba-da boom!")
+  m1 eq "[10] Big ba-da boom!"
+  val m2 = Message("Bzzzzzzzzzzzzzt!")
+  m2 eq "[20] Bzzzzzzzzzzzzzt!"
 }

@@ -1,26 +1,30 @@
 // ExceptionHandling/TryFinally.kt
-import atomictest.*
+package exceptionhandling
 
-fun tryFinally(i: Int) {
+import atomictest.capture
+
+fun checkValue(value: Int) {
   try {
-    println(i)
-    if (i > 1)
-      throw Exception()
+    println(value)
+    if (value <= 0)
+      throw IllegalArgumentException(
+        "value\n must be positive: $value")
   } finally {
-    println("In finally clause for $i")
+    println("In finally clause for $value")
   }
 }
 
 fun main() {
-  tryFinally(0)
-  capture {
-    tryFinally(5)
-  } eq "Exception"
+  checkValue(10)
+  println(capture {
+    checkValue(-10)
+  })
 }
 /* Output:
-0
-In finally clause for 0
-5
-In finally clause for 5
-Exception
+10
+In finally clause for 10
+-10
+In finally clause for -10
+IllegalArgumentException: value
+ must be positive: -10
 */

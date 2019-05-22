@@ -1,4 +1,5 @@
-// ErrorReporting/UsingTODO.kt
+// NothingType/UsingTODO.kt
+package nothingtype
 import atomictest.*
 
 fun later(s: String): String = TODO("later()")

@@ -1,27 +1,24 @@
 // ExceptionHandling/DefiningExceptions.kt
-package toss
+package exceptionhandling
 import atomictest.*
 
-data class Except1(val why: String) :
-  Exception(why)
+class Exception1(
+  val value: Int
+) : Exception("wrong value: $value")
 
-data class Except2(val n: Int) :
-  IllegalArgumentException(n.toString())
-
-data class Except3(
-  val msg: String,
-  val d: Double
-) :
-  IllegalStateException("$msg: $d")
+open class Exception2(
+  message: String
+) : Exception(message)
+  
+class Exception3(
+  message: String
+) : Exception2(message)
 
 fun main() {
   capture {
-    throw Except1("One")
-  } eq "Except1: One"
+    throw Exception1(13)
+  } eq "Exception1: wrong value: 13"
   capture {
-    throw Except2(2)
-  } eq "Except2: 2"
-  capture {
-    throw Except3("Three", 3.0)
-  } eq "Except3: Three: 3.0"
+    throw Exception3("error")
+  } eq "Exception3: error"
 }

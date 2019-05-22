@@ -1,28 +1,28 @@
 // ExceptionHandling/ExceptionHandlers.kt
-package toss
+package exceptionhandling
 import atomictest.eq
 
 fun toss(which: Int) = when (which) {
-  1 -> throw Except1("Reason")
-  2 -> throw Except2(11)
-  3 -> throw Except3("Wanted", 1.618)
+  1 -> throw Exception1(1)
+  2 -> throw Exception2("case 2")
+  3 -> throw Exception3("case 3")
   else -> "OK"
 }
 
-fun test(which: Int) =
+fun test(which: Int): Any? =
   try {
     toss(which)
-  } catch (e: Except1) {
-    "Except1: ${e.why}"
-  } catch (e: Except2) {
-    "Except2: ${e.n}"
-  } catch (e: Except3) {
-    "Except3: ${e.msg} ${e.d}"
+  } catch (e: Exception1) {
+    e.value
+  } catch (e: Exception3) {
+    e.message
+  } catch (e: Exception2) {
+    e.message
   }
 
 fun main() {
   test(0) eq "OK"
-  test(1) eq "Except1: Reason"
-  test(2) eq "Except2: 11"
-  test(3) eq "Except3: Wanted 1.618"
+  test(1) eq 1
+  test(2) eq "case 2"
+  test(3) eq "case 3"
 }

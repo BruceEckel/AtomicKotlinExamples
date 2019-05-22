@@ -83,6 +83,6 @@ fun capture(f: () -> Unit): String =
     f()
     expectedExceptionMessage
   } catch (e: Throwable) {
-    e.javaClass.simpleName +
+    e::class.simpleName +
       (e.message?.let { ": $it" } ?: "")
   }

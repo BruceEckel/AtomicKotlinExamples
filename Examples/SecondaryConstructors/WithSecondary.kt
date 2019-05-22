@@ -1,15 +1,18 @@
 // SecondaryConstructors/WithSecondary.kt
 package secondaryconstructors
 
-class WithSecondary(val1: Int, val2: Int) {
+class WithSecondary(i: Int) {
   init {
-    println("Primary: $val1, $val2")
+    println("Primary: $i")
   }
-  constructor(value: Int): this(0, value) {
-    println("Secondary: $value")
+
+  constructor(c: Char) : this(c - 'A') {
+    println("Secondary: '$c'")
   }
-  constructor(s: String): this(11) { // [1]
-    println("Secondary: $s")
+
+  constructor(s: String)
+      : this(s.first()) {            // [1]
+    println("Secondary: \"$s\"")
   }
   /* Won't compile without a call
      to the primary constructor:
@@ -21,19 +24,19 @@ class WithSecondary(val1: Int, val2: Int) {
 
 fun main() {
   fun sep() = println("-".repeat(10))
-  WithSecondary(1, 2)
+  WithSecondary(1)
   sep()
-  WithSecondary(3)
+  WithSecondary('D')
   sep()
   WithSecondary("Last Constructor")
 }
 /* Output:
-Primary: 1, 2
+Primary: 1
 ----------
-Primary: 0, 3
-Secondary: 3
+Primary: 3
+Secondary: 'D'
 ----------
-Primary: 0, 11
-Secondary: 11
-Secondary: Last Constructor
+Primary: 11
+Secondary: 'L'
+Secondary: "Last Constructor"
 */

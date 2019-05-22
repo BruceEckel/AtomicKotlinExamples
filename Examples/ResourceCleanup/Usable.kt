@@ -1,4 +1,5 @@
-// ErrorReporting/Usable.kt
+// ResourceCleanup/Usable.kt
+package resourcecleanup
 import java.io.Closeable
 
 class Usable(val msg: String) : Closeable {

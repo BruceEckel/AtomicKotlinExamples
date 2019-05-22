@@ -3,12 +3,12 @@ package logging
 import java.nio.file.Paths
 
 val logFile = Paths.get("Examples",
-  "Logging", "simpleLogFile.txt").toFile()
+  "ErrorReporting", "simpleLogFile.txt").toFile()
 
 fun debug(msg: String) =
   System.err.println("Debug: " + msg)
 // To disable:
-// fun debug(msg: String) = Unit
+// fun debug(msg: String) { /* do nothing */ }
 
 fun trace(msg: String) =
   logFile.appendText("Trace: $msg\n")

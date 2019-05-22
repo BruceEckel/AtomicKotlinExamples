@@ -1,23 +1,28 @@
-// ErrorReporting/ReadTraceFile.kt
+// CheckingRequirements/ReadTraceFile.kt
+package checkingrequirements
 import atomictest.capture
 import atomictest.eq
-import errorreporting.localFile
 
 fun readTrace(fileName: String) {
-  require(fileName.startsWith("trace_"),
-    { "$fileName must start with 'trace_'" })
+  require(fileName.startsWith("trace_")) {
+    "$fileName must start with 'trace_'"
+  }
   val trace = localFile(fileName)
-  require(trace.exists(),
-    { "$fileName doesn't exist" })
+  require(trace.exists()) {
+    "$fileName doesn't exist"
+  }
   val lines = trace.readLines()
-  require(lines.size > 0,
-    { "$fileName is empty" })
+  require(lines.isNotEmpty()) {
+    "$fileName is empty"
+  }
+  // ...
 }
 
 fun main() {
   // Create dummy trace files:
   localFile("trace_empty.txt").writeText("")
-  localFile("trace_real.txt").writeText("\n")
+  localFile("trace_real.txt").writeText(
+    "message\n")
   capture {
     readTrace("foo.txt")
   } eq "IllegalArgumentException: " +
