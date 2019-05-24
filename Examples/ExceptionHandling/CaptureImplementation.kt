@@ -1,6 +1,5 @@
-// ExceptionHandling/CaptureImpelementation.kt
+// ExceptionHandling/CaptureImplementation.kt
 package exceptionhandling
-
 import atomictest.eq
 
 fun capture(f: () -> Unit): String =
@@ -11,8 +10,8 @@ fun capture(f: () -> Unit): String =
     e::class.simpleName +
       (e.message?.let { ": $it" } ?: "")
   }
-  
-fun main() {  
+
+fun main() {
   capture {
     "1$".toInt()
   } eq "NumberFormatException: " +

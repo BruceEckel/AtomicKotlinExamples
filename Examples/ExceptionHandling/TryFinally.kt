@@ -1,6 +1,5 @@
 // ExceptionHandling/TryFinally.kt
 package exceptionhandling
-
 import atomictest.capture
 
 fun checkValue(value: Int) {

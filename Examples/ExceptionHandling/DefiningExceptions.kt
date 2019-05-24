@@ -9,7 +9,7 @@ class Exception1(
 open class Exception2(
   message: String
 ) : Exception(message)
-  
+
 class Exception3(
   message: String
 ) : Exception2(message)

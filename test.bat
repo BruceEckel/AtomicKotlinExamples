@@ -13,3 +13,4 @@ call gradlew --warning-mode all GenerateTests
 echo:
 echo gradlew test
 call gradlew --warning-mode all test
+start ./build/reports/tests/test/classes/TestExamples.html

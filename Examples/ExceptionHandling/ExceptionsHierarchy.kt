@@ -8,10 +8,10 @@ fun testCatchOrder(which: Int) =
   } catch (e: Exception2) {    // [1]
     "Exception2: ${e.message}"
   } catch (e: Exception3) {    // [2]
-    "Exception3: ${e.message}"    
+    "Exception3: ${e.message}"
   }
-  
+
 fun main() {
-  testCatchOrder(3) eq 
+  testCatchOrder(3) eq
     "Exception2: case 3"
 }

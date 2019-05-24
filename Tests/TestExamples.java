@@ -93,6 +93,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testLocalFile() {
+    testExample("Examples/CheckingRequirements/LocalFile.kt", checkingrequirements.LocalFileKt::main);
+  }
+
+  @Test
   public void testPostconditions() {
     testExample("Examples/CheckingRequirements/Postconditions.kt", checkingrequirements.PostconditionsKt::main);
   }
@@ -363,8 +368,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCaptureImpelementation() {
-    testExample("Examples/ExceptionHandling/CaptureImpelementation.kt", exceptionhandling.CaptureImpelementationKt::main);
+  public void testCaptureImplementation() {
+    testExample("Examples/ExceptionHandling/CaptureImplementation.kt", exceptionhandling.CaptureImplementationKt::main);
   }
 
   @Test

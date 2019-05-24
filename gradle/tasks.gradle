@@ -258,9 +258,9 @@ task CallTopLevelFunction2(type: JavaExec) {
     main = 'fromjava.CallTopLevelFunction2'
 }
 
-task CaptureImpelementation(type: JavaExec) {
+task CaptureImplementation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptionhandling.CaptureImpelementationKt'
+    main = 'exceptionhandling.CaptureImplementationKt'
 }
 
 task CarHolder(type: JavaExec) {
@@ -1286,6 +1286,11 @@ task Lists(type: JavaExec) {
 task LocalExtensions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LocalExtensionsKt'
+}
+
+task LocalFile(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'checkingrequirements.LocalFileKt'
 }
 
 task LocalFunctionReference(type: JavaExec) {
@@ -2469,7 +2474,7 @@ task run (dependsOn: [
     'CallStack',
     'CallTopLevelFunction',
     'CallTopLevelFunction2',
-    'CaptureImpelementation',
+    'CaptureImplementation',
     'CarHolder',
     'Cat',
     'CatchChecked',
@@ -2675,6 +2680,7 @@ task run (dependsOn: [
     'ListUsefulFunction',
     'Lists',
     'LocalExtensions',
+    'LocalFile',
     'LocalFunctionReference',
     'LocalFunctions',
     'LogChanges',
