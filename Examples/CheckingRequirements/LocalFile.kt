@@ -7,11 +7,11 @@ import atomictest.eq
 fun localFile(name: String): File =
   if (File("Examples").exists())
     Paths.get("Examples",
-      "ErrorReporting", name).toFile()
+      "CheckingRequirements", name).toFile()
   else
     Paths.get("Power Tools",
-      "Error Reporting", "Examples", "src",
-      name).toFile()
+      "CheckingRequirements", "Examples",
+      "src", name).toFile()
 
 fun main() {  // Test it
   val lf = localFile("test_localFile.txt")
