@@ -9,12 +9,4 @@ fun localFile(name: String): File =
     Paths.get("Examples",
       "CheckingRequirements", name).toFile()
   else
-    Paths.get("Power Tools",
-      "CheckingRequirements", "Examples",
-      "src", name).toFile()
-
-fun main() {  // Test it
-  val lf = localFile("test_localFile.txt")
-  lf.writeText("test localFile()")
-  lf.readText() eq "test localFile()"
-}
+    throw Exception("No 'Examples' directory")

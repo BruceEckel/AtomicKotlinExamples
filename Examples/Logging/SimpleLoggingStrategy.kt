@@ -3,7 +3,7 @@ package logging
 import java.nio.file.Paths
 
 val logFile = Paths.get("Examples",
-  "ErrorReporting", "simpleLogFile.txt").toFile()
+  "Logging", "simpleLogFile.txt").toFile()
 
 fun debug(msg: String) =
   System.err.println("Debug: " + msg)

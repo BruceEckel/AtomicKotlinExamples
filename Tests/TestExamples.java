@@ -93,11 +93,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testLocalFile() {
-    testExample("Examples/CheckingRequirements/LocalFile.kt", checkingrequirements.LocalFileKt::main);
-  }
-
-  @Test
   public void testPostconditions() {
     testExample("Examples/CheckingRequirements/Postconditions.kt", checkingrequirements.PostconditionsKt::main);
   }

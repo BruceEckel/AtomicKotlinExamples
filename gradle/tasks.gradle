@@ -1288,11 +1288,6 @@ task LocalExtensions(type: JavaExec) {
     main = 'LocalExtensionsKt'
 }
 
-task LocalFile(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'checkingrequirements.LocalFileKt'
-}
-
 task LocalFunctionReference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'localfunctions.LocalFunctionReferenceKt'
@@ -2680,7 +2675,6 @@ task run (dependsOn: [
     'ListUsefulFunction',
     'Lists',
     'LocalExtensions',
-    'LocalFile',
     'LocalFunctionReference',
     'LocalFunctions',
     'LogChanges',

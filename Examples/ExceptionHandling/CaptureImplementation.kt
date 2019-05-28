@@ -5,7 +5,7 @@ import atomictest.eq
 fun capture(f: () -> Unit): String =
   try {
     f()
-    "[Error]: Expected an exception"
+    "Expected an exception"
   } catch (e: Exception) {
     e::class.simpleName +
       (e.message?.let { ": $it" } ?: "")
@@ -18,5 +18,5 @@ fun main() {
     """For input string: "1$""""
   capture {
     "1".toInt()
-  } eq "[Error]: Expected an exception"
+  } eq "Expected an exception"
 }
