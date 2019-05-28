@@ -4,7 +4,7 @@ import atomictest.*
 
 class MyException(msg: String): Exception(msg)
 
-fun fail(i: Int): Nothing = 
+fun fail(i: Int): Nothing =
   throw MyException("Something is wrong ($i)")
 
 fun main() {

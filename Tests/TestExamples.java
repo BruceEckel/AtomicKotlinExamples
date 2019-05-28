@@ -1418,13 +1418,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testThrowAsPartOfOtherExpressions1() {
-    testExample("Examples/NothingType/ThrowAsPartOfOtherExpressions1.kt", nothingtype.ThrowAsPartOfOtherExpressions1Kt::main);
+  public void testPartOfOtherExpressions1() {
+    testExample("Examples/NothingType/PartOfOtherExpressions1.kt", nothingtype.PartOfOtherExpressions1Kt::main);
   }
 
   @Test
-  public void testThrowAsPartOfOtherExpressions2() {
-    testExample("Examples/NothingType/ThrowAsPartOfOtherExpressions2.kt", nothingtype.ThrowAsPartOfOtherExpressions2Kt::main);
+  public void testPartOfOtherExpressions2() {
+    testExample("Examples/NothingType/PartOfOtherExpressions2.kt", nothingtype.PartOfOtherExpressions2Kt::main);
   }
 
   @Test

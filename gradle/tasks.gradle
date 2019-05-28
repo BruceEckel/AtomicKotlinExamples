@@ -1683,6 +1683,16 @@ task ParameterizedTypes(type: JavaExec) {
     main = 'ParameterizedTypesKt'
 }
 
+task PartOfOtherExpressions1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtype.PartOfOtherExpressions1Kt'
+}
+
+task PartOfOtherExpressions2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtype.PartOfOtherExpressions2Kt'
+}
+
 task Partition(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PartitionKt'
@@ -2126,16 +2136,6 @@ task TestingExample(type: JavaExec) {
 task ThreeQuotes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ThreeQuotesKt'
-}
-
-task ThrowAsPartOfOtherExpressions1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nothingtype.ThrowAsPartOfOtherExpressions1Kt'
-}
-
-task ThrowAsPartOfOtherExpressions2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nothingtype.ThrowAsPartOfOtherExpressions2Kt'
 }
 
 task TicTacToe(type: JavaExec) {
@@ -2754,6 +2754,8 @@ task run (dependsOn: [
     'Pairs',
     'ParameterizedReturn',
     'ParameterizedTypes',
+    'PartOfOtherExpressions1',
+    'PartOfOtherExpressions2',
     'Partition',
     'Perform',
     'Pet',
@@ -2843,8 +2845,6 @@ task run (dependsOn: [
     'TerminalOperations',
     'TestingExample',
     'ThreeQuotes',
-    'ThrowAsPartOfOtherExpressions1',
-    'ThrowAsPartOfOtherExpressions2',
     'TicTacToe',
     'ToDoubleException',
     'ToIntException',
