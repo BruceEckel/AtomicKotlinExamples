@@ -1,5 +1,5 @@
-// SmartCasts/WhenAndSmartCasts.kt
-package smartcasts
+// Casting/WhenAndCasting.kt
+package casting
 import atomictest.eq
 
 fun acceptAny(a: Any) =

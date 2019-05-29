@@ -1,5 +1,5 @@
-// SmartCasts/HumanAlice.kt
-package smartcasts
+// Casting/HumanAlice.kt
+package casting
 import atomictest.eq
 
 interface Human

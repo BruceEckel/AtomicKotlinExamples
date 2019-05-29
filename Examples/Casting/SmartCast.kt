@@ -1,5 +1,5 @@
-// SmartCasts/SmartCasts.kt
-package smartcasts
+// Casting/SmartCast.kt
+package casting
 import atomictest.eq
 
 class Dog {

@@ -93,6 +93,31 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testHumanAlice() {
+    testExample("Examples/Casting/HumanAlice.kt", casting.HumanAliceKt::main);
+  }
+
+  @Test
+  public void testSafe() {
+    testExample("Examples/Casting/Safe.kt", casting.SafeKt::main);
+  }
+
+  @Test
+  public void testSmartCast() {
+    testExample("Examples/Casting/SmartCast.kt", casting.SmartCastKt::main);
+  }
+
+  @Test
+  public void testUnsafe() {
+    testExample("Examples/Casting/Unsafe.kt", casting.UnsafeKt::main);
+  }
+
+  @Test
+  public void testWhenAndCasting() {
+    testExample("Examples/Casting/WhenAndCasting.kt", casting.WhenAndCastingKt::main);
+  }
+
+  @Test
   public void testPostconditions() {
     testExample("Examples/CheckingRequirements/Postconditions.kt", checkingrequirements.PostconditionsKt::main);
   }
@@ -1945,21 +1970,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSets() {
     testExample("Examples/Sets/Sets.kt", SetsKt::main);
-  }
-
-  @Test
-  public void testHumanAlice() {
-    testExample("Examples/SmartCasts/HumanAlice.kt", smartcasts.HumanAliceKt::main);
-  }
-
-  @Test
-  public void testSmartCasts() {
-    testExample("Examples/SmartCasts/SmartCasts.kt", smartcasts.SmartCastsKt::main);
-  }
-
-  @Test
-  public void testWhenAndSmartCasts() {
-    testExample("Examples/SmartCasts/WhenAndSmartCasts.kt", smartcasts.WhenAndSmartCastsKt::main);
   }
 
   @Test

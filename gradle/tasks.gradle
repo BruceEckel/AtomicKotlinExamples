@@ -960,7 +960,7 @@ task House(type: JavaExec) {
 
 task HumanAlice(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartcasts.HumanAliceKt'
+    main = 'casting.HumanAliceKt'
 }
 
 task If1(type: JavaExec) {
@@ -1888,6 +1888,11 @@ task RigidHolder(type: JavaExec) {
     main = 'introgenerics.RigidHolderKt'
 }
 
+task Safe(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'casting.SafeKt'
+}
+
 task SafeCall(type: JavaExec) {
     classpath kotlinClassPath
     main = 'safecalls.SafeCallKt'
@@ -1948,9 +1953,9 @@ task SimpleOperation(type: JavaExec) {
     main = 'SimpleOperationKt'
 }
 
-task SmartCasts(type: JavaExec) {
+task SmartCast(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartcasts.SmartCastsKt'
+    main = 'casting.SmartCastKt'
 }
 
 task Solid(type: JavaExec) {
@@ -2238,6 +2243,11 @@ task UnpredictableHashing(type: JavaExec) {
     main = 'UnpredictableHashingKt'
 }
 
+task Unsafe(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'casting.UnsafeKt'
+}
+
 task Usable(type: JavaExec) {
     classpath kotlinClassPath
     main = 'resourcecleanup.UsableKt'
@@ -2333,9 +2343,9 @@ task VisibleArgs(type: JavaExec) {
     main = 'VisibleArgsKt'
 }
 
-task WhenAndSmartCasts(type: JavaExec) {
+task WhenAndCasting(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'smartcasts.WhenAndSmartCastsKt'
+    main = 'casting.WhenAndCastingKt'
 }
 
 task While(type: JavaExec) {
@@ -2795,6 +2805,7 @@ task run (dependsOn: [
     'ReturnFromFun',
     'ReturnInsideLambda',
     'RigidHolder',
+    'Safe',
     'SafeCall',
     'SafeOperation',
     'SameReturnTypes',
@@ -2807,7 +2818,7 @@ task run (dependsOn: [
     'SimpleHashing',
     'SimpleLoggingStrategy',
     'SimpleOperation',
-    'SmartCasts',
+    'SmartCast',
     'Solid',
     'SortWith',
     'Speakers',
@@ -2865,6 +2876,7 @@ task run (dependsOn: [
     'UnitReturn',
     'UnitReturnType',
     'UnpredictableHashing',
+    'Unsafe',
     'Usable',
     'UseALibrary',
     'UseAtomicLog',
@@ -2884,7 +2896,7 @@ task run (dependsOn: [
     'Vars',
     'VerySlowFibonacci',
     'VisibleArgs',
-    'WhenAndSmartCasts',
+    'WhenAndCasting',
     'While',
     'WhileControl',
     'WhileLabeled',

@@ -1,4 +1,4 @@
-// SmartCasts/MoreWork.java
+// Casting/MoreWork.java
 
 public class MoreWork {
   static String jDogBark(Object a) {
