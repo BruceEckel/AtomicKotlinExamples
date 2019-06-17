@@ -1,5 +1,5 @@
-// CheckingRequirements/Postconditions.kt
-package checkingrequirements
+// CheckInstructions/Postconditions.kt
+package checkinstructions
 import atomictest.*
 
 val resultFile = localFile("results.txt")

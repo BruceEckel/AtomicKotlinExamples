@@ -6,12 +6,12 @@ open class Base {
   open fun f(b: Mallard) = "Base::f"
 }
 
-open class Derived : Base() {
+open class Derived: Base() {
   /* override */ fun f(b: Duck) =
     "Derived::f"
 }
 
-class Derived2 : Derived() {
+class Derived2: Derived() {
   /* override */ fun f(b: Bird) =
     "Derived2::f"
 }

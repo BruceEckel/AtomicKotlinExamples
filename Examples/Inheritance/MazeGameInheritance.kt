@@ -12,7 +12,7 @@ interface GameElement {
   )
 }
 
-open class StaticElement : GameElement {
+open class StaticElement: GameElement {
   override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
@@ -21,11 +21,11 @@ open class StaticElement : GameElement {
   }
 }
 
-class Wall : StaticElement()  // [1]
+class Wall: StaticElement()  // [1]
 
-class Food : StaticElement()  // [2]
+class Food: StaticElement()  // [2]
 
-class Bomb : StaticElement() {
+class Bomb: StaticElement() {
   override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>

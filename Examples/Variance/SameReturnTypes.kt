@@ -1,11 +1,11 @@
 // Variance/SameReturnTypes.kt
 package variance
 
-open class MakeDuck1 : MakeBird() {
+open class MakeDuck1: MakeBird() {
   override fun make(): Bird = Duck()
 }
 
-class MakeMallard1 : MakeDuck1() {
+class MakeMallard1: MakeDuck1() {
   override fun make(): Bird = Mallard()
 }
 

@@ -1,17 +1,17 @@
 // Variance/CovariantReturnTypes.kt
 package variance
 
-open class MakeDuck2 : MakeBird() {
+open class MakeDuck2: MakeBird() {
   override fun make(): Duck = Duck()
 }
 
-class MakeMallard2 : MakeDuck2() {
+class MakeMallard2: MakeDuck2() {
   override fun make(): Mallard = Mallard()
 }
 
 class Bicycle
 
-class MakeBicycle : MakeBird() {
+class MakeBicycle: MakeBird() {
   // Fails:
   // override fun make(): Bicycle = Bicycle()
   val errorMessage = """

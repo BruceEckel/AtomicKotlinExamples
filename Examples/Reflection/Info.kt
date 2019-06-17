@@ -22,7 +22,7 @@ fun info(a: Any) {
 }
 
 data class Baz(val i: Int, val s: String) {
-  constructor() : this(11, "Joy")
+  constructor(): this(11, "Joy")
 }
 
 fun main() {

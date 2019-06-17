@@ -10,13 +10,13 @@ interface GameMatrix {
   fun allAt(p: Position): Set<Element>
 }
 
-interface Maze : GameMatrix {
+interface Maze: GameMatrix {
   fun move(e: Element, p: Position)
   fun destroy(e: Element)
   fun position(e: Element): Position?
   fun all(): Set<Element>
   override fun allAt(
-    p: Position) : Set<Element>
+    p: Position): Set<Element>
 }
 
 fun useMaze(maze: Maze) {

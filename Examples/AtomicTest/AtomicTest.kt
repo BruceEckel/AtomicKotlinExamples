@@ -33,7 +33,7 @@ private fun <L, R> runTest(
  * Compares the string representation
  * of the object with the string `value`.
  */
-infix fun <T : Any> T.eq(value: String) {
+infix fun <T: Any> T.eq(value: String) {
   runTest(this, value) {
     this.toString() == value
   }

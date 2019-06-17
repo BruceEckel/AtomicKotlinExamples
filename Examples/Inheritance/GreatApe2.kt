@@ -9,7 +9,7 @@ open class GreatApe {
   fun energyLevel() = "Energy: $energy"
 }
 
-class Bonobo : GreatApe() {
+class Bonobo: GreatApe() {
   override fun call() = "Eep!"
   override fun eat() {
     // Modify the base-class var:
@@ -21,7 +21,7 @@ class Bonobo : GreatApe() {
   fun run() = "Bonobo run"
 }
 
-class Chimpanzee : GreatApe() {
+class Chimpanzee: GreatApe() {
   // New property
   val additionalEnergy = 20
   override fun call() = "Yawp!"

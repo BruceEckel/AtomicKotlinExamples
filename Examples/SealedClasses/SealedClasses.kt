@@ -4,13 +4,13 @@ import atomictest.eq
 
 sealed class Transport
 
-data class Train(val line: String) :
+data class Train(val line: String):
   Transport()
 
 data class Bus(
   val number: String,
   val capacity: Int
-) : Transport()
+): Transport()
 
 fun travel(transport: Transport): String =
   when (transport) {

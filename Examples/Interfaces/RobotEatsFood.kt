@@ -1,7 +1,7 @@
 // Interfaces/RobotEatsFood.kt
 package game
 
-class Robot : GameElement {
+class Robot: GameElement {
   private var eatenFoodItems: Int = 0
   override fun interact(
     maze: Maze,
@@ -16,7 +16,7 @@ class Robot : GameElement {
   }
 }
 
-class Food : GameElement {
+class Food: GameElement {
   override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>

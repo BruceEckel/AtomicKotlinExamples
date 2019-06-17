@@ -6,12 +6,12 @@ class WithSecondary(i: Int) {
     println("Primary: $i")
   }
 
-  constructor(c: Char) : this(c - 'A') {
+  constructor(c: Char): this(c - 'A') {
     println("Secondary: '$c'")
   }
 
-  constructor(s: String)
-      : this(s.first()) {            // [1]
+  constructor(s: String):
+    this(s.first()) {                // [1]
     println("Secondary: \"$s\"")
   }
   /* Won't compile without a call

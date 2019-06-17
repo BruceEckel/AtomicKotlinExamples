@@ -1,5 +1,5 @@
-// Upcasting/Dessert2.kt
-package upcasting
+// Polymorphism/Dessert2.kt
+package polymorphism
 import atomictest.eq
 
 fun main() {

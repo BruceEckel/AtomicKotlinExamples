@@ -7,7 +7,7 @@ interface Rectangle {
 
 class ButtonImage(
   val width: Int,
-  val height: Int) : Rectangle {
+  val height: Int): Rectangle {
   override fun paint() = width * height
 }
 
@@ -16,7 +16,7 @@ interface MouseManager {
   fun hovering(): Boolean
 }
 
-class UserInput : MouseManager {
+class UserInput: MouseManager {
   override fun clicked() = true
   override fun hovering() = true
 }
@@ -24,14 +24,14 @@ class UserInput : MouseManager {
 // Even if we make the classes open, we'll
 // get an error: Only one class may appear
 // in a supertype list.
-// class Button : ButtonImage(), UserInput()
+// class Button: ButtonImage(), UserInput()
 
 class Button(
   val width: Int,
   val height: Int,
   val image: Rectangle =
     ButtonImage(width, height),
-  val input: MouseManager = UserInput()) :
+  val input: MouseManager = UserInput()):
   Rectangle by image, MouseManager by input
 
 fun main() {

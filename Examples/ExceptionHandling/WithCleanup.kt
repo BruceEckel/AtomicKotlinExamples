@@ -1,7 +1,7 @@
 // ExceptionHandling/WithCleanup.kt
 package withfunction
 
-class Cleanup(n: Int) : AutoCloseable {
+class Cleanup(n: Int): AutoCloseable {
   val id = n
   val x = println("Create $id")
   fun show() { println("Use $id")}

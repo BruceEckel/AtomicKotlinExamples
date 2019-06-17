@@ -1,7 +1,7 @@
 // ClassDelegation/ExplicitDelegation.kt
 import atomictest.eq
 
-class ExplicitControls : ShipControls {
+class ExplicitControls: ShipControls {
   private val controls = SpaceShipControls()
   // Delegated members:
   override fun up(velocity: Int) =

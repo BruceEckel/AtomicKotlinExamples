@@ -258,11 +258,6 @@ task CallTopLevelFunction2(type: JavaExec) {
     main = 'fromjava.CallTopLevelFunction2'
 }
 
-task CaptureImplementation(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'exceptionhandling.CaptureImplementationKt'
-}
-
 task CarHolder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'generics.CarHolderKt'
@@ -291,6 +286,16 @@ task ChangingAVal(type: JavaExec) {
 task CharRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CharRangeKt'
+}
+
+task CheckObject(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtype.CheckObjectKt'
+}
+
+task CheckObject2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtype.CheckObject2Kt'
 }
 
 task CheckingArgument(type: JavaExec) {
@@ -525,12 +530,12 @@ task DereferenceNull(type: JavaExec) {
 
 task Dessert(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'upcasting.DessertKt'
+    main = 'polymorphism.DessertKt'
 }
 
 task Dessert2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'upcasting.Dessert2Kt'
+    main = 'polymorphism.Dessert2Kt'
 }
 
 task DestructuringData(type: JavaExec) {
@@ -585,7 +590,7 @@ task Dog(type: JavaExec) {
 
 task Downcasting(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'upcasting.DowncastingKt'
+    main = 'polymorphism.DowncastingKt'
 }
 
 task EagerEvaluation(type: JavaExec) {
@@ -638,16 +643,6 @@ task EvaluationOrder(type: JavaExec) {
     main = 'EvaluationOrderKt'
 }
 
-task ExceptionHandlers(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'exceptionhandling.ExceptionHandlersKt'
-}
-
-task ExceptionsHierarchy(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'exceptionhandling.ExceptionsHierarchyKt'
-}
-
 task ExplicitCheck(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExplicitCheckKt'
@@ -676,6 +671,11 @@ task ExtensionsToJavaClass(type: JavaExec) {
 task Factorial(type: JavaExec) {
     classpath kotlinClassPath
     main = 'recursion.FactorialKt'
+}
+
+task Fail(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtype.FailKt'
 }
 
 task FaultySuitcase(type: JavaExec) {
@@ -793,11 +793,6 @@ task FunctionReference(type: JavaExec) {
     main = 'memberreferences2.FunctionReferenceKt'
 }
 
-task FunctionReturningNothing(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nothingtype.FunctionReturningNothingKt'
-}
-
 task FunctionTypeExamples(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FunctionTypeExamplesKt'
@@ -851,6 +846,11 @@ task GermanOrdinals(type: JavaExec) {
 task GetOrPut(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GetOrPutKt'
+}
+
+task GetTrace(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'checkinstructions.GetTraceKt'
 }
 
 task GetValue(type: JavaExec) {
@@ -913,6 +913,11 @@ task Hamsters(type: JavaExec) {
     main = 'propertyaccessors.HamstersKt'
 }
 
+task Handlers(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'exceptionhandling.HandlersKt'
+}
+
 task HasChar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HasCharKt'
@@ -946,6 +951,11 @@ task HelperFunction(type: JavaExec) {
 task HiddenArrayList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HiddenArrayListKt'
+}
+
+task Hierarchy(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'exceptionhandling.HierarchyKt'
 }
 
 task Holder(type: JavaExec) {
@@ -1243,6 +1253,11 @@ task Level(type: JavaExec) {
     main = 'enumerations.LevelKt'
 }
 
+task LibraryException(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'exceptionhandling.LibraryExceptionKt'
+}
+
 task ListCollection(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ListCollectionKt'
@@ -1286,6 +1301,11 @@ task Lists(type: JavaExec) {
 task LocalExtensions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LocalExtensionsKt'
+}
+
+task LocalFile(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'checkinstructions.LocalFileKt'
 }
 
 task LocalFunctionReference(type: JavaExec) {
@@ -1478,9 +1498,9 @@ task NewAngle(type: JavaExec) {
     main = 'NewAngleKt'
 }
 
-task NewVsLibraryExceptions(type: JavaExec) {
+task NewException(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'errorHandling.NewVsLibraryExceptionsKt'
+    main = 'exceptionhandling.NewExceptionKt'
 }
 
 task NickName(type: JavaExec) {
@@ -1683,16 +1703,6 @@ task ParameterizedTypes(type: JavaExec) {
     main = 'ParameterizedTypesKt'
 }
 
-task PartOfOtherExpressions1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nothingtype.PartOfOtherExpressions1Kt'
-}
-
-task PartOfOtherExpressions2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nothingtype.PartOfOtherExpressions2Kt'
-}
-
 task Partition(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PartitionKt'
@@ -1720,7 +1730,7 @@ task PlatformTypes(type: JavaExec) {
 
 task Postconditions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'checkingrequirements.PostconditionsKt'
+    main = 'checkinstructions.PostconditionsKt'
 }
 
 task PostfixVsPrefix(type: JavaExec) {
@@ -1786,11 +1796,6 @@ task ReadOnlyCollections(type: JavaExec) {
 task ReadOnlyMaps(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReadOnlyMapsKt'
-}
-
-task ReadTraceFile(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'checkingrequirements.ReadTraceFileKt'
 }
 
 task ReadingName(type: JavaExec) {
@@ -1860,7 +1865,7 @@ task Repetitive(type: JavaExec) {
 
 task RequireNotNull(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'checkingrequirements.RequireNotNullKt'
+    main = 'checkinstructions.RequireNotNullKt'
 }
 
 task ResultOfApply(type: JavaExec) {
@@ -1951,6 +1956,11 @@ task SimpleLoggingStrategy(type: JavaExec) {
 task SimpleOperation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SimpleOperationKt'
+}
+
+task SingleArgRequire(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'checkinstructions.SingleArgRequireKt'
 }
 
 task SmartCast(type: JavaExec) {
@@ -2479,13 +2489,14 @@ task run (dependsOn: [
     'CallStack',
     'CallTopLevelFunction',
     'CallTopLevelFunction2',
-    'CaptureImplementation',
     'CarHolder',
     'Cat',
     'CatchChecked',
     'ChainedCalls',
     'ChangingAVal',
     'CharRange',
+    'CheckObject',
+    'CheckObject2',
     'CheckingArgument',
     'CheckingOptions',
     'ClassBodies',
@@ -2555,14 +2566,13 @@ task run (dependsOn: [
     'ErasedTypeEquivalence',
     'Evaluation',
     'EvaluationOrder',
-    'ExceptionHandlers',
-    'ExceptionsHierarchy',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',
     'ExpressionInTemplate',
     'ExtensionsToJavaClass',
     'Factorial',
+    'Fail',
     'FaultySuitcase',
     'Fibonacci',
     'FibonacciProperty',
@@ -2586,7 +2596,6 @@ task run (dependsOn: [
     'ForWithRanges',
     'FullyQualify',
     'FunctionReference',
-    'FunctionReturningNothing',
     'FunctionTypeExamples',
     'Gadget',
     'GameMatrix',
@@ -2598,6 +2607,7 @@ task run (dependsOn: [
     'GenericSpeakers',
     'GermanOrdinals',
     'GetOrPut',
+    'GetTrace',
     'GetValue',
     'GettersAndSetter',
     'GoodAlien',
@@ -2610,6 +2620,7 @@ task run (dependsOn: [
     'GuaranteedCleanup',
     'Hamster',
     'Hamsters',
+    'Handlers',
     'HasChar',
     'HashCodeFailure',
     'Hello',
@@ -2617,6 +2628,7 @@ task run (dependsOn: [
     'HelloWorld',
     'HelperFunction',
     'HiddenArrayList',
+    'Hierarchy',
     'Holder',
     'House',
     'HumanAlice',
@@ -2676,6 +2688,7 @@ task run (dependsOn: [
     'LazySyntax',
     'Let',
     'Level',
+    'LibraryException',
     'ListCollection',
     'ListIndicesMap',
     'ListInit',
@@ -2685,6 +2698,7 @@ task run (dependsOn: [
     'ListUsefulFunction',
     'Lists',
     'LocalExtensions',
+    'LocalFile',
     'LocalFunctionReference',
     'LocalFunctions',
     'LogChanges',
@@ -2723,7 +2737,7 @@ task run (dependsOn: [
     'NamedArguments',
     'NamedCompanionObject',
     'NewAngle',
-    'NewVsLibraryExceptions',
+    'NewException',
     'NickName',
     'NoComputationYet',
     'NonNullAssert',
@@ -2764,8 +2778,6 @@ task run (dependsOn: [
     'Pairs',
     'ParameterizedReturn',
     'ParameterizedTypes',
-    'PartOfOtherExpressions1',
-    'PartOfOtherExpressions2',
     'Partition',
     'Perform',
     'Pet',
@@ -2785,7 +2797,6 @@ task run (dependsOn: [
     'RangeSum',
     'ReadOnlyCollections',
     'ReadOnlyMaps',
-    'ReadTraceFile',
     'ReadingName',
     'ReadingNameWithIf',
     'RecursionLimits',
@@ -2818,6 +2829,7 @@ task run (dependsOn: [
     'SimpleHashing',
     'SimpleLoggingStrategy',
     'SimpleOperation',
+    'SingleArgRequire',
     'SmartCast',
     'Solid',
     'SortWith',

@@ -1,9 +1,9 @@
-// CheckingRequirements/ReadTraceFile.kt
-package checkingrequirements
+// CheckInstructions/GetTrace.kt
+package checkinstructions
 import atomictest.capture
 import atomictest.eq
 
-fun readTrace(fileName: String) {
+fun getTrace(fileName: String): List<String> {
   require(fileName.startsWith("trace_")) {
     "$fileName must start with 'trace_'"
   }
@@ -15,25 +15,25 @@ fun readTrace(fileName: String) {
   require(lines.isNotEmpty()) {
     "$fileName is empty"
   }
-  // ...
+  return lines
 }
 
 fun main() {
-  // Create dummy trace files:
   localFile("trace_empty.txt").writeText("")
   localFile("trace_real.txt").writeText(
-    "message\n")
+    "wubba lubba dub dub")
   capture {
-    readTrace("foo.txt")
+    getTrace("wrong_name.txt")
   } eq "IllegalArgumentException: " +
-    "foo.txt must start with 'trace_'"
+    "wrong_name.txt must start with 'trace_'"
   capture {
-    readTrace("trace_foo.txt")
+    getTrace("trace_nonexistent.txt")
   } eq "IllegalArgumentException: " +
-    "trace_foo.txt doesn't exist"
+    "trace_nonexistent.txt doesn't exist"
   capture {
-    readTrace("trace_empty.txt")
+    getTrace("trace_empty.txt")
   } eq "IllegalArgumentException: " +
     "trace_empty.txt is empty"
-  readTrace("trace_real.txt")
+  getTrace("trace_real.txt") eq
+    "[wubba lubba dub dub]"
 }

@@ -1,7 +1,7 @@
 // ResourceCleanup/Cleanup2.kt
 package resourcecleanup
 import atomictest.eq
-import checkingrequirements.localFile
+import checkinstructions.localFile
 
 fun main() {
   localFile("Results.txt").useLines {

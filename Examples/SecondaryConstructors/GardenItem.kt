@@ -14,13 +14,13 @@ class GardenItem(
 
   constructor(
     name: String, material: Material    // [1]
-  ) : this(name) {                      // [2]
+  ): this(name) {                       // [2]
     this.material = material            // [3]
   }
 
   constructor(
     material: Material
-  ) : this("Strange Thing", material)   // [4]
+  ): this("Strange Thing", material)    // [4]
 
   override fun toString() = "$material $name"
 }

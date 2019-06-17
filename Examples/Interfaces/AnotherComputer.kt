@@ -2,7 +2,7 @@
 package interfaces
 import atomictest.*
 
-class AnotherComputer : SuperComputer {
+class AnotherComputer: SuperComputer {
   override fun calculateAnswer() =
     throw IllegalStateException("No answer")
 }

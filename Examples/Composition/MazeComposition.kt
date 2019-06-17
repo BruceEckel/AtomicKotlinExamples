@@ -8,7 +8,7 @@ interface GameMatrix { /* ... */ }
 
 class GameMatrixImpl(
   width: Int, height: Int
-) : GameMatrix {
+): GameMatrix {
   private val cells = MutableList(height) {
     MutableList(width) {
       mutableSetOf<Element>()

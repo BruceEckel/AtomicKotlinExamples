@@ -4,15 +4,15 @@ import atomictest.*
 
 class Exception1(
   val value: Int
-) : Exception("wrong value: $value")
+): Exception("wrong value: $value")
 
 open class Exception2(
   message: String
-) : Exception(message)
+): Exception(message)
 
 class Exception3(
   message: String
-) : Exception2(message)
+): Exception2(message)
 
 fun main() {
   capture {

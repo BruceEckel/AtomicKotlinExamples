@@ -1,9 +1,9 @@
-// NothingType/PartOfOtherExpressions1.kt
+// NothingType/CheckObject.kt
 package nothingtype
 import atomictest.capture
 import atomictest.eq
 
-class BadData(m: String) : Exception(m)
+class BadData(m: String): Exception(m)
 
 fun checkObject(obj: Any?): String =
   if (obj is String)

@@ -12,7 +12,7 @@ fun testFinally(i: Int): Switch {
     sw.on = true
     when (i) {
       0 -> throw IllegalStateException()
-      1 -> return sw                     // [1]
+      1 -> return sw                 // [1]
     }
   } catch (e: IllegalStateException) {
     sw.result = "exception"
@@ -26,7 +26,7 @@ fun main() {
   testFinally(0) eq
     "Switch(on=false, result=exception)"
   testFinally(1) eq
-    "Switch(on=false, result=OK)"        // [2]
+    "Switch(on=false, result=OK)"    // [2]
   testFinally(2) eq
     "Switch(on=false, result=OK)"
 }

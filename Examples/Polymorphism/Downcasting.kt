@@ -1,5 +1,5 @@
-// Upcasting/Downcasting.kt
-package upcasting
+// Polymorphism/Downcasting.kt
+package polymorphism
 import atomictest.eq
 
 class Eater2 {
@@ -15,9 +15,10 @@ class Eater2 {
     dessert: Dessert,
     indulge: Boolean = false
   ): String {
-    val a = if(indulge) dessert.add() else ""
+    val a = if(indulge)
+      " " + dessert.add() else ""
     calories += dessert.total()
-    return "${dessert.serve()} $a: " +
+    return "${dessert.serve()}$a: " +
       "$calories calories"
   }
 }
@@ -30,7 +31,7 @@ fun main() {
   eater.eatDessert(Pie(250), true) eq
     "cutting Pie " +
     "Adding Whipped Cream: 700 calories"
-  eater.eatDessert(Candy(200), true) eq
-    "unwrapping Candy : 900 calories"
+  eater.eatDessert(Candy(200)) eq
+    "unwrapping Candy: 900 calories"
   eater.calories eq 900
 }

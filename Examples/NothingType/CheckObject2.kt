@@ -1,4 +1,4 @@
-// NothingType/PartOfOtherExpressions2.kt
+// NothingType/CheckObject2.kt
 package nothingtype
 import atomictest.capture
 import atomictest.eq

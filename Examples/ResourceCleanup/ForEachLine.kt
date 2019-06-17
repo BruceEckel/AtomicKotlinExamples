@@ -1,6 +1,6 @@
 // ResourceCleanup/ForEachLine.kt
 package resourcecleanup
-import checkingrequirements.localFile
+import checkinstructions.localFile
 
 fun main() {
   localFile("results.txt").forEachLine {

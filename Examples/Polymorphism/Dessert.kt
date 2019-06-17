@@ -1,5 +1,5 @@
-// Upcasting/Dessert.kt
-package upcasting
+// Polymorphism/Dessert.kt
+package polymorphism
 import atomictest.eq
 
 open class Dessert(val calories: Int) {
@@ -10,13 +10,13 @@ open class Dessert(val calories: Int) {
 
 class Candy(
   calories: Int
-) : Dessert(calories) {
+): Dessert(calories) {
   override fun serve() = "unwrapping Candy"
 }
 
 class Pie(
   calories: Int
-) : Dessert(calories) {
+): Dessert(calories) {
   override fun serve() = "cutting Pie"
   fun addWhippedCream(): String {
     additionalCalories += 50
@@ -26,7 +26,7 @@ class Pie(
 
 class IceCream(
   calories: Int
-) : Dessert(calories) {
+): Dessert(calories) {
   override fun serve() = "scooping IceCream"
   fun addSyrup(): String {
     additionalCalories += 100

@@ -118,18 +118,28 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testPostconditions() {
-    testExample("Examples/CheckingRequirements/Postconditions.kt", checkingrequirements.PostconditionsKt::main);
+  public void testGetTrace() {
+    testExample("Examples/CheckInstructions/GetTrace.kt", checkinstructions.GetTraceKt::main);
   }
 
   @Test
-  public void testReadTraceFile() {
-    testExample("Examples/CheckingRequirements/ReadTraceFile.kt", checkingrequirements.ReadTraceFileKt::main);
+  public void testLocalFile() {
+    testExample("Examples/CheckInstructions/LocalFile.kt", checkinstructions.LocalFileKt::main);
+  }
+
+  @Test
+  public void testPostconditions() {
+    testExample("Examples/CheckInstructions/Postconditions.kt", checkinstructions.PostconditionsKt::main);
   }
 
   @Test
   public void testRequireNotNull() {
-    testExample("Examples/CheckingRequirements/RequireNotNull.kt", checkingrequirements.RequireNotNullKt::main);
+    testExample("Examples/CheckInstructions/RequireNotNull.kt", checkinstructions.RequireNotNullKt::main);
+  }
+
+  @Test
+  public void testSingleArgRequire() {
+    testExample("Examples/CheckInstructions/SingleArgRequire.kt", checkinstructions.SingleArgRequireKt::main);
   }
 
   @Test
@@ -388,23 +398,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCaptureImplementation() {
-    testExample("Examples/ExceptionHandling/CaptureImplementation.kt", exceptionhandling.CaptureImplementationKt::main);
-  }
-
-  @Test
   public void testDefiningExceptions() {
     testExample("Examples/ExceptionHandling/DefiningExceptions.kt", exceptionhandling.DefiningExceptionsKt::main);
-  }
-
-  @Test
-  public void testExceptionHandlers() {
-    testExample("Examples/ExceptionHandling/ExceptionHandlers.kt", exceptionhandling.ExceptionHandlersKt::main);
-  }
-
-  @Test
-  public void testExceptionsHierarchy() {
-    testExample("Examples/ExceptionHandling/ExceptionsHierarchy.kt", exceptionhandling.ExceptionsHierarchyKt::main);
   }
 
   @Test
@@ -413,13 +408,28 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testHandlers() {
+    testExample("Examples/ExceptionHandling/Handlers.kt", exceptionhandling.HandlersKt::main);
+  }
+
+  @Test
+  public void testHierarchy() {
+    testExample("Examples/ExceptionHandling/Hierarchy.kt", exceptionhandling.HierarchyKt::main);
+  }
+
+  @Test
   public void testKotlinChecked() {
     testExample("Examples/ExceptionHandling/KotlinChecked.kt", KotlinCheckedKt::main);
   }
 
   @Test
-  public void testNewVsLibraryExceptions() {
-    testExample("Examples/ExceptionHandling/NewVsLibraryExceptions.kt", errorHandling.NewVsLibraryExceptionsKt::main);
+  public void testLibraryException() {
+    testExample("Examples/ExceptionHandling/LibraryException.kt", exceptionhandling.LibraryExceptionKt::main);
+  }
+
+  @Test
+  public void testNewException() {
+    testExample("Examples/ExceptionHandling/NewException.kt", exceptionhandling.NewExceptionKt::main);
   }
 
   @Test
@@ -1438,18 +1448,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testFunctionReturningNothing() {
-    testExample("Examples/NothingType/FunctionReturningNothing.kt", nothingtype.FunctionReturningNothingKt::main);
+  public void testCheckObject() {
+    testExample("Examples/NothingType/CheckObject.kt", nothingtype.CheckObjectKt::main);
   }
 
   @Test
-  public void testPartOfOtherExpressions1() {
-    testExample("Examples/NothingType/PartOfOtherExpressions1.kt", nothingtype.PartOfOtherExpressions1Kt::main);
+  public void testCheckObject2() {
+    testExample("Examples/NothingType/CheckObject2.kt", nothingtype.CheckObject2Kt::main);
   }
 
   @Test
-  public void testPartOfOtherExpressions2() {
-    testExample("Examples/NothingType/PartOfOtherExpressions2.kt", nothingtype.PartOfOtherExpressions2Kt::main);
+  public void testFail() {
+    testExample("Examples/NothingType/Fail.kt", nothingtype.FailKt::main);
   }
 
   @Test
@@ -1725,6 +1735,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testPlatformTypes() {
     testExample("Examples/PlatformTypes/PlatformTypes.kt", PlatformTypesKt::main);
+  }
+
+  @Test
+  public void testDessert() {
+    testExample("Examples/Polymorphism/Dessert.kt", polymorphism.DessertKt::main);
+  }
+
+  @Test
+  public void testDessert2() {
+    testExample("Examples/Polymorphism/Dessert2.kt", polymorphism.Dessert2Kt::main);
+  }
+
+  @Test
+  public void testDowncasting() {
+    testExample("Examples/Polymorphism/Downcasting.kt", polymorphism.DowncastingKt::main);
   }
 
   @Test
@@ -2200,21 +2225,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTestingExample() {
     testExample("Examples/Testing/TestingExample.kt", TestingExampleKt::main);
-  }
-
-  @Test
-  public void testDessert() {
-    testExample("Examples/Upcasting/Dessert.kt", upcasting.DessertKt::main);
-  }
-
-  @Test
-  public void testDessert2() {
-    testExample("Examples/Upcasting/Dessert2.kt", upcasting.Dessert2Kt::main);
-  }
-
-  @Test
-  public void testDowncasting() {
-    testExample("Examples/Upcasting/Downcasting.kt", upcasting.DowncastingKt::main);
   }
 
   @Test

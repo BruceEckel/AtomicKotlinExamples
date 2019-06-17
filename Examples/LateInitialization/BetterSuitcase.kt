@@ -2,7 +2,7 @@
 package lateinitialization
 import atomictest.eq
 
-class BetterSuitcase : Bag {
+class BetterSuitcase: Bag {
   lateinit var items: String
   override fun setUp() {
     items = "socks, jacket, laptop"

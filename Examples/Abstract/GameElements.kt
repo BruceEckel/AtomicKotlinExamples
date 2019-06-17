@@ -15,7 +15,7 @@ interface GameElement {
 
 abstract class StaticElement(
   override val mobile: Boolean    // [1]
-) : GameElement {
+): GameElement {
   override fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
@@ -24,7 +24,7 @@ abstract class StaticElement(
   }
 }
 
-class Wall :
+class Wall:
   StaticElement(mobile = false) { // [2]
   override val symbol: Char
     get() = '#'                   // [3]
