@@ -1463,8 +1463,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testUsingTODO() {
-    testExample("Examples/NothingType/UsingTODO.kt", nothingtype.UsingTODOKt::main);
+  public void testTodo() {
+    testExample("Examples/NothingType/Todo.kt", nothingtype.TodoKt::main);
   }
 
   @Test
@@ -1893,13 +1893,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCleanup() {
-    testExample("Examples/ResourceCleanup/Cleanup.kt", resourcecleanup.CleanupKt::main);
-  }
-
-  @Test
-  public void testCleanup2() {
-    testExample("Examples/ResourceCleanup/Cleanup2.kt", resourcecleanup.Cleanup2Kt::main);
+  public void testCloseable() {
+    testExample("Examples/ResourceCleanup/Closeable.kt", resourcecleanup.CloseableKt::main);
   }
 
   @Test
@@ -1910,6 +1905,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsable() {
     testExample("Examples/ResourceCleanup/Usable.kt", resourcecleanup.UsableKt::main);
+  }
+
+  @Test
+  public void testUseLines() {
+    testExample("Examples/ResourceCleanup/UseLines.kt", resourcecleanup.UseLinesKt::main);
   }
 
   @Test

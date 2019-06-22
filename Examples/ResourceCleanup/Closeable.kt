@@ -1,4 +1,4 @@
-// ResourceCleanup/Cleanup.kt
+// ResourceCleanup/Closeable.kt
 package resourcecleanup
 import atomictest.eq
 import checkinstructions.localFile

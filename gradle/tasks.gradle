@@ -313,14 +313,9 @@ task ClassBodies(type: JavaExec) {
     main = 'ClassBodiesKt'
 }
 
-task Cleanup(type: JavaExec) {
+task Closeable(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'resourcecleanup.CleanupKt'
-}
-
-task Cleanup2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'resourcecleanup.Cleanup2Kt'
+    main = 'resourcecleanup.CloseableKt'
 }
 
 task Closures(type: JavaExec) {
@@ -2168,6 +2163,11 @@ task ToIntException(type: JavaExec) {
     main = 'ToIntExceptionKt'
 }
 
+task Todo(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtype.TodoKt'
+}
+
 task TopLevelFunctionRef(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences2.TopLevelFunctionRefKt'
@@ -2278,6 +2278,11 @@ task UseBeanClass(type: JavaExec) {
     main = 'UseBeanClassKt'
 }
 
+task UseLines(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'resourcecleanup.UseLinesKt'
+}
+
 task UsingAtomicTest(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingAtomicTestKt'
@@ -2296,11 +2301,6 @@ task UsingKotlinClass(type: JavaExec) {
 task UsingLongs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingLongsKt'
-}
-
-task UsingTODO(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nothingtype.UsingTODOKt'
 }
 
 task UsingWith(type: JavaExec) {
@@ -2500,8 +2500,7 @@ task run (dependsOn: [
     'CheckingArgument',
     'CheckingOptions',
     'ClassBodies',
-    'Cleanup',
-    'Cleanup2',
+    'Closeable',
     'Closures',
     'Closures2',
     'Closures3',
@@ -2871,6 +2870,7 @@ task run (dependsOn: [
     'TicTacToe',
     'ToDoubleException',
     'ToIntException',
+    'Todo',
     'TopLevelFunctionRef',
     'TransformingMap',
     'TrimMargin',
@@ -2893,11 +2893,11 @@ task run (dependsOn: [
     'UseALibrary',
     'UseAtomicLog',
     'UseBeanClass',
+    'UseLines',
     'UsingAtomicTest',
     'UsingDataClass',
     'UsingKotlinClass',
     'UsingLongs',
-    'UsingTODO',
     'UsingWith',
     'Vals',
     'ValueFromMap',

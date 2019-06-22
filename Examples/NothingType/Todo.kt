@@ -1,4 +1,4 @@
-// NothingType/UsingTODO.kt
+// NothingType/Todo.kt
 package nothingtype
 import atomictest.*
 
