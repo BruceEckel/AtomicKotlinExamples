@@ -32,24 +32,16 @@ sourceSets {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     compile "org.jetbrains.kotlin:kotlin-reflect"
+
+    // Testing:
     compile "org.jetbrains.kotlin:kotlin-test-junit"
-    // Coroutine extensions
+
+    // Coroutines:
     compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.26.1-eap13'
 
-    // Logging support:
+    // Logging:
     compile 'io.github.microutils:kotlin-logging:1.4.6'
     compile 'org.slf4j:slf4j-simple:1.7.25'
-
-    // TEST JUnit5 support from:
-    // https://stackoverflow.com/questions/44429751/how-to-use-junit-5-with-gradle
-/*    testCompile("junit:junit:4.12")
-    testRuntime("org.junit.vintage:junit-vintage-engine:4.12.0-M4")
-
-    testCompile("org.junit.jupiter:junit-jupiter-api:5.2.0")
-    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
-
-    // Enable use of the JUnitPlatform Runner within the IDE
-    testCompile("org.junit.platform:junit-platform-runner:1.0.0")*/
 }
 
 apply from: 'gradle/tasks.gradle'
