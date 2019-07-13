@@ -148,6 +148,11 @@ task Backticks(type: JavaExec) {
     main = 'BackticksKt'
 }
 
+task Basic(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BasicKt'
+}
+
 task BasicFunctions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BasicFunctionsKt'
@@ -2467,6 +2472,7 @@ task run (dependsOn: [
     'AverageIncomeWithNull',
     'BMI',
     'Backticks',
+    'Basic',
     'BasicFunctions',
     'BasicGenerics',
     'BasicLambda',

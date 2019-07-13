@@ -2,12 +2,12 @@
 import atomictest.eq
 
 class WithObjectProperty {
+  companion object {
+    private var n: Int = 0 // Only one
+  }
   fun increment(): Int {
     n += 1
     return n
-  }
-  companion object {
-    private var n: Int = 0 // Only one
   }
 }
 

@@ -42,14 +42,14 @@ dependencies {
 
     // TEST JUnit5 support from:
     // https://stackoverflow.com/questions/44429751/how-to-use-junit-5-with-gradle
-    testCompile("junit:junit:4.12")
+/*    testCompile("junit:junit:4.12")
     testRuntime("org.junit.vintage:junit-vintage-engine:4.12.0-M4")
 
     testCompile("org.junit.jupiter:junit-jupiter-api:5.2.0")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
 
     // Enable use of the JUnitPlatform Runner within the IDE
-    testCompile("org.junit.platform:junit-platform-runner:1.0.0")
+    testCompile("org.junit.platform:junit-platform-runner:1.0.0")*/
 }
 
 apply from: 'gradle/tasks.gradle'

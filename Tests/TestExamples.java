@@ -2228,6 +2228,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testBasic() {
+    testExample("Examples/UnitTesting/Basic.kt", BasicKt::main);
+  }
+
+  @Test
   public void testCompareTo() {
     testExample("Examples/UsingOperators/CompareTo.kt", usingoperators.CompareToKt::main);
   }

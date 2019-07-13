@@ -3,14 +3,9 @@ import atomiclog.*
 import atomictest.eq
 
 fun main() {
-  val msg = "Hello, Atomic Log!"
-  log.trace(msg)
-  log.debug(msg)
-  log.info(msg)
-  log.warn(msg)
-  log.error(msg)
+  log.report("Hello, Atomic Log!")
   logFile.readText() eq
-    """Trace: Hello, Atomic Log!
+"""Trace: Hello, Atomic Log!
 Debug: Hello, Atomic Log!
 Info: Hello, Atomic Log!
 Warn: Hello, Atomic Log!
