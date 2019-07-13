@@ -1,6 +1,6 @@
 # Atomic Kotlin Examples
 
-These are the code examples from the book [Atomic Kotlin](www.AtomicKotlin.com), created by an
+These are the code examples from the book [Atomic Kotlin](https://www.AtomicKotlin.com), created by an
 automatic extraction process directly from the book. This repository provides
 a test of the code that is shown in the book, to verify that it is correct.
 
