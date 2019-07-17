@@ -3,7 +3,6 @@
 fun main() {
   val whole: Int = 11              // [1]
   val fractional: Double = 1.4     // [2]
-  // true or false:
   val trueOrFalse: Boolean = true  // [3]
   val words: String = "A value"    // [4]
   val character: Char = 'z'        // [5]

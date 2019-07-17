@@ -138,9 +138,14 @@ task AverageIncomeWithNull(type: JavaExec) {
     main = 'withnull.AverageIncomeWithNullKt'
 }
 
-task BMI(type: JavaExec) {
+task BMIEnglish(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'BMIKt'
+    main = 'BMIEnglishKt'
+}
+
+task BMIMetric(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BMIMetricKt'
 }
 
 task Backticks(type: JavaExec) {
@@ -1111,11 +1116,6 @@ task IntDivisionTruncates(type: JavaExec) {
 task IntRanges(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IntRangesKt'
-}
-
-task IntegerMath(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'IntegerMathKt'
 }
 
 task IntegerOverflow(type: JavaExec) {
@@ -2470,7 +2470,8 @@ task run (dependsOn: [
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
-    'BMI',
+    'BMIEnglish',
+    'BMIMetric',
     'Backticks',
     'Basic',
     'BasicFunctions',
@@ -2665,7 +2666,6 @@ task run (dependsOn: [
     'InputLines2',
     'IntDivisionTruncates',
     'IntRanges',
-    'IntegerMath',
     'IntegerOverflow',
     'InterestingSessions',
     'InterfaceCollision',

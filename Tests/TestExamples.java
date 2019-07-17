@@ -1523,8 +1523,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBMI() {
-    testExample("Examples/NumberTypes/BMI.kt", BMIKt::main);
+  public void testBMIEnglish() {
+    testExample("Examples/NumberTypes/BMIEnglish.kt", BMIEnglishKt::main);
+  }
+
+  @Test
+  public void testBMIMetric() {
+    testExample("Examples/NumberTypes/BMIMetric.kt", BMIMetricKt::main);
   }
 
   @Test
@@ -1535,11 +1540,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testIntDivisionTruncates() {
     testExample("Examples/NumberTypes/IntDivisionTruncates.kt", IntDivisionTruncatesKt::main);
-  }
-
-  @Test
-  public void testIntegerMath() {
-    testExample("Examples/NumberTypes/IntegerMath.kt", IntegerMathKt::main);
   }
 
   @Test
