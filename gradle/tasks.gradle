@@ -218,21 +218,6 @@ task Booleans(type: JavaExec) {
     main = 'BooleansKt'
 }
 
-task Booleans1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'Booleans1Kt'
-}
-
-task Booleans2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'Booleans2Kt'
-}
-
-task Booleans3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'Booleans3Kt'
-}
-
 task Boxes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BoxesKt'
@@ -326,6 +311,11 @@ task ClassBodies(type: JavaExec) {
 task Closeable(type: JavaExec) {
     classpath kotlinClassPath
     main = 'resourcecleanup.CloseableKt'
+}
+
+task Closed(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ClosedKt'
 }
 
 task Closures(type: JavaExec) {
@@ -1638,6 +1628,16 @@ task OpOrderParens(type: JavaExec) {
     main = 'OpOrderParensKt'
 }
 
+task Open1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Open1Kt'
+}
+
+task Open2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Open2Kt'
+}
+
 task OperationsOnSets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'OperationsOnSetsKt'
@@ -2486,9 +2486,6 @@ task run (dependsOn: [
     'BmiWhen',
     'BookExtensions',
     'Booleans',
-    'Booleans1',
-    'Booleans2',
-    'Booleans3',
     'Boxes',
     'BuildString',
     'BuildStringAndThis',
@@ -2508,6 +2505,7 @@ task run (dependsOn: [
     'CheckingOptions',
     'ClassBodies',
     'Closeable',
+    'Closed',
     'Closures',
     'Closures2',
     'Closures3',
@@ -2770,6 +2768,8 @@ task run (dependsOn: [
     'OneOrTheOther',
     'OpOrder',
     'OpOrderParens',
+    'Open1',
+    'Open2',
     'OperationsOnSets',
     'OperatorPlus',
     'OtherConstructors',

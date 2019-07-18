@@ -43,23 +43,23 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBooleans1() {
-    testExample("Examples/Booleans/Booleans1.kt", Booleans1Kt::main);
-  }
-
-  @Test
-  public void testBooleans2() {
-    testExample("Examples/Booleans/Booleans2.kt", Booleans2Kt::main);
-  }
-
-  @Test
-  public void testBooleans3() {
-    testExample("Examples/Booleans/Booleans3.kt", Booleans3Kt::main);
+  public void testClosed() {
+    testExample("Examples/Booleans/Closed.kt", ClosedKt::main);
   }
 
   @Test
   public void testEvaluationOrder() {
     testExample("Examples/Booleans/EvaluationOrder.kt", EvaluationOrderKt::main);
+  }
+
+  @Test
+  public void testOpen1() {
+    testExample("Examples/Booleans/Open1.kt", Open1Kt::main);
+  }
+
+  @Test
+  public void testOpen2() {
+    testExample("Examples/Booleans/Open2.kt", Open2Kt::main);
   }
 
   @Test

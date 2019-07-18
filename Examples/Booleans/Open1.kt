@@ -1,17 +1,18 @@
-// Booleans/Booleans1.kt
+// Booleans/Open1.kt
 
-fun main() {
-  val hour = 6
+fun isOpen1(hour: Int) {
   val open = 9
   val closed = 20
   println("Operating hours: $open - $closed")
-  val isOpen =
+  val status =
     if (hour >= open && hour <= closed) // [1]
       true
     else
       false
-  println("Open: $isOpen")
+  println("Open: $status")
 }
+
+fun main() = isOpen1(6)
 /* Output:
 Operating hours: 9 - 20
 Open: false
