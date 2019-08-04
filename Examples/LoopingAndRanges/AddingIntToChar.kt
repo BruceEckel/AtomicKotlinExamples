@@ -1,4 +1,4 @@
-// ForAndRanges/AddingIntToChar.kt
+// LoopingAndRanges/AddingIntToChar.kt
 
 fun main() {
   val ch: Char = 'a'

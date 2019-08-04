@@ -1,4 +1,4 @@
-// ForAndRanges/ForWithCharRange.kt
+// LoopingAndRanges/ForWithCharRange.kt
 
 fun main() {
   for (c in 'a'..'z')

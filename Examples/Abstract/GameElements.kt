@@ -6,7 +6,7 @@ interface Position
 
 interface GameElement {
   val symbol: Char
-  val mobile: Boolean
+  val sharesCell: Boolean
   fun interact(
     maze: Maze,
     sameCellElements: Set<GameElement>
@@ -14,7 +14,7 @@ interface GameElement {
 }
 
 abstract class StaticElement(
-  override val mobile: Boolean    // [1]
+  override val sharesCell: Boolean    // [1]
 ): GameElement {
   override fun interact(
     maze: Maze,
@@ -25,7 +25,7 @@ abstract class StaticElement(
 }
 
 class Wall:
-  StaticElement(mobile = false) { // [2]
+  StaticElement(sharesCell = false) { // [2]
   override val symbol: Char
-    get() = '#'                   // [3]
+    get() = '#'                       // [3]
 }

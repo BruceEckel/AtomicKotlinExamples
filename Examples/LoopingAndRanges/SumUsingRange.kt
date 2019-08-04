@@ -1,4 +1,4 @@
-// ForAndRanges/SumUsingRange.kt
+// LoopingAndRanges/SumUsingRange.kt
 
 fun main() {
   var sum = 0

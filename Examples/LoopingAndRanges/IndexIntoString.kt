@@ -1,4 +1,4 @@
-// ForAndRanges/IndexIntoString.kt
+// LoopingAndRanges/IndexIntoString.kt
 
 fun main() {
   val s = "abc"

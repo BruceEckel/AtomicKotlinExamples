@@ -1,4 +1,4 @@
-// ExpressionsStatements/ConfusingOperator.kt
+// ExpressionsStatements/Confusing.kt
 
 fun main() {
   var i = 1

@@ -203,11 +203,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBear() {
-    testExample("Examples/ComplexConstructors/Bear.kt", complexconstructors.BearKt::main);
-  }
-
-  @Test
   public void testGameMatrix() {
     testExample("Examples/ComplexConstructors/GameMatrix.kt", complexconstructors.GameMatrixKt::main);
   }
@@ -225,6 +220,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testArg() {
     testExample("Examples/Constructors/Arg.kt", ArgKt::main);
+  }
+
+  @Test
+  public void testBear() {
+    testExample("Examples/Constructors/Bear.kt", complexconstructors.BearKt::main);
   }
 
   @Test
@@ -478,8 +478,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testConfusingOperator() {
-    testExample("Examples/ExpressionsStatements/ConfusingOperator.kt", ConfusingOperatorKt::main);
+  public void testConfusing() {
+    testExample("Examples/ExpressionsStatements/Confusing.kt", ConfusingKt::main);
   }
 
   @Test
@@ -555,56 +555,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSumViaFold() {
     testExample("Examples/FoldingLists/SumViaFold.kt", SumViaFoldKt::main);
-  }
-
-  @Test
-  public void testAddingIntToChar() {
-    testExample("Examples/ForAndRanges/AddingIntToChar.kt", AddingIntToCharKt::main);
-  }
-
-  @Test
-  public void testDefiningRanges() {
-    testExample("Examples/ForAndRanges/DefiningRanges.kt", DefiningRangesKt::main);
-  }
-
-  @Test
-  public void testForWithCharRange() {
-    testExample("Examples/ForAndRanges/ForWithCharRange.kt", ForWithCharRangeKt::main);
-  }
-
-  @Test
-  public void testForWithRanges() {
-    testExample("Examples/ForAndRanges/ForWithRanges.kt", ForWithRangesKt::main);
-  }
-
-  @Test
-  public void testHasChar() {
-    testExample("Examples/ForAndRanges/HasChar.kt", HasCharKt::main);
-  }
-
-  @Test
-  public void testIndexIntoString() {
-    testExample("Examples/ForAndRanges/IndexIntoString.kt", IndexIntoStringKt::main);
-  }
-
-  @Test
-  public void testIterateOverString() {
-    testExample("Examples/ForAndRanges/IterateOverString.kt", IterateOverStringKt::main);
-  }
-
-  @Test
-  public void testRepeat() {
-    testExample("Examples/ForAndRanges/Repeat.kt", RepeatKt::main);
-  }
-
-  @Test
-  public void testRepeatThreeTimes() {
-    testExample("Examples/ForAndRanges/RepeatThreeTimes.kt", RepeatThreeTimesKt::main);
-  }
-
-  @Test
-  public void testSumUsingRange() {
-    testExample("Examples/ForAndRanges/SumUsingRange.kt", SumUsingRangeKt::main);
   }
 
   @Test
@@ -1275,6 +1225,56 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUseAtomicLog() {
     testExample("Examples/Logging/UseAtomicLog.kt", UseAtomicLogKt::main);
+  }
+
+  @Test
+  public void testAddingIntToChar() {
+    testExample("Examples/LoopingAndRanges/AddingIntToChar.kt", AddingIntToCharKt::main);
+  }
+
+  @Test
+  public void testDefiningRanges() {
+    testExample("Examples/LoopingAndRanges/DefiningRanges.kt", DefiningRangesKt::main);
+  }
+
+  @Test
+  public void testForWithCharRange() {
+    testExample("Examples/LoopingAndRanges/ForWithCharRange.kt", ForWithCharRangeKt::main);
+  }
+
+  @Test
+  public void testForWithRanges() {
+    testExample("Examples/LoopingAndRanges/ForWithRanges.kt", ForWithRangesKt::main);
+  }
+
+  @Test
+  public void testHasChar() {
+    testExample("Examples/LoopingAndRanges/HasChar.kt", HasCharKt::main);
+  }
+
+  @Test
+  public void testIndexIntoString() {
+    testExample("Examples/LoopingAndRanges/IndexIntoString.kt", IndexIntoStringKt::main);
+  }
+
+  @Test
+  public void testIterateOverString() {
+    testExample("Examples/LoopingAndRanges/IterateOverString.kt", IterateOverStringKt::main);
+  }
+
+  @Test
+  public void testRepeat() {
+    testExample("Examples/LoopingAndRanges/Repeat.kt", RepeatKt::main);
+  }
+
+  @Test
+  public void testRepeatThreeTimes() {
+    testExample("Examples/LoopingAndRanges/RepeatThreeTimes.kt", RepeatThreeTimesKt::main);
+  }
+
+  @Test
+  public void testSumUsingRange() {
+    testExample("Examples/LoopingAndRanges/SumUsingRange.kt", SumUsingRangeKt::main);
   }
 
   @Test

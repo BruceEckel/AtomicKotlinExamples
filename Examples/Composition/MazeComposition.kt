@@ -9,11 +9,13 @@ interface GameMatrix { /* ... */ }
 class GameMatrixImpl(
   width: Int, height: Int
 ): GameMatrix {
+
   private val cells = MutableList(height) {
     MutableList(width) {
       mutableSetOf<Element>()
     }
   }
+  
   // Functions implementing GameMatrix
 }
 
@@ -24,9 +26,12 @@ class MazeImpl(
   val width: Int,
   val height: Int
 ): Maze {
+
   private val matrix: GameMatrix =
     GameMatrixImpl(width, height)
-  private val elementToPosition =
+
+  private val positions =
     mutableMapOf<Element, Position>()
+
   // Functions implementing Maze ...
 }

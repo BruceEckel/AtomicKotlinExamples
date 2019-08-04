@@ -1,4 +1,4 @@
-// ForAndRanges/IterateOverString.kt
+// LoopingAndRanges/IterateOverString.kt
 
 fun main() {
   for (ch in "Jnskhm ")

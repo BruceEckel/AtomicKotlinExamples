@@ -11,13 +11,16 @@ class MazeImpl(
   val width: Int,
   val height: Int
 ): Maze {
+
   private val cells = MutableList(height) {
     MutableList(width) {
       mutableSetOf<Element>()
     }
   }
-  private val elementToPosition =
+
+  private val positions =
     mutableMapOf<Element, Position>()
+
   // Functions implementing Maze
   // now directly access 'cells'
 }

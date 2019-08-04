@@ -383,9 +383,9 @@ task Computation(type: JavaExec) {
     main = 'destructuring.ComputationKt'
 }
 
-task ConfusingOperator(type: JavaExec) {
+task Confusing(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ConfusingOperatorKt'
+    main = 'ConfusingKt'
 }
 
 task ConstructorReference(type: JavaExec) {
@@ -1395,7 +1395,7 @@ task Molecule(type: JavaExec) {
 
 task MoreWork(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'MoreWork'
+    main = 'casting.MoreWork'
 }
 
 task MultipleArgs(type: JavaExec) {
@@ -2519,7 +2519,7 @@ task run (dependsOn: [
     'CompareSlowFib',
     'CompareTo',
     'Computation',
-    'ConfusingOperator',
+    'Confusing',
     'ConstructorReference',
     'ContactMap',
     'Contravariance',

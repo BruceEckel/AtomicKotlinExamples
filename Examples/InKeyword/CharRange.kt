@@ -2,13 +2,13 @@
 
 fun isDigit(ch: Char) = ch in '0'..'9'
 
-fun isNotDigit(ch: Char) =
+fun notDigit(ch: Char) =
   ch !in '0'..'9'                // [1]
 
 fun main() {
   println(isDigit('a'))
   println(isDigit('5'))
-  println(isNotDigit('z'))
+  println(notDigit('z'))
 }
 /* Output:
 false

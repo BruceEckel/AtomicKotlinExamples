@@ -1,4 +1,5 @@
 // Casting/MoreWork.java
+package casting;
 
 public class MoreWork {
   static String jDogBark(Object a) {

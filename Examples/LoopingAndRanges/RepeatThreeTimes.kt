@@ -1,4 +1,4 @@
-// ForAndRanges/RepeatThreeTimes.kt
+// LoopingAndRanges/RepeatThreeTimes.kt
 
 fun main() {
   for (i in 1..3)

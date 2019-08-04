@@ -1,4 +1,4 @@
-// ForAndRanges/HasChar.kt
+// LoopingAndRanges/HasChar.kt
 
 fun hasChar(s: String, ch: Char): Boolean {
   for (c in s)
