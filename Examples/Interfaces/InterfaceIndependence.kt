@@ -4,25 +4,21 @@ package game
 interface Position
 
 interface Maze {
-
   fun all(): Set<GameElement>
 
   fun allAt(
     position: Position): Set<GameElement>
 
   fun position(
-    element: GameElement): Position
+    element: GameElement): Position?
 
-  fun move(
+  fun add(
     element: GameElement,
-    newPosition: Position)
+    position: Position)
 
-  fun destroy(element: GameElement)
+  fun remove(element: GameElement)
 }
 
 interface GameElement {
-  fun interact(
-    maze: Maze,
-    sameCellElements: Set<GameElement>
-  )
+  fun playTurn(maze: Maze)
 }

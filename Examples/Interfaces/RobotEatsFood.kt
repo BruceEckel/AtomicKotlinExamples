@@ -3,24 +3,22 @@ package game
 
 class Robot: GameElement {
   private var eatenFoodItems: Int = 0
-  override fun interact(
-    maze: Maze,
-    sameCellElements: Set<GameElement>
-  ) {
-    sameCellElements
+
+  override fun playTurn(maze: Maze) {
+    val position = maze.position(this) 
+        ?: return
+    val cellElements = maze.allAt(position)
+    cellElements
       .filterIsInstance<Food>()
       .forEach { food ->
         eatenFoodItems++
-        maze.destroy(food)
+        maze.remove(food)
       }
   }
 }
 
 class Food: GameElement {
-  override fun interact(
-    maze: Maze,
-    sameCellElements: Set<GameElement>
-  ) {
+  override fun playTurn(maze: Maze) {
     // Do nothing
   }
 }
