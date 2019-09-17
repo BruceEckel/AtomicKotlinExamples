@@ -1,9 +1,9 @@
 // Constructors/DisplayAlienSpecies.kt
 
 fun main() {
-  val alien =
-    AlienSpecies("Narduarvian", 2, 2, 4)
-  println(alien)
+  val krombopulosMichael =
+    AlienSpecies("Gromflomite", 2, 2, 2)
+  println(krombopulosMichael)
 }
 /* Sample output:
 AlienSpecies@4d7e1886

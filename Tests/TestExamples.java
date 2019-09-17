@@ -3,8 +3,13 @@ import org.junit.Test;
 public class TestExamples extends AbstractTestExamples {
 
   @Test
-  public void testGadget() {
-    testExample("Examples/Abstract/Gadget.kt", GadgetKt::main);
+  public void testGameElementsHierarchy() {
+    testExample("Examples/Abstract/GameElementsHierarchy.kt", abstractclasses.GameElementsHierarchyKt::main);
+  }
+
+  @Test
+  public void testImplementations() {
+    testExample("Examples/Abstract/Implementations.kt", abstractclasses.ImplementationsKt::main);
   }
 
   @Test
@@ -13,8 +18,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testMobileElement() {
+    testExample("Examples/Abstract/MobileElement.kt", abstractclasses.MobileElementKt::main);
+  }
+
+  @Test
   public void testStateOfAClass() {
     testExample("Examples/Abstract/StateOfAClass.kt", abstractstate.StateOfAClassKt::main);
+  }
+
+  @Test
+  public void testWithPropertyAccessor() {
+    testExample("Examples/Abstract/WithPropertyAccessor.kt", abstractclasses.WithPropertyAccessorKt::main);
   }
 
   @Test
@@ -94,27 +109,27 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testHumanAlice() {
-    testExample("Examples/Casting/HumanAlice.kt", casting.HumanAliceKt::main);
+    testExample("Examples/Casting/HumanAlice.kt", downcasting.HumanAliceKt::main);
   }
 
   @Test
   public void testSafe() {
-    testExample("Examples/Casting/Safe.kt", casting.SafeKt::main);
+    testExample("Examples/Casting/Safe.kt", downcasting.SafeKt::main);
   }
 
   @Test
   public void testSmartCast() {
-    testExample("Examples/Casting/SmartCast.kt", casting.SmartCastKt::main);
+    testExample("Examples/Casting/SmartCast.kt", downcasting.SmartCastKt::main);
   }
 
   @Test
   public void testUnsafe() {
-    testExample("Examples/Casting/Unsafe.kt", casting.UnsafeKt::main);
+    testExample("Examples/Casting/Unsafe.kt", downcasting.UnsafeKt::main);
   }
 
   @Test
-  public void testWhenAndCasting() {
-    testExample("Examples/Casting/WhenAndCasting.kt", casting.WhenAndCastingKt::main);
+  public void testWhenAndHierarchy() {
+    testExample("Examples/Casting/WhenAndHierarchy.kt", downcasting.WhenAndHierarchyKt::main);
   }
 
   @Test
@@ -203,13 +218,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGameMatrix() {
-    testExample("Examples/ComplexConstructors/GameMatrix.kt", complexconstructors.GameMatrixKt::main);
+  public void testInitSection() {
+    testExample("Examples/ComplexConstructors/InitSection.kt", complexconstructors.InitSectionKt::main);
   }
 
   @Test
-  public void testInitSection() {
-    testExample("Examples/ComplexConstructors/InitSection.kt", complexconstructors.InitSectionKt::main);
+  public void testMazeImpl() {
+    testExample("Examples/ComplexConstructors/MazeImpl.kt", complexconstructors.MazeImplKt::main);
   }
 
   @Test
@@ -233,13 +248,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGoodAlien() {
-    testExample("Examples/Constructors/GoodAlien.kt", GoodAlienKt::main);
+  public void testMultipleArgs() {
+    testExample("Examples/Constructors/MultipleArgs.kt", MultipleArgsKt::main);
   }
 
   @Test
-  public void testMultipleArgs() {
-    testExample("Examples/Constructors/MultipleArgs.kt", MultipleArgsKt::main);
+  public void testScientist() {
+    testExample("Examples/Constructors/Scientist.kt", ScientistKt::main);
   }
 
   @Test
@@ -333,6 +348,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDrinks() {
+    testExample("Examples/DesigningWithInheritance/Drinks.kt", DrinksKt::main);
+  }
+
+  @Test
+  public void testMutableMaze() {
+    testExample("Examples/DesigningWithInheritance/MutableMaze.kt", designingwithinheritance.MutableMazeKt::main);
+  }
+
+  @Test
+  public void testUsingLists() {
+    testExample("Examples/DesigningWithInheritance/UsingLists.kt", designingwithinheritance.UsingListsKt::main);
+  }
+
+  @Test
   public void testComputation() {
     testExample("Examples/Destructuring/Computation.kt", destructuring.ComputationKt::main);
   }
@@ -355,6 +385,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTuple() {
     testExample("Examples/Destructuring/Tuple.kt", destructuring.TupleKt::main);
+  }
+
+  @Test
+  public void testCheckType() {
+    testExample("Examples/Downcasting/CheckType.kt", downcasting.CheckTypeKt::main);
+  }
+
+  @Test
+  public void testFilterIsInstance() {
+    testExample("Examples/Downcasting/FilterIsInstance.kt", downcasting.FilterIsInstanceKt::main);
+  }
+
+  @Test
+  public void testGame() {
+    testExample("Examples/Downcasting/Game.kt", downcasting.GameKt::main);
   }
 
   @Test
@@ -894,12 +939,22 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testGreatApe() {
-    testExample("Examples/Inheritance/GreatApe.kt", inheritance.GreatApeKt::main);
+    testExample("Examples/Inheritance/GreatApe.kt", inheritance.ape1.GreatApeKt::main);
   }
 
   @Test
   public void testGreatApe2() {
-    testExample("Examples/Inheritance/GreatApe2.kt", GreatApe2Kt::main);
+    testExample("Examples/Inheritance/GreatApe2.kt", inheritance.ape2.GreatApe2Kt::main);
+  }
+
+  @Test
+  public void testGadgetExtensions() {
+    testExample("Examples/InheritanceAndExtensions/GadgetExtensions.kt", inheritanceandextensions2.GadgetExtensionsKt::main);
+  }
+
+  @Test
+  public void testGadgetMembers() {
+    testExample("Examples/InheritanceAndExtensions/GadgetMembers.kt", inheritanceandextensions1.GadgetMembersKt::main);
   }
 
   @Test
@@ -1738,18 +1793,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDessert() {
-    testExample("Examples/Polymorphism/Dessert.kt", polymorphism.DessertKt::main);
+  public void testGameImpl() {
+    testExample("Examples/Polymorphism/GameImpl.kt", polymorphism.GameImplKt::main);
   }
 
   @Test
-  public void testDessert2() {
-    testExample("Examples/Polymorphism/Dessert2.kt", polymorphism.Dessert2Kt::main);
+  public void testPolymorphicPlay() {
+    testExample("Examples/Polymorphism/PolymorphicPlay.kt", polymorphism.polymorphicplay.PolymorphicPlayKt::main);
   }
 
   @Test
-  public void testDowncasting() {
-    testExample("Examples/Polymorphism/Downcasting.kt", polymorphism.DowncastingKt::main);
+  public void testPolymorphicRobot() {
+    testExample("Examples/Polymorphism/PolymorphicRobot.kt", polymorphism.polymorphicrobot.PolymorphicRobotKt::main);
   }
 
   @Test
@@ -1944,7 +1999,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testRegularClasses() {
-    testExample("Examples/SealedClasses/RegularClasses.kt", RegularClassesKt::main);
+    testExample("Examples/SealedClasses/RegularClasses.kt", withoutsealedclasses.RegularClassesKt::main);
   }
 
   @Test
@@ -2230,6 +2285,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testBasic() {
     testExample("Examples/UnitTesting/Basic.kt", BasicKt::main);
+  }
+
+  @Test
+  public void testAssigningToVariable() {
+    testExample("Examples/Upcasting/AssigningToVariable.kt", upcasting.AssigningToVariableKt::main);
+  }
+
+  @Test
+  public void testPlaying() {
+    testExample("Examples/Upcasting/Playing.kt", upcasting.PlayingKt::main);
+  }
+
+  @Test
+  public void testTrimmedMembers() {
+    testExample("Examples/Upcasting/TrimmedMembers.kt", upcasting.TrimmedMembersKt::main);
   }
 
   @Test

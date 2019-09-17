@@ -1,7 +1,7 @@
 // CreatingClasses/Hamster.kt
 
 class Hamster {
-  fun speak() = "squeak! "
+  fun speak() = "Squeak! "
   fun exercise() =
     this.speak() + // Qualified with 'this'
     speak() +      // Without 'this'
@@ -13,5 +13,5 @@ fun main() {
   println(hamster.exercise())
 }
 /* Output:
-squeak! squeak! Running on wheel
+Squeak! Squeak! Running on wheel
 */

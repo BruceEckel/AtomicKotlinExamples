@@ -1,12 +1,12 @@
-// ComplexConstructors/GameMatrix.kt
+// ComplexConstructors/MazeImpl.kt
 package complexconstructors
 import atomictest.eq
 
 class GameElement(val symbol: Char)
 
-class GameMatrix(
-  val width: Int,
-  val height: Int,
+class MazeImpl(
+  width: Int,
+  height: Int,
   representation: String
 ) {
   val cells = MutableList(height) {     // [1]
@@ -31,13 +31,13 @@ class GameMatrix(
 }
 
 fun main() {
-  val matrix = GameMatrix(4, 3, """
+  val maze = MazeImpl(4, 3, """
     # ##
        #
     #.##
     """.trimIndent())
-  matrix.cells[1][0] = GameElement('R')
-  matrix eq """
+  maze.cells[1][0] = GameElement('R')
+  maze eq """
     # ##
     R  #
     #.##

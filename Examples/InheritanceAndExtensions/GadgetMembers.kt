@@ -1,4 +1,5 @@
-// Abstract/Gadget.kt
+// InheritanceAndExtensions/GadgetMembers.kt
+package inheritanceandextensions1
 import atomictest.eq
 
 interface Gadget {
@@ -8,8 +9,8 @@ interface Gadget {
   fun isOverpriced() =
     model.startsWith("i")
 
-  val isOutdated: Boolean
-    get() = productionYear < 2050
+  fun isOutdated() =
+    productionYear < 2050
 }
 
 class MyGadget(
@@ -20,6 +21,6 @@ class MyGadget(
 fun main() {
   val gadget: Gadget =
     MyGadget("my first phone", 2000)
-  gadget.isOutdated eq true
+  gadget.isOutdated() eq true
   gadget.isOverpriced() eq false
 }

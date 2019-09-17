@@ -1,5 +1,5 @@
 // Abstract/NoStateInInterfaces.kt
-package abstract
+package abstractclasses
 
 interface IntList {
   val name: String

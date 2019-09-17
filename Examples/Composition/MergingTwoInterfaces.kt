@@ -1,20 +1,19 @@
-// Composition/MazeComposition.kt
-package prefercomposition
+// Composition/MergingTwoInterfaces.kt
+package gamecomposition3
 
 interface Element
 interface Move
 data class Position(val x: Int, val y: Int)
 
-interface Maze {
+interface Game {
+  // maze members
   fun all(): Set<Element>
   fun allAt(position: Position): Set<Element>
   fun position(element: Element): Position?
   fun add(element: Element, position: Position)
   fun remove(element: Element)
-}
 
-interface Game {
-  val maze: Maze
+  // game members
   fun playMove(move: Move)
   fun playTurn()
   fun gameOver(): Boolean

@@ -1,15 +1,15 @@
 // Casting/SmartCast.kt
-package casting
+package downcasting
 import atomictest.eq
 
-class Dog {
-  fun bark() = "yip!"
+class Dog : LivingBeing {
+  fun bark() = "Yip!"
 }
 
-fun dogBark(a: Any) =
-  if (a is Dog) a.bark() else "not Dog"
+fun dogBark(smb: LivingBeing) =
+  if (smb is Dog) smb.bark() else "Not Dog"
 
 fun main() {
-  dogBark(Dog()) eq "yip!"
-  dogBark(42) eq "not Dog"
+  dogBark(Dog()) eq "Yip!"
+  dogBark(Alien()) eq "Not Dog"
 }

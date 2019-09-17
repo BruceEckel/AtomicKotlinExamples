@@ -1,10 +1,12 @@
 // SealedClasses/RegularClasses.kt
+package withoutsealedclasses
 import atomictest.eq
 
 open class Transport
 
-data class Train(val line: String):
-  Transport()
+data class Train(
+  val line: String
+) : Transport()
 
 data class Bus(
   val number: String,

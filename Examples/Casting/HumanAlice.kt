@@ -1,18 +1,24 @@
 // Casting/HumanAlice.kt
-package casting
+package downcasting
 import atomictest.eq
 
-interface Human
+interface LivingBeing
 
-class Alice: Human {
-  fun name() = "I'm Alice"
+class Human : LivingBeing {
+  fun greeting() = "I'm Human."
 }
 
+class Alien : LivingBeing
+
 fun main() {
-  val human: Human = Alice()  // [1]
-  if (human is Alice) {
+  val smb: LivingBeing = Human()  // [1]
+  if (smb is Human) {
     // Code in this block assumes
-    // human is an Alice object
-    human.name() eq "I'm Alice"
+    // smb is an Human object
+    smb.greeting() eq "I'm Human." // [2]
+  }
+  if (smb is Alien) {             // [3]
+    // code here won't be called
+    // when smb is Human
   }
 }

@@ -26,10 +26,10 @@ class GardenItem(
 }
 
 fun main() {
-  GardenItem("Snowman") eq "Plastic Snowman"
-  GardenItem("Elf") eq "Plastic Elf"
-  GardenItem("Gazing Ball", Metal) eq   // [5]
-    "Metal Gazing Ball"
-  GardenItem(Metal) eq
-    "Metal Strange Thing"
+  GardenItem("Elf").material eq Plastic
+  GardenItem("Snowman").name eq "Snowman"
+  GardenItem("Gazing Ball", Metal) eq    // [5]
+      "Metal Gazing Ball"
+  GardenItem(material = Ceramic) eq
+      "Ceramic Strange Thing"
 }

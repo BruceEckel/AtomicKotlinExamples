@@ -1,13 +1,14 @@
 // Casting/Unsafe.kt
-package casting
+package downcasting
 import atomictest.eq
 import atomictest.capture
 
-fun dogBarkUnsafe(a: Any) = (a as Dog).bark()
+fun dogBarkUnsafe(smb: LivingBeing) = 
+    (smb as Dog).bark()
 
 fun main() {
-  dogBarkUnsafe(Dog()) eq "yip!"
+  dogBarkUnsafe(Dog()) eq "Yip!"
   (capture {
-    dogBarkUnsafe(42)
+    dogBarkUnsafe(Human())
   }).startsWith("ClassCastException")
 }

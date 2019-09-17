@@ -4,8 +4,9 @@ import atomictest.eq
 
 sealed class Transport
 
-data class Train(val line: String):
-  Transport()
+data class Train(
+  val line: String
+) : Transport()
 
 data class Bus(
   val number: String,

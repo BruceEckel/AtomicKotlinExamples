@@ -12,14 +12,14 @@ class AlienSpecies(
 }
 
 fun main() {
-  val shim =
-    AlienSpecies("Shimshamian", 3, 2, 2)
-  val grung =
-    AlienSpecies("Grunglokian", 2, 4, 2)
-  println(shim.describe())
-  println(grung.describe())
+  val kevin =
+    AlienSpecies("Zigerion", 2, 2, 2)
+  val mortyJr =
+    AlienSpecies("Gazorpian", 2, 6, 2)
+  println(kevin.describe())
+  println(mortyJr.describe())
 }
 /* Output:
-Shimshamian with 3 eyes, 2 hands and 2 legs
-Grunglokian with 2 eyes, 4 hands and 2 legs
+Zigerion with 2 eyes, 2 hands and 2 legs
+Gazorpian with 2 eyes, 6 hands and 2 legs
 */

@@ -1,7 +1,7 @@
 // CreatingClasses/Cat.kt
 
 class Cat {
-  fun meow() = "mew!"
+  fun meow() = "mrrrow!"
 }
 
 fun main() {
@@ -11,5 +11,5 @@ fun main() {
   println(m1)
 }
 /* Output:
-mew!
+mrrrow!
 */

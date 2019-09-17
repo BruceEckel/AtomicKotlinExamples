@@ -1,5 +1,5 @@
 // Inheritance/GreatApe.kt
-package inheritance
+package inheritance.ape1
 import atomictest.eq
 
 open class GreatApe {

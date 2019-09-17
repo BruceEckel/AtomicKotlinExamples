@@ -1,4 +1,5 @@
 // Abstract/Redundant.kt
+package abstractclasses
 
 interface Redundant {
   abstract val x: Int

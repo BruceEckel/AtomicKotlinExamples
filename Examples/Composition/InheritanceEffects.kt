@@ -1,27 +1,29 @@
 // Composition/InheritanceEffects.kt
-package inheritanceeffects
+package gamecomposition2
 
 interface Element
+interface Move
 data class Position(val x: Int, val y: Int)
 
-interface GameMatrix {
-  fun add(e: Element, p: Position)
-  fun remove(e: Element, p: Position)
-  fun allAt(p: Position): Set<Element>
-}
-
-interface Maze: GameMatrix {
-  fun move(e: Element, p: Position)
-  fun destroy(e: Element)
-  fun position(e: Element): Position?
+interface Maze {
   fun all(): Set<Element>
-  override fun allAt(
-    p: Position): Set<Element>
+  fun allAt(position: Position): Set<Element>
+  fun position(element: Element): Position?
+  fun add(element: Element, position: Position)
+  fun remove(element: Element)
 }
 
-fun useMaze(maze: Maze) {
+interface Game: Maze {
+  fun playMove(move: Move)
+  fun playTurn()
+  fun gameOver(): Boolean
+  fun hasWon(): Boolean
+  fun score(): Int
+}
+
+fun playGame(game: Game) {
   val position = Position(0, 0)
-  maze.allAt(position).forEach {
-    maze.remove(it, position)    // [1]
+  game.allAt(position).forEach {
+    game.remove(it)        // [1]
   }
 }

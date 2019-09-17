@@ -1,8 +1,9 @@
-// Composition/MazeComposition.kt
-package prefercomposition
+// DesigningWithInheritance/Maze.kt
+package designingwithinheritance.maze
 
 interface Element
 interface Move
+class Robot : Element
 data class Position(val x: Int, val y: Int)
 
 interface Maze {
@@ -15,9 +16,12 @@ interface Maze {
 
 interface Game {
   val maze: Maze
-  fun playMove(move: Move)
-  fun playTurn()
-  fun gameOver(): Boolean
-  fun hasWon(): Boolean
-  fun score(): Int
+  // other members 
+}
+
+fun playGame(game: Game) {
+  val position = Position(0, 0)
+  game.maze.allAt(position).forEach {
+    game.maze.remove(it)    // [1]
+  }
 }
