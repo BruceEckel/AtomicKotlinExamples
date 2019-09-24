@@ -1,4 +1,4 @@
-// ImportsAndPackages/FullyQualify.kt
+// Packages/FullyQualify.kt
 
 fun main() {
   println(kotlin.math.PI)

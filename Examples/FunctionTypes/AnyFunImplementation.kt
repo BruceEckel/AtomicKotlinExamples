@@ -4,7 +4,7 @@ import atomictest.eq
 fun <T> List<T>.any(                    // [1]
   predicate: (T) -> Boolean             // [2]
 ): Boolean {
-  for (element in this) {
+  for(element in this) {
     if (predicate(element))             // [3]
       return true
   }

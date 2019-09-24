@@ -1,5 +1,5 @@
-// LibraryHelpers/ApplyVsAlso.kt
-package libraryhelpers
+// ScopeFunctions/ApplyVsAlso.kt
+package scopefunctions
 import atomictest.eq
 
 fun Window.dup() =

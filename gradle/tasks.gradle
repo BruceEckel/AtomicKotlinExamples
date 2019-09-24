@@ -3,7 +3,7 @@ configurations {
 }
 
 dependencies {
-    kotlinRuntime "org.jetbrains.kotlin:kotlin-stdlib:1.3.41"
+    kotlinRuntime "org.jetbrains.kotlin:kotlin-stdlib:1.3.50"
 }
 
 def kotlinClassPath = configurations.kotlinRuntime + sourceSets.main.runtimeClasspath
@@ -30,7 +30,7 @@ task AllOperators(type: JavaExec) {
 
 task Also(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'libraryhelpers.AlsoKt'
+    main = 'scopefunctions.AlsoKt'
 }
 
 task Amphibian(type: JavaExec) {
@@ -80,12 +80,12 @@ task AnyInstead(type: JavaExec) {
 
 task ApplyIfNotNull(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'libraryhelpers.ApplyIfNotNullKt'
+    main = 'scopefunctions.ApplyIfNotNullKt'
 }
 
 task ApplyVsAlso(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'libraryhelpers.ApplyVsAlsoKt'
+    main = 'scopefunctions.ApplyVsAlsoKt'
 }
 
 task Arg(type: JavaExec) {
@@ -203,11 +203,6 @@ task BiggestLong(type: JavaExec) {
     main = 'BiggestLongKt'
 }
 
-task Bird(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variance.BirdKt'
-}
-
 task BmiWhen(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BmiWhenKt'
@@ -305,7 +300,7 @@ task CheckType(type: JavaExec) {
 
 task CheckingArgument(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'libraryhelpers.CheckingArgumentKt'
+    main = 'scopefunctions.CheckingArgumentKt'
 }
 
 task CheckingOptions(type: JavaExec) {
@@ -373,16 +368,6 @@ task CompanionObject(type: JavaExec) {
     main = 'CompanionObjectKt'
 }
 
-task CompareDelayingTask(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'CompareDelayingTaskKt'
-}
-
-task CompareSlowFib(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'CompareSlowFibKt'
-}
-
 task CompareTo(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.CompareToKt'
@@ -408,11 +393,6 @@ task ContactMap(type: JavaExec) {
     main = 'ContactMapKt'
 }
 
-task Contravariance(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variance.ContravarianceKt'
-}
-
 task Conversion(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ConversionKt'
@@ -431,11 +411,6 @@ task CopyDataClass(type: JavaExec) {
 task Counter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'propertyaccessors.CounterKt'
-}
-
-task CovariantReturnTypes(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variance.CovariantReturnTypesKt'
 }
 
 task CreateString(type: JavaExec) {
@@ -623,11 +598,6 @@ task EnumImport(type: JavaExec) {
     main = 'EnumImportKt'
 }
 
-task ErasedTypeEquivalence(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ErasedTypeEquivalenceKt'
-}
-
 task Evaluation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EvaluationKt'
@@ -686,11 +656,6 @@ task Fibonacci(type: JavaExec) {
 task FibonacciProperty(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FibonacciPropertyKt'
-}
-
-task FibonacciSequence(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FibonacciSequenceKt'
 }
 
 task Filter(type: JavaExec) {
@@ -943,11 +908,6 @@ task Hello(type: JavaExec) {
     main = 'HelloKt'
 }
 
-task HelloCoroutines(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'HelloCoroutinesKt'
-}
-
 task HelloWorld(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HelloWorldKt'
@@ -1098,11 +1058,6 @@ task InfiniteRecursion(type: JavaExec) {
     main = 'recursion.InfiniteRecursionKt'
 }
 
-task Info(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'InfoKt'
-}
-
 task InitSection(type: JavaExec) {
     classpath kotlinClassPath
     main = 'complexconstructors.InitSectionKt'
@@ -1228,24 +1183,9 @@ task LambdaTypeInference(type: JavaExec) {
     main = 'LambdaTypeInferenceKt'
 }
 
-task LaunchMany(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'LaunchManyKt'
-}
-
-task LaunchManyTimed(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'LaunchManyTimedKt'
-}
-
 task LazyInt(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LazyIntKt'
-}
-
-task LazySequence(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'LazySequenceKt'
 }
 
 task LazySyntax(type: JavaExec) {
@@ -1255,7 +1195,7 @@ task LazySyntax(type: JavaExec) {
 
 task Let(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'libraryhelpers.LetKt'
+    main = 'scopefunctions.LetKt'
 }
 
 task Level(type: JavaExec) {
@@ -1413,6 +1353,11 @@ task ModelingMI(type: JavaExec) {
     main = 'ModelingMIKt'
 }
 
+task Module2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'module2.Module2Kt'
+}
+
 task Modulus(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ModulusKt'
@@ -1565,7 +1510,7 @@ task NullableParameter(type: JavaExec) {
 
 task NullableReceiver(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'libraryhelpers.NullableReceiverKt'
+    main = 'scopefunctions.NullableReceiverKt'
 }
 
 task NullableReturnType(type: JavaExec) {
@@ -1915,12 +1860,12 @@ task RequireNotNull(type: JavaExec) {
 
 task ResultOfApply(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'libraryhelpers.ResultOfApplyKt'
+    main = 'scopefunctions.ResultOfApplyKt'
 }
 
 task ResultOfWith(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'libraryhelpers.ResultOfWithKt'
+    main = 'scopefunctions.ResultOfWithKt'
 }
 
 task ReturnFromFun(type: JavaExec) {
@@ -1951,11 +1896,6 @@ task SafeCall(type: JavaExec) {
 task SafeOperation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SafeOperationKt'
-}
-
-task SameReturnTypes(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variance.SameReturnTypesKt'
 }
 
 task SayHello(type: JavaExec) {
@@ -2016,11 +1956,6 @@ task SingleArgRequire(type: JavaExec) {
 task SmartCast(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.SmartCastKt'
-}
-
-task Solid(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SolidKt'
 }
 
 task SortWith(type: JavaExec) {
@@ -2168,11 +2103,6 @@ task TakeOrDrop(type: JavaExec) {
     main = 'TakeOrDropKt'
 }
 
-task TeaPartyTexting(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'asyncandawait.TeaPartyTextingKt'
-}
-
 task Team(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TeamKt'
@@ -2276,11 +2206,6 @@ task TwoArgLambda(type: JavaExec) {
 task TwoFunctionsWithVarargs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TwoFunctionsWithVarargsKt'
-}
-
-task TypeOfT(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'generics.TypeOfTKt'
 }
 
 task Types(type: JavaExec) {
@@ -2548,7 +2473,6 @@ task run (dependsOn: [
     'BetterSuitcase',
     'BigFibonacci',
     'BiggestLong',
-    'Bird',
     'BmiWhen',
     'BookExtensions',
     'Booleans',
@@ -2582,19 +2506,15 @@ task run (dependsOn: [
     'ColorSet',
     'CompanionFactory',
     'CompanionObject',
-    'CompareDelayingTask',
-    'CompareSlowFib',
     'CompareTo',
     'Computation',
     'Confusing',
     'ConstructorReference',
     'ContactMap',
-    'Contravariance',
     'Conversion',
     'Cookie',
     'CopyDataClass',
     'Counter',
-    'CovariantReturnTypes',
     'CreateString',
     'CreateString2',
     'CreatingLists',
@@ -2632,7 +2552,6 @@ task run (dependsOn: [
     'ElvisOperator',
     'EmptyProgram',
     'EnumImport',
-    'ErasedTypeEquivalence',
     'Evaluation',
     'EvaluationOrder',
     'ExplicitCheck',
@@ -2645,7 +2564,6 @@ task run (dependsOn: [
     'FaultySuitcase',
     'Fibonacci',
     'FibonacciProperty',
-    'FibonacciSequence',
     'Filter',
     'FilterEven',
     'FilterIsInstance',
@@ -2696,7 +2614,6 @@ task run (dependsOn: [
     'HasChar',
     'HashCodeFailure',
     'Hello',
-    'HelloCoroutines',
     'HelloWorld',
     'HelperFunction',
     'HiddenArrayList',
@@ -2727,7 +2644,6 @@ task run (dependsOn: [
     'InferInt',
     'Inference',
     'InfiniteRecursion',
-    'Info',
     'InitSection',
     'InputLines1',
     'InputLines2',
@@ -2753,10 +2669,7 @@ task run (dependsOn: [
     'LambdaAndNamedArgs',
     'LambdaIt',
     'LambdaTypeInference',
-    'LaunchMany',
-    'LaunchManyTimed',
     'LazyInt',
-    'LazySequence',
     'LazySyntax',
     'Let',
     'Level',
@@ -2790,6 +2703,7 @@ task run (dependsOn: [
     'MixColors',
     'MobileElement',
     'ModelingMI',
+    'Module2',
     'Modulus',
     'Molecule',
     'MultipleArgs',
@@ -2898,7 +2812,6 @@ task run (dependsOn: [
     'Safe',
     'SafeCall',
     'SafeOperation',
-    'SameReturnTypes',
     'SayHello',
     'Scientist',
     'SealedClasses',
@@ -2911,7 +2824,6 @@ task run (dependsOn: [
     'SimpleOperation',
     'SingleArgRequire',
     'SmartCast',
-    'Solid',
     'SortWith',
     'Speakers',
     'SpreadOperator',
@@ -2941,7 +2853,6 @@ task run (dependsOn: [
     'TDDWorks',
     'TailRecursiveSum',
     'TakeOrDrop',
-    'TeaPartyTexting',
     'Team',
     'TeamWithTraditions',
     'Temperature',
@@ -2963,7 +2874,6 @@ task run (dependsOn: [
     'Tuple',
     'TwoArgLambda',
     'TwoFunctionsWithVarargs',
-    'TypeOfT',
     'Types',
     'Underscore',
     'Unexpected',

@@ -10,7 +10,7 @@ interface Maze {
 }
 
 interface MutableMaze : Maze {
-  // Modification Operations 
+  // Modification Operations
   fun add(element: GameElement, position: Position)
   fun remove(element: GameElement)
 }
@@ -18,12 +18,12 @@ interface MutableMaze : Maze {
 // Dummy implementation:
 class MazeImpl: MutableMaze {
   override fun all(): Set<GameElement> {
-    return setOf() 
+    return setOf()
   }
   override fun allAt(
       position: Position
   ): Set<GameElement> {
-    return setOf() 
+    return setOf()
   }
   override fun add(
       element: GameElement,
@@ -48,14 +48,14 @@ class Robot : GameElement {
 
 interface Game {
   val maze: Maze
-  fun playTurn() 
+  fun playTurn()
   // other members
 }
 
 class GameImpl: Game {
-  override val maze: MutableMaze = MazeImpl() 
+  override val maze: MutableMaze = MazeImpl()
   override fun playTurn() {
-    // We can access modification members: 
+    // We can access modification members:
     maze.add(Robot(), Position(0, 0))   // [1]
   }
 }

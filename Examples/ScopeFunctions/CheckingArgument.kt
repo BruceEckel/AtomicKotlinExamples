@@ -1,5 +1,5 @@
-// LibraryHelpers/CheckingArgument.kt
-package libraryhelpers
+// ScopeFunctions/CheckingArgument.kt
+package scopefunctions
 
 fun showGreetingWindow(
   windowById: Map<String, Window>

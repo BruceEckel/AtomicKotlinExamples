@@ -7,7 +7,7 @@ testing early in the learning curve.
 package atomictest
 import kotlin.math.abs
 
-private val errorTag = "[Error]:"
+private val errorTag = "[Error] "
 private val expectedExceptionMessage =
   "$errorTag Expected an exception"
 

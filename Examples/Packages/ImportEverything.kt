@@ -1,4 +1,4 @@
-// ImportsAndPackages/ImportEverything.kt
+// Packages/ImportEverything.kt
 import kotlin.math.*
 
 fun main() {

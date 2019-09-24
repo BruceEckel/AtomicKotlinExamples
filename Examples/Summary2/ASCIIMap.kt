@@ -14,10 +14,10 @@ fun main() {
   println(ascii["B"])                 // [1]
   println(ascii.keys)
   println(ascii.values)
-  for (entry in ascii)                // [2]
+  for(entry in ascii)                 // [2]
     print("${entry.key}:${entry.value},")
   println()
-  for ((key, value) in ascii)         // [3]
+  for((key, value) in ascii)          // [3]
     print("$key:$value,")
   println()
   val mutable = ascii.toMutableMap()  // [4]

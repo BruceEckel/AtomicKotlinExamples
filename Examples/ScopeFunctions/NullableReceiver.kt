@@ -1,7 +1,7 @@
-// LibraryHelpers/NullableReceiver.kt
-package libraryhelpers
+// ScopeFunctions/NullableReceiver.kt
+package scopefunctions
 
-data class Window(  // Makes it displayable
+data class Window(       // [1]
   val id: String = "none",
   var x: Int = 0,   // Horizontal location
   var y: Int = 0,   // Vertical Location
@@ -10,8 +10,8 @@ data class Window(  // Makes it displayable
 )
 
 fun adjustWindowIfNotNull(window: Window?) {
-  window?.run {          // [1]
-    this.x = 10          // [2]
+  window?.run {          // [2]
+    this.x = 10          // [3]
     y = 10
     w *= 2
     h *= 2

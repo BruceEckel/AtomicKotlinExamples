@@ -16,7 +16,7 @@ interface Maze {
 
 interface Game {
   val maze: Maze
-  // other members 
+  // other members
 }
 
 fun playGame(game: Game) {

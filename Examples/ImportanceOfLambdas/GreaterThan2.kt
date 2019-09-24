@@ -3,7 +3,7 @@ import atomictest.eq
 
 fun greaterThan2(nums: List<Int>): List<Int> {
   val result = mutableListOf<Int>()
-  for (i in nums)
+  for(i in nums)
     if (i > 2)         // [1]
       result += i
   return result

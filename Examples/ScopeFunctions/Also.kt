@@ -1,5 +1,5 @@
-// LibraryHelpers/Also.kt
-package libraryhelpers
+// ScopeFunctions/Also.kt
+package scopefunctions
 
 fun showAdjustedWindow(window: Window) {
   window.apply {

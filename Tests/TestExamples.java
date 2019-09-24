@@ -38,11 +38,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTeaPartyTexting() {
-    testExample("Examples/asyncandawait/TeaPartyTexting.kt", asyncandawait.TeaPartyTextingKt::main);
-  }
-
-  @Test
   public void testGreatApe3() {
     testExample("Examples/BaseClassInit/GreatApe3.kt", baseclassinit.GreatApe3Kt::main);
   }
@@ -263,41 +258,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCompareDelayingTask() {
-    testExample("Examples/Coroutines/CompareDelayingTask.kt", CompareDelayingTaskKt::main);
-  }
-
-  @Test
-  public void testCompareSlowFib() {
-    testExample("Examples/Coroutines/CompareSlowFib.kt", CompareSlowFibKt::main);
-  }
-
-  @Test
-  public void testFibonacciSequence() {
-    testExample("Examples/Coroutines/FibonacciSequence.kt", FibonacciSequenceKt::main);
-  }
-
-  @Test
-  public void testHelloCoroutines() {
-    testExample("Examples/Coroutines/HelloCoroutines.kt", HelloCoroutinesKt::main);
-  }
-
-  @Test
-  public void testLaunchMany() {
-    testExample("Examples/Coroutines/LaunchMany.kt", LaunchManyKt::main);
-  }
-
-  @Test
-  public void testLaunchManyTimed() {
-    testExample("Examples/Coroutines/LaunchManyTimed.kt", LaunchManyTimedKt::main);
-  }
-
-  @Test
-  public void testLazySequence() {
-    testExample("Examples/Coroutines/LazySequence.kt", LazySequenceKt::main);
-  }
-
-  @Test
   public void testAnimals() {
     testExample("Examples/CreatingClasses/Animals.kt", AnimalsKt::main);
   }
@@ -430,16 +390,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testRecursiveEnumImport() {
     testExample("Examples/Enumerations/RecursiveEnumImport.kt", enumerations.RecursiveEnumImportKt::main);
-  }
-
-  @Test
-  public void testErasedTypeEquivalence() {
-    testExample("Examples/Erasure/ErasedTypeEquivalence.kt", ErasedTypeEquivalenceKt::main);
-  }
-
-  @Test
-  public void testTypeOfT() {
-    testExample("Examples/Erasure/TypeOfT.kt", generics.TypeOfTKt::main);
   }
 
   @Test
@@ -913,31 +863,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testFullyQualify() {
-    testExample("Examples/ImportsAndPackages/FullyQualify.kt", FullyQualifyKt::main);
-  }
-
-  @Test
-  public void testImportClass() {
-    testExample("Examples/ImportsAndPackages/ImportClass.kt", ImportClassKt::main);
-  }
-
-  @Test
-  public void testImportEverything() {
-    testExample("Examples/ImportsAndPackages/ImportEverything.kt", ImportEverythingKt::main);
-  }
-
-  @Test
-  public void testImportNameChange() {
-    testExample("Examples/ImportsAndPackages/ImportNameChange.kt", ImportNameChangeKt::main);
-  }
-
-  @Test
-  public void testImportPythagorean() {
-    testExample("Examples/ImportsAndPackages/ImportPythagorean.kt", ImportPythagoreanKt::main);
-  }
-
-  @Test
   public void testGreatApe() {
     testExample("Examples/Inheritance/GreatApe.kt", inheritance.ape1.GreatApeKt::main);
   }
@@ -1140,46 +1065,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testPropertyOptions() {
     testExample("Examples/LazyInitialization/PropertyOptions.kt", lazyinitialization.PropertyOptionsKt::main);
-  }
-
-  @Test
-  public void testAlso() {
-    testExample("Examples/LibraryHelpers/Also.kt", libraryhelpers.AlsoKt::main);
-  }
-
-  @Test
-  public void testApplyIfNotNull() {
-    testExample("Examples/LibraryHelpers/ApplyIfNotNull.kt", libraryhelpers.ApplyIfNotNullKt::main);
-  }
-
-  @Test
-  public void testApplyVsAlso() {
-    testExample("Examples/LibraryHelpers/ApplyVsAlso.kt", libraryhelpers.ApplyVsAlsoKt::main);
-  }
-
-  @Test
-  public void testCheckingArgument() {
-    testExample("Examples/LibraryHelpers/CheckingArgument.kt", libraryhelpers.CheckingArgumentKt::main);
-  }
-
-  @Test
-  public void testLet() {
-    testExample("Examples/LibraryHelpers/Let.kt", libraryhelpers.LetKt::main);
-  }
-
-  @Test
-  public void testNullableReceiver() {
-    testExample("Examples/LibraryHelpers/NullableReceiver.kt", libraryhelpers.NullableReceiverKt::main);
-  }
-
-  @Test
-  public void testResultOfApply() {
-    testExample("Examples/LibraryHelpers/ResultOfApply.kt", libraryhelpers.ResultOfApplyKt::main);
-  }
-
-  @Test
-  public void testResultOfWith() {
-    testExample("Examples/LibraryHelpers/ResultOfWith.kt", libraryhelpers.ResultOfWithKt::main);
   }
 
   @Test
@@ -1783,6 +1668,36 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testFullyQualify() {
+    testExample("Examples/Packages/FullyQualify.kt", FullyQualifyKt::main);
+  }
+
+  @Test
+  public void testImportClass() {
+    testExample("Examples/Packages/ImportClass.kt", ImportClassKt::main);
+  }
+
+  @Test
+  public void testImportEverything() {
+    testExample("Examples/Packages/ImportEverything.kt", ImportEverythingKt::main);
+  }
+
+  @Test
+  public void testImportNameChange() {
+    testExample("Examples/Packages/ImportNameChange.kt", ImportNameChangeKt::main);
+  }
+
+  @Test
+  public void testImportPythagorean() {
+    testExample("Examples/Packages/ImportPythagorean.kt", ImportPythagoreanKt::main);
+  }
+
+  @Test
+  public void testModule2() {
+    testExample("Examples/Packages/Module2.kt", module2.Module2Kt::main);
+  }
+
+  @Test
   public void testNPEOnPlatformType() {
     testExample("Examples/PlatformTypes/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
   }
@@ -1918,16 +1833,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testInfo() {
-    testExample("Examples/Reflection/Info.kt", InfoKt::main);
-  }
-
-  @Test
-  public void testSolid() {
-    testExample("Examples/Reflection/Solid.kt", SolidKt::main);
-  }
-
-  @Test
   public void testAssignmentOperators() {
     testExample("Examples/RepetitionWithWhile/AssignmentOperators.kt", AssignmentOperatorsKt::main);
   }
@@ -1995,6 +1900,46 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSafeOperation() {
     testExample("Examples/SafeCallsAndElvis/SafeOperation.kt", SafeOperationKt::main);
+  }
+
+  @Test
+  public void testAlso() {
+    testExample("Examples/ScopeFunctions/Also.kt", scopefunctions.AlsoKt::main);
+  }
+
+  @Test
+  public void testApplyIfNotNull() {
+    testExample("Examples/ScopeFunctions/ApplyIfNotNull.kt", scopefunctions.ApplyIfNotNullKt::main);
+  }
+
+  @Test
+  public void testApplyVsAlso() {
+    testExample("Examples/ScopeFunctions/ApplyVsAlso.kt", scopefunctions.ApplyVsAlsoKt::main);
+  }
+
+  @Test
+  public void testCheckingArgument() {
+    testExample("Examples/ScopeFunctions/CheckingArgument.kt", scopefunctions.CheckingArgumentKt::main);
+  }
+
+  @Test
+  public void testLet() {
+    testExample("Examples/ScopeFunctions/Let.kt", scopefunctions.LetKt::main);
+  }
+
+  @Test
+  public void testNullableReceiver() {
+    testExample("Examples/ScopeFunctions/NullableReceiver.kt", scopefunctions.NullableReceiverKt::main);
+  }
+
+  @Test
+  public void testResultOfApply() {
+    testExample("Examples/ScopeFunctions/ResultOfApply.kt", scopefunctions.ResultOfApplyKt::main);
+  }
+
+  @Test
+  public void testResultOfWith() {
+    testExample("Examples/ScopeFunctions/ResultOfWith.kt", scopefunctions.ResultOfWithKt::main);
   }
 
   @Test
@@ -2395,26 +2340,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testVariableArgList() {
     testExample("Examples/Varargs/VariableArgList.kt", VariableArgListKt::main);
-  }
-
-  @Test
-  public void testBird() {
-    testExample("Examples/Variance/Bird.kt", variance.BirdKt::main);
-  }
-
-  @Test
-  public void testContravariance() {
-    testExample("Examples/Variance/Contravariance.kt", variance.ContravarianceKt::main);
-  }
-
-  @Test
-  public void testCovariantReturnTypes() {
-    testExample("Examples/Variance/CovariantReturnTypes.kt", variance.CovariantReturnTypesKt::main);
-  }
-
-  @Test
-  public void testSameReturnTypes() {
-    testExample("Examples/Variance/SameReturnTypes.kt", variance.SameReturnTypesKt::main);
   }
 
   @Test

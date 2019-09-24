@@ -67,7 +67,7 @@ class GameImpl: Game {
       element.playTurn()
     }
   }
- 
+
   override fun playMove(move: Move) {
     turns++
     val mobileElements = maze.all()
@@ -75,7 +75,7 @@ class GameImpl: Game {
     mobileElements.forEach {
       val position = it.makeMove(move)   // [6]
       // update element position
-    } 
+    }
   }
 }
 

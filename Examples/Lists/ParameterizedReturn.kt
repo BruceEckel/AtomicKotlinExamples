@@ -2,12 +2,12 @@
 import atomictest.eq
 
 // Return type is inferred:
-fun inferred(c1: Char, c2: Char) =
-  listOf(c1, c2)
+fun inferred(p: Char, q: Char) =
+  listOf(p, q)
 
 // Explicit return type:
-fun explicit(c1: Char, c2: Char): List<Char> =
-  listOf(c1, c2)
+fun explicit(p: Char, q: Char): List<Char> =
+  listOf(p, q)
 
 fun main() {
   inferred('a', 'b') eq "[a, b]"

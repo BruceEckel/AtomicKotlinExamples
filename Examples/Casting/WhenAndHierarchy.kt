@@ -12,7 +12,7 @@ fun react(smb: LivingBeing) =
   }
 
 fun main() {
-  react(Human()) eq 
+  react(Human()) eq
     "I'm Human. It's only human..."
   react(Dog()) eq "Yip! Hi, dog!"
   react(Alien()) eq "Alien!!!"

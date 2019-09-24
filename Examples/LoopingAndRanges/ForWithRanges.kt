@@ -1,7 +1,7 @@
 // LoopingAndRanges/ForWithRanges.kt
 
 fun showRange(r: IntProgression) {
-  for (i in r)
+  for(i in r)
     print("$i ")
   print("    // $r")
   println()

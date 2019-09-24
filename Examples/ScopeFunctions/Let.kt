@@ -1,5 +1,5 @@
-// LibraryHelpers/Let.kt
-package libraryhelpers
+// ScopeFunctions/Let.kt
+package scopefunctions
 
 fun showGreetingWindow2(
   windowById: Map<String, Window>

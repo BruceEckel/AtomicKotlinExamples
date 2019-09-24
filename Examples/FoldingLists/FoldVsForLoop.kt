@@ -14,7 +14,7 @@ fun main() {
   s eq 1111
 
   var accumulator = initial
-  for (i in list) {
+  for(i in list) {
     accumulator = operation(accumulator, i)
   }
   accumulator eq 1111

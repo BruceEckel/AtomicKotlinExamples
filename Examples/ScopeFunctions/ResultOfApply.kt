@@ -1,5 +1,5 @@
-// LibraryHelpers/ResultOfApply.kt
-package libraryhelpers
+// ScopeFunctions/ResultOfApply.kt
+package scopefunctions
 import atomictest.eq
 
 fun main() {

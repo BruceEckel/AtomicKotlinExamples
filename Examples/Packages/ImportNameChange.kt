@@ -1,4 +1,4 @@
-// ImportsAndPackages/ImportNameChange.kt
+// Packages/ImportNameChange.kt
 import kotlin.math.PI as circleRatio
 import kotlin.math.cos as cosine
 

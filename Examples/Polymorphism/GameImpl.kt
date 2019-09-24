@@ -23,7 +23,7 @@ class Game(val maze: Maze) {
 fun main() {
   val maze = MazeImpl(setOf(Robot(),
       Bomb(), Wall()))
-  Game(maze).play()  
+  Game(maze).play()
 }
 /* Output:
 Robot eats some food

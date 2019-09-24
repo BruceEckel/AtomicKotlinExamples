@@ -1,5 +1,5 @@
-// LibraryHelpers/ApplyIfNotNull.kt
-package libraryhelpers
+// ScopeFunctions/ApplyIfNotNull.kt
+package scopefunctions
 import atomictest.eq
 
 fun showMainWindow(

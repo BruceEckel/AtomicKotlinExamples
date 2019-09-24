@@ -1,4 +1,4 @@
-// ImportsAndPackages/ImportClass.kt
+// Packages/ImportClass.kt
 import kotlin.math.PI
 import kotlin.math.cos  // Cosine
 

@@ -1,5 +1,5 @@
 // Polymorphism/PolymorphicPlay.kt
-package polymorphism.polymorphicplay 
+package polymorphism.polymorphicplay
 import upcasting.*
 
 fun play(gameElement: GameElement) {
@@ -9,7 +9,7 @@ fun play(gameElement: GameElement) {
 
 fun main() {
   val robot = Robot()
-  val wall = Wall() 
+  val wall = Wall()
   val bomb = Bomb()
   play(robot)
   play(wall)

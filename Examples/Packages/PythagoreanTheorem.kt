@@ -1,4 +1,4 @@
-// ImportsAndPackages/PythagoreanTheorem.kt
+// Packages/PythagoreanTheorem.kt
 package pythagorean
 import kotlin.math.sqrt
 

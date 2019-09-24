@@ -3,7 +3,7 @@ package downcasting
 import atomictest.eq
 import atomictest.capture
 
-fun dogBarkUnsafe(smb: LivingBeing) = 
+fun dogBarkUnsafe(smb: LivingBeing) =
     (smb as Dog).bark()
 
 fun main() {

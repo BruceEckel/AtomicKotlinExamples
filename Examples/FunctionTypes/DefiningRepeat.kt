@@ -5,7 +5,7 @@ fun repeat(
   times: Int,
   action: (Int) -> Unit           // [1]
 ) {
-  for (index in 0 until times)
+  for(index in 0 until times)
     action(index)                 // [2]
 }
 

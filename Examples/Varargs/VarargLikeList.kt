@@ -1,6 +1,6 @@
 // Varargs/VarargLikeList.kt
 
-fun checkOperations(vararg ints: Int) {
+fun evaluate(vararg ints: Int) {
   println("Size: ${ints.size}")
   println("Sum: ${ints.sum()}")
   println("Min: ${ints.min()}")
@@ -9,7 +9,7 @@ fun checkOperations(vararg ints: Int) {
 }
 
 fun main() {
-  checkOperations(10, -3, 8, 1, 9)
+  evaluate(10, -3, 8, 1, 9)
 }
 /* Output:
 Size: 5

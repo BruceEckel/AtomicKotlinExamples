@@ -5,7 +5,7 @@ class Robot: GameElement {
   private var eatenFoodItems: Int = 0
 
   override fun playTurn(maze: Maze) {
-    val position = maze.position(this) 
+    val position = maze.position(this)
         ?: return
     val cellElements = maze.allAt(position)
     cellElements
