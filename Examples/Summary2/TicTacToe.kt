@@ -7,9 +7,9 @@ class Cell {
     if (entry == ' ' &&
       (e == 'X' || e == 'O')) {
       entry = e
-      "successful move"
+      "Successful move"
     } else
-      "invalid move"
+      "Invalid move"
 }
 
 class Grid {
@@ -20,14 +20,14 @@ class Grid {
   )
   fun play(e: Char, x: Int, y: Int): String =
     if (x !in 0..2 || y !in 0..2)
-      "invalid move"
+      "Invalid move"
     else
       cells[x][y].setValue(e)       // [3]
 }
 
 fun main() {
   val grid = Grid()
-  grid.play('X', 1, 1) eq "successful move"
-  grid.play('X', 1, 1) eq "invalid move"
-  grid.play('O', 1, 3) eq "invalid move"
+  grid.play('X', 1, 1) eq "Successful move"
+  grid.play('X', 1, 1) eq "Invalid move"
+  grid.play('O', 1, 3) eq "Invalid move"
 }

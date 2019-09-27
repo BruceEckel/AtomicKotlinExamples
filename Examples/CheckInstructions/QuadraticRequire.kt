@@ -1,4 +1,5 @@
-// Summary2/Quadratic.kt
+// CheckInstructions/QuadraticRequire.kt
+package checkinstructions
 import kotlin.math.sqrt
 import atomictest.*
 
@@ -12,13 +13,11 @@ fun quadraticZeroes(
   b: Double,
   c: Double
 ): Roots {
-  if (a == 0.0)
-    throw IllegalArgumentException(
-      "a is zero")
+  require(a != 0.0) { "a is zero" }
   val underRadical = b * b - 4 * a * c
-  if (underRadical < 0)
-    throw IllegalArgumentException(
-      "Negative underRadical: $underRadical")
+  require(underRadical >= 0) {
+    "Negative underRadical: $underRadical"
+  }
   val squareRoot = sqrt(underRadical)
   val root1 = (-b - squareRoot) / 2 * a
   val root2 = (-b + squareRoot) / 2 * a

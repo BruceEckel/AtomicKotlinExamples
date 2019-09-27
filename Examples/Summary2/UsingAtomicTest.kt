@@ -8,3 +8,8 @@ fun main() {
   pie eq "A round dessert"
   pi neq pie
 }
+/* Output:
+3.14
+A round dessert
+3.14
+*/

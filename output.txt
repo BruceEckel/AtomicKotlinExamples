@@ -1,0 +1,2130 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :ASCIIMap
+{A=65, B=66, C=67, D=68, I=73, J=74, K=75}
+66
+[A, B, C, D, I, J, K]
+[65, 66, 67, 68, 73, 74, 75]
+A:65,B:66,C:67,D:68,I:73,J:74,K:75,
+A:65,B:66,C:67,D:68,I:73,J:74,K:75,
+{A=65, B=66, C=67, D=68, J=74, K=75}
+{A=65, B=66, C=67, D=68, J=74, K=75, Z=90}
+{A=100}
+
+> Task :AVarIsMutable
+6
+
+> Task :AddingIntToChar
+z
+true
+
+> Task :AllOperators
+
+> Task :Also
+Window(id=none, x=0, y=0, w=200, h=100)
+Showing none window...
+Window(id=none, x=7, y=9, w=600, h=400)
+
+> Task :Amphibian
+> Task :AnUnchangingVar
+> Task :AnalyzingInput
+
+> Task :Animals
+Giraffe@5caf905d
+Giraffe@27716f4
+Hippo@8efb846
+Bear@2a84aee7
+
+> Task :AnnotatedJava
+javacode.JTool
+javacode.JTool?
+javacode.JTool?
+
+> Task :AnotherComputer
+IllegalStateException: No answer
+
+> Task :AnyFromListOfStar
+1
+
+> Task :AnyFunImplementation
+true
+true
+true
+true
+
+> Task :AnyInstead
+Ruff!
+
+> Task :ApplyIfNotNull
+Showing main window...
+Window(id=main, x=10, y=10, w=400, h=200)
+10
+0
+
+> Task :ApplyVsAlso
+dup of first
+500
+100
+dup of dup of first
+500
+100
+
+> Task :Arg
+Poor Mr. Meeseeks!
+
+> Task :ArgumentOrder
+(99, 52, 0)
+
+> Task :ArraySpread
+1 2 3 4 5 6 x
+7 8 9 10 11 y
+
+> Task :AssigningAnIf
+x < y
+5
+53
+kotlin.Unit
+
+> Task :AssigningToVariable
+
+> Task :AssignmentOperators
+10 - 3 - 3 - 3 = 1
+10 % 3 = 1
+
+> Task :AssociateBy
+{Alice=Person(name=Alice, age=21), Arthricia=Person(name=Arthricia, age=15), Bob=Person(name=Bob, age=25), Bill=Person(name=Bill, age=25), Birdperson=Person(name=Birdperson, age=42), Charlie=Person(name=Charlie, age=21), Crocubot=Person(name=Crocubot, age=42), Franz=Person(name=Franz, age=21), Revolio=Person(name=Revolio, age=33)}
+{21=Person(name=Franz, age=21), 15=Person(name=Arthricia, age=15), 25=Person(name=Bill, age=25), 42=Person(name=Crocubot, age=42), 33=Person(name=Revolio, age=33)}
+
+> Task :AtomicTestCapture
+NumberFormatException: For input string: "$1.9"
+
+> Task :AverageIncome
+1100
+ArithmeticException: / by zero
+
+> Task :AverageIncomeWithException
+1100
+IllegalArgumentException: Months can't be zero
+
+> Task :AverageIncomeWithNull
+1100
+null
+
+> Task :BMIEnglish
+Underweight
+
+> Task :BMIMetric
+Normal weight
+
+> Task :Backticks
+
+> Task :Basic
+basic
+
+> Task :BasicFunctions
+27
+pop!
+
+> Task :BasicGenerics
+Yellow
+1
+Ruff!
+Ruff!
+Cyan
+11
+Ruff!
+Ruff!
+Amber
+111
+Ruff!
+Ruff!
+
+> Task :BasicLambda
+[[1], [2], [3], [4]]
+
+> Task :BasicLogging
+
+> Task :Bear
+
+> Task :BetterSuitcase
+true
+
+> Task :BigFibonacci
+[0, 1, 1, 2, 3, 5, 8, 13]
+17711
+9969216677189303386214405760200
+
+> Task :BiggestLong
+9223372036854775807
+
+> Task :BmiWhen
+Normal weight
+
+> Task :BookExtensions
+title: "Dracula", category: Vampire
+
+> Task :Booleans
+Operating hours: 9 - 20
+Current time: 6
+Open: false
+Not open: true
+Closed: true
+
+> Task :Boxes
+Box volume: 64
+Box volume: 125
+2 boxes
+
+> Task :BuildString
+Alphabet: abcdefghijklmnopqrstuvwxyz
+
+> Task :BuildStringAndThis
+Alphabet: abcdefghijklmnopqrstuvwxyz
+
+> Task :ByOperations
+Product(description=bread, price=2.0)
+7.0
+[Product(description=wine, price=5.0), Product(description=bread, price=2.0)]
+
+> Task :CallStack
+
+> Task :CallTopLevelFunction
+Hello!
+
+> Task :CallTopLevelFunction2
+Hello!
+
+> Task :CarHolder
+Car(name=Car)
+
+> Task :Cat
+mrrrow!
+
+> Task :CatchChecked
+java.io.IOException
+
+> Task :ChainedCalls
+null
+Bob
+Unknown
+
+> Task :ChangingAVal
+Simple sleeper sofa: $89.00
+New leather sofa: $3,099.00
+
+> Task :CharRange
+false
+true
+true
+
+> Task :CheckObject
+abc
+BadData: Need String, got null
+BadData: Need String, got 123
+
+> Task :CheckObject2
+abc
+BadData: Need String, got null
+BadData: Need String, got 123
+
+> Task :CheckType
+Yip!
+
+> Task :CheckingArgument
+Showing greeting window...
+Window(id=greeting, x=0, y=0, w=200, h=100)
+Showing greeting window...
+Window(id=greeting, x=0, y=0, w=200, h=100)
+Showing greeting window...
+Window(id=greeting, x=0, y=0, w=200, h=100)
+no Window:
+
+> Task :CheckingOptions
+Alert: Empty
+Level Low OK
+>>> Overflow!
+
+> Task :ClassBodies
+
+> Task :Closeable
+Results
+
+> Task :Closed
+Operating hours: 9 - 20
+Closed: true
+
+> Task :Closures
+[5, 10]
+
+> Task :Closures2
+15
+
+> Task :Closures3
+101
+
+> Task :Color2
+(139, 0, 0)
+(0, 0, 139)
+(255, 165, 0)
+(128, 0, 128)
+
+> Task :Color3
+(77, 0, 0)
+
+> Task :ColorBlend
+red
+brown
+orange
+green
+blue
+
+> Task :ColorSet
+[Blue, Green, Green, Yellow]
+[Blue, Green, Yellow]
+[Blue, Green, Yellow]
+[Green, Yellow, Red]
+true
+false
+
+> Task :CompanionFactory
+[]
+[#0, #1, #2, #3, #4]
+
+> Task :CompanionObject
+3
+9
+3
+9
+
+> Task :CompareTo
+true
+true
+false
+false
+[Contact(name=Alice, mobile=0123456789), Contact(name=Bob, mobile=9876543210)]
+[Contact(name=Bob, mobile=9876543210), Contact(name=Alice, mobile=0123456789)]
+
+> Task :Computation
+14
+High
+
+> Task :Confusing
+4
+
+> Task :ConstructorReference
+[Student(id=0, name=Alice), Student(id=1, name=Bob)]
+[Student(id=0, name=Alice), Student(id=1, name=Bob)]
+
+> Task :ContactMap
+Contact('Miffy', '1-234-567890')
+null
+
+> Task :Conversion
+123
+123
+
+> Task :Cookie
+bite
+crumble
+bite
+
+> Task :CopyDataClass
+DetailedContact(name=Miffy, surname=Miller, number=098-765-4321, address=Brandschenkestrasse 110)
+
+> Task :Counter
+10
+
+> Task :CreateString
+[1, 2, 3]
+1, 2, 3
+(1, 2, 3)
+1:2:3
+
+> Task :CreateString2
+1. 2. 3!
+1. 2. 3!
+
+> Task :CreatingLists
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[a, b, c, d, e, f, g, h, i, j]
+[a, b, c, a, b, c, a, b, c, a]
+
+> Task :Cup
+50
+100
+
+> Task :Cup2
+50
+100
+
+> Task :CustomLabel
+This line is called
+
+> Task :Data
+10
+
+> Task :DataClassCopy
+DC(a=one, b=two, c=three, d=four)
+DC(a=one, b=bouncy, c=three, d=red)
+
+> Task :DataClasses
+Contact(name=Miffy, number=1-234-567890)
+dataclasses.Person@33c7353a
+
+> Task :Declarations
+Regular lambda
+Lambda with receiver
+
+> Task :Default
+set(2)
+get()
+2
+
+> Task :DefineTakeIf
+abc
+null
+
+> Task :DefiningExceptions
+Exception1: wrong value: 13
+Exception3: error
+
+> Task :DefiningRanges
+1..10
+0..9
+
+> Task :DefiningRepeat
+#0
+#1
+#2
+
+> Task :Definition
+true
+
+> Task :DelegatedControls
+forward 100
+turbo boost... boooooost!
+
+> Task :Dereference
+3
+
+> Task :DereferenceNull
+
+> Task :DestructuringData
+Alice
+29
+Alice
+29
+
+> Task :DestructuringDuo
+1
+2
+component1()component2()
+
+> Task :DestructuringMap
+a
+1
+a
+1
+
+> Task :Direction
+N
+SOUTH
+WEST
+S
+
+> Task :DisplayAlienSpecies
+AlienSpecies@f6f4d33
+
+> Task :DoControl
+[0, 4, 12, 16, 20, 24, 28, 32, 36]
+
+> Task :DoLabeled
+[0, 1, 2, 2, 4, 3, 6, 4, 8]
+
+> Task :DoWhile
+..........
+> Task :DoWhileLoop
+..........
+> Task :Dog
+
+> Task :Drinks
+coffee with milk with sugar
+wine
+
+> Task :EagerEvaluation
+true
+[2, 4]
+[4, 16]
+true
+
+> Task :EagerVsLazyEvaluation
+----- List: -----
+1.isEven()
+2.isEven()
+3.isEven()
+4.isEven()
+2.square()
+4.square()
+4.lessThanTen()
+true
+--- Sequence: ---
+1.isEven()
+2.isEven()
+2.square()
+4.lessThanTen()
+true
+
+> Task :EasyKeys
+Employee(first=Bob, last=Dobbs, id=2)
+Employee(first=Lucia, last=Dubois, id=1)
+Employee(first=Ilsa, last=Schmidt, id=3)
+true
+
+> Task :ElvisCall
+3
+3
+0
+0
+
+> Task :ElvisOperator
+abc
+---
+
+> Task :EmptyProgram
+
+> Task :EnumImport
+Overflow
+High
+
+> Task :Evaluation
+DefaultArg@f6f4d33
+DefaultArg@23fc625e
+
+> Task :EvaluationOrder
+true
+true
+false
+
+> Task :ExplicitCheck
+3
+
+> Task :ExplicitDelegation
+forward 100
+turbo boost... boooooost!
+
+> Task :ExplicitTyping
+[1, 2, 3]
+[one, two, three]
+[s, e, v, e, n]
+
+> Task :ExpressionInTemplate
+a
+11 + 4 = 15
+
+> Task :ExtensionsToJavaClass
+grey
+
+> Task :Factorial
+120
+355687428096000
+
+> Task :Fail
+MyException: Failure 1
+MyException: Failure 2
+
+> Task :FaultySuitcase
+UninitializedPropertyAccessException: lateinit property items has not been initialized
+
+> Task :Fibonacci
+[0, 1, 1, 2, 3, 5, 8, 13, 21]
+17711
+12586269025
+
+> Task :FibonacciProperty
+0
+17711
+2880067194370816120
+
+> Task :Filter
+[2, 4]
+[3, 4]
+
+> Task :FilterEven
+[2, 4]
+
+> Task :FilterIsInstance
+2
+[downcasting.Human@2d98a335, downcasting.Human@16b98e56]
+
+> Task :FilterNotNull
+[1, 2]
+
+> Task :FilteringMap
+{1=one, 3=three}
+{1=one, 2=two, 4=four}
+{1=one}
+
+> Task :Flatten
+[1, 2, 3, 4, 5, 6]
+
+> Task :FlattenAndFlatMap
+[[(1, 1), (1, 2), (1, 3)], [(2, 1), (2, 2), (2, 3)], [(3, 1), (3, 2), (3, 3)]]
+[(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
+[(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
+
+> Task :FloatingPointRange
+0.999999 in 1.0..10.0? false
+5.0 in 1.0..10.0? true
+10.0 in 1.0..10.0? true
+10.0000001 in 1.0..10.0? false
+
+> Task :FoldAndReduce
+24
+24
+
+> Task :FoldRight
+((((*) + a) + b) + c) + d
+a + (b + (c + (d + (*))))
+
+> Task :FoldVsForLoop
+1111
+1111
+
+> Task :ForControl
+[0, 4, 12, 16, 20, 24, 28, 32, 36]
+
+> Task :ForEachLine
+'# ok'
+
+> Task :ForIsAStatement
+
+> Task :ForLabeled
+[0, 0, 0, 1, 2, 2, 4, 3, 6, 4, 8]
+
+> Task :ForLoop
+1 = one, 2 = two, 
+(1, one), (2, two), 
+
+> Task :ForWithCharRange
+abcdefghijklmnopqrstuvwxyz
+> Task :ForWithRanges
+1 2 3 4 5     // 1..5
+0 1 2 3 4     // 0..4
+5 4 3 2 1     // 5 downTo 1 step 1
+0 2 4 6 8     // 0..8 step 2
+0 3 6 9     // 0..9 step 3
+9 6 3     // 9 downTo 3 step 3
+
+> Task :FullyQualify
+3.141592653589793
+-1.0
+1.0
+
+> Task :FunctionReference
+true
+
+> Task :FunctionTypeExamples
+Hello, world!
+3
+
+> Task :GadgetExtensions
+true
+false
+
+> Task :GadgetMembers
+true
+false
+
+> Task :Game
+Robot moves RIGHT
+Robot eats food
+Robot moves LEFT
+Robot eats food
+198
+
+> Task :GameElementsHierarchy
+#
+false
+
+> Task :GameImpl
+Robot eats some food
+Bomb blows up some elements
+Static element does nothing
+
+> Task :GardenItem
+Plastic
+Snowman
+Metal Gazing Ball
+Ceramic Strange Thing
+
+> Task :GenericFunction
+Yellow
+1
+Ruff!
+
+> Task :GenericHolder
+Automobile(brand=Ford)
+1
+Chartreuse
+
+> Task :GenericListExt
+1
+1
+null
+
+> Task :GenericListExtensions
+1
+1
+null
+
+> Task :GenericSpeakers
+Hi!
+Ruff!
+Beep!
+Hi!
+Ruff!
+Beep!
+Hi!
+Ruff!
+Beep!
+Hi!
+Ruff!
+Beep!
+
+> Task :GermanOrdinals
+zweite
+dritte
+elfte
+
+> Task :GetOrPut
+zero
+zero
+{1=one, 2=two, 0=zero}
+
+> Task :GetTrace
+IllegalArgumentException: wrong_name.txt must start with 'trace_'
+IllegalArgumentException: trace_nonexistent.txt doesn't exist
+IllegalArgumentException: trace_empty.txt is empty
+[wubba lubba dub dub]
+
+> Task :GetValue
+null
+NoSuchElementException: Key b is missing in the map.
+
+> Task :GettersAndSetter
+set(2)
+get()
+2
+
+> Task :GreatApe
+weight: 100.0 age: 12
+weight: 100.0 age: 12
+weight: 100.0 age: 12
+weight: 100.0 age: 12
+
+> Task :GreatApe2
+Hoo! Energy: 0
+Eep! Energy: 10
+Yawp! Energy: 20
+
+> Task :GreatApe3
+weight: 100.0 age: 12
+weight: 110.0 age: 13
+weight: 120.0 age: 14
+weight: 130.0 age: 15
+
+> Task :GreaterThan2
+[3, 4]
+
+> Task :GroupBy
+[Person(name=Arthricia, age=15)]
+[Person(name=Alice, age=21), Person(name=Charlie, age=21), Person(name=Franz, age=21)]
+null
+[Person(name=Bob, age=25), Person(name=Bill, age=25)]
+[Person(name=Revolio, age=33)]
+[Person(name=Birdperson, age=42), Person(name=Crocubot, age=42)]
+
+> Task :GroupByVsFilter
+[Person(name=Alice, age=21), Person(name=Arthricia, age=15)]
+null
+[Person(name=Alice, age=21), Person(name=Arthricia, age=15)]
+[Person(name=Franz, age=21)]
+([Person(name=Alice, age=21), Person(name=Arthricia, age=15)], [Person(name=Bob, age=25), Person(name=Bill, age=25), Person(name=Birdperson, age=42), Person(name=Charlie, age=21), Person(name=Crocubot, age=42), Person(name=Franz, age=21), Person(name=Revolio, age=33)])
+
+> Task :GuaranteedCleanup
+Switch(on=false, result=exception)
+Switch(on=false, result=OK)
+Switch(on=false, result=OK)
+
+> Task :Hamster
+Squeak! Squeak! Running on wheel
+
+> Task :Hamsters
+false
+2
+true
+true
+true
+0
+false
+1
+
+> Task :Handlers
+OK
+1
+Exception 2
+Exception 3
+
+> Task :HasChar
+true
+false
+
+> Task :HashCodeFailure
+258952499
+false
+Hello
+null
+65
+true
+Hello
+Hello
+
+> Task :Hello
+Hello, world!
+
+> Task :HelloWorld
+Hello, world!
+
+> Task :HelperFunction
+0
+100
+
+> Task :HiddenArrayList
+java.util.ArrayList
+
+> Task :Hierarchy
+Handler for Exception2 got Exception 2
+Handler for Exception2 got Exception 3
+
+> Task :Holder
+Car(name=Car)
+
+> Task :House
+Vacation house at 8 Target St., KS 66632 from May to September
+Oak tree house at Tree Street, TR 00000
+
+> Task :HumanAlice
+I'm Human.
+
+> Task :If1
+It's true!
+10 < 11
+ten is less than eleven
+
+> Task :If2
+It's true!
+
+> Task :If3
+It's negative or zero
+
+> Task :If4
+It's negative
+
+> Task :If5
+!y is true
+
+> Task :If6
+42
+
+> Task :IfExpression
+Operating hours: 9 - 20
+true
+
+> Task :IfResult
+4
+
+> Task :ImmutableAndPlus
+[1, 2, 3]
+[1, 2, 3, 4]
+[1, 2]
+
+> Task :ImmutableBlendMap
+red
+brown
+orange
+green
+blue
+
+> Task :ImmutableBlendMap2
+red
+brown
+orange
+green
+blue
+
+> Task :ImmutableBlendMap3
+red
+brown
+orange
+green
+blue
+
+> Task :Implementations
+ch = A; f() = 17
+ch = B; f() = 34
+
+> Task :ImportClass
+3.141592653589793
+-1.0
+1.0
+
+> Task :ImportEverything
+2.718281828459045
+3
+2
+
+> Task :ImportNameChange
+3.141592653589793
+-1.0
+1.0
+
+> Task :ImportPythagorean
+5.0
+6.0
+
+> Task :InString
+true
+false
+
+> Task :IncrementOperator
+....
+> Task :IndexIntoString
+bcd
+> Task :InferInt
+1000000
+
+> Task :Inference
+2.2
+
+> Task :InfiniteRecursion
+
+> Task :InitSection
+[10] Big ba-da boom!
+[20] Bzzzzzzzzzzzzzt!
+
+> Task :InputLines1
+[]
+
+> Task :InputLines2
+[]
+
+> Task :IntDivisionTruncates
+1
+
+> Task :IntRanges
+0..10
+5..7
+
+> Task :IntegerOverflow
+-2
+
+> Task :InterestingSessions
+true
+
+> Task :InterfaceCollision
+0
+A.g
+3.3000000000000003
+
+> Task :IntroducingCapture
+NumberFormatException: For input string: "1$"
+
+> Task :IntroducingNull
+null
+
+> Task :Invoke
+invoke()
+invoke(22)
+invoke(22, Hi)
+invoke(22, Three, 3.1416)
+
+> Task :IterateOverString
+Kotlin!
+> Task :Iteration
+50005000
+5000050000
+
+> Task :IterationVsMembership
+iteration 1
+iteration 2
+iteration 3
+2 is a member of 1..3
+
+> Task :JavaChecked
+// ExceptionHandling/JavaChecked.java
+
+> Task :JavaList
+true
+
+> Task :JetPack
+OK
+OK
+OK
+Warning
+
+> Task :JoinToString
+[a] [b] [c] [d]
+
+> Task :KeyFailure
+{Key(id=A)=Hello}
+Hello
+{Key(id=Goodbye)=Hello}
+null
+
+> Task :KotlinChecked
+// ExceptionHandling/KotlinChecked.kt
+
+> Task :LabeledReturn
+This line is called
+
+> Task :LabeledThis
+abc
+
+> Task :LambdaAndNamedArgs
+[a] [b] [c] [d]
+
+> Task :LambdaIt
+[[1], [2], [3], [4]]
+
+> Task :LambdaTypeInference
+[[1], [2], [3], [4]]
+
+> Task :LazyInt
+LazyInt Constructed
+Access 'value' 2x:
+Computing 5
+5
+5
+
+> Task :LazySyntax
+Initializing 'used'
+'used' initialization value
+
+> Task :Let
+Showing greeting window...
+Window(id=greeting, x=0, y=0, w=200, h=100)
+no Window:
+
+> Task :Level
+Medium
+
+> Task :LibraryException
+Code must be > 1000: 161
+radix 1 was not in valid range 2..36
+
+> Task :ListCollection
+88.3
+[22.1, 88.3, 19.2]
+[19.2, 22.1, 88.3]
+88.3
+19.2
+129.6
+
+> Task :ListIndicesMap
+[[0: ?], [1: ?], [2: ?]]
+
+> Task :ListInit
+[10, 20, 30, 40, 50]
+[10, 20, 30, 40, 50]
+
+> Task :ListOf
+[1]
+[a, b]
+
+> Task :ListOfStar
+0..0
+0..3
+0..-1
+
+> Task :ListOfStrings
+[Twas, brillig, and, the, slithy]
+[Did, gyre, and, gimble, in, the, wabe]
+[Did, and, in, wabe, mimsy, the, And]
+[the, the, toves, wabe, were]
+[slithy, the, toves, wabe, were]
+
+> Task :ListUsefulFunction
+1.1
+4.4
+[Twas, Brillig, And, Slithy, Toves]
+[And, Brillig, Slithy, Toves, Twas]
+[Toves, Slithy, And, Brillig, Twas]
+Twas
+[Slithy, Toves]
+
+> Task :Lists
+[99, 3, 5, 7, 11, 13]
+99 3 5 7 11 13 
+11
+
+> Task :LocalExtensions
+Hello!
+Hallo!
+Bonjour!
+Ciao!
+
+> Task :LocalFile
+Examples\CheckInstructions\Test.txt
+
+> Task :LocalFunctionReference
+true
+
+> Task :LocalFunctions
+Starting computation
+Computation result: 42
+
+
+> Task :LogChanges
+0
+0 becomes 2
+2
+
+> Task :LongConstants
+0 0
+
+> Task :MainArgConversion
+> Task :MainArgs
+
+> Task :MakeSalad
+Lettuce!
+
+> Task :Mapping
+[[A], [B], [C], [D]]
+
+> Task :Maps
+{Pi=3.141, e=2.718, phi=1.618}
+2.718
+[Pi, e, phi]
+[3.141, 2.718, 1.618]
+Pi=3.141, e=2.718, phi=1.618, 
+Pi=3.141, e=2.718, phi=1.618, 
+
+> Task :MatchingAgainstVals
+
+> Task :MazeImpl
+# ##
+R  #
+#.##
+
+> Task :MemberOperator
+Num2(n=9)
+
+> Task :MemberVsExtension
+0
+3
+
+> Task :Membership
+11 false
+100 true
+K true
+k false
+
+> Task :MembershipInRange
+true
+
+> Task :MembershipUsingBounds
+true
+
+> Task :MixColors
+purple
+purple
+unknown
+
+> Task :MobileElement
+R
+true
+
+> Task :ModelingMI
+50
+true
+true
+
+> Task :Module2
+9 17 4 32 Boat
+10
+100
+Square
+
+> Task :Modulus
+9
+
+> Task :Molecule
+Molecule(id=0, attached=Molecule(id=1, attached=null))
+
+> Task :MultipleArgs
+Zigerion with 2 eyes, 2 hands and 2 legs
+Gazorpian with 2 eyes, 6 hands and 2 legs
+
+> Task :MultipleListReferences
+[1]
+[1, 2]
+
+> Task :MultipleListRefs
+[1]
+[1, 2]
+
+> Task :MultipleRef
+CounterHolder: 11
+CounterHolder: 12
+CounterHolder: 9
+
+> Task :MultiplyByFour
+20
+
+> Task :MultiplyByThree
+15
+
+> Task :MultiplyByTwo
+Inside multiplyByTwo
+10
+
+> Task :MutListIsList
+[1, 2, 3]
+
+> Task :MutableBlendMap
+red
+brown
+orange
+green
+blue
+
+> Task :MutableBlendMap2
+red
+brown
+orange
+green
+blue
+
+> Task :MutableList
+[1, 2, 3, 4, 5, 6]
+
+> Task :MutableMaps
+five
+5ive
+{5=5ive, 6=six, 4=four}
+
+> Task :MutableMaze
+Adding Robot to Position(x=0, y=0)
+
+> Task :MutableSet
+[42]
+[]
+
+> Task :MutableVsReadonlyList
+13
+[a, b, c, d, e]
+
+> Task :NPEOnPlatformType
+null
+NullPointerException
+null
+IllegalStateException: JTool.get(null) must not be null
+
+> Task :NamedArguments
+(76, 89, 0)
+(52, 34, 0)
+
+> Task :NamedCompanionObject
+from Named
+from Named
+
+> Task :NewAngle
+b
+b
+x
+true
+true
+
+> Task :NewException
+Code must be > 1000: 161
+radix 1 was not in valid range 2..36
+
+> Task :NickName
+'val propertydelegation.Person.name: kotlin.String' Barbara
+'val propertydelegation.Person.name: kotlin.String' Babs
+
+> Task :NoComputationYet
+kotlin.sequences.TransformingSequence@79fc0f2f
+
+> Task :NonNullAssert
+abc
+KotlinNullPointerException
+
+> Task :NonNullAssertCall
+3
+
+> Task :NullInMaps
+null
+
+> Task :NullableFunctionType
+null
+
+> Task :NullableInMap
+yes
+null
+
+> Task :NullableParameter
+true
+true
+
+> Task :NullableReceiver
+
+> Task :NullableReturnType
+112
+null
+[112]
+[112]
+
+> Task :NullableTypes
+abc
+null
+abc
+abc
+
+> Task :Num
+Num(n=9)
+Num(n=9)
+
+> Task :NumberConversions
+0.5
+
+> Task :NumberSequence1
+[1, 2, 3]
+55
+
+> Task :NumberSequence2
+[6, 5, 4, 3, 2, 1]
+
+> Task :NumberTypes
+1000 1000 1000.0
+
+> Task :ObjectCounter
+[#0, #1, #2, #3, #4]
+
+> Task :ObjectFunctions
+1
+2
+
+> Task :ObjectInheritance
+Applying Green
+Acrylic, Applying Blue
+Scrape
+
+> Task :ObjectKeyword
+2
+20
+40
+
+> Task :ObjectNesting
+Outer.Inner1
+WithObject.Inner2
+
+> Task :ObjectProperty
+1
+2
+3
+
+> Task :ObserveAnimals
+Animal #0: Tiger
+Animal #1: Antelope
+2 animals are here!
+
+> Task :OmittingParentheses
+[[a], [b], [c], [d]]
+
+> Task :OneOrTheOther
+True!
+False
+
+> Task :OpOrder
+75
+
+> Task :OpOrderParens
+300
+
+> Task :Open1
+Operating hours: 9 - 20
+Open: false
+
+> Task :Open2
+Operating hours: 9 - 20
+Open: false
+
+> Task :OperationsOnSets
+2
+[ab]
+[1, 2, 2]
+
+> Task :OperatorPlus
+[1, 2, 3, 4, 5]
+[1]
+[1, 2]
+[1, 3]
+
+> Task :OtherConstructors
+11
+9
+
+> Task :OutOfBounds
+ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+
+> Task :Overflow
+-2147483648
+2147483648
+
+> Task :OverloadedVsDefaultArg
+foo-2
+foo-1-14
+> Task :Overloading
+0
+13
+
+> Task :OverloadingAdd
+11
+101.0
+
+> Task :PairDestructuring
+14
+High
+
+> Task :PairOfLists
+1
+one
+
+> Task :Pairs
+(14, High)
+(8, Low)
+10
+Low
+
+> Task :ParameterizedReturn
+[a, b]
+[y, z]
+
+> Task :ParameterizedTypes
+[1, 2, 3]
+[one, two, three]
+
+> Task :Partition
+[5, 7, 10]
+[-3, -1]
+[5, 7, 10]
+[-3, -1]
+
+> Task :Perform
+Hi! true
+Ruff! true
+Beep! true
+
+> Task :Pet
+Bark!
+Meow
+
+> Task :Pets
+Cat(name=Stanford, id=3)
+Rat(name=Freckly, id=4)
+Rat(name=Fuzzy, id=5)
+Rat(name=Fizzy, id=2)
+Cat(name=Elsie, id=0)
+Dog(name=Rufus, id=1)
+true
+false
+false
+
+> Task :PlatformTypes
+Success
+Success
+Success
+javacode.JTool?
+javacode.JTool
+javacode.JTool!
+
+> Task :Playing
+Playing turn:
+Robot eats some food
+Playing turn:
+Static element does nothing
+Playing turn:
+Bomb blows up some elements
+
+> Task :PolymorphicPlay
+Playing turn:
+Robot eats some food
+Playing turn:
+Static element does nothing
+Playing turn:
+Bomb blows up some elements
+
+> Task :PolymorphicRobot
+Playing turn:
+Robot eats some food
+Moving around:
+Robot goes RIGHT
+Robot goes RIGHT
+Robot goes UP
+The score is:
+the amount of eaten food
+
+> Task :Postconditions
+IllegalStateException: results.txt doesn't exist!
+
+> Task :PostfixVsPrefix
+10
+11
+21
+21
+
+> Task :Predicates
+[5, 7, 10]
+3
+5
+5
+-1
+true
+true
+false
+true
+false
+true
+
+> Task :PropertyOptions
+Properties():
+Compute 1
+atDefinition:
+1
+1
+getter:
+Compute 2
+2
+Compute 2
+2
+lazyInit:
+Compute 3
+3
+3
+
+> Task :PropertyReadWrite
+10
+
+> Task :PropertyReference
+1
+Where are you?
+
+> Task :Quadratic
+IllegalArgumentException: a is zero
+IllegalArgumentException: Negative underRadical: -44.0
+-15.0
+-9.0
+
+> Task :QuadraticRequire
+IllegalArgumentException: a is zero
+IllegalArgumentException: Negative underRadical: -44.0
+-15.0
+-9.0
+
+> Task :Quote
+'Single'
+"Double"
+
+> Task :Quoting
+'Hi'
+"Hi"
+
+> Task :Random
+58
+
+> Task :RangeOfInt
+1 2 3 4 5 6 7 8 9 10 
+> Task :RangeSum
+55
+
+> Task :ReadOnlyCollections
+[1, 2, 3, 4]
+
+> Task :ReadOnlyMaps
+five
+{5=five, 6=six}
+{5=five, 6=six, 4=four}
+
+> Task :ReadingName
+Enter your name:
+
+> Task :ReadingNameWithIf
+Enter your name:
+
+> Task :RecursionLimits
+3
+500500
+5000050000
+
+> Task :RecursiveEnumImport
+Gigantic
+[Tiny, Small, Medium, Large, Huge, Gigantic]
+0
+4
+
+> Task :References
+kitchen1: Round table
+kitchen2: Round table
+kitchen1: Square table
+kitchen2: Square table
+
+> Task :RegularClasses
+Train line S1
+Bus number 11, size 90
+
+> Task :RegularLambda
+Alphabet: abcdefghijklmnopqrstuvwxyz
+
+> Task :RemoveDuplicates
+[3, 2, 1]
+[3, 2, 1]
+[a, b, c]
+
+> Task :Repeat
+hi!
+hi!
+
+> Task :RepeatByInt
+hi!
+hi!
+
+> Task :RepeatThreeTimes
+Hey 1!
+Hey 2!
+Hey 3!
+
+> Task :RepeatVerbose
+hi!
+hi!
+
+> Task :Repetitive
+10
+400
+
+> Task :RequireNotNull
+IllegalArgumentException: notNull() argument cannot be null
+IllegalArgumentException: Required value was null.
+99
+
+> Task :ResultOfApply
+[17, 42]
+[17, 42]
+
+> Task :ResultOfWith
+false
+[17, 42]
+
+> Task :ReturnFromFun
+
+> Task :ReturnInsideLambda
+true
+
+> Task :RigidHolder
+Automobile(brand=BMW)
+
+> Task :Safe
+Yip!
+Not a Dog
+
+> Task :SafeCall
+3
+3
+null
+null
+
+> Task :SafeOperation
+HOWDY!
+Howdy!
+howdy!
+
+> Task :SayHello
+Hallo!
+Auf Wiedersehen!
+
+> Task :Scientist
+Scientist('Zeep Xanflorp')
+
+> Task :SealedClasses
+Train line S1
+Bus number 11, size 90
+
+> Task :Sets
+[1, 2, 3, 9, 4]
+[1, 2]
+true
+false
+true
+false
+true
+[1, 2, 3, 9, 4, 5, 6]
+[1, 2]
+[2, 3, 4]
+[2, 3, 4]
+
+> Task :SimilarOperation
+true
+false
+one
+
+> Task :Simple
+Simple(arg1=Hi, arg2=29)
+
+> Task :SimpleConstructor
+Pencilvester
+
+> Task :SimpleHashing
+25
+42
+[A, B, C, D, E, F]
+true
+false
+true
+[D, E, F]
+
+> Task :SimpleLoggingStrategy
+
+> Task :SimpleOperation
+true
+
+> Task :SingleArgRequire
+IllegalArgumentException: Failed requirement.
+6
+
+> Task :SmartCast
+Yip!
+Not Dog
+
+> Task :SortWith
+[Message(sender=Boss, text=Meeting today, isRead=false), Message(sender=Kitty, text=Where are you?, isRead=false), Message(sender=Kitty, text=Hey!, isRead=true)]
+
+> Task :Speakers
+Hi!
+Ruff!
+Beep!
+Not a talker
+
+> Task :SpreadOperator
+21
+30
+
+> Task :StateOfAClass
+numbers
+[7]
+
+> Task :StoringLambda
+[2, 4]
+true
+
+> Task :StrTemplates
+Found 42!
+a
+printing a $1
+
+> Task :StrangeQuote
+''Hi''
+""Hi""
+
+> Task :StringBuilder
+Alphabet: abcdefghijklmnopqrstuvwxyz
+
+> Task :StringConcatenation
+first: hi
+second: 11, third: 3.14
+
+> Task :StringHashCode
+69609650
+
+> Task :StringIndices
+0..2
+
+> Task :StringInvoke
+MUMBLING
+
+> Task :StringIsNullOr
+true
+true
+true
+true
+false
+true
+
+> Task :StringIteration
+K o t l i n 
+> Task :StringPlusNumber
+Sally5.9
+
+> Task :StringRange
+true
+false
+
+> Task :StringTemplates
+Found 42!
+printing a $1
+
+> Task :Strings
+DcbA
+abcd
+
+> Task :Suitcase
+true
+
+> Task :Sum
+15
+
+> Task :SumUsingRange
+sum = 5005
+
+> Task :SumViaFold
+1111
+
+> Task :SuperComputer
+42
+
+> Task :Swearing
+howdy Rowzafrazaca Ma'am!
+
+> Task :TDDFail
+Normal weight
+
+> Task :TDDStillFails
+
+> Task :TDDWorks
+Normal weight
+Underweight
+Overweight
+
+> Task :TailRecursiveSum
+3
+50005000
+5000050000
+
+> Task :TakeOrDrop
+[c, X, Z]
+[X, Z]
+[b, c, X, Z]
+[X, Z]
+
+> Task :Team
+var Team.captain: kotlin.String <none> to Adam
+var Team.captain: kotlin.String Adam to Amanda
+
+> Task :TeamWithTraditions
+Adam -> Amanda
+It's tradition, sorry Bill
+Amanda
+
+> Task :Temperature
+98.6
+37.0
+212.0
+
+> Task :TerminalOperations
+1.isEven()
+2.isEven()
+2.square()
+3.isEven()
+4.isEven()
+4.square()
+[4, 16]
+
+> Task :TestingExample
+11
+Ontology
+Ontology
+
+> Task :ThreeQuotes
+{
+  "question" : "The Ultimate",
+  "answer" : 42
+}
+
+> Task :TicTacToe
+Successful move
+Invalid move
+Invalid move
+
+> Task :ToDoubleException
+> Task :ToIntException
+
+> Task :Todo
+NotImplementedError: An operation is not implemented: later()
+NotImplementedError: An operation is not implemented.
+
+> Task :TopLevelFunctionRef
+1
+1
+
+> Task :TransformingMap
+[2=two, 4=four]
+[2=two, 4=four]
+{-2=minus two, -4=minus four}
+{-2=minus two, -4=minus four}
+
+> Task :TrimMargin
+Last night I saw upon the stair
+A little man who wasn't there
+He wasn't there again today
+Oh, how I wish he'd go away.
+
+> Task :TrimmedMembers
+
+> Task :TripleQuotes
+s = "value".
+s = "value".
+
+> Task :TrueOrFalse
+It's true!
+It's false
+
+> Task :Truncation
+3.0
+3.4
+
+> Task :TryFinally
+10
+In finally clause for 10
+-10
+In finally clause for -10
+IllegalArgumentException: value
+ must be positive: -10
+
+> Task :Tuple
+1
+3.14
+Mouse
+false
+[]
+Mouse
+
+> Task :TwoArgLambda
+[[0: a], [1: b], [2: c]]
+
+> Task :TwoFunctionsWithVarargs
+[7][9][32]
+> Task :Types
+11
+1.4
+true
+A value
+z
+Triple quotes let
+you have many lines
+in your string
+
+> Task :Underscore
+[[0: ?], [1: ?], [2: ?]]
+
+> Task :Unexpected
+[1, 2, 3]
+
+> Task :UnitReturn
+returns Unit
+kotlin.Unit
+
+> Task :UnitReturnType
+kotlin.Unit
+42
+kotlin.Unit
+0
+kotlin.Unit
+
+> Task :UnpredictableHashing
+[H,  , a, b, c, d, e, h, i, l, n, o, p, r, s, t, u]
+
+> Task :Unsafe
+Yip!
+
+> Task :Usable
+Usable.operation Done
+closing Usable Done
+
+> Task :UseALibrary
+
+> Task :UseAtomicLog
+Trace: Hello, Atomic Log!
+Debug: Hello, Atomic Log!
+Info: Hello, Atomic Log!
+Warn: Hello, Atomic Log!
+Error: Hello, Atomic Log!
+
+
+> Task :UseBeanClass
+1
+green
+turquoise
+
+> Task :UseLines
+# ok
+# ok
+
+> Task :UsingAtomicTest
+3.14
+A round dessert
+3.14
+
+> Task :UsingDataClass
+Data(name=Bob, age=23)
+47.0
+Data(name=Sam, age=24)
+
+> Task :UsingKotlinClass
+1.0
+120.0
+
+> Task :UsingLists
+[1, 2, 3]
+
+> Task :UsingLongs
+4294967294
+1000000000000
+
+> Task :UsingWith
+10
+400
+
+> Task :Vals
+11
+1.4
+Twas Brillig
+
+> Task :ValueFromMap
+ONE
+ONE
+KotlinNullPointerException
+NoSuchElementException: Key 2 is missing in the map.
+
+> Task :VarArgs
+5 7 11 13 17 19 23 primes
+
+> Task :VarargLikeList
+Size: 5
+Sum: 25
+Min: -3
+Max: 10
+Average: 5.0
+
+> Task :VarargSum
+84
+36
+0
+
+> Task :VariableArgList
+
+> Task :Vars
+11
+1.4
+Twas Brillig
+
+> Task :VerySlowFibonacci
+0
+17711
+
+> Task :VisibleArgs
+
+> Task :WhenAndHierarchy
+I'm Human. It's only human...
+Yip! Hi, dog!
+Alien!!!
+
+> Task :While
+..........
+> Task :WhileControl
+[0, 4, 12, 16, 20, 24, 28, 32, 36]
+
+> Task :WhileLabeled
+[0, 1, 2, 2, 4, 3, 6, 4, 8]
+
+> Task :WhileLoop
+..........
+> Task :WhyFlatMap
+[George Orwell, James Joyce]
+[George Orwell, James Joyce]
+
+> Task :WildAnimals
+Badger: Bob, age: 11
+Snake: Garden, length: 2.4
+Moose, age: 16, height: 7.2
+
+> Task :WithCleanup
+Create 1
+Use 1
+Create 2
+Use 2
+Close 2
+
+> Task :WithDefaultArguments
+373
+
+> Task :WithPropertyAccessor
+11
+
+> Task :WithSecondary
+Primary: 1
+----------
+Primary: 3
+Secondary: 'D'
+----------
+Primary: 11
+Secondary: 'L'
+Secondary: "Last Constructor"
+
+> Task :WithoutDefaultArguments
+373
+
+> Task :XYZFlatMap
+(x, x)
+(x, y)
+(x, z)
+(y, x)
+(y, y)
+(y, z)
+(z, x)
+(z, y)
+(z, z)
+
+> Task :XYZMap
+
+x:x,x:y,x:z,
+y:x,y:y,y:z,
+z:x,z:y,z:z,
+[(x, x), (x, y), (x, z)]
+[(y, x), (y, y), (y, z)]
+[(z, x), (z, y), (z, z)]
+
+> Task :ZeroArguments
+A Lambda
+Without args
+
+> Task :ZipAndTransform
+[Person(name=Bob, id=1731), Person(name=Jill, id=9274), Person(name=Jim, id=8378)]
+
+> Task :Zipper
+[(a, q), (b, r), (c, s), (d, t)]
+[(a, 0), (b, 1), (c, 2), (d, 3)]
+[(10, q), (11, r), (12, s), (13, t)]
+
+> Task :ZippingWithNext
+[(a, b), (b, c), (c, d)]
+[ab, bc, cd]
+
+> Task :run
+*** run complete ***
+
+BUILD SUCCESSFUL in 1m 50s
+489 actionable tasks: 487 executed, 2 up-to-date

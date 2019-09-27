@@ -143,6 +143,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testQuadraticRequire() {
+    testExample("Examples/CheckInstructions/QuadraticRequire.kt", checkinstructions.QuadraticRequireKt::main);
+  }
+
+  @Test
   public void testRequireNotNull() {
     testExample("Examples/CheckInstructions/RequireNotNull.kt", checkinstructions.RequireNotNullKt::main);
   }
@@ -2358,8 +2363,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAnalyzingInput() {
-    testExample("Examples/WhenExpressions/AnalyzingInput.kt", AnalyzingInputKt::main);
+  public void testAnalyzeInput() {
+    testExample("Examples/WhenExpressions/AnalyzeInput.kt", AnalyzeInputKt::main);
   }
 
   @Test

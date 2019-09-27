@@ -1,4 +1,4 @@
-// WhenExpressions/AnalyzingInput.kt
+// WhenExpressions/AnalyzeInput.kt
 
 class Coordinates(var x: Int, var y: Int) {
   override fun toString(): String {
@@ -6,7 +6,7 @@ class Coordinates(var x: Int, var y: Int) {
   }
 }
 
-fun main() {
+fun readInput() {
   println("""|Welcome! Type 'up', 'down',
     |'left', 'right' or 'nowhere' to move;
     |'exit' to exit.""".trimMargin())
@@ -28,7 +28,10 @@ fun main() {
     }
   }
 }
-/* Input/Output:
+fun main() {
+  // readInput()
+}
+/*
 Welcome! Type 'up', 'down',
 'left', 'right' or 'nowhere' to move;
 'exit' to exit.

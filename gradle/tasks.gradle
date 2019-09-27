@@ -43,9 +43,9 @@ task AnUnchangingVar(type: JavaExec) {
     main = 'AnUnchangingVarKt'
 }
 
-task AnalyzingInput(type: JavaExec) {
+task AnalyzeInput(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'AnalyzingInputKt'
+    main = 'AnalyzeInputKt'
 }
 
 task Animals(type: JavaExec) {
@@ -1753,6 +1753,11 @@ task Quadratic(type: JavaExec) {
     main = 'QuadraticKt'
 }
 
+task QuadraticRequire(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'checkinstructions.QuadraticRequireKt'
+}
+
 task Quote(type: JavaExec) {
     classpath kotlinClassPath
     main = 'other.QuoteKt'
@@ -2441,7 +2446,7 @@ task run (dependsOn: [
     'Also',
     'Amphibian',
     'AnUnchangingVar',
-    'AnalyzingInput',
+    'AnalyzeInput',
     'Animals',
     'AnnotatedJava',
     'AnotherComputer',
@@ -2783,6 +2788,7 @@ task run (dependsOn: [
     'PropertyReadWrite',
     'PropertyReference',
     'Quadratic',
+    'QuadraticRequire',
     'Quote',
     'Quoting',
     'Random',
