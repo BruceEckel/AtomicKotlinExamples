@@ -2138,8 +2138,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGettersAndSetter() {
-    testExample("Examples/Summary2/GettersAndSetter.kt", summary2.GettersAndSetterKt::main);
+  public void testGetterAndSetter() {
+    testExample("Examples/Summary2/GetterAndSetter.kt", summary2.GetterAndSetterKt::main);
   }
 
   @Test
@@ -2163,11 +2163,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testMutableVsReadonlyList() {
-    testExample("Examples/Summary2/MutableVsReadonlyList.kt", MutableVsReadonlyListKt::main);
-  }
-
-  @Test
   public void testPropertyReadWrite() {
     testExample("Examples/Summary2/PropertyReadWrite.kt", summary2.PropertyReadWriteKt::main);
   }
@@ -2175,6 +2170,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testQuadratic() {
     testExample("Examples/Summary2/Quadratic.kt", QuadraticKt::main);
+  }
+
+  @Test
+  public void testReadonlyVsMutableList() {
+    testExample("Examples/Summary2/ReadonlyVsMutableList.kt", ReadonlyVsMutableListKt::main);
   }
 
   @Test

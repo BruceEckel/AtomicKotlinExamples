@@ -12,7 +12,7 @@ fun main() {
   if (choice == yes) println("Hooray!")
   else if (choice == no) println("Too bad!")
 }
-/*
+/* Input/Output:
 >>> yes
 Hooray!
 Hooray!

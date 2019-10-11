@@ -29,9 +29,9 @@ fun readInput() {
   }
 }
 fun main() {
-  // readInput()
+  readInput()
 }
-/*
+/* Input/Output:
 Welcome! Type 'up', 'down',
 'left', 'right' or 'nowhere' to move;
 'exit' to exit.

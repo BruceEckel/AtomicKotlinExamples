@@ -838,9 +838,9 @@ task GetValue(type: JavaExec) {
     main = 'GetValueKt'
 }
 
-task GettersAndSetter(type: JavaExec) {
+task GetterAndSetter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'summary2.GettersAndSetterKt'
+    main = 'summary2.GetterAndSetterKt'
 }
 
 task GreatApe(type: JavaExec) {
@@ -1438,11 +1438,6 @@ task MutableSet(type: JavaExec) {
     main = 'MutableSetKt'
 }
 
-task MutableVsReadonlyList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'MutableVsReadonlyListKt'
-}
-
 task NPEOnPlatformType(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NPEOnPlatformTypeKt'
@@ -1801,6 +1796,11 @@ task ReadingName(type: JavaExec) {
 task ReadingNameWithIf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReadingNameWithIfKt'
+}
+
+task ReadonlyVsMutableList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReadonlyVsMutableListKt'
 }
 
 task RecursionLimits(type: JavaExec) {
@@ -2605,7 +2605,7 @@ task run (dependsOn: [
     'GetOrPut',
     'GetTrace',
     'GetValue',
-    'GettersAndSetter',
+    'GetterAndSetter',
     'GreatApe',
     'GreatApe2',
     'GreatApe3',
@@ -2725,7 +2725,6 @@ task run (dependsOn: [
     'MutableMaps',
     'MutableMaze',
     'MutableSet',
-    'MutableVsReadonlyList',
     'NPEOnPlatformType',
     'NamedArguments',
     'NamedCompanionObject',
@@ -2798,6 +2797,7 @@ task run (dependsOn: [
     'ReadOnlyMaps',
     'ReadingName',
     'ReadingNameWithIf',
+    'ReadonlyVsMutableList',
     'RecursionLimits',
     'RecursiveEnumImport',
     'References',

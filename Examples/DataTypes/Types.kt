@@ -9,7 +9,6 @@ fun main() {
   val lines: String = """Triple quotes let
 you have many lines
 in your string"""                  // [6]
-
   println(whole)
   println(fractional)
   println(trueOrFalse)

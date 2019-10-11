@@ -5,7 +5,7 @@ fun main() {
   val v1 = 11
   val v2 = "Ontology"
 
-  // Test expressions using 'eq' ("equals"):
+  // 'eq' means "equals":
   v1 eq 11
   v2 eq "Ontology"
 

@@ -1,7 +1,7 @@
-// Summary2/GettersAndSetter.kt
+// Summary2/GetterAndSetter.kt
 package summary2
 
-class GettersAndSetter {
+class GetterAndSetter {
   var i: Int = 0
     get() {
       println("get()")
@@ -14,7 +14,7 @@ class GettersAndSetter {
 }
 
 fun main() {
-  val gs = GettersAndSetter()
+  val gs = GetterAndSetter()
   gs.i = 2
   println(gs.i)
 }

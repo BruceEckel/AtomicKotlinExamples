@@ -10,6 +10,7 @@ fun main() {
   val isOpen = hour >= opens && hour <= closes
   println("Open: " + isOpen)
   println("Not open: " + !isOpen)
+
   val isClosed = hour < opens || hour > closes
   println("Closed: " + isClosed)
 }

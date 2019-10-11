@@ -18,7 +18,7 @@ class Cage(private val maxCapacity: Int) {
       hamsters += hamster
       true
     }
-  fun takeHamster(): Hamster =
+  fun take(): Hamster =
     hamsters.removeAt(0)
 }
 
@@ -31,6 +31,6 @@ fun main() {
   cage.full eq true
   cage.capacity eq 0
   cage.put(Hamster("Charlie")) eq false
-  cage.takeHamster()
+  cage.take()
   cage.capacity eq 1
 }

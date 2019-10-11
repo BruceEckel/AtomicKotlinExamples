@@ -19,14 +19,14 @@ fun Int.lessThanTen(): Boolean {
 fun main() {
   val list = listOf(1, 2, 3, 4)
 
-  println("----- List: -----")
+  println(">>> List:")
   val r1 = list
     .filter(Int::isEven)
     .map(Int::square)
     .any(Int::lessThanTen)
   println(r1)
 
-  println("--- Sequence: ---")
+  println(">>> Sequence:")
   val r2 = list.asSequence()
     .filter(Int::isEven)
     .map(Int::square)
@@ -34,7 +34,7 @@ fun main() {
   println(r2)
 }
 /* Output:
------ List: -----
+>>> List:
 1.isEven()
 2.isEven()
 3.isEven()
@@ -43,7 +43,7 @@ fun main() {
 4.square()
 4.lessThanTen()
 true
---- Sequence: ---
+>>> Sequence:
 1.isEven()
 2.isEven()
 2.square()

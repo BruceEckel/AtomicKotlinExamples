@@ -1,4 +1,4 @@
-// Summary2/MutableVsReadonlyList.kt
+// Summary2/ReadonlyVsMutableList.kt
 import atomictest.eq
 
 fun main() {
