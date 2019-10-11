@@ -7,9 +7,7 @@ testing early in the learning curve.
 package atomictest
 import kotlin.math.abs
 
-private val errorTag = "[Error] "
-private val expectedExceptionMessage =
-  "$errorTag Expected an exception"
+const val ERROR_TAG = "[Error]:"
 
 private fun <L, R> runTest(
   actual: L,
@@ -19,7 +17,7 @@ private fun <L, R> runTest(
 ) {
   println(actual)
   if (!test()) {
-    print(errorTag)
+    print(ERROR_TAG)
     val message: String =
       if (checkEquals)
         "$actual != $expected"
@@ -33,7 +31,7 @@ private fun <L, R> runTest(
  * Compares the string representation
  * of the object with the string `value`.
  */
-infix fun <T: Any> T.eq(value: String) {
+infix fun <T : Any> T.eq(value: String) {
   runTest(this, value) {
     this.toString() == value
   }
@@ -81,7 +79,7 @@ infix fun Double.eq(value: Double) {
 fun capture(f: () -> Unit): String =
   try {
     f()
-    expectedExceptionMessage
+    "$ERROR_TAG Expected an exception"
   } catch (e: Throwable) {
     e::class.simpleName +
       (e.message?.let { ": $it" } ?: "")

@@ -1,3 +1,4 @@
+import atomictest.ERROR_TAG
 import org.junit.Assert
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
@@ -16,23 +17,25 @@ abstract class AbstractTestExamples {
     val outputComment = "/* Output:"
     if (exampleCode.contains(outputComment)) {
       val output = extractOutput(exampleCode, outputComment)
-      testOutput(fileName, output, main)
+      testOutput(output, main, trim = true)
     }
     val inputOutputComment = "/* Input/Output:"
     if (exampleCode.contains(inputOutputComment)) {
       val inputAndOutput = extractOutput(exampleCode, inputOutputComment)
-      testInputOutput(fileName, inputAndOutput, main)
+      testInputOutput(inputAndOutput, main)
     } else {
-      testAtomicChecks(fileName, main)
+      testNoErrors(main)
     }
   }
 
   private fun extractOutput(exampleCode: String, outputComment: String) =
-          exampleCode.substringAfter(outputComment).substringBefore("*/").trim()
+    exampleCode.substringAfter(outputComment).substringBefore("*/").trim()
 
-  private fun testOutput(fileName: String, expectedOutput: String, main: Consumer<Array<String>>) {
-    val actualOutput = runAndGetOutput(main)
-    assertEqualsIgnoringLineSeparators(fileName, expectedOutput, actualOutput)
+  private fun testOutput(output: String, main: Consumer<Array<String>>, trim: Boolean) {
+    val result = runAndGetOutput(main).let {
+      if (trim) it.trim() else it
+    }
+    Assert.assertEquals(result.normalizeLineSeparators(), output.normalizeLineSeparators())
   }
 
   private fun runAndGetOutput(main: Consumer<Array<String>>): String {
@@ -44,9 +47,9 @@ abstract class AbstractTestExamples {
     return out.toString()
   }
 
-  private fun testInputOutput(fileName: String, inputAndOutput: String, main: Consumer<Array<String>>) {
+  private fun testInputOutput(inputAndOutput: String, main: Consumer<Array<String>>) {
     val (inputLines, outputLines) = inputAndOutput.lines().partition { it.startsWith(">>>") }
-    val input = inputLines.map { it.substringAfter(">>> ") }.joinToString(LINE_SEPARATOR)
+    val input = inputLines.joinToString(LINE_SEPARATOR) { it.substringAfter(">>> ") }
     val output = outputLines.joinToString(LINE_SEPARATOR)
 
     val inputStream = ByteArrayInputStream(input.toByteArray())
@@ -57,27 +60,17 @@ abstract class AbstractTestExamples {
 
     main.accept(arrayOf())
 
-    assertEqualsIgnoringLineSeparators(fileName, output, out.toString())
+    Assert.assertEquals(out.toString().trim().normalizeLineSeparators(), output.normalizeLineSeparators())
   }
 
-  private fun testAtomicChecks(fileName: String, main: Consumer<Array<String>>) {
+  private fun testNoErrors(main: Consumer<Array<String>>) {
     val output = runAndGetOutput(main)
-    Assert.assertFalse("AtomicTest checks failed for '$fileName':\n$output", output.contains("[Error]:"))
+    Assert.assertFalse("Program completed with errors:\n$output", output.contains(ERROR_TAG))
   }
 }
 
-private val LINE_SEPARATOR = System.lineSeparator()
+private val LINE_SEPARATOR: String = System.getProperty("line.separator")
 
-private fun String.trimAndNormalizeLineSeparators(): String {
-  return trim().replace("\\R".toRegex(), LINE_SEPARATOR)
-}
-
-private fun assertEqualsIgnoringLineSeparators(
-  fileName: String,
-  expectedOutput: String,
-  actualOutput: String
-) {
-  Assert.assertEquals("Incorrect output for '$fileName':\n",
-    expectedOutput.trimAndNormalizeLineSeparators(),
-    actualOutput.trimAndNormalizeLineSeparators())
+private fun String.normalizeLineSeparators(): String {
+  return replace("\\R".toRegex(), LINE_SEPARATOR)
 }
