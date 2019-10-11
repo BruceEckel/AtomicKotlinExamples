@@ -21,4 +21,5 @@ task GenerateTests(type: JavaExec) {
 task TestExamples(type: Test, dependsOn: testClasses) {
     include 'TestExamples.class'
     description = "Runs tests checking output and 'eq' in examples"
+    systemProperty "random.testing.seed", new Random().nextInt()
 }
