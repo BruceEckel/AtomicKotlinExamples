@@ -1,7 +1,7 @@
 // Varargs/TwoFunctionsWithVarargs.kt
 
 fun first(vararg numbers: Int) {
-  for(i in numbers) {
+  for (i in numbers) {
     print("[$i]")
   }
 }

@@ -3,9 +3,9 @@
 class Hamster {
   fun speak() = "Squeak! "
   fun exercise() =
-    this.speak() + // Qualified with 'this'
-    speak() +      // Without 'this'
-    "Running on wheel"
+    this.speak() +   // Qualified with 'this'
+      speak() +      // Without 'this'
+      "Running on wheel"
 }
 
 fun main() {

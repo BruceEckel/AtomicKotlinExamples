@@ -6,7 +6,7 @@ interface SuperComputer {
   fun calculateAnswer(): Int
 }
 
-class DeepThought: SuperComputer {
+class DeepThought : SuperComputer {
   override fun calculateAnswer() = 42
 }
 

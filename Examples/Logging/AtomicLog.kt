@@ -11,6 +11,7 @@ object log {
     if (logFile.exists())
       logFile.delete()
   }
+
   private fun log(type: String, msg: String) =
     logFile.appendText("$type: $msg\n")
   fun trace(msg: String) = log("Trace", msg)

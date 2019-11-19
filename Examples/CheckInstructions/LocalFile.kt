@@ -18,6 +18,6 @@ fun localFile(name: String): File {
 fun main() {
   localFile("Test.txt") eq
     Paths.get("Examples",
-    "CheckInstructions",
-    "Test.txt").toString()
+      "CheckInstructions",
+      "Test.txt").toString()
 }

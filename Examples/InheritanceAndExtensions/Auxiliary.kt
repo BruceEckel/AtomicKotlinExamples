@@ -9,6 +9,9 @@ fun sameCellElements(
   return setOf()
 }
 
-fun isPassable(maze: Maze, position: Position): Boolean {
+fun isPassable(
+  maze: Maze,
+  position: Position
+): Boolean {
   return true
 }

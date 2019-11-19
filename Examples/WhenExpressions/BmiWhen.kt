@@ -25,5 +25,5 @@ fun bmiMetricWithWhen(
 
 fun main() {
   bmiMetricOld(72.57, 1.727) eq
-  bmiMetricWithWhen(72.57, 1.727)
+    bmiMetricWithWhen(72.57, 1.727)
 }

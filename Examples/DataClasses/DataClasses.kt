@@ -11,7 +11,7 @@ class Person(val name: String)
 
 fun main() {
   Contact("Miffy", "1-234-567890") eq
-  Contact("Miffy", "1-234-567890")
+    Contact("Miffy", "1-234-567890")
 
   // These seem the same, but they're not:
   Person("Cleo") neq Person("Cleo")

@@ -5,6 +5,7 @@ class Numbered {
   companion object {
     private var count = 0
   }
+
   private val id = count++
   override fun toString() = "#$id"
 }

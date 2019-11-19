@@ -22,7 +22,7 @@ class Game(val maze: Maze) {
 
 fun main() {
   val maze = MazeImpl(setOf(Robot(),
-      Bomb(), Wall()))
+    Bomb(), Wall()))
   Game(maze).play()
 }
 /* Output:

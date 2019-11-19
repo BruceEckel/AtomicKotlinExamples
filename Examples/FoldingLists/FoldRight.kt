@@ -4,13 +4,11 @@ import atomictest.eq
 fun main() {
   val list = listOf('a', 'b', 'c', 'd')
 
-  list.fold("*") {
-    accumulator, element ->
-    "($accumulator) + $element"
+  list.fold("*") { acc, elem ->
+    "($acc) + $elem"
   } eq "((((*) + a) + b) + c) + d"
 
-  list.foldRight("*") {
-    element, accumulator ->
-    "$element + ($accumulator)"
+  list.foldRight("*") { elem, acc ->
+    "$elem + ($acc)"
   } eq "a + (b + (c + (d + (*))))"
 }

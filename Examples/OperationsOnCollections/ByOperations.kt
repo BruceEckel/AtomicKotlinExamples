@@ -18,6 +18,6 @@ fun main() {
   sum eq 7.0
 
   products.sortedByDescending { it.price } eq
-  "[Product(description=wine, price=5.0)," +
-  " Product(description=bread, price=2.0)]"
+    "[Product(description=wine, price=5.0)," +
+    " Product(description=bread, price=2.0)]"
 }

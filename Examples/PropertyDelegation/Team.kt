@@ -3,10 +3,10 @@ import kotlin.properties.Delegates
 
 class Team {
   var captain: String by
-  Delegates.observable("<none>") {
-    prop, old, new ->
-    println("$prop $old to $new")
-  }
+  Delegates
+    .observable("<none>") { prop, old, new ->
+      println("$prop $old to $new")
+    }
 }
 
 fun main() {

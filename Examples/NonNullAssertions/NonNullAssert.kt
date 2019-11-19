@@ -6,8 +6,7 @@ fun main() {
   s1!! eq "abc"
 
   val s2: String? = null
-  // Compiles, but produces a
-  // KotlinNullPointerException:
+  // Ignore nullability:
   capture {
     val s3: String = s2!!
   } eq "KotlinNullPointerException"

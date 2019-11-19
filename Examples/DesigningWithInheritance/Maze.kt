@@ -1,17 +1,17 @@
 // DesigningWithInheritance/Maze.kt
 package designingwithinheritance.maze
 
-interface Element
+interface GameElement
 interface Move
-class Robot : Element
+class Robot : GameElement
 data class Position(val x: Int, val y: Int)
 
 interface Maze {
-  fun all(): Set<Element>
-  fun allAt(position: Position): Set<Element>
-  fun position(element: Element): Position?
-  fun add(element: Element, position: Position)
-  fun remove(element: Element)
+  fun all(): Set<GameElement>
+  fun allAt(p: Position): Set<GameElement>
+  fun position(e: GameElement): Position?
+  fun add(e: GameElement, p: Position)
+  fun remove(e: GameElement)
 }
 
 interface Game {

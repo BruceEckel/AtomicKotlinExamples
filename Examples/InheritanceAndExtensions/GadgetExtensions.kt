@@ -16,7 +16,7 @@ fun Gadget.isOutdated() =
 class MyGadget(
   override val model: String,
   override val productionYear: Int
-): Gadget
+) : Gadget
 
 fun main() {
   val gadget: Gadget =

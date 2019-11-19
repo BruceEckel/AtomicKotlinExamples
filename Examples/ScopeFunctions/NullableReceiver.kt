@@ -21,6 +21,6 @@ fun adjustWindowIfNotNull(window: Window?) {
 
 fun main() {
   val windowOrNull: Window? = null
-  // Nothing happens:
   adjustWindowIfNotNull(windowOrNull)
+  println("Nothing happens")
 }

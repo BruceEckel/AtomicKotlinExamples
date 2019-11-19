@@ -10,6 +10,7 @@ class JetPack(
       warning = true
     } else
       fuel -= 1
+
   public fun fly() = burn()    // [3]
   fun check() =                // [4]
     if (warning)               // [5]
@@ -20,7 +21,7 @@ class JetPack(
 
 fun main() {
   val jetPack = JetPack(3.0)
-  while(jetPack.check() != "Warning") {
+  while (jetPack.check() != "Warning") {
     println(jetPack.check())
     jetPack.fly()
   }

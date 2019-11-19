@@ -4,7 +4,7 @@ import atomictest.eq
 import atomictest.capture
 
 fun dogBarkUnsafe(smb: LivingBeing) =
-    (smb as Dog).bark()
+  (smb as Dog).bark()
 
 fun main() {
   dogBarkUnsafe(Dog()) eq "Yip!"

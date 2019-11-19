@@ -5,8 +5,7 @@ fun main() {
   fun log(message: String) =
     logMsg.appendln(message)
   log("Starting computation")
-  // Imitating computation
-  val x = 42
+  val x = 42  // Imitate computation
   log("Computation result: $x")
   println(logMsg.toString())
 }

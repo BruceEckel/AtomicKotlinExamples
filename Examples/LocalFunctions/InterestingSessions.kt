@@ -6,7 +6,7 @@ fun main() {
   sessions.any(
     fun(session: Session): Boolean {    // [1]
       if (session.title.contains("Kotlin") &&
-        session.speaker in myFavSpeakers) {
+        session.speaker in favoriteSpeakers) {
         return true
       }
       // ... more checks

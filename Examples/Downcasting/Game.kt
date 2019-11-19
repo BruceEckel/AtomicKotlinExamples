@@ -21,10 +21,12 @@ class Robot : MobileElement {
     println("Robot eats food")
     eatenFoodItems++
   }
+
   override fun makeMove(move: Move): Position {
     println("Robot moves $move")
     return Position(0, 0)
   }
+
   fun score(): Int {
     return eatenFoodItems
   }
@@ -37,7 +39,7 @@ interface Maze {
 interface MutableMaze : Maze
 
 // Dummy implementation:
-class MazeImpl: MutableMaze {
+class MazeImpl : MutableMaze {
   private val all = setOf(Robot())
   override fun all() = all
 }
@@ -50,7 +52,7 @@ interface Game {
   // other members
 }
 
-class GameImpl: Game {
+class GameImpl : Game {
   private var turns = 0
   override val maze: MutableMaze = MazeImpl()
 

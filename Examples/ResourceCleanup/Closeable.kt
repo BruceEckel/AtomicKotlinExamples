@@ -7,5 +7,5 @@ fun main() {
   localFile("Results.txt")
     .bufferedReader()
     .use { it.readLines().first() } eq
-      "Results"
+    "Results"
 }

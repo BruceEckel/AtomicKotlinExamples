@@ -12,16 +12,18 @@ class MazeImpl(
   val cells = MutableList(height) {     // [1]
     MutableList<GameElement?>(width) { null }
   }
+
   init {
     val lines = representation.lines()  // [2]
-    for(y in 0 until height) {
-      for(x in 0 until width) {
+    for (y in 0 until height) {
+      for (x in 0 until width) {
         val ch = lines[y][x]
         if (ch != ' ')
           cells[y][x] = GameElement(ch) // [3]
       }
     }
   }
+
   override fun toString() =
     cells.joinToString("\n") { row ->
       row.joinToString("") { element ->

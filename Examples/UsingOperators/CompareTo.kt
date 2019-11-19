@@ -5,7 +5,7 @@ import atomictest.eq
 data class Contact(
   val name: String,
   val mobile: String
-): Comparable<Contact> {
+) : Comparable<Contact> {
   override
   fun compareTo(other: Contact): Int =
     name.compareTo(other.name)

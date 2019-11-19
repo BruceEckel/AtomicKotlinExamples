@@ -18,7 +18,7 @@ fun Message.isImportant(): Boolean =
   text.contains("Salary increase") ||
     attachments.any {
       it.type == "image" &&
-      it.name.contains("cat")
+        it.name.contains("cat")
     }
 
 fun main() {

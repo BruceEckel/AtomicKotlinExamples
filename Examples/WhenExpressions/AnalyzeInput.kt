@@ -28,6 +28,7 @@ fun readInput() {
     }
   }
 }
+
 fun main() {
   readInput()
 }

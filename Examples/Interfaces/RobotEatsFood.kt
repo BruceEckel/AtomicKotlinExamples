@@ -1,12 +1,12 @@
 // Interfaces/RobotEatsFood.kt
 package game
 
-class Robot: GameElement {
+class Robot : GameElement {
   private var eatenFoodItems: Int = 0
 
   override fun playTurn(maze: Maze) {
     val position = maze.position(this)
-        ?: return
+      ?: return
     val cellElements = maze.allAt(position)
     cellElements
       .filterIsInstance<Food>()
@@ -17,7 +17,7 @@ class Robot: GameElement {
   }
 }
 
-class Food: GameElement {
+class Food : GameElement {
   override fun playTurn(maze: Maze) {
     // Do nothing
   }

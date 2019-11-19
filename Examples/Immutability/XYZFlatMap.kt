@@ -5,8 +5,8 @@ enum class XYZ { x, y, z }
 
 fun main() {
   val flat = XYZ.values().flatMap { a ->
-    XYZ.values().map {
-      b -> a to b
+    XYZ.values().map { b ->
+      a to b
     }
   }
   flat.forEach { println(it) }

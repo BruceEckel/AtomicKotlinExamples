@@ -5,7 +5,7 @@ import atomictest.eq
 fun main() {
   fun interesting(session: Session): Boolean {
     if (session.title.contains("Kotlin") &&
-      session.speaker in myFavSpeakers) {
+      session.speaker in favoriteSpeakers) {
       return true
     }
     // ... more checks

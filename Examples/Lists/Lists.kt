@@ -7,8 +7,9 @@ fun main() {
 
   // Select each element in the List:
   var result = ""
-  for(i in ints)                       // [2]
+  for (i in ints) {                    // [2]
     result += "$i "
+  }
   result eq "99 3 5 7 11 13 "
 
   // "Indexing" into the List:

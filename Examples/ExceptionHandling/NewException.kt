@@ -4,7 +4,7 @@ import atomictest.eq
 
 class IncorrectInputException(
   message: String
-): Exception(message)
+) : Exception(message)
 
 fun checkCode(code: Int) {
   if (code <= 1000) {
@@ -18,7 +18,7 @@ fun main() {
     checkCode("A1".toInt(16))
   } catch (e: IncorrectInputException) {
     e.message eq "Code must be > 1000: 161"
-   } catch (e: IllegalArgumentException) {
+  } catch (e: IllegalArgumentException) {
     println("Shouldn't get here")
   }
   try {

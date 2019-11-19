@@ -7,7 +7,8 @@ interface Rectangle {
 
 class ButtonImage(
   val width: Int,
-  val height: Int): Rectangle {
+  val height: Int
+) : Rectangle {
   override fun paint() = width * height
 }
 
@@ -16,7 +17,7 @@ interface MouseManager {
   fun hovering(): Boolean
 }
 
-class UserInput: MouseManager {
+class UserInput : MouseManager {
   override fun clicked() = true
   override fun hovering() = true
 }
@@ -31,8 +32,8 @@ class Button(
   val height: Int,
   val image: Rectangle =
     ButtonImage(width, height),
-  val input: MouseManager = UserInput()):
-  Rectangle by image, MouseManager by input
+  val input: MouseManager = UserInput()
+) : Rectangle by image, MouseManager by input
 
 fun main() {
   val button = Button(10, 5)

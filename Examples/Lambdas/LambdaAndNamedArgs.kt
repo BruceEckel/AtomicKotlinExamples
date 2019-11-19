@@ -2,9 +2,9 @@
 import atomictest.eq
 
 fun main() {
-  val list = listOf('a', 'b', 'c', 'd')
+  val list = listOf(9, 11, 23, 32)
   list.joinToString(
     separator = " ",
     transform = { "[$it]" }
-  ) eq  "[a] [b] [c] [d]"
+  ) eq "[9] [11] [23] [32]"
 }

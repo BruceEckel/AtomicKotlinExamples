@@ -58,19 +58,14 @@ task AnnotatedJava(type: JavaExec) {
     main = 'nullabilityannotations.AnnotatedJavaKt'
 }
 
-task AnotherComputer(type: JavaExec) {
+task Any(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interfaces.AnotherComputerKt'
+    main = 'AnyKt'
 }
 
 task AnyFromListOfStar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'extensionproperties.AnyFromListOfStarKt'
-}
-
-task AnyFunImplementation(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'AnyFunImplementationKt'
 }
 
 task AnyInstead(type: JavaExec) {
@@ -121,6 +116,16 @@ task AssignmentOperators(type: JavaExec) {
 task AssociateBy(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AssociateByKt'
+}
+
+task AssociateByUnique(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AssociateByUniqueKt'
+}
+
+task AssociateWith(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'AssociateWithKt'
 }
 
 task AtomicTestCapture(type: JavaExec) {
@@ -221,6 +226,11 @@ task Booleans(type: JavaExec) {
 task Boxes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BoxesKt'
+}
+
+task BrokenComputer(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.BrokenComputerKt'
 }
 
 task BuildString(type: JavaExec) {
@@ -331,11 +341,6 @@ task Closures(type: JavaExec) {
 task Closures2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'Closures2Kt'
-}
-
-task Closures3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'Closures3Kt'
 }
 
 task Color2(type: JavaExec) {
@@ -483,11 +488,6 @@ task DefiningRanges(type: JavaExec) {
     main = 'DefiningRangesKt'
 }
 
-task DefiningRepeat(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'definingrepeat.DefiningRepeatKt'
-}
-
 task Definition(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DefinitionKt'
@@ -533,19 +533,14 @@ task DisplayAlienSpecies(type: JavaExec) {
     main = 'DisplayAlienSpeciesKt'
 }
 
-task DoControl(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DoControlKt'
-}
-
-task DoLabeled(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DoLabeledKt'
-}
-
 task DoWhile(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DoWhileKt'
+}
+
+task DoWhileControl(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'DoWhileControlKt'
 }
 
 task DoWhileLoop(type: JavaExec) {
@@ -570,7 +565,7 @@ task EagerEvaluation(type: JavaExec) {
 
 task EagerVsLazyEvaluation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'sequences.EagerVsLazyEvaluationKt'
+    main = 'creatingsequences.EagerVsLazyEvaluationKt'
 }
 
 task EasyKeys(type: JavaExec) {
@@ -673,14 +668,14 @@ task FilterIsInstance(type: JavaExec) {
     main = 'downcasting.FilterIsInstanceKt'
 }
 
+task FilterMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FilterMapKt'
+}
+
 task FilterNotNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FilterNotNullKt'
-}
-
-task FilteringMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FilteringMapKt'
 }
 
 task Flatten(type: JavaExec) {
@@ -753,14 +748,14 @@ task FullyQualify(type: JavaExec) {
     main = 'FullyQualifyKt'
 }
 
+task FunctionClosure(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'FunctionClosureKt'
+}
+
 task FunctionReference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences2.FunctionReferenceKt'
-}
-
-task FunctionTypeExamples(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FunctionTypeExamplesKt'
 }
 
 task GadgetExtensions(type: JavaExec) {
@@ -983,26 +978,6 @@ task IfResult(type: JavaExec) {
     main = 'IfResultKt'
 }
 
-task ImmutableAndPlus(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ImmutableAndPlusKt'
-}
-
-task ImmutableBlendMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'immutableblendmap.ImmutableBlendMapKt'
-}
-
-task ImmutableBlendMap2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'immutableblendmap2.ImmutableBlendMap2Kt'
-}
-
-task ImmutableBlendMap3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'immutableblendmap3.ImmutableBlendMap3Kt'
-}
-
 task Implementations(type: JavaExec) {
     classpath kotlinClassPath
     main = 'abstractclasses.ImplementationsKt'
@@ -1026,6 +1001,11 @@ task ImportNameChange(type: JavaExec) {
 task ImportPythagorean(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ImportPythagoreanKt'
+}
+
+task Improved(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ImprovedKt'
 }
 
 task InString(type: JavaExec) {
@@ -1470,7 +1450,7 @@ task NickName(type: JavaExec) {
 
 task NoComputationYet(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'sequences.NoComputationYetKt'
+    main = 'creatingsequences.NoComputationYetKt'
 }
 
 task NonNullAssert(type: JavaExec) {
@@ -1488,9 +1468,9 @@ task NullInMaps(type: JavaExec) {
     main = 'NullInMapsKt'
 }
 
-task NullableFunctionType(type: JavaExec) {
+task NullableFunction(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NullableFunctionTypeKt'
+    main = 'NullableFunctionKt'
 }
 
 task NullableInMap(type: JavaExec) {
@@ -1508,9 +1488,9 @@ task NullableReceiver(type: JavaExec) {
     main = 'scopefunctions.NullableReceiverKt'
 }
 
-task NullableReturnType(type: JavaExec) {
+task NullableReturn(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NullableReturnTypeKt'
+    main = 'NullableReturnKt'
 }
 
 task NullableTypes(type: JavaExec) {
@@ -1778,6 +1758,26 @@ task RangeSum(type: JavaExec) {
     main = 'RangeSumKt'
 }
 
+task ReadOnlyAndPlus(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReadOnlyAndPlusKt'
+}
+
+task ReadOnlyBlendMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'readonlyblendmap.ReadOnlyBlendMapKt'
+}
+
+task ReadOnlyBlendMap2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'readonlyblendmap2.ReadOnlyBlendMap2Kt'
+}
+
+task ReadOnlyBlendMap3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'readonlyblendmap3.ReadOnlyBlendMap3Kt'
+}
+
 task ReadOnlyCollections(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReadOnlyCollectionsKt'
@@ -1841,6 +1841,11 @@ task Repeat(type: JavaExec) {
 task RepeatByInt(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RepeatByIntKt'
+}
+
+task RepeatFun(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'definingrepeat.RepeatFunKt'
 }
 
 task RepeatThreeTimes(type: JavaExec) {
@@ -2125,7 +2130,7 @@ task Temperature(type: JavaExec) {
 
 task TerminalOperations(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'sequences.TerminalOperationsKt'
+    main = 'creatingsequences.TerminalOperationsKt'
 }
 
 task TestingExample(type: JavaExec) {
@@ -2211,6 +2216,11 @@ task TwoArgLambda(type: JavaExec) {
 task TwoFunctionsWithVarargs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TwoFunctionsWithVarargsKt'
+}
+
+task TypeDeclarations(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'TypeDeclarationsKt'
 }
 
 task Types(type: JavaExec) {
@@ -2353,6 +2363,11 @@ task WhenAndHierarchy(type: JavaExec) {
     main = 'downcasting.WhenAndHierarchyKt'
 }
 
+task WhenSubjectVariable(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcasting.WhenSubjectVariableKt'
+}
+
 task While(type: JavaExec) {
     classpath kotlinClassPath
     main = 'WhileKt'
@@ -2449,9 +2464,8 @@ task run (dependsOn: [
     'AnalyzeInput',
     'Animals',
     'AnnotatedJava',
-    'AnotherComputer',
+    'Any',
     'AnyFromListOfStar',
-    'AnyFunImplementation',
     'AnyInstead',
     'ApplyIfNotNull',
     'ApplyVsAlso',
@@ -2462,6 +2476,8 @@ task run (dependsOn: [
     'AssigningToVariable',
     'AssignmentOperators',
     'AssociateBy',
+    'AssociateByUnique',
+    'AssociateWith',
     'AtomicTestCapture',
     'AverageIncome',
     'AverageIncomeWithException',
@@ -2482,6 +2498,7 @@ task run (dependsOn: [
     'BookExtensions',
     'Booleans',
     'Boxes',
+    'BrokenComputer',
     'BuildString',
     'BuildStringAndThis',
     'ByOperations',
@@ -2504,7 +2521,6 @@ task run (dependsOn: [
     'Closed',
     'Closures',
     'Closures2',
-    'Closures3',
     'Color2',
     'Color3',
     'ColorBlend',
@@ -2534,7 +2550,6 @@ task run (dependsOn: [
     'DefineTakeIf',
     'DefiningExceptions',
     'DefiningRanges',
-    'DefiningRepeat',
     'Definition',
     'DelegatedControls',
     'Dereference',
@@ -2544,9 +2559,8 @@ task run (dependsOn: [
     'DestructuringMap',
     'Direction',
     'DisplayAlienSpecies',
-    'DoControl',
-    'DoLabeled',
     'DoWhile',
+    'DoWhileControl',
     'DoWhileLoop',
     'Dog',
     'Drinks',
@@ -2572,8 +2586,8 @@ task run (dependsOn: [
     'Filter',
     'FilterEven',
     'FilterIsInstance',
+    'FilterMap',
     'FilterNotNull',
-    'FilteringMap',
     'Flatten',
     'FlattenAndFlatMap',
     'FloatingPointRange',
@@ -2588,8 +2602,8 @@ task run (dependsOn: [
     'ForWithCharRange',
     'ForWithRanges',
     'FullyQualify',
+    'FunctionClosure',
     'FunctionReference',
-    'FunctionTypeExamples',
     'GadgetExtensions',
     'GadgetMembers',
     'Game',
@@ -2634,15 +2648,12 @@ task run (dependsOn: [
     'If6',
     'IfExpression',
     'IfResult',
-    'ImmutableAndPlus',
-    'ImmutableBlendMap',
-    'ImmutableBlendMap2',
-    'ImmutableBlendMap3',
     'Implementations',
     'ImportClass',
     'ImportEverything',
     'ImportNameChange',
     'ImportPythagorean',
+    'Improved',
     'InString',
     'IncrementOperator',
     'IndexIntoString',
@@ -2735,11 +2746,11 @@ task run (dependsOn: [
     'NonNullAssert',
     'NonNullAssertCall',
     'NullInMaps',
-    'NullableFunctionType',
+    'NullableFunction',
     'NullableInMap',
     'NullableParameter',
     'NullableReceiver',
-    'NullableReturnType',
+    'NullableReturn',
     'NullableTypes',
     'Num',
     'NumberConversions',
@@ -2793,6 +2804,10 @@ task run (dependsOn: [
     'Random',
     'RangeOfInt',
     'RangeSum',
+    'ReadOnlyAndPlus',
+    'ReadOnlyBlendMap',
+    'ReadOnlyBlendMap2',
+    'ReadOnlyBlendMap3',
     'ReadOnlyCollections',
     'ReadOnlyMaps',
     'ReadingName',
@@ -2806,6 +2821,7 @@ task run (dependsOn: [
     'RemoveDuplicates',
     'Repeat',
     'RepeatByInt',
+    'RepeatFun',
     'RepeatThreeTimes',
     'RepeatVerbose',
     'Repetitive',
@@ -2880,6 +2896,7 @@ task run (dependsOn: [
     'Tuple',
     'TwoArgLambda',
     'TwoFunctionsWithVarargs',
+    'TypeDeclarations',
     'Types',
     'Underscore',
     'Unexpected',
@@ -2908,6 +2925,7 @@ task run (dependsOn: [
     'VerySlowFibonacci',
     'VisibleArgs',
     'WhenAndHierarchy',
+    'WhenSubjectVariable',
     'While',
     'WhileControl',
     'WhileLabeled',

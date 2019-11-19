@@ -2,18 +2,18 @@
 import atomictest.eq
 
 fun main() {
-  val nums = mutableListOf(0)
-  var i = 0
-  outer@ while(i < 4) {
-    i += 1
-    var j = 0
-    while(j < 10) {
-      j += 1
-      if (j == 3) continue@outer
-      if (i*j == 15) break@outer
-      nums.add(i*j)
-    }
+  val strings = mutableListOf<String>()
+  var c = 'a' - 1
+  outer@ while (c < 'f') {
+    c += 1
+    var i = 0
+    do {
+      i++
+      if (i == 5) continue@outer
+      if ("$c$i" == "c3") break@outer
+      strings.add("$c$i")
+    } while (i < 10)
   }
-  nums eq
-  listOf(0, 1, 2, 2, 4, 3, 6, 4, 8)
+  strings eq listOf("a1", "a2", "a3", "a4",
+    "b1", "b2", "b3", "b4", "c1", "c2")
 }

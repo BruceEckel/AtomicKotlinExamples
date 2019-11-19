@@ -14,8 +14,8 @@ class Person(
 class NickName() {
   operator fun
     getValue(p: Person, prop: KProperty<*>) =
-      "'$prop' " +
-      if(p.casual)
+    "'$prop' " +
+      if (p.casual)
         p.nickName else p.formalName
 }
 

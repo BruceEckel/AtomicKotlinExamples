@@ -1,8 +1,9 @@
 // Summary2/VarArgs.kt
 
 fun varargs(s: String, vararg ints: Int) {
-  for(i in ints)
+  for (i in ints) {
     print("$i ")
+  }
   println(s)
 }
 

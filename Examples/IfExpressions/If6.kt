@@ -1,7 +1,8 @@
 // IfExpressions/If6.kt
 
 fun main() {
-  val result = if (99 > 100) 4 else 42
+  val num = 10
+  val result = if (num > 100) 4 else 42
   println(result)
 }
 /* Output:

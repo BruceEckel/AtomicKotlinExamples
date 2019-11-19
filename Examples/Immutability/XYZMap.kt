@@ -6,8 +6,8 @@ enum class XYZ { x, y, z }
 fun main() {
   val normal = XYZ.values().map { a ->
     println()
-    XYZ.values().map {
-      b -> print("$a:$b,"); a to b
+    XYZ.values().map { b ->
+      print("$a:$b,"); a to b
     }
   }
   println()

@@ -7,9 +7,9 @@ fun main() {
   localFile("Results.txt").useLines {
     it.filter { "#" in it }.first()  // [1]
   } eq "# ok"
-  localFile("Results.txt").useLines {
-    lines -> lines.filter {          // [2]
-      line -> "#" in line
+  localFile("Results.txt").useLines { lines ->
+    lines.filter { line ->           // [2]
+      "#" in line
     }.first()
   } eq "# ok"
 }

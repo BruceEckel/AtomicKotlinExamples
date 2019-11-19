@@ -27,13 +27,15 @@ abstract class MobileElement : GameElement {
   abstract fun makeMove(move: Move)
 }
 
-class Robot: MobileElement() {
+class Robot : MobileElement() {
   override fun playTurn() {
     println("Robot eats some food")
   }
+
   override fun makeMove(move: Move) {
     println("Robot goes $move")
   }
+
   fun score(): String {
     return "the amount of eaten food"
   }

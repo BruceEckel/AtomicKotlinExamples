@@ -11,16 +11,18 @@ abstract class MobileElement : GameElement {
     get() = true
 
   abstract fun makeMove(             // [1]
-      move: Move, maze: Maze): Position?
+    move: Move, maze: Maze): Position?
 }
 
-class Robot: MobileElement() {
+class Robot : MobileElement() {
   override val symbol: Char get() = 'R'
   override fun playTurn(maze: Maze) {
     // Eat food
   }
+
   override fun makeMove(             // [2]
-      move: Move, maze: Maze): Position? {
+    move: Move, maze: Maze
+  ): Position? {
     // Return new position
     return null
   }

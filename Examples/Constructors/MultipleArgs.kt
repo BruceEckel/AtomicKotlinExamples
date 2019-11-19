@@ -8,7 +8,7 @@ class AlienSpecies(
 ) {
   fun describe() =
     "$name with $eyes eyes, " +
-    "$hands hands and $legs legs"
+      "$hands hands and $legs legs"
 }
 
 fun main() {

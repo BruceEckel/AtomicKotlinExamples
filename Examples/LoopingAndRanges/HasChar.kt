@@ -1,9 +1,9 @@
 // LoopingAndRanges/HasChar.kt
 
 fun hasChar(s: String, ch: Char): Boolean {
-  for(c in s)
-    if (c == ch)
-      return true
+  for (c in s) {
+    if (c == ch) return true
+  }
   return false
 }
 

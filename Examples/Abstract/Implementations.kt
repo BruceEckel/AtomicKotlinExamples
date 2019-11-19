@@ -10,13 +10,14 @@ interface Parent {
 
 class Actual(
   override val ch: Char        // [1]
-): Parent {
+) : Parent {
   override fun f() = 17        // [2]
 }
 
-class Other: Parent {
+class Other : Parent {
   override val ch: Char        // [3]
     get() = 'B'
+
   override fun f() = 34        // [4]
 }
 

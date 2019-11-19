@@ -34,7 +34,7 @@ class Outer { // implicit label @Outer
 fun main() {
   val outer = Outer()
   val inner = outer.Inner()
-  with (inner) {
+  with(inner) {
     1.ext()                // [3]
   }
 }

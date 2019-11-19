@@ -4,9 +4,9 @@ import atomictest.eq
 
 open class Base(val i: Int)
 
-class Derived: Base {
-  constructor(i: Int): super(i)
-  constructor(): this(9)
+class Derived : Base {
+  constructor(i: Int) : super(i)
+  constructor() : this(9)
 }
 
 fun main() {

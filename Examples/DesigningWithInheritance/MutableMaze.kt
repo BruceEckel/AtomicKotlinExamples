@@ -6,33 +6,35 @@ data class Position(val x: Int, val y: Int)
 interface Maze {
   // Read-only access operations
   fun all(): Set<GameElement>
-  fun allAt(position: Position): Set<GameElement>
+  fun allAt(p: Position): Set<GameElement>
 }
 
 interface MutableMaze : Maze {
   // Modification Operations
-  fun add(element: GameElement, position: Position)
-  fun remove(element: GameElement)
+  fun add(e: GameElement, p: Position)
+  fun remove(e: GameElement)
 }
 
 // Dummy implementation:
-class MazeImpl: MutableMaze {
+class MazeImpl : MutableMaze {
   override fun all(): Set<GameElement> {
     return setOf()
   }
+
   override fun allAt(
-      position: Position
+    p: Position
   ): Set<GameElement> {
     return setOf()
   }
+
   override fun add(
-      element: GameElement,
-      position: Position
+    e: GameElement, p: Position
   ) {
-    println("Adding $element to $position")
+    println("Adding $e to $p")
   }
-  override fun remove(element: GameElement) {
-    println("Removing $element")
+
+  override fun remove(e: GameElement) {
+    println("Removing $e")
   }
 }
 
@@ -52,7 +54,7 @@ interface Game {
   // other members
 }
 
-class GameImpl: Game {
+class GameImpl : Game {
   override val maze: MutableMaze = MazeImpl()
   override fun playTurn() {
     // We can access modification members:
@@ -65,7 +67,8 @@ fun main() {
   game.playTurn()
 
   // We can't access modification members:
-// game.maze.add(Robot(), Position(0, 0)) // [2]
+// game.maze.add(Robot(),
+//   Position(0, 0)) // [2]
 }
 /* Output:
 Adding Robot to Position(x=0, y=0)

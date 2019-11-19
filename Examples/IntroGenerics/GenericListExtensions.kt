@@ -8,9 +8,8 @@ fun <T> List<T>.first(): T {
   return this[0]
 }
 
-fun <T> List<T>.firstOrNull(): T? {
-  return if (isEmpty()) null else this[0]
-}
+fun <T> List<T>.firstOrNull(): T? =
+  if (isEmpty()) null else this[0]
 
 fun main() {
   listOf(1, 2, 3).first() eq 1

@@ -16,15 +16,15 @@ data class MoveAction(
 ) : GameAction()
 
 interface MutableMaze {
-  fun add(element: GameElement, position: Position)
-  fun remove(element: GameElement)
+  fun add(e: GameElement, p: Position)
+  fun remove(e: GameElement)
 }
 
 class Game1(val maze: MutableMaze) {
   fun applyActions(
     actions: Collection<GameAction>
   ) {
-    for(action in actions) {
+    for (action in actions) {
       when (action) {
         is DestroyAction ->
           maze.remove(action.element)

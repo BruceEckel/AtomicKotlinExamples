@@ -2,7 +2,7 @@
 import atomictest.eq
 
 fun main() {
-  val list = listOf('a', 'b', 'c', 'd')
+  val list = listOf(9, 11, 23, 32)
   list.joinToString(" ") { "[$it]" } eq
-    "[a] [b] [c] [d]"
+    "[9] [11] [23] [32]"
 }

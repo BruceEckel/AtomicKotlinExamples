@@ -12,17 +12,17 @@ interface Pet {
 data class Cat(
   val name: String,
   val id: Int = Pet.next()
-): Pet
+) : Pet
 
 data class Dog(
   val name: String,
   val id: Int = Pet.next()
-): Pet
+) : Pet
 
 data class Rat(
   val name: String,
   val id: Int = Pet.next()
-): Pet
+) : Pet
 
 fun main() {
   val pets = HashSet(setOf(

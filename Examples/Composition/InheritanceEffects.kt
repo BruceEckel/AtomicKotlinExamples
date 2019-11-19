@@ -1,19 +1,19 @@
 // Composition/InheritanceEffects.kt
 package gamecomposition2
 
-interface Element
+interface GameElement
 interface Move
 data class Position(val x: Int, val y: Int)
 
 interface Maze {
-  fun all(): Set<Element>
-  fun allAt(position: Position): Set<Element>
-  fun position(element: Element): Position?
-  fun add(element: Element, position: Position)
-  fun remove(element: Element)
+  fun all(): Set<GameElement>
+  fun allAt(p: Position): Set<GameElement>
+  fun position(e: GameElement): Position?
+  fun add(e: GameElement, position: Position)
+  fun remove(e: GameElement)
 }
 
-interface Game: Maze {
+interface Game : Maze {
   fun playMove(move: Move)
   fun playTurn()
   fun gameOver(): Boolean

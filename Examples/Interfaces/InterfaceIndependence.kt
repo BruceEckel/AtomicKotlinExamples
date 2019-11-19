@@ -6,17 +6,13 @@ interface Position
 interface Maze {
   fun all(): Set<GameElement>
 
-  fun allAt(
-    position: Position): Set<GameElement>
+  fun allAt(p: Position): Set<GameElement>
 
-  fun position(
-    element: GameElement): Position?
+  fun position(e: GameElement): Position?
 
-  fun add(
-    element: GameElement,
-    position: Position)
+  fun add(e: GameElement, p: Position)
 
-  fun remove(element: GameElement)
+  fun remove(e: GameElement)
 }
 
 interface GameElement {

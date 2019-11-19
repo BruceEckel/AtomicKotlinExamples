@@ -11,7 +11,7 @@ data class Train(
 data class Bus(
   val number: String,
   val capacity: Int
-): Transport()
+) : Transport()
 
 fun travel(transport: Transport): String =
   when (transport) {

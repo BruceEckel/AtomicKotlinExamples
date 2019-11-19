@@ -73,13 +73,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDoControl() {
-    testExample("Examples/BreakAndContinue/DoControl.kt", DoControlKt::main);
-  }
-
-  @Test
-  public void testDoLabeled() {
-    testExample("Examples/BreakAndContinue/DoLabeled.kt", DoLabeledKt::main);
+  public void testDoWhileControl() {
+    testExample("Examples/BreakAndContinue/DoWhileControl.kt", DoWhileControlKt::main);
   }
 
   @Test
@@ -93,6 +88,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testImproved() {
+    testExample("Examples/BreakAndContinue/Improved.kt", ImprovedKt::main);
+  }
+
+  @Test
   public void testWhileControl() {
     testExample("Examples/BreakAndContinue/WhileControl.kt", WhileControlKt::main);
   }
@@ -100,6 +100,51 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testWhileLabeled() {
     testExample("Examples/BreakAndContinue/WhileLabeled.kt", WhileLabeledKt::main);
+  }
+
+  @Test
+  public void testAssociateBy() {
+    testExample("Examples/BuildingMaps/AssociateBy.kt", AssociateByKt::main);
+  }
+
+  @Test
+  public void testAssociateByUnique() {
+    testExample("Examples/BuildingMaps/AssociateByUnique.kt", AssociateByUniqueKt::main);
+  }
+
+  @Test
+  public void testAssociateWith() {
+    testExample("Examples/BuildingMaps/AssociateWith.kt", AssociateWithKt::main);
+  }
+
+  @Test
+  public void testFilterMap() {
+    testExample("Examples/BuildingMaps/FilterMap.kt", FilterMapKt::main);
+  }
+
+  @Test
+  public void testGetOrPut() {
+    testExample("Examples/BuildingMaps/GetOrPut.kt", GetOrPutKt::main);
+  }
+
+  @Test
+  public void testGroupBy() {
+    testExample("Examples/BuildingMaps/GroupBy.kt", GroupByKt::main);
+  }
+
+  @Test
+  public void testGroupByVsFilter() {
+    testExample("Examples/BuildingMaps/GroupByVsFilter.kt", GroupByVsFilterKt::main);
+  }
+
+  @Test
+  public void testSimilarOperation() {
+    testExample("Examples/BuildingMaps/SimilarOperation.kt", SimilarOperationKt::main);
+  }
+
+  @Test
+  public void testTransformingMap() {
+    testExample("Examples/BuildingMaps/TransformingMap.kt", TransformingMapKt::main);
   }
 
   @Test
@@ -283,6 +328,26 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testEagerEvaluation() {
+    testExample("Examples/CreatingSequences/EagerEvaluation.kt", EagerEvaluationKt::main);
+  }
+
+  @Test
+  public void testEagerVsLazyEvaluation() {
+    testExample("Examples/CreatingSequences/EagerVsLazyEvaluation.kt", creatingsequences.EagerVsLazyEvaluationKt::main);
+  }
+
+  @Test
+  public void testNoComputationYet() {
+    testExample("Examples/CreatingSequences/NoComputationYet.kt", creatingsequences.NoComputationYetKt::main);
+  }
+
+  @Test
+  public void testTerminalOperations() {
+    testExample("Examples/CreatingSequences/TerminalOperations.kt", creatingsequences.TerminalOperationsKt::main);
+  }
+
+  @Test
   public void testCopyDataClass() {
     testExample("Examples/DataClasses/CopyDataClass.kt", CopyDataClassKt::main);
   }
@@ -354,17 +419,22 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testCheckType() {
-    testExample("Examples/Downcasting/CheckType.kt", downcasting.CheckTypeKt::main);
+    testExample("Examples/DownCasting/CheckType.kt", downcasting.CheckTypeKt::main);
   }
 
   @Test
   public void testFilterIsInstance() {
-    testExample("Examples/Downcasting/FilterIsInstance.kt", downcasting.FilterIsInstanceKt::main);
+    testExample("Examples/DownCasting/FilterIsInstance.kt", downcasting.FilterIsInstanceKt::main);
   }
 
   @Test
   public void testGame() {
-    testExample("Examples/Downcasting/Game.kt", downcasting.GameKt::main);
+    testExample("Examples/DownCasting/Game.kt", downcasting.GameKt::main);
+  }
+
+  @Test
+  public void testWhenSubjectVariable() {
+    testExample("Examples/DownCasting/WhenSubjectVariable.kt", downcasting.WhenSubjectVariableKt::main);
   }
 
   @Test
@@ -573,41 +643,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAssociateBy() {
-    testExample("Examples/FromListsToMaps/AssociateBy.kt", AssociateByKt::main);
-  }
-
-  @Test
-  public void testFilteringMap() {
-    testExample("Examples/FromListsToMaps/FilteringMap.kt", FilteringMapKt::main);
-  }
-
-  @Test
-  public void testGetOrPut() {
-    testExample("Examples/FromListsToMaps/GetOrPut.kt", GetOrPutKt::main);
-  }
-
-  @Test
-  public void testGroupBy() {
-    testExample("Examples/FromListsToMaps/GroupBy.kt", GroupByKt::main);
-  }
-
-  @Test
-  public void testGroupByVsFilter() {
-    testExample("Examples/FromListsToMaps/GroupByVsFilter.kt", GroupByVsFilterKt::main);
-  }
-
-  @Test
-  public void testSimilarOperation() {
-    testExample("Examples/FromListsToMaps/SimilarOperation.kt", SimilarOperationKt::main);
-  }
-
-  @Test
-  public void testTransformingMap() {
-    testExample("Examples/FromListsToMaps/TransformingMap.kt", TransformingMapKt::main);
-  }
-
-  @Test
   public void testMultiplyByFour() {
     testExample("Examples/Functions/MultiplyByFour.kt", MultiplyByFourKt::main);
   }
@@ -625,46 +660,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSayHello() {
     testExample("Examples/Functions/SayHello.kt", SayHelloKt::main);
-  }
-
-  @Test
-  public void testAnyFunImplementation() {
-    testExample("Examples/FunctionTypes/AnyFunImplementation.kt", AnyFunImplementationKt::main);
-  }
-
-  @Test
-  public void testDefiningRepeat() {
-    testExample("Examples/FunctionTypes/DefiningRepeat.kt", definingrepeat.DefiningRepeatKt::main);
-  }
-
-  @Test
-  public void testFunctionTypeExamples() {
-    testExample("Examples/FunctionTypes/FunctionTypeExamples.kt", FunctionTypeExamplesKt::main);
-  }
-
-  @Test
-  public void testNullableFunctionType() {
-    testExample("Examples/FunctionTypes/NullableFunctionType.kt", NullableFunctionTypeKt::main);
-  }
-
-  @Test
-  public void testNullableReturnType() {
-    testExample("Examples/FunctionTypes/NullableReturnType.kt", NullableReturnTypeKt::main);
-  }
-
-  @Test
-  public void testRepeatByInt() {
-    testExample("Examples/FunctionTypes/RepeatByInt.kt", RepeatByIntKt::main);
-  }
-
-  @Test
-  public void testRepeatVerbose() {
-    testExample("Examples/FunctionTypes/RepeatVerbose.kt", RepeatVerboseKt::main);
-  }
-
-  @Test
-  public void testSimpleOperation() {
-    testExample("Examples/FunctionTypes/SimpleOperation.kt", SimpleOperationKt::main);
   }
 
   @Test
@@ -743,6 +738,46 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAny() {
+    testExample("Examples/HigherOrderFunctions/Any.kt", AnyKt::main);
+  }
+
+  @Test
+  public void testNullableFunction() {
+    testExample("Examples/HigherOrderFunctions/NullableFunction.kt", NullableFunctionKt::main);
+  }
+
+  @Test
+  public void testNullableReturn() {
+    testExample("Examples/HigherOrderFunctions/NullableReturn.kt", NullableReturnKt::main);
+  }
+
+  @Test
+  public void testRepeatByInt() {
+    testExample("Examples/HigherOrderFunctions/RepeatByInt.kt", RepeatByIntKt::main);
+  }
+
+  @Test
+  public void testRepeatFun() {
+    testExample("Examples/HigherOrderFunctions/RepeatFun.kt", definingrepeat.RepeatFunKt::main);
+  }
+
+  @Test
+  public void testRepeatVerbose() {
+    testExample("Examples/HigherOrderFunctions/RepeatVerbose.kt", RepeatVerboseKt::main);
+  }
+
+  @Test
+  public void testSimpleOperation() {
+    testExample("Examples/HigherOrderFunctions/SimpleOperation.kt", SimpleOperationKt::main);
+  }
+
+  @Test
+  public void testTypeDeclarations() {
+    testExample("Examples/HigherOrderFunctions/TypeDeclarations.kt", TypeDeclarationsKt::main);
+  }
+
+  @Test
   public void testIf1() {
     testExample("Examples/IfExpressions/If1.kt", If1Kt::main);
   }
@@ -793,21 +828,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testImmutableBlendMap() {
-    testExample("Examples/Immutability/ImmutableBlendMap.kt", immutableblendmap.ImmutableBlendMapKt::main);
-  }
-
-  @Test
-  public void testImmutableBlendMap2() {
-    testExample("Examples/Immutability/ImmutableBlendMap2.kt", immutableblendmap2.ImmutableBlendMap2Kt::main);
-  }
-
-  @Test
-  public void testImmutableBlendMap3() {
-    testExample("Examples/Immutability/ImmutableBlendMap3.kt", immutableblendmap3.ImmutableBlendMap3Kt::main);
-  }
-
-  @Test
   public void testMutableBlendMap() {
     testExample("Examples/Immutability/MutableBlendMap.kt", mutableblendmap.MutableBlendMapKt::main);
   }
@@ -815,6 +835,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testMutableBlendMap2() {
     testExample("Examples/Immutability/MutableBlendMap2.kt", mutableblendmap2.MutableBlendMap2Kt::main);
+  }
+
+  @Test
+  public void testReadOnlyBlendMap() {
+    testExample("Examples/Immutability/ReadOnlyBlendMap.kt", readonlyblendmap.ReadOnlyBlendMapKt::main);
+  }
+
+  @Test
+  public void testReadOnlyBlendMap2() {
+    testExample("Examples/Immutability/ReadOnlyBlendMap2.kt", readonlyblendmap2.ReadOnlyBlendMap2Kt::main);
+  }
+
+  @Test
+  public void testReadOnlyBlendMap3() {
+    testExample("Examples/Immutability/ReadOnlyBlendMap3.kt", readonlyblendmap3.ReadOnlyBlendMap3Kt::main);
   }
 
   @Test
@@ -838,11 +873,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testClosures3() {
-    testExample("Examples/ImportanceOfLambdas/Closures3.kt", Closures3Kt::main);
-  }
-
-  @Test
   public void testFilter() {
     testExample("Examples/ImportanceOfLambdas/Filter.kt", FilterKt::main);
   }
@@ -850,6 +880,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testFilterEven() {
     testExample("Examples/ImportanceOfLambdas/FilterEven.kt", FilterEvenKt::main);
+  }
+
+  @Test
+  public void testFunctionClosure() {
+    testExample("Examples/ImportanceOfLambdas/FunctionClosure.kt", FunctionClosureKt::main);
   }
 
   @Test
@@ -923,8 +958,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAnotherComputer() {
-    testExample("Examples/Interfaces/AnotherComputer.kt", interfaces.AnotherComputerKt::main);
+  public void testBrokenComputer() {
+    testExample("Examples/Interfaces/BrokenComputer.kt", interfaces.BrokenComputerKt::main);
   }
 
   @Test
@@ -1968,26 +2003,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testEagerEvaluation() {
-    testExample("Examples/Sequences/EagerEvaluation.kt", EagerEvaluationKt::main);
-  }
-
-  @Test
-  public void testEagerVsLazyEvaluation() {
-    testExample("Examples/Sequences/EagerVsLazyEvaluation.kt", sequences.EagerVsLazyEvaluationKt::main);
-  }
-
-  @Test
-  public void testNoComputationYet() {
-    testExample("Examples/Sequences/NoComputationYet.kt", sequences.NoComputationYetKt::main);
-  }
-
-  @Test
-  public void testTerminalOperations() {
-    testExample("Examples/Sequences/TerminalOperations.kt", sequences.TerminalOperationsKt::main);
-  }
-
-  @Test
   public void testMutableSet() {
     testExample("Examples/Sets/MutableSet.kt", MutableSetKt::main);
   }
@@ -2273,11 +2288,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testImmutableAndPlus() {
-    testExample("Examples/UsingOperators/ImmutableAndPlus.kt", ImmutableAndPlusKt::main);
-  }
-
-  @Test
   public void testNewAngle() {
     testExample("Examples/UsingOperators/NewAngle.kt", NewAngleKt::main);
   }
@@ -2285,6 +2295,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testOperatorPlus() {
     testExample("Examples/UsingOperators/OperatorPlus.kt", OperatorPlusKt::main);
+  }
+
+  @Test
+  public void testReadOnlyAndPlus() {
+    testExample("Examples/UsingOperators/ReadOnlyAndPlus.kt", ReadOnlyAndPlusKt::main);
   }
 
   @Test
