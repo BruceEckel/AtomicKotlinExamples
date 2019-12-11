@@ -4,14 +4,14 @@ import upcasting.*
 
 fun play(gameElement: GameElement) {
   println("Playing turn:")
-  gameElement.playTurn()
+  gameElement.play()
 }
 
 fun moveAround(mobileElement: MobileElement) {
   println("Moving around:")
-  mobileElement.makeMove(Move.RIGHT)
-  mobileElement.makeMove(Move.RIGHT)
-  mobileElement.makeMove(Move.UP)
+  mobileElement.move(Move.RIGHT)
+  mobileElement.move(Move.RIGHT)
+  mobileElement.move(Move.UP)
 }
 
 fun checkScore(robot: Robot) {

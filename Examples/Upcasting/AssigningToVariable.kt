@@ -3,6 +3,6 @@ package upcasting
 
 fun main() {
   val element: GameElement = Robot()
-  // Doesnt' compile:
-  // element.makeMove(Move.RIGHT)
+  // Doesn't compile:
+  // element.move(Move.RIGHT)
 }

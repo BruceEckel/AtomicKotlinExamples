@@ -958,13 +958,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBrokenComputer() {
-    testExample("Examples/Interfaces/BrokenComputer.kt", interfaces.BrokenComputerKt::main);
-  }
-
-  @Test
-  public void testSuperComputer() {
-    testExample("Examples/Interfaces/SuperComputer.kt", interfaces.SuperComputerKt::main);
+  public void testComputer() {
+    testExample("Examples/Interfaces/Computer.kt", interfaces.ComputerKt::main);
   }
 
   @Test
@@ -1550,6 +1545,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsingLongs() {
     testExample("Examples/NumberTypes/UsingLongs.kt", UsingLongsKt::main);
+  }
+
+  @Test
+  public void testInitialDesign() {
+    testExample("Examples/ObjectOrientedDesign/InitialDesign.kt", oodesigndraft1.InitialDesignKt::main);
+  }
+
+  @Test
+  public void testInitializeMaze() {
+    testExample("Examples/ObjectOrientedDesign/InitializeMaze.kt", oodesigndraft1.InitializeMazeKt::main);
   }
 
   @Test

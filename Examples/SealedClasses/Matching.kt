@@ -2,7 +2,7 @@
 package sealedclasses.mathing
 
 interface GameElement
-interface Position
+interface Cell
 
 sealed class GameAction
 
@@ -12,11 +12,11 @@ data class DestroyAction(
 
 data class MoveAction(
   val element: GameElement,
-  val newPosition: Position
+  val newCell: Cell
 ) : GameAction()
 
 interface MutableMaze {
-  fun add(e: GameElement, p: Position)
+  fun add(e: GameElement, c: Cell)
   fun remove(e: GameElement)
 }
 
@@ -31,7 +31,7 @@ class Game1(val maze: MutableMaze) {
         is MoveAction -> {
           maze.remove(action.element)
           maze.add(action.element,
-            action.newPosition)
+            action.newCell)
         }
       }
     }

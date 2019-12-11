@@ -4,7 +4,7 @@ import upcasting.*
 
 fun play(gameElement: GameElement) {
   println("Playing turn:")
-  gameElement.playTurn()
+  gameElement.play()
 }
 
 fun main() {
@@ -21,5 +21,5 @@ Robot eats some food
 Playing turn:
 Static element does nothing
 Playing turn:
-Bomb blows up some elements
+Bomb blows up neighboring elements
 */

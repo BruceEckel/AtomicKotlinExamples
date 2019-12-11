@@ -11,7 +11,7 @@ fun sameCellElements(
 
 fun isPassable(
   maze: Maze,
-  position: Position
+  cell: Cell
 ): Boolean {
   return true
 }

@@ -13,9 +13,9 @@ class GardenItem(
   var material: Material = Plastic
 
   constructor(
-    name: String, material: Material    // [1]
+    name: String, material: Material     // [1]
   ) : this(name) {                       // [2]
-    this.material = material            // [3]
+    this.material = material             // [3]
   }
 
   constructor(

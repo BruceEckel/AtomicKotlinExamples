@@ -3,7 +3,7 @@ package upcasting
 
 fun play(gameElement: GameElement) {
   println("Playing turn:")
-  gameElement.playTurn()
+  gameElement.play()
 }
 
 fun main() {

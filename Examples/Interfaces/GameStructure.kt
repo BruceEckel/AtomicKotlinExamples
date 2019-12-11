@@ -1,5 +1,5 @@
-// Interfaces/GameIntro.kt
-package intro
+// Interfaces/GameStructure.kt
+package gamestructure
 
 interface Maze
 class MazeImpl : Maze

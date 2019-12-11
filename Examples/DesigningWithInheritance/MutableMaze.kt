@@ -1,17 +1,17 @@
 // DesigningWithInheritance/MutableMaze.kt
 package designingwithinheritance
 
-data class Position(val x: Int, val y: Int)
+data class Cell(val x: Int, val y: Int)
 
 interface Maze {
   // Read-only access operations
   fun all(): Set<GameElement>
-  fun allAt(p: Position): Set<GameElement>
+  fun allIn(c: Cell): Set<GameElement>
 }
 
 interface MutableMaze : Maze {
   // Modification Operations
-  fun add(e: GameElement, p: Position)
+  fun add(e: GameElement, c: Cell)
   fun remove(e: GameElement)
 }
 
@@ -21,16 +21,16 @@ class MazeImpl : MutableMaze {
     return setOf()
   }
 
-  override fun allAt(
-    p: Position
+  override fun allIn(
+    c: Cell
   ): Set<GameElement> {
     return setOf()
   }
 
   override fun add(
-    e: GameElement, p: Position
+    e: GameElement, c: Cell
   ) {
-    println("Adding $e to $p")
+    println("Adding $e to $c")
   }
 
   override fun remove(e: GameElement) {
@@ -58,7 +58,7 @@ class GameImpl : Game {
   override val maze: MutableMaze = MazeImpl()
   override fun playTurn() {
     // We can access modification members:
-    maze.add(Robot(), Position(0, 0))   // [1]
+    maze.add(Robot(), Cell(0, 0))   // [1]
   }
 }
 
@@ -67,9 +67,8 @@ fun main() {
   game.playTurn()
 
   // We can't access modification members:
-// game.maze.add(Robot(),
-//   Position(0, 0)) // [2]
+// game.maze.add(Robot(), Cell(0, 0))   // [2]
 }
 /* Output:
-Adding Robot to Position(x=0, y=0)
+Adding Robot to Cell(x=0, y=0)
 */

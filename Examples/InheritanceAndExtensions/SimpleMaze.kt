@@ -5,34 +5,34 @@ interface GameElement {
   val sharesCell: Boolean
 }
 
-data class Position(val x: Int, val y: Int)
+data class Cell(val x: Int, val y: Int)
 
 interface Maze {
   val width: Int
   val height: Int
   fun all(): Set<GameElement>
-  fun allAt(p: Position): Set<GameElement>
-  fun position(e: GameElement): Position?
-  fun add(e: GameElement, p: Position)
+  fun allIn(c: Cell): Set<GameElement>
+  fun cell(e: GameElement): Cell?
+  fun add(e: GameElement, c: Cell)
   fun remove(e: GameElement)
 }
 
 fun Maze.sameCellElements(
   element: GameElement
 ): Set<GameElement> {
-  val position = position(element)
+  val cell = cell(element)
     ?: return setOf()
-  return allAt(position) - element
+  return allIn(cell) - element
 }
 
 fun Maze.isPassable(
-  position: Position
+  cell: Cell
 ): Boolean {
-  if (position.x !in (0 until width)
-    || position.y !in (0 until height)) {
+  if (cell.x !in (0 until width)
+    || cell.y !in (0 until height)) {
     return false
   }
-  val elementsAtNewPosition = allAt(position)
-  return elementsAtNewPosition
+  val cellOccupants = allIn(cell)
+  return cellOccupants
     .all { it.sharesCell }
 }

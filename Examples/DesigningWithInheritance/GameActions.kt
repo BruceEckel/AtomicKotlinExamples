@@ -10,5 +10,5 @@ data class DestroyAction(
 ) : GameAction
 
 interface GameElement {
-  fun playTurn(maze: Maze): Set<GameAction>
+  fun play(maze: Maze): Set<GameAction>
 }

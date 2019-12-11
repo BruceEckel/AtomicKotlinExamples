@@ -228,11 +228,6 @@ task Boxes(type: JavaExec) {
     main = 'BoxesKt'
 }
 
-task BrokenComputer(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'interfaces.BrokenComputerKt'
-}
-
 task BuildString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BuildStringKt'
@@ -381,6 +376,11 @@ task CompareTo(type: JavaExec) {
 task Computation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'destructuring.ComputationKt'
+}
+
+task Computer(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.ComputerKt'
 }
 
 task Confusing(type: JavaExec) {
@@ -1041,6 +1041,16 @@ task InfiniteRecursion(type: JavaExec) {
 task InitSection(type: JavaExec) {
     classpath kotlinClassPath
     main = 'complexconstructors.InitSectionKt'
+}
+
+task InitialDesign(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'oodesigndraft1.InitialDesignKt'
+}
+
+task InitializeMaze(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'oodesigndraft1.InitializeMazeKt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -2078,11 +2088,6 @@ task SumViaFold(type: JavaExec) {
     main = 'SumViaFoldKt'
 }
 
-task SuperComputer(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'interfaces.SuperComputerKt'
-}
-
 task Swearing(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SwearingKt'
@@ -2498,7 +2503,6 @@ task run (dependsOn: [
     'BookExtensions',
     'Booleans',
     'Boxes',
-    'BrokenComputer',
     'BuildString',
     'BuildStringAndThis',
     'ByOperations',
@@ -2529,6 +2533,7 @@ task run (dependsOn: [
     'CompanionObject',
     'CompareTo',
     'Computation',
+    'Computer',
     'Confusing',
     'ConstructorReference',
     'ContactMap',
@@ -2661,6 +2666,8 @@ task run (dependsOn: [
     'Inference',
     'InfiniteRecursion',
     'InitSection',
+    'InitialDesign',
+    'InitializeMaze',
     'InputLines1',
     'InputLines2',
     'IntDivisionTruncates',
@@ -2868,7 +2875,6 @@ task run (dependsOn: [
     'Sum',
     'SumUsingRange',
     'SumViaFold',
-    'SuperComputer',
     'Swearing',
     'TDDFail',
     'TDDStillFails',

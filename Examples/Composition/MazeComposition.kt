@@ -3,13 +3,13 @@ package prefercomposition
 
 interface GameElement
 interface Move
-data class Position(val x: Int, val y: Int)
+data class Cell(val x: Int, val y: Int)
 
 interface Maze {
   fun all(): Set<GameElement>
-  fun allAt(p: Position): Set<GameElement>
-  fun position(e: GameElement): Position?
-  fun add(e: GameElement, p: Position)
+  fun allIn(c: Cell): Set<GameElement>
+  fun cell(e: GameElement): Cell?
+  fun add(e: GameElement, c: Cell)
   fun remove(e: GameElement)
 }
 

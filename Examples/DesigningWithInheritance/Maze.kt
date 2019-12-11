@@ -4,13 +4,13 @@ package designingwithinheritance.maze
 interface GameElement
 interface Move
 class Robot : GameElement
-data class Position(val x: Int, val y: Int)
+data class Cell(val x: Int, val y: Int)
 
 interface Maze {
   fun all(): Set<GameElement>
-  fun allAt(p: Position): Set<GameElement>
-  fun position(e: GameElement): Position?
-  fun add(e: GameElement, p: Position)
+  fun allIn(c: Cell): Set<GameElement>
+  fun cell(e: GameElement): Cell?
+  fun add(e: GameElement, c: Cell)
   fun remove(e: GameElement)
 }
 
@@ -20,8 +20,8 @@ interface Game {
 }
 
 fun playGame(game: Game) {
-  val position = Position(0, 0)
-  game.maze.allAt(position).forEach {
+  val cell = Cell(0, 0)
+  game.maze.allIn(cell).forEach {
     game.maze.remove(it)    // [1]
   }
 }

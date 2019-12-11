@@ -1,30 +1,26 @@
 // Inheritance/MazeGameInheritance.kt
 package inheritance
 
-interface Position
+interface Cell
 
 interface Maze {
   fun all(): Set<GameElement>
 
-  fun allAt(
-    position: Position): Set<GameElement>
+  fun allIn(cell: Cell): Set<GameElement>
 
-  fun position(
-    element: GameElement): Position?
+  fun cell(element: GameElement): Cell?
 
-  fun add(
-    element: GameElement,
-    position: Position)
+  fun add(element: GameElement, cell: Cell)
 
   fun remove(element: GameElement)
 }
 
 interface GameElement {
-  fun playTurn(maze: Maze)
+  fun play(maze: Maze)
 }
 
 open class StaticElement : GameElement {
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     // Default implementation: do nothing
   }
 }
@@ -34,10 +30,9 @@ class Wall : StaticElement()  // [1]
 class Food : StaticElement()  // [2]
 
 class Bomb : StaticElement() {
-  override fun playTurn(maze: Maze) {
-    val position = maze.position(this)
-      ?: return
-    val all = maze.allAt(position)
+  override fun play(maze: Maze) {
+    val cell = maze.cell(this) ?: return
+    val all = maze.allIn(cell)
     if (all.size > 1) {       // [3]
       all.forEach {           // [4]
         maze.remove(it)

@@ -2,10 +2,10 @@
 package sealedclasses.polymorphism
 
 interface GameElement
-interface Position
+interface Cell
 
 interface MutableMaze {
-  fun add(e: GameElement, p: Position)
+  fun add(e: GameElement, c: Cell)
   fun remove(e: GameElement)
 }
 
@@ -23,11 +23,11 @@ class DestroyAction(
 
 class MoveAction(
   val element: GameElement,
-  val newPosition: Position
+  val newCell: Cell
 ) : GameAction {
   override fun applyTo(maze: MutableMaze) {
     maze.remove(element)
-    maze.add(element, newPosition)
+    maze.add(element, newCell)
   }
 }
 

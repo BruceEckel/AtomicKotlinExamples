@@ -10,20 +10,20 @@ abstract class MobileElement : GameElement {
   override val sharesCell: Boolean
     get() = true
 
-  abstract fun makeMove(             // [1]
-    move: Move, maze: Maze): Position?
+  abstract fun move(             // [1]
+    move: Move, maze: Maze): Cell?
 }
 
 class Robot : MobileElement() {
   override val symbol: Char get() = 'R'
-  override fun playTurn(maze: Maze) {
+  override fun play(maze: Maze) {
     // Eat food
   }
 
-  override fun makeMove(             // [2]
+  override fun move(             // [2]
     move: Move, maze: Maze
-  ): Position? {
-    // Return new position
+  ): Cell? {
+    // Return new cell
     return null
   }
 }

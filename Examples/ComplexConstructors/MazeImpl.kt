@@ -9,7 +9,7 @@ class MazeImpl(
   height: Int,
   representation: String
 ) {
-  val cells = MutableList(height) {     // [1]
+  val elementMap = MutableList(height) {// [1]
     MutableList<GameElement?>(width) { null }
   }
 
@@ -19,13 +19,14 @@ class MazeImpl(
       for (x in 0 until width) {
         val ch = lines[y][x]
         if (ch != ' ')
-          cells[y][x] = GameElement(ch) // [3]
+          elementMap[y][x] =
+            GameElement(ch)             // [3]
       }
     }
   }
 
   override fun toString() =
-    cells.joinToString("\n") { row ->
+    elementMap.joinToString("\n") { row ->
       row.joinToString("") { element ->
         "${element?.symbol ?: ' '}"
       }
@@ -38,7 +39,7 @@ fun main() {
        #
     #.##
     """.trimIndent())
-  maze.cells[1][0] = GameElement('R')
+  maze.elementMap[1][0] = GameElement('R')
   maze eq """
     # ##
     R  #

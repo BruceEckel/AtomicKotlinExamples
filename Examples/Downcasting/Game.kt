@@ -5,26 +5,26 @@ enum class Move {
   UP, RIGHT, DOWN, LEFT, WAIT
 }
 
-interface Element {
-  fun playTurn()
+interface GameElement {
+  fun play()
 }
 
-interface MobileElement : Element {
-  fun makeMove(move: Move): Position
+interface MobileElement : GameElement {
+  fun move(move: Move): Cell
 }
 
-data class Position(val x: Int, val y: Int)
+data class Cell(val x: Int, val y: Int)
 
 class Robot : MobileElement {
   private var eatenFoodItems = 0
-  override fun playTurn() {
+  override fun play() {
     println("Robot eats food")
     eatenFoodItems++
   }
 
-  override fun makeMove(move: Move): Position {
+  override fun move(move: Move): Cell {
     println("Robot moves $move")
-    return Position(0, 0)
+    return Cell(0, 0)
   }
 
   fun score(): Int {
@@ -33,7 +33,7 @@ class Robot : MobileElement {
 }
 
 interface Maze {
-  fun all(): Set<Element>
+  fun all(): Set<GameElement>
 }
 
 interface MutableMaze : Maze
@@ -66,7 +66,7 @@ class GameImpl : Game {
 
   override fun playTurn() {
     maze.all().forEach { element ->
-      element.playTurn()
+      element.play()
     }
   }
 
@@ -75,8 +75,8 @@ class GameImpl : Game {
     val mobileElements = maze.all()
       .filterIsInstance<MobileElement>() // [5]
     mobileElements.forEach {
-      val position = it.makeMove(move)   // [6]
-      // update element position
+      val cell = it.move(move)           // [6]
+      // update element cell
     }
   }
 }

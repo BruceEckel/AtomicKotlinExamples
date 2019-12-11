@@ -2,11 +2,11 @@
 package upcasting
 
 interface GameElement {
-  fun playTurn()
+  fun play()
 }
 
 abstract class StaticElement : GameElement {
-  override fun playTurn() {
+  override fun play() {
     println("Static element does nothing")
   }
 }
@@ -14,7 +14,7 @@ abstract class StaticElement : GameElement {
 class Wall : StaticElement()
 
 class Bomb : StaticElement() {
-  override fun playTurn() {
+  override fun play() {
     println("Bomb blows up some elements")
   }
 }
@@ -24,15 +24,15 @@ enum class Move {
 }
 
 abstract class MobileElement : GameElement {
-  abstract fun makeMove(move: Move)
+  abstract fun move(move: Move)
 }
 
 class Robot : MobileElement() {
-  override fun playTurn() {
+  override fun play() {
     println("Robot eats some food")
   }
 
-  override fun makeMove(move: Move) {
+  override fun move(move: Move) {
     println("Robot goes $move")
   }
 
