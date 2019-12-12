@@ -1048,11 +1048,6 @@ task InitialDesign(type: JavaExec) {
     main = 'oodesigndraft1.InitialDesignKt'
 }
 
-task InitializeMaze(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesigndraft1.InitializeMazeKt'
-}
-
 task InputLines1(type: JavaExec) {
     classpath kotlinClassPath
     main = 'InputLines1Kt'
@@ -2667,7 +2662,6 @@ task run (dependsOn: [
     'InfiniteRecursion',
     'InitSection',
     'InitialDesign',
-    'InitializeMaze',
     'InputLines1',
     'InputLines2',
     'IntDivisionTruncates',

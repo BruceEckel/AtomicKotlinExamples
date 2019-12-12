@@ -1,73 +1,136 @@
 // ObjectOrientedDesign/InitialDesign.kt
 package oodesigndraft1
+import oodesigndraft1.Item.*
 
-interface Item
-class Wall: Item
-class Food: Item
-class Teleport(val destination: Room) : Item
-class EndGame: Item
-class Empty: Item
-class Boundary: Item
-
-enum class Urge {
-  North, South, East, West
+enum class Item(val symbol: Char) {
+  Mech('R'),
+  Wall('#'),
+  Food('.'),
+  Teleport('T'),
+  Empty(' '),
+  Edge('_'),
+  EndGame('!')
 }
+
+enum class Urge { North, South, East, West }
 
 class Robot(var room: Room) {
   fun turn(urge: Urge) {
     // Get a reference to the Room you've
     // been urged to go to, and see what
     // happens when we enter the Room.
-    // Point Robot to returned Room:
-    room = room.next(urge).enter(this)
+    // Point robot to returned Room:
+    room =
+      room.others.door(urge).enter(this)
   }
+  override fun toString() =
+    "Robot ${room.others}"
 }
 
-val boundary = Room(Boundary())
-// Indicates the game is ending:
-val endSentinel = Room()
+val edge = Room(Edge)
 
-class Room(var occupant: Item = Empty()) {
-  val north: Room = boundary
-  val south: Room = boundary
-  val east: Room  = boundary
-  val west: Room  = boundary
-  fun next(urge: Urge): Room =
-    when(urge) {
+class Others {
+  var north: Room = edge
+  var south: Room = edge
+  var east: Room = edge
+  var west: Room = edge
+  fun connect(
+    row: Int, col: Int,
+    grid: Map<Pair<Int, Int>, Room>
+  ) {
+    fun link(toRow: Int, toCol: Int) =
+      grid.getOrDefault(
+        Pair(toRow, toCol), edge)
+    north = link(row - 1, col)
+    south = link(row + 1, col)
+    east = link(row, col + 1)
+    west = link(row, col - 1)
+  }
+  fun door(urge: Urge): Room =
+    when (urge) {
       Urge.North -> north
       Urge.South -> south
-      Urge.East  -> east
-      Urge.West  -> west
+      Urge.East -> east
+      Urge.West -> west
     }
-  fun enter(robot: Robot): Room {
-    when (val e = occupant) {
-      is Empty -> {}
-      is Boundary -> {
-        println("Hit Boundary")
-        // Stay in original room:
-        return robot.room
-      }
-      is Wall -> {
-        println("Bounce off wall")
-        // Stay in original room:
-        return robot.room
-      }
-      is Food -> {
-        println("Eat food")
-        occupant = Empty()
-      }
-      is Teleport -> {
-        println("Jump to target room")
-        return e.destination
-      }
-      is EndGame -> {
-        println("End game")
-        return endSentinel
-      }
-      else -> println("???")
-    }
-    return this
-  }
+  override fun toString() =
+    "[N(${north.occupant}), " +
+    "S(${south.occupant}), " +
+    "E(${east.occupant}), " +
+    "W(${west.occupant})]"
 }
 
-fun main() {}
+class Room(var occupant: Item = Empty) {
+  val others = Others()
+  fun enter(r1: Robot): Room {
+    when (occupant) {
+      Empty -> return this // Enter new room
+      // Stay in original room:
+      Wall, Edge, Mech -> return r1.room
+      Food -> {
+        println("Eat food")
+        occupant = Empty
+        return this
+      }
+      Teleport -> {
+        println("Jump to target room")
+        return Room(Teleport)
+      }
+      EndGame -> {
+        println("End game")
+        return Room(EndGame)
+      }
+    }
+  }
+  override fun toString() =
+    "Room($occupant) $others"
+}
+
+val stringMaze = """
+a ...#... c
+R ...#...
+###########
+a ....... b
+###########
+! c ..... b
+""".trim()
+
+class RoomBuilder(maze: String) {
+  private val grid =
+    mutableMapOf<Pair<Int, Int>, Room>()
+  val robot = Robot(edge) // Nowhere
+  init {
+    // Stage 1: Create grid
+    val lines = maze.split("\n")
+    lines.withIndex().forEach { (r, str) ->
+      str.withIndex().forEach { (c, ch) ->
+        grid[Pair(r, c)] = room(ch)
+      }
+    }
+    // Stage 2: Connect the rooms
+    grid.forEach { (p, r) ->
+      r.others
+        .connect(p.first, p.second, grid)
+    }
+    // Stage 3: Locate the robot
+    robot.room = grid.values
+      .find { it.occupant == Mech }
+      ?: robot.room
+  }
+  private fun room(c: Char): Room {
+    Item.values().forEach { item ->
+      if (item.symbol == c)
+        return Room(item)
+    }
+    return Room(Teleport)
+  }
+  override fun toString() =
+    grid.map { "${it.value}" }
+      .joinToString("\n")
+}
+
+fun main() {
+  val builder = RoomBuilder(stringMaze)
+  println(builder)
+  println(builder.robot)
+}

@@ -1553,11 +1553,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testInitializeMaze() {
-    testExample("Examples/ObjectOrientedDesign/InitializeMaze.kt", oodesigndraft1.InitializeMazeKt::main);
-  }
-
-  @Test
   public void testObjectInheritance() {
     testExample("Examples/Objects/ObjectInheritance.kt", ObjectInheritanceKt::main);
   }
