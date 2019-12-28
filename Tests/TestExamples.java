@@ -1548,8 +1548,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testInitialDesign() {
-    testExample("Examples/ObjectOrientedDesign/InitialDesign.kt", oodesigndraft1.InitialDesignKt::main);
+  public void testEssence() {
+    testExample("Examples/ObjectOrientedDesign/Essence.kt", robotexploreressence.EssenceKt::main);
   }
 
   @Test

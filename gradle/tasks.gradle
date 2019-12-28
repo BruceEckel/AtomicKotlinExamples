@@ -593,6 +593,11 @@ task EnumImport(type: JavaExec) {
     main = 'EnumImportKt'
 }
 
+task Essence(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'robotexploreressence.EssenceKt'
+}
+
 task Evaluation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EvaluationKt'
@@ -1041,11 +1046,6 @@ task InfiniteRecursion(type: JavaExec) {
 task InitSection(type: JavaExec) {
     classpath kotlinClassPath
     main = 'complexconstructors.InitSectionKt'
-}
-
-task InitialDesign(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesigndraft1.InitialDesignKt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -2571,6 +2571,7 @@ task run (dependsOn: [
     'ElvisOperator',
     'EmptyProgram',
     'EnumImport',
+    'Essence',
     'Evaluation',
     'EvaluationOrder',
     'ExplicitCheck',
@@ -2661,7 +2662,6 @@ task run (dependsOn: [
     'Inference',
     'InfiniteRecursion',
     'InitSection',
-    'InitialDesign',
     'InputLines1',
     'InputLines2',
     'IntDivisionTruncates',
