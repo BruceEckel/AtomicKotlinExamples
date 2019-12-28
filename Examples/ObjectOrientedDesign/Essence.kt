@@ -3,22 +3,29 @@ package robotexploreressence
 import robotexploreressence.Item.*
 
 enum class Item(val symbol: Char) {
-  Mech('R'),
+//  Mech('R'),
   Wall('#'),
   Food('.'),
-  Teleport('T'),
+//  Teleport('T'),
   Empty('_'),
   Edge('/'),
   EndGame('!');
   override fun toString() = symbol.toString()
 }
 
+class Teleport(val target: Char) {
+  var targetRoom = Room(Empty)
+  override fun toString() = target.toString()
+}
+
 fun factory(ch: Char): Any {
+  if(ch == 'R')
+    return Robot(edge)
   Item.values().forEach { item ->
     if (item.symbol == ch)
       return item
   }
-  return Teleport
+  return Teleport(ch)
 }
 
 enum class Urge { North, South, East, West }
@@ -68,27 +75,28 @@ class Doors {
       "W(${west.occupant})]"
 }
 
-class Room(var occupant: Item = Empty) {
+class Room(var occupant: Any = Empty) {
   val doors = Doors()
   fun enter(robot: Robot): Room {
     when (occupant) {
       Empty -> return this // Enter new room
       // Stay in original room:
-      Wall, Edge, Mech -> return robot.room
+      Wall, Edge -> return robot.room
       Food -> {
         println("Eat food")
         occupant = Empty
         return this
       }
-      Teleport -> {
+      is Teleport -> {
         println("Jump to target room")
-        return Room(Teleport)
+        return (occupant as Teleport).targetRoom
       }
       EndGame -> {
         println("End game")
         return Room(EndGame)
       }
     }
+    return this
   }
   override fun toString() =
     "Room($occupant) $doors"
@@ -101,41 +109,44 @@ val clearScreen =
   else
     "clear"
 
-class RoomBuilder(val maze: String) {
-  private val grid =
+class GameBuilder(val maze: String) {
+  private val rooms =
     mutableMapOf<Pair<Int, Int>, Room>()
   fun room(row: Int, col: Int) =
     "($row, $col) " +
-      grid.getOrDefault(Pair(row, col), edge)
-  val robot = Robot(edge) // Nowhere
-  fun build(): RoomBuilder {
+      rooms.getOrDefault(Pair(row, col), edge)
+  val robot = Robot(Room(Empty))
+  fun build(): GameBuilder {
     // Stage 1: Build the grid
     val lines = maze.split("\n")
     lines.withIndex().forEach { (r, line) ->
       line.withIndex().forEach { (c, char) ->
-        grid[Pair(r, c)] = createRoom(char)
+        when(val occupant = factory(char)) {
+          is Robot ->
+            rooms[Pair(r, c)] = robot.room
+          else ->
+            rooms[Pair(r, c)] = Room(occupant)
+        }
       }
     }
     // Stage 2: Connect the rooms
-    grid.forEach { (pair, r) ->
+    rooms.forEach { (pair, r) ->
       r.doors.connect(
-        pair.first, pair.second, grid)
+        pair.first, pair.second, rooms)
     }
-    // Stage 3: Locate the robot
-    robot.room = grid.values
-      .find { it.occupant == Mech }
-      ?: robot.room
+    // Stage 3: Connect the Teleport rooms
+    rooms.values.filter { it.occupant is Teleport }
     return this
   }
-  private fun createRoom(c: Char): Room {
-    Item.values().forEach { item ->
-      if (item.symbol == c)
-        return Room(item)
-    }
-    return Room(Teleport)
-  }
+//  private fun createRoom(c: Char): Room {
+//    Item.values().forEach { item ->
+//      if (item.symbol == c)
+//        return Room(item)
+//    }
+//    return Room(Teleport)
+//  }
   override fun toString() =
-    grid.map { "${it.key} ${it.value}" }
+    rooms.map { "${it.key} ${it.value}" }
       .joinToString("\n")
 }
 
@@ -158,7 +169,7 @@ ww
 
 fun main() {
   val builder =
-    RoomBuilder(stringMaze).build()
+    GameBuilder(stringMaze).build()
   println(builder.room(0, 0))
   println(builder.room(1, 6))
   println(builder.room(5, 0))
