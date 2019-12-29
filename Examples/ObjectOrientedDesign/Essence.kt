@@ -192,4 +192,3 @@ fun main() {
   val game = Game(stringMaze).build()
   game.run(solution)
 }
-
