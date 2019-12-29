@@ -84,6 +84,13 @@ examples in this book, so you'll need to update it to (at least) Java 8.
   2.  At a shell prompt, first type `brew update`. When that completes, enter
       `brew cask install java`.
 
+**NOTE:** Sometimes the default version of Java that you get with the above
+installation will be too recent and not validated by the Mac's security
+system. If this happens you'll either need to turn off the security by hand
+or install an earlier version of Java. For either choice, you'll need to Google
+for answers on how to solve the problem (often the easiest approach is to just
+search for the error message produced by the Mac).
+
 ### Linux
 
 Use the standard package installer with the following shell commands:
@@ -157,8 +164,8 @@ and Mac/Linux that allow you to compile and run the examples in that
 subdirectory. They are not necessary to build the code, but if you begin
 experimenting with individual examples they are helpful.
 
-To run these scripts, you must first install [Python
-3.6](https://www.python.org/downloads/release/python-363/) or newer.
+To run these scripts, you must first install a recent version of
+[Python 3](https://www.python.org/downloads/).
 
 If you just type `run` (`./run.sh` in Mac/Linux), it will (using
 Gradle) compile and run all the examples in the directory. You can also type
