@@ -1,6 +1,7 @@
 // ObjectOrientedDesign/Essence.kt
 package robotexploreressence
 import robotexploreressence.Item.*
+const val ansiTerm = "\u001B["
 
 enum class Urge { North, South, East, West }
 
@@ -92,13 +93,6 @@ class Room(var occupant: Any = Empty) {
     "Room($occupant) $doors"
 }
 
-val clearScreen =
-  if (System.getProperty("os.name")
-      .contains("windows", ignoreCase = true))
-    "cls"
-  else
-    "clear"
-
 class Game(val maze: String) {
   val robot = Robot(Room(Empty))
   private val rooms =
@@ -148,15 +142,27 @@ class Game(val maze: String) {
       result += if (room == robot.room)
         "$robot" else "${room.occupant}"
     }
-    return result
+    return result + "\n\n\n"
   }
   fun step(urge: Urge? = null) {
-    val ansiTerm = "\u001B["
     if(urge != null)
       robot.move(urge)
     print("${ansiTerm}0;0H")
     println(showMaze())
     Thread.sleep(300L)
+  }
+  fun toUrge(urgeChar: Char): Urge =
+    when (urgeChar) {
+      'n' -> Urge.North
+      's' -> Urge.South
+      'e' -> Urge.East
+      'w' -> Urge.West
+      else -> Urge.West
+    }
+  fun run(solution: String) {
+    for(urgeChar in
+        solution.filter { it.isLetter() })
+      step(toUrge(urgeChar))
   }
   override fun toString() =
     rooms.map { "${it.key} ${it.value}" }
@@ -181,18 +187,9 @@ ww
 """.trim()
 
 fun main() {
-//  print("${ansiTerm}32mHello, World\n")
-
+  val scroll = stringMaze.lines().size + 3
+  print("${ansiTerm}${scroll}T") // viewport
   val game = Game(stringMaze).build()
-  game.step()
-//  println(game.showRoom(0, 0))
-//  println(game.showRoom(1, 6))
-//  println(game.showRoom(5, 0))
-//  val robot = game.robot
-//  println(robot)
-//  robot.move(Urge.East)
-//  robot.move(Urge.East)
-//  robot.move(Urge.South)
-//  println(robot)
+  game.run(solution)
 }
 
