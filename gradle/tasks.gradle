@@ -593,11 +593,6 @@ task EnumImport(type: JavaExec) {
     main = 'EnumImportKt'
 }
 
-task Essence(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'robotexploreressence.EssenceKt'
-}
-
 task Evaluation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EvaluationKt'
@@ -621,6 +616,11 @@ task ExplicitDelegation(type: JavaExec) {
 task ExplicitTyping(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExplicitTypingKt'
+}
+
+task ExploreMaze(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'robotexplorer1.ExploreMazeKt'
 }
 
 task ExpressionInTemplate(type: JavaExec) {
@@ -1688,11 +1688,6 @@ task Playing(type: JavaExec) {
     main = 'upcasting.PlayingKt'
 }
 
-task PolymorphicPlay(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'polymorphism.polymorphicplay.PolymorphicPlayKt'
-}
-
 task PolymorphicRobot(type: JavaExec) {
     classpath kotlinClassPath
     main = 'polymorphism.polymorphicrobot.PolymorphicRobotKt'
@@ -2571,12 +2566,12 @@ task run (dependsOn: [
     'ElvisOperator',
     'EmptyProgram',
     'EnumImport',
-    'Essence',
     'Evaluation',
     'EvaluationOrder',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',
+    'ExploreMaze',
     'ExpressionInTemplate',
     'ExtensionsToJavaClass',
     'Factorial',
@@ -2790,7 +2785,6 @@ task run (dependsOn: [
     'Pets',
     'PlatformTypes',
     'Playing',
-    'PolymorphicPlay',
     'PolymorphicRobot',
     'Postconditions',
     'PostfixVsPrefix',

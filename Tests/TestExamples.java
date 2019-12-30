@@ -1548,8 +1548,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testEssence() {
-    testExample("Examples/ObjectOrientedDesign/Essence.kt", robotexploreressence.EssenceKt::main);
+  public void testExploreMaze() {
+    testExample("Examples/ObjectOrientedDesign/ExploreMaze.kt", robotexplorer1.ExploreMazeKt::main);
   }
 
   @Test
@@ -1750,11 +1750,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testGameImpl() {
     testExample("Examples/Polymorphism/GameImpl.kt", polymorphism.GameImplKt::main);
-  }
-
-  @Test
-  public void testPolymorphicPlay() {
-    testExample("Examples/Polymorphism/PolymorphicPlay.kt", polymorphism.polymorphicplay.PolymorphicPlayKt::main);
   }
 
   @Test
