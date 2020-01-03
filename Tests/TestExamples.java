@@ -3,8 +3,18 @@ import org.junit.Test;
 public class TestExamples extends AbstractTestExamples {
 
   @Test
-  public void testGameElementsHierarchy() {
-    testExample("Examples/Abstract/GameElementsHierarchy.kt", abstractclasses.GameElementsHierarchyKt::main);
+  public void testAbsExercise1() {
+    testExample("Examples/Abstract/AbsExercise1.kt", abstractclasses.AbsExercise1Kt::main);
+  }
+
+  @Test
+  public void testAbsExercise2() {
+    testExample("Examples/Abstract/AbsExercise2.kt", abstractclasses.AbsExercise2Kt::main);
+  }
+
+  @Test
+  public void testAbsExercise3() {
+    testExample("Examples/Abstract/AbsExercise3.kt", abstractclasses.AbsExercise3Kt::main);
   }
 
   @Test
@@ -15,11 +25,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testInterfaceCollision() {
     testExample("Examples/Abstract/InterfaceCollision.kt", collision.InterfaceCollisionKt::main);
-  }
-
-  @Test
-  public void testMobileElement() {
-    testExample("Examples/Abstract/MobileElement.kt", abstractclasses.MobileElementKt::main);
   }
 
   @Test
@@ -35,6 +40,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testBigFibonacci() {
     testExample("Examples/AdaptingJava/BigFibonacci.kt", adaptingjava.BigFibonacciKt::main);
+  }
+
+  @Test
+  public void testBCIExercise1() {
+    testExample("Examples/BaseClassInit/BCIExercise1.kt", baseclassinit.BCIExercise1Kt::main);
+  }
+
+  @Test
+  public void testBCIExercise2() {
+    testExample("Examples/BaseClassInit/BCIExercise2.kt", baseclassinit.BCIExercise2Kt::main);
+  }
+
+  @Test
+  public void testBCIExercise3() {
+    testExample("Examples/BaseClassInit/BCIExercise3.kt", baseclassinit.BCIExercise3Kt::main);
   }
 
   @Test
@@ -263,13 +283,23 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testInitSection() {
-    testExample("Examples/ComplexConstructors/InitSection.kt", complexconstructors.InitSectionKt::main);
+  public void testExercise1() {
+    testExample("Examples/ComplexConstructors/Exercise1.kt", complexconstructors.Exercise1Kt::main);
   }
 
   @Test
-  public void testMazeImpl() {
-    testExample("Examples/ComplexConstructors/MazeImpl.kt", complexconstructors.MazeImplKt::main);
+  public void testExercise2() {
+    testExample("Examples/ComplexConstructors/Exercise2.kt", complexconstructors.Exercise2Kt::main);
+  }
+
+  @Test
+  public void testExercise3() {
+    testExample("Examples/ComplexConstructors/Exercise3.kt", complexconstructors.Exercise3Kt::main);
+  }
+
+  @Test
+  public void testInitSection() {
+    testExample("Examples/ComplexConstructors/InitSection.kt", complexconstructors.InitSectionKt::main);
   }
 
   @Test
@@ -1905,6 +1935,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUseLines() {
     testExample("Examples/ResourceCleanup/UseLines.kt", resourcecleanup.UseLinesKt::main);
+  }
+
+  @Test
+  public void testExploreMaze2() {
+    testExample("Examples/RobotExplorer2/ExploreMaze2.kt", robotexplorer2.ExploreMaze2Kt::main);
   }
 
   @Test

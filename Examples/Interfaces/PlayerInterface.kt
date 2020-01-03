@@ -1,18 +1,18 @@
-// Interfaces/GameElement.kt
+// Interfaces/PlayerInterface.kt
 package propertiesininterfaces
 
-interface GameElement {
+interface Player {
   val symbol: Char
 }
 
-class Robot : GameElement {
+class Robot : Player {
   override val symbol get() = 'R'
 }
 
-class Wall : GameElement {
+class Wall : Player {
   override val symbol get() = '#'
 }
 
-class Food : GameElement {
+class Food : Player {
   override val symbol get() = '.'
 }

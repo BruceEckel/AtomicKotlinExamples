@@ -18,6 +18,21 @@ task AVarIsMutable(type: JavaExec) {
     main = 'AVarIsMutableKt'
 }
 
+task AbsExercise1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'abstractclasses.AbsExercise1Kt'
+}
+
+task AbsExercise2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'abstractclasses.AbsExercise2Kt'
+}
+
+task AbsExercise3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'abstractclasses.AbsExercise3Kt'
+}
+
 task AddingIntToChar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AddingIntToCharKt'
@@ -146,6 +161,21 @@ task AverageIncomeWithException(type: JavaExec) {
 task AverageIncomeWithNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'withnull.AverageIncomeWithNullKt'
+}
+
+task BCIExercise1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'baseclassinit.BCIExercise1Kt'
+}
+
+task BCIExercise2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'baseclassinit.BCIExercise2Kt'
+}
+
+task BCIExercise3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'baseclassinit.BCIExercise3Kt'
 }
 
 task BMIEnglish(type: JavaExec) {
@@ -603,6 +633,21 @@ task EvaluationOrder(type: JavaExec) {
     main = 'EvaluationOrderKt'
 }
 
+task Exercise1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.Exercise1Kt'
+}
+
+task Exercise2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.Exercise2Kt'
+}
+
+task Exercise3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexconstructors.Exercise3Kt'
+}
+
 task ExplicitCheck(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExplicitCheckKt'
@@ -621,6 +666,11 @@ task ExplicitTyping(type: JavaExec) {
 task ExploreMaze(type: JavaExec) {
     classpath kotlinClassPath
     main = 'robotexplorer1.ExploreMazeKt'
+}
+
+task ExploreMaze2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'robotexplorer2.ExploreMaze2Kt'
 }
 
 task ExpressionInTemplate(type: JavaExec) {
@@ -776,11 +826,6 @@ task GadgetMembers(type: JavaExec) {
 task Game(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.GameKt'
-}
-
-task GameElementsHierarchy(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'abstractclasses.GameElementsHierarchyKt'
 }
 
 task GameImpl(type: JavaExec) {
@@ -1293,11 +1338,6 @@ task MatchingAgainstVals(type: JavaExec) {
     main = 'MatchingAgainstValsKt'
 }
 
-task MazeImpl(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'complexconstructors.MazeImplKt'
-}
-
 task MemberOperator(type: JavaExec) {
     classpath kotlinClassPath
     main = 'operatoroverloading.MemberOperatorKt'
@@ -1326,11 +1366,6 @@ task MembershipUsingBounds(type: JavaExec) {
 task MixColors(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MixColorsKt'
-}
-
-task MobileElement(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'abstractclasses.MobileElementKt'
 }
 
 task ModelingMI(type: JavaExec) {
@@ -2451,6 +2486,9 @@ task ZippingWithNext(type: JavaExec) {
 task run (dependsOn: [
     'ASCIIMap',
     'AVarIsMutable',
+    'AbsExercise1',
+    'AbsExercise2',
+    'AbsExercise3',
     'AddingIntToChar',
     'AllOperators',
     'Also',
@@ -2477,6 +2515,9 @@ task run (dependsOn: [
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
+    'BCIExercise1',
+    'BCIExercise2',
+    'BCIExercise3',
     'BMIEnglish',
     'BMIMetric',
     'Backticks',
@@ -2568,10 +2609,14 @@ task run (dependsOn: [
     'EnumImport',
     'Evaluation',
     'EvaluationOrder',
+    'Exercise1',
+    'Exercise2',
+    'Exercise3',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',
     'ExploreMaze',
+    'ExploreMaze2',
     'ExpressionInTemplate',
     'ExtensionsToJavaClass',
     'Factorial',
@@ -2603,7 +2648,6 @@ task run (dependsOn: [
     'GadgetExtensions',
     'GadgetMembers',
     'Game',
-    'GameElementsHierarchy',
     'GameImpl',
     'GardenItem',
     'GenericFunction',
@@ -2706,14 +2750,12 @@ task run (dependsOn: [
     'Mapping',
     'Maps',
     'MatchingAgainstVals',
-    'MazeImpl',
     'MemberOperator',
     'MemberVsExtension',
     'Membership',
     'MembershipInRange',
     'MembershipUsingBounds',
     'MixColors',
-    'MobileElement',
     'ModelingMI',
     'Module2',
     'Modulus',

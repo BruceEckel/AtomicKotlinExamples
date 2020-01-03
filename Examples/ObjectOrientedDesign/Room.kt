@@ -9,8 +9,7 @@ class Room(var player: Any = Empty) {
       // Stay in original room:
       Wall, Edge -> return robot.room
       is Teleport ->
-        return (player as Teleport)
-          .targetRoom
+        return (player as Teleport).targetRoom
       EndGame -> return Room(EndGame)
       Food -> player = Empty // Eat food
       Empty -> {}

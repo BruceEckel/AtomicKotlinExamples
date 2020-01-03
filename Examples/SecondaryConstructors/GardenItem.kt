@@ -7,9 +7,7 @@ enum class Material {
   Ceramic, Metal, Plastic
 }
 
-class GardenItem(
-  val name: String
-) {
+class GardenItem(val name: String) {
   var material: Material = Plastic
 
   constructor(

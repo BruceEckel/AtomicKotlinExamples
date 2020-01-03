@@ -1,17 +1,7 @@
 // ObjectOrientedDesign/Players.kt
 package robotexplorer1
 import robotexplorer1.Player.*
-
-enum class Urge { North, South, East, West }
-
-fun urge(urgeChar: Char): Urge =
-  when (urgeChar) {
-    'n' -> Urge.North
-    's' -> Urge.South
-    'e' -> Urge.East
-    'w' -> Urge.West
-    else -> Urge.West
-  }
+import robotexplorer1.Urge.*
 
 class Robot(var room: Room) {
   fun move(urge: Urge) {
@@ -34,7 +24,8 @@ enum class Player(val symbol: Char) {
 }
 
 class Teleport(val target: Char) {
-  var targetRoom = Room(Empty)
+  var originRoom = Room()
+  var targetRoom = Room()
   override fun toString() = target.toString()
 }
 

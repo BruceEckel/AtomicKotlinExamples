@@ -18,6 +18,6 @@ class Message(text: String) {
 fun main() {
   val m1 = Message("Big ba-da boom!")
   m1 eq "[10] Big ba-da boom!"
-  val m2 = Message("Bzzzzzzzzzzzzzt!")
-  m2 eq "[20] Bzzzzzzzzzzzzzt!"
+  val m2 = Message("Bzzzzt!")
+  m2 eq "[20] Bzzzzt!"
 }
