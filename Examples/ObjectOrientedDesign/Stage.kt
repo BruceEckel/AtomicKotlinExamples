@@ -6,22 +6,27 @@ class Stage(val maze: String) {
   val robot = Robot(Room(Empty))
   val rooms =
     mutableMapOf<Pair<Int, Int>, Room>()
-  val teleports = mutableListOf<Teleport>()
   private val view = View(this)
   val lines = maze.split("\n")
   // Construct it with the 'Builder' pattern:
   fun build(): Stage {
     // Step 1: Create the empty rooms:
+/*
     (0..lines.size).forEach { row ->
       (0 until lines[0].length).forEach {
         col -> rooms[Pair(row, col)] = Room()
       }
     }
+*/
     // Step 2: Add players to rooms:
-    lines.withIndex().forEach { (r, line) ->
-      line.withIndex().forEach { (c, char) ->
-        val room = rooms.getOrDefault(
-          Pair(r, c), Room())
+    lines.withIndex().forEach { (row, line) ->
+      line.withIndex().forEach { (col, char) ->
+//        val room = rooms.getOrDefault(
+//          Pair(row, col), Room())
+        val room = Room()
+        factory2(char, room, robot)
+        rooms[Pair(row, col)] = room
+/*
         when(val player = factory(char)) {
           is Robot -> robot.room = room
           is Teleport -> {
@@ -31,6 +36,7 @@ class Stage(val maze: String) {
           }
           else -> room.player = player
         }
+*/
       }
     }
     // Step 3: Connect the doors
@@ -39,6 +45,12 @@ class Stage(val maze: String) {
         pair.first, pair.second, rooms)
     }
     // Step 4: Connect the Teleport rooms
+    val teleports = mutableListOf<Teleport>()
+    rooms.forEach { (pair, r) ->
+      val p = r.player
+      if (p is Teleport)
+        teleports.add(p)
+    }
     val pairs = teleports
       .sortedBy {
         it.target

@@ -38,3 +38,19 @@ fun factory(ch: Char): Any {
   }
   return Teleport(ch)
 }
+
+fun factory2(ch: Char, room: Room, robot: Robot) {
+  if(ch == 'R') {
+    robot.room = room
+    return
+  }
+  Player.values().forEach {
+    if (ch == it.symbol) {
+      room.player = it
+      return
+    }
+  }
+  val teleport = Teleport(ch)
+  room.player = teleport
+  teleport.originRoom = room
+}
