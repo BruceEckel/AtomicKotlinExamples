@@ -8,7 +8,7 @@ class Stage(val maze: String) {
     mutableMapOf<Pair<Int, Int>, Room>()
   private val view = View(this)
   val lines = maze.split("\n")
-  fun factory(ch: Char): Room {
+  private fun factory(ch: Char): Room {
     val room = Room()
     if(ch == 'R') {
       robot.room = room
