@@ -1,9 +1,8 @@
 // ObjectOrientedDesign/Stage.kt
-package robotexplorer1
-import robotexplorer1.Player.*
+package robotexplorer
 
 class Stage(val maze: String) {
-  val robot = Robot(Room(Empty))
+  val robot = Robot(Room())
   val rooms =
     mutableMapOf<Pair<Int, Int>, Room>()
   private val view = View(this)
@@ -29,8 +28,8 @@ class Stage(val maze: String) {
   fun build(): Stage {
     // Step 1: Create rooms with players:
     lines.withIndex().forEach { (row, line) ->
-      line.withIndex().forEach { (col, char) ->
-        rooms[Pair(row, col)] = factory(char)
+      line.withIndex().forEach { (col, ch) ->
+        rooms[Pair(row, col)] = factory(ch)
       }
     }
     // Step 2: Connect the doors
@@ -38,16 +37,15 @@ class Stage(val maze: String) {
       r.doors.connect(
         pair.first, pair.second, rooms)
     }
-    // Step 3: Connect the Teleport rooms
-    val teleports = mutableListOf<Teleport>()
-    rooms.forEach { (pair, r) ->
-      val p = r.player
-      if (p is Teleport)
-        teleports.add(p)
-    }
-    val pairs = teleports.sortedBy {
-      it.target
-    }.zipWithNext()
+    // Step 3: Connect the Teleport pairs
+    val pairs = rooms.values
+      .filter {
+        it.player is Teleport
+      }.map {
+        it.player as Teleport
+      }.sortedBy {
+        it.target
+      }.zipWithNext()
     for((a, b) in pairs) {
       a.targetRoom = b.originRoom
       b.targetRoom = a.originRoom
@@ -57,10 +55,10 @@ class Stage(val maze: String) {
   fun run(solution: String) {
     view.clear()
     view.show() // Show initial maze
-    for(urgeChar in
-        solution.filter { it.isLetter() }) {
-      robot.move(urge(urgeChar))
-      view.show()
-    }
+    solution.filter { !it.isWhitespace() }
+      .forEach {
+        robot.move(urge(it))
+        view.show()
+      }
   }
 }

@@ -1,5 +1,5 @@
 // ObjectOrientedDesign/Players.kt
-package robotexplorer1
+package robotexplorer
 
 class Robot(var room: Room) {
   fun move(urge: Urge) {

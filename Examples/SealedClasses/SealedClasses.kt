@@ -23,7 +23,8 @@ fun travel(transport: Transport): String =
   }
 
 fun main() {
-  val trip = listOf(Train("S1"), Bus("11", 90))
+  val trip =
+    listOf(Train("S1"), Bus("11", 90))
   travel(trip[0]) eq "Train line S1"
   travel(trip[1]) eq "Bus number 11, size 90"
 }

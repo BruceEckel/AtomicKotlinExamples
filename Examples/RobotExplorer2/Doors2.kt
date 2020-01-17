@@ -1,5 +1,6 @@
 // RobotExplorer2/Doors2.kt
 package robotexplorer2
+import robotexplorer2.Player.*
 import robotexplorer2.Urge.*
 
 val edge = Room(Edge())

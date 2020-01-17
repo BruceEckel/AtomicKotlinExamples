@@ -9,12 +9,12 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAbsExercise2() {
-    testExample("Examples/Abstract/AbsExercise2.kt", abstractclasses.AbsExercise2Kt::main);
+    testExample("Examples/Abstract/AbsExercise2.kt", abstractclasses2.AbsExercise2Kt::main);
   }
 
   @Test
   public void testAbsExercise3() {
-    testExample("Examples/Abstract/AbsExercise3.kt", abstractclasses.AbsExercise3Kt::main);
+    testExample("Examples/Abstract/AbsExercise3.kt", abstractclasses3.AbsExercise3Kt::main);
   }
 
   @Test
@@ -465,11 +465,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testWhenSubjectVariable() {
     testExample("Examples/DownCasting/WhenSubjectVariable.kt", downcasting.WhenSubjectVariableKt::main);
-  }
-
-  @Test
-  public void testPet() {
-    testExample("Examples/DynamicBinding/Pet.kt", dynamicbinding.PetKt::main);
   }
 
   @Test
@@ -1579,7 +1574,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testExploreMaze() {
-    testExample("Examples/ObjectOrientedDesign/ExploreMaze.kt", robotexplorer1.ExploreMazeKt::main);
+    testExample("Examples/ObjectOrientedDesign/ExploreMaze.kt", robotexplorer.ExploreMazeKt::main);
   }
 
   @Test
@@ -1595,6 +1590,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testObjectNesting() {
     testExample("Examples/Objects/ObjectNesting.kt", ObjectNestingKt::main);
+  }
+
+  @Test
+  public void testShare2() {
+    testExample("Examples/Objects/Share2.kt", objectshare2.Share2Kt::main);
   }
 
   @Test
@@ -1778,13 +1778,23 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGameImpl() {
-    testExample("Examples/Polymorphism/GameImpl.kt", polymorphism.GameImplKt::main);
+  public void testPet() {
+    testExample("Examples/Polymorphism/Pet.kt", polymorphism.PetKt::main);
   }
 
   @Test
-  public void testPolymorphicRobot() {
-    testExample("Examples/Polymorphism/PolymorphicRobot.kt", polymorphism.polymorphicrobot.PolymorphicRobotKt::main);
+  public void testPolyExercise1() {
+    testExample("Examples/Polymorphism/PolyExercise1.kt", polymorphism.PolyExercise1Kt::main);
+  }
+
+  @Test
+  public void testPolyExercise2() {
+    testExample("Examples/Polymorphism/PolyExercise2.kt", polymorphism.PolyExercise2Kt::main);
+  }
+
+  @Test
+  public void testPolyExercise3() {
+    testExample("Examples/Polymorphism/PolyExercise3.kt", polymorphism.PolyExercise3Kt::main);
   }
 
   @Test
@@ -2283,18 +2293,33 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAssigningToVariable() {
-    testExample("Examples/Upcasting/AssigningToVariable.kt", upcasting.AssigningToVariableKt::main);
+  public void testAssignment() {
+    testExample("Examples/Upcasting/Assignment.kt", upcasting.AssignmentKt::main);
   }
 
   @Test
-  public void testPlaying() {
-    testExample("Examples/Upcasting/Playing.kt", upcasting.PlayingKt::main);
+  public void testDrawing() {
+    testExample("Examples/Upcasting/Drawing.kt", upcasting.DrawingKt::main);
   }
 
   @Test
   public void testTrimmedMembers() {
     testExample("Examples/Upcasting/TrimmedMembers.kt", upcasting.TrimmedMembersKt::main);
+  }
+
+  @Test
+  public void testUpcastExercise1() {
+    testExample("Examples/Upcasting/UpcastExercise1.kt", upcasting.UpcastExercise1Kt::main);
+  }
+
+  @Test
+  public void testUpcastExercise2() {
+    testExample("Examples/Upcasting/UpcastExercise2.kt", upcasting.UpcastExercise2Kt::main);
+  }
+
+  @Test
+  public void testUpcastExercise3() {
+    testExample("Examples/Upcasting/UpcastExercise3.kt", upcasting.UpcastExercise3Kt::main);
   }
 
   @Test

@@ -27,6 +27,30 @@ private fun <L, R> runTest(
   }
 }
 
+
+/**
+ * Use instead of println() to capture
+ * and compare results.
+ */
+class Trace(var trace: String = "") {
+  operator fun invoke(s: String) {
+    trace += s + "\n"
+  }
+  override fun toString() = trace
+}
+
+/**
+ * Compares a Trace object to a multiline
+ * String by ignoring whitespace.
+ */
+infix fun Trace.eq(value: String) {
+  fun clean(s: String) =
+    s.filter { !it.isWhitespace() }
+  runTest(this, value) {
+    clean(this.trace) == clean(value)
+  }
+}
+
 /**
  * Compares the string representation
  * of the object with the string `value`.

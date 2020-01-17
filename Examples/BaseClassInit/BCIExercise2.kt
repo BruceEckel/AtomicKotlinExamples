@@ -1,48 +1,48 @@
 // BaseClassInit/BCIExercise2.kt
 package baseclassinit
-import atomictest.eq
+import atomictest.*
 
-private var trace = ""
+private val trace = Trace()
 
 open class Plate {
   init {
-    trace += "Plate\n"
+    trace("Plate")
   }
 }
 
 class DinnerPlate : Plate() {
   init {
-    trace += "DinnerPlate\n"
+    trace("DinnerPlate")
   }
 }
 
 open class Utensil {
   init {
-    trace += "Utensil\n"
+    trace("Utensil")
   }
 }
 
 class Spoon : Utensil() {
   init {
-    trace += "Spoon\n"
+    trace("Spoon")
   }
 }
 
 class Fork : Utensil() {
   init {
-    trace += "Fork\n"
+    trace("Fork")
   }
 }
 
 class Knife : Utensil() {
   init {
-    trace += "Knife\n"
+    trace("Knife")
   }
 }
 
 open class Custom() {
   init {
-    trace += "Custom\n"
+    trace("Custom")
   }
 }
 
@@ -52,24 +52,22 @@ class PlaceSetting : Custom() {
   val knife = Knife()
   val plate = DinnerPlate()
   init {
-    trace += "PlaceSetting\n"
+    trace("PlaceSetting")
   }
 }
 
 fun main() {
   PlaceSetting()
-/* Fails because of the newlines -- can we fix this?
   trace eq """
-Custom
-Utensil
-Spoon
-Utensil
-Fork
-Utensil
-Knife
-Plate
-DinnerPlate
-PlaceSetting
-""".trim()
-*/
+    Custom
+    Utensil
+    Spoon
+    Utensil
+    Fork
+    Utensil
+    Knife
+    Plate
+    DinnerPlate
+    PlaceSetting
+  """
 }

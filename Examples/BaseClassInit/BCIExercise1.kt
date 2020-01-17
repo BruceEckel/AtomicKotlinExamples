@@ -1,24 +1,24 @@
 // BaseClassInit/BCIExercise1.kt
 package baseclassinit
-import atomictest.eq
+import atomictest.*
 
-private var trace = ""
+private var trace = Trace()
 
 open class A {
   init {
-    trace += "A"
+    trace("A")
   }
 }
 
 open class B : A() {
   init {
-    trace += "B"
+    trace("B")
   }
 }
 
 class C : B() {
   init {
-    trace += "C"
+    trace("C")
   }
 }
 

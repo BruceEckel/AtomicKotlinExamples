@@ -1,6 +1,5 @@
 // RobotExplorer2/Players2.kt
 package robotexplorer2
-import robotexplorer2.Urge.*
 
 open class Player(val symbol: Char) {
   override fun toString() = symbol.toString()
@@ -21,17 +20,7 @@ class Robot(var room: Room) : Player('R') {
 class Teleport(
   val target: Char
 ) : Player('T') {
-  var targetRoom = Room(Empty())
+  var originRoom = Room()
+  var targetRoom = Room()
   override fun toString() = target.toString()
 }
-
-fun factory(ch: Char): Player =
-  when (ch) {
-    'R' -> Robot(edge)
-    '#' -> Wall()
-    '.' -> Food()
-    '_' -> Empty()
-    '/' -> Edge()
-    '!' -> EndGame()
-    else -> Teleport(ch)
-  }

@@ -25,12 +25,12 @@ task AbsExercise1(type: JavaExec) {
 
 task AbsExercise2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'abstractclasses.AbsExercise2Kt'
+    main = 'abstractclasses2.AbsExercise2Kt'
 }
 
 task AbsExercise3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'abstractclasses.AbsExercise3Kt'
+    main = 'abstractclasses3.AbsExercise3Kt'
 }
 
 task AddingIntToChar(type: JavaExec) {
@@ -118,9 +118,9 @@ task AssigningAnIf(type: JavaExec) {
     main = 'AssigningAnIfKt'
 }
 
-task AssigningToVariable(type: JavaExec) {
+task Assignment(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'upcasting.AssigningToVariableKt'
+    main = 'upcasting.AssignmentKt'
 }
 
 task AssignmentOperators(type: JavaExec) {
@@ -583,6 +583,11 @@ task Dog(type: JavaExec) {
     main = 'DogKt'
 }
 
+task Drawing(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'upcasting.DrawingKt'
+}
+
 task Drinks(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DrinksKt'
@@ -665,7 +670,7 @@ task ExplicitTyping(type: JavaExec) {
 
 task ExploreMaze(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'robotexplorer1.ExploreMazeKt'
+    main = 'robotexplorer.ExploreMazeKt'
 }
 
 task ExploreMaze2(type: JavaExec) {
@@ -826,11 +831,6 @@ task GadgetMembers(type: JavaExec) {
 task Game(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.GameKt'
-}
-
-task GameImpl(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'polymorphism.GameImplKt'
 }
 
 task GardenItem(type: JavaExec) {
@@ -1705,7 +1705,7 @@ task Perform(type: JavaExec) {
 
 task Pet(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'dynamicbinding.PetKt'
+    main = 'polymorphism.PetKt'
 }
 
 task Pets(type: JavaExec) {
@@ -1718,14 +1718,19 @@ task PlatformTypes(type: JavaExec) {
     main = 'PlatformTypesKt'
 }
 
-task Playing(type: JavaExec) {
+task PolyExercise1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'upcasting.PlayingKt'
+    main = 'polymorphism.PolyExercise1Kt'
 }
 
-task PolymorphicRobot(type: JavaExec) {
+task PolyExercise2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'polymorphism.polymorphicrobot.PolymorphicRobotKt'
+    main = 'polymorphism.PolyExercise2Kt'
+}
+
+task PolyExercise3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'polymorphism.PolyExercise3Kt'
 }
 
 task Postconditions(type: JavaExec) {
@@ -1961,6 +1966,11 @@ task SealedClasses(type: JavaExec) {
 task Sets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SetsKt'
+}
+
+task Share2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'objectshare2.Share2Kt'
 }
 
 task SimilarOperation(type: JavaExec) {
@@ -2288,6 +2298,21 @@ task Unsafe(type: JavaExec) {
     main = 'downcasting.UnsafeKt'
 }
 
+task UpcastExercise1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'upcasting.UpcastExercise1Kt'
+}
+
+task UpcastExercise2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'upcasting.UpcastExercise2Kt'
+}
+
+task UpcastExercise3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'upcasting.UpcastExercise3Kt'
+}
+
 task Usable(type: JavaExec) {
     classpath kotlinClassPath
     main = 'resourcecleanup.UsableKt'
@@ -2506,7 +2531,7 @@ task run (dependsOn: [
     'ArgumentOrder',
     'ArraySpread',
     'AssigningAnIf',
-    'AssigningToVariable',
+    'Assignment',
     'AssignmentOperators',
     'AssociateBy',
     'AssociateByUnique',
@@ -2599,6 +2624,7 @@ task run (dependsOn: [
     'DoWhileControl',
     'DoWhileLoop',
     'Dog',
+    'Drawing',
     'Drinks',
     'EagerEvaluation',
     'EagerVsLazyEvaluation',
@@ -2648,7 +2674,6 @@ task run (dependsOn: [
     'GadgetExtensions',
     'GadgetMembers',
     'Game',
-    'GameImpl',
     'GardenItem',
     'GenericFunction',
     'GenericHolder',
@@ -2826,8 +2851,9 @@ task run (dependsOn: [
     'Pet',
     'Pets',
     'PlatformTypes',
-    'Playing',
-    'PolymorphicRobot',
+    'PolyExercise1',
+    'PolyExercise2',
+    'PolyExercise3',
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',
@@ -2875,6 +2901,7 @@ task run (dependsOn: [
     'Scientist',
     'SealedClasses',
     'Sets',
+    'Share2',
     'SimilarOperation',
     'Simple',
     'SimpleConstructor',
@@ -2940,6 +2967,9 @@ task run (dependsOn: [
     'UnitReturnType',
     'UnpredictableHashing',
     'Unsafe',
+    'UpcastExercise1',
+    'UpcastExercise2',
+    'UpcastExercise3',
     'Usable',
     'UseALibrary',
     'UseAtomicLog',

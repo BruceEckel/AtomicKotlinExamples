@@ -1,6 +1,5 @@
 // RobotExplorer2/View2.kt
 package robotexplorer2
-import robotexplorer2.Player.*
 
 class View(private val stage: Stage) {
   // Start an ANSI terminal control string:

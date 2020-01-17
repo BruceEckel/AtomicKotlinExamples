@@ -1,5 +1,5 @@
 // ObjectOrientedDesign/View.kt
-package robotexplorer1
+package robotexplorer
 
 class View(private val stage: Stage) {
   // Start an ANSI terminal control string:
@@ -20,7 +20,7 @@ class View(private val stage: Stage) {
       result += if (room == stage.robot.room)
         "${stage.robot}" else "${room.player}"
     }
-    return result + "\n\n"
+    return result + "\n\n\n"
   }
   fun show() {
     print("${ansiTerm}0;0H") // Cursor home
