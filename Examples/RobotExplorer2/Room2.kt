@@ -1,7 +1,7 @@
 // RobotExplorer2/Room2.kt
 package robotexplorer2
 
-class Room(var player: Any = Empty()) {
+class Room(var player: Player = Empty()) {
   val doors = Doors()
   fun enter(robot: Robot): Room {
     when (val p = player) {
