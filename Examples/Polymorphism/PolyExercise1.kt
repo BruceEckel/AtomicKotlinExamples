@@ -1,63 +1,77 @@
-// Polymorphism/FantasyGame.scala
+// Polymorphism/FantasyGame.kt
 package polymorphism
 import atomictest.eq
 
-open class Element(val id: String) {
-  override fun toString() = "$id"
-  fun interact(other: Element) =
-    "$this interact $other"
+interface Character {
+  val name: String
+  fun type(): String
+  fun skills(): String
+  fun play() =
+    "$name ${type()}: ${skills()}"
 }
 
-class Wall : Element("Wall")
-
-interface Skill
-
-interface Fighting : Skill {
-  fun fight() = "Fight!"
+interface Magician {
+  fun skills() = "Magic"
 }
 
-interface Digging : Skill {
-  fun dig() = "Dig!"
+interface Fighter {
+  fun skills() = "Fighting"
 }
 
-interface Magic : Skill {
-  fun castSpell() = "Spell!"
+interface Forger {
+  fun skills() = "Forging"
 }
 
-interface Flight : Skill {
-  fun fly() = "Fly!"
+interface Flyer {
+  fun skills() = "Flying"
 }
 
-open class Character(
-  id: String = "Character"
-) : Element(id)
+open class Fairy(override val name: String) :
+  Character, Magician, Flyer {
+  override fun type() = "Fairy"
+  override fun skills() =
+    super<Magician>.skills() + ", " +
+    super<Flyer>.skills()
+}
 
-open class Fairy : Character("Fairy"), Magic
+class FightingFairy(name: String) :
+  Fairy(name), Fighter {
+  override fun type() = "FightingFairy"
+  override fun skills() =
+    super<Fairy>.skills() + ", " +
+    super<Fighter>.skills()
+}
 
-class FightingFairy : Fairy(), Fighting
+class Warrior(override val name: String) :
+  Character, Fighter {
+  override fun type() = "Warrior"
+  override fun skills() =
+    super<Fighter>.skills()
+}
 
-class Warrior : Character("Warrior"), Fighting
+class Dwarf(override val name: String) :
+  Character, Forger, Fighter {
+  override fun type() = "Dwarf"
+  override fun skills() =
+    super<Forger>.skills() + ", " +
+    super<Fighter>.skills()
+}
 
-class Dwarf : Character("Dwarf"), Digging, Fighting
+class Dragon(override val name: String) :
+  Character, Magician, Flyer {
+  override fun type() = "Dragon"
+  override fun skills() =
+    super<Magician>.skills() + ", " +
+    super<Flyer>.skills()
+}
 
-open class Flyer(id: String) : Character(id), Flight
-
-class Dragon(id: String) : Flyer(id), Magic
+fun interact(c1: Character, c2: Character) =
+  "${c1.play()} <--> ${c2.play()}"
 
 fun main() {
-  val dragon = Dragon("Puff")
-  dragon.interact(Wall()) eq "Puff interact Wall"
-
-  fun battle(fighter: Fighting) =
-    "$fighter, ${fighter.fight()}"
-  battle(Warrior()) eq "Warrior, Fight!"
-  battle(Dwarf()) eq "Dwarf, Fight!"
-  battle(FightingFairy()) eq "Fairy, Fight!"
-
-  fun fly(flyer: Flyer, opponent: Element) =
-    "$flyer, ${flyer.fly()}, " +
-      "${opponent.interact(flyer)}"
-
-  fly(dragon, Fairy()) eq
-    "Puff, Fly!, Fairy interact Puff"
+  val dragon : Character = Dragon("Puff")
+  val dwarf : Character = Dwarf("Bob")
+  interact(dragon, dwarf) eq
+    "Puff Dragon: Magic, Flying <--> " +
+    "Bob Dwarf: Forging, Fighting"
 }
