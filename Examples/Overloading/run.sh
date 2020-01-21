@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3
 from subprocess import call
 from pathlib import Path
 import sys, os

@@ -1778,18 +1778,23 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testFantasyGame() {
+    testExample("Examples/Polymorphism/FantasyGame.kt", polymorphism.FantasyGameKt::main);
+  }
+
+  @Test
   public void testPet() {
     testExample("Examples/Polymorphism/Pet.kt", polymorphism.PetKt::main);
   }
 
   @Test
   public void testPolyExercise1() {
-    testExample("Examples/Polymorphism/PolyExercise1.kt", polymorphism.PolyExercise1Kt::main);
+    testExample("Examples/Polymorphism/PolyExercise1.kt", polymorphismex1.PolyExercise1Kt::main);
   }
 
   @Test
   public void testPolyExercise2() {
-    testExample("Examples/Polymorphism/PolyExercise2.kt", polymorphism.PolyExercise2Kt::main);
+    testExample("Examples/Polymorphism/PolyExercise2.kt", polymorphismex2.PolyExercise2Kt::main);
   }
 
   @Test

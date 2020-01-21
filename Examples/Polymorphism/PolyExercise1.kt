@@ -1,104 +1,25 @@
-// Polymorphism/FantasyGame.kt
-package polymorphism
+// Polymorphism/PolyExercise1.kt
+package polymorphismex1
 import atomictest.*
 
-private val trace = Trace()
+private var trace = Trace()
 
-interface Character {
-  val name: String
-  val type: String
-  fun skills(): String
-  fun play() = "$name $type: ${skills()}"
+open class Pet {
+  open fun speak() = "Pet"
 }
 
-interface Magician {
-  fun skills() = "Magic"
+class Dog : Pet() {
+  override fun speak() = "Bark!"
 }
 
-interface Fighter {
-  fun skills() = "Fighting"
+class Cat : Pet() {
+  override fun speak() = "Meow"
 }
 
-interface Flyer {
-  fun skills() = "Flying"
-}
-
-open class Elf(override val name: String) :
-  Character, Magician, Flyer {
-  override val type = "Elf"
-  override fun skills() =
-    super<Magician>.skills() + ", " +
-      super<Flyer>.skills()
-}
-
-class FightingElf(name: String) :
-  Elf(name), Fighter {
-  override val type = "FightingElf"
-  override fun skills() =
-    super<Elf>.skills() + ", " +
-      super<Fighter>.skills()
-}
-
-class Warrior(override val name: String) :
-  Character, Fighter {
-  override val type = "Warrior"
-  override fun skills() = super.skills()
-}
-
-class Dragon(override val name: String) :
-  Character, Magician, Flyer {
-  override val type = "Dragon"
-  override fun skills() =
-    super<Magician>.skills() + ", " +
-      super<Flyer>.skills()
-}
-
-fun interact(c1: Character, c2: Character) =
-  trace("${c1.play()} -> ${c2.play()}")
+fun talk(pet: Pet) = pet.speak()
 
 fun main() {
-  val characters: List<Character> = listOf(
-    Elf("Titania"),
-    FightingElf("Legolas"),
-    Warrior("Conan"),
-    Dragon("Puff")
-  )
-  characters.flatMap { c1 ->
-    characters.map { c2 ->
-      if (c1 != c2)
-        interact(c1, c2)
-    }
-  }
-  trace eq """
-  Titania Elf: Magic, Flying -> 
-    Legolas FightingElf: 
-      Magic, Flying, Fighting
-  Titania Elf: Magic, Flying -> 
-    Conan Warrior: Fighting
-  Titania Elf: Magic, Flying -> 
-    Puff Dragon: Magic, Flying
-  Legolas FightingElf: 
-    Magic, Flying, Fighting -> 
-      Titania Elf: Magic, Flying
-  Legolas FightingElf: 
-    Magic, Flying, Fighting -> 
-      Conan Warrior: Fighting
-  Legolas FightingElf: 
-    Magic, Flying, Fighting -> 
-      Puff Dragon: Magic, Flying
-  Conan Warrior: Fighting -> 
-    Titania Elf: Magic, Flying
-  Conan Warrior: Fighting -> 
-    Legolas FightingElf: 
-      Magic, Flying, Fighting
-  Conan Warrior: Fighting -> 
-    Puff Dragon: Magic, Flying
-  Puff Dragon: Magic, Flying -> 
-    Titania Elf: Magic, Flying
-  Puff Dragon: Magic, Flying -> 
-    Legolas FightingElf: 
-      Magic, Flying, Fighting
-  Puff Dragon: Magic, Flying -> 
-    Conan Warrior: Fighting
-  """
+  talk(Dog()) eq "Bark!"     // [1]
+  talk(Cat()) eq "Meow"      // [2]
+  trace eq ""
 }

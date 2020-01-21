@@ -1,5 +1,5 @@
-// Polymorphism/PolyExercise2.kt
-package polymorphismex2
+// Polymorphism/FantasyGame.kt
+package polymorphism
 import atomictest.*
 
 private val trace = Trace()

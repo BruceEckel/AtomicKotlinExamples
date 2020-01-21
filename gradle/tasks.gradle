@@ -698,6 +698,11 @@ task Fail(type: JavaExec) {
     main = 'nothingtype.FailKt'
 }
 
+task FantasyGame(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'polymorphism.FantasyGameKt'
+}
+
 task FaultySuitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'lateinitialization.FaultySuitcaseKt'
@@ -1720,12 +1725,12 @@ task PlatformTypes(type: JavaExec) {
 
 task PolyExercise1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'polymorphism.PolyExercise1Kt'
+    main = 'polymorphismex1.PolyExercise1Kt'
 }
 
 task PolyExercise2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'polymorphism.PolyExercise2Kt'
+    main = 'polymorphismex2.PolyExercise2Kt'
 }
 
 task PolyExercise3(type: JavaExec) {
@@ -2647,6 +2652,7 @@ task run (dependsOn: [
     'ExtensionsToJavaClass',
     'Factorial',
     'Fail',
+    'FantasyGame',
     'FaultySuitcase',
     'Fibonacci',
     'FibonacciProperty',

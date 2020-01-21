@@ -38,7 +38,7 @@ class Stage(val maze: String) {
         pair.first, pair.second, rooms)
     }
     // Step 3: Connect the Teleport pairs
-    val pairs = rooms.values
+    val teleportPairs = rooms.values
       .filter {
         it.player is Teleport
       }.map {
@@ -46,7 +46,7 @@ class Stage(val maze: String) {
       }.sortedBy {
         it.target
       }.zipWithNext()
-    for((a, b) in pairs) {
+    for((a, b) in teleportPairs) {
       a.targetRoom = b.originRoom
       b.targetRoom = a.originRoom
     }
