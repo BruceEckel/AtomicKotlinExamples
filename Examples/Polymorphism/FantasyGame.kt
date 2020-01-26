@@ -23,6 +23,12 @@ interface Flyer {
   fun skills() = "Flying"
 }
 
+class Warrior(override val name: String) :
+  Character, Fighter {
+  override val type = "Warrior"
+  override fun skills() = super.skills()
+}
+
 open class Elf(override val name: String) :
   Character, Magician, Flyer {
   override val type = "Elf"
@@ -37,12 +43,6 @@ class FightingElf(name: String) :
   override fun skills() =
     super<Elf>.skills() + ", " +
       super<Fighter>.skills()
-}
-
-class Warrior(override val name: String) :
-  Character, Fighter {
-  override val type = "Warrior"
-  override fun skills() = super.skills()
 }
 
 class Dragon(override val name: String) :
@@ -65,9 +65,7 @@ fun main() {
   )
   characters.forEach { c1 ->
     characters.filter { it != c1 }
-      .forEach { c2 ->
-        match(c1, c2)
-      }
+      .forEach { c2 -> match(c1, c2) }
   }
   trace eq """
   Titania Elf: Magic, Flying ->

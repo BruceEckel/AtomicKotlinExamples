@@ -308,6 +308,26 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCar() {
+    testExample("Examples/Composition/Car.kt", composition.CarKt::main);
+  }
+
+  @Test
+  public void testCompositionExercise1() {
+    testExample("Examples/Composition/CompositionExercise1.kt", compositionex1.CompositionExercise1Kt::main);
+  }
+
+  @Test
+  public void testCompositionExercise2() {
+    testExample("Examples/Composition/CompositionExercise2.kt", compositionex2.CompositionExercise2Kt::main);
+  }
+
+  @Test
+  public void testCompositionExercise3() {
+    testExample("Examples/Composition/CompositionExercise3.kt", compositionex3.CompositionExercise3Kt::main);
+  }
+
+  @Test
   public void testArg() {
     testExample("Examples/Constructors/Arg.kt", ArgKt::main);
   }
@@ -408,8 +428,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDrinks() {
-    testExample("Examples/DesigningWithInheritance/Drinks.kt", DrinksKt::main);
+  public void testBeverages() {
+    testExample("Examples/DesigningWithInheritance/Beverages.kt", BeveragesKt::main);
   }
 
   @Test

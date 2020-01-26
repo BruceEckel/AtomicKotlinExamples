@@ -228,6 +228,11 @@ task BetterSuitcase(type: JavaExec) {
     main = 'lateinitialization.BetterSuitcaseKt'
 }
 
+task Beverages(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'BeveragesKt'
+}
+
 task BigFibonacci(type: JavaExec) {
     classpath kotlinClassPath
     main = 'adaptingjava.BigFibonacciKt'
@@ -286,6 +291,11 @@ task CallTopLevelFunction(type: JavaExec) {
 task CallTopLevelFunction2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'fromjava.CallTopLevelFunction2'
+}
+
+task Car(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'composition.CarKt'
 }
 
 task CarHolder(type: JavaExec) {
@@ -401,6 +411,21 @@ task CompanionObject(type: JavaExec) {
 task CompareTo(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.CompareToKt'
+}
+
+task CompositionExercise1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'compositionex1.CompositionExercise1Kt'
+}
+
+task CompositionExercise2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'compositionex2.CompositionExercise2Kt'
+}
+
+task CompositionExercise3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'compositionex3.CompositionExercise3Kt'
 }
 
 task Computation(type: JavaExec) {
@@ -586,11 +611,6 @@ task Dog(type: JavaExec) {
 task Drawing(type: JavaExec) {
     classpath kotlinClassPath
     main = 'upcasting.DrawingKt'
-}
-
-task Drinks(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DrinksKt'
 }
 
 task EagerEvaluation(type: JavaExec) {
@@ -2558,6 +2578,7 @@ task run (dependsOn: [
     'BasicLogging',
     'Bear',
     'BetterSuitcase',
+    'Beverages',
     'BigFibonacci',
     'BiggestLong',
     'BmiWhen',
@@ -2570,6 +2591,7 @@ task run (dependsOn: [
     'CallStack',
     'CallTopLevelFunction',
     'CallTopLevelFunction2',
+    'Car',
     'CarHolder',
     'Cat',
     'CatchChecked',
@@ -2593,6 +2615,9 @@ task run (dependsOn: [
     'CompanionFactory',
     'CompanionObject',
     'CompareTo',
+    'CompositionExercise1',
+    'CompositionExercise2',
+    'CompositionExercise3',
     'Computation',
     'Computer',
     'Confusing',
@@ -2630,7 +2655,6 @@ task run (dependsOn: [
     'DoWhileLoop',
     'Dog',
     'Drawing',
-    'Drinks',
     'EagerEvaluation',
     'EagerVsLazyEvaluation',
     'EasyKeys',
