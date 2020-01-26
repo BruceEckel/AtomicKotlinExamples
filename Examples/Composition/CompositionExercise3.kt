@@ -42,24 +42,28 @@ class Mock : DataBase {
   override fun read(key: String) = v
 }
 
-private val data = """
+class Holder(val db: DataBase) {
+  fun store(k: String, v: String) =
+    db.write(k, v)
+  fun fetch(k: String) = db.read(k)
+  private val data = """
   color: purple
   dog: husky
   art: deco
-""".trimIndent().lines()
-  .map { it.split(": ") }
-
-fun checkWriteRead(db: DataBase) {
-  for(line in data) {
-    db.write(line[0], line[1])
-    trace(db.read(line[0]))
+  """.trimIndent().lines()
+     .map { it.split(": ") }
+  fun test() {
+    for(line in data) {
+      store(line[0], line[1])
+      trace(fetch(line[0]))
+    }
   }
 }
 
 fun main() {
-  checkWriteRead(NonRelational())
-  checkWriteRead(InMemory())
-  checkWriteRead(Mock())
+    Holder(NonRelational()).test()
+    Holder(InMemory()).test()
+    Holder(Mock()).test()
   trace eq """
     purple
     husky

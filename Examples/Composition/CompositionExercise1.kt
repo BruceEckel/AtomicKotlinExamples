@@ -4,54 +4,50 @@ import atomictest.*
 
 private val trace = Trace()
 
-open class Building(val name: String) {
-  init { trace("Building: $name") }
+class Engine {
+  fun start() = trace("Engine start")
+  fun stop() = trace("Engine stop")
+  fun service() = trace("Engine service")
 }
 
-class Kitchen(val name: String)  {
-  init { trace("Kitchen: $name") }
+class Wheel {
+  fun inflate(psi: Int) =
+    trace("Wheel inflate($psi)")
 }
 
-class Bedroom(val name: String) {
-  init { trace("Bedroom: $name") }
+class Window(val side: String) {
+  fun rollUp() =
+    trace("$side Window roll up")
+  fun rollDown() =
+    trace("$side Window roll down")
 }
 
-class Bathroom(val name: String) {
-  init { trace("Bathroom: $name") }
+class Door(val side: String) {
+  val window = Window(side)
+  fun open() = trace("$side Door open")
+  fun close() = trace("$side Door close")
 }
 
-class House(name: String) : Building(name) {
-  val kitchens = listOf(
-    Kitchen("Main"),
-    Kitchen("Guest")
-  )
-  val bathrooms = listOf(
-    Bathroom("Master"),
-    Bathroom("Shared"),
-    Bathroom("Guest")
-  )
-  val bedrooms = listOf(
-    Bedroom("Master"),
-    Bedroom("Son"),
-    Bedroom("Daughter"),
-    Bedroom("Guest")
-  )
-  init { trace("House: $name") }
+class Car {
+  val engine = Engine()
+  val wheel = List(4) { Wheel() }
+  // Two door:
+  val leftDoor = Door("left")
+  val rightDoor = Door("right")
 }
 
 fun main() {
-  House("Our House")
+  val car = Car()
+  car.leftDoor.open()
+  car.rightDoor.window.rollUp()
+  car.wheel[0].inflate(72)
+  car.engine.start()
+  car.engine.service()
   trace eq """
-    Building: Our House
-    Kitchen: Main
-    Kitchen: Guest
-    Bathroom: Master
-    Bathroom: Shared
-    Bathroom: Guest
-    Bedroom: Master
-    Bedroom: Son
-    Bedroom: Daughter
-    Bedroom: Guest
-    House: Our House
+    left Door open
+    right Window roll up
+    Wheel inflate(72)
+    Engine start
+    Engine service
   """
 }
