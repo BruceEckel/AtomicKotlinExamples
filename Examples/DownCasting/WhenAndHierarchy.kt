@@ -1,4 +1,4 @@
-// Casting/WhenAndHierarchy.kt
+// DownCasting/WhenAndHierarchy.kt
 package downcasting
 import atomictest.eq
 

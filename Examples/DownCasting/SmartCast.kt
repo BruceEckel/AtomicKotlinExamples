@@ -1,4 +1,4 @@
-// Casting/SmartCast.kt
+// DownCasting/SmartCast.kt
 package downcasting
 import atomictest.eq
 

@@ -1,4 +1,4 @@
-// Casting/Unsafe.kt
+// DownCasting/Unsafe.kt
 package downcasting
 import atomictest.eq
 import atomictest.capture

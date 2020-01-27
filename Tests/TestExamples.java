@@ -168,31 +168,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testHumanAlice() {
-    testExample("Examples/Casting/HumanAlice.kt", downcasting.HumanAliceKt::main);
-  }
-
-  @Test
-  public void testSafe() {
-    testExample("Examples/Casting/Safe.kt", downcasting.SafeKt::main);
-  }
-
-  @Test
-  public void testSmartCast() {
-    testExample("Examples/Casting/SmartCast.kt", downcasting.SmartCastKt::main);
-  }
-
-  @Test
-  public void testUnsafe() {
-    testExample("Examples/Casting/Unsafe.kt", downcasting.UnsafeKt::main);
-  }
-
-  @Test
-  public void testWhenAndHierarchy() {
-    testExample("Examples/Casting/WhenAndHierarchy.kt", downcasting.WhenAndHierarchyKt::main);
-  }
-
-  @Test
   public void testGetTrace() {
     testExample("Examples/CheckInstructions/GetTrace.kt", checkinstructions.GetTraceKt::main);
   }
@@ -220,6 +195,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSingleArgRequire() {
     testExample("Examples/CheckInstructions/SingleArgRequire.kt", checkinstructions.SingleArgRequireKt::main);
+  }
+
+  @Test
+  public void testClassDelegEx1() {
+    testExample("Examples/ClassDelegation/ClassDelegEx1.kt", classdelegationex1.ClassDelegEx1Kt::main);
+  }
+
+  @Test
+  public void testClassDelegEx2() {
+    testExample("Examples/ClassDelegation/ClassDelegEx2.kt", classdelegationex2.ClassDelegEx2Kt::main);
+  }
+
+  @Test
+  public void testClassDelegEx3() {
+    testExample("Examples/ClassDelegation/ClassDelegEx3.kt", classdelegationex3.ClassDelegEx3Kt::main);
   }
 
   @Test
@@ -433,6 +423,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDesigningWIEx1() {
+    testExample("Examples/DesigningWithInheritance/DesigningWIEx1.kt", designingwithinheritanceex1.DesigningWIEx1Kt::main);
+  }
+
+  @Test
+  public void testDesigningWIEx2() {
+    testExample("Examples/DesigningWithInheritance/DesigningWIEx2.kt", designingwithinheritanceex2.DesigningWIEx2Kt::main);
+  }
+
+  @Test
+  public void testDesigningWIEx3() {
+    testExample("Examples/DesigningWithInheritance/DesigningWIEx3.kt", designingwithinheritanceex3.DesigningWIEx3Kt::main);
+  }
+
+  @Test
   public void testMutableMaze() {
     testExample("Examples/DesigningWithInheritance/MutableMaze.kt", designingwithinheritance.MutableMazeKt::main);
   }
@@ -473,6 +478,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDownCastEx1() {
+    testExample("Examples/DownCasting/DownCastEx1.kt", downcastingex1.DownCastEx1Kt::main);
+  }
+
+  @Test
+  public void testDownCastEx2() {
+    testExample("Examples/DownCasting/DownCastEx2.kt", downcastingex2.DownCastEx2Kt::main);
+  }
+
+  @Test
+  public void testDownCastEx3() {
+    testExample("Examples/DownCasting/DownCastEx3.kt", downcastingex3.DownCastEx3Kt::main);
+  }
+
+  @Test
   public void testFilterIsInstance() {
     testExample("Examples/DownCasting/FilterIsInstance.kt", downcasting.FilterIsInstanceKt::main);
   }
@@ -480,6 +500,31 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testGame() {
     testExample("Examples/DownCasting/Game.kt", downcasting.GameKt::main);
+  }
+
+  @Test
+  public void testHumanAlice() {
+    testExample("Examples/DownCasting/HumanAlice.kt", downcasting.HumanAliceKt::main);
+  }
+
+  @Test
+  public void testSafe() {
+    testExample("Examples/DownCasting/Safe.kt", downcasting.SafeKt::main);
+  }
+
+  @Test
+  public void testSmartCast() {
+    testExample("Examples/DownCasting/SmartCast.kt", downcasting.SmartCastKt::main);
+  }
+
+  @Test
+  public void testUnsafe() {
+    testExample("Examples/DownCasting/Unsafe.kt", downcasting.UnsafeKt::main);
+  }
+
+  @Test
+  public void testWhenAndHierarchy() {
+    testExample("Examples/DownCasting/WhenAndHierarchy.kt", downcasting.WhenAndHierarchyKt::main);
   }
 
   @Test
@@ -958,13 +1003,63 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGadgetExtensions() {
-    testExample("Examples/InheritanceAndExtensions/GadgetExtensions.kt", inheritanceandextensions2.GadgetExtensionsKt::main);
+  public void testAdapter() {
+    testExample("Examples/InheritanceExtensions/Adapter.kt", inheritanceextensions.AdapterKt::main);
   }
 
   @Test
-  public void testGadgetMembers() {
-    testExample("Examples/InheritanceAndExtensions/GadgetMembers.kt", inheritanceandextensions1.GadgetMembersKt::main);
+  public void testAdjustTemp() {
+    testExample("Examples/InheritanceExtensions/AdjustTemp.kt", inheritanceextensions.AdjustTempKt::main);
+  }
+
+  @Test
+  public void testBatteryPet() {
+    testExample("Examples/InheritanceExtensions/BatteryPet.kt", inheritanceextensions.BatteryPetKt::main);
+  }
+
+  @Test
+  public void testBatteryPet2() {
+    testExample("Examples/InheritanceExtensions/BatteryPet2.kt", inheritanceextensions2.BatteryPet2Kt::main);
+  }
+
+  @Test
+  public void testConvention() {
+    testExample("Examples/InheritanceExtensions/Convention.kt", inheritanceextensions.ConventionKt::main);
+  }
+
+  @Test
+  public void testDeviceExtensions() {
+    testExample("Examples/InheritanceExtensions/DeviceExtensions.kt", inheritanceextensions2.DeviceExtensionsKt::main);
+  }
+
+  @Test
+  public void testDeviceMembers() {
+    testExample("Examples/InheritanceExtensions/DeviceMembers.kt", inheritanceextensions1.DeviceMembersKt::main);
+  }
+
+  @Test
+  public void testExtensionFuncs() {
+    testExample("Examples/InheritanceExtensions/ExtensionFuncs.kt", inheritanceextensions2.ExtensionFuncsKt::main);
+  }
+
+  @Test
+  public void testInheritAdd() {
+    testExample("Examples/InheritanceExtensions/InheritAdd.kt", inheritanceextensions.InheritAddKt::main);
+  }
+
+  @Test
+  public void testInhExtensionsEx1() {
+    testExample("Examples/InheritanceExtensions/InhExtensionsEx1.kt", inheritanceextensionsex1.InhExtensionsEx1Kt::main);
+  }
+
+  @Test
+  public void testInhExtensionsEx2() {
+    testExample("Examples/InheritanceExtensions/InhExtensionsEx2.kt", inheritanceextensionsex2.InhExtensionsEx2Kt::main);
+  }
+
+  @Test
+  public void testInhExtensionsEx3() {
+    testExample("Examples/InheritanceExtensions/InhExtensionsEx3.kt", inheritanceextensionsex3.InhExtensionsEx3Kt::main);
   }
 
   @Test
@@ -1000,6 +1095,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testStringRange() {
     testExample("Examples/InKeyword/StringRange.kt", StringRangeKt::main);
+  }
+
+  @Test
+  public void testInnerNestedEx1() {
+    testExample("Examples/InnerAndNestedClasses/InnerNestedEx1.kt", innerandnestedex1.InnerNestedEx1Kt::main);
+  }
+
+  @Test
+  public void testInnerNestedEx2() {
+    testExample("Examples/InnerAndNestedClasses/InnerNestedEx2.kt", innerandnestedex2.InnerNestedEx2Kt::main);
+  }
+
+  @Test
+  public void testInnerNestedEx3() {
+    testExample("Examples/InnerAndNestedClasses/InnerNestedEx3.kt", innerandnestedex3.InnerNestedEx3Kt::main);
   }
 
   @Test
@@ -2055,6 +2165,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSealedClasses() {
     testExample("Examples/SealedClasses/SealedClasses.kt", sealedclasses.SealedClassesKt::main);
+  }
+
+  @Test
+  public void testSealedEx1() {
+    testExample("Examples/SealedClasses/SealedEx1.kt", sealedclassesex1.SealedEx1Kt::main);
+  }
+
+  @Test
+  public void testSealedEx2() {
+    testExample("Examples/SealedClasses/SealedEx2.kt", sealedclassesex2.SealedEx2Kt::main);
+  }
+
+  @Test
+  public void testSealedEx3() {
+    testExample("Examples/SealedClasses/SealedEx3.kt", sealedclassesex3.SealedEx3Kt::main);
   }
 
   @Test

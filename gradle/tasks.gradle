@@ -33,9 +33,19 @@ task AbsExercise3(type: JavaExec) {
     main = 'abstractclasses3.AbsExercise3Kt'
 }
 
+task Adapter(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.AdapterKt'
+}
+
 task AddingIntToChar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AddingIntToCharKt'
+}
+
+task AdjustTemp(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.AdjustTempKt'
 }
 
 task AllOperators(type: JavaExec) {
@@ -218,6 +228,16 @@ task BasicLogging(type: JavaExec) {
     main = 'logging.BasicLoggingKt'
 }
 
+task BatteryPet(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.BatteryPetKt'
+}
+
+task BatteryPet2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions2.BatteryPet2Kt'
+}
+
 task Bear(type: JavaExec) {
     classpath kotlinClassPath
     main = 'complexconstructors.BearKt'
@@ -358,6 +378,21 @@ task ClassBodies(type: JavaExec) {
     main = 'ClassBodiesKt'
 }
 
+task ClassDelegEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'classdelegationex1.ClassDelegEx1Kt'
+}
+
+task ClassDelegEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'classdelegationex2.ClassDelegEx2Kt'
+}
+
+task ClassDelegEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'classdelegationex3.ClassDelegEx3Kt'
+}
+
 task Closeable(type: JavaExec) {
     classpath kotlinClassPath
     main = 'resourcecleanup.CloseableKt'
@@ -451,6 +486,11 @@ task ConstructorReference(type: JavaExec) {
 task ContactMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ContactMapKt'
+}
+
+task Convention(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.ConventionKt'
 }
 
 task Conversion(type: JavaExec) {
@@ -563,6 +603,21 @@ task DereferenceNull(type: JavaExec) {
     main = 'DereferenceNullKt'
 }
 
+task DesigningWIEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'designingwithinheritanceex1.DesigningWIEx1Kt'
+}
+
+task DesigningWIEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'designingwithinheritanceex2.DesigningWIEx2Kt'
+}
+
+task DesigningWIEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'designingwithinheritanceex3.DesigningWIEx3Kt'
+}
+
 task DestructuringData(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.DestructuringDataKt'
@@ -576,6 +631,16 @@ task DestructuringDuo(type: JavaExec) {
 task DestructuringMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.DestructuringMapKt'
+}
+
+task DeviceExtensions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions2.DeviceExtensionsKt'
+}
+
+task DeviceMembers(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions1.DeviceMembersKt'
 }
 
 task Direction(type: JavaExec) {
@@ -606,6 +671,21 @@ task DoWhileLoop(type: JavaExec) {
 task Dog(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DogKt'
+}
+
+task DownCastEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcastingex1.DownCastEx1Kt'
+}
+
+task DownCastEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcastingex2.DownCastEx2Kt'
+}
+
+task DownCastEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcastingex3.DownCastEx3Kt'
 }
 
 task Drawing(type: JavaExec) {
@@ -701,6 +781,11 @@ task ExploreMaze2(type: JavaExec) {
 task ExpressionInTemplate(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExpressionInTemplateKt'
+}
+
+task ExtensionFuncs(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions2.ExtensionFuncsKt'
 }
 
 task ExtensionsToJavaClass(type: JavaExec) {
@@ -841,16 +926,6 @@ task FunctionClosure(type: JavaExec) {
 task FunctionReference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences2.FunctionReferenceKt'
-}
-
-task GadgetExtensions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceandextensions2.GadgetExtensionsKt'
-}
-
-task GadgetMembers(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceandextensions1.GadgetMembersKt'
 }
 
 task Game(type: JavaExec) {
@@ -1113,9 +1188,44 @@ task InfiniteRecursion(type: JavaExec) {
     main = 'recursion.InfiniteRecursionKt'
 }
 
+task InhExtensionsEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensionsex1.InhExtensionsEx1Kt'
+}
+
+task InhExtensionsEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensionsex2.InhExtensionsEx2Kt'
+}
+
+task InhExtensionsEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensionsex3.InhExtensionsEx3Kt'
+}
+
+task InheritAdd(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.InheritAddKt'
+}
+
 task InitSection(type: JavaExec) {
     classpath kotlinClassPath
     main = 'complexconstructors.InitSectionKt'
+}
+
+task InnerNestedEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innerandnestedex1.InnerNestedEx1Kt'
+}
+
+task InnerNestedEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innerandnestedex2.InnerNestedEx2Kt'
+}
+
+task InnerNestedEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innerandnestedex3.InnerNestedEx3Kt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -1988,6 +2098,21 @@ task SealedClasses(type: JavaExec) {
     main = 'sealedclasses.SealedClassesKt'
 }
 
+task SealedEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sealedclassesex1.SealedEx1Kt'
+}
+
+task SealedEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sealedclassesex2.SealedEx2Kt'
+}
+
+task SealedEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sealedclassesex3.SealedEx3Kt'
+}
+
 task Sets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SetsKt'
@@ -2539,7 +2664,9 @@ task run (dependsOn: [
     'AbsExercise1',
     'AbsExercise2',
     'AbsExercise3',
+    'Adapter',
     'AddingIntToChar',
+    'AdjustTemp',
     'AllOperators',
     'Also',
     'Amphibian',
@@ -2576,6 +2703,8 @@ task run (dependsOn: [
     'BasicGenerics',
     'BasicLambda',
     'BasicLogging',
+    'BatteryPet',
+    'BatteryPet2',
     'Bear',
     'BetterSuitcase',
     'Beverages',
@@ -2604,6 +2733,9 @@ task run (dependsOn: [
     'CheckingArgument',
     'CheckingOptions',
     'ClassBodies',
+    'ClassDelegEx1',
+    'ClassDelegEx2',
+    'ClassDelegEx3',
     'Closeable',
     'Closed',
     'Closures',
@@ -2623,6 +2755,7 @@ task run (dependsOn: [
     'Confusing',
     'ConstructorReference',
     'ContactMap',
+    'Convention',
     'Conversion',
     'Cookie',
     'CopyDataClass',
@@ -2645,15 +2778,23 @@ task run (dependsOn: [
     'DelegatedControls',
     'Dereference',
     'DereferenceNull',
+    'DesigningWIEx1',
+    'DesigningWIEx2',
+    'DesigningWIEx3',
     'DestructuringData',
     'DestructuringDuo',
     'DestructuringMap',
+    'DeviceExtensions',
+    'DeviceMembers',
     'Direction',
     'DisplayAlienSpecies',
     'DoWhile',
     'DoWhileControl',
     'DoWhileLoop',
     'Dog',
+    'DownCastEx1',
+    'DownCastEx2',
+    'DownCastEx3',
     'Drawing',
     'EagerEvaluation',
     'EagerVsLazyEvaluation',
@@ -2673,6 +2814,7 @@ task run (dependsOn: [
     'ExploreMaze',
     'ExploreMaze2',
     'ExpressionInTemplate',
+    'ExtensionFuncs',
     'ExtensionsToJavaClass',
     'Factorial',
     'Fail',
@@ -2701,8 +2843,6 @@ task run (dependsOn: [
     'FullyQualify',
     'FunctionClosure',
     'FunctionReference',
-    'GadgetExtensions',
-    'GadgetMembers',
     'Game',
     'GardenItem',
     'GenericFunction',
@@ -2755,7 +2895,14 @@ task run (dependsOn: [
     'InferInt',
     'Inference',
     'InfiniteRecursion',
+    'InhExtensionsEx1',
+    'InhExtensionsEx2',
+    'InhExtensionsEx3',
+    'InheritAdd',
     'InitSection',
+    'InnerNestedEx1',
+    'InnerNestedEx2',
+    'InnerNestedEx3',
     'InputLines1',
     'InputLines2',
     'IntDivisionTruncates',
@@ -2930,6 +3077,9 @@ task run (dependsOn: [
     'SayHello',
     'Scientist',
     'SealedClasses',
+    'SealedEx1',
+    'SealedEx2',
+    'SealedEx3',
     'Sets',
     'Share2',
     'SimilarOperation',

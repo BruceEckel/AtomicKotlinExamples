@@ -1,4 +1,4 @@
-// Casting/HumanAlice.kt
+// DownCasting/HumanAlice.kt
 package downcasting
 import atomictest.eq
 
