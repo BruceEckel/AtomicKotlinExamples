@@ -1,12 +1,12 @@
-// InheritanceExtensions/ALibrary.kt
-package alibrary
+// InheritanceExtensions/UsefulLibrary.kt
+package usefullibrary
 
 interface LibType {
   fun f1()
   fun f2()
 }
 
-class ALibrary {
+class UsefulLibrary {
   fun utility1(lt: LibType) {
     lt.f1()
     lt.f2()

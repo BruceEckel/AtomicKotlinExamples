@@ -1023,6 +1023,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testComposeAdapter() {
+    testExample("Examples/InheritanceExtensions/ComposeAdapter.kt", inheritanceextensions2.ComposeAdapterKt::main);
+  }
+
+  @Test
   public void testConvention() {
     testExample("Examples/InheritanceExtensions/Convention.kt", inheritanceextensions.ConventionKt::main);
   }
@@ -1035,6 +1040,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testDeviceMembers() {
     testExample("Examples/InheritanceExtensions/DeviceMembers.kt", inheritanceextensions1.DeviceMembersKt::main);
+  }
+
+  @Test
+  public void testExtensionAdapter() {
+    testExample("Examples/InheritanceExtensions/ExtensionAdapter.kt", inheritanceextensions3.ExtensionAdapterKt::main);
   }
 
   @Test

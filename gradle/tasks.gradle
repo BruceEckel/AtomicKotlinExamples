@@ -448,6 +448,11 @@ task CompareTo(type: JavaExec) {
     main = 'usingoperators.CompareToKt'
 }
 
+task ComposeAdapter(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions2.ComposeAdapterKt'
+}
+
 task CompositionExercise1(type: JavaExec) {
     classpath kotlinClassPath
     main = 'compositionex1.CompositionExercise1Kt'
@@ -781,6 +786,11 @@ task ExploreMaze2(type: JavaExec) {
 task ExpressionInTemplate(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExpressionInTemplateKt'
+}
+
+task ExtensionAdapter(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions3.ExtensionAdapterKt'
 }
 
 task ExtensionFuncs(type: JavaExec) {
@@ -2747,6 +2757,7 @@ task run (dependsOn: [
     'CompanionFactory',
     'CompanionObject',
     'CompareTo',
+    'ComposeAdapter',
     'CompositionExercise1',
     'CompositionExercise2',
     'CompositionExercise3',
@@ -2814,6 +2825,7 @@ task run (dependsOn: [
     'ExploreMaze',
     'ExploreMaze2',
     'ExpressionInTemplate',
+    'ExtensionAdapter',
     'ExtensionFuncs',
     'ExtensionsToJavaClass',
     'Factorial',

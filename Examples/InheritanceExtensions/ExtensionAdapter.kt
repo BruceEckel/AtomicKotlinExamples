@@ -1,5 +1,5 @@
-// InheritanceExtensions/Adapter.kt
-package inheritanceextensions
+// InheritanceExtensions/ExtensionAdapter.kt
+package inheritanceextensions3
 import usefullibrary.*
 
 open class MyClass {
@@ -12,10 +12,12 @@ fun useMyClass(mc: MyClass) {
   mc.h()
 }
 
-class MyClassAdaptedForLib :
-  MyClass(), LibType {
-  override fun f1() = h()
-  override fun f2() = g()
+fun MyClass.f1() = h()
+fun MyClass.f2() = g()
+
+class MyClassAdaptedForLib : MyClass(), LibType {
+  override fun f1() = super.f1()
+  override fun f2()
 }
 
 fun main() {
