@@ -1,9 +1,8 @@
 // ObjectOrientedDesign/Doors.kt
 package robotexplorer
-import robotexplorer.Player.*
 import robotexplorer.Urge.*
 
-val edge = Room(Void)
+val edge = Room()
 
 class Doors {
   private var north: Room = edge

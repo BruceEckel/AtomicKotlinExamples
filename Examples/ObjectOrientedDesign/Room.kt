@@ -2,7 +2,7 @@
 package robotexplorer
 import robotexplorer.Player.*
 
-class Room(var player: Any = Empty) {
+class Room(var player: Any = Void) {
   val doors = Doors()
   fun enter(robot: Robot): Room {
     when (val p = player) {

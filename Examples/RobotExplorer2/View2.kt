@@ -1,5 +1,5 @@
-// RobotExplorer3/View3.kt
-package robotexplorer3
+// RobotExplorer2/View2.kt
+package robotexplorer2
 
 class View(private val stage: Stage) {
   // Start an ANSI terminal control string:

@@ -1,5 +1,6 @@
-// RobotExplorer3/Players3.kt
-package robotexplorer3
+// RobotExplorer2/Players2.kt
+package robotexplorer2
+import robotexplorer.Urge
 
 interface Player {
   val symbol: Char

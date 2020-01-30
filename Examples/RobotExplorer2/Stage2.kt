@@ -1,5 +1,6 @@
-// RobotExplorer3/Stage3.kt
-package robotexplorer3
+// RobotExplorer2/Stage2.kt
+package robotexplorer2
+import robotexplorer.urge
 
 class Stage(val maze: String) {
   val robot = Robot(Room())

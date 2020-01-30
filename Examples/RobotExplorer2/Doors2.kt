@@ -1,6 +1,7 @@
-// RobotExplorer3/Doors3.kt
-package robotexplorer3
-import robotexplorer3.Urge.*
+// RobotExplorer2/Doors2.kt
+package robotexplorer2
+import robotexplorer.Urge
+import robotexplorer.Urge.*
 
 private val edge = Room()
 
@@ -15,6 +16,7 @@ class Doors {
       South -> south
       East -> east
       West -> west
+      else -> west
     }
   fun connect(
     row: Int, col: Int,

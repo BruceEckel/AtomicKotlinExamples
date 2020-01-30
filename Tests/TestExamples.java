@@ -2098,8 +2098,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testExploreMaze3() {
-    testExample("Examples/RobotExplorer3/ExploreMaze3.kt", robotexplorer3.ExploreMaze3Kt::main);
+  public void testExploreMaze2() {
+    testExample("Examples/RobotExplorer2/ExploreMaze2.kt", robotexplorer2.ExploreMaze2Kt::main);
   }
 
   @Test

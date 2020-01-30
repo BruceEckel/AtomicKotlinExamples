@@ -778,9 +778,9 @@ task ExploreMaze(type: JavaExec) {
     main = 'robotexplorer.ExploreMazeKt'
 }
 
-task ExploreMaze3(type: JavaExec) {
+task ExploreMaze2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'robotexplorer3.ExploreMaze3Kt'
+    main = 'robotexplorer2.ExploreMaze2Kt'
 }
 
 task ExpressionInTemplate(type: JavaExec) {
@@ -2828,7 +2828,7 @@ task run (dependsOn: [
     'ExplicitDelegation',
     'ExplicitTyping',
     'ExploreMaze',
-    'ExploreMaze3',
+    'ExploreMaze2',
     'ExpressionInTemplate',
     'ExtensibilityEx1',
     'ExtensibilityEx2',

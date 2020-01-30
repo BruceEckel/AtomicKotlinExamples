@@ -1,5 +1,5 @@
-// RobotExplorer3/ExploreMaze3.kt
-package robotexplorer3
+// RobotExplorer2/ExploreMaze2.kt
+package robotexplorer2
 import robotmaze.*
 
 fun main() {

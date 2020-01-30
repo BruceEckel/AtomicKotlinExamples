@@ -7,29 +7,15 @@ class Stage(val maze: String) {
     mutableMapOf<Pair<Int, Int>, Room>()
   private val view = View(this)
   val lines = maze.split("\n")
-  private fun factory(ch: Char): Room {
-    val room = Room()
-    if(ch == 'R') {
-      robot.room = room
-      return room
-    }
-    Player.values().forEach {
-      if (ch == it.symbol) {
-        room.player = it
-        return room
-      }
-    }
-    val teleport = Teleport(ch)
-    room.player = teleport
-    teleport.originRoom = room
-    return room
-  }
-  // Construct it with the 'Builder' pattern:
+  // Create using the 'Builder' pattern:
   fun build(): Stage {
     // Step 1: Create rooms with players:
     lines.withIndex().forEach { (row, line) ->
       line.withIndex().forEach { (col, ch) ->
-        rooms[Pair(row, col)] = factory(ch)
+        val room = factory(ch)
+        rooms[Pair(row, col)] = room
+        if(ch == robot.symbol)
+          robot.room = room
       }
     }
     // Step 2: Connect the doors
