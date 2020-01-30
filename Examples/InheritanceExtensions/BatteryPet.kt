@@ -1,38 +1,52 @@
 // InheritanceExtensions/BatteryPet.kt
 package inheritanceextensions
-import atomictest.eq
+import atomictest.*
+
+private val trace = Trace()
 
 interface Pet {
-  fun speak(): String
+  fun speak()
 }
 
 open class Dog : Pet {
-  override fun speak() = "Bark!"
-  fun sit() = "Sitting..."
+  override fun speak() = trace("Bark!")
+  fun sit() = trace("Sitting...")
 }
 
 class ToyDog: Dog() {
-  fun changeBatteries() = "Change batteries"
+  fun changeBatteries() =
+    trace("Change batteries")
 }
 
 fun play(pet: Pet) = pet.speak()
 
 fun playWithDog(dog: Dog) {
-  play(dog) eq "Bark!"
-  dog.sit() eq "Sitting..."
+  play(dog)
+  dog.sit()
 }
 
 fun playWithToyDog(dog: ToyDog) {
   playWithDog(dog)
-  dog.changeBatteries() eq "Change batteries"
+  dog.changeBatteries()
 }
 
 fun main() {
-  val d1 = Dog()
-  val d2 = ToyDog()
-  play(d1) eq "Bark!"
-  play(d2) eq "Bark!"
-  playWithDog(d1)
-  playWithDog(d2)
-  playWithToyDog(d2)
+  val dog1 = Dog()
+  val dog2 = ToyDog()
+  play(dog1)
+  play(dog2)
+  playWithDog(dog1)
+  playWithDog(dog2)
+  playWithToyDog(dog2)
+  trace eq """
+  Bark!
+  Bark!
+  Bark!
+  Sitting...
+  Bark!
+  Sitting...
+  Bark!
+  Sitting...
+  Change batteries
+  """
 }

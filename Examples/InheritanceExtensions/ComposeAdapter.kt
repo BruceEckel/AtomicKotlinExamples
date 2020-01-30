@@ -1,10 +1,13 @@
 // InheritanceExtensions/ComposeAdapter.kt
 package inheritanceextensions2
 import usefullibrary.*
+import atomictest.*
+
+private val trace = Trace()
 
 class MyClass { // Not open
-  fun g() {}
-  fun h() {}
+  fun g() = trace("g()")
+  fun h() = trace("h()")
 }
 
 fun useMyClass(mc: MyClass) {
@@ -24,4 +27,12 @@ fun main() {
   library.utility1(mc)
   library.utility2(mc)
   useMyClass(mc.field)
+  trace eq """
+  h()
+  g()
+  g()
+  h()
+  g()
+  h()
+  """
 }

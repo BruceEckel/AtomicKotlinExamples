@@ -658,6 +658,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testExtensibilityEx1() {
+    testExample("Examples/Extensibility/ExtensibilityEx1.kt", designingwithinheritanceex1.ExtensibilityEx1Kt::main);
+  }
+
+  @Test
+  public void testExtensibilityEx2() {
+    testExample("Examples/Extensibility/ExtensibilityEx2.kt", designingwithinheritanceex2.ExtensibilityEx2Kt::main);
+  }
+
+  @Test
+  public void testExtensibilityEx3() {
+    testExample("Examples/Extensibility/ExtensibilityEx3.kt", designingwithinheritanceex3.ExtensibilityEx3Kt::main);
+  }
+
+  @Test
   public void testBookExtensions() {
     testExample("Examples/ExtensionFunctions/BookExtensions.kt", BookExtensionsKt::main);
   }
@@ -770,11 +785,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testHolder() {
     testExample("Examples/Generics/Holder.kt", generics.HolderKt::main);
-  }
-
-  @Test
-  public void testPerform() {
-    testExample("Examples/Generics/Perform.kt", generics.PerformKt::main);
   }
 
   @Test
@@ -1040,11 +1050,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testDeviceMembers() {
     testExample("Examples/InheritanceExtensions/DeviceMembers.kt", inheritanceextensions1.DeviceMembersKt::main);
-  }
-
-  @Test
-  public void testExtensionAdapter() {
-    testExample("Examples/InheritanceExtensions/ExtensionAdapter.kt", inheritanceextensions3.ExtensionAdapterKt::main);
   }
 
   @Test
@@ -2095,6 +2100,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testExploreMaze2() {
     testExample("Examples/RobotExplorer2/ExploreMaze2.kt", robotexplorer2.ExploreMaze2Kt::main);
+  }
+
+  @Test
+  public void testExploreMaze3() {
+    testExample("Examples/RobotExplorer3/ExploreMaze3.kt", robotexplorer3.ExploreMaze3Kt::main);
   }
 
   @Test

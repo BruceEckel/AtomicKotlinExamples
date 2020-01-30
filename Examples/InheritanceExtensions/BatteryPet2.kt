@@ -1,49 +1,57 @@
 // InheritanceExtensions/BatteryPet2.kt
 package inheritanceextensions2
-import atomictest.eq
+import atomictest.*
 
-interface EnergySource {
-  fun replenish(): String
+private val trace = Trace()
+
+interface Energy {
+  fun replenish() = trace("Fill Bowl")
 }
 
-open class Pet(
-  open val energySource: EnergySource
-) {
-  open fun speak() = ""
+open class Pet(open val energy: Energy) {
+  open fun speak() = trace("")
 }
 
-class DogFood : EnergySource {
-  override fun replenish() = "Fill Bowl"
-}
+class DogFood : Energy
 
 open class Dog : Pet(DogFood()) {
-  override fun speak() = "Bark!"
+  override fun speak() = trace("Bark!")
 }
 
-fun Dog.sit() = "Sitting..."
+fun Dog.sit() = trace("Sitting...")
 
-class Batteries : EnergySource {
+class Batteries : Energy {
   override fun replenish() =
-    "Change batteries"
+    trace("Change batteries")
 }
 
 class ToyDog: Dog() {
-  override val energySource = Batteries()
+  override val energy = Batteries()
 }
 
 fun play(pet: Pet) = pet.speak()
 
-fun playWithDog(dog: Dog): String {
-  play(dog) eq "Bark!"
-  dog.sit() eq "Sitting..."
-  return dog.energySource.replenish()
+fun playWithDog(dog: Dog) {
+  play(dog)
+  dog.sit()
+  dog.energy.replenish()
 }
 
 fun main() {
-  val d1 = Dog()
-  val d2 = ToyDog()
-  play(d1) eq "Bark!"
-  play(d2) eq "Bark!"
-  playWithDog(d1) eq "Fill Bowl"
-  playWithDog(d2) eq "Change batteries"
+  val dog1 = Dog()
+  val dog2 = ToyDog()
+  play(dog1)
+  play(dog2)
+  playWithDog(dog1)
+  playWithDog(dog2)
+  trace eq """
+  Bark!
+  Bark!
+  Bark!
+  Sitting...
+  Fill Bowl
+  Bark!
+  Sitting...
+  Change batteries
+  """
 }

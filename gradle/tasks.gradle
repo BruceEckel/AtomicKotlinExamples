@@ -783,14 +783,29 @@ task ExploreMaze2(type: JavaExec) {
     main = 'robotexplorer2.ExploreMaze2Kt'
 }
 
+task ExploreMaze3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'robotexplorer3.ExploreMaze3Kt'
+}
+
 task ExpressionInTemplate(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExpressionInTemplateKt'
 }
 
-task ExtensionAdapter(type: JavaExec) {
+task ExtensibilityEx1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'inheritanceextensions3.ExtensionAdapterKt'
+    main = 'designingwithinheritanceex1.ExtensibilityEx1Kt'
+}
+
+task ExtensibilityEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'designingwithinheritanceex2.ExtensibilityEx2Kt'
+}
+
+task ExtensibilityEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'designingwithinheritanceex3.ExtensibilityEx3Kt'
 }
 
 task ExtensionFuncs(type: JavaExec) {
@@ -1843,11 +1858,6 @@ task Partition(type: JavaExec) {
     main = 'PartitionKt'
 }
 
-task Perform(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'generics.PerformKt'
-}
-
 task Pet(type: JavaExec) {
     classpath kotlinClassPath
     main = 'polymorphism.PetKt'
@@ -2824,8 +2834,11 @@ task run (dependsOn: [
     'ExplicitTyping',
     'ExploreMaze',
     'ExploreMaze2',
+    'ExploreMaze3',
     'ExpressionInTemplate',
-    'ExtensionAdapter',
+    'ExtensibilityEx1',
+    'ExtensibilityEx2',
+    'ExtensibilityEx3',
     'ExtensionFuncs',
     'ExtensionsToJavaClass',
     'Factorial',
@@ -3036,7 +3049,6 @@ task run (dependsOn: [
     'ParameterizedReturn',
     'ParameterizedTypes',
     'Partition',
-    'Perform',
     'Pet',
     'Pets',
     'PlatformTypes',
