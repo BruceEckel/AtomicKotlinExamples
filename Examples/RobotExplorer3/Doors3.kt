@@ -1,9 +1,8 @@
 // RobotExplorer3/Doors3.kt
 package robotexplorer3
-import robotexplorer3.Player.*
 import robotexplorer3.Urge.*
 
-val edge = Room(Edge())
+private val edge = Room()
 
 class Doors {
   private var north: Room = edge

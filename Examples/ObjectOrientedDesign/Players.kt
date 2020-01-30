@@ -16,7 +16,7 @@ enum class Player(val symbol: Char) {
   Wall('#'),
   Food('.'),
   Empty('_'),
-  Edge('/'),
+  Void('~'),
   EndGame('!');
   override fun toString() = symbol.toString()
 }

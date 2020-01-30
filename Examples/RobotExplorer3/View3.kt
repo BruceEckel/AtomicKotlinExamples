@@ -18,7 +18,8 @@ class View(private val stage: Stage) {
         currentRow = row
       }
       result += if (room == stage.robot.room)
-        "${stage.robot}" else "${room.player}"
+        "${stage.robot.id()}" else
+        "${room.player.id()}"
     }
     return result + "\n\n\n"
   }

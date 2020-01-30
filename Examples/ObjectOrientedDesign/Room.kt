@@ -7,7 +7,7 @@ class Room(var player: Any = Empty) {
   fun enter(robot: Robot): Room {
     when (val p = player) {
       // Stay in original room:
-      Wall, Edge -> return robot.room
+      Wall, Void -> return robot.room
       is Teleport -> return p.targetRoom
       EndGame -> return Room(EndGame)
       Food -> player = Empty // Eat food

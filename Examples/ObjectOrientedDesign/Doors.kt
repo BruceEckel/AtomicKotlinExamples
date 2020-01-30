@@ -3,7 +3,7 @@ package robotexplorer
 import robotexplorer.Player.*
 import robotexplorer.Urge.*
 
-val edge = Room(Edge)
+val edge = Room(Void)
 
 class Doors {
   private var north: Room = edge

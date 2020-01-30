@@ -1,81 +1,83 @@
 // RobotExplorer3/Players3.kt
 package robotexplorer3
 
-abstract class Player(val symbol: Char) {
-  override fun toString() = symbol.toString()
-  abstract fun
-    interact(robot: Robot, room: Room): Room
+interface Player {
+  val symbol: Char
+  val room: Room
+  fun id() = symbol.toString()
+  fun interact(robot: Robot): Room
 }
 
-class Wall : Player('#') {
-  override fun
-    interact(robot: Robot, room: Room) =
+class Void() : Player {
+  override val symbol = '~'
+  override val room: Room
+    get() = throw IllegalAccessException()
+  override fun interact(robot: Robot) =
     robot.room
 }
 
-class Food : Player('.') {
-  override fun
-    interact(robot: Robot, room: Room): Room {
-    room.player = Empty()
+class Wall(override val room: Room) : Player {
+  override val symbol = '#'
+  override fun interact(robot: Robot) =
+    robot.room
+}
+
+class Food(override val room: Room) : Player {
+  override val symbol = '.'
+  override fun interact(robot: Robot): Room {
+    room.player = Empty(room)
     return room
   }
 }
 
-class Empty : Player('_') {
-  override fun
-    interact(robot: Robot, room: Room) =
-    room
+class Empty(
+  override val room: Room
+) : Player {
+  override val symbol = '_'
+  override fun interact(robot: Robot) = room
 }
 
-class Edge : Player('/') {
-  override fun
-    interact(robot: Robot, room: Room) =
-    robot.room
+class EndGame(
+  override val room: Room
+) : Player {
+  override val symbol = '!'
+  override fun interact(robot: Robot) =
+    Room(EndGame(room))
 }
 
-class EndGame : Player('!') {
-  override fun
-    interact(robot: Robot, room: Room) =
-    Room(EndGame())
-}
-
-
-class Robot(var room: Room) : Player('R') {
-  override fun // Shouldn't happen
-    interact(robot: Robot, room: Room) =
+class Robot(
+  override var room: Room
+) : Player {
+  override val symbol = 'R'
+  // Shouldn't happen:
+  override fun interact(robot: Robot) =
     throw IllegalAccessException()
   fun move(urge: Urge) {
     val nextRoom: Room = room.doors.open(urge)
-    room = nextRoom.player
-      .interact(this, nextRoom)
+    room = nextRoom.player.interact(this)
   }
 }
 
 class Teleport(
-  val target: Char
-) : Player('T') {
-  var originRoom = Room()
+  val target: Char, override val room: Room
+) : Player {
+  override val symbol = 'T'
   var targetRoom = Room()
-  override fun toString() = target.toString()
-  override fun
-    interact(robot: Robot, room: Room) =
+  override fun id() = target.toString()
+  override fun interact(robot: Robot) =
     targetRoom
 }
 
 fun factory(ch: Char): Room {
   val room = Room()
   when (ch) {
-    // 'R' -> robot.room = room
-    '#' -> room.player = Wall()
-    '.' -> room.player = Food()
-    '_' -> room.player = Empty()
-    '/' -> room.player = Edge()
-    '!' -> room.player = EndGame()
-    else -> {
-      val teleport = Teleport(ch)
-      teleport.originRoom = room
-      room.player = teleport
-    }
+    '#' -> room.player = Wall(room)
+    '.' -> room.player = Food(room)
+    '_' -> room.player = Empty(room)
+    '/' -> room.player = Void()
+    '!' -> room.player = EndGame(room)
+    in 'a'..'z' ->
+      room.player = Teleport(ch, room)
   }
   return room
 }

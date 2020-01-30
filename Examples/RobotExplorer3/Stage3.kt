@@ -33,8 +33,8 @@ class Stage(val maze: String) {
         it.target
       }.zipWithNext()
     for((a, b) in teleportPairs) {
-      a.targetRoom = b.originRoom
-      b.targetRoom = a.originRoom
+      a.targetRoom = b.room
+      b.targetRoom = a.room
     }
   }
   fun run(solution: String) {
