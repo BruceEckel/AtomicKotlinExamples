@@ -26,6 +26,7 @@ class Wall(override val room: Room) : Player {
 class Food(override val room: Room) : Player {
   override val symbol = '.'
   override fun interact(robot: Robot): Room {
+    robot.energy++
     room.player = Empty(room)
     return room
   }
@@ -50,6 +51,7 @@ class Robot(
   override var room: Room
 ) : Player {
   override val symbol = 'R'
+  var energy = 0
   // Shouldn't happen:
   override fun interact(robot: Robot) =
     throw IllegalAccessException()
@@ -69,16 +71,27 @@ class Teleport(
     targetRoom
 }
 
+class Bomb(override val room: Room) : Player {
+  override val symbol = '*'
+  override fun interact(robot: Robot): Room {
+    robot.energy = 0 // Bomb erases energy
+    room.player = Empty(room)
+    return room
+  }
+}
+
 fun factory(ch: Char): Room {
   val room = Room()
   when (ch) {
+    'R' -> {} // Handled elsewhere
     '#' -> room.player = Wall(room)
     '.' -> room.player = Food(room)
     '_' -> room.player = Empty(room)
-    '/' -> room.player = Void()
     '!' -> room.player = EndGame(room)
+    '*' -> room.player = Bomb(room)
     in 'a'..'z' ->
       room.player = Teleport(ch, room)
+    else -> throw IllegalStateException("$ch")
   }
   return room
 }
