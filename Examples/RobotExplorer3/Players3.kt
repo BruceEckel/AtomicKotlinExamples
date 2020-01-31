@@ -9,18 +9,31 @@ interface Player {
   fun interact(robot: Robot): Room
 }
 
+val prototypes =
+  mutableListOf<Player>()
+
 class Void() : Player {
   override val symbol = '~'
   override val room: Room
     get() = throw IllegalAccessException()
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
+  companion object Prototype {
+    init {
+      prototypes.add(Void())
+    }
+  }
 }
 
 class Wall(override val room: Room) : Player {
   override val symbol = '#'
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
+  companion object Prototype {
+    init {
+      prototypes.add(Wall(Room()))
+    }
+  }
 }
 
 class Food(override val room: Room) : Player {
@@ -30,6 +43,11 @@ class Food(override val room: Room) : Player {
     room.player = Empty(room)
     return room // Move into new room
   }
+  companion object Prototype {
+    init {
+      prototypes.add(Food(Room()))
+    }
+  }
 }
 
 class Empty(
@@ -38,6 +56,11 @@ class Empty(
   override val symbol = '_'
   // Move into new room:
   override fun interact(robot: Robot) = room
+  companion object Prototype {
+    init {
+      prototypes.add(Empty(Room()))
+    }
+  }
 }
 
 class EndGame(
@@ -46,6 +69,11 @@ class EndGame(
   override val symbol = '!'
   override fun interact(robot: Robot) =
     Room(EndGame(room))
+  companion object Prototype {
+    init {
+      prototypes.add(EndGame(Room()))
+    }
+  }
 }
 
 class Robot(
@@ -60,6 +88,11 @@ class Robot(
     val nextRoom = room.doors.open(urge)
     room = nextRoom.player.interact(this)
   }
+  companion object Prototype {
+    init {
+      prototypes.add(Robot(Room()))
+    }
+  }
 }
 
 class Teleport(
@@ -70,6 +103,11 @@ class Teleport(
   override fun id() = target.toString()
   override fun interact(robot: Robot) =
     targetRoom
+  companion object Prototype {
+    init {
+      prototypes.add(Teleport('P', Room()))
+    }
+  }
 }
 
 class Bomb(override val room: Room) : Player {
@@ -78,6 +116,11 @@ class Bomb(override val room: Room) : Player {
     robot.energy = 0 // Bomb erases energy
     room.player = Empty(room)
     return room
+  }
+  companion object Prototype {
+    init {
+      prototypes.add(Bomb(Room()))
+    }
   }
 }
 
