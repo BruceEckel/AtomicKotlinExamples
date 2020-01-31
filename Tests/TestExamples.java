@@ -2103,6 +2103,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testExploreMaze3() {
+    testExample("Examples/RobotExplorer3/ExploreMaze3.kt", robotexplorer3.ExploreMaze3Kt::main);
+  }
+
+  @Test
   public void testChainedCalls() {
     testExample("Examples/SafeCallsAndElvis/ChainedCalls.kt", safecalls.ChainedCallsKt::main);
   }

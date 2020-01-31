@@ -1,5 +1,5 @@
-// RobotExplorer2/Players2.kt
-package robotexplorer2
+// RobotExplorer3/Players3.kt
+package robotexplorer3
 import robotexplorer.Urge
 
 interface Player {

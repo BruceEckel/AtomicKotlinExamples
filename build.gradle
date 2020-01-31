@@ -30,18 +30,18 @@ sourceSets {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    compile "org.jetbrains.kotlin:kotlin-reflect"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "org.jetbrains.kotlin:kotlin-reflect"
 
     // Testing:
-    compile "org.jetbrains.kotlin:kotlin-test-junit"
+    implementation "org.jetbrains.kotlin:kotlin-test-junit"
 
     // Coroutines:
-    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.26.1-eap13'
+    // implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.26.1-eap13'
 
     // Logging:
-    compile 'io.github.microutils:kotlin-logging:1.4.6'
-    compile 'org.slf4j:slf4j-simple:1.7.25'
+    implementation 'io.github.microutils:kotlin-logging:1.4.6'
+    implementation 'org.slf4j:slf4j-simple:1.7.25'
 }
 
 apply from: 'gradle/tasks.gradle'
