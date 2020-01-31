@@ -3,6 +3,5 @@ package robotexplorer3
 import robotmaze.*
 
 fun main() {
-  println(prototypes)
-//  Stage(stringMaze).run(solution)
+  Stage(stringMaze).run(solution)
 }
