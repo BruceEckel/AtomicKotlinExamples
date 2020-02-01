@@ -1,86 +1,107 @@
 // RobotExplorer3/Players3.kt
 package robotexplorer3
 import robotexplorer.Urge
+import kotlin.reflect.full.createInstance
+
+open class Result(
+  val success: Boolean,
+  val room: Room
+)
+class Success(room: Room): Result(true, room)
+class Fail(): Result(false, Room())
 
 sealed class Player {
   abstract val symbol: Char
   abstract val room: Room
   open fun id() = symbol.toString()
+  override fun toString() =
+    "${this::class.simpleName} ${id()}"
+  abstract fun makePlayer(room: Room): Player
+  open fun create(ch: Char): Result {
+    if (ch == symbol) {
+      val room = Room()
+      val player = makePlayer(room)
+      room.player = player
+      return Success(room)
+    }
+    return Fail()
+  }
+  companion object {
+    val prototypes: List<Player> =
+      Player::class.sealedSubclasses.map {
+        it.createInstance()
+      }
+    fun factory(ch: Char): Room =
+      prototypes.map { it.create(ch) }
+        .first { it.success }.room
+  }
   abstract fun interact(robot: Robot): Room
 }
-
-val prototypes = Player::class.sealedSubclasses
-//  mutableListOf<Player>()
 
 class Void() : Player() {
   override val symbol = '~'
   override val room: Room
     get() = throw IllegalAccessException()
+  override fun makePlayer(room: Room) =
+    Void()
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
-//  companion object Prototype {
-//    init {
-//      prototypes.add(Void())
-//    }
-//  }
 }
 
-class Wall(override val room: Room) : Player() {
+class Wall(
+  override val room: Room = Room()
+) : Player() {
   override val symbol = '#'
+  override fun makePlayer(room: Room) =
+    Wall(room)
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
-//  companion object Prototype {
-//    init {
-//      prototypes.add(Wall(Room()))
-//    }
-//  }
 }
 
-class Food(override val room: Room) : Player() {
+class Food(
+  override val room: Room = Room()
+) : Player() {
   override val symbol = '.'
+  override fun makePlayer(room: Room) =
+    Food(room)
   override fun interact(robot: Robot): Room {
     robot.energy++
     room.player = Empty(room)
     return room // Move into new room
   }
-//  companion object Prototype {
-//    init {
-//      prototypes.add(Food(Room()))
-//    }
-//  }
 }
 
 class Empty(
-  override val room: Room
+  override val room: Room = Room()
 ) : Player() {
   override val symbol = '_'
+  override fun makePlayer(room: Room) =
+    Empty(room)
   // Move into new room:
   override fun interact(robot: Robot) = room
-//  companion object Prototype {
-//    init {
-//      prototypes.add(Empty(Room()))
-//    }
-//  }
 }
 
 class EndGame(
-  override val room: Room
+  override val room: Room = Room()
 ) : Player() {
   override val symbol = '!'
+  override fun makePlayer(room: Room) =
+    EndGame(room)
   override fun interact(robot: Robot) =
     Room(EndGame(room))
-//  companion object Prototype {
-//    init {
-//      prototypes.add(EndGame(Room()))
-//    }
-//  }
 }
 
 class Robot(
-  override var room: Room
+  override var room: Room = Room()
 ) : Player() {
   override val symbol = 'R'
   var energy = 0
+  override fun makePlayer(room: Room) =
+    Robot(room)
+  override fun create(ch: Char) =
+    if (ch == symbol)
+      Success(Room())
+    else Fail()
   // Shouldn't happen:
   override fun interact(robot: Robot) =
     throw IllegalAccessException()
@@ -88,54 +109,42 @@ class Robot(
     val nextRoom = room.doors.open(urge)
     room = nextRoom.player.interact(this)
   }
-//  companion object Prototype {
-//    init {
-//      prototypes.add(Robot(Room()))
-//    }
-//  }
 }
 
 class Teleport(
-  val target: Char, override val room: Room
+  val target: Char = 'Z',
+  override val room: Room = Room()
 ) : Player() {
   override val symbol = 'T'
   var targetRoom = Room()
   override fun id() = target.toString()
+  override fun toString() =
+    "${this::class.simpleName} " +
+      "$symbol: $target $targetRoom"
+  override fun makePlayer(room: Room) =
+    throw IllegalStateException()
   override fun interact(robot: Robot) =
     targetRoom
-//  companion object Prototype {
-//    init {
-//      prototypes.add(Teleport('P', Room()))
-//    }
-//  }
+  override fun create(ch: Char): Result {
+    if (ch in 'a'..'z') {
+      val room = Room()
+      val player = Teleport(ch, room)
+      room.player = player
+      return Success(room)
+    }
+    return Fail()
+  }
 }
 
-class Bomb(override val room: Room) : Player() {
+class Bomb(
+  override val room: Room = Room()
+) : Player() {
   override val symbol = '*'
+  override fun makePlayer(room: Room) =
+    Bomb(room)
   override fun interact(robot: Robot): Room {
     robot.energy = 0 // Bomb erases energy
     room.player = Empty(room)
     return room
   }
-//  companion object Prototype {
-//    init {
-//      prototypes.add(Bomb(Room()))
-//    }
-//  }
-}
-
-fun factory(ch: Char): Room {
-  val room = Room()
-  when (ch) {
-    'R' -> {} // Handled in Stage
-    '#' -> room.player = Wall(room)
-    '.' -> room.player = Food(room)
-    '_' -> room.player = Empty(room)
-    '!' -> room.player = EndGame(room)
-    '*' -> room.player = Bomb(room)
-    in 'a'..'z' ->
-      room.player = Teleport(ch, room)
-    else -> throw IllegalStateException("$ch")
-  }
-  return room
 }

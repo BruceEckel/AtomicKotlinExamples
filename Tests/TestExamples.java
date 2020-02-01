@@ -418,36 +418,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBeverages() {
-    testExample("Examples/DesigningWithInheritance/Beverages.kt", BeveragesKt::main);
-  }
-
-  @Test
-  public void testDesigningWIEx1() {
-    testExample("Examples/DesigningWithInheritance/DesigningWIEx1.kt", designingwithinheritanceex1.DesigningWIEx1Kt::main);
-  }
-
-  @Test
-  public void testDesigningWIEx2() {
-    testExample("Examples/DesigningWithInheritance/DesigningWIEx2.kt", designingwithinheritanceex2.DesigningWIEx2Kt::main);
-  }
-
-  @Test
-  public void testDesigningWIEx3() {
-    testExample("Examples/DesigningWithInheritance/DesigningWIEx3.kt", designingwithinheritanceex3.DesigningWIEx3Kt::main);
-  }
-
-  @Test
-  public void testMutableMaze() {
-    testExample("Examples/DesigningWithInheritance/MutableMaze.kt", designingwithinheritance.MutableMazeKt::main);
-  }
-
-  @Test
-  public void testUsingLists() {
-    testExample("Examples/DesigningWithInheritance/UsingLists.kt", designingwithinheritance.UsingListsKt::main);
-  }
-
-  @Test
   public void testComputation() {
     testExample("Examples/Destructuring/Computation.kt", destructuring.ComputationKt::main);
   }

@@ -13,7 +13,7 @@ class Stage(val maze: String) {
     // Step 1: Create rooms with players:
     lines.withIndex().forEach { (row, line) ->
       line.withIndex().forEach { (col, ch) ->
-        val room = factory(ch)
+        val room = Player.factory(ch)
         rooms[Pair(row, col)] = room
         if(ch == robot.symbol)
           robot.room = room

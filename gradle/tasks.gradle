@@ -248,11 +248,6 @@ task BetterSuitcase(type: JavaExec) {
     main = 'lateinitialization.BetterSuitcaseKt'
 }
 
-task Beverages(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'BeveragesKt'
-}
-
 task BigFibonacci(type: JavaExec) {
     classpath kotlinClassPath
     main = 'adaptingjava.BigFibonacciKt'
@@ -606,21 +601,6 @@ task Dereference(type: JavaExec) {
 task DereferenceNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DereferenceNullKt'
-}
-
-task DesigningWIEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'designingwithinheritanceex1.DesigningWIEx1Kt'
-}
-
-task DesigningWIEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'designingwithinheritanceex2.DesigningWIEx2Kt'
-}
-
-task DesigningWIEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'designingwithinheritanceex3.DesigningWIEx3Kt'
 }
 
 task DestructuringData(type: JavaExec) {
@@ -1608,11 +1588,6 @@ task MutableMaps(type: JavaExec) {
     main = 'MutableMapsKt'
 }
 
-task MutableMaze(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'designingwithinheritance.MutableMazeKt'
-}
-
 task MutableSet(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MutableSetKt'
@@ -2523,11 +2498,6 @@ task UsingKotlinClass(type: JavaExec) {
     main = 'fromjava.UsingKotlinClass'
 }
 
-task UsingLists(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'designingwithinheritance.UsingListsKt'
-}
-
 task UsingLongs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingLongsKt'
@@ -2727,7 +2697,6 @@ task run (dependsOn: [
     'BatteryPet2',
     'Bear',
     'BetterSuitcase',
-    'Beverages',
     'BigFibonacci',
     'BiggestLong',
     'BmiWhen',
@@ -2799,9 +2768,6 @@ task run (dependsOn: [
     'DelegatedControls',
     'Dereference',
     'DereferenceNull',
-    'DesigningWIEx1',
-    'DesigningWIEx2',
-    'DesigningWIEx3',
     'DestructuringData',
     'DestructuringDuo',
     'DestructuringMap',
@@ -2999,7 +2965,6 @@ task run (dependsOn: [
     'MutableBlendMap2',
     'MutableList',
     'MutableMaps',
-    'MutableMaze',
     'MutableSet',
     'NPEOnPlatformType',
     'NamedArguments',
@@ -3182,7 +3147,6 @@ task run (dependsOn: [
     'UsingAtomicTest',
     'UsingDataClass',
     'UsingKotlinClass',
-    'UsingLists',
     'UsingLongs',
     'UsingWith',
     'Vals',
