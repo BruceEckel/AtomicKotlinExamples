@@ -20,8 +20,7 @@ sealed class Player {
   open fun create(ch: Char): Result {
     if (ch == symbol) {
       val room = Room()
-      val player = makePlayer(room)
-      room.player = player
+      room.player = makePlayer(room)
       return Success(room)
     }
     return Fail
@@ -65,8 +64,8 @@ class Food(
   override fun makePlayer(room: Room) =
     Food(room)
   override fun interact(robot: Robot): Room {
-    robot.energy++
-    room.player = Empty(room)
+    robot.energy++ // Consume food
+    room.player = Empty(room) // Remove food
     return room // Move into new room
   }
 }
@@ -120,20 +119,19 @@ class Teleport(
   override fun id() = target.toString()
   override fun toString() =
     "${this::class.simpleName} " +
-      "$symbol: $target $targetRoom"
+    "$symbol: $target $targetRoom"
   override fun makePlayer(room: Room) =
     throw IllegalStateException()
-  override fun interact(robot: Robot) =
-    targetRoom
   override fun create(ch: Char): Result {
     if (ch in 'a'..'z') {
       val room = Room()
-      val player = Teleport(ch, room)
-      room.player = player
+      room.player = Teleport(ch, room)
       return Success(room)
     }
     return Fail
   }
+  override fun interact(robot: Robot) =
+    targetRoom
 }
 
 class Bomb(
