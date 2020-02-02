@@ -4,7 +4,7 @@ import robotmaze.*
 
 fun testFactory(maze: String) {
   println(Player.prototypes.map {
-    it.javaClass.simpleName
+    it::class.simpleName
   })
   val lines = maze.split("\n")
   lines.withIndex().forEach { (row, line) ->

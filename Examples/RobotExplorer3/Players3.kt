@@ -3,19 +3,19 @@ package robotexplorer3
 import robotexplorer.Urge
 import kotlin.reflect.full.createInstance
 
-open class Result(
-  val success: Boolean,
-  val room: Room
-)
-class Success(room: Room): Result(true, room)
-class Fail(): Result(false, Room())
-
 sealed class Player {
   abstract val symbol: Char
   abstract val room: Room
   open fun id() = symbol.toString()
   override fun toString() =
     "${this::class.simpleName} ${id()}"
+  open class Result(
+    val success: Boolean,
+    val room: Room
+  )
+  class Success(room: Room):
+    Result(true, room)
+  object Fail: Result(false, Room())
   abstract fun makePlayer(room: Room): Player
   open fun create(ch: Char): Result {
     if (ch == symbol) {
@@ -24,7 +24,7 @@ sealed class Player {
       room.player = player
       return Success(room)
     }
-    return Fail()
+    return Fail
   }
   companion object {
     val prototypes: List<Player> =
@@ -101,7 +101,7 @@ class Robot(
   override fun create(ch: Char) =
     if (ch == symbol)
       Success(Room())
-    else Fail()
+    else Fail
   // Shouldn't happen:
   override fun interact(robot: Robot) =
     throw IllegalAccessException()
@@ -132,7 +132,7 @@ class Teleport(
       room.player = player
       return Success(room)
     }
-    return Fail()
+    return Fail
   }
 }
 
