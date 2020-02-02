@@ -3,6 +3,7 @@ package robotexplorer
 
 class Robot(var room: Room) {
   val symbol = 'R'
+  var energy = 0
   fun move(urge: Urge) {
     // Get a reference to the Room you've
     // been urged to go to, and see what

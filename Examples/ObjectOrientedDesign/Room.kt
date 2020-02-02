@@ -10,7 +10,10 @@ class Room(var player: Any = Void) {
       Wall, Void -> return robot.room
       is Teleport -> return p.targetRoom
       EndGame -> return Room(EndGame)
-      Food -> player = Empty // Eat food
+      Food -> {
+        robot.energy++ // Eat food
+        player = Empty
+      }
       Empty -> {}
     }
     return this // Enter new room
