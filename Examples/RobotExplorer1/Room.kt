@@ -1,6 +1,6 @@
-// ObjectOrientedDesign/Room.kt
-package robotexplorer
-import robotexplorer.Player.*
+// RobotExplorer1/Room.kt
+package robotexplorer1
+import robotexplorer1.Player.*
 
 class Room(var player: Any = Void) {
   val doors = Doors()

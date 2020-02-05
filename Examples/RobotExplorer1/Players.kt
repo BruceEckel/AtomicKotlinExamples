@@ -1,5 +1,5 @@
-// ObjectOrientedDesign/Players.kt
-package robotexplorer
+// RobotExplorer1/Players.kt
+package robotexplorer1
 
 class Robot(var room: Room) {
   val symbol = 'R'

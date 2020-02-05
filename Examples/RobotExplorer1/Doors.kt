@@ -1,6 +1,6 @@
-// ObjectOrientedDesign/Doors.kt
-package robotexplorer
-import robotexplorer.Urge.*
+// RobotExplorer1/Doors.kt
+package robotexplorer1
+import robotexplorer1.Urge.*
 
 val edge = Room()
 

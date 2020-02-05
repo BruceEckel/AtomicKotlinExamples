@@ -1,5 +1,5 @@
-// ObjectOrientedDesign/Stage.kt
-package robotexplorer
+// RobotExplorer1/Stage.kt
+package robotexplorer1
 
 class Stage(val maze: String) {
   val robot = Robot(Room())

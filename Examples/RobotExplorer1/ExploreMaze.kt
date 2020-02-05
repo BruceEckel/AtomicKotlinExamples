@@ -1,5 +1,5 @@
-// ObjectOrientedDesign/ExploreMaze.kt
-package robotexplorer
+// RobotExplorer1/ExploreMaze.kt
+package robotexplorer1
 import robotmaze.*
 
 fun main() {

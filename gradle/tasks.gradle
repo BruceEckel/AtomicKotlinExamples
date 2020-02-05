@@ -613,6 +613,21 @@ task DestructuringDuo(type: JavaExec) {
     main = 'DestructuringDuoKt'
 }
 
+task DestructuringEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'destructuringex1.DestructuringEx1Kt'
+}
+
+task DestructuringEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'destructuringex2.DestructuringEx2Kt'
+}
+
+task DestructuringEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'destructuringex3.DestructuringEx3Kt'
+}
+
 task DestructuringMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.DestructuringMapKt'
@@ -755,7 +770,7 @@ task ExplicitTyping(type: JavaExec) {
 
 task ExploreMaze(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'robotexplorer.ExploreMazeKt'
+    main = 'robotexplorer1.ExploreMazeKt'
 }
 
 task ExploreMaze2(type: JavaExec) {
@@ -2770,6 +2785,9 @@ task run (dependsOn: [
     'DereferenceNull',
     'DestructuringData',
     'DestructuringDuo',
+    'DestructuringEx1',
+    'DestructuringEx2',
+    'DestructuringEx3',
     'DestructuringMap',
     'DeviceExtensions',
     'DeviceMembers',

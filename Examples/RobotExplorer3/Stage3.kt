@@ -1,12 +1,19 @@
 // RobotExplorer3/Stage3.kt
 package robotexplorer3
-import robotexplorer.urge
+import robotexplorer1.urge
+import robotexplorer2.Adapter
+import robotexplorer2.View
 
 class Stage(val maze: String) {
   val robot = Robot(Room())
   val rooms =
     mutableMapOf<Pair<Int, Int>, Room>()
-  private val view = View(this)
+  private inner class Adapt : Adapter {
+    override fun height() =
+      maze.lines().size + 3
+    override fun textView() = mazeView()
+  }
+  private val view = View(Adapt())
   val lines = maze.split("\n")
   init { // The 'Builder' pattern:
     // Step 1: Create rooms with players:
@@ -46,4 +53,20 @@ class Stage(val maze: String) {
         view.show()
       }
   }
+}
+
+fun Stage.mazeView(): String {
+  var result = ""
+  var currentRow = 0
+  rooms.forEach { (pair, room) ->
+    val row = pair.first
+    if (row != currentRow) {
+      result += "\n"
+      currentRow = row
+    }
+    result += if (room == robot.room)
+      robot.id() else room.player.id()
+  }
+  return result +
+    "\n\nEnergy: ${robot.energy}\n"
 }

@@ -1,4 +1,4 @@
-// ObjectOrientedDesign/RobotMaze.kt
+// RobotExplorer1/RobotMaze.kt
 package robotmaze
 
 val stringMaze = """
