@@ -214,17 +214,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testDelegatedControls() {
-    testExample("Examples/ClassDelegation/DelegatedControls.kt", DelegatedControlsKt::main);
+    testExample("Examples/ClassDelegation/DelegatedControls.kt", classdelegation.DelegatedControlsKt::main);
   }
 
   @Test
   public void testExplicitDelegation() {
-    testExample("Examples/ClassDelegation/ExplicitDelegation.kt", ExplicitDelegationKt::main);
+    testExample("Examples/ClassDelegation/ExplicitDelegation.kt", classdelegation.ExplicitDelegationKt::main);
   }
 
   @Test
   public void testModelingMI() {
-    testExample("Examples/ClassDelegation/ModelingMI.kt", ModelingMIKt::main);
+    testExample("Examples/ClassDelegation/ModelingMI.kt", classdelegation.ModelingMIKt::main);
   }
 
   @Test

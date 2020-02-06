@@ -590,7 +590,7 @@ task Definition(type: JavaExec) {
 
 task DelegatedControls(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'DelegatedControlsKt'
+    main = 'classdelegation.DelegatedControlsKt'
 }
 
 task Dereference(type: JavaExec) {
@@ -760,7 +760,7 @@ task ExplicitCheck(type: JavaExec) {
 
 task ExplicitDelegation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ExplicitDelegationKt'
+    main = 'classdelegation.ExplicitDelegationKt'
 }
 
 task ExplicitTyping(type: JavaExec) {
@@ -1525,7 +1525,7 @@ task MixColors(type: JavaExec) {
 
 task ModelingMI(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ModelingMIKt'
+    main = 'classdelegation.ModelingMIKt'
 }
 
 task Module2(type: JavaExec) {

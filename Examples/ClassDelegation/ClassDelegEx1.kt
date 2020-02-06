@@ -1,42 +1,45 @@
 // ClassDelegation/ClassDelegEx1.kt
 package classdelegationex1
-import usefullibrary.*
-import atomictest.*
+import atomictest.eq
 
-private val trace = Trace()
-
-class MyClass {
-  fun g() = trace("g()")
-  fun h() = trace("h()")
+interface Rectangle {
+  fun paint(): Int
+  fun resize(scale: Int): Int
 }
 
-fun useMyClass(mc: MyClass) {
-  mc.g()
-  mc.h()
+class ButtonImage(
+  val width: Int,
+  val height: Int
+) : Rectangle {
+  override fun paint() = width * height
+  override fun resize(scale: Int) = scale
 }
 
-class MyClassAdaptedForLib(
-  val field: MyClass
-) : LibType {
-  override fun f1() = field.h()
-  override fun f2() = field.g()
+interface MouseManager {
+  fun clicked(): Boolean
+  fun hovering(): Boolean
+  fun rightClicked(): Boolean
 }
 
-fun adapt(mc: MyClass) =
-  MyClassAdaptedForLib(mc)
+class UserInput : MouseManager {
+  override fun clicked() = true
+  override fun hovering() = true
+  override fun rightClicked() = true
+}
+
+class Button(
+  val width: Int,
+  val height: Int,
+  val image: Rectangle =
+    ButtonImage(width, height),
+  val input: MouseManager = UserInput()
+) : Rectangle by image, MouseManager by input
 
 fun main() {
-  val library = UsefulLibrary()
-  val mc = adapt(MyClass())
-  library.utility1(mc)
-  library.utility2(mc)
-  useMyClass(mc.field)
-  trace eq """
-  h()
-  g()
-  g()
-  h()
-  g()
-  h()
-  """
+  val button = Button(10, 5)
+  button.paint() eq 50
+  button.clicked() eq true
+  button.hovering() eq true
+  button.resize(10) eq 10
+  button.rightClicked() eq true
 }

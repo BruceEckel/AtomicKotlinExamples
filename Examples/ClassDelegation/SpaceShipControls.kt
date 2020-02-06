@@ -1,4 +1,5 @@
 // ClassDelegation/SpaceShipControls.kt
+package classdelegation
 
 interface ShipControls {
   fun up(velocity: Int): String
@@ -13,22 +14,15 @@ interface ShipControls {
 class SpaceShipControls : ShipControls {
   override fun up(velocity: Int) =
     "up $velocity"
-
   override fun down(velocity: Int) =
     "down $velocity"
-
   override fun left(velocity: Int) =
     "left $velocity"
-
   override fun right(velocity: Int) =
     "right $velocity"
-
   override fun forward(velocity: Int) =
     "forward $velocity"
-
   override fun back(velocity: Int) =
     "back $velocity"
-
-  override fun turboBoost() =
-    "turbo boost"
+  override fun turboBoost() = "turbo boost"
 }

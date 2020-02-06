@@ -1,4 +1,5 @@
 // ClassDelegation/DelegatedControls.kt
+package classdelegation
 import atomictest.eq
 
 class DelegatedControls(

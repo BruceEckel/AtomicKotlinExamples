@@ -1,4 +1,5 @@
 // ClassDelegation/ModelingMI.kt
+package classdelegation
 import atomictest.eq
 
 interface Rectangle {
@@ -23,8 +24,8 @@ class UserInput : MouseManager {
 }
 
 // Even if we make the classes open, we'll
-// get an error: Only one class may appear
-// in a supertype list.
+// get an error because only one class may
+// appear in a supertype list:
 // class Button: ButtonImage(), UserInput()
 
 class Button(
