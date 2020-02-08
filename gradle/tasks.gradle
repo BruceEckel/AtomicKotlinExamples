@@ -353,11 +353,6 @@ task CheckObject2(type: JavaExec) {
     main = 'nothingtype.CheckObject2Kt'
 }
 
-task CheckType(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'downcasting.CheckTypeKt'
-}
-
 task CheckingArgument(type: JavaExec) {
     classpath kotlinClassPath
     main = 'scopefunctions.CheckingArgumentKt'
@@ -528,6 +523,11 @@ task CreatingLists(type: JavaExec) {
     main = 'CreatingListsKt'
 }
 
+task Creature(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcasting.CreatureKt'
+}
+
 task Cup(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CupKt'
@@ -680,7 +680,7 @@ task DownCastEx1(type: JavaExec) {
 
 task DownCastEx2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'downcastingex2.DownCastEx2Kt'
+    main = 'downcasting.DownCastEx2Kt'
 }
 
 task DownCastEx3(type: JavaExec) {
@@ -868,6 +868,11 @@ task FilterNotNull(type: JavaExec) {
     main = 'FilterNotNullKt'
 }
 
+task FindType(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcasting.FindTypeKt'
+}
+
 task Flatten(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FlattenKt'
@@ -946,11 +951,6 @@ task FunctionClosure(type: JavaExec) {
 task FunctionReference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences2.FunctionReferenceKt'
-}
-
-task Game(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'downcasting.GameKt'
 }
 
 task GardenItem(type: JavaExec) {
@@ -1101,11 +1101,6 @@ task Holder(type: JavaExec) {
 task House(type: JavaExec) {
     classpath kotlinClassPath
     main = 'baseclassinit.HouseKt'
-}
-
-task HumanAlice(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'downcasting.HumanAliceKt'
 }
 
 task If1(type: JavaExec) {
@@ -1296,6 +1291,11 @@ task IntroducingNull(type: JavaExec) {
 task Invoke(type: JavaExec) {
     classpath kotlinClassPath
     main = 'InvokeKt'
+}
+
+task IsKeyword(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcasting.IsKeywordKt'
 }
 
 task IterateOverString(type: JavaExec) {
@@ -1621,6 +1621,11 @@ task NamedArguments(type: JavaExec) {
 task NamedCompanionObject(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NamedCompanionObjectKt'
+}
+
+task NarrowingUpcast(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcasting.NarrowingUpcastKt'
 }
 
 task NewAngle(type: JavaExec) {
@@ -2168,11 +2173,6 @@ task SingleArgRequire(type: JavaExec) {
     main = 'checkinstructions.SingleArgRequireKt'
 }
 
-task SmartCast(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'downcasting.SmartCastKt'
-}
-
 task SortWith(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences1.SortWithKt'
@@ -2568,16 +2568,6 @@ task VisibleArgs(type: JavaExec) {
     main = 'VisibleArgsKt'
 }
 
-task WhenAndHierarchy(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'downcasting.WhenAndHierarchyKt'
-}
-
-task WhenSubjectVariable(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'downcasting.WhenSubjectVariableKt'
-}
-
 task While(type: JavaExec) {
     classpath kotlinClassPath
     main = 'WhileKt'
@@ -2733,7 +2723,6 @@ task run (dependsOn: [
     'CharRange',
     'CheckObject',
     'CheckObject2',
-    'CheckType',
     'CheckingArgument',
     'CheckingOptions',
     'ClassBodies',
@@ -2768,6 +2757,7 @@ task run (dependsOn: [
     'CreateString',
     'CreateString2',
     'CreatingLists',
+    'Creature',
     'Cup',
     'Cup2',
     'CustomLabel',
@@ -2836,6 +2826,7 @@ task run (dependsOn: [
     'FilterIsInstance',
     'FilterMap',
     'FilterNotNull',
+    'FindType',
     'Flatten',
     'FlattenAndFlatMap',
     'FloatingPointRange',
@@ -2852,7 +2843,6 @@ task run (dependsOn: [
     'FullyQualify',
     'FunctionClosure',
     'FunctionReference',
-    'Game',
     'GardenItem',
     'GenericFunction',
     'GenericHolder',
@@ -2883,7 +2873,6 @@ task run (dependsOn: [
     'Hierarchy',
     'Holder',
     'House',
-    'HumanAlice',
     'If1',
     'If2',
     'If3',
@@ -2922,6 +2911,7 @@ task run (dependsOn: [
     'IntroducingCapture',
     'IntroducingNull',
     'Invoke',
+    'IsKeyword',
     'IterateOverString',
     'Iteration',
     'IterationVsMembership',
@@ -2987,6 +2977,7 @@ task run (dependsOn: [
     'NPEOnPlatformType',
     'NamedArguments',
     'NamedCompanionObject',
+    'NarrowingUpcast',
     'NewAngle',
     'NewException',
     'NickName',
@@ -3096,7 +3087,6 @@ task run (dependsOn: [
     'SimpleLoggingStrategy',
     'SimpleOperation',
     'SingleArgRequire',
-    'SmartCast',
     'SortWith',
     'Speakers',
     'SpreadOperator',
@@ -3176,8 +3166,6 @@ task run (dependsOn: [
     'Vars',
     'VerySlowFibonacci',
     'VisibleArgs',
-    'WhenAndHierarchy',
-    'WhenSubjectVariable',
     'While',
     'WhileControl',
     'WhileLabeled',

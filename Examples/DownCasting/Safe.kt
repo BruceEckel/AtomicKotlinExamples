@@ -2,8 +2,8 @@
 package downcasting
 import atomictest.eq
 
-fun dogBarkSafe(smb: LivingBeing) =
-  (smb as? Dog)?.bark() ?: "Not a Dog"
+fun dogBarkSafe(c: Creature) =
+  (c as? Dog)?.bark() ?: "Not a Dog"
 
 fun main() {
   dogBarkSafe(Dog()) eq "Yip!"

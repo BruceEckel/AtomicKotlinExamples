@@ -1,9 +1,11 @@
 // DownCasting/DownCastEx2.kt
-package downcastingex2
-import atomictest.*
-
-private val trace = Trace()
+package downcasting
+import atomictest.eq
 
 fun main() {
-  trace eq ""
+  group.filterIsInstance<Dog>()
+    .map(Dog::bark) eq "[Yip!, Yip!]"
+  val dogClass = Dog().javaClass
+  group.filterIsInstance(dogClass)
+    .map(Dog::bark) eq "[Yip!, Yip!]"
 }

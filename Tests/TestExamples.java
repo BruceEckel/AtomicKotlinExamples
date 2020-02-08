@@ -458,8 +458,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCheckType() {
-    testExample("Examples/DownCasting/CheckType.kt", downcasting.CheckTypeKt::main);
+  public void testCreature() {
+    testExample("Examples/DownCasting/Creature.kt", downcasting.CreatureKt::main);
   }
 
   @Test
@@ -469,7 +469,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testDownCastEx2() {
-    testExample("Examples/DownCasting/DownCastEx2.kt", downcastingex2.DownCastEx2Kt::main);
+    testExample("Examples/DownCasting/DownCastEx2.kt", downcasting.DownCastEx2Kt::main);
   }
 
   @Test
@@ -483,13 +483,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGame() {
-    testExample("Examples/DownCasting/Game.kt", downcasting.GameKt::main);
+  public void testFindType() {
+    testExample("Examples/DownCasting/FindType.kt", downcasting.FindTypeKt::main);
   }
 
   @Test
-  public void testHumanAlice() {
-    testExample("Examples/DownCasting/HumanAlice.kt", downcasting.HumanAliceKt::main);
+  public void testIsKeyword() {
+    testExample("Examples/DownCasting/IsKeyword.kt", downcasting.IsKeywordKt::main);
+  }
+
+  @Test
+  public void testNarrowingUpcast() {
+    testExample("Examples/DownCasting/NarrowingUpcast.kt", downcasting.NarrowingUpcastKt::main);
   }
 
   @Test
@@ -498,23 +503,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testSmartCast() {
-    testExample("Examples/DownCasting/SmartCast.kt", downcasting.SmartCastKt::main);
-  }
-
-  @Test
   public void testUnsafe() {
     testExample("Examples/DownCasting/Unsafe.kt", downcasting.UnsafeKt::main);
-  }
-
-  @Test
-  public void testWhenAndHierarchy() {
-    testExample("Examples/DownCasting/WhenAndHierarchy.kt", downcasting.WhenAndHierarchyKt::main);
-  }
-
-  @Test
-  public void testWhenSubjectVariable() {
-    testExample("Examples/DownCasting/WhenSubjectVariable.kt", downcasting.WhenSubjectVariableKt::main);
   }
 
   @Test
