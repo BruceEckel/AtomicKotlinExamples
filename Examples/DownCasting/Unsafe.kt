@@ -1,7 +1,6 @@
 // DownCasting/Unsafe.kt
 package downcasting
-import atomictest.eq
-import atomictest.capture
+import atomictest.*
 
 fun dogBarkUnsafe(c: Creature) =
   (c as Dog).bark()
