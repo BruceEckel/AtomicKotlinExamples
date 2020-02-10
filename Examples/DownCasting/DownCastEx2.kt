@@ -5,7 +5,6 @@ import atomictest.eq
 fun main() {
   group.filterIsInstance<Dog>()
     .map(Dog::bark) eq "[Yip!, Yip!]"
-  val dogClass = Dog().javaClass
-  group.filterIsInstance(dogClass)
+  group.filterIsInstance(Dog::class.java)
     .map(Dog::bark) eq "[Yip!, Yip!]"
 }

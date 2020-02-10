@@ -2008,11 +2008,6 @@ task References(type: JavaExec) {
     main = 'ReferencesKt'
 }
 
-task RegularClasses(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'withoutsealedclasses.RegularClassesKt'
-}
-
 task RegularLambda(type: JavaExec) {
     classpath kotlinClassPath
     main = 'regularlambda.RegularLambdaKt'
@@ -2126,6 +2121,11 @@ task SealedEx2(type: JavaExec) {
 task SealedEx3(type: JavaExec) {
     classpath kotlinClassPath
     main = 'sealedclassesex3.SealedEx3Kt'
+}
+
+task SealedSubclasses(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sealedclasses.SealedSubclassesKt'
 }
 
 task Sets(type: JavaExec) {
@@ -2426,6 +2426,11 @@ task TypeDeclarations(type: JavaExec) {
 task Types(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TypesKt'
+}
+
+task UnSealed(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'withoutsealedclasses.UnSealedKt'
 }
 
 task Underscore(type: JavaExec) {
@@ -3054,7 +3059,6 @@ task run (dependsOn: [
     'RecursionLimits',
     'RecursiveEnumImport',
     'References',
-    'RegularClasses',
     'RegularLambda',
     'RemoveDuplicates',
     'Repeat',
@@ -3078,6 +3082,7 @@ task run (dependsOn: [
     'SealedEx1',
     'SealedEx2',
     'SealedEx3',
+    'SealedSubclasses',
     'Sets',
     'Share2',
     'SimilarOperation',
@@ -3138,6 +3143,7 @@ task run (dependsOn: [
     'TwoFunctionsWithVarargs',
     'TypeDeclarations',
     'Types',
+    'UnSealed',
     'Underscore',
     'Unexpected',
     'UnitReturn',

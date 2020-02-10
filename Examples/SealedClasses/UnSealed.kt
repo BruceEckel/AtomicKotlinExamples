@@ -1,10 +1,10 @@
-// SealedClasses/SealedClasses.kt
-package sealedclasses
+// SealedClasses/UnSealed.kt
+package withoutsealedclasses
 import atomictest.*
 
 val trace = Trace()
 
-sealed class Transport
+open class Transport
 
 data class Train(
   val line: String
@@ -22,6 +22,7 @@ fun travel(transport: Transport) =
     is Bus ->
       trace("Bus ${transport.number}, " +
         "size ${transport.capacity}")
+    else -> trace("$transport is in limbo!")
   }
 
 fun main() {

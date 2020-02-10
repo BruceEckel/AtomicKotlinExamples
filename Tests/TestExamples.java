@@ -2153,11 +2153,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testRegularClasses() {
-    testExample("Examples/SealedClasses/RegularClasses.kt", withoutsealedclasses.RegularClassesKt::main);
-  }
-
-  @Test
   public void testSealedClasses() {
     testExample("Examples/SealedClasses/SealedClasses.kt", sealedclasses.SealedClassesKt::main);
   }
@@ -2175,6 +2170,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSealedEx3() {
     testExample("Examples/SealedClasses/SealedEx3.kt", sealedclassesex3.SealedEx3Kt::main);
+  }
+
+  @Test
+  public void testSealedSubclasses() {
+    testExample("Examples/SealedClasses/SealedSubclasses.kt", sealedclasses.SealedSubclassesKt::main);
+  }
+
+  @Test
+  public void testUnSealed() {
+    testExample("Examples/SealedClasses/UnSealed.kt", withoutsealedclasses.UnSealedKt::main);
   }
 
   @Test
