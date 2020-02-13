@@ -2,7 +2,7 @@
 package sealedclassesex1
 import atomictest.*
 
-val trace = Trace()
+private val trace = Trace()
 
 sealed class Transport {
   abstract val capacity: Int

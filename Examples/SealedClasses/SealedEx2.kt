@@ -1,9 +1,17 @@
 // SealedClasses/SealedEx2.kt
-package sealedclassesex2
+package sealedclassesex1
 import atomictest.*
 
 private val trace = Trace()
 
 fun main() {
-  trace eq ""
+  Transport::class.sealedSubclasses
+    .map { it.simpleName }
+    .forEach { trace(it) }
+  trace eq """
+  Train
+  Bus
+  Tram
+  Plane
+  """
 }

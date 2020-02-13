@@ -3,9 +3,9 @@ import atomictest.eq
 
 fun main() {
   buildString {
-    append("Alphabet: ")
+    this.append("Alphabet: ")     // [1]
     for (ch in 'a'..'z') {
-      append(ch)
+      append(ch)                  // [2]
     }
   } eq
     "Alphabet: abcdefghijklmnopqrstuvwxyz"

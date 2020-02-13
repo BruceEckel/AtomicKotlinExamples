@@ -1088,21 +1088,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testInnerNestedEx1() {
-    testExample("Examples/InnerAndNestedClasses/InnerNestedEx1.kt", innerandnestedex1.InnerNestedEx1Kt::main);
-  }
-
-  @Test
-  public void testInnerNestedEx2() {
-    testExample("Examples/InnerAndNestedClasses/InnerNestedEx2.kt", innerandnestedex2.InnerNestedEx2Kt::main);
-  }
-
-  @Test
-  public void testInnerNestedEx3() {
-    testExample("Examples/InnerAndNestedClasses/InnerNestedEx3.kt", innerandnestedex3.InnerNestedEx3Kt::main);
-  }
-
-  @Test
   public void testComputer() {
     testExample("Examples/Interfaces/Computer.kt", interfaces.ComputerKt::main);
   }
@@ -1130,11 +1115,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testRigidHolder() {
     testExample("Examples/IntroGenerics/RigidHolder.kt", introgenerics.RigidHolderKt::main);
-  }
-
-  @Test
-  public void testLabeledThis() {
-    testExample("Examples/LabeledThis/LabeledThis.kt", labeledthis.LabeledThisKt::main);
   }
 
   @Test
@@ -1198,13 +1178,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBuildStringAndThis() {
-    testExample("Examples/LambdaWithReceiver/BuildStringAndThis.kt", BuildStringAndThisKt::main);
+  public void testDeclarations() {
+    testExample("Examples/LambdaWithReceiver/Declarations.kt", lambdawithreceiver.DeclarationsKt::main);
   }
 
   @Test
-  public void testDeclarations() {
-    testExample("Examples/LambdaWithReceiver/Declarations.kt", lambdawithreceiver.DeclarationsKt::main);
+  public void testNestedLWR() {
+    testExample("Examples/LambdaWithReceiver/NestedLWR.kt", lambdawithreceiver.NestedLWRKt::main);
   }
 
   @Test
@@ -1550,6 +1530,41 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTrimMargin() {
     testExample("Examples/NamedAndDefaultArgs/TrimMargin.kt", TrimMarginKt::main);
+  }
+
+  @Test
+  public void testAirport() {
+    testExample("Examples/NestedAndInnerClasses/Airport.kt", nestedandinner.AirportKt::main);
+  }
+
+  @Test
+  public void testHotel() {
+    testExample("Examples/NestedAndInnerClasses/Hotel.kt", nestedandinner.HotelKt::main);
+  }
+
+  @Test
+  public void testInnerNestedEx1() {
+    testExample("Examples/NestedAndInnerClasses/InnerNestedEx1.kt", nestedandinnerex1.InnerNestedEx1Kt::main);
+  }
+
+  @Test
+  public void testInnerNestedEx2() {
+    testExample("Examples/NestedAndInnerClasses/InnerNestedEx2.kt", nestedandinnerex2.InnerNestedEx2Kt::main);
+  }
+
+  @Test
+  public void testInnerNestedEx3() {
+    testExample("Examples/NestedAndInnerClasses/InnerNestedEx3.kt", nestedandinnerex3.InnerNestedEx3Kt::main);
+  }
+
+  @Test
+  public void testQualifiedThis() {
+    testExample("Examples/NestedAndInnerClasses/QualifiedThis.kt", nestedandinner.QualifiedThisKt::main);
+  }
+
+  @Test
+  public void testTicket() {
+    testExample("Examples/NestedAndInnerClasses/Ticket.kt", nestedandinner.TicketKt::main);
   }
 
   @Test
@@ -2164,7 +2179,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testSealedEx2() {
-    testExample("Examples/SealedClasses/SealedEx2.kt", sealedclassesex2.SealedEx2Kt::main);
+    testExample("Examples/SealedClasses/SealedEx2.kt", sealedclassesex1.SealedEx2Kt::main);
   }
 
   @Test
@@ -2175,6 +2190,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSealedSubclasses() {
     testExample("Examples/SealedClasses/SealedSubclasses.kt", sealedclasses.SealedSubclassesKt::main);
+  }
+
+  @Test
+  public void testSealedVsAbstract() {
+    testExample("Examples/SealedClasses/SealedVsAbstract.kt", sealedclasses.SealedVsAbstractKt::main);
   }
 
   @Test

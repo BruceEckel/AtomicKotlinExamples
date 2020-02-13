@@ -2,18 +2,19 @@
 import atomictest.eq
 
 object Outer {
-  object Inner1 {
-    val a = "Outer.Inner1"
+  object Nested1 {
+    val a = "Outer.Nested1"
   }
 }
 
 class WithObject {
-  object Inner2 {
-    val b = "WithObject.Inner2"
+  object Nested2 {
+    val b = "WithObject.Nested2"
   }
 }
 
 fun main() {
-  Outer.Inner1.a eq "Outer.Inner1"
-  WithObject.Inner2.b eq "WithObject.Inner2"
+  Outer.Nested1.a eq "Outer.Nested1"
+  WithObject.Nested2.b eq
+    "WithObject.Nested2"
 }

@@ -48,6 +48,11 @@ task AdjustTemp(type: JavaExec) {
     main = 'inheritanceextensions.AdjustTempKt'
 }
 
+task Airport(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedandinner.AirportKt'
+}
+
 task AllOperators(type: JavaExec) {
     classpath kotlinClassPath
     main = 'operatoroverloading.AllOperatorsKt'
@@ -281,11 +286,6 @@ task Boxes(type: JavaExec) {
 task BuildString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BuildStringKt'
-}
-
-task BuildStringAndThis(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'BuildStringAndThisKt'
 }
 
 task ByOperations(type: JavaExec) {
@@ -1098,6 +1098,11 @@ task Holder(type: JavaExec) {
     main = 'generics.HolderKt'
 }
 
+task Hotel(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedandinner.HotelKt'
+}
+
 task House(type: JavaExec) {
     classpath kotlinClassPath
     main = 'baseclassinit.HouseKt'
@@ -1230,17 +1235,17 @@ task InitSection(type: JavaExec) {
 
 task InnerNestedEx1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innerandnestedex1.InnerNestedEx1Kt'
+    main = 'nestedandinnerex1.InnerNestedEx1Kt'
 }
 
 task InnerNestedEx2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innerandnestedex2.InnerNestedEx2Kt'
+    main = 'nestedandinnerex2.InnerNestedEx2Kt'
 }
 
 task InnerNestedEx3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innerandnestedex3.InnerNestedEx3Kt'
+    main = 'nestedandinnerex3.InnerNestedEx3Kt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -1346,11 +1351,6 @@ task KotlinChecked(type: JavaExec) {
 task LabeledReturn(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LabeledReturnKt'
-}
-
-task LabeledThis(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'labeledthis.LabeledThisKt'
 }
 
 task LambdaAndNamedArgs(type: JavaExec) {
@@ -1626,6 +1626,11 @@ task NamedCompanionObject(type: JavaExec) {
 task NarrowingUpcast(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.NarrowingUpcastKt'
+}
+
+task NestedLWR(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.NestedLWRKt'
 }
 
 task NewAngle(type: JavaExec) {
@@ -1923,6 +1928,11 @@ task QuadraticRequire(type: JavaExec) {
     main = 'checkinstructions.QuadraticRequireKt'
 }
 
+task QualifiedThis(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedandinner.QualifiedThisKt'
+}
+
 task Quote(type: JavaExec) {
     classpath kotlinClassPath
     main = 'other.QuoteKt'
@@ -2115,7 +2125,7 @@ task SealedEx1(type: JavaExec) {
 
 task SealedEx2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'sealedclassesex2.SealedEx2Kt'
+    main = 'sealedclassesex1.SealedEx2Kt'
 }
 
 task SealedEx3(type: JavaExec) {
@@ -2126,6 +2136,11 @@ task SealedEx3(type: JavaExec) {
 task SealedSubclasses(type: JavaExec) {
     classpath kotlinClassPath
     main = 'sealedclasses.SealedSubclassesKt'
+}
+
+task SealedVsAbstract(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sealedclasses.SealedVsAbstractKt'
 }
 
 task Sets(type: JavaExec) {
@@ -2346,6 +2361,11 @@ task ThreeQuotes(type: JavaExec) {
 task TicTacToe(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TicTacToeKt'
+}
+
+task Ticket(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedandinner.TicketKt'
 }
 
 task ToDoubleException(type: JavaExec) {
@@ -2667,6 +2687,7 @@ task run (dependsOn: [
     'Adapter',
     'AddingIntToChar',
     'AdjustTemp',
+    'Airport',
     'AllOperators',
     'Also',
     'Amphibian',
@@ -2714,7 +2735,6 @@ task run (dependsOn: [
     'Booleans',
     'Boxes',
     'BuildString',
-    'BuildStringAndThis',
     'ByOperations',
     'CallStack',
     'CallTopLevelFunction',
@@ -2877,6 +2897,7 @@ task run (dependsOn: [
     'HiddenArrayList',
     'Hierarchy',
     'Holder',
+    'Hotel',
     'House',
     'If1',
     'If2',
@@ -2927,7 +2948,6 @@ task run (dependsOn: [
     'KeyFailure',
     'KotlinChecked',
     'LabeledReturn',
-    'LabeledThis',
     'LambdaAndNamedArgs',
     'LambdaIt',
     'LambdaTypeInference',
@@ -2983,6 +3003,7 @@ task run (dependsOn: [
     'NamedArguments',
     'NamedCompanionObject',
     'NarrowingUpcast',
+    'NestedLWR',
     'NewAngle',
     'NewException',
     'NickName',
@@ -3042,6 +3063,7 @@ task run (dependsOn: [
     'PropertyReference',
     'Quadratic',
     'QuadraticRequire',
+    'QualifiedThis',
     'Quote',
     'Quoting',
     'Random',
@@ -3083,6 +3105,7 @@ task run (dependsOn: [
     'SealedEx2',
     'SealedEx3',
     'SealedSubclasses',
+    'SealedVsAbstract',
     'Sets',
     'Share2',
     'SimilarOperation',
@@ -3127,6 +3150,7 @@ task run (dependsOn: [
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
+    'Ticket',
     'ToDoubleException',
     'ToIntException',
     'Todo',

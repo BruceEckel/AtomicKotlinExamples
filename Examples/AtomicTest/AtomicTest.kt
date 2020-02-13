@@ -33,7 +33,7 @@ private fun <L, R> runTest(
  * and compare results.
  */
 class Trace(var trace: String = "") {
-  operator fun invoke(s: String) {
+  operator fun invoke(s: String?) {
     trace += s + "\n"
   }
   override fun toString() = trace
