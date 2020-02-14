@@ -1,25 +1,35 @@
 // NestedAndInnerClasses/QualifiedThis.kt
-package nestedandinner
+package nestedinner
 import atomictest.eq
 
-class Outer { // implicit label @Outer
-  inner class Inner { // implicit label @Inner
-    // implicit label @ext:
-    fun Int.ext() {
-      val a = this@Outer
-      val b = this@Inner
-      val c = this // Int ext() receiver
-      val c1 = this@ext // Int ext() receiver
+class Fruit { // implicit label @Fruit
+  inner class Seed { // implicit label @Seed
+    inner class DNA { // implicit label @DNA
+      fun f() {
+        // Default is the Int ext() receiver:
+        which(this) eq "DNA"
+        // You can redundantly qualify it:
+        which(this@DNA) eq "DNA"
+        // The others must be explicit:
+        which(this@Seed) eq "Seed"
+        which(this@Fruit) eq "Fruit"
+      }
+      fun Int.ext() { // implicit label @ext
+        // Default is the Int ext() receiver:
+        which(this) eq "Int"
+        // You can redundantly qualify it:
+        which(this@ext) eq "Int"
+      }
     }
   }
 }
 
-fun Outer.Inner.extension() = 1.ext() // [4]
+fun Fruit.Seed.DNA.extension(n: Int) = n.ext()
 
 fun main() {
-  val outer = Outer()
-  val inner = outer.Inner()
-  with(inner) {
-    1.ext()                           // [3]
-  }
+  val fruit = Fruit()
+  val seed = fruit.Seed()
+  val dna = seed.DNA()
+  dna.f()
+  dna.extension(5)
 }

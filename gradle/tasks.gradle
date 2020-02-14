@@ -50,7 +50,7 @@ task AdjustTemp(type: JavaExec) {
 
 task Airport(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedandinner.AirportKt'
+    main = 'nestedinner.AirportKt'
 }
 
 task AllOperators(type: JavaExec) {
@@ -1100,7 +1100,7 @@ task Holder(type: JavaExec) {
 
 task Hotel(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedandinner.HotelKt'
+    main = 'nestedinner.HotelKt'
 }
 
 task House(type: JavaExec) {
@@ -1235,17 +1235,17 @@ task InitSection(type: JavaExec) {
 
 task InnerNestedEx1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedandinnerex1.InnerNestedEx1Kt'
+    main = 'nestedinnerex1.InnerNestedEx1Kt'
 }
 
 task InnerNestedEx2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedandinnerex2.InnerNestedEx2Kt'
+    main = 'nestedinnerex2.InnerNestedEx2Kt'
 }
 
 task InnerNestedEx3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedandinnerex3.InnerNestedEx3Kt'
+    main = 'nestedinnerex3.InnerNestedEx3Kt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -1496,6 +1496,11 @@ task MatchingAgainstVals(type: JavaExec) {
 task MemberOperator(type: JavaExec) {
     classpath kotlinClassPath
     main = 'operatoroverloading.MemberOperatorKt'
+}
+
+task MemberReferencesEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'memberreferencesex1.MemberReferencesEx1Kt'
 }
 
 task MemberVsExtension(type: JavaExec) {
@@ -1930,7 +1935,7 @@ task QuadraticRequire(type: JavaExec) {
 
 task QualifiedThis(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedandinner.QualifiedThisKt'
+    main = 'nestedinner.QualifiedThisKt'
 }
 
 task Quote(type: JavaExec) {
@@ -2365,7 +2370,7 @@ task TicTacToe(type: JavaExec) {
 
 task Ticket(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedandinner.TicketKt'
+    main = 'nestedinner.TicketKt'
 }
 
 task ToDoubleException(type: JavaExec) {
@@ -2977,6 +2982,7 @@ task run (dependsOn: [
     'Maps',
     'MatchingAgainstVals',
     'MemberOperator',
+    'MemberReferencesEx1',
     'MemberVsExtension',
     'Membership',
     'MembershipInRange',

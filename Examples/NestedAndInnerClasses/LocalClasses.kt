@@ -1,6 +1,6 @@
-// NestedAndInnerClasses/LocalClass.kt
+// NestedAndInnerClasses/LocalClasses.kt
 
-fun classInFunction() {
+fun localClasses() {
   open class Amphibian
   class Frog: Amphibian()
   val amphibian: Amphibian = Frog()

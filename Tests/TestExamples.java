@@ -1443,6 +1443,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testMemberReferencesEx1() {
+    testExample("Examples/MemberReferences/MemberReferencesEx1.kt", memberreferencesex1.MemberReferencesEx1Kt::main);
+  }
+
+  @Test
   public void testPropertyReference() {
     testExample("Examples/MemberReferences/PropertyReference.kt", memberreferences1.PropertyReferenceKt::main);
   }
@@ -1534,37 +1539,37 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAirport() {
-    testExample("Examples/NestedAndInnerClasses/Airport.kt", nestedandinner.AirportKt::main);
+    testExample("Examples/NestedAndInnerClasses/Airport.kt", nestedinner.AirportKt::main);
   }
 
   @Test
   public void testHotel() {
-    testExample("Examples/NestedAndInnerClasses/Hotel.kt", nestedandinner.HotelKt::main);
+    testExample("Examples/NestedAndInnerClasses/Hotel.kt", nestedinner.HotelKt::main);
   }
 
   @Test
   public void testInnerNestedEx1() {
-    testExample("Examples/NestedAndInnerClasses/InnerNestedEx1.kt", nestedandinnerex1.InnerNestedEx1Kt::main);
+    testExample("Examples/NestedAndInnerClasses/InnerNestedEx1.kt", nestedinnerex1.InnerNestedEx1Kt::main);
   }
 
   @Test
   public void testInnerNestedEx2() {
-    testExample("Examples/NestedAndInnerClasses/InnerNestedEx2.kt", nestedandinnerex2.InnerNestedEx2Kt::main);
+    testExample("Examples/NestedAndInnerClasses/InnerNestedEx2.kt", nestedinnerex2.InnerNestedEx2Kt::main);
   }
 
   @Test
   public void testInnerNestedEx3() {
-    testExample("Examples/NestedAndInnerClasses/InnerNestedEx3.kt", nestedandinnerex3.InnerNestedEx3Kt::main);
+    testExample("Examples/NestedAndInnerClasses/InnerNestedEx3.kt", nestedinnerex3.InnerNestedEx3Kt::main);
   }
 
   @Test
   public void testQualifiedThis() {
-    testExample("Examples/NestedAndInnerClasses/QualifiedThis.kt", nestedandinner.QualifiedThisKt::main);
+    testExample("Examples/NestedAndInnerClasses/QualifiedThis.kt", nestedinner.QualifiedThisKt::main);
   }
 
   @Test
   public void testTicket() {
-    testExample("Examples/NestedAndInnerClasses/Ticket.kt", nestedandinner.TicketKt::main);
+    testExample("Examples/NestedAndInnerClasses/Ticket.kt", nestedinner.TicketKt::main);
   }
 
   @Test

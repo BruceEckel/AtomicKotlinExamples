@@ -1,5 +1,5 @@
 // NestedAndInnerClasses/GameState.kt
-package nestedandinner
+package nestedinner
 
 interface Game {
   enum class State(val active: Boolean) {
