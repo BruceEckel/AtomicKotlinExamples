@@ -8,7 +8,8 @@ class Fruit { // implicit label @Fruit
       fun f() {
         // Default is the Int ext() receiver:
         which(this) eq "DNA"
-        // You can redundantly qualify it:
+        // For clarification, you can
+        // redundantly qualify default this:
         which(this@DNA) eq "DNA"
         // The others must be explicit:
         which(this@Seed) eq "Seed"

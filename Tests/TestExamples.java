@@ -1548,11 +1548,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testHouseInner() {
-    testExample("Examples/NestedAndInnerClasses/HouseInner.kt", innernested.HouseInnerKt::main);
-  }
-
-  @Test
   public void testInnerNestedEx1() {
     testExample("Examples/NestedAndInnerClasses/InnerNestedEx1.kt", innernestedex1.InnerNestedEx1Kt::main);
   }
@@ -1568,8 +1563,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testNestedHouse() {
+    testExample("Examples/NestedAndInnerClasses/NestedHouse.kt", innernested.NestedHouseKt::main);
+  }
+
+  @Test
   public void testQualifiedThis() {
     testExample("Examples/NestedAndInnerClasses/QualifiedThis.kt", innernested.QualifiedThisKt::main);
+  }
+
+  @Test
+  public void testReturnLocal() {
+    testExample("Examples/NestedAndInnerClasses/ReturnLocal.kt", innernested.ReturnLocalKt::main);
   }
 
   @Test

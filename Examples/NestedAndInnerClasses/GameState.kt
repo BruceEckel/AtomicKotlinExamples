@@ -7,5 +7,5 @@ interface Game {
     WON(false),
     LOST(false)
   }
-  var state: State
+  val state: State
 }

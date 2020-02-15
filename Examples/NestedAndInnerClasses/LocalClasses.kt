@@ -2,13 +2,7 @@
 package innernested
 
 fun localClasses() {
-  interface Amphibian
+  open class Amphibian
   class Frog: Amphibian()
   val amphibian: Amphibian = Frog()
-}
-
-interface Shape
-
-fun returnLocalClass() {
-
 }

@@ -1108,11 +1108,6 @@ task House(type: JavaExec) {
     main = 'baseclassinit.HouseKt'
 }
 
-task HouseInner(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'innernested.HouseInnerKt'
-}
-
 task If1(type: JavaExec) {
     classpath kotlinClassPath
     main = 'If1Kt'
@@ -1638,6 +1633,11 @@ task NarrowingUpcast(type: JavaExec) {
     main = 'downcasting.NarrowingUpcastKt'
 }
 
+task NestedHouse(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innernested.NestedHouseKt'
+}
+
 task NestedLWR(type: JavaExec) {
     classpath kotlinClassPath
     main = 'lambdawithreceiver.NestedLWRKt'
@@ -2091,6 +2091,11 @@ task ReturnFromFun(type: JavaExec) {
 task ReturnInsideLambda(type: JavaExec) {
     classpath kotlinClassPath
     main = 'localfunctions.ReturnInsideLambdaKt'
+}
+
+task ReturnLocal(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innernested.ReturnLocalKt'
 }
 
 task RigidHolder(type: JavaExec) {
@@ -2909,7 +2914,6 @@ task run (dependsOn: [
     'Holder',
     'Hotel',
     'House',
-    'HouseInner',
     'If1',
     'If2',
     'If3',
@@ -3015,6 +3019,7 @@ task run (dependsOn: [
     'NamedArguments',
     'NamedCompanionObject',
     'NarrowingUpcast',
+    'NestedHouse',
     'NestedLWR',
     'NewAngle',
     'NewException',
@@ -3106,6 +3111,7 @@ task run (dependsOn: [
     'ResultOfWith',
     'ReturnFromFun',
     'ReturnInsideLambda',
+    'ReturnLocal',
     'RigidHolder',
     'Safe',
     'SafeCall',
