@@ -50,7 +50,7 @@ task AdjustTemp(type: JavaExec) {
 
 task Airport(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedinner.AirportKt'
+    main = 'innernested.AirportKt'
 }
 
 task AllOperators(type: JavaExec) {
@@ -1100,12 +1100,17 @@ task Holder(type: JavaExec) {
 
 task Hotel(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedinner.HotelKt'
+    main = 'innernested.HotelKt'
 }
 
 task House(type: JavaExec) {
     classpath kotlinClassPath
     main = 'baseclassinit.HouseKt'
+}
+
+task HouseInner(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innernested.HouseInnerKt'
 }
 
 task If1(type: JavaExec) {
@@ -1235,17 +1240,17 @@ task InitSection(type: JavaExec) {
 
 task InnerNestedEx1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedinnerex1.InnerNestedEx1Kt'
+    main = 'innernestedex1.InnerNestedEx1Kt'
 }
 
 task InnerNestedEx2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedinnerex2.InnerNestedEx2Kt'
+    main = 'innernestedex2.InnerNestedEx2Kt'
 }
 
 task InnerNestedEx3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedinnerex3.InnerNestedEx3Kt'
+    main = 'innernestedex3.InnerNestedEx3Kt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -1935,7 +1940,7 @@ task QuadraticRequire(type: JavaExec) {
 
 task QualifiedThis(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedinner.QualifiedThisKt'
+    main = 'innernested.QualifiedThisKt'
 }
 
 task Quote(type: JavaExec) {
@@ -2370,7 +2375,7 @@ task TicTacToe(type: JavaExec) {
 
 task Ticket(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nestedinner.TicketKt'
+    main = 'innernested.TicketKt'
 }
 
 task ToDoubleException(type: JavaExec) {
@@ -2904,6 +2909,7 @@ task run (dependsOn: [
     'Holder',
     'Hotel',
     'House',
+    'HouseInner',
     'If1',
     'If2',
     'If3',

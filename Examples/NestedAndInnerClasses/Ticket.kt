@@ -1,7 +1,7 @@
 // NestedAndInnerClasses/Ticket.kt
-package nestedinner
+package innernested
 import atomictest.eq
-import nestedinner.Ticket.Seat.*
+import innernested.Ticket.Seat.*
 
 class Ticket(private var seat: Seat = COACH) {
   enum class Seat {

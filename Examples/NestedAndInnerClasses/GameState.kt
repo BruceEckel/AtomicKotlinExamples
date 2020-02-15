@@ -1,5 +1,5 @@
 // NestedAndInnerClasses/GameState.kt
-package nestedinner
+package innernested
 
 interface Game {
   enum class State(val active: Boolean) {
@@ -7,5 +7,5 @@ interface Game {
     WON(false),
     LOST(false)
   }
-  val state: State
+  var state: State
 }

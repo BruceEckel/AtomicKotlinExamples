@@ -1,5 +1,5 @@
 // NestedAndInnerClasses/QualifiedThis.kt
-package nestedinner
+package innernested
 import atomictest.eq
 
 class Fruit { // implicit label @Fruit

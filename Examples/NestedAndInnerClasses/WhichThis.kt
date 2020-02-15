@@ -1,4 +1,4 @@
 // NestedAndInnerClasses/WhichThis.kt
-package nestedinner
+package innernested
 
 fun which(thiz: Any) = thiz::class.simpleName
