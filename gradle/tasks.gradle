@@ -50,7 +50,7 @@ task AdjustTemp(type: JavaExec) {
 
 task Airport(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innernested.AirportKt'
+    main = 'nestedclasses.AirportKt'
 }
 
 task AllOperators(type: JavaExec) {
@@ -1100,7 +1100,7 @@ task Holder(type: JavaExec) {
 
 task Hotel(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innernested.HotelKt'
+    main = 'innerclasses.HotelKt'
 }
 
 task House(type: JavaExec) {
@@ -1233,19 +1233,19 @@ task InitSection(type: JavaExec) {
     main = 'complexconstructors.InitSectionKt'
 }
 
-task InnerNestedEx1(type: JavaExec) {
+task InnerEx1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innernestedex1.InnerNestedEx1Kt'
+    main = 'innerclassesex1.InnerEx1Kt'
 }
 
-task InnerNestedEx2(type: JavaExec) {
+task InnerEx2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innernestedex2.InnerNestedEx2Kt'
+    main = 'innerclassesex2.InnerEx2Kt'
 }
 
-task InnerNestedEx3(type: JavaExec) {
+task InnerEx3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innernestedex3.InnerNestedEx3Kt'
+    main = 'innerclassesex3.InnerEx3Kt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -1633,9 +1633,24 @@ task NarrowingUpcast(type: JavaExec) {
     main = 'downcasting.NarrowingUpcastKt'
 }
 
+task NestedEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedclassesex1.NestedEx1Kt'
+}
+
+task NestedEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedclassesex2.NestedEx2Kt'
+}
+
+task NestedEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedclassesex3.NestedEx3Kt'
+}
+
 task NestedHouse(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innernested.NestedHouseKt'
+    main = 'nestedclasses.NestedHouseKt'
 }
 
 task NestedLWR(type: JavaExec) {
@@ -1940,7 +1955,7 @@ task QuadraticRequire(type: JavaExec) {
 
 task QualifiedThis(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innernested.QualifiedThisKt'
+    main = 'innerclasses.QualifiedThisKt'
 }
 
 task Quote(type: JavaExec) {
@@ -2095,7 +2110,7 @@ task ReturnInsideLambda(type: JavaExec) {
 
 task ReturnLocal(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innernested.ReturnLocalKt'
+    main = 'nestedclasses.ReturnLocalKt'
 }
 
 task RigidHolder(type: JavaExec) {
@@ -2380,7 +2395,7 @@ task TicTacToe(type: JavaExec) {
 
 task Ticket(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'innernested.TicketKt'
+    main = 'nestedclasses.TicketKt'
 }
 
 task ToDoubleException(type: JavaExec) {
@@ -2939,9 +2954,9 @@ task run (dependsOn: [
     'InhExtensionsEx3',
     'InheritAdd',
     'InitSection',
-    'InnerNestedEx1',
-    'InnerNestedEx2',
-    'InnerNestedEx3',
+    'InnerEx1',
+    'InnerEx2',
+    'InnerEx3',
     'InputLines1',
     'InputLines2',
     'IntDivisionTruncates',
@@ -3019,6 +3034,9 @@ task run (dependsOn: [
     'NamedArguments',
     'NamedCompanionObject',
     'NarrowingUpcast',
+    'NestedEx1',
+    'NestedEx2',
+    'NestedEx3',
     'NestedHouse',
     'NestedLWR',
     'NewAngle',

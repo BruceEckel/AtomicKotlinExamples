@@ -1,5 +1,5 @@
-// NestedAndInnerClasses/LocalClasses.kt
-package innernested
+// NestedClasses/LocalClasses.kt
+package nestedclasses
 
 fun localClasses() {
   open class Amphibian

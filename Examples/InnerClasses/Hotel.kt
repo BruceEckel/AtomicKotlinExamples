@@ -1,5 +1,5 @@
-// NestedAndInnerClasses/Hotel.kt
-package innernested
+// InnerClasses/Hotel.kt
+package innerclasses
 import atomictest.eq
 
 class Hotel(private val reception: String) {

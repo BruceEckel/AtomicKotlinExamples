@@ -1,5 +1,5 @@
-// NestedAndInnerClasses/Airport.kt
-package innernested
+// NestedClasses/Airport.kt
+package nestedclasses
 import atomictest.eq
 
 class Airport(private val code: String) {

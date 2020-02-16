@@ -1,12 +1,11 @@
-// NestedAndInnerClasses/NestedHouse.kt
-package innernested
+// NestedClasses/NestedHouse.kt
+package nestedclasses
 import atomictest.*
 
 abstract class Cleanable(val id: String) {
   open val parts: List<Cleanable> = listOf()
   fun clean(): String =
-    parts.map(Cleanable::clean).toString() +
-    " $id clean\n"
+  "${parts.map(Cleanable::clean)} $id clean\n"
 }
 
 class House: Cleanable("House") {

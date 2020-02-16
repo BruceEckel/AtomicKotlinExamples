@@ -1088,6 +1088,31 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testHotel() {
+    testExample("Examples/InnerClasses/Hotel.kt", innerclasses.HotelKt::main);
+  }
+
+  @Test
+  public void testInnerEx1() {
+    testExample("Examples/InnerClasses/InnerEx1.kt", innerclassesex1.InnerEx1Kt::main);
+  }
+
+  @Test
+  public void testInnerEx2() {
+    testExample("Examples/InnerClasses/InnerEx2.kt", innerclassesex2.InnerEx2Kt::main);
+  }
+
+  @Test
+  public void testInnerEx3() {
+    testExample("Examples/InnerClasses/InnerEx3.kt", innerclassesex3.InnerEx3Kt::main);
+  }
+
+  @Test
+  public void testQualifiedThis() {
+    testExample("Examples/InnerClasses/QualifiedThis.kt", innerclasses.QualifiedThisKt::main);
+  }
+
+  @Test
   public void testComputer() {
     testExample("Examples/Interfaces/Computer.kt", interfaces.ComputerKt::main);
   }
@@ -1539,47 +1564,37 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAirport() {
-    testExample("Examples/NestedAndInnerClasses/Airport.kt", innernested.AirportKt::main);
+    testExample("Examples/NestedClasses/Airport.kt", nestedclasses.AirportKt::main);
   }
 
   @Test
-  public void testHotel() {
-    testExample("Examples/NestedAndInnerClasses/Hotel.kt", innernested.HotelKt::main);
+  public void testNestedEx1() {
+    testExample("Examples/NestedClasses/NestedEx1.kt", nestedclassesex1.NestedEx1Kt::main);
   }
 
   @Test
-  public void testInnerNestedEx1() {
-    testExample("Examples/NestedAndInnerClasses/InnerNestedEx1.kt", innernestedex1.InnerNestedEx1Kt::main);
+  public void testNestedEx2() {
+    testExample("Examples/NestedClasses/NestedEx2.kt", nestedclassesex2.NestedEx2Kt::main);
   }
 
   @Test
-  public void testInnerNestedEx2() {
-    testExample("Examples/NestedAndInnerClasses/InnerNestedEx2.kt", innernestedex2.InnerNestedEx2Kt::main);
-  }
-
-  @Test
-  public void testInnerNestedEx3() {
-    testExample("Examples/NestedAndInnerClasses/InnerNestedEx3.kt", innernestedex3.InnerNestedEx3Kt::main);
+  public void testNestedEx3() {
+    testExample("Examples/NestedClasses/NestedEx3.kt", nestedclassesex3.NestedEx3Kt::main);
   }
 
   @Test
   public void testNestedHouse() {
-    testExample("Examples/NestedAndInnerClasses/NestedHouse.kt", innernested.NestedHouseKt::main);
-  }
-
-  @Test
-  public void testQualifiedThis() {
-    testExample("Examples/NestedAndInnerClasses/QualifiedThis.kt", innernested.QualifiedThisKt::main);
+    testExample("Examples/NestedClasses/NestedHouse.kt", nestedclasses.NestedHouseKt::main);
   }
 
   @Test
   public void testReturnLocal() {
-    testExample("Examples/NestedAndInnerClasses/ReturnLocal.kt", innernested.ReturnLocalKt::main);
+    testExample("Examples/NestedClasses/ReturnLocal.kt", nestedclasses.ReturnLocalKt::main);
   }
 
   @Test
   public void testTicket() {
-    testExample("Examples/NestedAndInnerClasses/Ticket.kt", innernested.TicketKt::main);
+    testExample("Examples/NestedClasses/Ticket.kt", nestedclasses.TicketKt::main);
   }
 
   @Test

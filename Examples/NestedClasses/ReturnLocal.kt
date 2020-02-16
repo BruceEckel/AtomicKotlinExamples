@@ -1,5 +1,5 @@
-// NestedAndInnerClasses/ReturnLocal.kt
-package innernested
+// NestedClasses/ReturnLocal.kt
+package nestedclasses
 
 interface Amphibian
 

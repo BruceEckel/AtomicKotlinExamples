@@ -1,7 +1,7 @@
-// NestedAndInnerClasses/Ticket.kt
-package innernested
+// NestedClasses/Ticket.kt
+package nestedclasses
 import atomictest.eq
-import innernested.Ticket.Seat.*
+import nestedclasses.Ticket.Seat.*
 
 class Ticket(private var seat: Seat = COACH) {
   enum class Seat {
@@ -17,6 +17,12 @@ class Ticket(private var seat: Seat = COACH) {
     return this
   }
   override fun toString() = seat.toString()
+  fun meal() = when(seat) {
+    COACH -> "Bag Meal"
+    PREMIUM -> "Bag Meal with Cookie"
+    BUSINESS -> "Hot Meal"
+    FIRST -> "Private Chef"
+  }
 }
 
 fun main() {
@@ -26,6 +32,14 @@ fun main() {
     Ticket(BUSINESS),
     Ticket(FIRST)
   )
+  tickets.map(Ticket::meal) eq
+    "[Bag Meal, Bag Meal with Cookie, " +
+    "Hot Meal, Private Chef]"
   tickets.map(Ticket::upgrade) eq
     "[PREMIUM, BUSINESS, FIRST, FIRST]"
+  tickets eq
+    "[PREMIUM, BUSINESS, FIRST, FIRST]"
+  tickets.map(Ticket::meal) eq
+    "[Bag Meal with Cookie, Hot Meal, " +
+    "Private Chef, Private Chef]"
 }

@@ -1,5 +1,5 @@
-// NestedAndInnerClasses/InnerNestedEx3.kt
-package innernestedex3
+// InnerClasses/InnerEx2.kt
+package innerclassesex2
 import atomictest.*
 
 private val trace = Trace()
