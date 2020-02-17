@@ -27,12 +27,13 @@ private fun <L, R> runTest(
   }
 }
 
-
 /**
  * Use instead of println() to capture
  * and compare results.
  */
-class Trace(var trace: String = "") {
+class Trace(val init: Any? = null) {
+  var trace: String =
+    init?.toString().orEmpty()
   operator fun invoke(s: String?) {
     trace += s + "\n"
   }

@@ -1,32 +1,36 @@
-// NestedClasses/NestedEx1.kt
-package nestedclassesex1
-import atomictest.*
-import nestedclassesex1.GridGame.Mark.*
+// NestedClasses/FillIt.kt
+package nestedclasses
+import nestedclasses.GridGame.State.*
+import nestedclasses.GridGame.Mark.*
 import kotlin.random.Random
+import atomictest.*
 
 interface GridGame {
-  enum class Mark { BLANK, X, O }
+  enum class State { PLAYING, FINISHED }
+  enum class Mark { BLANK, X ,O }
 }
 
 class FillIt(
   val side: Int = 3, randomSeed: Int = 0
 ) : GridGame {
   val rand = Random(randomSeed)
+  private var state = PLAYING
   private var grid =
     MutableList(side * side) { BLANK }
   private var player = X
-  fun turn(): Boolean {
+  fun turn() {
     val blanks = grid.withIndex()
       .filter { it.value == BLANK }
-    if (blanks.isEmpty())
-      return false
-    grid[blanks.random(rand).index] = player
-    player = if (player == X) O else X
-    return true
+    if(blanks.isEmpty()) {
+      state = FINISHED
+    } else {
+      grid[blanks.random(rand).index] = player
+      player = if (player == X) O else X
+    }
   }
   fun play() {
-    while (turn())
-      ;
+    while(state != FINISHED)
+      turn()
   }
   override fun toString() =
     grid.chunked(side).joinToString("\n")

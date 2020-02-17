@@ -843,6 +843,11 @@ task FibonacciProperty(type: JavaExec) {
     main = 'FibonacciPropertyKt'
 }
 
+task FillIt(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedclasses.FillItKt'
+}
+
 task Filter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FilterKt'
@@ -2876,6 +2881,7 @@ task run (dependsOn: [
     'FaultySuitcase',
     'Fibonacci',
     'FibonacciProperty',
+    'FillIt',
     'Filter',
     'FilterEven',
     'FilterIsInstance',

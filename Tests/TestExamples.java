@@ -1568,6 +1568,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testFillIt() {
+    testExample("Examples/NestedClasses/FillIt.kt", nestedclasses.FillItKt::main);
+  }
+
+  @Test
   public void testNestedEx1() {
     testExample("Examples/NestedClasses/NestedEx1.kt", nestedclassesex1.NestedEx1Kt::main);
   }
