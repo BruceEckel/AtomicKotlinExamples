@@ -1,18 +1,18 @@
 // NestedClasses/FillIt.kt
 package nestedclasses
-import nestedclasses.GridGame.State.*
-import nestedclasses.GridGame.Mark.*
+import nestedclasses.Game.State.*
+import nestedclasses.Game.Mark.*
 import kotlin.random.Random
 import atomictest.*
 
-interface GridGame {
+interface Game {
   enum class State { PLAYING, FINISHED }
   enum class Mark { BLANK, X ,O }
 }
 
 class FillIt(
   val side: Int = 3, randomSeed: Int = 0
-) : GridGame {
+) : Game {
   val rand = Random(randomSeed)
   private var state = PLAYING
   private var grid =

@@ -2,7 +2,7 @@
 package baseclassinit
 import atomictest.*
 
-private var trace = Trace()
+private val trace = Trace()
 
 open class A {
   init {

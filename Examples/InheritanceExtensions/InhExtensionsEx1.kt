@@ -3,7 +3,7 @@ package inheritanceextensionsex1
 
 import atomictest.*
 
-val trace = Trace()
+private val trace = Trace()
 
 class DeltaTemperature(
   val current: Double,

@@ -11,18 +11,19 @@ class Ticket(private var seat: Seat = COACH) {
     FIRST
   }
   fun upgrade(): Ticket {
-    if(seat.ordinal < values().size - 1) {
-      seat = values()[seat.ordinal + 1]
-    }
+    seat = values()[
+      (seat.ordinal + 1)
+      .coerceAtMost(FIRST.ordinal)
+    ]
     return this
   }
-  override fun toString() = "$seat"
   fun meal() = when(seat) {
     COACH -> "Bag Meal"
     PREMIUM -> "Bag Meal with Cookie"
     BUSINESS -> "Hot Meal"
     FIRST -> "Private Chef"
   }
+  override fun toString() = "$seat"
 }
 
 fun main() {

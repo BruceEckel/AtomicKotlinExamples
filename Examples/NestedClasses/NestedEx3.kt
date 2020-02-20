@@ -1,57 +1,57 @@
 // NestedClasses/NestedEx3.kt
 package nestedclassesex3
-import atomictest.eq
-import nestedclassesex3.Seat.*
+import atomictest.*
 
-abstract class Seat {
-  abstract fun upgrade(): Seat
-  abstract fun meal(): String
-  override fun toString() =
-    "${this::class.simpleName}"
-  class Coach : Seat() {
-    override fun upgrade() = Premium()
-    override fun meal() = "Bag Meal"
-  }
-  class Premium : Seat() {
-    override fun upgrade() = Business()
-    override fun meal() = "Bag Meal + Cookie"
-  }
-  class Business : Seat() {
-    override fun upgrade() = First()
-    override fun meal() = "Hot Meal"
-  }
-  class First : Seat() {
-    override fun upgrade() = First()
-    override fun meal() = "Private Chef"
-  }
+abstract class Cleanable(val id: String) {
+  open val parts: List<Cleanable> = listOf()
+  fun clean(): String =
+  "${parts.map(Cleanable::clean)} $id clean\n"
 }
 
-class Ticket(
-  private var seat: Seat = Coach()
-) {
-  fun upgrade(): Seat {
-    seat = seat.upgrade()
-    return seat
-  }
-  fun meal() = seat.meal()
-  override fun toString() = "$seat"
+class Shelf : Cleanable("Shelf")
+
+class Closet : Cleanable("Closet") {
+  override val parts =
+    listOf(Shelf(), Shelf())
+}
+
+class Toilet : Cleanable("Toilet")
+
+class Sink : Cleanable("Sink")
+
+class Bathroom : Cleanable("Bathroom") {
+  override val parts =
+    listOf(Toilet(), Sink())
+}
+
+class Bedroom(id: String) : Cleanable(id) {
+  override val parts =
+    listOf(Closet(), Bathroom())
+}
+
+class House : Cleanable("House") {
+  override val parts = listOf(
+    Bedroom("Master Bedroom"),
+    Bedroom("Guest Bedroom")
+  )
 }
 
 fun main() {
-  val tickets = listOf(
-    Ticket(),
-    Ticket(Premium()),
-    Ticket(Business()),
-    Ticket(First())
-  )
-  tickets.map(Ticket::meal) eq
-    "[Bag Meal, Bag Meal + Cookie, " +
-    "Hot Meal, Private Chef]"
-  tickets.map(Ticket::upgrade) eq
-    "[Premium, Business, First, First]"
-  tickets eq
-    "[Premium, Business, First, First]"
-  tickets.map(Ticket::meal) eq
-    "[Bag Meal + Cookie, Hot Meal, " +
-    "Private Chef, Private Chef]"
+  Trace(House().clean()) eq """
+  [[[[] Shelf clean
+  , [] Shelf clean
+  ] Closet clean
+  , [[] Toilet clean
+  , [] Sink clean
+  ] Bathroom clean
+  ] Master Bedroom clean
+  , [[[] Shelf clean
+  , [] Shelf clean
+  ] Closet clean
+  , [[] Toilet clean
+  , [] Sink clean
+  ] Bathroom clean
+  ] Guest Bedroom clean
+  ] House clean
+  """
 }

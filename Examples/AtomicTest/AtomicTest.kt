@@ -34,8 +34,12 @@ private fun <L, R> runTest(
 class Trace(val init: Any? = null) {
   var trace: String =
     init?.toString().orEmpty()
-  operator fun invoke(s: String?) {
-    trace += s + "\n"
+  // '+': Without newline, prepending a space
+  operator fun plus(s: Any?) {
+    trace += " ${s?.toString().orEmpty()}"
+  }
+  operator fun invoke(s: Any?) {
+    trace += "${s?.toString().orEmpty()}\n"
   }
   override fun toString() = trace
 }

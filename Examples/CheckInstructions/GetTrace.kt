@@ -4,14 +4,14 @@ import atomictest.capture
 import atomictest.eq
 
 fun getTrace(fileName: String): List<String> {
-  require(fileName.startsWith("trace_")) {
-    "$fileName must start with 'trace_'"
+  require(fileName.startsWith("file_")) {
+    "$fileName must start with 'file_'"
   }
-  val trace = localFile(fileName)
-  require(trace.exists()) {
+  val file = localFile(fileName)
+  require(file.exists()) {
     "$fileName doesn't exist"
   }
-  val lines = trace.readLines()
+  val lines = file.readLines()
   require(lines.isNotEmpty()) {
     "$fileName is empty"
   }
@@ -19,21 +19,21 @@ fun getTrace(fileName: String): List<String> {
 }
 
 fun main() {
-  localFile("trace_empty.txt").writeText("")
-  localFile("trace_real.txt").writeText(
+  localFile("file_empty.txt").writeText("")
+  localFile("file_real.txt").writeText(
     "wubba lubba dub dub")
   capture {
     getTrace("wrong_name.txt")
   } eq "IllegalArgumentException: " +
-    "wrong_name.txt must start with 'trace_'"
+    "wrong_name.txt must start with 'file_'"
   capture {
-    getTrace("trace_nonexistent.txt")
+    getTrace("file_nonexistent.txt")
   } eq "IllegalArgumentException: " +
-    "trace_nonexistent.txt doesn't exist"
+    "file_nonexistent.txt doesn't exist"
   capture {
-    getTrace("trace_empty.txt")
+    getTrace("file_empty.txt")
   } eq "IllegalArgumentException: " +
-    "trace_empty.txt is empty"
-  getTrace("trace_real.txt") eq
+    "file_empty.txt is empty"
+  getTrace("file_real.txt") eq
     "[wubba lubba dub dub]"
 }

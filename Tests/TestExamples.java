@@ -243,6 +243,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCompanionEx1() {
+    testExample("Examples/CompanionObjects/CompanionEx1.kt", companionobjectsex1.CompanionEx1Kt::main);
+  }
+
+  @Test
+  public void testCompanionEx2() {
+    testExample("Examples/CompanionObjects/CompanionEx2.kt", companionobjectsex2.CompanionEx2Kt::main);
+  }
+
+  @Test
   public void testCompanionFactory() {
     testExample("Examples/CompanionObjects/CompanionFactory.kt", companionobjects.CompanionFactoryKt::main);
   }
@@ -1088,8 +1098,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCounterFactory() {
+    testExample("Examples/InnerClasses/CounterFactory.kt", innerclasses.CounterFactoryKt::main);
+  }
+
+  @Test
   public void testHotel() {
     testExample("Examples/InnerClasses/Hotel.kt", innerclasses.HotelKt::main);
+  }
+
+  @Test
+  public void testInnerClassInheritance() {
+    testExample("Examples/InnerClasses/InnerClassInheritance.kt", innerclasses.InnerClassInheritanceKt::main);
   }
 
   @Test
@@ -1105,6 +1125,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testInnerEx3() {
     testExample("Examples/InnerClasses/InnerEx3.kt", innerclassesex3.InnerEx3Kt::main);
+  }
+
+  @Test
+  public void testLocalInnerClasses() {
+    testExample("Examples/InnerClasses/LocalInnerClasses.kt", innerclasses.LocalInnerClassesKt::main);
   }
 
   @Test
@@ -1585,6 +1610,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testNestedEx3() {
     testExample("Examples/NestedClasses/NestedEx3.kt", nestedclassesex3.NestedEx3Kt::main);
+  }
+
+  @Test
+  public void testNestedEx4() {
+    testExample("Examples/NestedClasses/NestedEx4.kt", nestedclassesex4.NestedEx4Kt::main);
   }
 
   @Test

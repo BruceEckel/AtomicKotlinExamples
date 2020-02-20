@@ -2,7 +2,7 @@
 package sealedclasses
 import atomictest.*
 
-val trace = Trace()
+private val trace = Trace()
 
 sealed class Transport
 

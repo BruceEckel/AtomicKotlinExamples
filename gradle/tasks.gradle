@@ -423,6 +423,16 @@ task ColorSet(type: JavaExec) {
     main = 'ColorSetKt'
 }
 
+task CompanionEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjectsex1.CompanionEx1Kt'
+}
+
+task CompanionEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjectsex2.CompanionEx2Kt'
+}
+
 task CompanionFactory(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjects.CompanionFactoryKt'
@@ -506,6 +516,11 @@ task CopyDataClass(type: JavaExec) {
 task Counter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'propertyaccessors.CounterKt'
+}
+
+task CounterFactory(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innerclasses.CounterFactoryKt'
 }
 
 task CreateString(type: JavaExec) {
@@ -1238,6 +1253,11 @@ task InitSection(type: JavaExec) {
     main = 'complexconstructors.InitSectionKt'
 }
 
+task InnerClassInheritance(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innerclasses.InnerClassInheritanceKt'
+}
+
 task InnerEx1(type: JavaExec) {
     classpath kotlinClassPath
     main = 'innerclassesex1.InnerEx1Kt'
@@ -1458,6 +1478,11 @@ task LocalFunctions(type: JavaExec) {
     main = 'LocalFunctionsKt'
 }
 
+task LocalInnerClasses(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innerclasses.LocalInnerClassesKt'
+}
+
 task LogChanges(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LogChangesKt'
@@ -1651,6 +1676,11 @@ task NestedEx2(type: JavaExec) {
 task NestedEx3(type: JavaExec) {
     classpath kotlinClassPath
     main = 'nestedclassesex3.NestedEx3Kt'
+}
+
+task NestedEx4(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedclassesex4.NestedEx4Kt'
 }
 
 task NestedHouse(type: JavaExec) {
@@ -2797,6 +2827,8 @@ task run (dependsOn: [
     'Color3',
     'ColorBlend',
     'ColorSet',
+    'CompanionEx1',
+    'CompanionEx2',
     'CompanionFactory',
     'CompanionObject',
     'CompareTo',
@@ -2814,6 +2846,7 @@ task run (dependsOn: [
     'Cookie',
     'CopyDataClass',
     'Counter',
+    'CounterFactory',
     'CreateString',
     'CreateString2',
     'CreatingLists',
@@ -2960,6 +2993,7 @@ task run (dependsOn: [
     'InhExtensionsEx3',
     'InheritAdd',
     'InitSection',
+    'InnerClassInheritance',
     'InnerEx1',
     'InnerEx2',
     'InnerEx3',
@@ -3004,6 +3038,7 @@ task run (dependsOn: [
     'LocalFile',
     'LocalFunctionReference',
     'LocalFunctions',
+    'LocalInnerClasses',
     'LogChanges',
     'LongConstants',
     'MainArgConversion',
@@ -3043,6 +3078,7 @@ task run (dependsOn: [
     'NestedEx1',
     'NestedEx2',
     'NestedEx3',
+    'NestedEx4',
     'NestedHouse',
     'NestedLWR',
     'NewAngle',

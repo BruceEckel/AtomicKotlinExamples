@@ -1,16 +1,17 @@
 // NestedClasses/NestedEx1.kt
 package nestedclassesex1
 import atomictest.*
-import nestedclassesex1.GridGame.Mark.*
+import nestedclassesex1.Game.Mark.*
+import java.lang.IllegalStateException
 import kotlin.random.Random
 
-interface GridGame {
-  enum class Mark { BLANK, X, O }
+interface Game {
+  enum class Mark { BLANK, X, Y, Z }
 }
 
 class FillIt(
   val side: Int = 3, randomSeed: Int = 0
-) : GridGame {
+) : Game {
   val rand = Random(randomSeed)
   private var grid =
     MutableList(side * side) { BLANK }
@@ -21,11 +22,16 @@ class FillIt(
     if (blanks.isEmpty())
       return false
     grid[blanks.random(rand).index] = player
-    player = if (player == X) O else X
+    player = when(player) {
+      BLANK -> throw IllegalStateException()
+      X -> Y
+      Y -> Z
+      Z -> X
+    }
     return true
   }
   fun play() {
-    while (turn())
+    while(turn())
       ;
   }
   override fun toString() =
@@ -36,13 +42,13 @@ fun main() {
   val game = FillIt(8, 17)
   game.play()
   Trace(game) eq """
-  [O, X, O, X, O, X, X, X]
-  [X, O, O, O, O, O, X, X]
-  [O, O, X, O, O, O, X, X]
-  [X, O, O, O, O, O, X, O]
-  [X, X, O, O, X, X, X, O]
-  [X, X, O, O, X, X, O, X]
-  [O, X, X, O, O, O, X, O]
-  [X, O, X, X, X, O, X, X]
+  [X, Z, Y, Z, Z, Y, X, Y]
+  [Y, Z, Z, Y, Z, Y, Y, Z]
+  [Z, Y, Z, Y, Y, X, X, Y]
+  [X, X, X, Y, Y, X, X, Y]
+  [X, X, Z, X, Z, X, X, X]
+  [Z, X, Z, X, Y, Z, Z, Z]
+  [Y, Y, X, Y, Z, Z, Z, X]
+  [Y, X, Z, Y, Y, X, X, Z]
   """
 }
