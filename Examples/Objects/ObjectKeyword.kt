@@ -4,7 +4,7 @@ import atomictest.eq
 object JustOne {
   val n = 2
   fun f() = n * 10
-  fun g() = this.n * 20
+  fun g() = this.n * 20   // [1]
 }
 
 fun main() {

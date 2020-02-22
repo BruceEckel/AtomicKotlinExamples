@@ -2,21 +2,20 @@
 package innerclassesex2
 import atomictest.eq
 
-class Parcel(
-  description: String, label: String
-) {
-  inner class Contents(val description: String)
+class Box(contains: String, label: String) {
+  inner class Contents(val contains: String)
   inner class Destination(val label: String)
-  private val contents = Contents(description)
+  private val contents = Contents(contains)
   private val destination = Destination(label)
+  private val x = object : Any() {
+    fun f() = "Any-based"
+  }
   fun manifest() =
-    "${contents.description}: " +
-    destination.label
+    "${contents.contains}: " +
+    "${destination.label} ${x.f()}"
 }
 
 fun main() {
-  val p = Parcel("Computer", "Tasmania")
-  val c = p.Contents("Contents")
-  val d = p.Destination("Destination")
-  p.manifest() eq "Computer: Tasmania"
+  Box("Computer", "Tasmania").manifest() eq
+    "Computer: Tasmania Any-based"
 }

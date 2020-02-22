@@ -4,57 +4,51 @@ import atomictest.*
 
 private val trace = Trace()
 
-interface Service {
-  fun method1()
-  fun method2()
+interface Game {
+  fun move(): Boolean
 }
 
-interface ServiceFactory {
-  val service: Service
+interface GameFactory {
+  val game: Game
 }
 
-class Implementation1 private constructor() : Service {
-  override fun method1() {
-    trace("Implementation1 method1")
-  }
-  override fun method2() {
-    trace("Implementation1 method2")
+class Checkers private constructor() : Game {
+  private var moves = 0
+  override fun move(): Boolean {
+    trace("Checkers move $moves")
+    return ++moves != MOVES
   }
   companion object {
-    var factory: ServiceFactory = object : ServiceFactory {
-      override val service: Service
-        get() {
-          return Implementation1()
-        }
+    private const val MOVES = 3
+    var factory = object : GameFactory {
+      override val game: Game
+        get() = Checkers()
     }
   }
 }
 
-class Implementation2 private constructor() : Service {
-  override fun method1() {
-    trace("Implementation2 method1")
-  }
-  override fun method2() {
-    trace("Implementation2 method2")
+class Chess private constructor() : Game {
+  private var moves = 0
+  override fun move(): Boolean {
+    trace("Chess move $moves")
+    return ++moves != MOVES
   }
   companion object {
-    var factory: ServiceFactory = object : ServiceFactory {
-      override val service: Service
-        get() {
-          return Implementation2()
-        }
+    private val MOVES = 4
+    var factory = object : GameFactory {
+      override val game: Game
+        get() = Chess()
     }
   }
 }
 
-fun serviceConsumer(fact: ServiceFactory) {
-  val s = fact.service
-  s.method1()
-  s.method2()
+fun playGame(factory: GameFactory) {
+  val s = factory.game
+  while (s.move())
+    ;
 }
 
 fun main() {
-  serviceConsumer(Implementation1.factory)
-  // Implementations are interchangeable:
-  serviceConsumer(Implementation2.factory)
+  playGame(Checkers.factory)
+  playGame(Chess.factory)
 }

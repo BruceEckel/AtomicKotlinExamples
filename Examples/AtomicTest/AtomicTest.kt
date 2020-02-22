@@ -34,13 +34,14 @@ private fun <L, R> runTest(
 class Trace(val init: Any? = null) {
   var trace: String =
     init?.toString().orEmpty()
-  // '+': Without newline, prepending a space
-  operator fun plus(s: Any?) {
-    trace += " ${s?.toString().orEmpty()}"
-  }
   operator fun invoke(s: Any?) {
-    trace += "${s?.toString().orEmpty()}\n"
+    trace += "$s\n"
   }
+  // '+=': Remove newline, prepend a space
+  operator fun plusAssign(s: Any?) {
+    trace = "${trace.trimEnd()} $s"
+  }
+  fun newline() { trace += "\n" }
   override fun toString() = trace
 }
 

@@ -1008,6 +1008,11 @@ task GermanOrdinals(type: JavaExec) {
     main = 'GermanOrdinalsKt'
 }
 
+task GetAShape(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.GetAShapeKt'
+}
+
 task GetOrPut(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GetOrPutKt'
@@ -2708,6 +2713,11 @@ task WithSecondary(type: JavaExec) {
     main = 'secondaryconstructors.WithSecondaryKt'
 }
 
+task WithinInterface(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedclasses.WithinInterfaceKt'
+}
+
 task WithoutDefaultArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'withoutdefaultarguments.WithoutDefaultArgumentsKt'
@@ -2944,6 +2954,7 @@ task run (dependsOn: [
     'GenericListExtensions',
     'GenericSpeakers',
     'GermanOrdinals',
+    'GetAShape',
     'GetOrPut',
     'GetTrace',
     'GetValue',
@@ -3284,6 +3295,7 @@ task run (dependsOn: [
     'WithDefaultArguments',
     'WithPropertyAccessor',
     'WithSecondary',
+    'WithinInterface',
     'WithoutDefaultArguments',
     'XYZFlatMap',
     'XYZMap',

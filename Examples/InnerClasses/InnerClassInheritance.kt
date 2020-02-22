@@ -5,15 +5,14 @@ import atomictest.*
 private val trace = Trace()
 
 open class Egg {
-  private var y = Yolk()
+  private var yolk = Yolk()
   open inner class Yolk {
     init { trace("Egg.Yolk()") }
     open fun f() { trace("Egg.Yolk.f()") }
   }
-  // class Albumen : Yolk()  // ???
   init { trace("New Egg()") }
-  fun insertYolk(yy: Yolk) { y = yy }
-  fun g() { y.f() }
+  fun insertYolk(y: Yolk) { yolk = y }
+  fun g() { yolk.f() }
 }
 
 class BigEgg : Egg() {
@@ -27,8 +26,7 @@ class BigEgg : Egg() {
 }
 
 fun main() {
-  val egg = BigEgg()
-  egg.g()
+  BigEgg().g()
   trace eq """
   Egg.Yolk()
   New Egg()

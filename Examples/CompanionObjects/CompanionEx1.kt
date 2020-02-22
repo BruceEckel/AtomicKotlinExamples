@@ -4,51 +4,57 @@ import atomictest.*
 
 private val trace = Trace()
 
-interface Game {
-  fun move(): Boolean
+interface Service {
+  fun function1()
+  fun function2()
 }
 
-interface GameFactory {
-  val game: Game
+interface ServiceFactory {
+  val service: Service
 }
 
-class Checkers private constructor() : Game {
-  private var moves = 0
-  override fun move(): Boolean {
-    trace("Checkers move $moves")
-    return ++moves != MOVES
+class Implementation1 private constructor() : Service {
+  override fun function1() {
+    trace("Implementation1 function1")
+  }
+  override fun function2() {
+    trace("Implementation1 function2")
   }
   companion object {
-    private const val MOVES = 3
-    var factory = object : GameFactory {
-      override val game: Game
-        get() = Checkers()
+    var factory: ServiceFactory = object : ServiceFactory {
+      override val service: Service
+        get() {
+          return Implementation1()
+        }
     }
   }
 }
 
-class Chess private constructor() : Game {
-  private var moves = 0
-  override fun move(): Boolean {
-    trace("Chess move $moves")
-    return ++moves != MOVES
+class Implementation2 private constructor() : Service {
+  override fun function1() {
+    trace("Implementation2 function1")
+  }
+  override fun function2() {
+    trace("Implementation2 function2")
   }
   companion object {
-    private val MOVES = 4
-    var factory = object : GameFactory {
-      override val game: Game
-        get() = Chess()
+    var factory: ServiceFactory = object : ServiceFactory {
+      override val service: Service
+        get() {
+          return Implementation2()
+        }
     }
   }
 }
 
-fun playGame(factory: GameFactory) {
-  val s = factory.game
-  while (s.move())
-  ;
+fun serviceConsumer(fact: ServiceFactory) {
+  val s = fact.service
+  s.function1()
+  s.function2()
 }
 
 fun main() {
-  playGame(Checkers.factory)
-  playGame(Chess.factory)
+  serviceConsumer(Implementation1.factory)
+  // Implementations are interchangeable:
+  serviceConsumer(Implementation2.factory)
 }

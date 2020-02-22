@@ -768,6 +768,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testGetAShape() {
+    testExample("Examples/Generics/GetAShape.kt", generics.GetAShapeKt::main);
+  }
+
+  @Test
   public void testHolder() {
     testExample("Examples/Generics/Holder.kt", generics.HolderKt::main);
   }
@@ -1630,6 +1635,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTicket() {
     testExample("Examples/NestedClasses/Ticket.kt", nestedclasses.TicketKt::main);
+  }
+
+  @Test
+  public void testWithinInterface() {
+    testExample("Examples/NestedClasses/WithinInterface.kt", nestedclasses.WithinInterfaceKt::main);
   }
 
   @Test

@@ -12,21 +12,23 @@ class CounterFactory {
   private var count = 0
   fun new(name: String): Counter {
     // A local inner class:
-    class LocalCounter : Counter {
-      init { trace("LocalCounter()") }
+    class Local : Counter {
+      init { trace("Local()") }
       override fun next(): Int {
-        trace(name) // Access local
+        // Access local identifier:
+        trace += "$name $count"
         return count++
       }
     }
-    return LocalCounter()
+    return Local()
   }
   fun new2(name: String): Counter {
     // Instance of an anonymous inner class:
     return object : Counter {
       init { trace("Counter()") }
       override fun next(): Int {
-        trace(name) // Access local
+        // Access local identifier:
+        trace += "$name $count"
         return count++
       }
     }
@@ -34,31 +36,15 @@ class CounterFactory {
 }
 
 fun main() {
+  fun test(counter: Counter) {
+    (0..3).forEach { counter.next() }
+    trace.newline()
+  }
   val cf = CounterFactory()
-  val counter1 = cf.new("Local")
-  val counter2 = cf.new2("Anonymous")
-  for (i in 0..3)
-    trace(counter1.next())
-  for (i in 0..3)
-    trace(counter2.next())
+  test(cf.new("Local"))
+  test(cf.new2("Anon"))
   trace eq """
-  LocalCounter()
-  Counter()
-  Local
-  0
-  Local
-  1
-  Local
-  2
-  Local
-  3
-  Anonymous
-  4
-  Anonymous
-  5
-  Anonymous
-  6
-  Anonymous
-  7
+  Local() Local 0 Local 1 Local 2 Local 3
+  Counter() Anon 4 Anon 5 Anon 6 Anon 7
   """
 }

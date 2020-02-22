@@ -6,24 +6,26 @@ interface Pet {
   fun speak(): String
 }
 
-fun createDog(): Pet {
-  val say = "Bark"
-  // Local inner class:
-  class Dog : Pet {
-    override fun speak() = say
+class PetCreator {
+  fun dog(): Pet {
+    val say = "Bark"
+    // Local inner class:
+    class Dog : Pet {
+      override fun speak() = say
+    }
+    return Dog()
   }
-  return Dog()
-}
-
-fun createCat(): Pet {
-  val emit = "Meow"
-  // Anonymous inner class:
-  return object : Pet {
-    override fun speak() = emit
+  fun cat(): Pet {
+    val emit = "Meow"
+    // Anonymous inner class:
+    return object : Pet {
+      override fun speak() = emit
+    }
   }
 }
 
 fun main() {
-  createDog().speak() eq "Bark"
-  createCat().speak() eq "Meow"
+  val create = PetCreator()
+  create.dog().speak() eq "Bark"
+  create.cat().speak() eq "Meow"
 }

@@ -37,7 +37,7 @@ class Fruit { // implicit label @Fruit
       fun Int.grow() { // Implicit label @grow
         // Default is the Int.grow() receiver:
         which(this) eq "Int"
-        // You can redundantly qualify it:
+        // Redundant qualification:
         which(this@grow) eq "Int"
         // You can still access everything:
         which(this@DNA) eq "DNA"
@@ -50,8 +50,7 @@ class Fruit { // implicit label @Fruit
       fun whichThis() {
         // Defaults to the current class:
         which(this) eq "DNA"
-        // To clarify, you can redundantly
-        // qualify the default this:
+        // Redundant qualification:
         which(this@DNA) eq "DNA"
         // The others must be explicit:
         which(this@Seed) eq "Seed"
@@ -61,7 +60,7 @@ class Fruit { // implicit label @Fruit
   }
 }
 
-// Overloaded extension functions:
+// Extension function:
 fun Fruit.grow(amount: Int) {
   absorbWater(amount)
   // Calls Fruit's version of changeColor():
