@@ -11,11 +11,11 @@ interface Counter {
 class CounterFactory {
   private var count = 0
   fun new(name: String): Counter {
-    // A local inner class:
+    // Local inner class:
     class Local : Counter {
       init { trace("Local()") }
       override fun next(): Int {
-        // Access local identifier:
+        // Access local identifiers:
         trace += "$name $count"
         return count++
       }
@@ -27,7 +27,7 @@ class CounterFactory {
     return object : Counter {
       init { trace("Counter()") }
       override fun next(): Int {
-        // Access local identifier:
+        // Access local identifiers:
         trace += "$name $count"
         return count++
       }
