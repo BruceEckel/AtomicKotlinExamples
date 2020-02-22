@@ -1,4 +1,5 @@
 // Objects/ObjectNesting.kt
+package objects
 import atomictest.eq
 
 object Outer {
@@ -7,14 +8,13 @@ object Outer {
   }
 }
 
-class WithObject {
+class HasObject {
   object Nested2 {
-    val b = "WithObject.Nested2"
+    val b = "HasObject.Nested2"
   }
 }
 
 fun main() {
   Outer.Nested1.a eq "Outer.Nested1"
-  WithObject.Nested2.b eq
-    "WithObject.Nested2"
+  HasObject.Nested2.b eq "HasObject.Nested2"
 }

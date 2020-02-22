@@ -6,14 +6,8 @@ class Numbered2
 private constructor(private val id: Int) {
   override fun toString(): String = "#$id"
   companion object Factory {
-    private var n = 0
-    fun create(size: Int): List<Numbered2> {
-      val result = mutableListOf<Numbered2>()
-      for (i in 0 until size) {
-        result += Numbered2(n++)
-      }
-      return result
-    }
+    fun create(size: Int) =
+      List(size) { Numbered2(it) }
   }
 }
 

@@ -425,12 +425,17 @@ task ColorSet(type: JavaExec) {
 
 task CompanionEx1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjectsex1.CompanionEx1Kt'
+    main = 'companionobjectex1.CompanionEx1Kt'
 }
 
 task CompanionEx2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'companionobjectsex2.CompanionEx2Kt'
+    main = 'companionobjectex2.CompanionEx2Kt'
+}
+
+task CompanionEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjectex3.CompanionEx3Kt'
 }
 
 task CompanionFactory(type: JavaExec) {
@@ -1258,6 +1263,11 @@ task InitSection(type: JavaExec) {
     main = 'complexconstructors.InitSectionKt'
 }
 
+task Initialization(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjects.InitializationKt'
+}
+
 task InnerClassInheritance(type: JavaExec) {
     classpath kotlinClassPath
     main = 'innerclasses.InnerClassInheritanceKt'
@@ -1793,6 +1803,21 @@ task ObjectCounter(type: JavaExec) {
     main = 'ObjectCounterKt'
 }
 
+task ObjectEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'objectex1.ObjectEx1Kt'
+}
+
+task ObjectEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'objectex2.ObjectEx2Kt'
+}
+
+task ObjectEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'objectex3.ObjectEx3Kt'
+}
+
 task ObjectFunctions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ObjectFunctionsKt'
@@ -1800,17 +1825,17 @@ task ObjectFunctions(type: JavaExec) {
 
 task ObjectInheritance(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ObjectInheritanceKt'
+    main = 'objects.ObjectInheritanceKt'
 }
 
 task ObjectKeyword(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ObjectKeywordKt'
+    main = 'objects.ObjectKeywordKt'
 }
 
 task ObjectNesting(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ObjectNestingKt'
+    main = 'objects.ObjectNestingKt'
 }
 
 task ObjectProperty(type: JavaExec) {
@@ -2839,6 +2864,7 @@ task run (dependsOn: [
     'ColorSet',
     'CompanionEx1',
     'CompanionEx2',
+    'CompanionEx3',
     'CompanionFactory',
     'CompanionObject',
     'CompareTo',
@@ -3004,6 +3030,7 @@ task run (dependsOn: [
     'InhExtensionsEx3',
     'InheritAdd',
     'InitSection',
+    'Initialization',
     'InnerClassInheritance',
     'InnerEx1',
     'InnerEx2',
@@ -3111,6 +3138,9 @@ task run (dependsOn: [
     'NumberSequence2',
     'NumberTypes',
     'ObjectCounter',
+    'ObjectEx1',
+    'ObjectEx2',
+    'ObjectEx3',
     'ObjectFunctions',
     'ObjectInheritance',
     'ObjectKeyword',

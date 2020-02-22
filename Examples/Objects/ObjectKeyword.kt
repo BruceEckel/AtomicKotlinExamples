@@ -1,4 +1,5 @@
 // Objects/ObjectKeyword.kt
+package objects
 import atomictest.eq
 
 object JustOne {

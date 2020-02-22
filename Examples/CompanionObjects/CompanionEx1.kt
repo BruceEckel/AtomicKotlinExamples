@@ -1,5 +1,5 @@
 // CompanionObjects/CompanionEx1.kt
-package companionobjectsex1
+package companionobjectex1
 import atomictest.*
 
 private val trace = Trace()

@@ -244,12 +244,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testCompanionEx1() {
-    testExample("Examples/CompanionObjects/CompanionEx1.kt", companionobjectsex1.CompanionEx1Kt::main);
+    testExample("Examples/CompanionObjects/CompanionEx1.kt", companionobjectex1.CompanionEx1Kt::main);
   }
 
   @Test
   public void testCompanionEx2() {
-    testExample("Examples/CompanionObjects/CompanionEx2.kt", companionobjectsex2.CompanionEx2Kt::main);
+    testExample("Examples/CompanionObjects/CompanionEx2.kt", companionobjectex2.CompanionEx2Kt::main);
+  }
+
+  @Test
+  public void testCompanionEx3() {
+    testExample("Examples/CompanionObjects/CompanionEx3.kt", companionobjectex3.CompanionEx3Kt::main);
   }
 
   @Test
@@ -260,6 +265,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testCompanionObject() {
     testExample("Examples/CompanionObjects/CompanionObject.kt", CompanionObjectKt::main);
+  }
+
+  @Test
+  public void testInitialization() {
+    testExample("Examples/CompanionObjects/Initialization.kt", companionobjects.InitializationKt::main);
   }
 
   @Test
@@ -1783,18 +1793,33 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testObjectEx1() {
+    testExample("Examples/Objects/ObjectEx1.kt", objectex1.ObjectEx1Kt::main);
+  }
+
+  @Test
+  public void testObjectEx2() {
+    testExample("Examples/Objects/ObjectEx2.kt", objectex2.ObjectEx2Kt::main);
+  }
+
+  @Test
+  public void testObjectEx3() {
+    testExample("Examples/Objects/ObjectEx3.kt", objectex3.ObjectEx3Kt::main);
+  }
+
+  @Test
   public void testObjectInheritance() {
-    testExample("Examples/Objects/ObjectInheritance.kt", ObjectInheritanceKt::main);
+    testExample("Examples/Objects/ObjectInheritance.kt", objects.ObjectInheritanceKt::main);
   }
 
   @Test
   public void testObjectKeyword() {
-    testExample("Examples/Objects/ObjectKeyword.kt", ObjectKeywordKt::main);
+    testExample("Examples/Objects/ObjectKeyword.kt", objects.ObjectKeywordKt::main);
   }
 
   @Test
   public void testObjectNesting() {
-    testExample("Examples/Objects/ObjectNesting.kt", ObjectNestingKt::main);
+    testExample("Examples/Objects/ObjectNesting.kt", objects.ObjectNestingKt::main);
   }
 
   @Test

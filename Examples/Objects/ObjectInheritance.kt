@@ -1,4 +1,5 @@
 // Objects/ObjectInheritance.kt
+package objects
 import atomictest.eq
 
 open class Paint(val color: String) {
@@ -19,9 +20,7 @@ object Prepare : PaintPreparation {
 }
 
 fun main() {
-  Paint("Green").apply() eq
-    "Applying Green"
-  Acrylic.apply() eq
-    "Acrylic, Applying Blue"
   Prepare.prepare() eq "Scrape"
+  Paint("Green").apply() eq "Applying Green"
+  Acrylic.apply() eq "Acrylic, Applying Blue"
 }
