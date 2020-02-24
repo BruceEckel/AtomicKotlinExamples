@@ -1,11 +1,32 @@
 // Objects/ObjectEx2.kt
 package objectex2
-import atomictest.*
+import atomictest.eq
 
-private val trace = Trace()
+object Outer {
+  object Nested {
+    val a = "Outer.Nested.a"
+    object Nested {
+      val a = "Outer.Nested.Nested.a"
+    }
+  }
+}
+
+class HasObject {
+  object Nested {
+    val a = "HasObject.Nested.a"
+    object Nested {
+      val a = "HasObject.Nested.Nested.a"
+    }
+  }
+}
 
 fun main() {
-  trace eq """
-
-  """
+  Outer.Nested.a eq
+    "Outer.Nested.a"
+  HasObject.Nested.a eq
+    "HasObject.Nested.a"
+  Outer.Nested.Nested.a eq
+    "Outer.Nested.Nested.a"
+  HasObject.Nested.Nested.a eq
+    "HasObject.Nested.Nested.a"
 }
