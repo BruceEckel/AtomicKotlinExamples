@@ -6,6 +6,7 @@ class WithCompanion {
     val i = 3
     fun f() = i * 3
   }
+  fun g() = i + f()
 }
 
 fun main() {
@@ -14,4 +15,6 @@ fun main() {
   // The default name is "Companion":
   WithCompanion.Companion.i eq 3
   WithCompanion.Companion.f() eq 9
+  val wc = WithCompanion()
+  wc.g() eq 12
 }

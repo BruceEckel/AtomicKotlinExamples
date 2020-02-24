@@ -248,11 +248,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCompanionEx2() {
-    testExample("Examples/CompanionObjects/CompanionEx2.kt", companionobjectex2.CompanionEx2Kt::main);
-  }
-
-  @Test
   public void testCompanionEx3() {
     testExample("Examples/CompanionObjects/CompanionEx3.kt", companionobjectex3.CompanionEx3Kt::main);
   }
@@ -260,6 +255,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testCompanionFactory() {
     testExample("Examples/CompanionObjects/CompanionFactory.kt", companionobjects.CompanionFactoryKt::main);
+  }
+
+  @Test
+  public void testCompanionInstance() {
+    testExample("Examples/CompanionObjects/CompanionInstance.kt", companionobjects.CompanionInstanceKt::main);
   }
 
   @Test
@@ -1805,6 +1805,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testObjectEx3() {
     testExample("Examples/Objects/ObjectEx3.kt", objectex3.ObjectEx3Kt::main);
+  }
+
+  @Test
+  public void testObjectEx4() {
+    testExample("Examples/Objects/ObjectEx4.kt", objectex4.ObjectEx4Kt::main);
   }
 
   @Test

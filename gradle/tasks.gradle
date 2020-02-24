@@ -428,11 +428,6 @@ task CompanionEx1(type: JavaExec) {
     main = 'companionobjectex1.CompanionEx1Kt'
 }
 
-task CompanionEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'companionobjectex2.CompanionEx2Kt'
-}
-
 task CompanionEx3(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjectex3.CompanionEx3Kt'
@@ -441,6 +436,11 @@ task CompanionEx3(type: JavaExec) {
 task CompanionFactory(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjects.CompanionFactoryKt'
+}
+
+task CompanionInstance(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjects.CompanionInstanceKt'
 }
 
 task CompanionObject(type: JavaExec) {
@@ -1818,6 +1818,11 @@ task ObjectEx3(type: JavaExec) {
     main = 'objectex3.ObjectEx3Kt'
 }
 
+task ObjectEx4(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'objectex4.ObjectEx4Kt'
+}
+
 task ObjectFunctions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ObjectFunctionsKt'
@@ -2863,9 +2868,9 @@ task run (dependsOn: [
     'ColorBlend',
     'ColorSet',
     'CompanionEx1',
-    'CompanionEx2',
     'CompanionEx3',
     'CompanionFactory',
+    'CompanionInstance',
     'CompanionObject',
     'CompareTo',
     'ComposeAdapter',
@@ -3141,6 +3146,7 @@ task run (dependsOn: [
     'ObjectEx1',
     'ObjectEx2',
     'ObjectEx3',
+    'ObjectEx4',
     'ObjectFunctions',
     'ObjectInheritance',
     'ObjectKeyword',
