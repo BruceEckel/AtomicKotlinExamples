@@ -423,6 +423,11 @@ task ColorSet(type: JavaExec) {
     main = 'ColorSetKt'
 }
 
+task CompanionDelegation(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjects.CompanionDelegationKt'
+}
+
 task CompanionEx1(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjectex1.CompanionEx1Kt'
@@ -611,6 +616,11 @@ task DefiningRanges(type: JavaExec) {
 task Definition(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DefinitionKt'
+}
+
+task DelegateAndExtend(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionobjects.DelegateAndExtendKt'
 }
 
 task DelegatedControls(type: JavaExec) {
@@ -2867,6 +2877,7 @@ task run (dependsOn: [
     'Color3',
     'ColorBlend',
     'ColorSet',
+    'CompanionDelegation',
     'CompanionEx1',
     'CompanionEx2',
     'CompanionEx3',
@@ -2905,6 +2916,7 @@ task run (dependsOn: [
     'DefiningExceptions',
     'DefiningRanges',
     'Definition',
+    'DelegateAndExtend',
     'DelegatedControls',
     'Dereference',
     'DereferenceNull',

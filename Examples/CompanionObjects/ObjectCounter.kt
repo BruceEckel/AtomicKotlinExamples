@@ -1,7 +1,7 @@
 // CompanionObjects/ObjectCounter.kt
 import atomictest.eq
 
-class Numbered {
+class Counted {
   companion object {
     private var count = 0
   }
@@ -10,7 +10,5 @@ class Numbered {
 }
 
 fun main() {
-  listOf(Numbered(), Numbered(),
-    Numbered(), Numbered(), Numbered()) eq
-    "[#0, #1, #2, #3, #4]"
+  List(4) { Counted() } eq "[#0, #1, #2, #3]"
 }

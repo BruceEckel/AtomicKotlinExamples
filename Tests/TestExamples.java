@@ -243,6 +243,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCompanionDelegation() {
+    testExample("Examples/CompanionObjects/CompanionDelegation.kt", companionobjects.CompanionDelegationKt::main);
+  }
+
+  @Test
   public void testCompanionEx1() {
     testExample("Examples/CompanionObjects/CompanionEx1.kt", companionobjectex1.CompanionEx1Kt::main);
   }
@@ -270,6 +275,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testCompanionObject() {
     testExample("Examples/CompanionObjects/CompanionObject.kt", CompanionObjectKt::main);
+  }
+
+  @Test
+  public void testDelegateAndExtend() {
+    testExample("Examples/CompanionObjects/DelegateAndExtend.kt", companionobjects.DelegateAndExtendKt::main);
   }
 
   @Test

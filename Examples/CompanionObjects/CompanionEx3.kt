@@ -22,9 +22,9 @@ data class ID(
 }
 
 class Bank(val name: String) {
-  private val accounts =
-    mutableListOf<Account>()
   private val applied =
+    mutableListOf<Account>()
+  private val accounts =
     mutableListOf<Account>()
   private class Account(val name: String) {
     var id: ID? = null

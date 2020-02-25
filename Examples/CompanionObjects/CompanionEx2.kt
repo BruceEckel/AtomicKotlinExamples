@@ -24,7 +24,7 @@ Checkers private constructor() : BoardGame {
     trace("Checkers move $moves")
     return ++moves != max
   }
-  companion object Factory  : GameFactory {
+  companion object Factory : GameFactory {
     private const val max = 3
     init {
       BoardGame.createBoard()
@@ -40,7 +40,7 @@ Chess private constructor() : BoardGame {
     trace("Chess move $moves")
     return ++moves != max
   }
-  companion object Factory  : GameFactory {
+  companion object Factory : GameFactory {
     private const val max = 4
     init {
       BoardGame.createBoard()

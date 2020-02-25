@@ -1,39 +1,56 @@
 // CompanionObjects/CompanionInstance.kt
 package companionobjects
-import atomictest.eq
+import atomictest.*
+
+private val trace = Trace()
 
 interface ZI {
   fun f(): String
   fun g(): String
 }
 
-open class ZOpen : ZI {
-  override fun f() = "ZOpen.f()"
-  override fun g() = "ZOpen.g()"
+class ZIImplementation {
+  companion object: ZI {
+    override fun f() = "ZIImplementation.f()"
+    override fun g() = "ZIImplementation.g()"
+  }
+  fun u() = trace("${f()} ${g()}")
 }
 
-class WithZCompanion {
-  companion object: ZOpen()
-  fun u() = "u(): ${f()} ${g()}"
+open class ZIOpen : ZI {
+  override fun f() = "ZIOpen.f()"
+  override fun g() = "ZIOpen.g()"
 }
 
-class ZClosed : ZI {
-  override fun f() = "ZClosed.f()"
-  override fun g() = "ZClosed.g()"
+class ZICompanion {
+  companion object: ZIOpen()
+  fun u() = trace("${f()} ${g()}")
 }
 
-class ZIDelegation {
-  companion object: ZI by ZClosed()
-  fun v() = "v(): ${f()} ${g()}"
+class ZICompanionInheritance {
+  companion object: ZIOpen() {
+    override fun g() =
+      "ZICompanionInheritance.g()"
+    fun h() = "ZICompanionInheritance.h()"
+  }
+  fun u() = trace("${f()} ${g()} ${h()}")
 }
 
 fun main() {
-  WithZCompanion.f()
-  WithZCompanion.g()
-  WithZCompanion().u() eq
-    "u(): ZOpen.f() ZOpen.g()"
-  ZIDelegation.f()
-  ZIDelegation.g()
-  ZIDelegation().v() eq
-    "v(): ZClosed.f() ZClosed.g()"
+  ZIImplementation.f()
+  ZIImplementation.g()
+  ZIImplementation().u()
+  ZICompanion.f()
+  ZICompanion.g()
+  ZICompanion().u()
+  ZICompanionInheritance.f()
+  ZICompanionInheritance.g()
+  ZICompanionInheritance().u()
+  trace eq """
+  ZIImplementation.f() ZIImplementation.g()
+  ZIOpen.f() ZIOpen.g()
+  ZIOpen.f()
+    ZICompanionInheritance.g()
+    ZICompanionInheritance.h()
+  """
 }
