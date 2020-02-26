@@ -7,7 +7,7 @@ private val trace = Trace()
 class CompanionInit {
   companion object {
     init {
-      trace("companion constructor")
+      trace("Companion Constructor")
     }
   }
 }
@@ -22,7 +22,7 @@ fun main() {
   trace("After 3")
   trace eq """
   Before
-  companion constructor
+  Companion Constructor
   After 1
   After 2
   After 3

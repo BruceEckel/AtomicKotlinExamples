@@ -1,30 +1,28 @@
 package generating
-
 import java.io.File
 
 fun main() {
-  generateExampleTests()
-}
-
-fun generateExampleTests() {
-  val examples = File("Examples")
-  val exampleFiles = examples.listFiles().flatMap { atom ->
-    atom.listFiles().filter { it.extension == "kt" }.map {
-      ExampleInfo.create(it)
-    }
-  }
-  val tests = generateTests(exampleFiles)
-  File("Tests/TestExamples.java").writeText(tests)
+  val exampleFiles =
+    File("Examples").listFiles()
+      .flatMap { atom ->
+        atom.listFiles().filter {
+          it.extension == "kt"
+        }.map {
+          ExampleInfo.create(it)
+        }
+      }
+  File("Tests/TestExamples.java").writeText(
+    generateTests(exampleFiles
+      .filter { !it.name.startsWith("ExploreMaze")}))
 }
 
 data class ExampleInfo(
-    val file: File,
-    val name: String,
-    val packageName: String?
+  val file: File,
+  val name: String,
+  val packageName: String?
 ) {
   val classForFileName: String
     get() = name + "Kt"
-
   val qualifiedName: String
     get() = if (packageName != null) "$packageName.$classForFileName" else classForFileName
 
@@ -43,7 +41,6 @@ fun generateTests(exampleInfoList: List<ExampleInfo>): String {
   val tests = mutableListOf<String>()
   for (exampleInfo in exampleInfoList) {
     if (!exampleInfo.file.readText().contains("fun main")) continue
-
     val classForFileName = exampleInfo.classForFileName
     val index = if (classForFileName in namesFrequency) {
       val frequency = namesFrequency.getValue(classForFileName)

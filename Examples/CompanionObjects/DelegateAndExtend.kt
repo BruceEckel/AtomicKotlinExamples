@@ -1,27 +1,25 @@
 // CompanionObjects/DelegateAndExtend.kt
 package companionobjects
-import atomictest.*
-
-private val trace = Trace()
+import atomictest.eq
 
 interface Extended : ZI {
-  fun u()
+  fun u(): String
 }
 
-class ExtendBy : ZI by Companion, Extended {
+class Extend : ZI by Companion, Extended {
   companion object: ZI {
-    override fun f() = "ExtendBy.f()"
-    override fun g() = "ExtendBy.g()"
+    override fun f() = "Extend.f()"
+    override fun g() = "Extend.g()"
   }
-  override fun u() = trace("${f()} ${g()}")
+  override fun u() = "${f()} ${g()}"
 }
 
-fun extended(e: Extended) {
+private fun test(e: Extended): String {
   e.f()
   e.g()
-  e.u()
+  return e.u()
 }
 
 fun main() {
-  extended(ExtendBy())
+  test(Extend()) eq "Extend.f() Extend.g()"
 }
