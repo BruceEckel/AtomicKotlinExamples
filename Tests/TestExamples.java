@@ -288,8 +288,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testNamedCompanionObject() {
-    testExample("Examples/CompanionObjects/NamedCompanionObject.kt", NamedCompanionObjectKt::main);
+  public void testNamingCompanionObjects() {
+    testExample("Examples/CompanionObjects/NamingCompanionObjects.kt", NamingCompanionObjectsKt::main);
   }
 
   @Test
@@ -665,21 +665,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUnitReturnType() {
     testExample("Examples/ExpressionsStatements/UnitReturnType.kt", UnitReturnTypeKt::main);
-  }
-
-  @Test
-  public void testExtensibilityEx1() {
-    testExample("Examples/Extensibility/ExtensibilityEx1.kt", designingwithinheritanceex1.ExtensibilityEx1Kt::main);
-  }
-
-  @Test
-  public void testExtensibilityEx2() {
-    testExample("Examples/Extensibility/ExtensibilityEx2.kt", designingwithinheritanceex2.ExtensibilityEx2Kt::main);
-  }
-
-  @Test
-  public void testExtensibilityEx3() {
-    testExample("Examples/Extensibility/ExtensibilityEx3.kt", designingwithinheritanceex3.ExtensibilityEx3Kt::main);
   }
 
   @Test
@@ -1805,6 +1790,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsingLongs() {
     testExample("Examples/NumberTypes/UsingLongs.kt", UsingLongsKt::main);
+  }
+
+  @Test
+  public void testPlayers() {
+    testExample("Examples/ObjectOrientedDesign/Players.kt", robotexplorer.PlayersKt::main);
   }
 
   @Test

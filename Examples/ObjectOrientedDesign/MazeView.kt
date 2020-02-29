@@ -1,5 +1,5 @@
-// RobotExplorer2/View2.kt
-package robotexplorer2
+// ObjectOrientedDesign/MazeView.kt
+package robotexplorer
 
 interface Adapter {
   fun height(): Int

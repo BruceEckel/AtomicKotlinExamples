@@ -1,5 +1,5 @@
-// RobotExplorer1/RobotMaze.kt
-package robotmaze
+// ObjectOrientedDesign/RobotMaze.kt
+package robotexplorer
 
 val stringMaze = """
 a_...#..._c

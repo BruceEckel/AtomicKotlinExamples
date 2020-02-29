@@ -1,30 +1,32 @@
-// RobotExplorer2/Room2.kt
-package robotexplorer2
-import robotexplorer1.Urge
-import robotexplorer1.Urge.*
+// ObjectOrientedDesign/Room.kt
+package robotexplorer
+import robotexplorer.Urge
+import robotexplorer.Urge.*
 
 class Room(var player: Player = Void()) {
   val doors = Doors()
+  override fun toString() = "Room($player)"
+  companion object {
+    val edge = Room()
+  }
 }
-
-private val edge = Room()
 
 class Doors {
   private val doors = mutableMapOf(
-    North to edge,
-    South to edge,
-    East to edge,
-    West to edge
+    North to Room.edge,
+    South to Room.edge,
+    East to Room.edge,
+    West to Room.edge
   )
   fun open(urge: Urge): Room =
-    doors.getOrDefault(urge, edge)
+    doors.getOrDefault(urge, Room.edge)
   fun connect(
     row: Int, col: Int,
     rooms: Map<Pair<Int, Int>, Room>
   ) {
     fun link(toRow: Int, toCol: Int) =
       rooms.getOrDefault(
-        Pair(toRow, toCol), edge)
+        Pair(toRow, toCol), Room.edge)
     doors[North] = link(row - 1, col)
     doors[South] = link(row + 1, col)
     doors[East] = link(row, col + 1)

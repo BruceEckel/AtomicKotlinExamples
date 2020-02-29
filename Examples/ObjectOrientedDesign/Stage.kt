@@ -1,8 +1,8 @@
-// RobotExplorer3/Stage3.kt
-package robotexplorer3
-import robotexplorer1.urge
-import robotexplorer2.Adapter
-import robotexplorer2.View
+// ObjectOrientedDesign/Stage.kt
+package robotexplorer
+import robotexplorer.urge
+import robotexplorer.Adapter
+import robotexplorer.View
 
 class Stage(val maze: String) {
   val robot = Robot(Room())

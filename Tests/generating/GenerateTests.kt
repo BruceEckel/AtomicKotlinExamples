@@ -24,13 +24,18 @@ data class ExampleInfo(
   val classForFileName: String
     get() = name + "Kt"
   val qualifiedName: String
-    get() = if (packageName != null) "$packageName.$classForFileName" else classForFileName
+    get() = if (packageName != null)
+      "$packageName.$classForFileName"
+    else classForFileName
 
   companion object {
     fun create(file: File): ExampleInfo {
       val name = file.nameWithoutExtension
       val lines = file.readLines()
-      val packageName = lines.find { it.startsWith("package ") }?.substringAfter("package ")?.trim()
+      val packageName = lines
+        .find { it.startsWith("package ") }
+        ?.substringAfter("package ")
+        ?.trim()
       return ExampleInfo(file, name, packageName)
     }
   }

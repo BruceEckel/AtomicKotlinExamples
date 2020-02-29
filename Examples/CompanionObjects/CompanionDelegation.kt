@@ -5,8 +5,8 @@ import atomictest.*
 private val trace = Trace()
 
 class ZIClosed : ZI {
-  override fun f() = "ZClosed.f()"
-  override fun g() = "ZClosed.g()"
+  override fun f() = "ZIClosed.f()"
+  override fun g() = "ZIClosed.g()"
 }
 
 class ZIDelegation {
@@ -32,8 +32,8 @@ fun main() {
   ZIDelegationInheritance.g()
   ZIDelegationInheritance().u()
   trace eq """
-  ZClosed.f() ZClosed.g()
-  ZClosed.f()
+  ZIClosed.f() ZIClosed.g()
+  ZIClosed.f()
     ZIDelegationInheritance.g()
     ZIDelegationInheritance.h()
   """

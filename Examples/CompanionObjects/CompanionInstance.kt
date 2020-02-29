@@ -9,14 +9,6 @@ interface ZI {
   fun g(): String
 }
 
-class ZIImplementation {
-  companion object: ZI {
-    override fun f() = "ZIImplementation.f()"
-    override fun g() = "ZIImplementation.g()"
-  }
-  fun u() = trace("${f()} ${g()}")
-}
-
 open class ZIOpen : ZI {
   override fun f() = "ZIOpen.f()"
   override fun g() = "ZIOpen.g()"
@@ -36,10 +28,18 @@ class ZICompanionInheritance {
   fun u() = trace("${f()} ${g()} ${h()}")
 }
 
+class ZIClass {
+  companion object: ZI {
+    override fun f() = "ZIClass.f()"
+    override fun g() = "ZIClass.g()"
+  }
+  fun u() = trace("${f()} ${g()}")
+}
+
 fun main() {
-  ZIImplementation.f()
-  ZIImplementation.g()
-  ZIImplementation().u()
+  ZIClass.f()
+  ZIClass.g()
+  ZIClass().u()
   ZICompanion.f()
   ZICompanion.g()
   ZICompanion().u()
@@ -47,7 +47,7 @@ fun main() {
   ZICompanionInheritance.g()
   ZICompanionInheritance().u()
   trace eq """
-  ZIImplementation.f() ZIImplementation.g()
+  ZIClass.f() ZIClass.g()
   ZIOpen.f() ZIOpen.g()
   ZIOpen.f()
     ZICompanionInheritance.g()
