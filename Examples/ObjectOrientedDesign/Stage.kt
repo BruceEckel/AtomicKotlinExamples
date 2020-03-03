@@ -1,8 +1,5 @@
 // ObjectOrientedDesign/Stage.kt
 package robotexplorer
-import robotexplorer.urge
-import robotexplorer.Adapter
-import robotexplorer.View
 
 class Stage(val maze: String) {
   val robot = Robot(Room())
@@ -19,7 +16,7 @@ class Stage(val maze: String) {
     // Step 1: Create rooms with players:
     lines.withIndex().forEach { (row, line) ->
       line.withIndex().forEach { (col, ch) ->
-        val room = Player.factory(ch)
+        val room = Factory.create(ch)
         rooms[Pair(row, col)] = room
         if(ch == robot.symbol)
           robot.room = room
@@ -53,20 +50,4 @@ class Stage(val maze: String) {
         view.show()
       }
   }
-}
-
-fun Stage.mazeView(): String {
-  var result = ""
-  var currentRow = 0
-  rooms.forEach { (pair, room) ->
-    val row = pair.first
-    if (row != currentRow) {
-      result += "\n"
-      currentRow = row
-    }
-    result += if (room == robot.room)
-      robot.id() else room.player.id()
-  }
-  return result +
-    "\n\nEnergy: ${robot.energy}\n"
 }

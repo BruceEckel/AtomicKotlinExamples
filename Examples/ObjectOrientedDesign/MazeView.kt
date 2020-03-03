@@ -1,19 +1,18 @@
 // ObjectOrientedDesign/MazeView.kt
 package robotexplorer
 
-interface Adapter {
-  fun height(): Int
-  fun textView(): String
-}
-
-class View(val adapter: Adapter) {
-  // Start an ANSI terminal control string:
-  private val ansiTerm = "\u001B["
-  fun clear() =
-    print("${ansiTerm}${adapter.height()}T")
-  fun show() {
-    print("${ansiTerm}0;0H") // Cursor home
-    println(adapter.textView())
-    Thread.sleep(300L) // Pause
+fun Stage.mazeView(): String {
+  var result = ""
+  var currentRow = 0
+  rooms.forEach { (pair, room) ->
+    val row = pair.first
+    if (row != currentRow) {
+      result += "\n"
+      currentRow = row
+    }
+    result += if (room == robot.room)
+      robot.id() else room.player.id()
   }
+  return result +
+    "\n\nEnergy: ${robot.energy}\n"
 }

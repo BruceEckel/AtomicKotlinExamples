@@ -1,39 +1,25 @@
 // ObjectOrientedDesign/Players.kt
 package robotexplorer
-import kotlin.reflect.full.createInstance
 
 sealed class Player {
   abstract val symbol: Char
-  abstract val room: Room
   open fun id() = symbol.toString()
+  abstract val room: Room
   override fun toString() =
     "${this::class.simpleName} ${id()}"
-  open class Result(
-    val success: Boolean,
-    val room: Room
-  )
-  class Success(room: Room):
-    Result(true, room)
-  object Fail: Result(false, Room())
+  abstract fun interact(robot: Robot): Room
+  // Makes the exact type of Player object:
   abstract fun makePlayer(room: Room): Player
+  // Match the symbol, create and configure
+  // a Room with the new Player, or Fail:
   open fun create(ch: Char): Result {
     if (ch == symbol) {
       val room = Room()
       room.player = makePlayer(room)
-      return Success(room)
+      return Result.Success(room)
     }
-    return Fail
+    return Result.Fail
   }
-  companion object {
-    val prototypes: List<Player> =
-      Player::class.sealedSubclasses.map {
-        it.createInstance()
-      }
-    fun factory(ch: Char): Room =
-      prototypes.map { it.create(ch) }
-        .first { it.success }.room
-  }
-  abstract fun interact(robot: Robot): Room
 }
 // To be continued ...// ... continuing
 
@@ -99,8 +85,8 @@ class Robot(
     Robot(room)
   override fun create(ch: Char) =
     if (ch == symbol)
-      Success(Room())
-    else Fail
+      Result.Success(Room())
+    else Result.Fail
   // Shouldn't happen:
   override fun interact(robot: Robot) =
     throw IllegalAccessException()
@@ -126,9 +112,9 @@ class Teleport(
     if (ch in 'a'..'z') {
       val room = Room()
       room.player = Teleport(ch, room)
-      return Success(room)
+      return Result.Success(room)
     }
-    return Fail
+    return Result.Fail
   }
   override fun interact(robot: Robot) =
     targetRoom
@@ -145,20 +131,4 @@ class Bomb(
     room.player = Empty(room)
     return room
   }
-}
-
-fun testFactory(maze: String) {
-  println(Player.prototypes.map {
-    it::class.simpleName
-  })
-  val lines = maze.split("\n")
-  lines.withIndex().forEach { (row, line) ->
-    line.withIndex().forEach { (col, ch) ->
-      println(Player.factory(ch))
-    }
-  }
-}
-
-fun main() {
-  testFactory(stringMaze)
 }

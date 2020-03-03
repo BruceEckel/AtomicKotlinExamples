@@ -828,6 +828,11 @@ task Factorial(type: JavaExec) {
     main = 'recursion.FactorialKt'
 }
 
+task Factory(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'robotexplorer.FactoryKt'
+}
+
 task Fail(type: JavaExec) {
     classpath kotlinClassPath
     main = 'nothingtype.FailKt'
@@ -1788,6 +1793,11 @@ task NumberTypes(type: JavaExec) {
     main = 'NumberTypesKt'
 }
 
+task OODesignEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'oodesignex3.OODesignEx3Kt'
+}
+
 task ObjectCounter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ObjectCounterKt'
@@ -1951,11 +1961,6 @@ task Pets(type: JavaExec) {
 task PlatformTypes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PlatformTypesKt'
-}
-
-task Players(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'robotexplorer.PlayersKt'
 }
 
 task PolyExercise1(type: JavaExec) {
@@ -2938,6 +2943,7 @@ task run (dependsOn: [
     'ExtensionFuncs',
     'ExtensionsToJavaClass',
     'Factorial',
+    'Factory',
     'Fail',
     'FantasyGame',
     'FaultySuitcase',
@@ -3130,6 +3136,7 @@ task run (dependsOn: [
     'NumberSequence1',
     'NumberSequence2',
     'NumberTypes',
+    'OODesignEx3',
     'ObjectCounter',
     'ObjectEx1',
     'ObjectEx2',
@@ -3163,7 +3170,6 @@ task run (dependsOn: [
     'Pet',
     'Pets',
     'PlatformTypes',
-    'Players',
     'PolyExercise1',
     'PolyExercise2',
     'PolyExercise3',

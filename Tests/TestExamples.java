@@ -1793,8 +1793,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testPlayers() {
-    testExample("Examples/ObjectOrientedDesign/Players.kt", robotexplorer.PlayersKt::main);
+  public void testFactory() {
+    testExample("Examples/ObjectOrientedDesign/Factory.kt", robotexplorer.FactoryKt::main);
+  }
+
+  @Test
+  public void testOODesignEx3() {
+    testExample("Examples/ObjectOrientedDesign/OODesignEx3.kt", oodesignex3.OODesignEx3Kt::main);
   }
 
   @Test
