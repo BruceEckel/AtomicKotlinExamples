@@ -1,5 +1,8 @@
-// ObjectOrientedDesign/MazeView.kt
+// ObjectOrientedDesign/ShowMaze.kt
 package robotexplorer
+
+fun Stage.showMaze() = mazeView() +
+  "\n\nEnergy: ${robot.energy}\n"
 
 fun Stage.mazeView(): String {
   var result = ""
@@ -13,6 +16,5 @@ fun Stage.mazeView(): String {
     result += if (room == robot.room)
       robot.id() else room.player.id()
   }
-  return result +
-    "\n\nEnergy: ${robot.energy}\n"
+  return result
 }

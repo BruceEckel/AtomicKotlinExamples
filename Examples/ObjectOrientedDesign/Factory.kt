@@ -7,9 +7,9 @@ object Factory {
     Player::class.sealedSubclasses.map {
       it.createInstance()
     }
-  // Go through the list, attempting to
-  // create an object, until you succeed:
-  fun create(ch: Char): Room =
+  // Move through the list, attempting to
+  // create an object until you succeed:
+  fun make(ch: Char): Room =
     prototypes.map { it.create(ch) }
       .first { it.success }.room
 }
@@ -21,7 +21,7 @@ fun testFactory(maze: String) {
   val lines = maze.split("\n")
   lines.withIndex().forEach { (row, line) ->
     line.withIndex().forEach { (col, ch) ->
-      println(Factory.create(ch))
+      println(Factory.make(ch))
     }
   }
 }

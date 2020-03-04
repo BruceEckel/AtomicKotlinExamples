@@ -5,18 +5,13 @@ class Stage(val maze: String) {
   val robot = Robot(Room())
   val rooms =
     mutableMapOf<Pair<Int, Int>, Room>()
-  private inner class Adapt : Adapter {
-    override fun height() =
-      maze.lines().size + 3
-    override fun textView() = mazeView()
-  }
-  private val view = View(Adapt())
+  private val view = View(this)
   val lines = maze.split("\n")
   init { // The 'Builder' pattern:
     // Step 1: Create rooms with players:
     lines.withIndex().forEach { (row, line) ->
       line.withIndex().forEach { (col, ch) ->
-        val room = Factory.create(ch)
+        val room = Factory.make(ch)
         rooms[Pair(row, col)] = room
         if(ch == robot.symbol)
           robot.room = room
