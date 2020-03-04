@@ -13,19 +13,3 @@ object Factory {
     prototypes.map { it.create(ch) }
       .first { it.success }.room
 }
-
-fun testFactory(maze: String) {
-  println(Factory.prototypes.map {
-    it::class.simpleName
-  })
-  val lines = maze.split("\n")
-  lines.withIndex().forEach { (row, line) ->
-    line.withIndex().forEach { (col, ch) ->
-      println(Factory.make(ch))
-    }
-  }
-}
-
-fun main() {
-  testFactory(stringMaze)
-}

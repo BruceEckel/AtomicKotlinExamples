@@ -3,8 +3,7 @@ package robotexplorer
 
 class Stage(val maze: String) {
   val robot = Robot(Room())
-  val rooms =
-    mutableMapOf<Pair<Int, Int>, Room>()
+  val rooms: Rooms = mutableMapOf()
   private val view = View(this)
   val lines = maze.split("\n")
   init { // The 'Builder' pattern:

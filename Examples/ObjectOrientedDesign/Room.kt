@@ -2,6 +2,9 @@
 package robotexplorer
 import robotexplorer.Urge.*
 
+typealias Rooms =
+  MutableMap<Pair<Int, Int>, Room>
+
 class Room(var player: Player = Void()) {
   val doors = Doors()
   override fun toString() = "Room($player)"
@@ -20,8 +23,7 @@ class Doors {
   fun open(urge: Urge): Room =
     doors.getOrDefault(urge, Room.edge)
   fun connect(
-    row: Int, col: Int,
-    rooms: Map<Pair<Int, Int>, Room>
+    row: Int, col: Int, rooms: Rooms
   ) {
     fun link(toRow: Int, toCol: Int) =
       rooms.getOrDefault(

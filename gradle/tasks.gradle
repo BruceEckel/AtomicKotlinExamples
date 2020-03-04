@@ -828,11 +828,6 @@ task Factorial(type: JavaExec) {
     main = 'recursion.FactorialKt'
 }
 
-task Factory(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'robotexplorer.FactoryKt'
-}
-
 task Fail(type: JavaExec) {
     classpath kotlinClassPath
     main = 'nothingtype.FailKt'
@@ -2443,6 +2438,11 @@ task TerminalOperations(type: JavaExec) {
     main = 'creatingsequences.TerminalOperationsKt'
 }
 
+task TestFactory(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'robotexplorer.TestFactoryKt'
+}
+
 task TestingExample(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TestingExampleKt'
@@ -2943,7 +2943,6 @@ task run (dependsOn: [
     'ExtensionFuncs',
     'ExtensionsToJavaClass',
     'Factorial',
-    'Factory',
     'Fail',
     'FantasyGame',
     'FaultySuitcase',
@@ -3266,6 +3265,7 @@ task run (dependsOn: [
     'TeamWithTraditions',
     'Temperature',
     'TerminalOperations',
+    'TestFactory',
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
