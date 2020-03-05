@@ -45,3 +45,4 @@ test_output.txt
 Examples/ErrorReporting/trace_real.txt
 Examples/Logging/atomicLog.txt
 Examples/Logging/simpleLogFile.txt
+Examples/ObjectOrientedDesign/ExploreMaze.jar

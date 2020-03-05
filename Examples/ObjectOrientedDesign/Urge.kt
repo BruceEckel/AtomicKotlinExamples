@@ -1,6 +1,6 @@
 // ObjectOrientedDesign/Urge.kt
-package robotexplorer
-import robotexplorer.Urge.*
+package oodesign
+import oodesign.Urge.*
 
 enum class Urge { North, South, East, West }
 

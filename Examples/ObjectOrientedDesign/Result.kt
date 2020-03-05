@@ -1,5 +1,5 @@
 // ObjectOrientedDesign/Result.kt
-package robotexplorer
+package oodesign
 
 // Report success or failure:
 sealed class Result(

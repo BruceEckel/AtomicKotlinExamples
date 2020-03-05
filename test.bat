@@ -13,4 +13,5 @@ call gradlew --warning-mode all GenerateTests
 echo:
 echo gradlew test
 call gradlew --warning-mode all test
-if exist ./build/reports/tests/test/classes/TestExamples.html start ./build/reports/tests/test/classes/TestExamples.html
+copy buildjar.bat Examples\ObjectOrientedDesign
+@rem if exist ./build/reports/tests/test/classes/TestExamples.html start ./build/reports/tests/test/classes/TestExamples.html

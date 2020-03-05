@@ -1,5 +1,5 @@
 // ObjectOrientedDesign/Factory.kt
-package robotexplorer
+package oodesign
 import kotlin.reflect.full.createInstance
 
 object Factory {

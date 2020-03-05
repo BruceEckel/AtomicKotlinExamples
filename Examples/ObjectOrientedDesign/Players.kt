@@ -1,5 +1,5 @@
 // ObjectOrientedDesign/Players.kt
-package robotexplorer
+package oodesign
 
 sealed class Player {
   abstract val symbol: Char
@@ -10,7 +10,7 @@ sealed class Player {
   abstract fun interact(robot: Robot): Room
   // Makes the exact type of Player object:
   abstract fun makePlayer(room: Room): Player
-  // Match the symbol, create and configure
+  // Match the symbol and create + configure
   // a Room with the new Player, or Fail:
   open fun create(ch: Char): Result {
     if (ch == symbol) {

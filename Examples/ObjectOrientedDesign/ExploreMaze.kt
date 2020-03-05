@@ -1,5 +1,5 @@
 // ObjectOrientedDesign/ExploreMaze.kt
-package robotexplorer
+package oodesign
 
 fun main() {
   Stage(stringMaze).run(solution)

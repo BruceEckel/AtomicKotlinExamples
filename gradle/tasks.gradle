@@ -805,7 +805,7 @@ task ExplicitTyping(type: JavaExec) {
 
 task ExploreMaze(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'robotexplorer.ExploreMazeKt'
+    main = 'oodesign.ExploreMazeKt'
 }
 
 task ExpressionInTemplate(type: JavaExec) {
@@ -2440,7 +2440,7 @@ task TerminalOperations(type: JavaExec) {
 
 task TestFactory(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'robotexplorer.TestFactoryKt'
+    main = 'oodesign.TestFactoryKt'
 }
 
 task TestingExample(type: JavaExec) {

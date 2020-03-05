@@ -1,5 +1,5 @@
 // ObjectOrientedDesign/TestFactory.kt
-package robotexplorer
+package oodesign
 import atomictest.eq
 
 fun main() {

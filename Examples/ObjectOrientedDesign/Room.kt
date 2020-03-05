@@ -1,6 +1,6 @@
 // ObjectOrientedDesign/Room.kt
-package robotexplorer
-import robotexplorer.Urge.*
+package oodesign
+import oodesign.Urge.*
 
 typealias Rooms =
   MutableMap<Pair<Int, Int>, Room>

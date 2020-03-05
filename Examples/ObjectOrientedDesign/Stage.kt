@@ -1,5 +1,5 @@
 // ObjectOrientedDesign/Stage.kt
-package robotexplorer
+package oodesign
 
 class Stage(val maze: String) {
   val robot = Robot(Room())
@@ -37,11 +37,12 @@ class Stage(val maze: String) {
   }
   fun run(solution: String) {
     view.clear()
-    view.show() // Show initial maze
+    view.display() // Show initial maze
     solution.filter { !it.isWhitespace() }
       .forEach {
         robot.move(urge(it))
-        view.show()
+        view.display()
+        Thread.sleep(200L) // Pause
       }
   }
 }
