@@ -2443,6 +2443,11 @@ task TestFactory(type: JavaExec) {
     main = 'oodesign.TestFactoryKt'
 }
 
+task TestTileGrid(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'oodesign.TestTileGridKt'
+}
+
 task TestingExample(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TestingExampleKt'
@@ -3266,6 +3271,7 @@ task run (dependsOn: [
     'Temperature',
     'TerminalOperations',
     'TestFactory',
+    'TestTileGrid',
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',

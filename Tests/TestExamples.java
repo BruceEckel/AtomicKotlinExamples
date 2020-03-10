@@ -1803,6 +1803,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTestTileGrid() {
+    testExample("Examples/ObjectOrientedDesign/TestTileGrid.kt", oodesign.TestTileGridKt::main);
+  }
+
+  @Test
   public void testObjectEx1() {
     testExample("Examples/Objects/ObjectEx1.kt", objectex1.ObjectEx1Kt::main);
   }

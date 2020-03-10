@@ -10,6 +10,7 @@ sourceCompatibility = 1.8
 
 repositories {
     maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+    maven { url "https://kotlin.bintray.com/kotlinx" }
     mavenCentral()
 }
 
@@ -40,6 +41,10 @@ dependencies {
     implementation 'io.github.microutils:kotlin-logging:1.4.6'
     implementation 'org.slf4j:slf4j-simple:1.7.25'
 
+    // Zircon
+    implementation "org.jetbrains.kotlinx:kotlinx-collections-immutable"
+    implementation "org.hexworks.zircon:zircon.core-jvm:2020.0.2-PREVIEW"
+    implementation "org.hexworks.zircon:zircon.jvm.swing:2020.0.2-PREVIEW"
 }
 
 apply from: 'gradle/tasks.gradle'
