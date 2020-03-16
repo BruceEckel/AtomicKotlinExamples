@@ -1803,8 +1803,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTestTileGrid() {
-    testExample("Examples/ObjectOrientedDesign/TestTileGrid.kt", oodesign.TestTileGridKt::main);
+  public void testZirconMaze() {
+    testExample("Examples/ObjectOrientedDesign/ZirconMaze.kt", oodesign.ZirconMazeKt::main);
   }
 
   @Test

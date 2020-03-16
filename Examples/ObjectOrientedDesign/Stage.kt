@@ -6,6 +6,8 @@ class Stage(val maze: String) {
   val rooms: Rooms = mutableMapOf()
   private val view = View(this)
   val lines = maze.split("\n")
+  val height = lines.size
+  val width = lines[0].length
   init { // The 'Builder' pattern:
     // Step 1: Create rooms with players:
     lines.withIndex().forEach { (row, line) ->

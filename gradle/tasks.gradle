@@ -2443,11 +2443,6 @@ task TestFactory(type: JavaExec) {
     main = 'oodesign.TestFactoryKt'
 }
 
-task TestTileGrid(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesign.TestTileGridKt'
-}
-
 task TestingExample(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TestingExampleKt'
@@ -2781,6 +2776,11 @@ task Zipper(type: JavaExec) {
 task ZippingWithNext(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ZippingWithNextKt'
+}
+
+task ZirconMaze(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'oodesign.ZirconMazeKt'
 }
 
 task run (dependsOn: [
@@ -3271,7 +3271,6 @@ task run (dependsOn: [
     'Temperature',
     'TerminalOperations',
     'TestFactory',
-    'TestTileGrid',
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
@@ -3338,7 +3337,8 @@ task run (dependsOn: [
     'ZeroArguments',
     'ZipAndTransform',
     'Zipper',
-    'ZippingWithNext'
+    'ZippingWithNext',
+    'ZirconMaze'
     ]) {
     doLast {
         println '*** run complete ***'

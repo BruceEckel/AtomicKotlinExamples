@@ -13,5 +13,5 @@ call gradlew --warning-mode all GenerateTests
 echo:
 echo gradlew test
 call gradlew --warning-mode all test
-copy etc\ObjectOrientedDesign Examples\ObjectOrientedDesign
+@rem copy etc\ObjectOrientedDesign Examples\ObjectOrientedDesign
 @rem if exist ./build/reports/tests/test/classes/TestExamples.html start ./build/reports/tests/test/classes/TestExamples.html
