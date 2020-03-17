@@ -9,7 +9,8 @@ object Factory {
     }
   // Move through the list, attempting to
   // create an object until you succeed:
-  fun make(ch: Char): Room =
-    prototypes.map { it.create(ch) }
+  fun make(
+    ch: Char, row: Int, col: Int): Room =
+    prototypes.map { it.create(ch, row, col) }
       .first { it.success }.room
 }

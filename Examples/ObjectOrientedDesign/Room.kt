@@ -5,7 +5,10 @@ import oodesign.Urge.*
 typealias Rooms =
   MutableMap<Pair<Int, Int>, Room>
 
-class Room(var player: Player = Void()) {
+class Room(
+  val row: Int = 0, val col: Int = 0,
+  var player: Player = Void()
+) {
   val doors = Doors()
   override fun toString() = "Room($player)"
   companion object {

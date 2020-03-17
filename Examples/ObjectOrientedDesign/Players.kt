@@ -12,9 +12,10 @@ sealed class Player {
   abstract fun makePlayer(room: Room): Player
   // Match the symbol and create + configure
   // a Room with the new Player, or Fail:
-  open fun create(ch: Char): Result {
+  open fun create(
+    ch: Char, row: Int, col: Int): Result {
     if (ch == symbol) {
-      val room = Room()
+      val room = Room(row, col)
       room.player = makePlayer(room)
       return Result.Success(room)
     }
@@ -73,7 +74,7 @@ class EndGame(
   override fun makePlayer(room: Room) =
     EndGame(room)
   override fun interact(robot: Robot) =
-    Room(EndGame(room))
+    Room(0, 0, EndGame(room))
 }
 
 class Robot(
@@ -83,9 +84,10 @@ class Robot(
   var energy = 0
   override fun makePlayer(room: Room) =
     Robot(room)
-  override fun create(ch: Char) =
+  override fun create(
+    ch: Char, row: Int, col: Int): Result =
     if (ch == symbol)
-      Result.Success(Room())
+      Result.Success(Room(row, col))
     else Result.Fail
   // Shouldn't happen:
   override fun interact(robot: Robot) =
@@ -108,9 +110,10 @@ class Teleport(
     "$symbol: $target $targetRoom"
   override fun makePlayer(room: Room) =
     throw IllegalStateException()
-  override fun create(ch: Char): Result {
+  override fun create(
+    ch: Char, row: Int, col: Int): Result {
     if (ch in 'a'..'z') {
-      val room = Room()
+      val room = Room(row, col)
       room.player = Teleport(ch, room)
       return Result.Success(room)
     }

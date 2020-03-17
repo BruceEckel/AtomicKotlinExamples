@@ -32,8 +32,10 @@ fun main() {
   val robot = Layer.newBuilder()
     .withSize(Size.one())
     .withOffset(Position.create(
-      grid.width / 2, grid.height / 2))
-    .build().apply { fill(ROBOT_TILE) }
+      stage.robot.room.col,
+      stage.robot.room.row))
+    .build()
+    .apply { fill(ROBOT_TILE) }
   grid.addLayer(robot)
 
   grid.processKeyboardEvents(
