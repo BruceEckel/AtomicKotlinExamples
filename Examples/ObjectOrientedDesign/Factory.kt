@@ -1,5 +1,6 @@
 // ObjectOrientedDesign/Factory.kt
 package oodesign
+import atomictest.eq
 import kotlin.reflect.full.createInstance
 
 object Factory {
@@ -13,4 +14,8 @@ object Factory {
     ch: Char, row: Int, col: Int): Room =
     prototypes.map { it.create(ch, row, col) }
       .first { it.success }.room
+}
+
+fun main() {
+  Stage(stringMaze).mazeView() eq stringMaze
 }

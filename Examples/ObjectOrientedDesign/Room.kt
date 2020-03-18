@@ -10,7 +10,8 @@ class Room(
   var player: Player = Void()
 ) {
   val doors = Doors()
-  override fun toString() = "Room($player)"
+  override fun toString() =
+    "Room($row, $col, $player)"
   companion object {
     val edge = Room()
   }

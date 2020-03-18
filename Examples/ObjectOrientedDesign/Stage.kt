@@ -8,13 +8,21 @@ class Stage(val maze: String) {
   val lines = maze.split("\n")
   val height = lines.size
   val width = lines[0].length
+  fun teleportPairs() = rooms.values
+    .filter {
+      it.player is Teleport
+    }.map {
+      it.player as Teleport
+    }.sortedBy {
+      it.target
+    }.zipWithNext()
   init { // The 'Builder' pattern:
     // Step 1: Create rooms with players:
     lines.withIndex().forEach { (row, line) ->
       line.withIndex().forEach { (col, ch) ->
         val room = Factory.make(ch, row, col)
         rooms[Pair(row, col)] = room
-        if(ch == robot.symbol)
+        if (ch == robot.symbol)
           robot.room = room
       }
     }
@@ -24,15 +32,7 @@ class Stage(val maze: String) {
         pair.first, pair.second, rooms)
     }
     // Step 3: Connect the Teleport pairs
-    val teleportPairs = rooms.values
-      .filter {
-        it.player is Teleport
-      }.map {
-        it.player as Teleport
-      }.sortedBy {
-        it.target
-      }.zipWithNext()
-    for((a, b) in teleportPairs) {
+    for ((a, b) in teleportPairs()) {
       a.targetRoom = b.room
       b.targetRoom = a.room
     }
@@ -47,4 +47,11 @@ class Stage(val maze: String) {
         Thread.sleep(200L) // Pause
       }
   }
+}
+
+fun main() {
+  Stage(stringMaze).teleportPairs()
+    .forEach { p: Pair<Teleport, Teleport> ->
+      println(p)
+    }
 }

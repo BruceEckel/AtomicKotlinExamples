@@ -9,7 +9,7 @@ sealed class Player {
     "${this::class.simpleName} ${id()}"
   abstract fun interact(robot: Robot): Room
   // Makes the exact type of Player object:
-  abstract fun makePlayer(room: Room): Player
+  abstract fun makePlayer(r: Room): Player
   // Match the symbol and create + configure
   // a Room with the new Player, or Fail:
   open fun create(
@@ -28,8 +28,7 @@ class Void() : Player() {
   override val symbol = '~'
   override val room: Room
     get() = throw IllegalAccessException()
-  override fun makePlayer(room: Room) =
-    Void()
+  override fun makePlayer(r: Room) = Void()
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
 }
@@ -38,8 +37,7 @@ class Wall(
   override val room: Room = Room()
 ) : Player() {
   override val symbol = '#'
-  override fun makePlayer(room: Room) =
-    Wall(room)
+  override fun makePlayer(r: Room) = Wall(r)
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
 }
@@ -48,8 +46,7 @@ class Food(
   override val room: Room = Room()
 ) : Player() {
   override val symbol = '.'
-  override fun makePlayer(room: Room) =
-    Food(room)
+  override fun makePlayer(r: Room) = Food(r)
   override fun interact(robot: Robot): Room {
     robot.energy++ // Consume food
     room.player = Empty(room) // Remove food
@@ -61,8 +58,7 @@ class Empty(
   override val room: Room = Room()
 ) : Player() {
   override val symbol = '_'
-  override fun makePlayer(room: Room) =
-    Empty(room)
+  override fun makePlayer(r: Room) = Empty(r)
   // Move into new room:
   override fun interact(robot: Robot) = room
 }
@@ -71,8 +67,8 @@ class EndGame(
   override val room: Room = Room()
 ) : Player() {
   override val symbol = '!'
-  override fun makePlayer(room: Room) =
-    EndGame(room)
+  override fun makePlayer(r: Room) =
+    EndGame(r)
   override fun interact(robot: Robot) =
     Room(0, 0, EndGame(room))
 }
@@ -82,8 +78,7 @@ class Robot(
 ) : Player() {
   override val symbol = 'R'
   var energy = 0
-  override fun makePlayer(room: Room) =
-    Robot(room)
+  override fun makePlayer(r: Room) = Robot(r)
   override fun create(
     ch: Char, row: Int, col: Int): Result =
     if (ch == symbol)
@@ -107,8 +102,8 @@ class Teleport(
   override fun id() = target.toString()
   override fun toString() =
     "${this::class.simpleName} " +
-    "$symbol: $target $targetRoom"
-  override fun makePlayer(room: Room) =
+    "$symbol: $target" //  $targetRoom
+  override fun makePlayer(r: Room) =
     throw IllegalStateException()
   override fun create(
     ch: Char, row: Int, col: Int): Result {
@@ -127,8 +122,7 @@ class Bomb(
   override val room: Room = Room()
 ) : Player() {
   override val symbol = '*'
-  override fun makePlayer(room: Room) =
-    Bomb(room)
+  override fun makePlayer(r: Room) = Bomb(r)
   override fun interact(robot: Robot): Room {
     robot.energy = 0 // Bomb erases energy
     room.player = Empty(room)

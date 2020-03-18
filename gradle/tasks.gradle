@@ -648,11 +648,6 @@ task DestructuringDuo(type: JavaExec) {
     main = 'DestructuringDuoKt'
 }
 
-task DestructuringEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'destructuringex1.DestructuringEx1Kt'
-}
-
 task DestructuringEx2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'destructuringex2.DestructuringEx2Kt'
@@ -826,6 +821,11 @@ task ExtensionsToJavaClass(type: JavaExec) {
 task Factorial(type: JavaExec) {
     classpath kotlinClassPath
     main = 'recursion.FactorialKt'
+}
+
+task Factory(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'oodesign.FactoryKt'
 }
 
 task Fail(type: JavaExec) {
@@ -2178,6 +2178,11 @@ task RigidHolder(type: JavaExec) {
     main = 'introgenerics.RigidHolderKt'
 }
 
+task RobotExplorer(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'oodesign.RobotExplorerKt'
+}
+
 task Safe(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.SafeKt'
@@ -2291,6 +2296,11 @@ task Speakers(type: JavaExec) {
 task SpreadOperator(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SpreadOperatorKt'
+}
+
+task Stage(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'oodesign.StageKt'
 }
 
 task StateOfAClass(type: JavaExec) {
@@ -2436,11 +2446,6 @@ task Temperature(type: JavaExec) {
 task TerminalOperations(type: JavaExec) {
     classpath kotlinClassPath
     main = 'creatingsequences.TerminalOperationsKt'
-}
-
-task TestFactory(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesign.TestFactoryKt'
 }
 
 task TestingExample(type: JavaExec) {
@@ -2778,11 +2783,6 @@ task ZippingWithNext(type: JavaExec) {
     main = 'ZippingWithNextKt'
 }
 
-task ZirconMaze(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesign.ZirconMazeKt'
-}
-
 task run (dependsOn: [
     'ASCIIMap',
     'AVarIsMutable',
@@ -2912,7 +2912,6 @@ task run (dependsOn: [
     'DereferenceNull',
     'DestructuringData',
     'DestructuringDuo',
-    'DestructuringEx1',
     'DestructuringEx2',
     'DestructuringEx3',
     'DestructuringMap',
@@ -2948,6 +2947,7 @@ task run (dependsOn: [
     'ExtensionFuncs',
     'ExtensionsToJavaClass',
     'Factorial',
+    'Factory',
     'Fail',
     'FantasyGame',
     'FaultySuitcase',
@@ -3218,6 +3218,7 @@ task run (dependsOn: [
     'ReturnInsideLambda',
     'ReturnLocal',
     'RigidHolder',
+    'RobotExplorer',
     'Safe',
     'SafeCall',
     'SafeOperation',
@@ -3241,6 +3242,7 @@ task run (dependsOn: [
     'SortWith',
     'Speakers',
     'SpreadOperator',
+    'Stage',
     'StateOfAClass',
     'StoringLambda',
     'StrTemplates',
@@ -3270,7 +3272,6 @@ task run (dependsOn: [
     'TeamWithTraditions',
     'Temperature',
     'TerminalOperations',
-    'TestFactory',
     'TestingExample',
     'ThreeQuotes',
     'TicTacToe',
@@ -3337,8 +3338,7 @@ task run (dependsOn: [
     'ZeroArguments',
     'ZipAndTransform',
     'Zipper',
-    'ZippingWithNext',
-    'ZirconMaze'
+    'ZippingWithNext'
     ]) {
     doLast {
         println '*** run complete ***'

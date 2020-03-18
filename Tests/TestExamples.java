@@ -458,11 +458,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDestructuringEx1() {
-    testExample("Examples/Destructuring/DestructuringEx1.kt", destructuringex1.DestructuringEx1Kt::main);
-  }
-
-  @Test
   public void testDestructuringEx2() {
     testExample("Examples/Destructuring/DestructuringEx2.kt", destructuringex2.DestructuringEx2Kt::main);
   }
@@ -1793,18 +1788,23 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testFactory() {
+    testExample("Examples/ObjectOrientedDesign/Factory.kt", oodesign.FactoryKt::main);
+  }
+
+  @Test
   public void testOODesignEx3() {
     testExample("Examples/ObjectOrientedDesign/OODesignEx3.kt", oodesignex3.OODesignEx3Kt::main);
   }
 
   @Test
-  public void testTestFactory() {
-    testExample("Examples/ObjectOrientedDesign/TestFactory.kt", oodesign.TestFactoryKt::main);
+  public void testRobotExplorer() {
+    testExample("Examples/ObjectOrientedDesign/RobotExplorer.kt", oodesign.RobotExplorerKt::main);
   }
 
   @Test
-  public void testZirconMaze() {
-    testExample("Examples/ObjectOrientedDesign/ZirconMaze.kt", oodesign.ZirconMazeKt::main);
+  public void testStage() {
+    testExample("Examples/ObjectOrientedDesign/Stage.kt", oodesign.StageKt::main);
   }
 
   @Test
