@@ -22,7 +22,8 @@ sealed class Player {
     return Result.Fail
   }
 }
-// To be continued ...// ... continuing
+// To be continued ...
+// ... continuing
 
 class Void() : Player() {
   override val symbol = '~'
