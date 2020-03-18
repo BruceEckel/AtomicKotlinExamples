@@ -7,11 +7,11 @@ typealias Rooms =
 
 class Room(
   val row: Int = 0, val col: Int = 0,
-  var player: Player = Void()
+  var agent: Agent = Void()
 ) {
   val doors = Doors()
   override fun toString() =
-    "Room($row, $col, $player)"
+    "Room($row, $col, $agent)"
   companion object {
     val edge = Room()
   }

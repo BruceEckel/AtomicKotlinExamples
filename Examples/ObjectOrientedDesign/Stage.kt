@@ -2,22 +2,22 @@
 package oodesign
 
 class Stage(val maze: String) {
-  val robot = Robot(Room())
-  val rooms: Rooms = mutableMapOf()
-  private val view = View(this)
   val lines = maze.split("\n")
   val height = lines.size
   val width = lines[0].length
+  val robot = Robot(Room())
+  val rooms: Rooms = mutableMapOf()
+  private val view = View(this)
   fun teleportPairs() = rooms.values
     .filter {
-      it.player is Teleport
+      it.agent is Teleport
     }.map {
-      it.player as Teleport
+      it.agent as Teleport
     }.sortedBy {
       it.target
-    }.zipWithNext()
+    }.chunked(2)
   init { // The 'Builder' pattern:
-    // Step 1: Create rooms with players:
+    // Step 1: Create rooms with agents:
     lines.withIndex().forEach { (row, line) ->
       line.withIndex().forEach { (col, ch) ->
         val room = Factory.make(ch, row, col)
@@ -50,8 +50,14 @@ class Stage(val maze: String) {
 }
 
 fun main() {
-  Stage(stringMaze).teleportPairs()
-    .forEach { p: Pair<Teleport, Teleport> ->
-      println(p)
-    }
+  val teleports = stringMaze.toCharArray()
+    .sorted().filter{ it.isLowerCase() }
+  println("${teleports.size} $teleports")
+  val stage = Stage(stringMaze)
+  val pairs = stage.teleportPairs()
+  println("${pairs.size}")
+  pairs.forEach { println(it) }
+  stage.rooms.values.filter {
+    it.agent.symbol.isLetter()
+  }.forEach { println(it.agent.symbol) }
 }

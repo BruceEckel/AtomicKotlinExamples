@@ -14,7 +14,7 @@ fun Stage.mazeView(): String {
       currentRow = row
     }
     result += if (room == robot.room)
-      robot.id() else room.player.id()
+      robot.id() else room.agent.id()
   }
   return result
 }
