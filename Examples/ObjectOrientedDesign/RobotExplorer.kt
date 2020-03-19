@@ -48,8 +48,6 @@ fun robotExplorer(stage: Stage) {
   fun robotGo(urge: Urge) {
     updateCharAtRobot()
     stage.robot.move(urge)
-//  println(
-//    "${stage.robot}: ${stage.robot.energy}")
     robotIcon.moveTo(robotPosition())
   }
   grid.processKeyboardEvents(

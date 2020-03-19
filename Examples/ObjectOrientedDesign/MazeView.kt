@@ -2,14 +2,13 @@
 package oodesign
 
 fun Stage.mazeView(): String {
-  var result = ""
   var currentRow = 0
-  rooms.forEach {
-    if (it.row != currentRow) {
-      result += "\n"
-      currentRow = it.row
-    }
-    result += it.agent.id()
+  fun Room.newline() =
+    if (row != currentRow) {
+      currentRow = row
+      "\n"
+    } else ""
+  return rooms.joinToString("") {
+    it.newline() + it.agent.id()
   }
-  return result
 }
