@@ -14,16 +14,16 @@ class Stage(val maze: String) {
     }.flatten()
   fun teleportPairs() = rooms
     .filter {
-      it.agent is Teleport
+      it.actor is Teleport
     }.map {
-      it.agent as Teleport
+      it.actor as Teleport
     }.sortedBy {
       it.target
     }.chunked(2)
   init { // The 'Builder' pattern:
     // Step 1: Find the Robot:
     robot.room = rooms.first {
-      it.agent.symbol == robot.symbol
+      it.actor.symbol == robot.symbol
     }
     // Step 2: Connect the doors
     rooms.forEach {

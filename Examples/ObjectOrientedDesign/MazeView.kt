@@ -9,6 +9,6 @@ fun Stage.mazeView(): String {
       "\n"
     } else ""
   return rooms.joinToString("") {
-    it.newline() + it.agent.id()
+    it.newline() + it.actor.id()
   }
 }

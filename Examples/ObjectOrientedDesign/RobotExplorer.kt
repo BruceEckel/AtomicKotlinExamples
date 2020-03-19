@@ -40,7 +40,7 @@ fun robotExplorer(stage: Stage) {
   fun updateCharAtRobot() {
     val tile = Tile.newBuilder()
       .withCharacter(
-        stage.robot.room.agent.id())
+        stage.robot.room.actor.id())
       .buildCharacterTile()
     grid.cursorPosition = robotPosition()
     grid.putTile(tile)

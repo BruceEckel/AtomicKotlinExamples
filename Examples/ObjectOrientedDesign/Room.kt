@@ -4,11 +4,11 @@ import oodesign.Urge.*
 
 class Room(
   val row: Int = 0, val col: Int = 0,
-  var agent: Agent = Void()
+  var actor: Actor = Void()
 ) {
   val doors = Doors()
   override fun toString() =
-    "Room($row, $col, $agent)"
+    "Room($row, $col, $actor)"
   companion object {
     val edge = Room()
   }
