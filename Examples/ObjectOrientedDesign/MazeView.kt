@@ -7,14 +7,12 @@ fun Stage.showMaze() = mazeView() +
 fun Stage.mazeView(): String {
   var result = ""
   var currentRow = 0
-  rooms.forEach { (coordinates, room) ->
-    val row = coordinates.first
-    if (row != currentRow) {
+  rooms.forEach { (_, room) ->
+    if (room.row != currentRow) {
       result += "\n"
-      currentRow = row
+      currentRow = room.row
     }
-    result += if (room == robot.room)
-      robot.id() else room.agent.id()
+    result += room.agent.id()
   }
   return result
 }

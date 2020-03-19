@@ -6,11 +6,14 @@ sealed class Agent {
   open fun id() = symbol.toString()
   abstract val room: Room
   override fun toString() =
-    "${this::class.simpleName} ${id()}"
-  abstract fun interact(robot: Robot): Room
+    "${this::class.simpleName} ${id()}" +
+      "(${room.row}, ${room.col})"
+  open fun interact(robot: Robot): Room =
+    throw NotImplementedError()
   // Makes the exact type of Agent object:
-  abstract fun makeAgent(r: Room): Agent
-  // Match the symbol and create + configure
+  open fun makeAgent(r: Room): Agent =
+    throw NotImplementedError()
+  // Match the symbol then create & configure
   // a Room with the new Agent, or Fail:
   open fun create(
     ch: Char, row: Int, col: Int): Result {
@@ -68,8 +71,7 @@ class EndGame(
   override val room: Room = Room()
 ) : Agent() {
   override val symbol = '!'
-  override fun makeAgent(r: Room) =
-    EndGame(r)
+  override fun makeAgent(r: Room) = EndGame(r)
   override fun interact(robot: Robot) =
     Room(0, 0, EndGame(room))
 }
@@ -80,14 +82,6 @@ class Robot(
   override val symbol = 'R'
   var energy = 0
   override fun makeAgent(r: Room) = Robot(r)
-  override fun create(
-    ch: Char, row: Int, col: Int): Result =
-    if (ch == symbol)
-      Result.Success(Room(row, col))
-    else Result.Fail
-  // Shouldn't happen:
-  override fun interact(robot: Robot) =
-    throw IllegalAccessException()
   fun move(urge: Urge) {
     val nextRoom = room.doors.open(urge)
     room = nextRoom.agent.interact(this)
@@ -104,8 +98,6 @@ class Teleport(
   override fun toString() =
     "${this::class.simpleName}: $target" +
     "(${targetRoom.row}, ${targetRoom.col})"
-  override fun makeAgent(r: Room) =
-    throw IllegalStateException()
   override fun create(
     ch: Char, row: Int, col: Int): Result {
     if (ch in 'a'..'z') {

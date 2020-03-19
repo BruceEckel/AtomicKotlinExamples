@@ -1,23 +1,6 @@
 // ObjectOrientedDesign/RobotMaze.kt
 package oodesign
 
-val stringMazeX = """
-a_...#..._c
-R_...#...__
-###########
-a_......._b
-###########
-!_c_....._b
-""".trim()
-
-val solutionX = """
-eeeenwwww
-eeeeeeeeee
-wwwwwwww
-eeennnwwwwwsseeeeeen
-ww
-""".trim()
-
 val stringMaze = """
 .....#...__#_......._.._...#...__#_......._.
 a_..b#...__#l..#k...__._...#...__#c..#...d__

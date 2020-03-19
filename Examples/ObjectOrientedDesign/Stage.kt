@@ -7,6 +7,12 @@ class Stage(val maze: String) {
   val width = lines[0].length
   val robot = Robot(Room())
   val rooms: Rooms = mutableMapOf()
+  val xrooms =
+    lines.withIndex().map { (row, line) ->
+      line.withIndex().map { (col, ch) ->
+        Factory.make(ch, row, col)
+      }
+    }.flatten()
   private val view = View(this)
   fun teleportPairs() = rooms.values
     .filter {
@@ -20,18 +26,19 @@ class Stage(val maze: String) {
     // Step 1: Create rooms with agents:
     lines.withIndex().forEach { (row, line) ->
       line.withIndex().forEach { (col, ch) ->
-        val room = Factory.make(ch, row, col)
-        rooms[Pair(row, col)] = room
-        if (ch == robot.symbol)
-          robot.room = room
+        rooms[Pair(row, col)] =
+          Factory.make(ch, row, col)
       }
     }
-    // Step 2: Connect the doors
-    rooms.forEach { (pair, r) ->
-      r.doors.connect(
-        pair.first, pair.second, rooms)
+    // Step 2: Find the Robot:
+    robot.room = rooms.values.first {
+      it.agent.symbol == robot.symbol
     }
-    // Step 3: Connect the Teleport pairs
+    // Step 3: Connect the doors
+    rooms.forEach { (_, r) ->
+      r.doors.connect(r.row, r.col, rooms)
+    }
+    // Step 4: Connect the Teleport pairs
     for ((a, b) in teleportPairs()) {
       a.targetRoom = b.room
       b.targetRoom = a.room
@@ -57,7 +64,6 @@ fun main() {
   val pairs = stage.teleportPairs()
   println("${pairs.size}")
   pairs.forEach { println(it) }
-  stage.rooms.values.filter {
-    it.agent.symbol.isLetter()
-  }.forEach { println(it.agent.symbol) }
+  println(stage.robot)
+  stage.xrooms.forEach { println(it) }
 }

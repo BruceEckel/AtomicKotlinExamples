@@ -39,6 +39,8 @@ fun robotExplorer(stage: Stage) {
   grid.addLayer(robotIcon)
   fun robotGo(urge: Urge) {
     stage.robot.move(urge)
+    println(
+      "${stage.robot}: ${stage.robot.energy}")
     robotIcon.moveTo(robotPosition())
   }
   grid.processKeyboardEvents(
