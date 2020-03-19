@@ -798,11 +798,6 @@ task ExplicitTyping(type: JavaExec) {
     main = 'ExplicitTypingKt'
 }
 
-task ExploreMaze(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesign.ExploreMazeKt'
-}
-
 task ExpressionInTemplate(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExpressionInTemplateKt'
@@ -2942,7 +2937,6 @@ task run (dependsOn: [
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',
-    'ExploreMaze',
     'ExpressionInTemplate',
     'ExtensionFuncs',
     'ExtensionsToJavaClass',

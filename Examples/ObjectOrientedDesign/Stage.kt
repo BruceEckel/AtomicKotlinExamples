@@ -12,7 +12,6 @@ class Stage(val maze: String) {
         Factory.make(ch, row, col)
       }
     }.flatten()
-  private val view = View(this)
   fun teleportPairs() = rooms
     .filter {
       it.agent is Teleport
@@ -35,16 +34,6 @@ class Stage(val maze: String) {
       a.targetRoom = b.room
       b.targetRoom = a.room
     }
-  }
-  fun run(solution: String) {
-    view.clear()
-    view.display() // Show initial maze
-    solution.filter { !it.isWhitespace() }
-      .forEach {
-        robot.move(urge(it))
-        view.display()
-        Thread.sleep(200L) // Pause
-      }
   }
 }
 
