@@ -3,7 +3,7 @@ package oodesign
 
 sealed class Agent {
   abstract val symbol: Char
-  open fun id() = symbol.toString()
+  open fun id() = symbol
   abstract val room: Room
   override fun toString() =
     "${this::class.simpleName} ${id()}" +
@@ -94,7 +94,7 @@ class Teleport(
 ) : Agent() {
   override val symbol = 'T'
   var targetRoom = Room()
-  override fun id() = target.toString()
+  override fun id() = target
   override fun toString() =
     "${this::class.simpleName}: $target" +
     "(${targetRoom.row}, ${targetRoom.col})"

@@ -7,7 +7,7 @@ import org.hexworks.zircon.api.uievent.*
 import org.hexworks.zircon.api.graphics.*
 import org.hexworks.zircon.api.color.*
 
-private val ROBOT_TILE = Tile.newBuilder()
+private val robotTile = Tile.newBuilder()
   .withForegroundColor(ANSITileColor.RED)
   .withCharacter('R')
   .buildCharacterTile()
@@ -35,12 +35,21 @@ fun robotExplorer(stage: Stage) {
     .withSize(Size.one())
     .withOffset(robotPosition())
     .build()
-    .apply { fill(ROBOT_TILE) }
+    .apply { fill(robotTile) }
   grid.addLayer(robotIcon)
+  fun updateCharAtRobot() {
+    val tile = Tile.newBuilder()
+      .withCharacter(
+        stage.robot.room.agent.id())
+      .buildCharacterTile()
+    grid.cursorPosition = robotPosition()
+    grid.putTile(tile)
+  }
   fun robotGo(urge: Urge) {
+    updateCharAtRobot()
     stage.robot.move(urge)
-    println(
-      "${stage.robot}: ${stage.robot.energy}")
+//  println(
+//    "${stage.robot}: ${stage.robot.energy}")
     robotIcon.moveTo(robotPosition())
   }
   grid.processKeyboardEvents(
@@ -57,7 +66,5 @@ fun robotExplorer(stage: Stage) {
 }
 
 fun main() {
-  val stage = Stage(stringMaze)
-  stage.rooms.forEach { println(it) }
-  robotExplorer(stage)
+  robotExplorer(Stage(stringMaze))
 }
