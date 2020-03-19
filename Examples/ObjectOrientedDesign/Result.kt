@@ -1,7 +1,7 @@
 // ObjectOrientedDesign/Result.kt
+// Report success or failure
 package oodesign
 
-// Report success or failure:
 sealed class Result(
   val success: Boolean,
   val room: Room

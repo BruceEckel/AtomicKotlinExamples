@@ -1803,11 +1803,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testStage() {
-    testExample("Examples/ObjectOrientedDesign/Stage.kt", oodesign.StageKt::main);
-  }
-
-  @Test
   public void testObjectEx1() {
     testExample("Examples/Objects/ObjectEx1.kt", objectex1.ObjectEx1Kt::main);
   }

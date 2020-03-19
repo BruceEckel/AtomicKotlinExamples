@@ -20,22 +20,3 @@ f_._....._##R#_#...a___o._.##..__#_._....._.
 ._.________#_._....._.._._.....__#_._....._.
 ._._..i..__#_._....._.._c________#_._..e.._.
 """.trim()
-
-val solution = """
-sseeneeneee
-eeees
-essssseeeeeeeeeee
-eeneeeees
-essssseeee
-wwwwwwwww
-seeeeneeeesse
-eeeeeeeeee
-wssse
-wwwwwwwww
-wnneeeeessww
-nwwwsw
-wwwwwwwwwww
-wwwwwwww
-eeeeeeeee
-eeesswwwwwww
-""".trim()

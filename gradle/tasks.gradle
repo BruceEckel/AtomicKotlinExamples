@@ -2293,11 +2293,6 @@ task SpreadOperator(type: JavaExec) {
     main = 'SpreadOperatorKt'
 }
 
-task Stage(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesign.StageKt'
-}
-
 task StateOfAClass(type: JavaExec) {
     classpath kotlinClassPath
     main = 'abstractstate.StateOfAClassKt'
@@ -3236,7 +3231,6 @@ task run (dependsOn: [
     'SortWith',
     'Speakers',
     'SpreadOperator',
-    'Stage',
     'StateOfAClass',
     'StoringLambda',
     'StrTemplates',

@@ -36,15 +36,3 @@ class Stage(val maze: String) {
     }
   }
 }
-
-fun main() {
-  val teleports = stringMaze.toCharArray()
-    .sorted().filter{ it.isLowerCase() }
-  println("${teleports.size} $teleports")
-  val stage = Stage(stringMaze)
-  val pairs = stage.teleportPairs()
-  println("${pairs.size}")
-  pairs.forEach { println(it) }
-  println(stage.robot)
-  stage.rooms.forEach { println(it) }
-}
