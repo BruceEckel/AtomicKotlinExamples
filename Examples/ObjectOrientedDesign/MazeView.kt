@@ -7,12 +7,12 @@ fun Stage.showMaze() = mazeView() +
 fun Stage.mazeView(): String {
   var result = ""
   var currentRow = 0
-  rooms.forEach { (_, room) ->
-    if (room.row != currentRow) {
+  rooms.forEach {
+    if (it.row != currentRow) {
       result += "\n"
-      currentRow = room.row
+      currentRow = it.row
     }
-    result += room.agent.id()
+    result += it.agent.id()
   }
   return result
 }

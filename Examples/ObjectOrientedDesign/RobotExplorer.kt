@@ -58,8 +58,6 @@ fun robotExplorer(stage: Stage) {
 
 fun main() {
   val stage = Stage(stringMaze)
-  stage.rooms.forEach { _, room ->
-    println(room)
-  }
+  stage.rooms.forEach { println(it) }
   robotExplorer(stage)
 }
