@@ -4,7 +4,8 @@ package oodesign
 sealed class Actor {
   abstract val symbol: Char
   open fun id() = symbol
-  abstract val room: Room
+  open val room: Room
+    get() = throw NotImplementedError()
   override fun toString() =
     "${this::class.simpleName} ${id()}" +
       "(${room.row}, ${room.col})"
@@ -30,8 +31,6 @@ sealed class Actor {
 
 class Void() : Actor() {
   override val symbol = '~'
-  override val room: Room
-    get() = throw IllegalAccessException()
   override fun makeActor(r: Room) = Void()
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
@@ -46,6 +45,15 @@ class Wall(
     robot.room // Stay in old room
 }
 
+class Empty(
+  override val room: Room = Room()
+) : Actor() {
+  override val symbol = '_'
+  override fun makeActor(r: Room) = Empty(r)
+  // Move into new room:
+  override fun interact(robot: Robot) = room
+}
+
 class Food(
   override val room: Room = Room()
 ) : Actor() {
@@ -58,22 +66,13 @@ class Food(
   }
 }
 
-class Empty(
-  override val room: Room = Room()
-) : Actor() {
-  override val symbol = '_'
-  override fun makeActor(r: Room) = Empty(r)
-  // Move into new room:
-  override fun interact(robot: Robot) = room
-}
-
 class EndGame(
   override val room: Room = Room()
 ) : Actor() {
   override val symbol = '!'
   override fun makeActor(r: Room) = EndGame(r)
   override fun interact(robot: Robot) =
-    Room(0, 0, EndGame(room))
+    Room(room.row, room.col, EndGame(room))
 }
 
 class Robot(
