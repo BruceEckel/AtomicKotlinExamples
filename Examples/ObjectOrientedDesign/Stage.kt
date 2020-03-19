@@ -12,14 +12,9 @@ class Stage(val maze: String) {
         Factory.make(ch, row, col)
       }
     }.flatten()
-  fun teleportPairs() = rooms
-    .filter {
-      it.actor is Teleport
-    }.map {
-      it.actor as Teleport
-    }.sortedBy {
-      it.symbol
-    }.chunked(2)
+  fun teleportPairs() = rooms.map { it.actor }
+    .filterIsInstance<Teleport>()
+    .sortedBy { it.symbol }.chunked(2)
   init { // The 'Builder' pattern:
     // Step 1: Find the Robot:
     robot.room = rooms.first {

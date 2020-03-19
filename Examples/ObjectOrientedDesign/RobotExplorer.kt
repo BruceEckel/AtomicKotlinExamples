@@ -7,26 +7,22 @@ import org.hexworks.zircon.api.uievent.*
 import org.hexworks.zircon.api.graphics.*
 import org.hexworks.zircon.api.color.*
 
-private val robotTile = Tile.newBuilder()
-  .withForegroundColor(ANSITileColor.RED)
-  .withCharacter('R')
-  .buildCharacterTile()
-
 fun robotExplorer(stage: Stage) {
+  val style = StyleSet.defaultStyle()
+  fun charTile(c: Char, s: StyleSet = style) =
+    Tile.createCharacterTile(c, s)
   val grid = SwingApplications
     .startTileGrid(AppConfig.newBuilder()
       .withDefaultTileset(
         TrueTypeFontResources.ubuntuMono(25))
       .withSize(Size.create(
-        stage.width, stage.height))
+        stage.width, stage.height + 1))
       .build())
   val maze = stringMaze
     .filter { it != '\n' }.iterator()
   grid.size.fetchPositions().forEach {
-    grid.putTile(
-      Tile.createCharacterTile(maze.next(),
-        StyleSet.defaultStyle())
-    )
+    if (maze.hasNext())
+      grid.putTile(charTile(maze.next()))
   }
   fun robotPosition() = Position.create(
     stage.robot.room.col,
@@ -34,21 +30,27 @@ fun robotExplorer(stage: Stage) {
   val robotIcon = Layer.newBuilder()
     .withSize(Size.one())
     .withOffset(robotPosition())
-    .build()
-    .apply { fill(robotTile) }
+    .build().apply {
+      fill(charTile(stage.robot.symbol,
+        style.withForegroundColor(
+          ANSITileColor.RED)))
+    }
   grid.addLayer(robotIcon)
-  fun updateCharAtRobot() {
-    val tile = Tile.newBuilder()
-      .withCharacter(
-        stage.robot.room.actor.id())
-      .buildCharacterTile()
+  fun updateSymbolAtRobot() {
     grid.cursorPosition = robotPosition()
-    grid.putTile(tile)
+    grid.putTile(
+      charTile(stage.robot.room.actor.id()))
+  }
+  fun console(s: String) {
+    grid.cursorPosition =
+      Position.create(1, stage.height + 1)
+    s.forEach { grid.putTile(charTile(it)) }
   }
   fun robotGo(urge: Urge) {
-    updateCharAtRobot()
+    updateSymbolAtRobot()
     stage.robot.move(urge)
     robotIcon.moveTo(robotPosition())
+    console("Energy: ${stage.robot.energy}")
   }
   grid.processKeyboardEvents(
     KeyboardEventType.KEY_PRESSED
