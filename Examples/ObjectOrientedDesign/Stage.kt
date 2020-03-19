@@ -18,7 +18,7 @@ class Stage(val maze: String) {
     }.map {
       it.actor as Teleport
     }.sortedBy {
-      it.target
+      it.symbol
     }.chunked(2)
   init { // The 'Builder' pattern:
     // Step 1: Find the Robot:
@@ -31,8 +31,8 @@ class Stage(val maze: String) {
     }
     // Step 3: Connect the Teleport pairs
     for ((a, b) in teleportPairs()) {
-      a.targetRoom = b.room
-      b.targetRoom = a.room
+      a.target = b.room
+      b.target = a.room
     }
   }
 }

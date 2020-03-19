@@ -88,26 +88,21 @@ class Robot(
 }
 
 class Teleport(
-  val target: Char = 'Z',
+  override val symbol: Char = 'T',
   override val room: Room = Room()
 ) : Actor() {
-  override val symbol = 'T'
-  var targetRoom = Room()
-  override fun id() = target
+  var target = Room()
   override fun toString() =
-    "${this::class.simpleName}: $target" +
-    "(${targetRoom.row}, ${targetRoom.col})"
-  override fun create(
-    ch: Char, row: Int, col: Int): Result {
+    "${this::class.simpleName}: ${id()}" +
+    "(${target.row}, ${target.col})"
+  override fun
+    create(ch: Char, row: Int, col: Int) =
     if (ch in 'a'..'z') {
       val room = Room(row, col)
       room.actor = Teleport(ch, room)
-      return Result.Success(room)
-    }
-    return Result.Fail
-  }
-  override fun interact(robot: Robot) =
-    targetRoom
+      Result.Success(room)
+    } else Result.Fail
+  override fun interact(robot: Robot) = target
 }
 
 class Bomb(
