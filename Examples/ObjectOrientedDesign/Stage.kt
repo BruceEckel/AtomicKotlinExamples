@@ -7,11 +7,11 @@ class Stage(val maze: String) {
   val width = lines[0].length
   val robot = Robot(Room())
   val rooms: List<Room> =
-    lines.withIndex().map { (row, line) ->
+    lines.withIndex().flatMap { (row, line) ->
       line.withIndex().map { (col, ch) ->
         Factory.make(ch, row, col)
       }
-    }.flatten()
+    }
   fun teleportPairs() = rooms.map { it.actor }
     .filterIsInstance<Teleport>()
     .sortedBy { it.symbol }.chunked(2)
