@@ -25,7 +25,7 @@ class Stage(val maze: String) {
       a.target = b.room
       b.target = a.room
     }
-    // Step 3: Find the Robot:
+    // Step 3: Find the Robot
     robot.room = rooms.first {
       it.actor.symbol == robot.symbol
     }

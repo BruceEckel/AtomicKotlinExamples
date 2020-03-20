@@ -1,4 +1,4 @@
-// ObjectOrientedDesign/RobotExplorer.kt
+// ObjectOrientedDesign/OODesignEx2.kt
 package oodesign
 import org.hexworks.zircon.api.*
 import org.hexworks.zircon.api.application.*
@@ -7,7 +7,9 @@ import org.hexworks.zircon.api.uievent.*
 import org.hexworks.zircon.api.graphics.*
 import org.hexworks.zircon.api.color.*
 
-fun robotExplorer(stage: Stage) {
+fun robotExplorer2(stage: Stage) {
+  var moves = stage.maze
+    .filter { it == '.' }.length / 2 + 50
   val style = StyleSet.defaultStyle()
   // Turn a character into a Tile:
   fun charTile(c: Char, s: StyleSet = style) =
@@ -19,7 +21,7 @@ fun robotExplorer(stage: Stage) {
         TrueTypeFontResources.ubuntuMono(25))
       .withSize(Size.create(
         stage.width, stage.height + 1))
-      .build()) // +1 for a blank bottom line
+      .build())
   // Strip newlines and create an iterator:
   val maze = stage.maze
     .filter { it != '\n' }.iterator()
@@ -32,7 +34,7 @@ fun robotExplorer(stage: Stage) {
   fun robotPosition() = Position.create(
     stage.robot.room.col,
     stage.robot.room.row)
-  // The red robot icon as a layer:
+  // Create the red robot icon layer:
   val robotIcon = Layer.newBuilder()
     .withSize(Size.one())
     .withOffset(robotPosition())
@@ -57,10 +59,14 @@ fun robotExplorer(stage: Stage) {
   }
   // Move the robot and update the screen:
   fun robotGo(urge: Urge) {
+    moves--
     updateSymbolAtRobot()
     stage.robot.move(urge)
     robotIcon.moveTo(robotPosition())
-    console("Energy: ${stage.robot.energy}  ")
+    console(
+      "Energy: ${stage.robot.energy}  " +
+      "Moves Remaining: $moves  "
+    )
   }
   // Respond to the keyboard arrow keys:
   grid.processKeyboardEvents(
@@ -77,5 +83,5 @@ fun robotExplorer(stage: Stage) {
 }
 
 fun main() {
-  robotExplorer(Stage(stringMaze))
+  robotExplorer2(Stage(stringMaze))
 }

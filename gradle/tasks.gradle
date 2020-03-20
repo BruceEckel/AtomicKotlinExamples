@@ -1783,6 +1783,11 @@ task NumberTypes(type: JavaExec) {
     main = 'NumberTypesKt'
 }
 
+task OODesignEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'oodesign.OODesignEx2Kt'
+}
+
 task OODesignEx3(type: JavaExec) {
     classpath kotlinClassPath
     main = 'oodesignex3.OODesignEx3Kt'
@@ -3129,6 +3134,7 @@ task run (dependsOn: [
     'NumberSequence1',
     'NumberSequence2',
     'NumberTypes',
+    'OODesignEx2',
     'OODesignEx3',
     'ObjectCounter',
     'ObjectEx1',

@@ -102,15 +102,3 @@ class Teleport(
     } else Result.Fail
   override fun interact(robot: Robot) = target
 }
-
-class Bomb(
-  override val room: Room = Room()
-) : Actor() {
-  override val symbol = '*'
-  override fun makeActor(r: Room) = Bomb(r)
-  override fun interact(robot: Robot): Room {
-    robot.energy = 0 // Bomb erases energy
-    room.actor = Empty(room)
-    return room
-  }
-}

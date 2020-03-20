@@ -1793,6 +1793,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testOODesignEx2() {
+    testExample("Examples/ObjectOrientedDesign/OODesignEx2.kt", oodesign.OODesignEx2Kt::main);
+  }
+
+  @Test
   public void testOODesignEx3() {
     testExample("Examples/ObjectOrientedDesign/OODesignEx3.kt", oodesignex3.OODesignEx3Kt::main);
   }
