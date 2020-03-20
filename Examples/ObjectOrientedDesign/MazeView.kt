@@ -4,7 +4,7 @@ package oodesign
 fun Stage.mazeView(): String {
   var currentRow = 0
   fun Room.newline() =
-    if (row != currentRow) {
+    if (currentRow != row) {
       currentRow = row
       "\n"
     } else ""

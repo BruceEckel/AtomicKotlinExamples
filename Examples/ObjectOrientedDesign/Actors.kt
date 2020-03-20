@@ -14,17 +14,15 @@ sealed class Actor {
   // Makes the exact type of Actor object:
   open fun makeActor(r: Room): Actor =
     throw NotImplementedError()
-  // Match the symbol then create & configure
+  // Match the symbol to create & configure
   // a Room with the new Actor, or Fail:
-  open fun create(
-    ch: Char, row: Int, col: Int): Result {
+  open
+  fun create(ch: Char, row: Int, col: Int) =
     if (ch == symbol) {
       val room = Room(row, col)
       room.actor = makeActor(room)
-      return Result.Success(room)
-    }
-    return Result.Fail
-  }
+      Result.Success(room)
+    } else Result.Fail
 }
 // To be continued ...
 // ... continuing

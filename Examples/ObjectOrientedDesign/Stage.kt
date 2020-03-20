@@ -16,18 +16,18 @@ class Stage(val maze: String) {
     .filterIsInstance<Teleport>()
     .sortedBy { it.symbol }.chunked(2)
   init { // The 'Builder' pattern:
-    // Step 1: Find the Robot:
-    robot.room = rooms.first {
-      it.actor.symbol == robot.symbol
-    }
-    // Step 2: Connect the doors
+    // Step 1: Connect the doors
     rooms.forEach {
       it.doors.connect(it.row, it.col, rooms)
     }
-    // Step 3: Connect the Teleport pairs
+    // Step 2: Connect the Teleport pairs
     for ((a, b) in teleportPairs()) {
       a.target = b.room
       b.target = a.room
+    }
+    // Step 3: Find the Robot:
+    robot.room = rooms.first {
+      it.actor.symbol == robot.symbol
     }
   }
 }
