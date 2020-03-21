@@ -32,9 +32,9 @@ fun main() {
   ZIDelegationInheritance.g()
   ZIDelegationInheritance().u()
   trace eq """
-  ZIClosed.f() ZIClosed.g()
-  ZIClosed.f()
+    ZIClosed.f() ZIClosed.g()
+    ZIClosed.f()
     ZIDelegationInheritance.g()
     ZIDelegationInheritance.h()
-  """
+    """
 }

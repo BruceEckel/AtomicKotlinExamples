@@ -8,7 +8,9 @@ interface Character {
   val name: String
   val type: String
   fun skills(): String
-  fun play() = "$name $type: ${skills()}"
+  fun play() {
+    trace("$name $type:\n ${skills()}")
+  }
 }
 
 interface Magician {
@@ -65,8 +67,12 @@ class Goblin(override val name: String) :
   override fun skills() = super.skills()
 }
 
-fun match(c1: Character, c2: Character) =
-  trace("${c1.play()} -> ${c2.play()}")
+fun match(c1: Character, c2: Character) {
+  c1.play()
+  trace("->")
+  c2.play()
+  trace(".")
+}
 
 fun main() {
   val characters: List<Character> = listOf(
@@ -82,75 +88,75 @@ fun main() {
       .forEach { c2 -> match(c1, c2) }
   }
   trace eq """
-  Titania Elf: Magic, Flying ->
-    Legolas FightingElf:
-      Magic, Flying, Fighting
-  Titania Elf: Magic, Flying ->
-    Conan Warrior: Fighting
-  Titania Elf: Magic, Flying ->
-    Puff Dragon: Magic, Flying
-  Titania Elf: Magic, Flying ->
-    Max Wizard: Magic
-  Titania Elf: Magic, Flying ->
-    Gorbag Goblin: Fighting
+  Titania Elf:  Magic, Flying ->
   Legolas FightingElf:
-      Magic, Flying, Fighting ->
-    Titania Elf: Magic, Flying
+   Magic, Flying, Fighting .
+  Titania Elf:  Magic, Flying ->
+  Conan Warrior:  Fighting .
+  Titania Elf:  Magic, Flying ->
+  Puff Dragon:  Magic, Flying .
+  Titania Elf:  Magic, Flying ->
+  Max Wizard:  Magic .
+  Titania Elf:  Magic, Flying ->
+  Gorbag Goblin:  Fighting .
   Legolas FightingElf:
-      Magic, Flying, Fighting ->
-    Conan Warrior: Fighting
+   Magic, Flying, Fighting ->
+  Titania Elf:  Magic, Flying .
   Legolas FightingElf:
-      Magic, Flying, Fighting ->
-    Puff Dragon: Magic, Flying
+   Magic, Flying, Fighting ->
+  Conan Warrior:  Fighting .
   Legolas FightingElf:
-      Magic, Flying, Fighting ->
-    Max Wizard: Magic
+   Magic, Flying, Fighting ->
+  Puff Dragon:  Magic, Flying .
   Legolas FightingElf:
-      Magic, Flying, Fighting ->
-    Gorbag Goblin: Fighting
-  Conan Warrior: Fighting ->
-    Titania Elf: Magic, Flying
-  Conan Warrior: Fighting ->
-    Legolas FightingElf:
-      Magic, Flying, Fighting
-  Conan Warrior: Fighting ->
-    Puff Dragon: Magic, Flying
-  Conan Warrior: Fighting ->
-    Max Wizard: Magic
-  Conan Warrior: Fighting ->
-    Gorbag Goblin: Fighting
-  Puff Dragon: Magic, Flying ->
-    Titania Elf: Magic, Flying
-  Puff Dragon: Magic, Flying ->
-    Legolas FightingElf:
-      Magic, Flying, Fighting
-  Puff Dragon: Magic, Flying ->
-    Conan Warrior: Fighting
-  Puff Dragon: Magic, Flying ->
-    Max Wizard: Magic
-  Puff Dragon: Magic, Flying ->
-    Gorbag Goblin: Fighting
-  Max Wizard: Magic ->
-    Titania Elf: Magic, Flying
-  Max Wizard: Magic ->
-    Legolas FightingElf:
-      Magic, Flying, Fighting
-  Max Wizard: Magic ->
-    Conan Warrior: Fighting
-  Max Wizard: Magic ->
-    Puff Dragon: Magic, Flying
-  Max Wizard: Magic ->
-    Gorbag Goblin: Fighting
-  Gorbag Goblin: Fighting ->
-    Titania Elf: Magic, Flying
-  Gorbag Goblin: Fighting ->
-    Legolas FightingElf:
-      Magic, Flying, Fighting
-  Gorbag Goblin: Fighting ->
-    Conan Warrior: Fighting
-  Gorbag Goblin: Fighting ->
-    Puff Dragon: Magic, Flying
-  Gorbag Goblin: Fighting ->
-    Max Wizard: Magic
+   Magic, Flying, Fighting ->
+  Max Wizard:  Magic .
+  Legolas FightingElf:
+   Magic, Flying, Fighting ->
+  Gorbag Goblin:  Fighting .
+  Conan Warrior:  Fighting ->
+  Titania Elf:  Magic, Flying .
+  Conan Warrior:  Fighting ->
+  Legolas FightingElf:
+   Magic, Flying, Fighting .
+  Conan Warrior:  Fighting ->
+  Puff Dragon:  Magic, Flying .
+  Conan Warrior:  Fighting ->
+  Max Wizard:  Magic .
+  Conan Warrior:  Fighting ->
+  Gorbag Goblin:  Fighting .
+  Puff Dragon:  Magic, Flying ->
+  Titania Elf:  Magic, Flying .
+  Puff Dragon:  Magic, Flying ->
+  Legolas FightingElf:
+   Magic, Flying, Fighting .
+  Puff Dragon:  Magic, Flying ->
+  Conan Warrior:  Fighting .
+  Puff Dragon:  Magic, Flying ->
+  Max Wizard:  Magic .
+  Puff Dragon:  Magic, Flying ->
+  Gorbag Goblin:  Fighting .
+  Max Wizard:  Magic ->
+  Titania Elf:  Magic, Flying .
+  Max Wizard:  Magic ->
+  Legolas FightingElf:
+   Magic, Flying, Fighting .
+  Max Wizard:  Magic ->
+  Conan Warrior:  Fighting .
+  Max Wizard:  Magic ->
+  Puff Dragon:  Magic, Flying .
+  Max Wizard:  Magic ->
+  Gorbag Goblin:  Fighting .
+  Gorbag Goblin:  Fighting ->
+  Titania Elf:  Magic, Flying .
+  Gorbag Goblin:  Fighting ->
+  Legolas FightingElf:
+   Magic, Flying, Fighting .
+  Gorbag Goblin:  Fighting ->
+  Conan Warrior:  Fighting .
+  Gorbag Goblin:  Fighting ->
+  Puff Dragon:  Magic, Flying .
+  Gorbag Goblin:  Fighting ->
+  Max Wizard:  Magic .
   """
 }

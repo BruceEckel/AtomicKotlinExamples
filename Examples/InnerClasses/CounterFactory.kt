@@ -16,7 +16,7 @@ class CounterFactory {
       init { trace("Local()") }
       override fun next(): Int {
         // Access local identifiers:
-        trace += "$name $count"
+        trace("$name $count")
         return count++
       }
     }
@@ -28,7 +28,7 @@ class CounterFactory {
       init { trace("Counter()") }
       override fun next(): Int {
         // Access local identifiers:
-        trace += "$name $count"
+        trace("$name $count")
         return count++
       }
     }
@@ -38,13 +38,12 @@ class CounterFactory {
 fun main() {
   fun test(counter: Counter) {
     (0..3).forEach { counter.next() }
-    trace.newline()
   }
   val cf = CounterFactory()
   test(cf.new("Local"))
   test(cf.new2("Anon"))
   trace eq """
-  Local() Local 0 Local 1 Local 2 Local 3
-  Counter() Anon 4 Anon 5 Anon 6 Anon 7
-  """
+    Local() Local 0 Local 1 Local 2 Local 3
+    Counter() Anon 4 Anon 5 Anon 6 Anon 7
+    """
 }

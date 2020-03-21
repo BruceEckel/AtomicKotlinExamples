@@ -34,7 +34,7 @@ class House: Cleanable("House") {
 }
 
 fun main() {
-  Trace(House().clean()) eq """
+  House().clean().trim() eq """
   [[[[] Shelf clean
   , [] Shelf clean
   , [] Drawer clean
@@ -56,5 +56,5 @@ fun main() {
   ] Bathroom clean
   ] Guest Bedroom clean
   ] House clean
-  """
+  """.trimIndent()
 }

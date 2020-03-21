@@ -8,7 +8,8 @@ interface Character {
   val name: String
   val type: String
   fun skills(): String
-  fun play() = "$name $type: ${skills()}"
+  fun play() =
+    trace("$name $type:\n ${skills()}")
 }
 
 interface Magician {
@@ -53,8 +54,12 @@ class Dragon(override val name: String) :
       super<Flyer>.skills()
 }
 
-fun match(c1: Character, c2: Character) =
-  trace("${c1.play()} -> ${c2.play()}")
+fun match(c1: Character, c2: Character) {
+  c1.play()
+  trace("->")
+  c2.play()
+  trace(".")
+}
 
 fun main() {
   val characters: List<Character> = listOf(
@@ -68,35 +73,35 @@ fun main() {
       .forEach { c2 -> match(c1, c2) }
   }
   trace eq """
-  Titania Elf: Magic, Flying ->
-    Legolas FightingElf:
-      Magic, Flying, Fighting
-  Titania Elf: Magic, Flying ->
-    Conan Warrior: Fighting
-  Titania Elf: Magic, Flying ->
-    Puff Dragon: Magic, Flying
+  Titania Elf:  Magic, Flying ->
   Legolas FightingElf:
-    Magic, Flying, Fighting ->
-      Titania Elf: Magic, Flying
+   Magic, Flying, Fighting .
+  Titania Elf:  Magic, Flying ->
+  Conan Warrior:  Fighting .
+  Titania Elf:  Magic, Flying ->
+  Puff Dragon:  Magic, Flying .
   Legolas FightingElf:
-    Magic, Flying, Fighting ->
-      Conan Warrior: Fighting
+   Magic, Flying, Fighting ->
+  Titania Elf:  Magic, Flying .
   Legolas FightingElf:
-    Magic, Flying, Fighting ->
-      Puff Dragon: Magic, Flying
-  Conan Warrior: Fighting ->
-    Titania Elf: Magic, Flying
-  Conan Warrior: Fighting ->
-    Legolas FightingElf:
-      Magic, Flying, Fighting
-  Conan Warrior: Fighting ->
-    Puff Dragon: Magic, Flying
-  Puff Dragon: Magic, Flying ->
-    Titania Elf: Magic, Flying
-  Puff Dragon: Magic, Flying ->
-    Legolas FightingElf:
-      Magic, Flying, Fighting
-  Puff Dragon: Magic, Flying ->
-    Conan Warrior: Fighting
+   Magic, Flying, Fighting ->
+  Conan Warrior:  Fighting .
+  Legolas FightingElf:
+   Magic, Flying, Fighting ->
+  Puff Dragon:  Magic, Flying .
+  Conan Warrior:  Fighting ->
+  Titania Elf:  Magic, Flying .
+  Conan Warrior:  Fighting ->
+  Legolas FightingElf:
+   Magic, Flying, Fighting .
+  Conan Warrior:  Fighting ->
+  Puff Dragon:  Magic, Flying .
+  Puff Dragon:  Magic, Flying ->
+  Titania Elf:  Magic, Flying .
+  Puff Dragon:  Magic, Flying ->
+  Legolas FightingElf:
+   Magic, Flying, Fighting .
+  Puff Dragon:  Magic, Flying ->
+  Conan Warrior:  Fighting .
   """
 }

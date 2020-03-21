@@ -11,12 +11,12 @@ class DeltaTemperature(
 
 fun DeltaTemperature.heat() {
   if (current < target)
-    trace("heating to $target ")
+    trace("heating to $target")
 }
 
 fun DeltaTemperature.cool() {
   if (current > target)
-    trace("cooling to $target ")
+    trace("cooling to $target")
 }
 
 fun adjust(deltaT: DeltaTemperature) {

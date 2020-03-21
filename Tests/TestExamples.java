@@ -463,13 +463,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDestructuringEx3() {
-    testExample("Examples/Destructuring/DestructuringEx3.kt", destructuringex3.DestructuringEx3Kt::main);
+  public void testForLoop() {
+    testExample("Examples/Destructuring/ForLoop.kt", destructuringInLoops.ForLoopKt::main);
   }
 
   @Test
-  public void testForLoop() {
-    testExample("Examples/Destructuring/ForLoop.kt", ForLoopKt::main);
+  public void testLoopWithIndex() {
+    testExample("Examples/Destructuring/LoopWithIndex.kt", destructuringInLoops.LoopWithIndexKt::main);
   }
 
   @Test
@@ -2555,6 +2555,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTestingExample() {
     testExample("Examples/Testing/TestingExample.kt", TestingExampleKt::main);
+  }
+
+  @Test
+  public void testTrace1() {
+    testExample("Examples/Testing/Trace1.kt", Trace1Kt::main);
+  }
+
+  @Test
+  public void testTrace2() {
+    testExample("Examples/Testing/Trace2.kt", Trace2Kt::main);
   }
 
   @Test

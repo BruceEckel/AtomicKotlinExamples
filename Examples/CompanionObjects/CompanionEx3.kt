@@ -17,7 +17,7 @@ data class ID(
       .joinToString("")
     fun test(n: Int) = List(n) {
       ID(('a' + it).toString())
-    }
+    }.joinToString(",\n")
   }
 }
 
@@ -57,12 +57,12 @@ class Bank(val name: String) {
 }
 
 fun main() {
-  Trace(ID.test(4)) eq """
-  [ID(name=a, id=weazblk9UF),
-   ID(name=b, id=LCcPJtUGh5),
-   ID(name=c, id=Acs5BzSj6m),
-   ID(name=d, id=gHrshDvhwc)]
-  """
+  ID.test(4) eq """
+  ID(name=a, id=weazblk9UF),
+  ID(name=b, id=LCcPJtUGh5),
+  ID(name=c, id=Acs5BzSj6m),
+  ID(name=d, id=gHrshDvhwc)
+  """.trimIndent()
   val bank = Bank("Jerry's Savings & Loan")
   listOf(ID("Morty Smith"), ID("Beth Smith"),
     ID("Summer Smith")).forEach {
@@ -70,9 +70,9 @@ fun main() {
     bank.addID(it)
     bank.completeAccount(it)
   }
-  Trace(bank) eq """
+  bank eq """
   ID(name=Morty Smith, id=ePkc0HjTAU) 1000
   ID(name=Beth Smith, id=jjePlEO93w) 1001
   ID(name=Summer Smith, id=C8yaeFEgv6) 1002
-  """
+  """.trimIndent()
 }

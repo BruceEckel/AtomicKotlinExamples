@@ -15,6 +15,6 @@ fun main() {
   val items = listOf(
     Bolt("Slotted"), Bolt("Hex")
   )
-  Trace(items.map(Item::type)) eq
+  items.map(Item::type) eq
     "[Type(type=Slotted), Type(type=Hex)]"
 }

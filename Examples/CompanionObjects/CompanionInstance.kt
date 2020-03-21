@@ -47,10 +47,10 @@ fun main() {
   ZICompanionInheritance.g()
   ZICompanionInheritance().u()
   trace eq """
-  ZIClass.f() ZIClass.g()
-  ZIOpen.f() ZIOpen.g()
-  ZIOpen.f()
+    ZIClass.f() ZIClass.g()
+    ZIOpen.f() ZIOpen.g()
+    ZIOpen.f()
     ZICompanionInheritance.g()
     ZICompanionInheritance.h()
-  """
+    """
 }

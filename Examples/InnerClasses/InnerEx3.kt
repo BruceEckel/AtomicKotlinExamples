@@ -32,7 +32,7 @@ class Container<T>(
 fun <T> traceAll(select: Selector<T>): Trace {
   val trace = Trace()
   while (!select.end()) {
-    trace += "${select.current()}"
+    trace("${select.current()}")
     select.next()
   }
   return trace
@@ -42,7 +42,7 @@ fun <T> traceAll2(ib: Iterable<T>): Trace {
   val trace = Trace()
   val iter = ib.iterator()
   while (iter.hasNext())
-    trace += "${iter.next()}"
+    trace("${iter.next()}")
   return trace
 }
 

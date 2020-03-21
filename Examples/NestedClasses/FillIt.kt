@@ -39,7 +39,7 @@ class FillIt(
 fun main() {
   val game = FillIt(8, 17)
   game.play()
-  Trace(game) eq """
+  game eq """
   [O, X, O, X, O, X, X, X]
   [X, O, O, O, O, O, X, X]
   [O, O, X, O, O, O, X, X]
@@ -48,5 +48,5 @@ fun main() {
   [X, X, O, O, X, X, O, X]
   [O, X, X, O, O, O, X, O]
   [X, O, X, X, X, O, X, X]
-  """
+  """.trimIndent()
 }

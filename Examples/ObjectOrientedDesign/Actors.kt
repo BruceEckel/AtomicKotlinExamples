@@ -24,15 +24,20 @@ sealed class Actor {
       Result.Success(room)
     } else Result.Fail
 }
-// To be continued ...
-// ... continuing
+// Continued ...
+// ... Continuing
 
 class Void() : Actor() {
   override val symbol = '~'
-  override fun makeActor(r: Room) = Void()
+  override fun makeActor(r: Room) = void
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
+  companion object {
+    val void = Void()
+  }
 }
+// Continued ...
+// ... Continuing
 
 class Wall(
   override val room: Room = Room()
@@ -42,15 +47,19 @@ class Wall(
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
 }
+// Continued ...
+// ... Continuing
 
 class Empty(
   override val room: Room = Room()
 ) : Actor() {
   override val symbol = '_'
   override fun makeActor(r: Room) = Empty(r)
-  // Move into new room:
+  // The Robot moves into the new room:
   override fun interact(robot: Robot) = room
 }
+// Continued ...
+// ... Continuing
 
 class Food(
   override val room: Room = Room()
@@ -63,6 +72,8 @@ class Food(
     return room // Move into new room
   }
 }
+// Continued ...
+// ... Continuing
 
 class EndGame(
   override val room: Room = Room()
@@ -72,6 +83,8 @@ class EndGame(
   override fun interact(robot: Robot) =
     Room(room.row, room.col, EndGame(room))
 }
+// Continued ...
+// ... Continuing
 
 class Robot(
   override var room: Room = Room()
@@ -84,6 +97,8 @@ class Robot(
     room = nextRoom.actor.interact(this)
   }
 }
+// Continued ...
+// ... Continuing
 
 class Teleport(
   override val symbol: Char = 'T',

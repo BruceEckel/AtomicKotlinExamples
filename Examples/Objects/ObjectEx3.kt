@@ -43,6 +43,6 @@ object MonkeysVsSnakes : AdventureGame {
 
 fun main() {
   MonkeysVsSnakes.populate()
-  Trace(MonkeysVsSnakes.characters) eq
+  MonkeysVsSnakes.characters eq
     "[Monkey, Snake]"
 }

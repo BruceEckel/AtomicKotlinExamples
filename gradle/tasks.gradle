@@ -653,11 +653,6 @@ task DestructuringEx2(type: JavaExec) {
     main = 'destructuringex2.DestructuringEx2Kt'
 }
 
-task DestructuringEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'destructuringex3.DestructuringEx3Kt'
-}
-
 task DestructuringMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.DestructuringMapKt'
@@ -935,7 +930,7 @@ task ForLabeled(type: JavaExec) {
 
 task ForLoop(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ForLoopKt'
+    main = 'destructuringInLoops.ForLoopKt'
 }
 
 task ForWithCharRange(type: JavaExec) {
@@ -1491,6 +1486,11 @@ task LogChanges(type: JavaExec) {
 task LongConstants(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LongConstantsKt'
+}
+
+task LoopWithIndex(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'destructuringInLoops.LoopWithIndexKt'
 }
 
 task MainArgConversion(type: JavaExec) {
@@ -2483,6 +2483,16 @@ task TopLevelFunctionRef(type: JavaExec) {
     main = 'memberreferences2.TopLevelFunctionRefKt'
 }
 
+task Trace1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Trace1Kt'
+}
+
+task Trace2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Trace2Kt'
+}
+
 task TransformingMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TransformingMapKt'
@@ -2908,7 +2918,6 @@ task run (dependsOn: [
     'DestructuringData',
     'DestructuringDuo',
     'DestructuringEx2',
-    'DestructuringEx3',
     'DestructuringMap',
     'DeviceExtensions',
     'DeviceMembers',
@@ -3076,6 +3085,7 @@ task run (dependsOn: [
     'LocalInnerClasses',
     'LogChanges',
     'LongConstants',
+    'LoopWithIndex',
     'MainArgConversion',
     'MainArgs',
     'MakeSalad',
@@ -3274,6 +3284,8 @@ task run (dependsOn: [
     'ToIntException',
     'Todo',
     'TopLevelFunctionRef',
+    'Trace1',
+    'Trace2',
     'TransformingMap',
     'TrimMargin',
     'TrimmedMembers',
