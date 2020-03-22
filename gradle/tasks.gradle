@@ -18,21 +18,6 @@ task AVarIsMutable(type: JavaExec) {
     main = 'AVarIsMutableKt'
 }
 
-task AbsExercise1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'abstractclasses.AbsExercise1Kt'
-}
-
-task AbsExercise2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'abstractclasses2.AbsExercise2Kt'
-}
-
-task AbsExercise3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'abstractclasses3.AbsExercise3Kt'
-}
-
 task Adapter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritanceextensions.AdapterKt'
@@ -176,21 +161,6 @@ task AverageIncomeWithException(type: JavaExec) {
 task AverageIncomeWithNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'withnull.AverageIncomeWithNullKt'
-}
-
-task BCIExercise1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseclassinit.BCIExercise1Kt'
-}
-
-task BCIExercise2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseclassinit.BCIExercise2Kt'
-}
-
-task BCIExercise3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseclassinit.BCIExercise3Kt'
 }
 
 task BMIEnglish(type: JavaExec) {
@@ -368,21 +338,6 @@ task ClassBodies(type: JavaExec) {
     main = 'ClassBodiesKt'
 }
 
-task ClassDelegEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'classdelegationex1.ClassDelegEx1Kt'
-}
-
-task ClassDelegEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'classdelegationex2.ClassDelegEx2Kt'
-}
-
-task ClassDelegEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'classdelegationex3.ClassDelegEx3Kt'
-}
-
 task Closeable(type: JavaExec) {
     classpath kotlinClassPath
     main = 'resourcecleanup.CloseableKt'
@@ -428,21 +383,6 @@ task CompanionDelegation(type: JavaExec) {
     main = 'companionobjects.CompanionDelegationKt'
 }
 
-task CompanionEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'companionobjectex1.CompanionEx1Kt'
-}
-
-task CompanionEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'companionobjectex2.CompanionEx2Kt'
-}
-
-task CompanionEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'companionobjectex3.CompanionEx3Kt'
-}
-
 task CompanionFactory(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjects.CompanionFactoryKt'
@@ -466,21 +406,6 @@ task CompareTo(type: JavaExec) {
 task ComposeAdapter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritanceextensions2.ComposeAdapterKt'
-}
-
-task CompositionExercise1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'compositionex1.CompositionExercise1Kt'
-}
-
-task CompositionExercise2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'compositionex2.CompositionExercise2Kt'
-}
-
-task CompositionExercise3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'compositionex3.CompositionExercise3Kt'
 }
 
 task Computation(type: JavaExec) {
@@ -698,21 +623,6 @@ task Dog(type: JavaExec) {
     main = 'DogKt'
 }
 
-task DownCastEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'downcastingex1.DownCastEx1Kt'
-}
-
-task DownCastEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'downcasting.DownCastEx2Kt'
-}
-
-task DownCastEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'downcastingex3.DownCastEx3Kt'
-}
-
 task Drawing(type: JavaExec) {
     classpath kotlinClassPath
     main = 'upcasting.DrawingKt'
@@ -761,21 +671,6 @@ task Evaluation(type: JavaExec) {
 task EvaluationOrder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EvaluationOrderKt'
-}
-
-task Exercise1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'complexconstructors.Exercise1Kt'
-}
-
-task Exercise2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'complexconstructors.Exercise2Kt'
-}
-
-task Exercise3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'complexconstructors.Exercise3Kt'
 }
 
 task ExplicitCheck(type: JavaExec) {
@@ -1218,21 +1113,6 @@ task InfiniteRecursion(type: JavaExec) {
     main = 'recursion.InfiniteRecursionKt'
 }
 
-task InhExtensionsEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceextensionsex1.InhExtensionsEx1Kt'
-}
-
-task InhExtensionsEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceextensionsex2.InhExtensionsEx2Kt'
-}
-
-task InhExtensionsEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceextensionsex3.InhExtensionsEx3Kt'
-}
-
 task InheritAdd(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritanceextensions.InheritAddKt'
@@ -1251,21 +1131,6 @@ task Initialization(type: JavaExec) {
 task InnerClassInheritance(type: JavaExec) {
     classpath kotlinClassPath
     main = 'innerclasses.InnerClassInheritanceKt'
-}
-
-task InnerEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'innerclassesex1.InnerEx1Kt'
-}
-
-task InnerEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'innerclassesex2.InnerEx2Kt'
-}
-
-task InnerEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'innerclassesex3.InnerEx3Kt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -1663,26 +1528,6 @@ task NarrowingUpcast(type: JavaExec) {
     main = 'downcasting.NarrowingUpcastKt'
 }
 
-task NestedEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nestedclassesex1.NestedEx1Kt'
-}
-
-task NestedEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nestedclassesex2.NestedEx2Kt'
-}
-
-task NestedEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nestedclassesex3.NestedEx3Kt'
-}
-
-task NestedEx4(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nestedclassesex4.NestedEx4Kt'
-}
-
 task NestedHouse(type: JavaExec) {
     classpath kotlinClassPath
     main = 'nestedclasses.NestedHouseKt'
@@ -1783,34 +1628,9 @@ task NumberTypes(type: JavaExec) {
     main = 'NumberTypesKt'
 }
 
-task OODesignEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesign.OODesignEx2Kt'
-}
-
-task OODesignEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesignex3.OODesignEx3Kt'
-}
-
 task ObjectCounter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ObjectCounterKt'
-}
-
-task ObjectEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'objectex1.ObjectEx1Kt'
-}
-
-task ObjectEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'objectex2.ObjectEx2Kt'
-}
-
-task ObjectEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'objectex3.ObjectEx3Kt'
 }
 
 task ObjectFunctions(type: JavaExec) {
@@ -1956,21 +1776,6 @@ task Pets(type: JavaExec) {
 task PlatformTypes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PlatformTypesKt'
-}
-
-task PolyExercise1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'polymorphismex1.PolyExercise1Kt'
-}
-
-task PolyExercise2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'polymorphismex2.PolyExercise2Kt'
-}
-
-task PolyExercise3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'polymorphism.PolyExercise3Kt'
 }
 
 task Postconditions(type: JavaExec) {
@@ -2211,21 +2016,6 @@ task Scientist(type: JavaExec) {
 task SealedClasses(type: JavaExec) {
     classpath kotlinClassPath
     main = 'sealedclasses.SealedClassesKt'
-}
-
-task SealedEx1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'sealedclassesex1.SealedEx1Kt'
-}
-
-task SealedEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'sealedclassesex1.SealedEx2Kt'
-}
-
-task SealedEx3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'sealedclassesex3.SealedEx3Kt'
 }
 
 task SealedSubclasses(type: JavaExec) {
@@ -2488,11 +2278,6 @@ task Trace1(type: JavaExec) {
     main = 'Trace1Kt'
 }
 
-task Trace2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'Trace2Kt'
-}
-
 task TransformingMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TransformingMapKt'
@@ -2586,21 +2371,6 @@ task UnpredictableHashing(type: JavaExec) {
 task Unsafe(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.UnsafeKt'
-}
-
-task UpcastExercise1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'upcasting.UpcastExercise1Kt'
-}
-
-task UpcastExercise2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'upcasting.UpcastExercise2Kt'
-}
-
-task UpcastExercise3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'upcasting.UpcastExercise3Kt'
 }
 
 task Usable(type: JavaExec) {
@@ -2791,9 +2561,6 @@ task ZippingWithNext(type: JavaExec) {
 task run (dependsOn: [
     'ASCIIMap',
     'AVarIsMutable',
-    'AbsExercise1',
-    'AbsExercise2',
-    'AbsExercise3',
     'Adapter',
     'AddingIntToChar',
     'AdjustTemp',
@@ -2823,9 +2590,6 @@ task run (dependsOn: [
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
-    'BCIExercise1',
-    'BCIExercise2',
-    'BCIExercise3',
     'BMIEnglish',
     'BMIMetric',
     'Backticks',
@@ -2861,9 +2625,6 @@ task run (dependsOn: [
     'CheckingArgument',
     'CheckingOptions',
     'ClassBodies',
-    'ClassDelegEx1',
-    'ClassDelegEx2',
-    'ClassDelegEx3',
     'Closeable',
     'Closed',
     'Closures',
@@ -2873,17 +2634,11 @@ task run (dependsOn: [
     'ColorBlend',
     'ColorSet',
     'CompanionDelegation',
-    'CompanionEx1',
-    'CompanionEx2',
-    'CompanionEx3',
     'CompanionFactory',
     'CompanionInstance',
     'CompanionObject',
     'CompareTo',
     'ComposeAdapter',
-    'CompositionExercise1',
-    'CompositionExercise2',
-    'CompositionExercise3',
     'Computation',
     'Computer',
     'Confusing',
@@ -2927,9 +2682,6 @@ task run (dependsOn: [
     'DoWhileControl',
     'DoWhileLoop',
     'Dog',
-    'DownCastEx1',
-    'DownCastEx2',
-    'DownCastEx3',
     'Drawing',
     'EagerEvaluation',
     'EagerVsLazyEvaluation',
@@ -2940,9 +2692,6 @@ task run (dependsOn: [
     'EnumImport',
     'Evaluation',
     'EvaluationOrder',
-    'Exercise1',
-    'Exercise2',
-    'Exercise3',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',
@@ -3031,16 +2780,10 @@ task run (dependsOn: [
     'InferInt',
     'Inference',
     'InfiniteRecursion',
-    'InhExtensionsEx1',
-    'InhExtensionsEx2',
-    'InhExtensionsEx3',
     'InheritAdd',
     'InitSection',
     'Initialization',
     'InnerClassInheritance',
-    'InnerEx1',
-    'InnerEx2',
-    'InnerEx3',
     'InputLines1',
     'InputLines2',
     'IntDivisionTruncates',
@@ -3120,10 +2863,6 @@ task run (dependsOn: [
     'NamedArguments',
     'NamingCompanionObjects',
     'NarrowingUpcast',
-    'NestedEx1',
-    'NestedEx2',
-    'NestedEx3',
-    'NestedEx4',
     'NestedHouse',
     'NestedLWR',
     'NewAngle',
@@ -3144,12 +2883,7 @@ task run (dependsOn: [
     'NumberSequence1',
     'NumberSequence2',
     'NumberTypes',
-    'OODesignEx2',
-    'OODesignEx3',
     'ObjectCounter',
-    'ObjectEx1',
-    'ObjectEx2',
-    'ObjectEx3',
     'ObjectFunctions',
     'ObjectInheritance',
     'ObjectKeyword',
@@ -3179,9 +2913,6 @@ task run (dependsOn: [
     'Pet',
     'Pets',
     'PlatformTypes',
-    'PolyExercise1',
-    'PolyExercise2',
-    'PolyExercise3',
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',
@@ -3230,9 +2961,6 @@ task run (dependsOn: [
     'SayHello',
     'Scientist',
     'SealedClasses',
-    'SealedEx1',
-    'SealedEx2',
-    'SealedEx3',
     'SealedSubclasses',
     'SealedVsAbstract',
     'Sets',
@@ -3285,7 +3013,6 @@ task run (dependsOn: [
     'Todo',
     'TopLevelFunctionRef',
     'Trace1',
-    'Trace2',
     'TransformingMap',
     'TrimMargin',
     'TrimmedMembers',
@@ -3305,9 +3032,6 @@ task run (dependsOn: [
     'UnitReturnType',
     'UnpredictableHashing',
     'Unsafe',
-    'UpcastExercise1',
-    'UpcastExercise2',
-    'UpcastExercise3',
     'Usable',
     'UseALibrary',
     'UseAtomicLog',

@@ -103,25 +103,18 @@ class Trace(
    * or whitespaces.
    */
   infix fun eq(multiline: String) {
-    // Hack so that tests succeed:
-    fun clean(s: String) =
-      s.filter { !it.isWhitespace() }
-    runTest(content, multiline) {
-      clean(content.joinToString(" ")) ==
-        clean(multiline)
+    val left = content.joinToString(" ") {
+      it.replace(NL, " ")
     }
-//    val left = content.joinToString(" ") {
-//      it.replace(NL, " ")
-//    }
-//    val right = multiline.trimIndent()
-//      .replace(NL, " ")
-//    if (moreOutput) {
-//      println("[Trace]: $left")
-//      println("[Value]: $right")
-//    }
-//    val output = content.joinToString(NL)
-//    runTest(output, multiline) {
-//      left == right
-//    }
+    val right = multiline.trimIndent()
+      .replace(NL, " ")
+    if (moreOutput) {
+      println("[Trace]: $left")
+      println("[Value]: $right")
+    }
+    val output = content.joinToString(NL)
+    runTest(output, multiline) {
+      left == right
+    }
   }
 }
