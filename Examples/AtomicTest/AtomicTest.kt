@@ -8,7 +8,6 @@ package atomictest
 import kotlin.math.abs
 
 const val ERROR_TAG = "[Error]: "
-val NL = System.getProperty("line.separator")
 
 private fun <L, R> runTest(
   actual: L,
@@ -104,15 +103,15 @@ class Trace(
    */
   infix fun eq(multiline: String) {
     val left = content.joinToString(" ") {
-      it.replace(NL, " ")
+      it.replace("\n", " ")
     }
     val right = multiline.trimIndent()
-      .replace(NL, " ")
+      .replace("\n", " ")
     if (moreOutput) {
       println("[Trace]: $left")
       println("[Value]: $right")
     }
-    val output = content.joinToString(NL)
+    val output = content.joinToString("\n")
     runTest(output, multiline) {
       left == right
     }

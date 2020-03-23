@@ -4,7 +4,7 @@ import atomictest.*
 
 fun later(s: String): String = TODO("later()")
 
-fun later2(s: String): String = TODO()
+fun later2(s: String): Int = TODO()
 
 fun main() {
   capture {
