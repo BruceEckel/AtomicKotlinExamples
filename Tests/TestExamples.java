@@ -399,37 +399,37 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testCreature() {
-    testExample("Examples/DownCasting/Creature.kt", downcasting.CreatureKt::main);
+    testExample("Examples/Downcasting/Creature.kt", downcasting.CreatureKt::main);
   }
 
   @Test
   public void testFilterIsInstance() {
-    testExample("Examples/DownCasting/FilterIsInstance.kt", downcasting.FilterIsInstanceKt::main);
+    testExample("Examples/Downcasting/FilterIsInstance.kt", downcasting.FilterIsInstanceKt::main);
   }
 
   @Test
   public void testFindType() {
-    testExample("Examples/DownCasting/FindType.kt", downcasting.FindTypeKt::main);
+    testExample("Examples/Downcasting/FindType.kt", downcasting.FindTypeKt::main);
   }
 
   @Test
   public void testIsKeyword() {
-    testExample("Examples/DownCasting/IsKeyword.kt", downcasting.IsKeywordKt::main);
+    testExample("Examples/Downcasting/IsKeyword.kt", downcasting.IsKeywordKt::main);
   }
 
   @Test
   public void testNarrowingUpcast() {
-    testExample("Examples/DownCasting/NarrowingUpcast.kt", downcasting.NarrowingUpcastKt::main);
+    testExample("Examples/Downcasting/NarrowingUpcast.kt", downcasting.NarrowingUpcastKt::main);
   }
 
   @Test
   public void testSafe() {
-    testExample("Examples/DownCasting/Safe.kt", downcasting.SafeKt::main);
+    testExample("Examples/Downcasting/Safe.kt", downcasting.SafeKt::main);
   }
 
   @Test
   public void testUnsafe() {
-    testExample("Examples/DownCasting/Unsafe.kt", downcasting.UnsafeKt::main);
+    testExample("Examples/Downcasting/Unsafe.kt", downcasting.UnsafeKt::main);
   }
 
   @Test

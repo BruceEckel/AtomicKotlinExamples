@@ -1,4 +1,4 @@
-// DownCasting/Creature.kt
+// Downcasting/Creature.kt
 package downcasting
 import atomictest.eq
 

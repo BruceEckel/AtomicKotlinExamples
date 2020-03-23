@@ -1,4 +1,4 @@
-// DownCasting/NarrowingUpcast.kt
+// Downcasting/NarrowingUpcast.kt
 package downcasting
 
 interface Base {

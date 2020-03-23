@@ -1,4 +1,4 @@
-// DownCasting/MutableSmartCast.kt
+// Downcasting/MutableSmartCast.kt
 package downcasting
 
 class SmartCast1(val c: Creature) {

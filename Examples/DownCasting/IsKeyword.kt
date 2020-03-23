@@ -1,4 +1,4 @@
-// DownCasting/IsKeyword.kt
+// Downcasting/IsKeyword.kt
 package downcasting
 
 fun main() {

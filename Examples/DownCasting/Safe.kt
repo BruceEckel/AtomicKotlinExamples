@@ -1,4 +1,4 @@
-// DownCasting/Safe.kt
+// Downcasting/Safe.kt
 package downcasting
 import atomictest.eq
 

@@ -1,4 +1,4 @@
-// DownCasting/Unsafe.kt
+// Downcasting/Unsafe.kt
 package downcasting
 import atomictest.*
 
