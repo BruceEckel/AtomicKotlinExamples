@@ -878,6 +878,11 @@ task GenericListExtensions(type: JavaExec) {
     main = 'introgenerics.GenericListExtensionsKt'
 }
 
+task GenericSafeCast(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.GenericSafeCastKt'
+}
+
 task GenericSpeakers(type: JavaExec) {
     classpath kotlinClassPath
     main = 'generics.GenericSpeakersKt'
@@ -2738,6 +2743,7 @@ task run (dependsOn: [
     'GenericHolder',
     'GenericListExt',
     'GenericListExtensions',
+    'GenericSafeCast',
     'GenericSpeakers',
     'GermanOrdinals',
     'GetAShape',
