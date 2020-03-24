@@ -1,0 +1,23 @@
+// CheckInstructions/RequireNotNull.kt
+package checkinstructions
+import atomictest.*
+
+fun notNull(n: Int?): Int {
+  requireNotNull(n) {         // [1]
+    "notNull() argument cannot be null"
+  }
+  return n * 9
+}
+
+fun main() {
+  val n: Int? = null
+  capture {
+    notNull(n)
+  } eq "IllegalArgumentException: " +
+    "notNull() argument cannot be null"
+  capture {
+    requireNotNull(n)         // [2]
+  } eq "IllegalArgumentException: " +
+    "Required value was null."
+  notNull(11) eq 99
+}
