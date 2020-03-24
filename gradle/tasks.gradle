@@ -1778,6 +1778,11 @@ task PlatformTypes(type: JavaExec) {
     main = 'PlatformTypesKt'
 }
 
+task PlayingCards(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'manipulatinglists.PlayingCardsKt'
+}
+
 task Postconditions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'checkinstructions.PostconditionsKt'
@@ -2913,6 +2918,7 @@ task run (dependsOn: [
     'Pet',
     'Pets',
     'PlatformTypes',
+    'PlayingCards',
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',

@@ -1313,6 +1313,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testPlayingCards() {
+    testExample("Examples/ManipulatingLists/PlayingCards.kt", manipulatinglists.PlayingCardsKt::main);
+  }
+
+  @Test
   public void testWhyFlatMap() {
     testExample("Examples/ManipulatingLists/WhyFlatMap.kt", manipulatinglists.WhyFlatMapKt::main);
   }

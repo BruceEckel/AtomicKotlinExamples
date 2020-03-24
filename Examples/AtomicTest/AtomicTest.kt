@@ -82,7 +82,7 @@ fun capture(f: () -> Unit): String =
   }
 
 class Trace(
-  private val moreOutput: Boolean = false
+  private val details: Boolean = false
 ) {
   private val content =
     mutableListOf<String>()
@@ -107,7 +107,7 @@ class Trace(
     }
     val right = multiline.trimIndent()
       .replace("\n", " ")
-    if (moreOutput) {
+    if (details) {
       println("[Trace]: $left")
       println("[Value]: $right")
     }
