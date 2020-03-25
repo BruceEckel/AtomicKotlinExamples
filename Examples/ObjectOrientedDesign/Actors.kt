@@ -29,9 +29,9 @@ sealed class Actor {
 
 class Void() : Actor() {
   override val symbol = '~'
-  override fun makeActor(r: Room) = void
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
+  override fun makeActor(r: Room) = void
   companion object {
     val void = Void()
   }
@@ -43,9 +43,9 @@ class Wall(
   override val room: Room = Room()
 ) : Actor() {
   override val symbol = '#'
-  override fun makeActor(r: Room) = Wall(r)
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
+  override fun makeActor(r: Room) = Wall(r)
 }
 // Continued ...
 // ... Continuing
@@ -54,9 +54,9 @@ class Empty(
   override val room: Room = Room()
 ) : Actor() {
   override val symbol = '_'
-  override fun makeActor(r: Room) = Empty(r)
   // The Robot moves into the new room:
   override fun interact(robot: Robot) = room
+  override fun makeActor(r: Room) = Empty(r)
 }
 // Continued ...
 // ... Continuing
@@ -65,12 +65,12 @@ class Food(
   override val room: Room = Room()
 ) : Actor() {
   override val symbol = '.'
-  override fun makeActor(r: Room) = Food(r)
   override fun interact(robot: Robot): Room {
     robot.energy++ // Consume food
     room.actor = Empty(room) // Remove food
     return room // Move into new room
   }
+  override fun makeActor(r: Room) = Food(r)
 }
 // Continued ...
 // ... Continuing
@@ -79,9 +79,9 @@ class EndGame(
   override val room: Room = Room()
 ) : Actor() {
   override val symbol = '!'
-  override fun makeActor(r: Room) = EndGame(r)
   override fun interact(robot: Robot) =
     Room(room.row, room.col, EndGame(room))
+  override fun makeActor(r: Room) = EndGame(r)
 }
 // Continued ...
 // ... Continuing
@@ -91,11 +91,13 @@ class Robot(
 ) : Actor() {
   override val symbol = 'R'
   var energy = 0
-  override fun makeActor(r: Room) = Robot(r)
+  override fun interact(robot: Robot) =
+    robot.room
   fun move(urge: Urge) {
     val nextRoom = room.doors.open(urge)
     room = nextRoom.actor.interact(this)
   }
+  override fun makeActor(r: Room) = Robot(r)
 }
 // Continued ...
 // ... Continuing
@@ -108,6 +110,7 @@ class Teleport(
   override fun toString() =
     "${this::class.simpleName}: ${id()}" +
     "(${target.row}, ${target.col})"
+  override fun interact(robot: Robot) = target
   override fun
     create(ch: Char, row: Int, col: Int) =
     if (ch in 'a'..'z') {
@@ -115,5 +118,4 @@ class Teleport(
       room.actor = Teleport(ch, room)
       Result.Success(room)
     } else Result.Fail
-  override fun interact(robot: Robot) = target
 }

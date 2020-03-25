@@ -6,12 +6,10 @@ import org.hexworks.zircon.api.data.*
 import org.hexworks.zircon.api.uievent.*
 import org.hexworks.zircon.api.graphics.*
 import org.hexworks.zircon.api.color.*
+import org.hexworks.zircon.api.extensions.*
 
 fun robotExplorer(stage: Stage) {
   val style = StyleSet.defaultStyle()
-  // Turn a character into a Tile:
-  fun charTile(c: Char, s: StyleSet = style) =
-    Tile.createCharacterTile(c, s)
   // Initialize the zircon terminal emulator:
   val grid = SwingApplications
     .startTileGrid(AppConfig.newBuilder()
@@ -26,7 +24,8 @@ fun robotExplorer(stage: Stage) {
   // Fill the grid with the maze:
   grid.size.fetchPositions().forEach {
     if (maze.hasNext())
-      grid.putTile(charTile(maze.next()))
+      grid.putTile(maze.next()
+        .toCharacterTile())
   }
   // The robot's location as a Position:
   fun robotPosition() = Position.create(
@@ -37,7 +36,7 @@ fun robotExplorer(stage: Stage) {
     .withSize(Size.one())
     .withOffset(robotPosition())
     .build().apply {
-      fill(charTile(stage.robot.symbol,
+      fill(stage.robot.symbol.toCharacterTile(
         style.withForegroundColor(
           ANSITileColor.RED)))
     }
@@ -46,14 +45,13 @@ fun robotExplorer(stage: Stage) {
   // Update the character beneath the robot:
   fun updateSymbolAtRobot() {
     grid.cursorPosition = robotPosition()
-    grid.putTile(
-      charTile(stage.robot.room.actor.id()))
+    grid.putTile(stage.robot
+      .room.actor.id().toCharacterTile())
   }
   // Put a string on the blank bottom line:
   fun console(s: String) {
-    grid.cursorPosition =
-      Position.create(1, stage.height + 1)
-    s.forEach { grid.putTile(charTile(it)) }
+    grid.draw(s.toCharacterTileString(),
+      Position.create(1, grid.height - 1))
   }
   // Move the robot and update the screen:
   fun robotGo(urge: Urge) {
