@@ -1,6 +1,5 @@
 // ObjectOrientedDesign/Actors.kt
 package oodesign
-import kotlin.reflect.full.primaryConstructor
 
 sealed class Actor {
   abstract val symbol: Char
@@ -14,7 +13,7 @@ sealed class Actor {
     throw NotImplementedError()
   // Makes the exact type of Actor object:
   open fun makeActor(r: Room): Actor =
-    (this::class.primaryConstructor!! as (Room) -> Actor)(r)
+    throw NotImplementedError()
   // Match the symbol to create & configure
   // a Room with the new Actor, or Fail:
   open
@@ -60,7 +59,7 @@ class Empty(
   override val symbol = '_'
   // The Robot moves into the new room:
   override fun interact(robot: Robot) = room
-//  override fun makeActor(r: Room) = Empty(r)
+  override fun makeActor(r: Room) = Empty(r)
 }
 // Continued ...
 // ... Continuing
@@ -74,7 +73,7 @@ class Food(
     room.actor = Empty(room) // Remove food
     return room // Move into new room
   }
-//  override fun makeActor(r: Room) = Food(r)
+  override fun makeActor(r: Room) = Food(r)
 }
 // Continued ...
 // ... Continuing
@@ -85,7 +84,7 @@ class EndGame(
   override val symbol = '!'
   override fun interact(robot: Robot) =
     Room(room.row, room.col, EndGame(room))
-//  override fun makeActor(r: Room) = EndGame(r)
+  override fun makeActor(r: Room) = EndGame(r)
 }
 // Continued ...
 // ... Continuing
@@ -101,7 +100,7 @@ class Robot(
     val nextRoom = room.doors.open(urge)
     room = nextRoom.actor.interact(this)
   }
-//  override fun makeActor(r: Room) = Robot(r)
+  override fun makeActor(r: Room) = Robot(r)
 }
 // Continued ...
 // ... Continuing
