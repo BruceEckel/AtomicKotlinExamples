@@ -43,10 +43,10 @@ dependencies {
 
     // Zircon
     implementation "org.jetbrains.kotlinx:kotlinx-collections-immutable"
-    implementation "org.hexworks.zircon:zircon.core-jvm:2020.1.3-PREVIEW"
-    implementation "org.hexworks.zircon:zircon.jvm.swing:2020.1.3-PREVIEW"
+    implementation "org.hexworks.zircon:zircon.core-jvm:$zircon_version"
+    implementation "org.hexworks.zircon:zircon.jvm.swing:$zircon_version"
     // For LibgdxApplications:
-    implementation "org.hexworks.zircon:zircon.jvm.libgdx:2020.1.3-PREVIEW"
+    implementation "org.hexworks.zircon:zircon.jvm.libgdx:$zircon_version"
 }
 
 apply from: 'gradle/tasks.gradle'
