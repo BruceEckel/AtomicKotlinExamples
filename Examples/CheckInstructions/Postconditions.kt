@@ -2,7 +2,7 @@
 package checkinstructions
 import atomictest.*
 
-val resultFile = localFile("results.txt")
+val resultFile = dataFile("results.txt")
 
 fun createResultFile(create: Boolean) {
   if (create)

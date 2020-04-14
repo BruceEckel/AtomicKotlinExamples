@@ -1,4 +1,4 @@
-// CreatingSequences/TerminalOperations.kt
+// Sequences/NoComputationYet.kt
 package creatingsequences
 
 fun main() {
@@ -6,15 +6,8 @@ fun main() {
   val r = list.asSequence()
     .filter(Int::isEven)
     .map(Int::square)
-    .toList()
   println(r)
 }
-/* Output:
-1.isEven()
-2.isEven()
-2.square()
-3.isEven()
-4.isEven()
-4.square()
-[4, 16]
+/* Sample output:
+kotlin.sequences.TransformingSequence@1218025c
 */

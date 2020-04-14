@@ -36,6 +36,9 @@ dependencies {
 
     // Testing:
     implementation "org.jetbrains.kotlin:kotlin-test-junit"
+    implementation "org.jetbrains.kotlin:kotlin-test"
+    implementation "org.jetbrains.kotlin:kotlin-test-junit5"
+    implementation "org.junit.jupiter:junit-jupiter:$junit_version"
 
     // Logging:
     implementation 'io.github.microutils:kotlin-logging:1.4.6'

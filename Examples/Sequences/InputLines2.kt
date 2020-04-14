@@ -1,4 +1,4 @@
-// MoreLibraryFunctions/InputLines2.kt
+// Sequences/InputLines2.kt
 
 fun main() {
   val lines = generateSequence {

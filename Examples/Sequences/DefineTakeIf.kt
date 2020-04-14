@@ -1,4 +1,4 @@
-// MoreLibraryFunctions/DefineTakeIf.kt
+// Sequences/DefineTakeIf.kt
 package definetakeif
 import atomictest.eq
 

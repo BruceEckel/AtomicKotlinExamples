@@ -313,26 +313,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testEagerEvaluation() {
-    testExample("Examples/CreatingSequences/EagerEvaluation.kt", EagerEvaluationKt::main);
-  }
-
-  @Test
-  public void testEagerVsLazyEvaluation() {
-    testExample("Examples/CreatingSequences/EagerVsLazyEvaluation.kt", creatingsequences.EagerVsLazyEvaluationKt::main);
-  }
-
-  @Test
-  public void testNoComputationYet() {
-    testExample("Examples/CreatingSequences/NoComputationYet.kt", creatingsequences.NoComputationYetKt::main);
-  }
-
-  @Test
-  public void testTerminalOperations() {
-    testExample("Examples/CreatingSequences/TerminalOperations.kt", creatingsequences.TerminalOperationsKt::main);
-  }
-
-  @Test
   public void testCopyDataClass() {
     testExample("Examples/DataClasses/CopyDataClass.kt", CopyDataClassKt::main);
   }
@@ -458,6 +438,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCaptureImplementation() {
+    testExample("Examples/ExceptionHandling/CaptureImplementation.kt", captureimpl.CaptureImplementationKt::main);
+  }
+
+  @Test
   public void testDefiningExceptions() {
     testExample("Examples/ExceptionHandling/DefiningExceptions.kt", exceptionhandling.DefiningExceptionsKt::main);
   }
@@ -490,6 +475,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testNewException() {
     testExample("Examples/ExceptionHandling/NewException.kt", exceptionhandling.NewExceptionKt::main);
+  }
+
+  @Test
+  public void testStacktrace() {
+    testExample("Examples/ExceptionHandling/Stacktrace.kt", stacktrace.StacktraceKt::main);
   }
 
   @Test
@@ -1113,11 +1103,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testNestedLWR() {
-    testExample("Examples/LambdaWithReceiver/NestedLWR.kt", lambdawithreceiver.NestedLWRKt::main);
-  }
-
-  @Test
   public void testRegularLambda() {
     testExample("Examples/LambdaWithReceiver/RegularLambda.kt", regularlambda.RegularLambdaKt::main);
   }
@@ -1203,11 +1188,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testHelperFunction() {
-    testExample("Examples/LocalFunctions/HelperFunction.kt", localfunctions.HelperFunctionKt::main);
-  }
-
-  @Test
   public void testInterestingSessions() {
     testExample("Examples/LocalFunctions/InterestingSessions.kt", localfunctions.InterestingSessionsKt::main);
   }
@@ -1235,6 +1215,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testReturnFromFun() {
     testExample("Examples/LocalFunctions/ReturnFromFun.kt", ReturnFromFunKt::main);
+  }
+
+  @Test
+  public void testReturningFunc() {
+    testExample("Examples/LocalFunctions/ReturningFunc.kt", lambdawithreceiver.ReturningFuncKt::main);
   }
 
   @Test
@@ -1378,11 +1363,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testMemberReferencesEx1() {
-    testExample("Examples/MemberReferences/MemberReferencesEx1.kt", memberreferencesex1.MemberReferencesEx1Kt::main);
-  }
-
-  @Test
   public void testPropertyReference() {
     testExample("Examples/MemberReferences/PropertyReference.kt", memberreferences1.PropertyReferenceKt::main);
   }
@@ -1395,31 +1375,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTopLevelFunctionRef() {
     testExample("Examples/MemberReferences/TopLevelFunctionRef.kt", memberreferences2.TopLevelFunctionRefKt::main);
-  }
-
-  @Test
-  public void testDefineTakeIf() {
-    testExample("Examples/MoreLibraryFunctions/DefineTakeIf.kt", definetakeif.DefineTakeIfKt::main);
-  }
-
-  @Test
-  public void testInputLines1() {
-    testExample("Examples/MoreLibraryFunctions/InputLines1.kt", InputLines1Kt::main);
-  }
-
-  @Test
-  public void testInputLines2() {
-    testExample("Examples/MoreLibraryFunctions/InputLines2.kt", InputLines2Kt::main);
-  }
-
-  @Test
-  public void testNumberSequence1() {
-    testExample("Examples/MoreLibraryFunctions/NumberSequence1.kt", NumberSequence1Kt::main);
-  }
-
-  @Test
-  public void testNumberSequence2() {
-    testExample("Examples/MoreLibraryFunctions/NumberSequence2.kt", NumberSequence2Kt::main);
   }
 
   @Test
@@ -2113,6 +2068,51 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDefineTakeIf() {
+    testExample("Examples/Sequences/DefineTakeIf.kt", definetakeif.DefineTakeIfKt::main);
+  }
+
+  @Test
+  public void testEagerEvaluation() {
+    testExample("Examples/Sequences/EagerEvaluation.kt", EagerEvaluationKt::main);
+  }
+
+  @Test
+  public void testEagerVsLazyEvaluation() {
+    testExample("Examples/Sequences/EagerVsLazyEvaluation.kt", creatingsequences.EagerVsLazyEvaluationKt::main);
+  }
+
+  @Test
+  public void testInputLines1() {
+    testExample("Examples/Sequences/InputLines1.kt", InputLines1Kt::main);
+  }
+
+  @Test
+  public void testInputLines2() {
+    testExample("Examples/Sequences/InputLines2.kt", InputLines2Kt::main);
+  }
+
+  @Test
+  public void testNoComputationYet() {
+    testExample("Examples/Sequences/NoComputationYet.kt", creatingsequences.NoComputationYetKt::main);
+  }
+
+  @Test
+  public void testNumberSequence1() {
+    testExample("Examples/Sequences/NumberSequence1.kt", NumberSequence1Kt::main);
+  }
+
+  @Test
+  public void testNumberSequence2() {
+    testExample("Examples/Sequences/NumberSequence2.kt", NumberSequence2Kt::main);
+  }
+
+  @Test
+  public void testTerminalOperations() {
+    testExample("Examples/Sequences/TerminalOperations.kt", creatingsequences.TerminalOperationsKt::main);
+  }
+
+  @Test
   public void testMutableSet() {
     testExample("Examples/Sets/MutableSet.kt", MutableSetKt::main);
   }
@@ -2363,8 +2363,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBasic() {
-    testExample("Examples/UnitTesting/Basic.kt", BasicKt::main);
+  public void testNoFramework() {
+    testExample("Examples/UnitTesting/NoFramework.kt", unittesting.NoFrameworkKt::main);
+  }
+
+  @Test
+  public void testUsingExpect() {
+    testExample("Examples/UnitTesting/UsingExpect.kt", unittesting.UsingExpectKt::main);
   }
 
   @Test

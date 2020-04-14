@@ -1,9 +1,9 @@
 // ResourceCleanup/ForEachLine.kt
 package resourcecleanup
-import checkinstructions.localFile
+import checkinstructions.dataFile
 
 fun main() {
-  localFile("results.txt").forEachLine {
+  dataFile("results.txt").forEachLine {
     if (it.startsWith("#"))
       println("'$it'")
   }

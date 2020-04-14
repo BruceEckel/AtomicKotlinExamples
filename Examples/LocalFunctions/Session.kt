@@ -7,6 +7,6 @@ class Session(
 )
 
 val sessions = listOf(Session(
-  "Kotlin in Production", "Christina Lee"))
+  "Kotlin Coroutines", "Roman Elizarov"))
 
-val favoriteSpeakers = setOf("Christina Lee")
+val favoriteSpeakers = setOf("Roman Elizarov")

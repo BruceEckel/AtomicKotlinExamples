@@ -7,7 +7,7 @@ fun getTrace(fileName: String): List<String> {
   require(fileName.startsWith("file_")) {
     "$fileName must start with 'file_'"
   }
-  val file = localFile(fileName)
+  val file = dataFile(fileName)
   require(file.exists()) {
     "$fileName doesn't exist"
   }
@@ -19,8 +19,8 @@ fun getTrace(fileName: String): List<String> {
 }
 
 fun main() {
-  localFile("file_empty.txt").writeText("")
-  localFile("file_real.txt").writeText(
+  dataFile("file_empty.txt").writeText("")
+  dataFile("file_real.txt").writeText(
     "wubba lubba dub dub")
   capture {
     getTrace("wrong_name.txt")

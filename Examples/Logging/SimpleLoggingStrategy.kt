@@ -1,12 +1,11 @@
 // Logging/SimpleLoggingStrategy.kt
 package logging
-import java.nio.file.Paths
+import checkinstructions.dataFile
 
-val logFile = Paths.get("Examples",
-  "Logging", "simpleLogFile.txt").toFile()
+val logFile = dataFile("simpleLogFile.txt")
 
 fun debug(msg: String) =
-  System.err.println("Debug: " + msg)
+  System.err.println("Debug: $msg")
 // To disable:
 // fun debug(msg: String) { /* do nothing */ }
 

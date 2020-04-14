@@ -1,9 +1,8 @@
 // Logging/AtomicLog.kt
 package atomiclog
-import java.nio.file.Paths
+import checkinstructions.dataFile
 
-val logFile = Paths.get("Examples",
-  "Logging", "atomicLog.txt").toFile()
+val logFile = dataFile("atomicLog.txt")
 
 object log {
   init {
@@ -14,6 +13,7 @@ object log {
 
   private fun log(type: String, msg: String) =
     logFile.appendText("$type: $msg\n")
+
   fun trace(msg: String) = log("Trace", msg)
   fun debug(msg: String) = log("Debug", msg)
   fun info(msg: String) = log("Info", msg)

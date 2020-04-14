@@ -1,4 +1,4 @@
-// MoreLibraryFunctions/NumberSequence1.kt
+// Sequences/NumberSequence1.kt
 import atomictest.eq
 
 fun main() {
