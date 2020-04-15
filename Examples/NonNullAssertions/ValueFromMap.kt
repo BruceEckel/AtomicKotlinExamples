@@ -7,7 +7,7 @@ fun main() {
   map.getValue(1).toUpperCase() eq "ONE"
   capture {
     map[2]!!.toUpperCase()
-  } eq "NullPointerException"
+  } eq "KotlinNullPointerException"
   capture {
     map.getValue(2).toUpperCase()
   } eq "NoSuchElementException: " +

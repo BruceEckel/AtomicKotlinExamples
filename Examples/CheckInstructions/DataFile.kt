@@ -6,9 +6,8 @@ import java.nio.file.Paths
 
 fun dataFile(name: String): File {
   val targetDir = File("DataFiles")
-  require(targetDir.exists()) {
-    "$targetDir does not exist"
-  }
+  if(!targetDir.exists())
+    targetDir.mkdir()
   return targetDir.resolve(name)
 }
 
