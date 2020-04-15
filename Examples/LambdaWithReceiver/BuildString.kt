@@ -1,4 +1,5 @@
 // LambdaWithReceiver/BuildString.kt
+package buildstring
 import atomictest.eq
 
 fun main() {

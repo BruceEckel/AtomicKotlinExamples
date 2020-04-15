@@ -1,4 +1,4 @@
-// CheckInstructions/LocalFile.kt
+// CheckInstructions/DataFile.kt
 package checkinstructions
 import atomictest.eq
 import java.io.File

@@ -10,8 +10,8 @@ data class Window(       // [1]
 )
 
 fun adjustWindowIfNotNull(window: Window?) {
-  window?.run {          // [2]
-    this.x = 10          // [3]
+  window?.run {          // [1]
+    this.x = 10          // [2]
     y = 10
     w *= 2
     h *= 2
@@ -24,3 +24,6 @@ fun main() {
   adjustWindowIfNotNull(windowOrNull)
   println("Nothing happens")
 }
+/* Output:
+Nothing happens
+*/

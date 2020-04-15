@@ -3,7 +3,7 @@ package unittesting
 import kotlin.test.*
 
 fun testFoo2() = expect(42, "Wrong answer") {
-  foo()  
+  foo()
 }
 
 fun main() {

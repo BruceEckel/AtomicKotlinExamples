@@ -1,4 +1,5 @@
 // LambdaWithReceiver/StringBuilder.kt
+package lambdawithreceiver
 import atomictest.eq
 
 fun main() {

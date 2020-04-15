@@ -1,7 +1,6 @@
-// UnitTesting/StateMachine.kt
-package unittesting
-
-import unittesting.State.*
+// LambdaWithReceiver/LWRStateMachine.kt
+package statemachine
+import statemachine.State.*
 
 enum class State { ON, OFF, PAUSED }
 
@@ -10,9 +9,10 @@ class StateMachine {
     private set
 
   private fun updateState(
-    current: State, new: State
+    current: State?, new: State
   ) {
-    if (state == current) {
+    if (current == null || state == current) {
+      println("$state -> $new")
       state = new
     }
   }
@@ -23,7 +23,5 @@ class StateMachine {
 
   fun resume() = updateState(PAUSED, ON)
 
-  fun finish() {
-    state = OFF
-  }
+  fun finish() = updateState(null, OFF)
 }

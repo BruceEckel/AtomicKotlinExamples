@@ -10,5 +10,5 @@ fun main() {
     remove(0)
   }
   result eq listOf(17, 42)
-  mutableList eq listOf(17, 42)
+  result eq mutableList
 }

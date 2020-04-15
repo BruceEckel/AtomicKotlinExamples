@@ -138,13 +138,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGetTrace() {
-    testExample("Examples/CheckInstructions/GetTrace.kt", checkinstructions.GetTraceKt::main);
+  public void testDataFile() {
+    testExample("Examples/CheckInstructions/DataFile.kt", checkinstructions.DataFileKt::main);
   }
 
   @Test
-  public void testLocalFile() {
-    testExample("Examples/CheckInstructions/LocalFile.kt", checkinstructions.LocalFileKt::main);
+  public void testGetTrace() {
+    testExample("Examples/CheckInstructions/GetTrace.kt", checkinstructions.GetTraceKt::main);
   }
 
   @Test
@@ -1093,23 +1093,33 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAnonymousFunction() {
+    testExample("Examples/LambdaWithReceiver/AnonymousFunction.kt", lambdawithreceiver.AnonymousFunctionKt::main);
+  }
+
+  @Test
   public void testBuildString() {
-    testExample("Examples/LambdaWithReceiver/BuildString.kt", BuildStringKt::main);
+    testExample("Examples/LambdaWithReceiver/BuildString.kt", buildstring.BuildStringKt::main);
   }
 
   @Test
-  public void testDeclarations() {
-    testExample("Examples/LambdaWithReceiver/Declarations.kt", lambdawithreceiver.DeclarationsKt::main);
-  }
-
-  @Test
-  public void testRegularLambda() {
-    testExample("Examples/LambdaWithReceiver/RegularLambda.kt", regularlambda.RegularLambdaKt::main);
+  public void testNewStateMachine2() {
+    testExample("Examples/LambdaWithReceiver/NewStateMachine2.kt", statemachine2.NewStateMachine2Kt::main);
   }
 
   @Test
   public void testStringBuilder() {
-    testExample("Examples/LambdaWithReceiver/StringBuilder.kt", StringBuilderKt::main);
+    testExample("Examples/LambdaWithReceiver/StringBuilder.kt", lambdawithreceiver.StringBuilderKt::main);
+  }
+
+  @Test
+  public void testUseNewStateMachine1() {
+    testExample("Examples/LambdaWithReceiver/UseNewStateMachine1.kt", statemachine.UseNewStateMachine1Kt::main);
+  }
+
+  @Test
+  public void testUseNewStateMachine2() {
+    testExample("Examples/LambdaWithReceiver/UseNewStateMachine2.kt", statemachine2.UseNewStateMachine2Kt::main);
   }
 
   @Test
@@ -1375,11 +1385,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTopLevelFunctionRef() {
     testExample("Examples/MemberReferences/TopLevelFunctionRef.kt", memberreferences2.TopLevelFunctionRefKt::main);
-  }
-
-  @Test
-  public void testReadingName() {
-    testExample("Examples/MoreLibraryFunctions/ReadingName.kt", ReadingNameKt::main);
   }
 
   @Test
@@ -2025,6 +2030,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testNullableReceiver() {
     testExample("Examples/ScopeFunctions/NullableReceiver.kt", scopefunctions.NullableReceiverKt::main);
+  }
+
+  @Test
+  public void testReadingName() {
+    testExample("Examples/ScopeFunctions/ReadingName.kt", ReadingNameKt::main);
   }
 
   @Test

@@ -4,14 +4,14 @@ import atomictest.eq
 
 fun Window.dup() =
   Window("dup of $id").also {
-    it.x = this.x               // [1]
+    it.x = this.x                      // [1]
     it.y = this.y
     it.w = this.w
     it.h = this.h
   }
 
 fun Window.dup2() =
-  Window("dup of $id").also { win ->
+  Window("dup of $id").also { win ->   // [2]
     win.x = this.x
     win.y = this.y
     win.w = this.w

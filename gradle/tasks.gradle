@@ -73,6 +73,11 @@ task AnnotatedJava(type: JavaExec) {
     main = 'nullabilityannotations.AnnotatedJavaKt'
 }
 
+task AnonymousFunction(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.AnonymousFunctionKt'
+}
+
 task Any(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AnyKt'
@@ -250,7 +255,7 @@ task Boxes(type: JavaExec) {
 
 task BuildString(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'BuildStringKt'
+    main = 'buildstring.BuildStringKt'
 }
 
 task ByOperations(type: JavaExec) {
@@ -513,9 +518,9 @@ task DataClasses(type: JavaExec) {
     main = 'dataclasses.DataClassesKt'
 }
 
-task Declarations(type: JavaExec) {
+task DataFile(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lambdawithreceiver.DeclarationsKt'
+    main = 'checkinstructions.DataFileKt'
 }
 
 task Default(type: JavaExec) {
@@ -1323,11 +1328,6 @@ task LocalExtensions(type: JavaExec) {
     main = 'LocalExtensionsKt'
 }
 
-task LocalFile(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'checkinstructions.LocalFileKt'
-}
-
 task LocalFunctionReference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'localfunctions.LocalFunctionReferenceKt'
@@ -1536,6 +1536,11 @@ task NewAngle(type: JavaExec) {
 task NewException(type: JavaExec) {
     classpath kotlinClassPath
     main = 'exceptionhandling.NewExceptionKt'
+}
+
+task NewStateMachine2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'statemachine2.NewStateMachine2Kt'
 }
 
 task NickName(type: JavaExec) {
@@ -1908,11 +1913,6 @@ task References(type: JavaExec) {
     main = 'ReferencesKt'
 }
 
-task RegularLambda(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'regularlambda.RegularLambdaKt'
-}
-
 task RemoveDuplicates(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RemoveDuplicatesKt'
@@ -2120,7 +2120,7 @@ task StrangeQuote(type: JavaExec) {
 
 task StringBuilder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'StringBuilderKt'
+    main = 'lambdawithreceiver.StringBuilderKt'
 }
 
 task StringConcatenation(type: JavaExec) {
@@ -2408,6 +2408,16 @@ task UseLines(type: JavaExec) {
     main = 'resourcecleanup.UseLinesKt'
 }
 
+task UseNewStateMachine1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'statemachine.UseNewStateMachine1Kt'
+}
+
+task UseNewStateMachine2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'statemachine2.UseNewStateMachine2Kt'
+}
+
 task UsingAtomicTest(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingAtomicTestKt'
@@ -2587,6 +2597,7 @@ task run (dependsOn: [
     'AnalyzeInput',
     'Animals',
     'AnnotatedJava',
+    'AnonymousFunction',
     'Any',
     'AnyFromListOfStar',
     'AnyInstead',
@@ -2675,7 +2686,7 @@ task run (dependsOn: [
     'Data',
     'DataClassCopy',
     'DataClasses',
-    'Declarations',
+    'DataFile',
     'Default',
     'DefineTakeIf',
     'DefiningExceptions',
@@ -2837,7 +2848,6 @@ task run (dependsOn: [
     'ListUsefulFunction',
     'Lists',
     'LocalExtensions',
-    'LocalFile',
     'LocalFunctionReference',
     'LocalFunctions',
     'LocalInnerClasses',
@@ -2880,6 +2890,7 @@ task run (dependsOn: [
     'NestedHouse',
     'NewAngle',
     'NewException',
+    'NewStateMachine2',
     'NickName',
     'NoComputationYet',
     'NoFramework',
@@ -2954,7 +2965,6 @@ task run (dependsOn: [
     'RecursionLimits',
     'RecursiveEnumImport',
     'References',
-    'RegularLambda',
     'RemoveDuplicates',
     'Repeat',
     'RepeatByInt',
@@ -3054,6 +3064,8 @@ task run (dependsOn: [
     'UseAtomicLog',
     'UseBeanClass',
     'UseLines',
+    'UseNewStateMachine1',
+    'UseNewStateMachine2',
     'UsingAtomicTest',
     'UsingDataClass',
     'UsingExpect',

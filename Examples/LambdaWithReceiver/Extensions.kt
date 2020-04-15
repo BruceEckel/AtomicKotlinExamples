@@ -1,9 +1,7 @@
 // LambdaWithReceiver/Extensions.kt
-package lambdawithreceiver
+package statemachine
 
-fun StringBuilder.appendAlphabet() {
-  this.append("Alphabet:")   // Explicit
-  for (ch in 'a'..'z') {
-    append(ch)               // Implicit
-  }
+fun StateMachine.pauseAndResume() {
+  this.pause()   // Explicit
+  resume()       // Implicit
 }

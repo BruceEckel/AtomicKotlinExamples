@@ -1,5 +1,5 @@
 // UnitTesting/TestStateMachine.kt
-package statemachine
+package unittesting
 import kotlin.test.*
 
 class TestStateMachine {
