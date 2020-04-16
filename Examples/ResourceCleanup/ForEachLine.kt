@@ -3,7 +3,7 @@ package resourcecleanup
 import checkinstructions.dataFile
 
 fun main() {
-  dataFile("results.txt").forEachLine {
+  dataFile("Results.txt").forEachLine {
     if (it.startsWith("#"))
       println("'$it'")
   }

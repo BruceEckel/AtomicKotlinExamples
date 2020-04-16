@@ -2,7 +2,7 @@
 package checkinstructions
 import atomictest.*
 
-val resultFile = dataFile("results.txt")
+val resultFile = dataFile("Results.txt")
 
 fun createResultFile(create: Boolean) {
   if (create)
@@ -19,6 +19,6 @@ fun main() {
   capture {
     createResultFile(false)
   } eq "IllegalStateException: " +
-    "results.txt doesn't exist!"
+    "Results.txt doesn't exist!"
   createResultFile(true)
 }

@@ -5,6 +5,6 @@ fun newStateMachine1(
   operate: (StateMachine) -> Unit
 ) {
   val stateMachine = StateMachine()
-  stateMachine.start() 
+  stateMachine.start()
   operate(stateMachine)
 }
