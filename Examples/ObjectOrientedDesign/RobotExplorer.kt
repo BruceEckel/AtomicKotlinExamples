@@ -32,16 +32,17 @@ fun robotExplorer(stage: Stage) {
     stage.robot.room.col,
     stage.robot.room.row)
   // The red robot icon as a layer:
-  val robotIcon = Layer.newBuilder()
-    .withSize(Size.one())
-    .withOffset(robotPosition())
-    .build().apply {
-      fill(stage.robot.symbol.toCharacterTile(
-        style.withForegroundColor(
-          ANSITileColor.RED)))
-    }
-  // As a layer, it can be moved around:
-  grid.addLayer(robotIcon)
+  val robotIcon = grid.addLayer(
+    Layer.newBuilder()
+      .withSize(Size.one())
+      .withOffset(robotPosition())
+      .build().apply {
+        fill(
+          stage.robot.symbol.toCharacterTile(
+            style.withForegroundColor(
+              ANSITileColor.RED)))
+      }
+    )
   // Update the character beneath the robot:
   fun updateSymbolAtRobot() {
     grid.cursorPosition = robotPosition()
