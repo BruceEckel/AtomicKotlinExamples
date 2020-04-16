@@ -9,5 +9,5 @@ fun main() {
   // Ignore nullability:
   capture {
     val s3: String = s2!!
-  } eq "KotlinNullPointerException"
+  } eq "NullPointerException"
 }
