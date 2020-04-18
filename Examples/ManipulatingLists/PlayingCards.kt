@@ -3,6 +3,8 @@ package manipulatinglists
 import kotlin.random.Random
 import atomictest.*
 
+val trace = Trace()
+
 enum class Suit {
   Spade, Club, Heart, Diamond
 }
@@ -27,12 +29,13 @@ val deck: List<Card> =
 
 fun main() {
   val rand = Random(26)
-  Trace((1..7).map {
-    deck.random(rand)
-  }) eq """
-  [Jack of Hearts, Four of Hearts,
-  Five of Clubs, Seven of Clubs,
-  Jack of Diamonds, Ten of Spades,
-  Seven of Spades]
+  repeat(7) {
+    trace("'${deck.random(rand)}'")
+  }
+  trace eq """
+  'Jack of Hearts' 'Four of Hearts'
+  'Five of Clubs' 'Seven of Clubs'
+  'Jack of Diamonds' 'Ten of Spades'
+  'Seven of Spades'
   """
 }

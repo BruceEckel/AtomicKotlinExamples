@@ -2,24 +2,25 @@
 package statemachine
 
 fun main() {
-  println("first")
+  trace.clear()
+  trace("first")
   newStateMachine1 { sm ->    // [1]
     sm.finish()               // [2]
   }
-  println("second")
+  trace("second")
   newStateMachine1 {
     it.pause()                // [3]
     it.resume()
     it.finish()
   }
+  trace eq """
+  first
+  OFF -> ON
+  ON -> OFF
+  second
+  OFF -> ON
+  ON -> PAUSED
+  PAUSED -> ON
+  ON -> OFF
+  """
 }
-/* Output:
-first
-OFF -> ON
-ON -> OFF
-second
-OFF -> ON
-ON -> PAUSED
-PAUSED -> ON
-ON -> OFF
-*/

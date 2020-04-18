@@ -1,5 +1,8 @@
 // ScopeFunctions/NullableReceiver.kt
 package scopefunctions
+import atomictest.Trace
+
+val trace = Trace()
 
 data class Window(       // [1]
   val id: String = "none",
@@ -15,15 +18,14 @@ fun adjustWindowIfNotNull(window: Window?) {
     y = 10
     w *= 2
     h *= 2
-    println(this)
+    trace(this)
   }
 }
 
 fun main() {
+  trace.clear()
   val windowOrNull: Window? = null
   adjustWindowIfNotNull(windowOrNull)
-  println("Nothing happens")
+  trace("Nothing happens")
+  trace eq "Nothing happens"
 }
-/* Output:
-Nothing happens
-*/

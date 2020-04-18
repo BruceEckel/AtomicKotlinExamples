@@ -17,21 +17,20 @@ fun showMainWindow(
 
 fun showWindow(window: Window) {
   // ...
-  println("Showing ${window.id} window...")
-  println(window)
+  trace("Showing ${window.id} window...")
+  trace(window)
 }
 
 fun main() {
+  trace.clear()
   val mainWindow = Window("main")
   showMainWindow(mapOf("main" to mainWindow))
   mainWindow.x eq 10
   val noneWindow = Window()
   showMainWindow(mapOf("none" to noneWindow))
   noneWindow.x eq 0
+  trace eq """
+  Showing main window...
+  Window(id=main, x=10, y=10, w=400, h=200)
+  """
 }
-/* Output:
-Showing main window...
-Window(id=main, x=10, y=10, w=400, h=200)
-10
-0
-*/

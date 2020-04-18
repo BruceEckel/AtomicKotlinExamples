@@ -89,12 +89,6 @@ class Trace(
   operator fun invoke(obj: Any?) {
     content += obj.toString()
   }
-  constructor(result: Any) : this() {
-    result.toString().trim().split("\n")
-      .forEach {
-        content.add(it.trim())
-      }
-  }
   /**
    * Compares Trace contents to a multiline
    * String by ignoring line separators.
@@ -115,5 +109,9 @@ class Trace(
     runTest(output, multiline) {
       left == right
     }
+  }
+  
+  fun clear() {
+    content.clear()
   }
 }

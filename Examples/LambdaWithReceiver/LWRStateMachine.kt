@@ -1,6 +1,9 @@
 // LambdaWithReceiver/LWRStateMachine.kt
 package statemachine
+import atomictest.Trace
 import statemachine.State.*
+
+val trace = Trace()
 
 enum class State { ON, OFF, PAUSED }
 
@@ -12,7 +15,7 @@ class StateMachine {
     current: State?, new: State
   ) {
     if (current == null || state == current) {
-      println("$state -> $new")
+      trace("$state -> $new")
       state = new
     }
   }

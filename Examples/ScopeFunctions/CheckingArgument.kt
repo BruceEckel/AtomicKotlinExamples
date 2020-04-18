@@ -20,17 +20,18 @@ fun showGreetingWindow(
 }
 
 fun main() {
+  trace.clear()
   showGreetingWindow(mapOf(
     "greeting" to Window("greeting")))
-  println("no Window:")
+  trace("no Window:")
   showGreetingWindow(mapOf())
+  trace eq """
+  Showing greeting window...
+  Window(id=greeting, x=0, y=0, w=200, h=100)
+  Showing greeting window...
+  Window(id=greeting, x=0, y=0, w=200, h=100)
+  Showing greeting window...
+  Window(id=greeting, x=0, y=0, w=200, h=100)
+  no Window:
+  """
 }
-/* Output:
-Showing greeting window...
-Window(id=greeting, x=0, y=0, w=200, h=100)
-Showing greeting window...
-Window(id=greeting, x=0, y=0, w=200, h=100)
-Showing greeting window...
-Window(id=greeting, x=0, y=0, w=200, h=100)
-no Window:
-*/
