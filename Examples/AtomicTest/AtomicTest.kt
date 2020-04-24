@@ -1,9 +1,4 @@
 // AtomicTest/AtomicTest.kt
-/*
-A minimal test framework for the book, to
-display results and introduce & promote unit
-testing early in the learning curve.
-*/
 package atomictest
 import kotlin.math.abs
 
@@ -26,6 +21,7 @@ private fun <L, R> runTest(
     println(message)
   }
 }
+
 /**
  * Compares the string representation
  * of the object with the string `value`.
@@ -35,6 +31,7 @@ infix fun <T : Any> T.eq(value: String) {
     this.toString() == value
   }
 }
+
 /**
  * Verifies that this object is
  * equal to `value`.
@@ -44,6 +41,7 @@ infix fun <T> T.eq(value: T) {
     this == value
   }
 }
+
 /**
  * Verifies that this object is not
  * equal to `value`.
@@ -53,6 +51,7 @@ infix fun <T> T.neq(value: T) {
     this != value
   }
 }
+
 /**
  * Verfies that a `Double` number is equal
  * to `value` within a positive delta.
@@ -110,7 +109,6 @@ class Trace(
       left == right
     }
   }
-  
   fun clear() {
     content.clear()
   }
