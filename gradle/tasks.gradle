@@ -1423,11 +1423,6 @@ task ModelingMI(type: JavaExec) {
     main = 'classdelegation.ModelingMIKt'
 }
 
-task Module2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'module2.Module2Kt'
-}
-
 task Modulus(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ModulusKt'
@@ -2867,7 +2862,6 @@ task run (dependsOn: [
     'MembershipUsingBounds',
     'MixColors',
     'ModelingMI',
-    'Module2',
     'Modulus',
     'Molecule',
     'MultipleArgs',

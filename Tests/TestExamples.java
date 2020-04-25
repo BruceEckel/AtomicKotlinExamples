@@ -1798,11 +1798,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testModule2() {
-    testExample("Examples/Packages/Module2.kt", module2.Module2Kt::main);
-  }
-
-  @Test
   public void testNPEOnPlatformType() {
     testExample("Examples/PlatformTypes/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
   }
