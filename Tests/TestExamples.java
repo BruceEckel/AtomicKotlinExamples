@@ -838,6 +838,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testReadOnlyBlendMap4() {
+    testExample("Examples/Immutability/ReadOnlyBlendMap4.kt", readonlyblendmap4.ReadOnlyBlendMap4Kt::main);
+  }
+
+  @Test
   public void testXYZFlatMap() {
     testExample("Examples/Immutability/XYZFlatMap.kt", xyzflatmap.XYZFlatMapKt::main);
   }

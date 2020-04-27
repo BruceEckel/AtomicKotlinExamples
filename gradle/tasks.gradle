@@ -1868,6 +1868,11 @@ task ReadOnlyBlendMap3(type: JavaExec) {
     main = 'readonlyblendmap3.ReadOnlyBlendMap3Kt'
 }
 
+task ReadOnlyBlendMap4(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'readonlyblendmap4.ReadOnlyBlendMap4Kt'
+}
+
 task ReadOnlyCollections(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReadOnlyCollectionsKt'
@@ -2951,6 +2956,7 @@ task run (dependsOn: [
     'ReadOnlyBlendMap',
     'ReadOnlyBlendMap2',
     'ReadOnlyBlendMap3',
+    'ReadOnlyBlendMap4',
     'ReadOnlyCollections',
     'ReadOnlyMaps',
     'ReadingName',
