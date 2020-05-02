@@ -253,6 +253,11 @@ task Boxes(type: JavaExec) {
     main = 'BoxesKt'
 }
 
+task BuildLists(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'buildinglists.BuildListsKt'
+}
+
 task BuildString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'buildstring.BuildStringKt'
@@ -576,11 +581,6 @@ task DestructuringData(type: JavaExec) {
 task DestructuringDuo(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DestructuringDuoKt'
-}
-
-task DestructuringEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'destructuringex2.DestructuringEx2Kt'
 }
 
 task DestructuringMap(type: JavaExec) {
@@ -1758,6 +1758,11 @@ task Partition(type: JavaExec) {
     main = 'PartitionKt'
 }
 
+task Perform(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'generics.PerformKt'
+}
+
 task Pet(type: JavaExec) {
     classpath kotlinClassPath
     main = 'polymorphism.PetKt'
@@ -2633,6 +2638,7 @@ task run (dependsOn: [
     'BookExtensions',
     'Booleans',
     'Boxes',
+    'BuildLists',
     'BuildString',
     'ByOperations',
     'CallStack',
@@ -2698,7 +2704,6 @@ task run (dependsOn: [
     'DereferenceNull',
     'DestructuringData',
     'DestructuringDuo',
-    'DestructuringEx2',
     'DestructuringMap',
     'DeviceExtensions',
     'DeviceMembers',
@@ -2934,6 +2939,7 @@ task run (dependsOn: [
     'ParameterizedReturn',
     'ParameterizedTypes',
     'Partition',
+    'Perform',
     'Pet',
     'Pets',
     'PlatformTypes',

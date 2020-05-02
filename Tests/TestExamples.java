@@ -348,11 +348,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDestructuringEx2() {
-    testExample("Examples/Destructuring/DestructuringEx2.kt", destructuringex2.DestructuringEx2Kt::main);
-  }
-
-  @Test
   public void testForLoop() {
     testExample("Examples/Destructuring/ForLoop.kt", destructuringInLoops.ForLoopKt::main);
   }
@@ -670,6 +665,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testHolder() {
     testExample("Examples/Generics/Holder.kt", generics.HolderKt::main);
+  }
+
+  @Test
+  public void testPerform() {
+    testExample("Examples/Generics/Perform.kt", generics.PerformKt::main);
   }
 
   @Test
@@ -1103,6 +1103,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testBuildLists() {
+    testExample("Examples/LambdaWithReceiver/BuildLists.kt", buildinglists.BuildListsKt::main);
+  }
+
+  @Test
   public void testBuildString() {
     testExample("Examples/LambdaWithReceiver/BuildString.kt", buildstring.BuildStringKt::main);
   }
@@ -1390,11 +1395,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTopLevelFunctionRef() {
     testExample("Examples/MemberReferences/TopLevelFunctionRef.kt", memberreferences2.TopLevelFunctionRefKt::main);
-  }
-
-  @Test
-  public void testReadingNameWithIf() {
-    testExample("Examples/MoreLibraryFunctions/ReadingNameWithIf.kt", ReadingNameWithIfKt::main);
   }
 
   @Test
@@ -2035,6 +2035,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testReadingName() {
     testExample("Examples/ScopeFunctions/ReadingName.kt", ReadingNameKt::main);
+  }
+
+  @Test
+  public void testReadingNameWithIf() {
+    testExample("Examples/ScopeFunctions/ReadingNameWithIf.kt", ReadingNameWithIfKt::main);
   }
 
   @Test

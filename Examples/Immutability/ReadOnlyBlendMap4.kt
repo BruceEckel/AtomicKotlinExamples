@@ -2,7 +2,7 @@
 package readonlyblendmap4
 import paintcolors.Color
 
-
+@ExperimentalStdlibApi
 val map1: Map<Pair<Color, Color>, Color> =
   buildMap {
     for (a in Color.values()) {

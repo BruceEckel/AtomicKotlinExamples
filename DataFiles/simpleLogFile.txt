@@ -32,3 +32,5 @@ Trace: Line 1
 Trace: Line 2
 Trace: Line 1
 Trace: Line 2
+Trace: Line 1
+Trace: Line 2

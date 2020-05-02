@@ -1,4 +1,5 @@
-// MoreLibraryFunctions/ReadingNameWithIf.kt
+// ScopeFunctions/ReadingNameWithIf.kt
+
 fun main() {
   println("Enter your name:")
   val line = readLine()

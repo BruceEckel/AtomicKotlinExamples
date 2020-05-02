@@ -1,4 +1,4 @@
-// LambdaWithReceiver/Extensions.kt
+// LambdaWithReceiver/SMExtensions.kt
 package statemachine
 
 fun StateMachine.pauseAndResume() {
