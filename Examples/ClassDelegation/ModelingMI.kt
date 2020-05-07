@@ -23,7 +23,7 @@ class UserInput : MouseManager {
   override fun hovering() = true
 }
 
-// Even if we make the classes open, we'll
+// Even if we make the classes open, we
 // get an error because only one class may
 // appear in a supertype list:
 // class Button: ButtonImage(), UserInput()

@@ -1,4 +1,5 @@
 // ExceptionHandling/GuaranteedCleanup.kt
+package exceptionhandling
 import atomictest.eq
 
 data class Switch(

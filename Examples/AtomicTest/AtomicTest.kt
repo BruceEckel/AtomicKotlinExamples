@@ -53,7 +53,7 @@ infix fun <T> T.neq(value: T) {
 }
 
 /**
- * Verfies that a `Double` number is equal
+ * Verifies that a `Double` number is equal
  * to `value` within a positive delta.
  */
 infix fun Double.eq(value: Double) {

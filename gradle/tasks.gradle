@@ -285,7 +285,7 @@ task CallTopLevelFunction2(type: JavaExec) {
 
 task CaptureImplementation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'captureimpl.CaptureImplementationKt'
+    main = 'exceptionhandling.CaptureImplementationKt'
 }
 
 task Car(type: JavaExec) {
@@ -678,6 +678,21 @@ task EvaluationOrder(type: JavaExec) {
     main = 'EvaluationOrderKt'
 }
 
+task ExceptHandleSolution1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'exceptionhandlingsolution1.ExceptHandleSolution1Kt'
+}
+
+task ExceptHandleSolution2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'exceptionhandlingsolution2.ExceptHandleSolution2Kt'
+}
+
+task ExceptHandleSolution3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'exceptionhandlingsolution3.ExceptHandleSolution3Kt'
+}
+
 task ExplicitCheck(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExplicitCheckKt'
@@ -955,7 +970,7 @@ task GroupByVsFilter(type: JavaExec) {
 
 task GuaranteedCleanup(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'GuaranteedCleanupKt'
+    main = 'exceptionhandling.GuaranteedCleanupKt'
 }
 
 task Hamster(type: JavaExec) {
@@ -2723,6 +2738,9 @@ task run (dependsOn: [
     'EnumImport',
     'Evaluation',
     'EvaluationOrder',
+    'ExceptHandleSolution1',
+    'ExceptHandleSolution2',
+    'ExceptHandleSolution3',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',

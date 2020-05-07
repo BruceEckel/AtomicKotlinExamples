@@ -1,10 +1,10 @@
 // ExceptionHandling/CaptureImplementation.kt
-package captureimpl
+package exceptionhandling
 import atomictest.eq
 
 fun capture(f: () -> Unit): String =  // [1]
-  try {
-    f()                               // [2]
+  try {                               // [2]
+    f()
     "Error: Expected an exception"    // [3]
   } catch (e: Throwable) {            // [4]
     "${e::class.simpleName}: ${e.message}"

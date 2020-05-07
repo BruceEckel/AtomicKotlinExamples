@@ -434,7 +434,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testCaptureImplementation() {
-    testExample("Examples/ExceptionHandling/CaptureImplementation.kt", captureimpl.CaptureImplementationKt::main);
+    testExample("Examples/ExceptionHandling/CaptureImplementation.kt", exceptionhandling.CaptureImplementationKt::main);
   }
 
   @Test
@@ -443,8 +443,23 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testExceptHandleSolution1() {
+    testExample("Examples/ExceptionHandling/ExceptHandleSolution1.kt", exceptionhandlingsolution1.ExceptHandleSolution1Kt::main);
+  }
+
+  @Test
+  public void testExceptHandleSolution2() {
+    testExample("Examples/ExceptionHandling/ExceptHandleSolution2.kt", exceptionhandlingsolution2.ExceptHandleSolution2Kt::main);
+  }
+
+  @Test
+  public void testExceptHandleSolution3() {
+    testExample("Examples/ExceptionHandling/ExceptHandleSolution3.kt", exceptionhandlingsolution3.ExceptHandleSolution3Kt::main);
+  }
+
+  @Test
   public void testGuaranteedCleanup() {
-    testExample("Examples/ExceptionHandling/GuaranteedCleanup.kt", GuaranteedCleanupKt::main);
+    testExample("Examples/ExceptionHandling/GuaranteedCleanup.kt", exceptionhandling.GuaranteedCleanupKt::main);
   }
 
   @Test
