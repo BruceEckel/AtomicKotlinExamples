@@ -443,18 +443,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testExceptHandleSolution1() {
-    testExample("Examples/ExceptionHandling/ExceptHandleSolution1.kt", exceptionhandlingsolution1.ExceptHandleSolution1Kt::main);
+  public void testExceptHandlingSoln1() {
+    testExample("Examples/ExceptionHandling/ExceptHandlingSoln1.kt", exceptionhandlingsolution1.ExceptHandlingSoln1Kt::main);
   }
 
   @Test
-  public void testExceptHandleSolution2() {
-    testExample("Examples/ExceptionHandling/ExceptHandleSolution2.kt", exceptionhandlingsolution2.ExceptHandleSolution2Kt::main);
+  public void testExceptHandlingSoln2() {
+    testExample("Examples/ExceptionHandling/ExceptHandlingSoln2.kt", exceptionhandlingsolution2.ExceptHandlingSoln2Kt::main);
   }
 
   @Test
-  public void testExceptHandleSolution3() {
-    testExample("Examples/ExceptionHandling/ExceptHandleSolution3.kt", exceptionhandlingsolution3.ExceptHandleSolution3Kt::main);
+  public void testExceptHandlingSoln3() {
+    testExample("Examples/ExceptionHandling/ExceptHandlingSoln3.kt", exceptionhandlingsolution3.ExceptHandlingSoln3Kt::main);
   }
 
   @Test

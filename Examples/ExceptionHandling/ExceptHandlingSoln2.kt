@@ -1,5 +1,5 @@
-// ExceptionHandling/ExceptHandleSolution1.kt
-package exceptionhandlingsolution1
+// ExceptionHandling/ExceptHandlingSoln2.kt
+package exceptionhandlingsolution2
 import atomictest.*
 
 private val trace = Trace()

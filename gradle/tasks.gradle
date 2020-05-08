@@ -678,19 +678,19 @@ task EvaluationOrder(type: JavaExec) {
     main = 'EvaluationOrderKt'
 }
 
-task ExceptHandleSolution1(type: JavaExec) {
+task ExceptHandlingSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptionhandlingsolution1.ExceptHandleSolution1Kt'
+    main = 'exceptionhandlingsolution1.ExceptHandlingSoln1Kt'
 }
 
-task ExceptHandleSolution2(type: JavaExec) {
+task ExceptHandlingSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptionhandlingsolution2.ExceptHandleSolution2Kt'
+    main = 'exceptionhandlingsolution2.ExceptHandlingSoln2Kt'
 }
 
-task ExceptHandleSolution3(type: JavaExec) {
+task ExceptHandlingSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptionhandlingsolution3.ExceptHandleSolution3Kt'
+    main = 'exceptionhandlingsolution3.ExceptHandlingSoln3Kt'
 }
 
 task ExplicitCheck(type: JavaExec) {
@@ -2738,9 +2738,9 @@ task run (dependsOn: [
     'EnumImport',
     'Evaluation',
     'EvaluationOrder',
-    'ExceptHandleSolution1',
-    'ExceptHandleSolution2',
-    'ExceptHandleSolution3',
+    'ExceptHandlingSoln1',
+    'ExceptHandlingSoln2',
+    'ExceptHandlingSoln3',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',
