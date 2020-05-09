@@ -4,35 +4,66 @@ import atomictest.Trace
 
 private val trace = Trace()
 
-open class DigitFail : Exception()
-open class NoDigit : DigitFail()
-open class BadDigit : DigitFail()
+open class NumberFail : Exception()
+open class NoNumber : NumberFail()
+open class BadNumber : NumberFail()
 
-fun findDigit(s: String): Int {
+fun findNumber(s: String): String {
+  var result = ""
   for (c in s)
     if (c in "0123456789")
-      return c.toInt()
-  throw DigitFail()
+      result += c
+    else if (result.isNotEmpty())
+      return result
+  throw NoNumber()
 }
 
-fun embedDigit(n: String) =
+fun convertNumber(s: String): Int =
   try {
-    "AbCdE" + n[0].toInt() + "fGhIj"
-  } catch (e: BadDigit) {
+    s.toInt()
+  } catch (e: NumberFormatException) {
     trace(e)
-    throw NoDigit()
+    throw BadNumber()
   }
 
-fun convertDigit(n: String) =
+fun embedNumber(n: Int) = "AbCdE${n}fGhIj"
+
+fun justFail(s: String) =
   try {
-    n[0].toInt()
-  } catch (e: IllegalArgumentException) {
+    trace("justFail: [${s}]")
+    trace(embedNumber(
+      convertNumber(
+        findNumber(s))))
+  } catch (e: NumberFail) {
     trace(e)
-    throw BadDigit()
   }
+
+fun recover(s: String): String {
+  trace("recover: [${s}]")
+  val s1: String = try {
+    findNumber(s)
+  } catch (e: NoNumber) {
+    "0"
+  }
+  val s2: Int = try {
+    convertNumber(s1)
+  } catch (e: BadNumber) {
+    -1
+  }
+  return embedNumber(s2)
+}
 
 fun main() {
+  justFail("The13thFloor9")
+  justFail("NoDigitsHere")
+  recover("The13thFloor9")
+  recover("NoDigitsHere")
   trace eq """
-
-"""
+  justFail: [The13thFloor9]
+  AbCdE13fGhIj
+  justFail: [NoDigitsHere]
+  exceptionhandlingsolution2.NoNumber
+  recover: [The13thFloor9]
+  recover: [NoDigitsHere]
+  """
 }
