@@ -12,13 +12,16 @@ open class Except : Exception() {
 
 open class DBFail : Except()
 class DBOpenFail : DBFail()
+class DBWriteFail : DBFail()
 class DBCloseFail : DBFail()
 
 class DataBase {
   fun open(id: Int, level: Int) {
     if (id == level) throw DBOpenFail()
   }
-  fun write(s: String) {}
+  fun write(s: String, id: Int, level: Int) {
+    if (id == level) throw DBWriteFail()
+  }
   fun close(id: Int, level: Int) {
     if (id == level) throw DBCloseFail()
   }
@@ -54,14 +57,20 @@ fun transact(level: Int): Status {
 // Everything up to here is STARTER CODE
     try {
       net.open(2, level)
-      db.write(net.read())
-      net.close(3, level)
+      db.write(net.read(), 3, level)
     } catch (e: NetworkFail) {
       trace("Network Problem $e")
       return Failed
     } catch (e: DBFail) {
       trace("Database Write Failed $e")
       return Failed
+    } finally {
+      try {
+        net.close(4, level)
+      } catch (e: NetworkCloseFail) {
+        trace("Network close failed $e")
+        throw e
+      }
     }
     return Success
   }
@@ -72,7 +81,7 @@ fun transact(level: Int): Status {
       return Failed
   } finally {
     try {
-      db.close(4, level)
+      db.close(5, level)
     } catch (e: DBCloseFail) {
       trace("Database Problem $e")
       throw e
@@ -83,10 +92,12 @@ fun transact(level: Int): Status {
 
 // All of main() is STARTER CODE:
 fun main() {
-  for (level in 0..4)
+  for (level in 0..5)
     try {
       trace(transact(level))
     } catch (e: DBCloseFail) {
+      trace("main() Problem $e")
+    } catch (e: NetworkCloseFail) {
       trace("main() Problem $e")
     }
   trace eq """
@@ -95,8 +106,10 @@ fun main() {
   Failed
   Network Problem NetworkOpenFail
   Failed
-  Network Problem NetworkCloseFail
+  Database Write Failed DBWriteFail
   Failed
+  Network close failed NetworkCloseFail
+  main() Problem NetworkCloseFail
   Database Problem DBCloseFail
   main() Problem DBCloseFail
   """

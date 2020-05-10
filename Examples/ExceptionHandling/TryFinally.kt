@@ -1,29 +1,35 @@
 // ExceptionHandling/TryFinally.kt
 package exceptionhandling
-import atomictest.capture
+import atomictest.*
+
+private val trace = Trace()
 
 fun checkValue(value: Int) {
   try {
-    println(value)
+    trace(value)
     if (value <= 0)
       throw IllegalArgumentException(
-        "value\n must be positive: $value")
+        "value must be positive: $value")
   } finally {
-    println("In finally clause for $value")
+    trace("In finally clause for $value")
   }
 }
 
 fun main() {
-  checkValue(10)
-  println(capture {
-    checkValue(-10)
-  })
+  listOf(10, -10).forEach {
+    try {
+      checkValue(it)
+    } catch (e: IllegalArgumentException) {
+      trace("In catch clause for main()")
+      trace(e.message)
+    }
+  }
+  trace eq """
+  10
+  In finally clause for 10
+  -10
+  In finally clause for -10
+  In catch clause for main()
+  value must be positive: -10
+  """
 }
-/* Output:
-10
-In finally clause for 10
--10
-In finally clause for -10
-IllegalArgumentException: value
- must be positive: -10
-*/
