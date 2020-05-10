@@ -444,7 +444,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testExceptHandlingSoln1() {
-    testExample("Examples/ExceptionHandling/ExceptHandlingSoln1.kt", exceptionhandlingsolution1.ExceptHandlingSoln1Kt::main);
+    testExample("Examples/ExceptionHandling/ExceptHandlingSoln1.kt", exceptionhandlingsoln1.ExceptHandlingSoln1Kt::main);
   }
 
   @Test
@@ -454,7 +454,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testExceptHandlingSoln3() {
-    testExample("Examples/ExceptionHandling/ExceptHandlingSoln3.kt", exceptionhandlingsolution3.ExceptHandlingSoln3Kt::main);
+    testExample("Examples/ExceptionHandling/ExceptHandlingSoln3.kt", exceptionhandlingsoln3.ExceptHandlingSoln3Kt::main);
   }
 
   @Test

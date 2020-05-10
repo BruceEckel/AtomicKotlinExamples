@@ -680,7 +680,7 @@ task EvaluationOrder(type: JavaExec) {
 
 task ExceptHandlingSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptionhandlingsolution1.ExceptHandlingSoln1Kt'
+    main = 'exceptionhandlingsoln1.ExceptHandlingSoln1Kt'
 }
 
 task ExceptHandlingSoln2(type: JavaExec) {
@@ -690,7 +690,7 @@ task ExceptHandlingSoln2(type: JavaExec) {
 
 task ExceptHandlingSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptionhandlingsolution3.ExceptHandlingSoln3Kt'
+    main = 'exceptionhandlingsoln3.ExceptHandlingSoln3Kt'
 }
 
 task ExplicitCheck(type: JavaExec) {

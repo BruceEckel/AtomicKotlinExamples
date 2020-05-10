@@ -11,7 +11,7 @@ open class BadNumber : NumberFail()
 fun findNumber(s: String): String {
   var result = ""
   for (c in s)
-    if (c in "0123456789")
+    if (c in "0123456789.-")
       result += c
     else if (result.isNotEmpty())
       return result
@@ -22,15 +22,16 @@ fun convertNumber(s: String): Int =
   try {
     s.toInt()
   } catch (e: NumberFormatException) {
-    trace(e)
     throw BadNumber()
   }
 
 fun embedNumber(n: Int) = "AbCdE${n}fGhIj"
 
+// All up to here is STARTER CODE
+// The learner defines the following two functions:
+
 fun justFail(s: String) =
   try {
-    trace("justFail: [${s}]")
     trace(embedNumber(
       convertNumber(
         findNumber(s))))
@@ -38,32 +39,50 @@ fun justFail(s: String) =
     trace(e)
   }
 
-fun recover(s: String): String {
-  trace("recover: [${s}]")
-  val s1: String = try {
+fun recover(s: String) {
+  val ns: String = try {
     findNumber(s)
   } catch (e: NoNumber) {
     "0"
   }
-  val s2: Int = try {
-    convertNumber(s1)
+  val n: Int = try {
+    convertNumber(ns)
   } catch (e: BadNumber) {
     -1
   }
-  return embedNumber(s2)
+  trace(embedNumber(n))
+}
+
+// From here on is STARTER CODE:
+
+fun test(s: String) {
+  trace("justFail($s)")
+  justFail(s)
+  trace("recover($s)")
+  recover(s)
 }
 
 fun main() {
-  justFail("The13thFloor9")
-  justFail("NoDigitsHere")
-  recover("The13thFloor9")
-  recover("NoDigitsHere")
+  test("The13thFloor9")
+  test("NoDigitsHere")
+  test("negative-11int")
+  test("A float: 3.14159 (pi)")
   trace eq """
-  justFail: [The13thFloor9]
+  justFail(The13thFloor9)
   AbCdE13fGhIj
-  justFail: [NoDigitsHere]
+  recover(The13thFloor9)
+  AbCdE13fGhIj
+  justFail(NoDigitsHere)
   exceptionhandlingsolution2.NoNumber
-  recover: [The13thFloor9]
-  recover: [NoDigitsHere]
+  recover(NoDigitsHere)
+  AbCdE0fGhIj
+  justFail(negative-11int)
+  AbCdE-11fGhIj
+  recover(negative-11int)
+  AbCdE-11fGhIj
+  justFail(A float: 3.14159 (pi))
+  exceptionhandlingsolution2.BadNumber
+  recover(A float: 3.14159 (pi))
+  AbCdE-1fGhIj
   """
 }

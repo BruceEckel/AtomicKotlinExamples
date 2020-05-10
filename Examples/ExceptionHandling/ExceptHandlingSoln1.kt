@@ -1,9 +1,9 @@
 // ExceptionHandling/ExceptHandlingSoln1.kt
-package exceptionhandlingsolution1
-import atomictest.Trace                 // StarterCode
-import kotlin.random.Random             // StarterCode
+package exceptionhandlingsoln1
+import atomictest.Trace                 // STARTER CODE
+import kotlin.random.Random             // STARTER CODE
 
-private val trace = Trace()             // StarterCode
+private val trace = Trace()             // STARTER CODE
 
 data class Hamster(val name: String)
 
@@ -23,8 +23,8 @@ class NoSuchHamsterException(val id: String) :
 class OutOfWaterException :
   HamsterCageException("Cage out of water")
 
-class HamsterCage(val capacity: Int) {   // StarterCode
-  private val seed = Random(47)          // StarterCode
+class HamsterCage(val capacity: Int) {   // STARTER CODE
+  private val seed = Random(47)          // STARTER CODE
   private val cage = HashSet<Hamster>()
   fun add(h: Hamster) {
     if (cage.size >= capacity)
@@ -44,11 +44,10 @@ class HamsterCage(val capacity: Int) {   // StarterCode
   }
 }
 
-val hamsters = listOf(                 // StarterCode
-  Hamster("Sally"), Hamster("Ralph"),  // StarterCode
-  Hamster("Bob"), Hamster("Sergio"),   // StarterCode
-  Hamster("Allison"), Hamster("Jane")  // StarterCode
-)
+val hamsters = listOf(                 // STARTER CODE
+  Hamster("Sally"), Hamster("Ralph"),  // STARTER CODE
+  Hamster("Bob"), Hamster("Sergio"),   // STARTER CODE
+  Hamster("Allison"), Hamster("Jane")) // STARTER CODE
 
 fun test(hc: HamsterCage) {
   try {
@@ -74,7 +73,7 @@ fun test(hc: HamsterCage) {
   }
 }
 
-                    // All of main() is StarterCode:
+// All of main() is STARTER CODE:
 fun main() {
   test(HamsterCage(3))
   trace eq """
