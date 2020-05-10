@@ -1,4 +1,4 @@
-// CollectionsAndJava/CollectionStructure.kt
+// Interoperability/CollectionStructure.kt
 package collectionsandjava
 
 interface Collection<E>

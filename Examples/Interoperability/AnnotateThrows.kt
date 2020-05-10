@@ -1,4 +1,4 @@
-// ExceptionHandling/AnnotateThrows.kt
+// Interoperability/AnnotateThrows.kt
 package checked
 import java.io.IOException
 

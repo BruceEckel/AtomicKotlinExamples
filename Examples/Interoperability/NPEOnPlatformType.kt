@@ -1,4 +1,4 @@
-// PlatformTypes/NPEOnPlatformType.kt
+// Interoperability/NPEOnPlatformType.kt
 import javacode.JTool
 import atomictest.*
 

@@ -1,4 +1,4 @@
-// ExceptionHandling/JavaChecked.java
+// Interoperability/JavaChecked.java
 import java.io.*;
 import java.nio.file.*;
 import static atomictest.AtomicTestKt.eq;
@@ -19,7 +19,7 @@ public class JavaChecked {
     }
     try {
       String first = source.readLine();
-      eq(first, "// ExceptionHandling/" +
+      eq(first, "// Interoperability/" +
         "JavaChecked.java");
     } catch(IOException e) {
       // Recover from read() error

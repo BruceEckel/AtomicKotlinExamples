@@ -23,11 +23,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBigFibonacci() {
-    testExample("Examples/AdaptingJava/BigFibonacci.kt", adaptingjava.BigFibonacciKt::main);
-  }
-
-  @Test
   public void testGreatApe3() {
     testExample("Examples/BaseClassInit/GreatApe3.kt", baseclassinit.GreatApe3Kt::main);
   }
@@ -180,21 +175,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testModelingMI() {
     testExample("Examples/ClassDelegation/ModelingMI.kt", classdelegation.ModelingMIKt::main);
-  }
-
-  @Test
-  public void testHiddenArrayList() {
-    testExample("Examples/CollectionsAndJava/HiddenArrayList.kt", HiddenArrayListKt::main);
-  }
-
-  @Test
-  public void testJavaList() {
-    testExample("Examples/CollectionsAndJava/JavaList.kt", JavaListKt::main);
-  }
-
-  @Test
-  public void testReadOnlyCollections() {
-    testExample("Examples/CollectionsAndJava/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
   }
 
   @Test
@@ -473,11 +453,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testKotlinChecked() {
-    testExample("Examples/ExceptionHandling/KotlinChecked.kt", KotlinCheckedKt::main);
-  }
-
-  @Test
   public void testLibraryException() {
     testExample("Examples/ExceptionHandling/LibraryException.kt", exceptionhandling.LibraryExceptionKt::main);
   }
@@ -495,11 +470,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTryFinally() {
     testExample("Examples/ExceptionHandling/TryFinally.kt", exceptionhandling.TryFinallyKt::main);
-  }
-
-  @Test
-  public void testWithCleanup() {
-    testExample("Examples/ExceptionHandling/WithCleanup.kt", withfunction.WithCleanupKt::main);
   }
 
   @Test
@@ -1033,6 +1003,51 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAnnotatedJava() {
+    testExample("Examples/Interoperability/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
+  }
+
+  @Test
+  public void testBigFibonacci() {
+    testExample("Examples/Interoperability/BigFibonacci.kt", adaptingjava.BigFibonacciKt::main);
+  }
+
+  @Test
+  public void testHiddenArrayList() {
+    testExample("Examples/Interoperability/HiddenArrayList.kt", HiddenArrayListKt::main);
+  }
+
+  @Test
+  public void testJavaList() {
+    testExample("Examples/Interoperability/JavaList.kt", JavaListKt::main);
+  }
+
+  @Test
+  public void testKotlinChecked() {
+    testExample("Examples/Interoperability/KotlinChecked.kt", KotlinCheckedKt::main);
+  }
+
+  @Test
+  public void testNPEOnPlatformType() {
+    testExample("Examples/Interoperability/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
+  }
+
+  @Test
+  public void testPlatformTypes() {
+    testExample("Examples/Interoperability/PlatformTypes.kt", PlatformTypesKt::main);
+  }
+
+  @Test
+  public void testReadOnlyCollections() {
+    testExample("Examples/Interoperability/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
+  }
+
+  @Test
+  public void testWithCleanup() {
+    testExample("Examples/Interoperability/WithCleanup.kt", withfunction.WithCleanupKt::main);
+  }
+
+  @Test
   public void testAnyInstead() {
     testExample("Examples/IntroGenerics/AnyInstead.kt", introgenerics.AnyInsteadKt::main);
   }
@@ -1518,11 +1533,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAnnotatedJava() {
-    testExample("Examples/NullabilityAnnotations/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
-  }
-
-  @Test
   public void testDefinition() {
     testExample("Examples/NullableExtensions/Definition.kt", DefinitionKt::main);
   }
@@ -1815,16 +1825,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testImportPythagorean() {
     testExample("Examples/Packages/ImportPythagorean.kt", ImportPythagoreanKt::main);
-  }
-
-  @Test
-  public void testNPEOnPlatformType() {
-    testExample("Examples/PlatformTypes/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
-  }
-
-  @Test
-  public void testPlatformTypes() {
-    testExample("Examples/PlatformTypes/PlatformTypes.kt", PlatformTypesKt::main);
   }
 
   @Test

@@ -1,4 +1,4 @@
-// ExceptionHandling/CatchChecked.java
+// Interoperability/CatchChecked.java
 import checked.AnnotateThrowsKt;
 import java.io.IOException;
 import static atomictest.AtomicTestKt.eq;

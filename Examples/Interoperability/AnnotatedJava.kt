@@ -1,4 +1,4 @@
-// NullabilityAnnotations/AnnotatedJava.kt
+// Interoperability/AnnotatedJava.kt
 package nullabilityannotations
 import javacode.AnnotatedJTool
 import atomictest.eq

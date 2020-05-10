@@ -54,7 +54,7 @@ fun transact(level: Int): Status {
 // Everything up to here is STARTER CODE
     try {
       net.open(2, level)
-      db.write(net.read())          // Needs to be able to fail to justify DBFail
+      db.write(net.read())
       net.close(3, level)
     } catch (e: NetworkFail) {
       trace("Network Problem $e")

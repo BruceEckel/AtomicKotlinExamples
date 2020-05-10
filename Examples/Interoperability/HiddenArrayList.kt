@@ -1,4 +1,4 @@
-// CollectionsAndJava/HiddenArrayList.kt
+// Interoperability/HiddenArrayList.kt
 import atomictest.eq
 
 fun main() {

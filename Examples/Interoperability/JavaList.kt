@@ -1,4 +1,4 @@
-// CollectionsAndJava/JavaList.kt
+// Interoperability/JavaList.kt
 import atomictest.eq
 
 fun main() {

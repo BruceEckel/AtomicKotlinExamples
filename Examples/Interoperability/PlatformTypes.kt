@@ -1,4 +1,4 @@
-// PlatformTypes/PlatformTypes.kt
+// Interoperability/PlatformTypes.kt
 import javacode.JTool
 import atomictest.eq
 

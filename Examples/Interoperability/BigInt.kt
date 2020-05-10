@@ -1,4 +1,4 @@
-// AdaptingJava/BigInt.kt
+// Interoperability/BigInt.kt
 package bigint
 import java.math.BigInteger
 

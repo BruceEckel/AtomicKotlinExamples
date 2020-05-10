@@ -1,4 +1,4 @@
-// AdaptingJava/BigFibonacci.kt
+// Interoperability/BigFibonacci.kt
 package adaptingjava
 import atomictest.eq
 import bigint.*
