@@ -1,0 +1,51 @@
+// CheckInstructions/CheckInstructionsSoln2.kt
+package checkinstructionssoln2
+import atomictest.*
+
+fun fn(s: String?): String {
+  requireNotNull(s)
+  require(s.isNotEmpty()) {
+    "s must not be empty, is [$s]"
+  }
+  require(s.isNotBlank()) {
+    "s must not be blank, is [$s]"
+  }
+  require(s.split('-').size == 3) {
+    "s must contain 3 parts " +
+      "separated by '-', is [$s]"
+  }
+  return s
+}
+
+fun gn(d: Double?): Double {
+  requireNotNull(d)
+  require(0 < d && d <= 10.0)
+  return d
+}
+
+fun main() {
+  capture { fn(null) } eq
+    "IllegalArgumentException: " +
+    "Required value was null."
+  capture { fn("") } eq
+    "IllegalArgumentException: " +
+    "s must not be empty, is []"
+  capture { fn("   ") } eq
+    "IllegalArgumentException: " +
+    "s must not be blank, is [   ]"
+  capture { fn("abcdef") } eq
+    "IllegalArgumentException: " +
+    "s must contain 3 parts " +
+    "separated by '-', is [abcdef]"
+  fn("ab-cd-ef") eq "ab-cd-ef"
+  capture { gn(null) } eq
+    "IllegalArgumentException: " +
+    "Required value was null."
+  capture { gn(-0.1) } eq
+    "IllegalArgumentException: " +
+    "Failed requirement."
+  capture { gn(11.0) } eq
+    "IllegalArgumentException: " +
+    "Failed requirement."
+  gn(5.5) eq 5.5
+}

@@ -68,7 +68,7 @@ fun transact(level: Int): Status {
       try {
         net.close(4, level)
       } catch (e: NetworkCloseFail) {
-        trace("Network close failed $e")
+        trace("Network Close Failed $e")
         throw e
       }
     }
@@ -108,7 +108,7 @@ fun main() {
   Failed
   Database Write Failed DBWriteFail
   Failed
-  Network close failed NetworkCloseFail
+  Network Close Failed NetworkCloseFail
   main() Problem NetworkCloseFail
   Database Problem DBCloseFail
   main() Problem DBCloseFail

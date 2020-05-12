@@ -133,6 +133,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCheckInstructionsSoln1() {
+    testExample("Examples/CheckInstructions/CheckInstructionsSoln1.kt", checkinstructionssoln1.CheckInstructionsSoln1Kt::main);
+  }
+
+  @Test
+  public void testCheckInstructionsSoln2() {
+    testExample("Examples/CheckInstructions/CheckInstructionsSoln2.kt", checkinstructionssoln2.CheckInstructionsSoln2Kt::main);
+  }
+
+  @Test
+  public void testCheckInstructionsSoln3() {
+    testExample("Examples/CheckInstructions/CheckInstructionsSoln3.kt", checkinstructionssoln3.CheckInstructionsSoln3Kt::main);
+  }
+
+  @Test
   public void testDataFile() {
     testExample("Examples/CheckInstructions/DataFile.kt", checkinstructions.DataFileKt::main);
   }

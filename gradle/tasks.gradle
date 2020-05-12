@@ -323,6 +323,21 @@ task CharRange(type: JavaExec) {
     main = 'CharRangeKt'
 }
 
+task CheckInstructionsSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'checkinstructionssoln1.CheckInstructionsSoln1Kt'
+}
+
+task CheckInstructionsSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'checkinstructionssoln2.CheckInstructionsSoln2Kt'
+}
+
+task CheckInstructionsSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'checkinstructionssoln3.CheckInstructionsSoln3Kt'
+}
+
 task CheckObject(type: JavaExec) {
     classpath kotlinClassPath
     main = 'nothingtype.CheckObjectKt'
@@ -2667,6 +2682,9 @@ task run (dependsOn: [
     'ChainedCalls',
     'ChangingAVal',
     'CharRange',
+    'CheckInstructionsSoln1',
+    'CheckInstructionsSoln2',
+    'CheckInstructionsSoln3',
     'CheckObject',
     'CheckObject2',
     'CheckingArgument',
