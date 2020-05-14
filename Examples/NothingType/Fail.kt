@@ -2,16 +2,14 @@
 package nothingtype
 import atomictest.*
 
-class MyException(msg: String) : Exception(msg)
-
 fun fail(i: Int): Nothing =
-  throw MyException("Failure $i")
+  throw Exception("fail($i)")
 
 fun main() {
   capture {
     fail(1)
-  } eq "MyException: Failure 1"
+  } eq "Exception: fail(1)"
   capture {
     fail(2)
-  } eq "MyException: Failure 2"
+  } eq "Exception: fail(2)"
 }

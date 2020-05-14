@@ -1,0 +1,33 @@
+// NothingType/NothingTypeSoln3.kt
+package nothingtypesoln3
+import atomictest.*
+
+private val trace = Trace()
+
+private var _debug = true
+
+class Failure(msg: String) : Exception(msg)
+
+fun fail(msg: String): Nothing =
+  throw Failure(msg)
+
+fun debug(test: Boolean) {
+  trace("debug($test) with _debug[$_debug]")
+  if (_debug && !test) fail("debug() failed")
+}
+
+fun main() {
+  debug(true)
+  capture {
+    debug(false)
+  } eq "Failure: debug() failed"
+  _debug = false
+  debug(true)
+  debug(false)
+  trace eq """
+  debug(true) with _debug[true]
+  debug(false) with _debug[true]
+  debug(true) with _debug[false]
+  debug(false) with _debug[false]
+  """
+}

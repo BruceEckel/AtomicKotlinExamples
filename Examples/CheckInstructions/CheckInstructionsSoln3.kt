@@ -4,9 +4,9 @@ import atomictest.*
 
 class Tank(val capacity: Double) {
   val safetyGap = 0.02 * capacity // 2%
-  val maxLevel = capacity - safetyGap
   var level: Double = 0.0
     private set
+  val maxLevel = capacity - safetyGap
   fun add(quantity: Double): Double {
     require(quantity > 0.0) {
       "quantity must be > 0, is $quantity"

@@ -158,6 +158,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testJulianMonth() {
+    testExample("Examples/CheckInstructions/JulianMonth.kt", checkinstructions.JulianMonthKt::main);
+  }
+
+  @Test
   public void testPostconditions() {
     testExample("Examples/CheckInstructions/Postconditions.kt", checkinstructions.PostconditionsKt::main);
   }
@@ -1543,6 +1548,26 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testListOfNothing() {
+    testExample("Examples/NothingType/ListOfNothing.kt", nothingtype.ListOfNothingKt::main);
+  }
+
+  @Test
+  public void testNothingTypeSoln1() {
+    testExample("Examples/NothingType/NothingTypeSoln1.kt", nothingtypesoln1.NothingTypeSoln1Kt::main);
+  }
+
+  @Test
+  public void testNothingTypeSoln2() {
+    testExample("Examples/NothingType/NothingTypeSoln2.kt", nothingtypesoln2.NothingTypeSoln2Kt::main);
+  }
+
+  @Test
+  public void testNothingTypeSoln3() {
+    testExample("Examples/NothingType/NothingTypeSoln3.kt", nothingtypesoln3.NothingTypeSoln3Kt::main);
+  }
+
+  @Test
   public void testTodo() {
     testExample("Examples/NothingType/Todo.kt", nothingtype.TodoKt::main);
   }
@@ -1990,6 +2015,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testForEachLine() {
     testExample("Examples/ResourceCleanup/ForEachLine.kt", resourcecleanup.ForEachLineKt::main);
+  }
+
+  @Test
+  public void testResourceCleanupSoln1() {
+    testExample("Examples/ResourceCleanup/ResourceCleanupSoln1.kt", resourcecleanupsoln1.ResourceCleanupSoln1Kt::main);
+  }
+
+  @Test
+  public void testResourceCleanupSoln2() {
+    testExample("Examples/ResourceCleanup/ResourceCleanupSoln2.kt", resourcecleanupsoln2.ResourceCleanupSoln2Kt::main);
+  }
+
+  @Test
+  public void testResourceCleanupSoln3() {
+    testExample("Examples/ResourceCleanup/ResourceCleanupSoln3.kt", resourcecleanupsoln3.ResourceCleanupSoln3Kt::main);
   }
 
   @Test

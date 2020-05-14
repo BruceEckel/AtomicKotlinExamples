@@ -1258,6 +1258,11 @@ task JoinToString(type: JavaExec) {
     main = 'JoinToStringKt'
 }
 
+task JulianMonth(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'checkinstructions.JulianMonthKt'
+}
+
 task KeyFailure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'KeyFailureKt'
@@ -1331,6 +1336,11 @@ task ListInit(type: JavaExec) {
 task ListOf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ListOfKt'
+}
+
+task ListOfNothing(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtype.ListOfNothingKt'
 }
 
 task ListOfStar(type: JavaExec) {
@@ -1591,6 +1601,21 @@ task NonNullAssert(type: JavaExec) {
 task NonNullAssertCall(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NonNullAssertCallKt'
+}
+
+task NothingTypeSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtypesoln1.NothingTypeSoln1Kt'
+}
+
+task NothingTypeSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtypesoln2.NothingTypeSoln2Kt'
+}
+
+task NothingTypeSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nothingtypesoln3.NothingTypeSoln3Kt'
 }
 
 task NullInMaps(type: JavaExec) {
@@ -1986,6 +2011,21 @@ task Repetitive(type: JavaExec) {
 task RequireNotNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'checkinstructions.RequireNotNullKt'
+}
+
+task ResourceCleanupSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'resourcecleanupsoln1.ResourceCleanupSoln1Kt'
+}
+
+task ResourceCleanupSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'resourcecleanupsoln2.ResourceCleanupSoln2Kt'
+}
+
+task ResourceCleanupSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'resourcecleanupsoln3.ResourceCleanupSoln3Kt'
 }
 
 task ResultOfApply(type: JavaExec) {
@@ -2869,6 +2909,7 @@ task run (dependsOn: [
     'JavaList',
     'JetPack',
     'JoinToString',
+    'JulianMonth',
     'KeyFailure',
     'KotlinChecked',
     'LabeledReturn',
@@ -2884,6 +2925,7 @@ task run (dependsOn: [
     'ListIndicesMap',
     'ListInit',
     'ListOf',
+    'ListOfNothing',
     'ListOfStar',
     'ListOfStrings',
     'ListUsefulFunction',
@@ -2936,6 +2978,9 @@ task run (dependsOn: [
     'NoFramework',
     'NonNullAssert',
     'NonNullAssertCall',
+    'NothingTypeSoln1',
+    'NothingTypeSoln2',
+    'NothingTypeSoln3',
     'NullInMaps',
     'NullableFunction',
     'NullableInMap',
@@ -3015,6 +3060,9 @@ task run (dependsOn: [
     'RepeatVerbose',
     'Repetitive',
     'RequireNotNull',
+    'ResourceCleanupSoln1',
+    'ResourceCleanupSoln2',
+    'ResourceCleanupSoln3',
     'ResultOfApply',
     'ResultOfWith',
     'ReturnFromFun',

@@ -1,18 +1,19 @@
 // ResourceCleanup/Usable.kt
 package resourcecleanup
 import java.io.Closeable
+import atomictest.*
 
-class Usable(val msg: String) : Closeable {
-  fun operation() =
-    println("Usable.operation $msg")
-  override fun close() =
-    println("closing Usable $msg")
+private val trace = Trace()
+
+class Usable() : Closeable {
+  fun operation() = trace("Usable.operation")
+  override fun close() = trace("Usable.close")
 }
 
 fun main() {
-  Usable("Done").use { it.operation() }
+  Usable().use { it.operation() }
+  trace eq """
+  Usable.operation
+  Usable.close
+  """
 }
-/* Output:
-Usable.operation Done
-closing Usable Done
-*/

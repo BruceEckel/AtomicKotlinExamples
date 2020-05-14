@@ -13,6 +13,6 @@ fun dataFile(name: String): File {
 
 fun main() {
   dataFile("Test.txt") eq
-    Paths.get("DataFiles",
-      "Test.txt").toString()
+  Paths.get("DataFiles", "Test.txt")
+    .toString()
 }

@@ -2,9 +2,9 @@
 package destructuringInLoops
 import atomictest.Trace
 
-val trace = Trace()
 
 fun main() {
+  val trace = Trace()
   val list = listOf('a', 'b', 'c')
   for ((index, value) in list.withIndex()) {
     trace("$index:$value")

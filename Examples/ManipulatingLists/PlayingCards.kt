@@ -3,8 +3,6 @@ package manipulatinglists
 import kotlin.random.Random
 import atomictest.*
 
-val trace = Trace()
-
 enum class Suit {
   Spade, Club, Heart, Diamond
 }
@@ -29,6 +27,7 @@ val deck: List<Card> =
 
 fun main() {
   val rand = Random(26)
+  val trace = Trace()
   repeat(7) {
     trace("'${deck.random(rand)}'")
   }

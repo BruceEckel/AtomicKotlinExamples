@@ -9,7 +9,9 @@ fun f(s: String): String {
   require(s.isNotBlank()) {
     "s must not be blank, is [$s]"
   }
-  require(s.split('-').size == 3) {
+  val parts = s.split('-')
+  require(parts.size == 3 &&
+    parts.all { it.isNotEmpty() }) {
     "s must contain 3 parts " +
     "separated by '-', is [$s]"
   }
@@ -32,6 +34,14 @@ fun main() {
     "IllegalArgumentException: " +
     "s must contain 3 parts " +
     "separated by '-', is [abcdef]"
+  capture { f("-abcdef-") } eq
+    "IllegalArgumentException: " +
+    "s must contain 3 parts " +
+    "separated by '-', is [-abcdef-]"
+  capture { f("-abc-def-") } eq
+    "IllegalArgumentException: " +
+    "s must contain 3 parts " +
+    "separated by '-', is [-abc-def-]"
   f("ab-cd-ef") eq "ab-cd-ef"
   capture { g(-0.1) } eq
     "IllegalArgumentException: " +
