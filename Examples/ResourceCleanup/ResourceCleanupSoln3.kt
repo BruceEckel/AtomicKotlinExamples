@@ -5,7 +5,7 @@ import atomictest.*
 
 private val trace = Trace()
 
-class Cleanup() : Closeable {
+class Cleanup : Closeable {
   fun f() = trace("f()")
   fun g() = trace("g()")
   override fun close() = trace("close()")

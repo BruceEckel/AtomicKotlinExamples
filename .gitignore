@@ -45,4 +45,5 @@ Examples/ErrorReporting/trace_real.txt
 Examples/Logging/atomicLog.txt
 Examples/Logging/simpleLogFile.txt
 Examples/ObjectOrientedDesign/ExploreMaze.jar
-DataFiles/simpleLogFile.txt
+DataFiles/*
+Soln1.txt
