@@ -6,14 +6,14 @@ import atomictest.*
 private val trace = Trace()
 
 class Usable() : Closeable {
-  fun operation() = trace("Usable.operation")
-  override fun close() = trace("Usable.close")
+  fun func() = trace("func()")
+  override fun close() = trace("close()")
 }
 
 fun main() {
-  Usable().use { it.operation() }
+  Usable().use { it.func() }
   trace eq """
-  Usable.operation
-  Usable.close
+  func()
+  close()
   """
 }

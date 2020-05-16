@@ -8,30 +8,34 @@ private val trace = Trace()
 class Cleanup : Closeable {
   fun f() = trace("f()")
   fun g() = trace("g()")
+  fun h() = trace("h()")
   override fun close() = trace("close()")
 }
 
-fun test(
-  _return: Boolean = false,
-  _throw: Boolean = false
-) {
+enum class Option { Normal, Return, Throw }
+
+fun verifyClose(opt: Option) {
   Cleanup().use {
     it.f()
-    if(_return) return
-    if(_throw) throw Exception()
-    it.g()
+    when(opt) {
+      Option.Normal -> it.g()
+      Option.Return -> return
+      Option.Throw -> throw Exception()
+    }
+    it.h()
   }
 }
 
 fun main() {
-  test()
-  test(_return = true)
+  verifyClose(Option.Normal)
+  verifyClose(Option.Return)
   capture {
-    test(_throw = true)
+    verifyClose(Option.Throw)
   } eq "Exception"
   trace eq """
   f()
   g()
+  h()
   close()
   f()
   close()
