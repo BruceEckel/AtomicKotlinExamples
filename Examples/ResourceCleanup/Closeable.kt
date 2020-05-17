@@ -1,10 +1,10 @@
 // ResourceCleanup/Closeable.kt
 package resourcecleanup
 import atomictest.eq
-import checkinstructions.dataFile
+import checkinstructions.DataFile
 
 fun main() {
-  dataFile("Results.txt")
+  DataFile("Results.txt")
     .bufferedReader()
     .use { it.readLines().first() } eq
     "Results"

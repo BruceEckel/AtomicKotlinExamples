@@ -1,8 +1,8 @@
 // Logging/SimpleLoggingStrategy.kt
 package logging
-import checkinstructions.dataFile
+import checkinstructions.DataFile
 
-val logFile = dataFile("simpleLogFile.txt")
+val logFile = DataFile("simpleLogFile.txt")
 
 fun debug(msg: String) =
   System.err.println("Debug: $msg")

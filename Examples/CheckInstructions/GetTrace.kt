@@ -1,13 +1,12 @@
 // CheckInstructions/GetTrace.kt
 package checkinstructions
-import atomictest.capture
-import atomictest.eq
+import atomictest.*
 
 fun getTrace(fileName: String): List<String> {
   require(fileName.startsWith("file_")) {
     "$fileName must start with 'file_'"
   }
-  val file = dataFile(fileName)
+  val file = DataFile(fileName)
   require(file.exists()) {
     "$fileName doesn't exist"
   }
@@ -19,8 +18,8 @@ fun getTrace(fileName: String): List<String> {
 }
 
 fun main() {
-  dataFile("file_empty.txt").writeText("")
-  dataFile("file_real.txt").writeText(
+  DataFile("file_empty.txt").writeText("")
+  DataFile("file_real.txt").writeText(
     "wubba lubba dub dub")
   capture {
     getTrace("wrong_name.txt")

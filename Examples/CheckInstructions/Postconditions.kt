@@ -2,7 +2,7 @@
 package checkinstructions
 import atomictest.*
 
-val resultFile = dataFile("Results.txt")
+val resultFile = DataFile("Results.txt")
 
 fun createResultFile(create: Boolean) {
   if (create)
@@ -14,8 +14,7 @@ fun createResultFile(create: Boolean) {
 }
 
 fun main() {
-  if (resultFile.exists())
-    resultFile.delete()
+  resultFile.erase()
   capture {
     createResultFile(false)
   } eq "IllegalStateException: " +

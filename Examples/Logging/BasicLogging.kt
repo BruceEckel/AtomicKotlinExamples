@@ -1,17 +1,14 @@
 // Logging/BasicLogging.kt
 package logging
-import mu.*
+import mu.KLogging
 
 private val log = KLogging().logger
 
-fun KLogger.report(msg: String) {
-  this.trace(msg)
-  this.debug(msg)
-  this.info(msg)
-  this.warn(msg)
-  this.error(msg)
-}
-
 fun main() {
-  log.report("Hello, Kotlin Logging!")
+  val msg = "Hello, Kotlin Logging!"
+  log.trace(msg)
+  log.debug(msg)
+  log.info(msg)
+  log.warn(msg)
+  log.error(msg)
 }

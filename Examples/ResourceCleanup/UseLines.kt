@@ -1,13 +1,13 @@
 // ResourceCleanup/UseLines.kt
 package resourcecleanup
 import atomictest.eq
-import checkinstructions.dataFile
+import checkinstructions.DataFile
 
 fun main() {
-  dataFile("Results.txt").useLines {
+  DataFile("Results.txt").useLines {
     it.filter { "#" in it }.first()  // [1]
   } eq "# ok"
-  dataFile("Results.txt").useLines { lines ->
+  DataFile("Results.txt").useLines { lines ->
     lines.filter { line ->           // [2]
       "#" in line
     }.first()

@@ -4,15 +4,27 @@ import atomictest.eq
 import java.io.File
 import java.nio.file.Paths
 
-fun dataFile(name: String): File {
-  val targetDir = File("DataFiles")
-  if(!targetDir.exists())
-    targetDir.mkdir()
-  return targetDir.resolve(name)
+val targetDir = File("DataFiles")
+
+class DataFile(val fileName: String) :
+  File(targetDir, fileName) {
+  init {
+    if (!targetDir.exists())
+      targetDir.mkdir()
+  }
+  fun erase() {
+    if (exists())
+      delete()
+  }
+  fun reset(): File {
+    erase()
+    createNewFile()
+    return this
+  }
 }
 
 fun main() {
-  dataFile("Test.txt") eq
-  Paths.get("DataFiles", "Test.txt")
-    .toString()
+  DataFile("Test.txt") eq
+    Paths.get("DataFiles", "Test.txt")
+      .toString()
 }

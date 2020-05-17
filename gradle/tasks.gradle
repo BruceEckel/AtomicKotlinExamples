@@ -1388,6 +1388,21 @@ task LogChanges(type: JavaExec) {
     main = 'LogChangesKt'
 }
 
+task LoggingSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'loggingsoln1.LoggingSoln1Kt'
+}
+
+task LoggingSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'loggingsoln2.LoggingSoln2Kt'
+}
+
+task LoggingSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'loggingsoln3.LoggingSoln3Kt'
+}
+
 task LongConstants(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LongConstantsKt'
@@ -2935,6 +2950,9 @@ task run (dependsOn: [
     'LocalFunctions',
     'LocalInnerClasses',
     'LogChanges',
+    'LoggingSoln1',
+    'LoggingSoln2',
+    'LoggingSoln3',
     'LongConstants',
     'LoopWithIndex',
     'MainArgConversion',

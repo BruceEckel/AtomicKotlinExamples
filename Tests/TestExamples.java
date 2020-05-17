@@ -1303,6 +1303,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testLoggingSoln1() {
+    testExample("Examples/Logging/LoggingSoln1.kt", loggingsoln1.LoggingSoln1Kt::main);
+  }
+
+  @Test
+  public void testLoggingSoln2() {
+    testExample("Examples/Logging/LoggingSoln2.kt", loggingsoln2.LoggingSoln2Kt::main);
+  }
+
+  @Test
+  public void testLoggingSoln3() {
+    testExample("Examples/Logging/LoggingSoln3.kt", loggingsoln3.LoggingSoln3Kt::main);
+  }
+
+  @Test
   public void testSimpleLoggingStrategy() {
     testExample("Examples/Logging/SimpleLoggingStrategy.kt", logging.SimpleLoggingStrategyKt::main);
   }

@@ -1,19 +1,12 @@
 // Logging/AtomicLog.kt
 package atomiclog
-import checkinstructions.dataFile
+import checkinstructions.DataFile
 
-val logFile = dataFile("atomicLog.txt")
-
-object log {
-  init {
-    // Reset for each run:
-    if (logFile.exists())
-      logFile.delete()
-  }
-
+class Logger(fileName: String) {
+  // Reset ensures an empty file:
+  val logFile = DataFile(fileName).reset()
   private fun log(type: String, msg: String) =
     logFile.appendText("$type: $msg\n")
-
   fun trace(msg: String) = log("Trace", msg)
   fun debug(msg: String) = log("Debug", msg)
   fun info(msg: String) = log("Info", msg)
