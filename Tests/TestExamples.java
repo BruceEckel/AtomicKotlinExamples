@@ -143,8 +143,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCheckInstructionsSoln3() {
-    testExample("Examples/CheckInstructions/CheckInstructionsSoln3.kt", checkinstructionssoln3.CheckInstructionsSoln3Kt::main);
+  public void testCheckInstructionsSoln4() {
+    testExample("Examples/CheckInstructions/CheckInstructionsSoln4.kt", checkinstructionssoln4.CheckInstructionsSoln4Kt::main);
   }
 
   @Test

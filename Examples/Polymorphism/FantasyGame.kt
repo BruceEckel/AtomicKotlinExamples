@@ -4,104 +4,49 @@ import atomictest.*
 
 private val trace = Trace()
 
-interface Character {
-  val name: String
-  val type: String
-  fun skills(): String
-  fun play() =
-    trace("$name $type:\n ${skills()}")
-}
-
-interface Magician {
-  fun skills() = "Magic"
+abstract class Character(val name: String) {
+  abstract fun play(): String
 }
 
 interface Fighter {
-  fun skills() = "Fighting"
+  fun fight() = "Fight!"
 }
 
-interface Flyer {
-  fun skills() = "Flying"
+interface Magician {
+  fun doMagic() = "Magic!"
 }
 
-class Warrior(override val name: String) :
-  Character, Fighter {
-  override val type = "Warrior"
-  override fun skills() = super.skills()
+class Warrior :
+  Character("Warrior"), Fighter {
+  override fun play() = fight()
 }
 
-open class Elf(override val name: String) :
-  Character, Magician, Flyer {
-  override val type = "Elf"
-  override fun skills() =
-    super<Magician>.skills() + ", " +
-      super<Flyer>.skills()
+open class Elf(name: String = "Elf") :
+  Character(name), Magician {
+  override fun play() = doMagic()
 }
 
-class FightingElf(name: String) :
-  Elf(name), Fighter {
-  override val type = "FightingElf"
-  override fun skills() =
-    super<Elf>.skills() + ", " +
-      super<Fighter>.skills()
+class FightingElf :
+  Elf("FightingElf"), Fighter {
+  override fun play() = 
+    super.play() + fight()
 }
 
-class Dragon(override val name: String) :
-  Character, Magician, Flyer {
-  override val type = "Dragon"
-  override fun skills() =
-    super<Magician>.skills() + ", " +
-      super<Flyer>.skills()
-}
-
-fun match(c1: Character, c2: Character) {
-  c1.play()
-  trace("->")
-  c2.play()
-  trace(".")
-}
+fun Character.playTurn() =         // [1]
+  trace((name + ": " + play()))    // [2]
 
 fun main() {
   val characters: List<Character> = listOf(
-    Elf("Titania"),
-    FightingElf("Legolas"),
-    Warrior("Conan"),
-    Dragon("Puff")
+    Warrior(),
+    Elf(),
+    FightingElf()
   )
-  characters.forEach { c1 ->
-    characters.filter { it != c1 }
-      .forEach { c2 -> match(c1, c2) }
+  characters.forEach { c ->
+    c.playTurn()                   // [3]
   }
   trace eq """
-  Titania Elf:  Magic, Flying ->
-  Legolas FightingElf:
-   Magic, Flying, Fighting .
-  Titania Elf:  Magic, Flying ->
-  Conan Warrior:  Fighting .
-  Titania Elf:  Magic, Flying ->
-  Puff Dragon:  Magic, Flying .
-  Legolas FightingElf:
-   Magic, Flying, Fighting ->
-  Titania Elf:  Magic, Flying .
-  Legolas FightingElf:
-   Magic, Flying, Fighting ->
-  Conan Warrior:  Fighting .
-  Legolas FightingElf:
-   Magic, Flying, Fighting ->
-  Puff Dragon:  Magic, Flying .
-  Conan Warrior:  Fighting ->
-  Titania Elf:  Magic, Flying .
-  Conan Warrior:  Fighting ->
-  Legolas FightingElf:
-   Magic, Flying, Fighting .
-  Conan Warrior:  Fighting ->
-  Puff Dragon:  Magic, Flying .
-  Puff Dragon:  Magic, Flying ->
-  Titania Elf:  Magic, Flying .
-  Puff Dragon:  Magic, Flying ->
-  Legolas FightingElf:
-   Magic, Flying, Fighting .
-  Puff Dragon:  Magic, Flying ->
-  Conan Warrior:  Fighting .
+    Warrior: Fight!
+    Elf: Magic!
+    FightingElf: Magic!Fight!
   """
 }

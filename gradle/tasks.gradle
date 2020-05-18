@@ -333,9 +333,9 @@ task CheckInstructionsSoln2(type: JavaExec) {
     main = 'checkinstructionssoln2.CheckInstructionsSoln2Kt'
 }
 
-task CheckInstructionsSoln3(type: JavaExec) {
+task CheckInstructionsSoln4(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'checkinstructionssoln3.CheckInstructionsSoln3Kt'
+    main = 'checkinstructionssoln4.CheckInstructionsSoln4Kt'
 }
 
 task CheckObject(type: JavaExec) {
@@ -2739,7 +2739,7 @@ task run (dependsOn: [
     'CharRange',
     'CheckInstructionsSoln1',
     'CheckInstructionsSoln2',
-    'CheckInstructionsSoln3',
+    'CheckInstructionsSoln4',
     'CheckObject',
     'CheckObject2',
     'CheckingArgument',

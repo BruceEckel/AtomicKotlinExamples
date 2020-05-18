@@ -1,5 +1,5 @@
-// CheckInstructions/CheckInstructionsSoln3.kt
-package checkinstructionssoln3
+// CheckInstructions/CheckInstructionsSoln4.kt
+package checkinstructionssoln4
 import atomictest.*
 
 class Tank(val capacity: Double) {

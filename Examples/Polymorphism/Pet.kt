@@ -14,9 +14,9 @@ class Cat : Pet() {
   override fun speak() = "Meow"
 }
 
-fun talk(pet: Pet) = pet.speak()
+fun talk(pet: Pet) = pet.speak()   // [1]
 
 fun main() {
-  talk(Dog()) eq "Bark!"     // [1]
-  talk(Cat()) eq "Meow"      // [2]
+  talk(Dog()) eq "Bark!"           // [2]
+  talk(Cat()) eq "Meow"            // [3]
 }
