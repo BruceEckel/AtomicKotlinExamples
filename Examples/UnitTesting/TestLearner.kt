@@ -1,4 +1,4 @@
-// UnitTesting/TestingLearner.kt
+// UnitTesting/TestLearner.kt
 package learner
 import learner.Language.*
 import kotlin.test.Test
@@ -10,7 +10,7 @@ fun createLearner(
   surname: String = "Test Surname $id"
 ) = Learner(id, name, surname, lang)
 
-class TestingLearner {
+class TestLearner {
   @Test
   fun testLearners() {
     // TODO replace with member reference

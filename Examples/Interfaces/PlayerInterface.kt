@@ -1,18 +1,23 @@
 // Interfaces/PlayerInterface.kt
 package propertiesininterfaces
+import atomictest.eq
 
 interface Player {
   val symbol: Char
 }
 
-class Robot : Player {
+class Food: Player {
+  override val symbol = '.'
+}
+
+class Robot: Player {
   override val symbol get() = 'R'
 }
 
-class Wall : Player {
-  override val symbol get() = '#'
-}
+class Wall(override val symbol: Char): Player
 
-class Food : Player {
-  override val symbol get() = '.'
+fun main() {
+  listOf(Food(), Robot(), Wall('|')).map {
+    it.symbol
+  } eq "[., R, |]"
 }

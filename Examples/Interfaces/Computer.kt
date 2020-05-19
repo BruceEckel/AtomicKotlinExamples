@@ -23,7 +23,11 @@ class Quantum : Computer {
 }
 
 fun main() {
-  Desktop().calculateAnswer() eq 11
-  DeepThought().calculateAnswer() eq 42
-  Quantum().calculateAnswer() eq -1
+  val computers = listOf(
+    Desktop(), DeepThought(), Quantum()
+  )
+  computers.map { it.calculateAnswer() } eq
+    "[11, 42, -1]"
+  computers.map { it.prompt() } eq
+    "[Hello!, Thinking..., Probably...]"
 }

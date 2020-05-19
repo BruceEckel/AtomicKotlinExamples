@@ -1023,6 +1023,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testPlayerInterface() {
+    testExample("Examples/Interfaces/PlayerInterface.kt", propertiesininterfaces.PlayerInterfaceKt::main);
+  }
+
+  @Test
   public void testAnnotatedJava() {
     testExample("Examples/Interoperability/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
   }
