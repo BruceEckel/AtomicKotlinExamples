@@ -44,16 +44,18 @@ enum class Status { Success, Failed }
 
 // Everything up to here is STARTER CODE
 
-private val log = Logger("LoggingSoln1.txt")
+private val logger = Logger("LoggingSoln1.txt")
 
 fun transact(level: Int): Status {
   val db = DataBase()
-  val ak = NetConnection("AtomicKotlin.com")
-  val rm = NetConnection("RickAndMorty.com")
+  val nets = listOf(
+    NetConnection("AtomicKotlin.com"),
+    NetConnection("RickAndMorty.com")
+  )
   try {
     db.open(1, level)
   } catch (e: DBOpenFail) {
-    log.error("$e")
+    logger.error("$e")
     return Failed
   }
   fun transfer(net: NetConnection): Status {
@@ -61,28 +63,28 @@ fun transact(level: Int): Status {
       net.open(2, level)
       db.write(net.read(), 3, level)
     } catch (e: Except) {
-      log.error("$e")
+      logger.error("$e")
       return Failed
     } finally {
       try {
         net.close(4, level)
       } catch (e: NetworkCloseFail) {
-        log.error("$e")
-        throw e
+        logger.error("$e")
+        return Failed
       }
     }
     return Success
   }
   try {
-    if (transfer(ak) == Failed)
-      return Failed
-    if (transfer(rm) == Failed)
-      return Failed
+    nets.forEach {
+      if (transfer(it) == Failed)
+        return Failed
+    }
   } finally {
     try {
       db.close(5, level)
     } catch (e: DBCloseFail) {
-      log.error("$e")
+      logger.error("$e")
       throw e
     }
   }
@@ -96,14 +98,13 @@ fun main() {
     try {
       transact(level)
     } catch (e: Except) {
-      log.error("main(): $e")
+      logger.error("main(): $e")
     }
-  log.logFile.readText() eq
+  logger.logFile.readText() eq
 """Error: DBOpenFail
 Error: NetworkOpenFail
 Error: DBWriteFail
 Error: NetworkCloseFail
-Error: main(): NetworkCloseFail
 Error: DBCloseFail
 Error: main(): DBCloseFail
 """

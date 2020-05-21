@@ -3,7 +3,6 @@ package atomiclog
 import checkinstructions.DataFile
 
 class Logger(fileName: String) {
-  // Reset ensures an empty file:
   val logFile = DataFile(fileName).reset()
   private fun log(type: String, msg: String) =
     logFile.appendText("$type: $msg\n")
@@ -12,6 +11,7 @@ class Logger(fileName: String) {
   fun info(msg: String) = log("Info", msg)
   fun warn(msg: String) = log("Warn", msg)
   fun error(msg: String) = log("Error", msg)
+  // Added for basic testing:
   fun report(msg: String) {
     trace(msg)
     debug(msg)

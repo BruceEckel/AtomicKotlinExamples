@@ -1,9 +1,6 @@
 // ExceptionHandling/ExceptHandlingSoln3.kt
 package exceptionhandlingsoln3
-import atomictest.Trace
 import exceptionhandlingsoln3.Status.*
-
-private val trace = Trace()
 
 open class Except : Exception() {
   override fun toString() =
@@ -45,12 +42,14 @@ enum class Status { Success, Failed }
 
 fun transact(level: Int): Status {
   val db = DataBase()
-  val ak = NetConnection("AtomicKotlin.com")
-  val rm = NetConnection("RickAndMorty.com")
+  val nets = listOf(
+    NetConnection("AtomicKotlin.com"),
+    NetConnection("RickAndMorty.com")
+  )
   try {
     db.open(1, level)
   } catch (e: DBOpenFail) {
-    trace("Database Problem $e")
+    println("Database Problem $e")
     return Failed
   }
   fun transfer(net: NetConnection): Status {
@@ -59,31 +58,31 @@ fun transact(level: Int): Status {
       net.open(2, level)
       db.write(net.read(), 3, level)
     } catch (e: NetworkFail) {
-      trace("Network Problem $e")
+      println("Network Problem $e")
       return Failed
-    } catch (e: DBFail) {
-      trace("Database Write Failed $e")
+    } catch (e: DBWriteFail) {
+      println("Database Write Failed $e")
       return Failed
     } finally {
       try {
         net.close(4, level)
       } catch (e: NetworkCloseFail) {
-        trace("Network Close Failed $e")
-        throw e
+        println("Network Close Failed $e")
+        return Failed
       }
     }
     return Success
   }
   try {
-    if (transfer(ak) == Failed)
-      return Failed
-    if (transfer(rm) == Failed)
-      return Failed
+    nets.forEach {
+      if (transfer(it) == Failed)
+        return Failed
+    }
   } finally {
     try {
       db.close(5, level)
     } catch (e: DBCloseFail) {
-      trace("Database Problem $e")
+      println("Database Problem $e")
       throw e
     }
   }
@@ -94,23 +93,23 @@ fun transact(level: Int): Status {
 fun main() {
   for (level in 0..5)
     try {
-      trace(transact(level))
+      println(transact(level))
     } catch (e: DBCloseFail) {
-      trace("main() Problem $e")
+      println("main() Problem $e")
     } catch (e: NetworkCloseFail) {
-      trace("main() Problem $e")
+      println("main() Problem $e")
     }
-  trace eq """
-  Success
-  Database Problem DBOpenFail
-  Failed
-  Network Problem NetworkOpenFail
-  Failed
-  Database Write Failed DBWriteFail
-  Failed
-  Network Close Failed NetworkCloseFail
-  main() Problem NetworkCloseFail
-  Database Problem DBCloseFail
-  main() Problem DBCloseFail
-  """
 }
+/* Output:
+Success
+Database Problem DBOpenFail
+Failed
+Network Problem NetworkOpenFail
+Failed
+Database Write Failed DBWriteFail
+Failed
+Network Close Failed NetworkCloseFail
+Failed
+Database Problem DBCloseFail
+main() Problem DBCloseFail
+ */
