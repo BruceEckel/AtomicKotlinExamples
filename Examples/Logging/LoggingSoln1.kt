@@ -51,5 +51,12 @@ fun main() {
     pipe.level.up()
     pipe.checkLevel()
   }
-  println("[${pipe.logger.logFile.readText()}]")
+  pipe.logger.logFile.readText() eq
+"""Trace: Level 2
+Debug: Level 4
+Info: Level 6
+Warn: Level 8
+Error: Level 10
+Error: Level 10
+"""
 }
