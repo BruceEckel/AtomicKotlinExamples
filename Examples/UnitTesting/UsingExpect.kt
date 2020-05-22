@@ -2,10 +2,9 @@
 package unittesting
 import kotlin.test.*
 
-fun testFoo2() = expect(42, "Wrong answer") {
-  foo()
-}
+fun testFortyTwo2() =
+  expect(42, "Wrong answer") { fortyTwo() }
 
 fun main() {
-  testFoo2()
+  testFortyTwo2()
 }

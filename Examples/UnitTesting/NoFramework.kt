@@ -2,23 +2,31 @@
 package unittesting
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
+import atomictest.*
 
-fun foo() = 42
+fun fortyTwo() = 42
 
-fun allIsGood() = true
-
-fun testFoo() {
+fun testAssertEquals(n: Int = 42) {
   assertEquals(
-    expected = 42,
-    actual = foo(),
-    message = "Wrong answer")
+    expected = n,
+    actual = fortyTwo(),
+    message = "Incorrect,")
 }
 
-fun testAllIsGood() {
-  assertTrue(allIsGood(), "Wrong answer")
+fun allGood(b: Boolean) = b
+
+fun testAllGood(b: Boolean = true) {
+  assertTrue(allGood(b), "Not good")
 }
 
 fun main() {
-  testFoo()
-  testAllIsGood()
+  testAssertEquals()
+  testAllGood()
+  capture {
+    testAssertEquals(43)
+  } eq "AssertionError: " +
+    "Incorrect, expected:<43> but was:<42>"
+  capture {
+    testAllGood(false)
+  } eq "AssertionError: Not good"
 }

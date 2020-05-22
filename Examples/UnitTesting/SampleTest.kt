@@ -4,12 +4,11 @@ import kotlin.test.*
 
 class SampleTest {
   @Test
-  fun testFoo() {
-    expect(42, "Wrong answer") { foo() }
+  fun testAssertEquals() {
+    expect(42, "Wrong answer") { fortyTwo() }
   }
-
   @Test
-  fun testAllIsGood() {
-    assertTrue(allIsGood(), "Wrong answer")
+  fun testAllGood() {
+    assertTrue(allGood(true), "Wrong answer")
   }
 }

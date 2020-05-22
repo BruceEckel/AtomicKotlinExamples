@@ -4,18 +4,15 @@ import kotlin.test.*
 
 class TestStateMachine {
   private lateinit var sm: StateMachine  // [1]
-
   @BeforeTest
   fun initStateMachine() {
     sm = StateMachine()                  // [2]
   }
-
   @Test
   fun `test start`() {
     sm.start()
     assertEquals(State.ON, sm.state)
   }
-
   @Test
   fun `test pause and resume`() {
     sm.start()
@@ -26,6 +23,5 @@ class TestStateMachine {
     sm.pause()
     assertEquals(State.PAUSED, sm.state)
   }
-
   // ...
 }
