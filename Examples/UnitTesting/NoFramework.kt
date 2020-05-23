@@ -6,24 +6,24 @@ import atomictest.*
 
 fun fortyTwo() = 42
 
-fun testAssertEquals(n: Int = 42) {
+fun testFortyTwo(n: Int = 42) {
   assertEquals(
     expected = n,
     actual = fortyTwo(),
     message = "Incorrect,")
 }
 
-fun allGood(b: Boolean) = b
+fun allGood(b: Boolean = true) = b
 
 fun testAllGood(b: Boolean = true) {
   assertTrue(allGood(b), "Not good")
 }
 
 fun main() {
-  testAssertEquals()
+  testFortyTwo()
   testAllGood()
   capture {
-    testAssertEquals(43)
+    testFortyTwo(43)
   } eq "AssertionError: " +
     "Incorrect, expected:<43> but was:<42>"
   capture {
