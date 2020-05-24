@@ -1,8 +1,8 @@
 // UnitTesting/Learner.kt
-package learner
+package unittesting
 
 enum class Language {
-  EN, FR, DE
+  Kotlin, Java, Go, Python, Rust, Scala
 }
 
 data class Learner(

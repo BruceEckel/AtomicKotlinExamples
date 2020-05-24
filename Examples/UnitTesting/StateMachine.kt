@@ -7,17 +7,14 @@ enum class State { ON, OFF, PAUSED }
 class StateMachine {
   var state: State = OFF
     private set
-  private fun updateState(
+  private fun transition(
     current: State, new: State
   ) {
-    if (state == current) {
+    if (state == current)
       state = new
-    }
   }
-  fun start() = updateState(OFF, ON)
-  fun pause() = updateState(ON, PAUSED)
-  fun resume() = updateState(PAUSED, ON)
-  fun finish() {
-    state = OFF
-  }
+  fun start() = transition(OFF, ON)
+  fun pause() = transition(ON, PAUSED)
+  fun resume() = transition(PAUSED, ON)
+  fun finish() { state = OFF }
 }
