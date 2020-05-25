@@ -1,9 +1,6 @@
 // ExceptionHandling/ExceptHandlingSoln1.kt
 package exceptionhandlingsoln1
-import atomictest.Trace                 // STARTER CODE
 import kotlin.random.Random             // STARTER CODE
-
-private val trace = Trace()             // STARTER CODE
 
 data class Hamster(val name: String)
 
@@ -52,39 +49,39 @@ val hamsters = listOf(                 // STARTER CODE
 fun test(hc: HamsterCage) {
   try {
     for (h in hamsters) {
-      trace(h)
+      println("$h")
       hc.add(h)
     }
   } catch (e: CageFullException) {
-    trace(e)
+    println("$e")
   }
   try {
-    trace(hc.get(hamsters[0].name))
-    trace(hc.get("Morty"))
+    println("${hc.get(hamsters[0].name)}")
+    println("${hc.get("Morty")}")
   } catch (e: NoSuchHamsterException) {
-    trace(e)
+    println("$e")
   }
   try {
-    trace(hc.feed())
-    trace(hc.feed())
-    trace(hc.feed())
+    println(hc.feed())
+    println(hc.feed())
+    println(hc.feed())
   } catch (e: OutOfWaterException) {
-    trace(e)
+    println("$e")
   }
 }
 
 // All of main() is STARTER CODE:
 fun main() {
   test(HamsterCage(3))
-  trace eq """
-  Hamster(name=Sally)
-  Hamster(name=Ralph)
-  Hamster(name=Bob)
-  Hamster(name=Sergio)
-  HamsterCageException: Cage full > 3
-  Hamster(name=Sally)
-  HamsterCageException: No Hamster Morty
-  Feeding complete
-  HamsterCageException: Cage out of water
-  """
 }
+/* Output:
+Hamster(name=Sally)
+Hamster(name=Ralph)
+Hamster(name=Bob)
+Hamster(name=Sergio)
+HamsterCageException: Cage full > 3
+Hamster(name=Sally)
+HamsterCageException: No Hamster Morty
+Feeding complete
+HamsterCageException: Cage out of water
+*/
