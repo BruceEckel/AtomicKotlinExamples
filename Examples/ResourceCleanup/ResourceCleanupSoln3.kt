@@ -3,13 +3,11 @@ package resourcecleanupsoln3
 import java.io.Closeable
 import atomictest.*
 
-private val trace = Trace()
-
 class Cleanup : Closeable {
-  fun f() = trace("f()")
-  fun g() = trace("g()")
-  fun h() = trace("h()")
-  override fun close() = trace("close()")
+  fun f() = println("f()")
+  fun g() = println("g()")
+  fun h() = println("h()")
+  override fun close() = println("close()")
 }
 
 enum class Option { Normal, Return, Throw }
@@ -32,14 +30,15 @@ fun main() {
   capture {
     verifyClose(Option.Throw)
   } eq "Exception"
-  trace eq """
-  f()
-  g()
-  h()
-  close()
-  f()
-  close()
-  f()
-  close()
-  """
 }
+/* Output:
+f()
+g()
+h()
+close()
+f()
+close()
+f()
+close()
+Exception
+ */

@@ -1,15 +1,12 @@
 // ResourceCleanup/ResourceCleanupSoln2.kt
 package resourcecleanupsoln2
 import java.io.Closeable
-import atomictest.*
-
-private val trace = Trace()
 
 class Cleanup : Closeable {
-  fun f() = trace("f()")
-  fun g() = trace("g()")
-  fun h() = trace("h()")
-  override fun close() = trace("close()")
+  fun f() = println("f()")
+  fun g() = println("g()")
+  fun h() = println("h()")
+  override fun close() = println("close()")
 }
 
 fun main() {
@@ -18,10 +15,10 @@ fun main() {
     it.g()
     it.h()
   }
-  trace eq """
-  f()
-  g()
-  h()
-  close()
-  """
 }
+/* Output:
+f()
+g()
+h()
+close()
+ */

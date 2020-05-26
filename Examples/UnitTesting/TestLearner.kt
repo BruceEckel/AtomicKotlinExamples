@@ -14,9 +14,9 @@ fun makeLearner(
 class TestLearner {
   @Test
   fun testLearners() {
+    val learner = makeLearner(10, Java)
     val learners =
       (1..9).map(::makeLearner)
-    val learner = makeLearner(10, Java)
     assertEquals("", learner)
   }
 }

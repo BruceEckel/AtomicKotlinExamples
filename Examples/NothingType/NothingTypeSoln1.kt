@@ -2,12 +2,10 @@
 package nothingtypesoln1
 import atomictest.*
 
-private val trace = Trace()
-
 class Failure(msg: String) : Exception(msg)
 
 fun fail(msg: String): Nothing {
-  trace(msg)
+  println(msg)
   throw Failure(msg)
 }
 
@@ -28,8 +26,10 @@ fun main() {
   capture {
     check(false)
   } eq "Failure: check() failed"
-  trace eq """
-  require() failed
-  check() failed
-  """
 }
+/* Output:
+require() failed
+Failure: require() failed
+check() failed
+Failure: check() failed
+ */
