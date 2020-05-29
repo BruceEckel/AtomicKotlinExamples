@@ -23,6 +23,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testBCIExercise1() {
+    testExample("Examples/BaseClassInit/BCIExercise1.kt", baseClassInitializationExercise1.BCIExercise1Kt::main);
+  }
+
+  @Test
+  public void testBCIExercise2() {
+    testExample("Examples/BaseClassInit/BCIExercise2.kt", baseClassInitializationExercise2.BCIExercise2Kt::main);
+  }
+
+  @Test
   public void testGreatApe3() {
     testExample("Examples/BaseClassInit/GreatApe3.kt", baseclassinit.GreatApe3Kt::main);
   }
@@ -1900,6 +1910,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testPet() {
     testExample("Examples/Polymorphism/Pet.kt", polymorphism.PetKt::main);
+  }
+
+  @Test
+  public void testPolyExercise3() {
+    testExample("Examples/Polymorphism/PolyExercise3.kt", polymorphismExercise3.PolyExercise3Kt::main);
   }
 
   @Test

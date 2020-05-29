@@ -168,6 +168,16 @@ task AverageIncomeWithNull(type: JavaExec) {
     main = 'withnull.AverageIncomeWithNullKt'
 }
 
+task BCIExercise1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'baseClassInitializationExercise1.BCIExercise1Kt'
+}
+
+task BCIExercise2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'baseClassInitializationExercise2.BCIExercise2Kt'
+}
+
 task BMIEnglish(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BMIEnglishKt'
@@ -1863,6 +1873,11 @@ task PlayingCards(type: JavaExec) {
     main = 'manipulatinglists.PlayingCardsKt'
 }
 
+task PolyExercise3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'polymorphismExercise3.PolyExercise3Kt'
+}
+
 task Postconditions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'checkinstructions.PostconditionsKt'
@@ -2716,6 +2731,8 @@ task run (dependsOn: [
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
+    'BCIExercise1',
+    'BCIExercise2',
     'BMIEnglish',
     'BMIMetric',
     'Backticks',
@@ -3055,6 +3072,7 @@ task run (dependsOn: [
     'PlatformTypes',
     'PlayerInterface',
     'PlayingCards',
+    'PolyExercise3',
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',

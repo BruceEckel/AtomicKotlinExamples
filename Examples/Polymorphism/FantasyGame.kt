@@ -28,25 +28,21 @@ open class Elf(name: String = "Elf") :
 
 class FightingElf :
   Elf("FightingElf"), Fighter {
-  override fun play() = 
+  override fun play() =
     super.play() + fight()
 }
 
-fun Character.playTurn() =         // [1]
-  trace((name + ": " + play()))    // [2]
+fun Character.playTurn() =             // [1]
+  trace(name + ": " + play())          // [2]
 
 fun main() {
   val characters: List<Character> = listOf(
-    Warrior(),
-    Elf(),
-    FightingElf()
+    Warrior(), Elf(), FightingElf()
   )
-  characters.forEach { c ->
-    c.playTurn()                   // [3]
-  }
+  characters.forEach { it.playTurn() } // [3]
   trace eq """
-    Warrior: Fight!
-    Elf: Magic!
-    FightingElf: Magic!Fight!
+  Warrior: Fight!
+  Elf: Magic!
+  FightingElf: Magic!Fight!
   """
 }
