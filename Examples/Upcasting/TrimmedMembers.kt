@@ -20,5 +20,5 @@ fun main() {
     Square.erase
     Triangle.draw
     Triangle.erase
-    """
+  """
 }

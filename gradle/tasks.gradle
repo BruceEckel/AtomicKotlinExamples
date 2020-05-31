@@ -28,11 +28,6 @@ task AddingIntToChar(type: JavaExec) {
     main = 'AddingIntToCharKt'
 }
 
-task AdjustTemp(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceextensions.AdjustTempKt'
-}
-
 task Airport(type: JavaExec) {
     classpath kotlinClassPath
     main = 'nestedclasses.AirportKt'
@@ -151,6 +146,11 @@ task AssociateWith(type: JavaExec) {
 task AtomicTestCapture(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AtomicTestCaptureKt'
+}
+
+task AutoCloseable(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'resourcecleanup.AutoCloseableKt'
 }
 
 task AverageIncome(type: JavaExec) {
@@ -376,11 +376,6 @@ task CheckingOptions(type: JavaExec) {
 task ClassBodies(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ClassBodiesKt'
-}
-
-task Closeable(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'resourcecleanup.CloseableKt'
 }
 
 task Closed(type: JavaExec) {
@@ -2348,6 +2343,11 @@ task TeamWithTraditions(type: JavaExec) {
     main = 'TeamWithTraditionsKt'
 }
 
+task TempController(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.TempControllerKt'
+}
+
 task Temperature(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TemperatureKt'
@@ -2703,7 +2703,6 @@ task run (dependsOn: [
     'AVarIsMutable',
     'Adapter',
     'AddingIntToChar',
-    'AdjustTemp',
     'Airport',
     'AllOperators',
     'Also',
@@ -2728,6 +2727,7 @@ task run (dependsOn: [
     'AssociateByUnique',
     'AssociateWith',
     'AtomicTestCapture',
+    'AutoCloseable',
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
@@ -2773,7 +2773,6 @@ task run (dependsOn: [
     'CheckingArgument',
     'CheckingOptions',
     'ClassBodies',
-    'Closeable',
     'Closed',
     'Closures',
     'Closures2',
@@ -3167,6 +3166,7 @@ task run (dependsOn: [
     'TakeOrDrop',
     'Team',
     'TeamWithTraditions',
+    'TempController',
     'Temperature',
     'TerminalOperations',
     'TestingExample',

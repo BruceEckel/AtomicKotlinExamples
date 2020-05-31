@@ -9,12 +9,8 @@ fun show(shape: Shape) {
 }
 
 fun main() {
-  val circle = Circle()
-  val square = Square()
-  val triangle = Triangle()
-  show(circle)
-  show(square)
-  show(triangle)
+  listOf(Circle(), Square(), Triangle())
+    .forEach(::show)
   trace eq """
     Show: Circle.draw
     Show: Square.draw

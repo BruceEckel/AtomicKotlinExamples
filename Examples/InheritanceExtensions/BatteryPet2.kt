@@ -9,7 +9,7 @@ interface Energy {
 }
 
 open class Pet(open val energy: Energy) {
-  open fun speak() = trace("")
+  open fun speak() = trace("???")
 }
 
 class DogFood : Energy

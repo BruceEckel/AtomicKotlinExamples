@@ -1,4 +1,4 @@
-// ResourceCleanup/Closeable.kt
+// ResourceCleanup/AutoCloseable.kt
 package resourcecleanup
 import atomictest.eq
 import checkinstructions.DataFile

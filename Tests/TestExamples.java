@@ -928,11 +928,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAdjustTemp() {
-    testExample("Examples/InheritanceExtensions/AdjustTemp.kt", inheritanceextensions.AdjustTempKt::main);
-  }
-
-  @Test
   public void testBatteryPet() {
     testExample("Examples/InheritanceExtensions/BatteryPet.kt", inheritanceextensions.BatteryPetKt::main);
   }
@@ -970,6 +965,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testInheritAdd() {
     testExample("Examples/InheritanceExtensions/InheritAdd.kt", inheritanceextensions.InheritAddKt::main);
+  }
+
+  @Test
+  public void testTempController() {
+    testExample("Examples/InheritanceExtensions/TempController.kt", inheritanceextensions.TempControllerKt::main);
   }
 
   @Test
@@ -1080,11 +1080,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testReadOnlyCollections() {
     testExample("Examples/Interoperability/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
-  }
-
-  @Test
-  public void testWithCleanup() {
-    testExample("Examples/Interoperability/WithCleanup.kt", withfunction.WithCleanupKt::main);
   }
 
   @Test
@@ -2048,8 +2043,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCloseable() {
-    testExample("Examples/ResourceCleanup/Closeable.kt", resourcecleanup.CloseableKt::main);
+  public void testAutoCloseable() {
+    testExample("Examples/ResourceCleanup/AutoCloseable.kt", resourcecleanup.AutoCloseableKt::main);
   }
 
   @Test
@@ -2655,5 +2650,10 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsingWith() {
     testExample("Examples/WithFunction/UsingWith.kt", withfunction.UsingWithKt::main);
+  }
+
+  @Test
+  public void testWithCleanup() {
+    testExample("Examples/WithFunction/WithCleanup.kt", withfunction.WithCleanupKt::main);
   }
 }

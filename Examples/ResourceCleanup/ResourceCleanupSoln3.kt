@@ -1,9 +1,8 @@
 // ResourceCleanup/ResourceCleanupSoln3.kt
 package resourcecleanupsoln3
-import java.io.Closeable
 import atomictest.*
 
-class Cleanup : Closeable {
+class Cleanup : AutoCloseable {
   fun f() = println("f()")
   fun g() = println("g()")
   fun h() = println("h()")
