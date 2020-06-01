@@ -1,19 +1,17 @@
 // ObjectOrientedDesign/Actors.kt
 package oodesign
+import java.lang.IllegalStateException
 
-sealed class Actor {
+abstract sealed class Actor {
   abstract val symbol: Char
   open fun id() = symbol
-  open val room: Room
-    get() = throw NotImplementedError()
+  abstract val room: Room
   override fun toString() =
     "${this::class.simpleName} ${id()}" +
       "(${room.row}, ${room.col})"
-  open fun interact(robot: Robot): Room =
-    throw NotImplementedError()
+  abstract fun interact(robot: Robot): Room
   // Makes the exact type of Actor object:
-  open fun makeActor(r: Room): Actor =
-    throw NotImplementedError()
+  abstract fun makeActor(r: Room): Actor
   // Match the symbol to create & configure
   // a Room with the new Actor, or Fail:
   open
@@ -29,6 +27,9 @@ sealed class Actor {
 
 class Void() : Actor() {
   override val symbol = '~'
+  // Should never try to get() this Room:
+  override val room: Room
+    get() = throw IllegalStateException()
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
   override fun makeActor(r: Room) = void
@@ -94,8 +95,9 @@ class Robot(
 ) : Actor() {
   override val symbol = 'R'
   var energy = 0
+  // Should never interact with itself:
   override fun interact(robot: Robot) =
-    robot.room
+    throw IllegalStateException()
   fun move(urge: Urge) {
     val nextRoom = room.doors.open(urge)
     room = nextRoom.actor.interact(this)
@@ -114,6 +116,9 @@ class Teleport(
     "${this::class.simpleName}: ${id()}" +
     "(${target.row}, ${target.col})"
   override fun interact(robot: Robot) = target
+  // Should never be created with makeActor():
+  override fun makeActor(r: Room): Actor =
+    throw IllegalStateException()
   override fun
     create(ch: Char, row: Int, col: Int) =
     if (ch in 'a'..'z') {

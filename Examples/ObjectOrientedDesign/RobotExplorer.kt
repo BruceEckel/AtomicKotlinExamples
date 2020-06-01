@@ -10,7 +10,7 @@ import org.hexworks.zircon.api.extensions.*
 
 fun robotExplorer(stage: Stage) {
   val style = StyleSet.defaultStyle()
-  // Initialize the zircon terminal emulator:
+  // Initialize the Zircon terminal emulator:
   val grid = SwingApplications
     .startTileGrid(AppConfig.newBuilder()
       .withDefaultTileset(
