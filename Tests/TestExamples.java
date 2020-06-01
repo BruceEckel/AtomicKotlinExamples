@@ -2648,6 +2648,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testStateMachineSoln1() {
+    testExample("Examples/WithFunction/StateMachineSoln1.kt", statemachinesoln1.StateMachineSoln1Kt::main);
+  }
+
+  @Test
   public void testUsingWith() {
     testExample("Examples/WithFunction/UsingWith.kt", withfunction.UsingWithKt::main);
   }

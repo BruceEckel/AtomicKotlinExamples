@@ -1,5 +1,5 @@
-// WithFunction/WithDeclaration.kt
-package simplifieddeclaration
+// WithFunction/DefiningWith.kt
+package simplifiedwith
 import withfunction.Window
 
 fun <T> with(

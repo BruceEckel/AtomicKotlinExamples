@@ -8,13 +8,15 @@ class StateMachine {
   var state: State = OFF
     private set
   private fun transition(
-    current: State, new: State
+    new: State, current: State = ON
   ) {
-    if (state == current)
+    if(new == OFF && state != OFF)
+      state = OFF
+    else if(state == current)
       state = new
   }
-  fun start() = transition(OFF, ON)
-  fun pause() = transition(ON, PAUSED)
-  fun resume() = transition(PAUSED, ON)
-  fun finish() { state = OFF }
+  fun start() = transition(ON, OFF)
+  fun pause() = transition(PAUSED, ON)
+  fun resume() = transition(ON, PAUSED)
+  fun finish() = transition(OFF)
 }

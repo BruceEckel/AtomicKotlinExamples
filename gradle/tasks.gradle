@@ -2208,6 +2208,11 @@ task Stacktrace(type: JavaExec) {
     main = 'stacktrace.StacktraceKt'
 }
 
+task StateMachineSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'statemachinesoln1.StateMachineSoln1Kt'
+}
+
 task StateOfAClass(type: JavaExec) {
     classpath kotlinClassPath
     main = 'abstractstate.StateOfAClassKt'
@@ -3139,6 +3144,7 @@ task run (dependsOn: [
     'Speakers',
     'SpreadOperator',
     'Stacktrace',
+    'StateMachineSoln1',
     'StateOfAClass',
     'StoringLambda',
     'StrTemplates',
