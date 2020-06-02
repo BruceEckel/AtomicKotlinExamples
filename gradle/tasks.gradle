@@ -1758,6 +1758,21 @@ task OpOrderParens(type: JavaExec) {
     main = 'OpOrderParensKt'
 }
 
+task OpOverloadingSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'opoverloadingsoln1.OpOverloadingSoln1Kt'
+}
+
+task OpOverloadingSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'opoverloadingsoln2.OpOverloadingSoln2Kt'
+}
+
+task OpOverloadingSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'opoverloadingsoln3.OpOverloadingSoln3Kt'
+}
+
 task Open1(type: JavaExec) {
     classpath kotlinClassPath
     main = 'Open1Kt'
@@ -3054,6 +3069,9 @@ task run (dependsOn: [
     'OneOrTheOther',
     'OpOrder',
     'OpOrderParens',
+    'OpOverloadingSoln1',
+    'OpOverloadingSoln2',
+    'OpOverloadingSoln3',
     'Open1',
     'Open2',
     'OperationsOnSets',

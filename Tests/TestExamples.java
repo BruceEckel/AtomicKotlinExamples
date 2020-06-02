@@ -1833,6 +1833,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testOpOverloadingSoln1() {
+    testExample("Examples/OperatorOverloading/OpOverloadingSoln1.kt", opoverloadingsoln1.OpOverloadingSoln1Kt::main);
+  }
+
+  @Test
+  public void testOpOverloadingSoln2() {
+    testExample("Examples/OperatorOverloading/OpOverloadingSoln2.kt", opoverloadingsoln2.OpOverloadingSoln2Kt::main);
+  }
+
+  @Test
+  public void testOpOverloadingSoln3() {
+    testExample("Examples/OperatorOverloading/OpOverloadingSoln3.kt", opoverloadingsoln3.OpOverloadingSoln3Kt::main);
+  }
+
+  @Test
   public void testStringInvoke() {
     testExample("Examples/OperatorOverloading/StringInvoke.kt", StringInvokeKt::main);
   }
