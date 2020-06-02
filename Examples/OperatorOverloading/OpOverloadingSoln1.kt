@@ -7,12 +7,10 @@ class WrapRange(
 ) {
   init {
     require(current in range) {
-      "Initial value out of range: $current"
+      "'current' out of range: $current"
     }
   }
   override fun toString() = "$current"
-  val value: Int
-    get() = current
   operator fun inc(): WrapRange {
     current = (current + 1) % (range.last + 1)
     return this
