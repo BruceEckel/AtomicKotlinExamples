@@ -2,8 +2,8 @@
 package operatoroverloading
 
 class C {
-  // equals() cannot be an extension function
-  // and must be defined specially:
+  // equals() cannot be an extension
+  // function and must be defined specially:
   override operator
   fun equals(other: Any?) = true
 }

@@ -1,5 +1,6 @@
 // OperatorOverloading/OpOverloadingSoln1.kt
 package opoverloadingsoln1
+import atomictest.*
 
 class WrapRange(
   val range: IntRange,
@@ -34,6 +35,12 @@ fun main() {
   range.forEach { testUp() }
   println("-----------")
   range.forEach { testDown() }
+  capture { WrapRange(range, 6) } eq
+    "IllegalArgumentException: " +
+    "'current' out of range: 6"
+  capture { WrapRange(range, -1) } eq
+    "IllegalArgumentException: " +
+    "'current' out of range: -1"
 }
 /* Exercise Output:
 0, 1
@@ -49,4 +56,6 @@ fun main() {
 3, 2
 2, 1
 1, 0
+IllegalArgumentException: 'current' out of range: 6
+IllegalArgumentException: 'current' out of range: -1
 */

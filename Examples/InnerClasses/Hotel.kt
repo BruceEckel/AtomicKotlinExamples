@@ -14,7 +14,7 @@ class Hotel(private val reception: String) {
 
 fun main() {
   val nycHotel = Hotel("311")
-  // You need an outer class object to
+  // You need an outer object to
   // create an instance of the inner class:
   val room = nycHotel.Room(319)
   room.callReception() eq

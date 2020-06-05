@@ -25,12 +25,10 @@ fun what(c: Creature): String =
   }
 
 fun main() {
-  var c: Creature = Human()
+  val c: Creature = Human()
   what(c) eq "I'm Human"
-  c = Dog()
-  what(c) eq "Yip!"
-  c = Alien()
-  what(c) eq "Three legs"
+  what(Dog()) eq "Yip!"
+  what(Alien()) eq "Three legs"
   class Who: Creature
   what(Who()) eq "Something else"
 }

@@ -2563,6 +2563,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testUsingOperatorsSoln1() {
+    testExample("Examples/UsingOperators/UsingOperatorsSoln1.kt", usingoperatorssoln1.UsingOperatorsSoln1Kt::main);
+  }
+
+  @Test
+  public void testUsingOperatorsSoln2() {
+    testExample("Examples/UsingOperators/UsingOperatorsSoln2.kt", usingoperatorssoln2.UsingOperatorsSoln2Kt::main);
+  }
+
+  @Test
+  public void testUsingOperatorsSoln3() {
+    testExample("Examples/UsingOperators/UsingOperatorsSoln3.kt", usingoperatorssoln3.UsingOperatorsSoln3Kt::main);
+  }
+
+  @Test
   public void testAVarIsMutable() {
     testExample("Examples/VarAndVal/AVarIsMutable.kt", AVarIsMutableKt::main);
   }

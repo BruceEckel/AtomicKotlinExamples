@@ -65,14 +65,14 @@ fun generateTests(exampleInfoList: List<ExampleInfo>): String {
   }
 
   return buildString {
-    appendln("import org.junit.Test;")
-    appendln()
-    appendln("""
+    appendLine("import org.junit.Test;")
+    appendLine()
+    appendLine("""
                 public class TestExamples extends AbstractTestExamples {
                 """.trimIndent())
     for (test in tests) {
-      appendln()
-      appendln(test)
+      appendLine()
+      appendLine(test)
     }
     append("}\n")
   }

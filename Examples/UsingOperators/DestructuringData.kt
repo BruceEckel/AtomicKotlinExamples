@@ -14,7 +14,7 @@ data class Person(
 fun main() {
   val person = Person("Alice", 29)
   val (name, age) = person
-  // Destructuring assignment compiles to:
+  // The Destructuring assignment becomes:
   val name_ = person.component1()
   val age_ = person.component2()
   name eq "Alice"

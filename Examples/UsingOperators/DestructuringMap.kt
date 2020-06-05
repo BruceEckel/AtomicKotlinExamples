@@ -8,7 +8,7 @@ fun main() {
     key eq "a"
     value eq 1
   }
-  // Destructuring assignment compiles to:
+  // The Destructuring assignment becomes:
   for (entry in map) {
     val key = entry.component1()
     val value = entry.component2()
