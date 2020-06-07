@@ -1,4 +1,5 @@
 // PropertyDelegation/FibonacciProperty.kt
+package propertydelegation
 import atomictest.eq
 import recursion.fibonacci
 import kotlin.reflect.KProperty

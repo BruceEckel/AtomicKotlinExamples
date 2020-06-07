@@ -973,6 +973,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTypeCheck1() {
+    testExample("Examples/InheritanceExtensions/TypeCheck1.kt", inheritanceextensions.TypeCheck1Kt::main);
+  }
+
+  @Test
+  public void testTypeCheck2() {
+    testExample("Examples/InheritanceExtensions/TypeCheck2.kt", inheritanceextensions.TypeCheck2Kt::main);
+  }
+
+  @Test
   public void testCharRange() {
     testExample("Examples/InKeyword/CharRange.kt", CharRangeKt::main);
   }
@@ -1979,12 +1989,27 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testFibonacciProperty() {
-    testExample("Examples/PropertyDelegation/FibonacciProperty.kt", FibonacciPropertyKt::main);
+    testExample("Examples/PropertyDelegation/FibonacciProperty.kt", propertydelegation.FibonacciPropertyKt::main);
   }
 
   @Test
   public void testNickName() {
     testExample("Examples/PropertyDelegation/NickName.kt", propertydelegation.NickNameKt::main);
+  }
+
+  @Test
+  public void testPropDelegationSoln1() {
+    testExample("Examples/PropertyDelegation/PropDelegationSoln1.kt", propertydelegationsoln1.PropDelegationSoln1Kt::main);
+  }
+
+  @Test
+  public void testPropDelegationSoln2() {
+    testExample("Examples/PropertyDelegation/PropDelegationSoln2.kt", propertydelegationsoln2.PropDelegationSoln2Kt::main);
+  }
+
+  @Test
+  public void testPropDelegationSoln3() {
+    testExample("Examples/PropertyDelegation/PropDelegationSoln3.kt", propertydelegationsoln3.PropDelegationSoln3Kt::main);
   }
 
   @Test

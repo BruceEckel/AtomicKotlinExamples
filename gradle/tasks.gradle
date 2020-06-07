@@ -780,7 +780,7 @@ task Fibonacci(type: JavaExec) {
 
 task FibonacciProperty(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FibonacciPropertyKt'
+    main = 'propertydelegation.FibonacciPropertyKt'
 }
 
 task FillIt(type: JavaExec) {
@@ -1903,6 +1903,21 @@ task Predicates(type: JavaExec) {
     main = 'PredicatesKt'
 }
 
+task PropDelegationSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegationsoln1.PropDelegationSoln1Kt'
+}
+
+task PropDelegationSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegationsoln2.PropDelegationSoln2Kt'
+}
+
+task PropDelegationSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegationsoln3.PropDelegationSoln3Kt'
+}
+
 task PropertyOptions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'lazyinitialization.PropertyOptionsKt'
@@ -2471,6 +2486,16 @@ task TwoArgLambda(type: JavaExec) {
 task TwoFunctionsWithVarargs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TwoFunctionsWithVarargsKt'
+}
+
+task TypeCheck1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.TypeCheck1Kt'
+}
+
+task TypeCheck2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.TypeCheck2Kt'
 }
 
 task TypeDeclarations(type: JavaExec) {
@@ -3113,6 +3138,9 @@ task run (dependsOn: [
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',
+    'PropDelegationSoln1',
+    'PropDelegationSoln2',
+    'PropDelegationSoln3',
     'PropertyOptions',
     'PropertyReadWrite',
     'PropertyReference',
@@ -3227,6 +3255,8 @@ task run (dependsOn: [
     'Tuple',
     'TwoArgLambda',
     'TwoFunctionsWithVarargs',
+    'TypeCheck1',
+    'TypeCheck2',
     'TypeDeclarations',
     'Types',
     'UnSealed',
