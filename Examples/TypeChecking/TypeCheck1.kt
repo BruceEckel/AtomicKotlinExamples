@@ -1,5 +1,5 @@
-// InheritanceExtensions/TypeCheck1.kt
-package inheritanceextensions
+// TypeChecking/TypeCheck1.kt
+package typechecking
 import atomictest.eq
 
 interface Shape {

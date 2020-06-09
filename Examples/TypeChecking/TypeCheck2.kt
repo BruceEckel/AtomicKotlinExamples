@@ -1,5 +1,5 @@
-// InheritanceExtensions/TypeCheck2.kt
-package inheritanceextensions
+// TypeChecking/TypeCheck2.kt
+package typechecking
 import atomictest.eq
 
 class Triangle: Shape {
@@ -20,7 +20,7 @@ fun main() {
     "[Circle: Draw, Square: Draw, " +
     "Triangle: Draw]"
   shapes.map { turn(it) } eq
-    "[, Square: Rotate]"
+    "[, Square: Rotate, ]"
   shapes.map { turn2(it) } eq
     "[, Square: Rotate, Triangle: Rotate]"
 }

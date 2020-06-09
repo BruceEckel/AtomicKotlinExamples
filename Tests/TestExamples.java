@@ -928,16 +928,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBatteryPet() {
-    testExample("Examples/InheritanceExtensions/BatteryPet.kt", inheritanceextensions.BatteryPetKt::main);
-  }
-
-  @Test
-  public void testBatteryPet2() {
-    testExample("Examples/InheritanceExtensions/BatteryPet2.kt", inheritanceextensions2.BatteryPet2Kt::main);
-  }
-
-  @Test
   public void testComposeAdapter() {
     testExample("Examples/InheritanceExtensions/ComposeAdapter.kt", inheritanceextensions2.ComposeAdapterKt::main);
   }
@@ -970,16 +960,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTempController() {
     testExample("Examples/InheritanceExtensions/TempController.kt", inheritanceextensions.TempControllerKt::main);
-  }
-
-  @Test
-  public void testTypeCheck1() {
-    testExample("Examples/InheritanceExtensions/TypeCheck1.kt", inheritanceextensions.TypeCheck1Kt::main);
-  }
-
-  @Test
-  public void testTypeCheck2() {
-    testExample("Examples/InheritanceExtensions/TypeCheck2.kt", inheritanceextensions.TypeCheck2Kt::main);
   }
 
   @Test
@@ -2520,6 +2500,61 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTrace1() {
     testExample("Examples/Testing/Trace1.kt", Trace1Kt::main);
+  }
+
+  @Test
+  public void testBeverageContainer() {
+    testExample("Examples/TypeChecking/BeverageContainer.kt", typechecking.BeverageContainerKt::main);
+  }
+
+  @Test
+  public void testBeverageContainer2() {
+    testExample("Examples/TypeChecking/BeverageContainer2.kt", typechecking2.BeverageContainer2Kt::main);
+  }
+
+  @Test
+  public void testBeverageContainer3() {
+    testExample("Examples/TypeChecking/BeverageContainer3.kt", typechecking3.BeverageContainer3Kt::main);
+  }
+
+  @Test
+  public void testInsects() {
+    testExample("Examples/TypeChecking/Insects.kt", typechecking.InsectsKt::main);
+  }
+
+  @Test
+  public void testTypeCheck1() {
+    testExample("Examples/TypeChecking/TypeCheck1.kt", typechecking.TypeCheck1Kt::main);
+  }
+
+  @Test
+  public void testTypeCheck2() {
+    testExample("Examples/TypeChecking/TypeCheck2.kt", typechecking.TypeCheck2Kt::main);
+  }
+
+  @Test
+  public void testTypeCheck3() {
+    testExample("Examples/TypeChecking/TypeCheck3.kt", typechecking3.TypeCheck3Kt::main);
+  }
+
+  @Test
+  public void testTypeCheckingSoln1() {
+    testExample("Examples/TypeChecking/TypeCheckingSoln1.kt", typecheckingsoln1.TypeCheckingSoln1Kt::main);
+  }
+
+  @Test
+  public void testTypeCheckingSoln2a() {
+    testExample("Examples/TypeChecking/TypeCheckingSoln2a.kt", typecheckingsoln2a.TypeCheckingSoln2aKt::main);
+  }
+
+  @Test
+  public void testTypeCheckingSoln2b() {
+    testExample("Examples/TypeChecking/TypeCheckingSoln2b.kt", typecheckingsoln2b.TypeCheckingSoln2bKt::main);
+  }
+
+  @Test
+  public void testTypeCheckingSoln3() {
+    testExample("Examples/TypeChecking/TypeCheckingSoln3.kt", typecheckingsoln3.TypeCheckingSoln3Kt::main);
   }
 
   @Test

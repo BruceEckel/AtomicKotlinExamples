@@ -213,16 +213,6 @@ task BasicLogging(type: JavaExec) {
     main = 'logging.BasicLoggingKt'
 }
 
-task BatteryPet(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceextensions.BatteryPetKt'
-}
-
-task BatteryPet2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceextensions2.BatteryPet2Kt'
-}
-
 task Bear(type: JavaExec) {
     classpath kotlinClassPath
     main = 'complexconstructors.BearKt'
@@ -231,6 +221,21 @@ task Bear(type: JavaExec) {
 task BetterSuitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'lateinitialization.BetterSuitcaseKt'
+}
+
+task BeverageContainer(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'typechecking.BeverageContainerKt'
+}
+
+task BeverageContainer2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'typechecking2.BeverageContainer2Kt'
+}
+
+task BeverageContainer3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'typechecking3.BeverageContainer3Kt'
 }
 
 task BigFibonacci(type: JavaExec) {
@@ -1186,6 +1191,11 @@ task InputLines1(type: JavaExec) {
 task InputLines2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'InputLines2Kt'
+}
+
+task Insects(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'typechecking.InsectsKt'
 }
 
 task IntDivisionTruncates(type: JavaExec) {
@@ -2490,12 +2500,37 @@ task TwoFunctionsWithVarargs(type: JavaExec) {
 
 task TypeCheck1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'inheritanceextensions.TypeCheck1Kt'
+    main = 'typechecking.TypeCheck1Kt'
 }
 
 task TypeCheck2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'inheritanceextensions.TypeCheck2Kt'
+    main = 'typechecking.TypeCheck2Kt'
+}
+
+task TypeCheck3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'typechecking3.TypeCheck3Kt'
+}
+
+task TypeCheckingSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'typecheckingsoln1.TypeCheckingSoln1Kt'
+}
+
+task TypeCheckingSoln2a(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'typecheckingsoln2a.TypeCheckingSoln2aKt'
+}
+
+task TypeCheckingSoln2b(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'typecheckingsoln2b.TypeCheckingSoln2bKt'
+}
+
+task TypeCheckingSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'typecheckingsoln3.TypeCheckingSoln3Kt'
 }
 
 task TypeDeclarations(type: JavaExec) {
@@ -2800,10 +2835,11 @@ task run (dependsOn: [
     'BasicGenerics',
     'BasicLambda',
     'BasicLogging',
-    'BatteryPet',
-    'BatteryPet2',
     'Bear',
     'BetterSuitcase',
+    'BeverageContainer',
+    'BeverageContainer2',
+    'BeverageContainer3',
     'BigFibonacci',
     'BiggestLong',
     'BmiWhen',
@@ -2995,6 +3031,7 @@ task run (dependsOn: [
     'InnerClassInheritance',
     'InputLines1',
     'InputLines2',
+    'Insects',
     'IntDivisionTruncates',
     'IntRanges',
     'IntegerOverflow',
@@ -3257,6 +3294,11 @@ task run (dependsOn: [
     'TwoFunctionsWithVarargs',
     'TypeCheck1',
     'TypeCheck2',
+    'TypeCheck3',
+    'TypeCheckingSoln1',
+    'TypeCheckingSoln2a',
+    'TypeCheckingSoln2b',
+    'TypeCheckingSoln3',
     'TypeDeclarations',
     'Types',
     'UnSealed',
