@@ -2,9 +2,6 @@
 package typechecking
 import atomictest.eq
 
-val Any.name
-  get() = this::class.simpleName
-
 interface Insect {
   fun walk() = "${this.name}: walk"
   fun fly() = "${this.name}: fly"
@@ -15,12 +12,13 @@ class HouseFly: Insect
 class Flea: Insect {
   override fun fly() =
     throw Exception("Flea cannot fly")
+  fun crawl() = "Flea: crawl"
 }
 
 fun Insect.basic() =
   this.walk() + " " +
   if (this is Flea)
-    "Flea: crawl"
+    this.crawl()
   else
     this.fly()
 
@@ -44,7 +42,6 @@ fun Insect.water() =
     is WaterWalker -> this.walkWater()
     else -> "${this.name}: drown"
   }
-
 
 fun main() {
   val insects = listOf(

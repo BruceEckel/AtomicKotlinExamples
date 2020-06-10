@@ -13,12 +13,13 @@ class HouseFly: Insect()
 class Flea: Insect() {
   override fun fly() =
     throw Exception("Flea cannot fly")
+  fun crawl() = "Flea: crawl"
 }
 
 fun Insect.basic() =
   this.walk() + " " +
     when(this) {
-      is Flea -> "Flea: crawl"
+      is Flea -> this.crawl()
       else -> this.fly()
     }
 

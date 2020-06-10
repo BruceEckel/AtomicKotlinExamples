@@ -1,6 +1,7 @@
 // InnerClasses/QualifiedThis.kt
 package innerclasses
 import atomictest.eq
+import typechecking.name
 
 class Fruit { // implicit label @Fruit
   fun changeColor(color: String) =
@@ -12,14 +13,14 @@ class Fruit { // implicit label @Fruit
     fun germinate() {}
     fun whichThis() {
       // Defaults to the current class:
-      which(this) eq "Seed"
+      this.name eq "Seed"
       // To clarify, you can redundantly
       // qualify the default this:
-      which(this@Seed) eq "Seed"
+      this@Seed.name  eq "Seed"
       // Must explicitly access Fruit:
-      which(this@Fruit) eq "Fruit"
+      this@Fruit.name  eq "Fruit"
       // Cannot access a further-inner class:
-      // which(this@DNA)
+      // this@DNA.name
     }
     inner class DNA { // implicit label @DNA
       fun changeColor(color: String) {
@@ -36,25 +37,25 @@ class Fruit { // implicit label @Fruit
       // Extension function:
       fun Int.grow() { // Implicit label @grow
         // Default is the Int.grow() receiver:
-        which(this) eq "Int"
+        this.name eq "Int"
         // Redundant qualification:
-        which(this@grow) eq "Int"
+        this@grow.name  eq "Int"
         // You can still access everything:
-        which(this@DNA) eq "DNA"
-        which(this@Seed) eq "Seed"
-        which(this@Fruit) eq "Fruit"
+        this@DNA.name  eq "DNA"
+        this@Seed.name  eq "Seed"
+        this@Fruit.name  eq "Fruit"
       }
       // Extension functions on outer classes:
       fun Seed.plant() {}
       fun Fruit.plant() {}
       fun whichThis() {
         // Defaults to the current class:
-        which(this) eq "DNA"
+        this.name eq "DNA"
         // Redundant qualification:
-        which(this@DNA) eq "DNA"
+        this@DNA.name  eq "DNA"
         // The others must be explicit:
-        which(this@Seed) eq "Seed"
-        which(this@Fruit) eq "Fruit"
+        this@Seed.name  eq "Seed"
+        this@Fruit.name  eq "Fruit"
       }
     }
   }
