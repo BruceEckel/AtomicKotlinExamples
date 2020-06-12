@@ -11,7 +11,7 @@ data class N(var n: Int) : Comparable<N> {
 fun main() {
   val rnd = Random(47) // For repeatability
   val key = N(11)
-  val map = mutableMapOf(Pair(key, 47))
+  val map = mutableMapOf(key to 47)
   println(map[key])
   key.n++
   println(map[key])

@@ -1163,6 +1163,11 @@ task InfiniteRecursion(type: JavaExec) {
     main = 'recursion.InfiniteRecursionKt'
 }
 
+task InhExtensionsEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceAndExtensionsExercise2.InhExtensionsEx2Kt'
+}
+
 task InheritAdd(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritanceextensions.InheritAddKt'
@@ -1446,6 +1451,11 @@ task MainArgs(type: JavaExec) {
 task MakeSalad(type: JavaExec) {
     classpath kotlinClassPath
     main = 'fromjava.MakeSalad'
+}
+
+task MapDelegation(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.MapDelegationKt'
 }
 
 task Mapping(type: JavaExec) {
@@ -3025,6 +3035,7 @@ task run (dependsOn: [
     'InferInt',
     'Inference',
     'InfiniteRecursion',
+    'InhExtensionsEx2',
     'InheritAdd',
     'InitSection',
     'Initialization',
@@ -3082,6 +3093,7 @@ task run (dependsOn: [
     'MainArgConversion',
     'MainArgs',
     'MakeSalad',
+    'MapDelegation',
     'Mapping',
     'Maps',
     'MatchingAgainstVals',

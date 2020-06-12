@@ -958,6 +958,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testInhExtensionsEx2() {
+    testExample("Examples/InheritanceExtensions/InhExtensionsEx2.kt", inheritanceAndExtensionsExercise2.InhExtensionsEx2Kt::main);
+  }
+
+  @Test
   public void testTempController() {
     testExample("Examples/InheritanceExtensions/TempController.kt", inheritanceextensions.TempControllerKt::main);
   }
@@ -1970,6 +1975,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testFibonacciProperty() {
     testExample("Examples/PropertyDelegation/FibonacciProperty.kt", propertydelegation.FibonacciPropertyKt::main);
+  }
+
+  @Test
+  public void testMapDelegation() {
+    testExample("Examples/PropertyDelegation/MapDelegation.kt", propertydelegation.MapDelegationKt::main);
   }
 
   @Test
