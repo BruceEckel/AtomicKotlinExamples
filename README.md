@@ -11,13 +11,9 @@ See *AtomicKotlin.com* for the IDEA examples.
 
 ## Quick Version
 
-Before you can run the examples from this repository, you must install:
-
-1. The current version of [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html),
+Before you can run the examples from this repository, you must install the current version of 
+[Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html),
 although some earlier versions should also work.
-
-2. The latest version (1.3 or higher) of the [Kotlin command-line
-compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 If you just want to download and check the code, [Download
 Here](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip)
@@ -177,7 +173,9 @@ If you get a *Permission denied* error on OSX or Linux, run `chmod +x ./run.sh`
 # Running Kotlin from the Command Line
 
 The Kotlin interpreter is also called the REPL (for *Read-Evaluate-Print-
-Loop*). To use this you must first install the command-line version of Kotlin.
+Loop*). To use this you must first install the
+latest version (1.3 or higher) of the [Kotlin command-line
+compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 > NOTE: You do not need to install command-line Kotlin for the operations
 > described previously in this README.
