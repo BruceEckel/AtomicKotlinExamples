@@ -28,7 +28,7 @@ directory if you see the files `gradlew` and `gradlew.bat`.
 On Mac/Linux, enter:
 
 ```
-./gradlew run
+./gradlew test
 ```
 
 (If you get a *Permission denied* error, run `chmod +x ./gradlew`)
@@ -36,7 +36,7 @@ On Mac/Linux, enter:
 On Windows, enter
 
 ```
-gradlew run
+gradlew test
 ```
 
 You'll need an Internet connection the first time you compile the code,
@@ -44,7 +44,7 @@ because Gradle needs to first install itself, then all the support libraries.
 Once these are installed you can perform additional compiling and running
 offline.
 
-If all goes well, the examples will run. Everything should complete without errors.
+If all goes well, the tests will run. Everything should complete without errors.
 
 All the book examples are in the subdirectory `Examples` in subdirectories
 corresponding to the atom names.
