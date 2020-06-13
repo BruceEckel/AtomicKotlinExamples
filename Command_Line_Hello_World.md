@@ -2,7 +2,8 @@ Command-Line Hello World
 ========================
 
 In which we see how to compile and run the program shown in the "Hello World"
-atom in the book, using the command-line compiler.
+atom in the book, using the latest version (1.3 or higher) of the [Kotlin command-line
+compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 Open up a console window in the `HelloWorld` directory, where you'll see
 `HelloWorld.kt`, and type:
