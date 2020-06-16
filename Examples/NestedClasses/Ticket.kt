@@ -3,7 +3,10 @@ package nestedclasses
 import atomictest.eq
 import nestedclasses.Ticket.Seat.*
 
-class Ticket(private var seat: Seat = COACH) {
+class Ticket(
+  val name: String,
+  val seat: Seat = COACH
+) {
   enum class Seat {
     COACH,
     PREMIUM,
@@ -11,11 +14,11 @@ class Ticket(private var seat: Seat = COACH) {
     FIRST
   }
   fun upgrade(): Ticket {
-    seat = values()[
+    val newSeat = values()[
       (seat.ordinal + 1)
       .coerceAtMost(FIRST.ordinal)
     ]
-    return this
+    return Ticket(name, newSeat)
   }
   fun meal() = when(seat) {
     COACH -> "Bag Meal"
@@ -28,10 +31,10 @@ class Ticket(private var seat: Seat = COACH) {
 
 fun main() {
   val tickets = listOf(
-    Ticket(),
-    Ticket(PREMIUM),
-    Ticket(BUSINESS),
-    Ticket(FIRST)
+    Ticket("Jerry"),
+    Ticket("Summer", PREMIUM),
+    Ticket("Squanchy", BUSINESS),
+    Ticket("Beth", FIRST)
   )
   tickets.map(Ticket::meal) eq
     "[Bag Meal, Bag Meal with Cookie, " +
@@ -39,8 +42,8 @@ fun main() {
   tickets.map(Ticket::upgrade) eq
     "[PREMIUM, BUSINESS, FIRST, FIRST]"
   tickets eq
-    "[PREMIUM, BUSINESS, FIRST, FIRST]"
+    "[COACH, PREMIUM, BUSINESS, FIRST]"
   tickets.map(Ticket::meal) eq
-    "[Bag Meal with Cookie, Hot Meal, " +
-    "Private Chef, Private Chef]"
+    "[Bag Meal, Bag Meal with Cookie, " +
+    "Hot Meal, Private Chef]"
 }

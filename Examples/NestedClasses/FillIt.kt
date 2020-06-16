@@ -15,7 +15,7 @@ class FillIt(
 ) : Game {
   val rand = Random(randomSeed)
   private var state = PLAYING
-  private var grid =
+  private val grid =
     MutableList(side * side) { BLANK }
   private var player = X
   fun turn() {

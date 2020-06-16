@@ -963,8 +963,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTempController() {
-    testExample("Examples/InheritanceExtensions/TempController.kt", inheritanceextensions.TempControllerKt::main);
+  public void testTemperatureDelta() {
+    testExample("Examples/InheritanceExtensions/TemperatureDelta.kt", inheritanceextensions.TemperatureDeltaKt::main);
   }
 
   @Test
@@ -1973,18 +1973,48 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAccessibility() {
+    testExample("Examples/PropertyDelegation/Accessibility.kt", propertydelegation.AccessibilityKt::main);
+  }
+
+  @Test
+  public void testAdd() {
+    testExample("Examples/PropertyDelegation/Add.kt", propertydelegation2.AddKt::main);
+  }
+
+  @Test
+  public void testBasicRead() {
+    testExample("Examples/PropertyDelegation/BasicRead.kt", propertydelegation.BasicReadKt::main);
+  }
+
+  @Test
+  public void testBasicRead2() {
+    testExample("Examples/PropertyDelegation/BasicRead2.kt", propertydelegation.BasicRead2Kt::main);
+  }
+
+  @Test
+  public void testBasicReadWrite() {
+    testExample("Examples/PropertyDelegation/BasicReadWrite.kt", propertydelegation.BasicReadWriteKt::main);
+  }
+
+  @Test
+  public void testBasicReadWrite2() {
+    testExample("Examples/PropertyDelegation/BasicReadWrite2.kt", propertydelegation.BasicReadWrite2Kt::main);
+  }
+
+  @Test
+  public void testCarService() {
+    testExample("Examples/PropertyDelegation/CarService.kt", propertydelegation.CarServiceKt::main);
+  }
+
+  @Test
+  public void testConfiguration() {
+    testExample("Examples/PropertyDelegation/Configuration.kt", propertydelegation.ConfigurationKt::main);
+  }
+
+  @Test
   public void testFibonacciProperty() {
     testExample("Examples/PropertyDelegation/FibonacciProperty.kt", propertydelegation.FibonacciPropertyKt::main);
-  }
-
-  @Test
-  public void testMapDelegation() {
-    testExample("Examples/PropertyDelegation/MapDelegation.kt", propertydelegation.MapDelegationKt::main);
-  }
-
-  @Test
-  public void testNickName() {
-    testExample("Examples/PropertyDelegation/NickName.kt", propertydelegation.NickNameKt::main);
   }
 
   @Test

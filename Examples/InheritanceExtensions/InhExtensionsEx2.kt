@@ -1,6 +1,7 @@
 // InheritanceExtensions/InhExtensionsEx2.kt
 package inheritanceAndExtensionsExercise2
 import inheritanceextensions.Heater
+import inheritanceextensions.warm
 import atomictest.*
 
 class HVAC {
@@ -9,10 +10,6 @@ class HVAC {
     heater.heat(temperature)
   fun cool(temperature: Int) =
     "cooling to $temperature"
-}
-
-fun warm(heater: Heater) {
-  heater.heat(70) eq "heating to 70"
 }
 
 fun warmAndCool(hvac: HVAC) {

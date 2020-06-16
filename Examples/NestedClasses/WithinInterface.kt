@@ -1,6 +1,6 @@
 // NestedClasses/WithinInterface.kt
 package nestedclasses
-import atomictest.*
+import atomictest.eq
 
 interface Item {
   val type: Type

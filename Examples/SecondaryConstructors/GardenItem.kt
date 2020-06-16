@@ -9,17 +9,14 @@ enum class Material {
 
 class GardenItem(val name: String) {
   var material: Material = Plastic
-
   constructor(
     name: String, material: Material     // [1]
   ) : this(name) {                       // [2]
     this.material = material             // [3]
   }
-
   constructor(
     material: Material
   ) : this("Strange Thing", material)    // [4]
-
   override fun toString() = "$material $name"
 }
 

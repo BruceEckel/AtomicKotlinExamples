@@ -18,9 +18,19 @@ task AVarIsMutable(type: JavaExec) {
     main = 'AVarIsMutableKt'
 }
 
+task Accessibility(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.AccessibilityKt'
+}
+
 task Adapter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritanceextensions.AdapterKt'
+}
+
+task Add(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation2.AddKt'
 }
 
 task AddingIntToChar(type: JavaExec) {
@@ -213,6 +223,26 @@ task BasicLogging(type: JavaExec) {
     main = 'logging.BasicLoggingKt'
 }
 
+task BasicRead(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.BasicReadKt'
+}
+
+task BasicRead2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.BasicRead2Kt'
+}
+
+task BasicReadWrite(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.BasicReadWriteKt'
+}
+
+task BasicReadWrite2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.BasicReadWrite2Kt'
+}
+
 task Bear(type: JavaExec) {
     classpath kotlinClassPath
     main = 'complexconstructors.BearKt'
@@ -311,6 +341,11 @@ task Car(type: JavaExec) {
 task CarHolder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'generics.CarHolderKt'
+}
+
+task CarService(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.CarServiceKt'
 }
 
 task Cat(type: JavaExec) {
@@ -456,6 +491,11 @@ task Computation(type: JavaExec) {
 task Computer(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces.ComputerKt'
+}
+
+task Configuration(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegation.ConfigurationKt'
 }
 
 task Confusing(type: JavaExec) {
@@ -1453,11 +1493,6 @@ task MakeSalad(type: JavaExec) {
     main = 'fromjava.MakeSalad'
 }
 
-task MapDelegation(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'propertydelegation.MapDelegationKt'
-}
-
 task Mapping(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MappingKt'
@@ -1621,11 +1656,6 @@ task NewException(type: JavaExec) {
 task NewStateMachine2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'statemachine2.NewStateMachine2Kt'
-}
-
-task NickName(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'propertydelegation.NickNameKt'
 }
 
 task NoComputationYet(type: JavaExec) {
@@ -2398,14 +2428,14 @@ task TeamWithTraditions(type: JavaExec) {
     main = 'TeamWithTraditionsKt'
 }
 
-task TempController(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceextensions.TempControllerKt'
-}
-
 task Temperature(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TemperatureKt'
+}
+
+task TemperatureDelta(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.TemperatureDeltaKt'
 }
 
 task TerminalOperations(type: JavaExec) {
@@ -2806,7 +2836,9 @@ task ZippingWithNext(type: JavaExec) {
 task run (dependsOn: [
     'ASCIIMap',
     'AVarIsMutable',
+    'Accessibility',
     'Adapter',
+    'Add',
     'AddingIntToChar',
     'Airport',
     'AllOperators',
@@ -2845,6 +2877,10 @@ task run (dependsOn: [
     'BasicGenerics',
     'BasicLambda',
     'BasicLogging',
+    'BasicRead',
+    'BasicRead2',
+    'BasicReadWrite',
+    'BasicReadWrite2',
     'Bear',
     'BetterSuitcase',
     'BeverageContainer',
@@ -2865,6 +2901,7 @@ task run (dependsOn: [
     'CaptureImplementation',
     'Car',
     'CarHolder',
+    'CarService',
     'Cat',
     'CatchChecked',
     'ChainedCalls',
@@ -2894,6 +2931,7 @@ task run (dependsOn: [
     'ComposeAdapter',
     'Computation',
     'Computer',
+    'Configuration',
     'Confusing',
     'ConstructorReference',
     'ContactMap',
@@ -3093,7 +3131,6 @@ task run (dependsOn: [
     'MainArgConversion',
     'MainArgs',
     'MakeSalad',
-    'MapDelegation',
     'Mapping',
     'Maps',
     'MatchingAgainstVals',
@@ -3127,7 +3164,6 @@ task run (dependsOn: [
     'NewAngle',
     'NewException',
     'NewStateMachine2',
-    'NickName',
     'NoComputationYet',
     'NoFramework',
     'NonNullAssert',
@@ -3282,8 +3318,8 @@ task run (dependsOn: [
     'TakeOrDrop',
     'Team',
     'TeamWithTraditions',
-    'TempController',
     'Temperature',
+    'TemperatureDelta',
     'TerminalOperations',
     'TestingExample',
     'ThreeQuotes',

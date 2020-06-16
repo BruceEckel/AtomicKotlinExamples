@@ -1,8 +1,8 @@
 // InheritanceExtensions/PrivateAccess.kt
-package inheritanceextensionsx
+package inheritanceextensions
 import atomictest.eq
 
-class X(var i: Int = 0) {
+class Z(var i: Int = 0) {
   private var j = 0
   fun increment() {
     i++
@@ -10,7 +10,7 @@ class X(var i: Int = 0) {
   }
 }
 
-fun X.decrement() {
+fun Z.decrement() {
   i--
   // j -- // Cannot access
 }

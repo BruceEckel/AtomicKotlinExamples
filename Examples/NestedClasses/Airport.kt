@@ -1,6 +1,7 @@
 // NestedClasses/Airport.kt
 package nestedclasses
 import atomictest.eq
+import nestedclasses.Airport.Plane
 
 class Airport(private val code: String) {
   open class Plane {
@@ -14,7 +15,7 @@ class Airport(private val code: String) {
 
 fun main() {
   val denver = Airport("DEN")
-  var plane = Airport.Plane()           // [1]
+  var plane = Plane()                   // [1]
   plane.contact(denver) eq "Contacting DEN"
   // Can't do this:
   // val privatePlane = Airport.PrivatePlane()

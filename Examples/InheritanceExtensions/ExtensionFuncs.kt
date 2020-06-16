@@ -1,11 +1,7 @@
 // InheritanceExtensions/ExtensionFuncs.kt
 package inheritanceextensions2
+import inheritanceextensions.Heater
 import atomictest.eq
-
-open class Heater {
-  fun heat(temperature: Int) =
-    "heating to $temperature"
-}
 
 fun Heater.cool(temperature: Int) =
   "cooling to $temperature"

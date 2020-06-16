@@ -1,30 +1,33 @@
 // PropertyDelegation/FibonacciProperty.kt
 package propertydelegation
-import atomictest.eq
-import recursion.fibonacci
+import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
+import recursion.fibonacci
+import atomictest.eq
 
-class Fibonacci {
+class Fibonacci :
+  ReadWriteProperty<Any?, Long> {
   private var current: Long = 0
-  operator fun getValue(
-    dgtor: Any?,
-    prop: KProperty<*>
+  override operator fun getValue(
+    thisRef: Any?,
+    property: KProperty<*>
   ) = current
-
-  operator fun setValue(
-    dgtor: Any?,
-    prop: KProperty<*>,
-    n: Long
+  override operator fun setValue(
+    thisRef: Any?,
+    property: KProperty<*>,
+    value: Long
   ) {
-    current = fibonacci(n.toInt())
+    current = fibonacci(value.toInt())
   }
 }
 
-fun main() {
-  var f by Fibonacci()
-  f eq 0L
-  f = 22L
-  f eq 17711L
-  f = 90L
-  f eq 2880067194370816120L
+fun test() {
+  var fib by Fibonacci()
+  fib eq 0L
+  fib = 22L
+  fib eq 17711L
+  fib = 90L
+  fib eq 2880067194370816120L
 }
+
+fun main() = test()
