@@ -1968,6 +1968,11 @@ task PropDelegationSoln3(type: JavaExec) {
     main = 'propertydelegationsoln3.PropDelegationSoln3Kt'
 }
 
+task PropDelegationSoln4(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'propertydelegationsoln4.PropDelegationSoln4Kt'
+}
+
 task PropertyOptions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'lazyinitialization.PropertyOptionsKt'
@@ -3226,6 +3231,7 @@ task run (dependsOn: [
     'PropDelegationSoln1',
     'PropDelegationSoln2',
     'PropDelegationSoln3',
+    'PropDelegationSoln4',
     'PropertyOptions',
     'PropertyReadWrite',
     'PropertyReference',

@@ -12,7 +12,8 @@ class ReadWriteable2(var i: Int) {
 class BasicReadWrite2:
   ReadWriteProperty<ReadWriteable2, String> {
   override operator fun getValue(
-    rw: ReadWriteable2, prop: KProperty<*>
+    rw: ReadWriteable2,
+    property: KProperty<*>
   ) = "getValue: ${rw.i}"
   override operator fun setValue(
     rw: ReadWriteable2,

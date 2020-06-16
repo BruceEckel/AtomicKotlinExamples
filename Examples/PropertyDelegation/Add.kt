@@ -10,10 +10,11 @@ class Add(val a: Int, val b: Int) {
 class Sum
 
 operator fun Sum.getValue(
-  thisRef: Add, property: KProperty<*>
+  thisRef: Add,
+  property: KProperty<*>
 ) = thisRef.a + thisRef.b
 
 fun main() {
-  val person = Add(144, 12)
-  person.sum eq 156
+  val addition = Add(144, 12)
+  addition.sum eq 156
 }

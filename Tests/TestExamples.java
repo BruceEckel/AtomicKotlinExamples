@@ -358,6 +358,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTeam() {
+    testExample("Examples/DelegationTools/Team.kt", TeamKt::main);
+  }
+
+  @Test
+  public void testTeamWithTraditions() {
+    testExample("Examples/DelegationTools/TeamWithTraditions.kt", TeamWithTraditionsKt::main);
+  }
+
+  @Test
   public void testComputation() {
     testExample("Examples/Destructuring/Computation.kt", destructuring.ComputationKt::main);
   }
@@ -2033,13 +2043,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTeam() {
-    testExample("Examples/PropertyDelegation/Team.kt", TeamKt::main);
-  }
-
-  @Test
-  public void testTeamWithTraditions() {
-    testExample("Examples/PropertyDelegation/TeamWithTraditions.kt", TeamWithTraditionsKt::main);
+  public void testPropDelegationSoln4() {
+    testExample("Examples/PropertyDelegation/PropDelegationSoln4.kt", propertydelegationsoln4.PropDelegationSoln4Kt::main);
   }
 
   @Test

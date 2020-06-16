@@ -12,7 +12,8 @@ class Person(
   class Name:
     ReadOnlyProperty<Person, String> {
     override fun getValue(
-      thisRef: Person, property: KProperty<*>
+      thisRef: Person,
+      property: KProperty<*>
     ) = "${thisRef.first} ${thisRef.last}"
   }
 }

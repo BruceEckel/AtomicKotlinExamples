@@ -11,7 +11,7 @@ class ReadWriteable(var i: Int) {
 class BasicReadWrite {
   operator fun getValue(
     rw: ReadWriteable,
-    prop: KProperty<*>
+    property: KProperty<*>
   ) = "getValue: ${rw.i}"
   operator fun setValue(
     rw: ReadWriteable,
