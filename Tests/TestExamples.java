@@ -358,13 +358,33 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTeam() {
-    testExample("Examples/DelegationTools/Team.kt", TeamKt::main);
+  public void testDelegateProvider() {
+    testExample("Examples/DelegationTools/DelegateProvider.kt", delegationtools.DelegateProviderKt::main);
   }
 
   @Test
-  public void testTeamWithTraditions() {
-    testExample("Examples/DelegationTools/TeamWithTraditions.kt", TeamWithTraditionsKt::main);
+  public void testDelegToolsSoln1() {
+    testExample("Examples/DelegationTools/DelegToolsSoln1.kt", delegtoolssoln1.DelegToolsSoln1Kt::main);
+  }
+
+  @Test
+  public void testDelegToolsSoln2() {
+    testExample("Examples/DelegationTools/DelegToolsSoln2.kt", delegtoolssoln2.DelegToolsSoln2Kt::main);
+  }
+
+  @Test
+  public void testDelegToolsSoln3() {
+    testExample("Examples/DelegationTools/DelegToolsSoln3.kt", delegtoolssoln3.DelegToolsSoln3Kt::main);
+  }
+
+  @Test
+  public void testNeverNull() {
+    testExample("Examples/DelegationTools/NeverNull.kt", delegationtools.NeverNullKt::main);
+  }
+
+  @Test
+  public void testTeam() {
+    testExample("Examples/DelegationTools/Team.kt", delegationtools.TeamKt::main);
   }
 
   @Test

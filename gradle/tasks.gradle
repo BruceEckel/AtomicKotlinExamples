@@ -623,9 +623,29 @@ task Definition(type: JavaExec) {
     main = 'DefinitionKt'
 }
 
+task DelegToolsSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'delegtoolssoln1.DelegToolsSoln1Kt'
+}
+
+task DelegToolsSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'delegtoolssoln2.DelegToolsSoln2Kt'
+}
+
+task DelegToolsSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'delegtoolssoln3.DelegToolsSoln3Kt'
+}
+
 task DelegateAndExtend(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjects.DelegateAndExtendKt'
+}
+
+task DelegateProvider(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'delegationtools.DelegateProviderKt'
 }
 
 task DelegatedControls(type: JavaExec) {
@@ -1643,6 +1663,11 @@ task NestedHouse(type: JavaExec) {
     main = 'nestedclasses.NestedHouseKt'
 }
 
+task NeverNull(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'delegationtools.NeverNullKt'
+}
+
 task NewAngle(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NewAngleKt'
@@ -2425,12 +2450,7 @@ task TakeOrDrop(type: JavaExec) {
 
 task Team(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'TeamKt'
-}
-
-task TeamWithTraditions(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'TeamWithTraditionsKt'
+    main = 'delegationtools.TeamKt'
 }
 
 task Temperature(type: JavaExec) {
@@ -2962,7 +2982,11 @@ task run (dependsOn: [
     'DefiningExceptions',
     'DefiningRanges',
     'Definition',
+    'DelegToolsSoln1',
+    'DelegToolsSoln2',
+    'DelegToolsSoln3',
     'DelegateAndExtend',
+    'DelegateProvider',
     'DelegatedControls',
     'Dereference',
     'DereferenceNull',
@@ -3166,6 +3190,7 @@ task run (dependsOn: [
     'NamingCompanionObjects',
     'NarrowingUpcast',
     'NestedHouse',
+    'NeverNull',
     'NewAngle',
     'NewException',
     'NewStateMachine2',
@@ -3323,7 +3348,6 @@ task run (dependsOn: [
     'TailRecursiveSum',
     'TakeOrDrop',
     'Team',
-    'TeamWithTraditions',
     'Temperature',
     'TemperatureDelta',
     'TerminalOperations',
