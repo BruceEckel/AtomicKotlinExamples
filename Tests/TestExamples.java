@@ -388,6 +388,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTeamWithTraditions() {
+    testExample("Examples/DelegationTools/TeamWithTraditions.kt", delegationtools.TeamWithTraditionsKt::main);
+  }
+
+  @Test
   public void testComputation() {
     testExample("Examples/Destructuring/Computation.kt", destructuring.ComputationKt::main);
   }
@@ -1235,6 +1240,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testSuitcase() {
     testExample("Examples/LateInitialization/Suitcase.kt", lateinitialization.SuitcaseKt::main);
+  }
+
+  @Test
+  public void testLazyInitSoln1() {
+    testExample("Examples/LazyInitialization/LazyInitSoln1.kt", lazyinitsoln1.LazyInitSoln1Kt::main);
+  }
+
+  @Test
+  public void testLazyInitSoln2() {
+    testExample("Examples/LazyInitialization/LazyInitSoln2.kt", lazyinitsoln2.LazyInitSoln2Kt::main);
+  }
+
+  @Test
+  public void testLazyInitSoln3() {
+    testExample("Examples/LazyInitialization/LazyInitSoln3.kt", lazyinitsoln3.LazyInitSoln3Kt::main);
   }
 
   @Test

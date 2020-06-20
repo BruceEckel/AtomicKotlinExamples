@@ -1378,6 +1378,21 @@ task LambdaTypeInference(type: JavaExec) {
     main = 'LambdaTypeInferenceKt'
 }
 
+task LazyInitSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lazyinitsoln1.LazyInitSoln1Kt'
+}
+
+task LazyInitSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lazyinitsoln2.LazyInitSoln2Kt'
+}
+
+task LazyInitSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lazyinitsoln3.LazyInitSoln3Kt'
+}
+
 task LazyInt(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LazyIntKt'
@@ -2453,6 +2468,11 @@ task Team(type: JavaExec) {
     main = 'delegationtools.TeamKt'
 }
 
+task TeamWithTraditions(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'delegationtools.TeamWithTraditionsKt'
+}
+
 task Temperature(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TemperatureKt'
@@ -3133,6 +3153,9 @@ task run (dependsOn: [
     'LambdaAndNamedArgs',
     'LambdaIt',
     'LambdaTypeInference',
+    'LazyInitSoln1',
+    'LazyInitSoln2',
+    'LazyInitSoln3',
     'LazyInt',
     'LazySyntax',
     'Let',
@@ -3348,6 +3371,7 @@ task run (dependsOn: [
     'TailRecursiveSum',
     'TakeOrDrop',
     'Team',
+    'TeamWithTraditions',
     'Temperature',
     'TemperatureDelta',
     'TerminalOperations',

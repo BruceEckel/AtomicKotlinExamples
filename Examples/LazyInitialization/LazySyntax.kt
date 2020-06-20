@@ -1,20 +1,23 @@
 // LazyInitialization/LazySyntax.kt
 package lazyinitialization
+import atomictest.*
+
+private val trace = Trace()
 
 val unused: String by lazy {
-  println("Initializing 'unused'")
+  trace("Initializing 'unused'")
   "'unused' initialization value"
 }
 
 val used: String by lazy {
-  println("Initializing 'used'")
+  trace("Initializing 'used'")
   "'used' initialization value"
 }
 
 fun main() {
-  println(used)
+  trace(used)
+  trace eq """
+  Initializing 'used'
+  'used' initialization value
+  """
 }
-/* Output:
-Initializing 'used'
-'used' initialization value
-*/

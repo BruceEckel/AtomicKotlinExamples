@@ -1,5 +1,5 @@
-// LazyInitialization/PropertyOptions.kt
-package lazyinitialization
+// LazyInitialization/LazyInitSoln1.kt
+package lazyinitsoln1
 import atomictest.*
 import kotlin.reflect.KProperty1
 
@@ -28,6 +28,7 @@ fun main() {
   show(Properties::atDefinition)
   show(Properties::getter)
   show(Properties::lazyInit)
+  show(Properties::never)
   trace eq
     """
     Compute 1
@@ -43,5 +44,9 @@ fun main() {
     Compute 3
     3
     3
+    never:
+    Compute 4
+    4
+    4
     """
 }
