@@ -2,8 +2,6 @@
 package companionobjects
 import atomictest.*
 
-private val trace = Trace()
-
 class CompanionInit {
   companion object {
     init {

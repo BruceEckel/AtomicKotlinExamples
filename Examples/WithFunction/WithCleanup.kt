@@ -2,8 +2,6 @@
 package withfunction
 import atomictest.*
 
-private var trace = Trace()
-
 class Cleanup(n: Int): AutoCloseable {
   val id = n
   val x = trace("Create $id")

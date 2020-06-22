@@ -2,8 +2,6 @@
 package innerclasses
 import atomictest.*
 
-private val trace = Trace()
-
 interface Counter {
   fun next(): Int
 }

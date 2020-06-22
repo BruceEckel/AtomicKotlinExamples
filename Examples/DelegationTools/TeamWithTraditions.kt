@@ -4,8 +4,6 @@ import atomictest.*
 import kotlin.properties.Delegates
 import kotlin.reflect.KProperty
 
-private val trace = Trace()
-
 fun AName(
   property: KProperty<*>,
   old: String,

@@ -27,7 +27,6 @@ val deck: List<Card> =
 
 fun main() {
   val rand = Random(26)
-  val trace = Trace()
   repeat(7) {
     trace("'${deck.random(rand)}'")
   }

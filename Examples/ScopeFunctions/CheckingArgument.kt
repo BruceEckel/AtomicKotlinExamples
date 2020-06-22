@@ -1,5 +1,6 @@
 // ScopeFunctions/CheckingArgument.kt
 package scopefunctions
+import atomictest.trace
 
 fun showGreetingWindow(
   windowById: Map<String, Window>
@@ -20,7 +21,6 @@ fun showGreetingWindow(
 }
 
 fun main() {
-  trace.clear()
   showGreetingWindow(mapOf(
     "greeting" to Window("greeting")))
   trace("no Window:")

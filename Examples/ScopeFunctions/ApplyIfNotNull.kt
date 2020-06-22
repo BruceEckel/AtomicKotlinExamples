@@ -1,6 +1,6 @@
 // ScopeFunctions/ApplyIfNotNull.kt
 package scopefunctions
-import atomictest.eq
+import atomictest.*
 
 fun showMainWindow(
   windowById: Map<String, Window>
@@ -22,7 +22,6 @@ fun showWindow(window: Window) {
 }
 
 fun main() {
-  trace.clear()
   val mainWindow = Window("main")
   showMainWindow(mapOf("main" to mainWindow))
   mainWindow.x eq 10

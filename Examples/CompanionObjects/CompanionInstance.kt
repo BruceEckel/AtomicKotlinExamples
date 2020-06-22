@@ -2,8 +2,6 @@
 package companionobjects
 import atomictest.*
 
-private val trace = Trace()
-
 interface ZI {
   fun f(): String
   fun g(): String

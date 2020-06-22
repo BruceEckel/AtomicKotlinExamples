@@ -95,11 +95,14 @@ class Trace(
    * or whitespaces.
    */
   infix fun eq(multiline: String) {
-    val left = content.joinToString(" ") {
-      it.replace("\n", " ")
-    }
     val right = multiline.trimIndent()
       .replace("\n", " ")
+    val out = content.joinToString(" ") {
+      it.replace("\n", " ")
+    }
+    // Only compare the last part of out:
+    val left =
+      out.substring(out.length - right.length)
     if (details) {
       println("[Trace]: $left")
       println("[Value]: $right")
@@ -109,7 +112,6 @@ class Trace(
       left == right
     }
   }
-  fun clear() {
-    content.clear()
-  }
 }
+
+val trace = Trace()

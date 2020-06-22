@@ -2,8 +2,6 @@
 package upcasting
 import atomictest.*
 
-private val trace = Trace()
-
 fun trim(shape: Shape) {
   trace(shape.draw())
   trace(shape.erase())

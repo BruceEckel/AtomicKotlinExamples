@@ -1,8 +1,6 @@
 // LazyInitialization/LazyInt.kt
 import atomictest.*
 
-private val trace = Trace()
-
 class LazyInt(val init: () -> Int) {
   private var helper: Int? = null
   val value: Int

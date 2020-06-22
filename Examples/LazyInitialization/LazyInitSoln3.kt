@@ -2,8 +2,6 @@
 package lazyinitsoln3
 import atomictest.*
 
-private val trace = Trace()
-
 class A {
   init {
     trace("A constructor")

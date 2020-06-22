@@ -1,5 +1,6 @@
 // ScopeFunctions/Let.kt
 package scopefunctions
+import atomictest.*
 
 fun showGreetingWindow2(
   windowById: Map<String, Window>
@@ -10,7 +11,6 @@ fun showGreetingWindow2(
 }
 
 fun main() {
-  trace.clear()
   showGreetingWindow2(mapOf(
     "greeting" to Window("greeting")))
   trace("no Window:")

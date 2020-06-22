@@ -2,8 +2,6 @@
 package composition
 import atomictest.*
 
-private val trace = Trace()
-
 class Engine {
   fun start() = trace("Engine start")
   fun stop() = trace("Engine stop")

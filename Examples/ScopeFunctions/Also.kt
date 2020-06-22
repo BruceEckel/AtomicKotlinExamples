@@ -1,5 +1,6 @@
 // ScopeFunctions/Also.kt
 package scopefunctions
+import atomictest.*
 
 fun showAdjustedWindow(window: Window) {
   window.apply {
@@ -13,7 +14,6 @@ fun showAdjustedWindow(window: Window) {
 }
 
 fun main() {
-  trace.clear()
   val w = Window()
   trace(w)
   showAdjustedWindow(w)

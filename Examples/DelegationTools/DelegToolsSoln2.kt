@@ -4,8 +4,6 @@ import kotlin.properties.Delegates.observable
 import kotlin.reflect.KProperty
 import atomictest.*
 
-private val trace = Trace()
-
 fun <T> observe(
   prop: KProperty<*>, old: T, new: T
 ) {

@@ -2,8 +2,6 @@
 package innerclasses
 import atomictest.*
 
-private val trace = Trace()
-
 open class Egg {
   private var yolk = Yolk()
   open inner class Yolk {

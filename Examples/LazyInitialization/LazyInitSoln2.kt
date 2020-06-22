@@ -2,8 +2,6 @@
 package lazyinitsoln2
 import atomictest.*
 
-private val trace = Trace()
-
 class Outer {
   init {
     trace("Outer constructor")

@@ -2,8 +2,6 @@
 package lazyinitialization
 import atomictest.*
 
-private val trace = Trace()
-
 val idle: String by lazy {
   trace("Initializing 'idle'")
   "I'm never used"

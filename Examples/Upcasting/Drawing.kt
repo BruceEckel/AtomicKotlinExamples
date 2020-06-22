@@ -2,8 +2,6 @@
 package upcasting
 import atomictest.*
 
-private val trace = Trace()
-
 fun show(shape: Shape) {
   trace("Show: ${shape.draw()}")
 }

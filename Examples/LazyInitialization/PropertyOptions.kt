@@ -3,8 +3,6 @@ package lazyinitialization
 import atomictest.*
 import kotlin.reflect.KProperty1
 
-private val trace = Trace()
-
 fun compute(i: Int): Int {
   trace("Compute $i")
   return i

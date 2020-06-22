@@ -2,8 +2,6 @@
 package sealedclasses
 import atomictest.*
 
-private val trace = Trace()
-
 sealed class Transport
 
 data class Train(

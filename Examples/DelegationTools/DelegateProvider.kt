@@ -3,8 +3,6 @@ package delegationtools
 import kotlin.reflect.KProperty
 import atomictest.*
 
-private val trace = Trace()
-
 class Delegate<T>(private var value: T) {
   operator fun getValue(
     thisRef: Any?,

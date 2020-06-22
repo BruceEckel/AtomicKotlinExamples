@@ -3,8 +3,7 @@ package generics
 import atomictest.*
 import kotlin.random.Random
 
-private var trace = Trace()
-private var rand = Random(11)
+private val rand = Random(11)
 
 open class Shape(val color: String) {
   override fun toString() =

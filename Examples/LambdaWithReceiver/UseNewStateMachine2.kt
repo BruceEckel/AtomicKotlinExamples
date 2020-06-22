@@ -1,9 +1,8 @@
 // LambdaWithReceiver/UseNewStateMachine2.kt
 package statemachine2
-import statemachine.trace
+import atomictest.*
 
 fun main() {
-  trace.clear()
   newStateMachine2 {     // [1]
     this.pause()         // [2]
     resume()             // [3]

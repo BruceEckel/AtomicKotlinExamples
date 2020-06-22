@@ -2,8 +2,6 @@
 package exceptionhandling
 import atomictest.*
 
-private val trace = Trace()
-
 fun checkValue(value: Int) {
   try {
     trace(value)

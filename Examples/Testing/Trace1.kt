@@ -1,8 +1,6 @@
 // Testing/Trace1.kt
 import atomictest.*
 
-private val trace = Trace()
-
 fun main() {
   trace("line 1")
   trace(47)
