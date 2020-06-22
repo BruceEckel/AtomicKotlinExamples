@@ -13,23 +13,21 @@ class LazyInt(val init: () -> Int) {
     }
 }
 
-fun compute(i: Int): Int {
-  trace("Computing $i")
-  return i
-}
-
 fun main() {
-  val lazyInt = LazyInt { compute(5) }
-  trace("LazyInt Constructed")
-  trace("Access 'value' 2x:")
-  trace(lazyInt.value)
-  trace(lazyInt.value)
+  val later = LazyInt {
+    trace("Initializing 'later'")
+    5
+  }
+  trace("First 'value' access:")
+  trace(later.value)
+  trace("Second 'value' access:")
+  trace(later.value)
   trace eq
-    """
-    LazyInt Constructed
-    Access 'value' 2x:
-    Computing 5
+  """
+    First 'value' access:
+    Initializing 'later'
     5
+    Second 'value' access:
     5
-    """
+  """
 }

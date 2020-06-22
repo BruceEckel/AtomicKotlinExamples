@@ -29,8 +29,7 @@ fun main() {
   show(Properties::getter)
   show(Properties::lazyInit)
   show(Properties::never)
-  trace eq
-    """
+  trace eq """
     Compute 1
     atDefinition:
     1

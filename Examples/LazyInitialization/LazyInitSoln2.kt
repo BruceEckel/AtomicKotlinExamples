@@ -1,43 +1,52 @@
 // LazyInitialization/LazyInitSoln2.kt
 package lazyinitsoln2
+import atomictest.*
+
+private val trace = Trace()
 
 class Outer {
   init {
-    println("Creating Outer")
+    trace("Outer constructor")
   }
-  val s: String by lazy {
-    println("Initializing Outer.s")
+  val s1: String by lazy {
+    trace("Initializing Outer.s1")
     "Hi"
   }
-  inner class Inner() {
+  val s2: String by lazy {
+    trace("Initializing Outer.s2")
+    "Hello $s1"
+  }
+  inner class Inner {
     init {
-      println("Creating Inner")
+      trace("Inner constructor")
     }
     val si: String by lazy {
-      println("Initializing Inner.si")
-      "Howdy $s"
-    }
-  }
-  companion object {
-    fun f() {
-      println("companion object f()")
-    }
-    val sc: String by lazy {
-      println("Initializing companion sc")
-      "Hello"
+      trace("Initializing Inner.si")
+      "Howdy $s2"
     }
   }
 }
 
 fun main() {
   val o = Outer()
-  println("Outer created")
+  trace("Outer created")
   val inner = o.Inner()
-  println("Inner created")
-  println("First access: inner.si:")
-  println(inner.si)
-  println("Second access: inner.si:")
-  println(inner.si)
-  Outer.f()
-  println(Outer.sc)
+  trace("Inner created")
+  trace("First access: inner.si:")
+  trace(inner.si)
+  trace("Second access: inner.si:")
+  trace(inner.si)
+  trace eq """
+    Outer constructor
+    Outer created
+    Inner constructor
+    Inner created
+    First access: inner.si:
+    Initializing Inner.si
+    Initializing Outer.s2
+    Initializing Outer.s1
+    Howdy Hello Hi
+    Second access: inner.si:
+    Howdy Hello Hi
+  """
 }

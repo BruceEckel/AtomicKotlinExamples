@@ -4,20 +4,20 @@ import atomictest.*
 
 private val trace = Trace()
 
-val unused: String by lazy {
-  trace("Initializing 'unused'")
-  "'unused' initialization value"
+val idle: String by lazy {
+  trace("Initializing 'idle'")
+  "I'm never used"
 }
 
-val used: String by lazy {
-  trace("Initializing 'used'")
-  "'used' initialization value"
+val helpful: String by lazy {
+  trace("Initializing 'helpful'")
+  "I'm being used!"
 }
 
 fun main() {
-  trace(used)
+  trace(helpful)
   trace eq """
-  Initializing 'used'
-  'used' initialization value
+    Initializing 'helpful'
+    I'm being used!
   """
 }
