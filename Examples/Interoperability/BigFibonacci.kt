@@ -1,5 +1,5 @@
 // Interoperability/BigFibonacci.kt
-package adaptingjava
+package interop
 import atomictest.eq
 import bigint.*
 

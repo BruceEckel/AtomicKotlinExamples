@@ -1,4 +1,5 @@
-// fromkotlin/Random.kt
+// Interoperability/Random.kt
+package interop
 import atomictest.eq
 import java.util.Random
 

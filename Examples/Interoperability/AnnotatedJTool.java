@@ -1,5 +1,5 @@
-// javacode/AnnotatedJTool.java
-package javacode;
+// Interoperability/AnnotatedJTool.java
+package Interoperability;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

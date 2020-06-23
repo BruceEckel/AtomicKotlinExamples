@@ -1,5 +1,6 @@
 // Interoperability/PlatformTypes.kt
-import javacode.JTool
+package interop
+import Interoperability.JTool
 import atomictest.eq
 
 object KotlinCode {
@@ -13,9 +14,11 @@ fun main() {
     a?.method() eq "Success"     // [4]
     b.method() eq "Success"
     c.method() eq "Success"      // [5]
-    ::a.returnType eq "javacode.JTool?"
-    ::b.returnType eq "javacode.JTool"
+    ::a.returnType eq
+      "Interoperability.JTool?"
+    ::b.returnType eq
+      "Interoperability.JTool"
     ::c.returnType eq
-      "javacode.JTool!"          // [6]
+      "Interoperability.JTool!"  // [6]
   }
 }

@@ -1,5 +1,5 @@
-// fromjava/KotlinClass.kt
-package mypackage
+// Interoperability/KotlinClass.kt
+package interop
 
 class Basic {
   var property1 = 1

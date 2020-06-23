@@ -1,5 +1,5 @@
-// fromkotlin/Chameleon.java
-package fromkotlin;
+// Interoperability/Chameleon.java
+package Interoperability;
 import java.io.Serializable;
 
 public class

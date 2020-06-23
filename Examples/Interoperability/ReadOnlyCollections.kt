@@ -1,4 +1,5 @@
 // Interoperability/ReadOnlyCollections.kt
+package interop
 import atomictest.eq
 
 fun main() {

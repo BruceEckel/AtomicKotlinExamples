@@ -1,5 +1,5 @@
 // Interoperability/ReadOnlyByDefault.kt
-package collectionsandjava
+package interop
 
 data class Animal(val name: String)
 

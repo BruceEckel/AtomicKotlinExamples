@@ -12,4 +12,3 @@ val String.big: BigInt
 
 val zero = BigInt.ZERO
 val one = BigInt.ONE
-val two = 2.big

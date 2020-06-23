@@ -1,11 +1,10 @@
 // Interoperability/CollectionStructure.kt
-package collectionsandjava
+package collectionstructure
 
 interface Collection<E>
 interface List<E>: Collection<E>
 interface Set<E>: Collection<E>
 interface Map<K, V>
-
 interface MutableCollection<E>
 interface MutableList<E>:
   List<E>, MutableCollection<E>

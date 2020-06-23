@@ -75,7 +75,7 @@ task Animals(type: JavaExec) {
 
 task AnnotatedJava(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nullabilityannotations.AnnotatedJavaKt'
+    main = 'interop.AnnotatedJavaKt'
 }
 
 task AnonymousFunction(type: JavaExec) {
@@ -270,7 +270,7 @@ task BeverageContainer3(type: JavaExec) {
 
 task BigFibonacci(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'adaptingjava.BigFibonacciKt'
+    main = 'interop.BigFibonacciKt'
 }
 
 task BiggestLong(type: JavaExec) {
@@ -320,12 +320,12 @@ task CallStack(type: JavaExec) {
 
 task CallTopLevelFunction(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'fromjava.CallTopLevelFunction'
+    main = 'Interoperability.CallTopLevelFunction'
 }
 
 task CallTopLevelFunction2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'fromjava.CallTopLevelFunction2'
+    main = 'Interoperability.CallTopLevelFunction2'
 }
 
 task CaptureImplementation(type: JavaExec) {
@@ -355,7 +355,7 @@ task Cat(type: JavaExec) {
 
 task CatchChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'CatchChecked'
+    main = 'Interoperability.CatchChecked'
 }
 
 task ChainedCalls(type: JavaExec) {
@@ -810,7 +810,7 @@ task ExtensionFuncs(type: JavaExec) {
 
 task ExtensionsToJavaClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'fromkotlin.ExtensionsToJavaClassKt'
+    main = 'interop.ExtensionsToJavaClassKt'
 }
 
 task Factorial(type: JavaExec) {
@@ -1100,7 +1100,7 @@ task HelloWorld(type: JavaExec) {
 
 task HiddenArrayList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'HiddenArrayListKt'
+    main = 'interop.HiddenArrayListKt'
 }
 
 task Hierarchy(type: JavaExec) {
@@ -1325,12 +1325,12 @@ task IterationVsMembership(type: JavaExec) {
 
 task JavaChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'JavaChecked'
+    main = 'Interoperability.JavaChecked'
 }
 
 task JavaList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'JavaListKt'
+    main = 'interop.JavaListKt'
 }
 
 task JetPack(type: JavaExec) {
@@ -1355,7 +1355,7 @@ task KeyFailure(type: JavaExec) {
 
 task KotlinChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'KotlinCheckedKt'
+    main = 'interop.KotlinCheckedKt'
 }
 
 task LabeledReturn(type: JavaExec) {
@@ -1525,7 +1525,7 @@ task MainArgs(type: JavaExec) {
 
 task MakeSalad(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'fromjava.MakeSalad'
+    main = 'Interoperability.MakeSalad'
 }
 
 task Mapping(type: JavaExec) {
@@ -1655,7 +1655,7 @@ task MutableSet(type: JavaExec) {
 
 task NPEOnPlatformType(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NPEOnPlatformTypeKt'
+    main = 'interop.NPEOnPlatformTypeKt'
 }
 
 task NamedArguments(type: JavaExec) {
@@ -1960,7 +1960,7 @@ task Pets(type: JavaExec) {
 
 task PlatformTypes(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'PlatformTypesKt'
+    main = 'interop.PlatformTypesKt'
 }
 
 task PlayerInterface(type: JavaExec) {
@@ -2055,7 +2055,7 @@ task Quoting(type: JavaExec) {
 
 task Random(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'RandomKt'
+    main = 'interop.RandomKt'
 }
 
 task RangeOfInt(type: JavaExec) {
@@ -2095,7 +2095,7 @@ task ReadOnlyBlendMap4(type: JavaExec) {
 
 task ReadOnlyCollections(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ReadOnlyCollectionsKt'
+    main = 'interop.ReadOnlyCollectionsKt'
 }
 
 task ReadOnlyMaps(type: JavaExec) {
@@ -2680,7 +2680,7 @@ task UseAtomicLog(type: JavaExec) {
 
 task UseBeanClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'UseBeanClassKt'
+    main = 'interop.UseBeanClassKt'
 }
 
 task UseLines(type: JavaExec) {
@@ -2705,7 +2705,7 @@ task UsingAtomicTest(type: JavaExec) {
 
 task UsingDataClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'fromjava.UsingDataClass'
+    main = 'Interoperability.UsingDataClass'
 }
 
 task UsingExpect(type: JavaExec) {
@@ -2715,7 +2715,7 @@ task UsingExpect(type: JavaExec) {
 
 task UsingKotlinClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'fromjava.UsingKotlinClass'
+    main = 'Interoperability.UsingKotlinClass'
 }
 
 task UsingLongs(type: JavaExec) {

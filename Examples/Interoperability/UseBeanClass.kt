@@ -1,5 +1,6 @@
-// fromkotlin/UseBeanClass.kt
-import fromkotlin.Chameleon
+// Interoperability/UseBeanClass.kt
+package interop
+import Interoperability.Chameleon
 import atomictest.eq
 
 fun main() {

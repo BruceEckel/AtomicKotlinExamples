@@ -1,6 +1,6 @@
-// fromjava/MakeSalad.java
-package fromjava;
-import mypackage.Utils;
+// Interoperability/MakeSalad.java
+package Interoperability;
+import interop.Utils;
 import static atomictest.AtomicTestKt.eq;
 
 public class MakeSalad {

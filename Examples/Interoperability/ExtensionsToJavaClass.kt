@@ -1,5 +1,6 @@
-// fromkotlin/ExtensionsToJavaClass.kt
-package fromkotlin
+// Interoperability/ExtensionsToJavaClass.kt
+package interop
+import Interoperability.Chameleon
 import atomictest.eq
 
 fun Chameleon.adjustToTemperature(
@@ -11,7 +12,7 @@ fun Chameleon.adjustToTemperature(
 fun main() {
   val chameleon = Chameleon()
   chameleon.size = 2
-  chameleon.size
+  chameleon.size eq 2
   chameleon.adjustToTemperature(isHot = true)
   chameleon.color eq "grey"
 }

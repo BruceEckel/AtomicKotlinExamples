@@ -1,6 +1,6 @@
-// fromjava/UsingKotlinClass.java
-package fromjava;
-import mypackage.Basic;
+// Interoperability/UsingKotlinClass.java
+package Interoperability;
+import interop.Basic;
 import static atomictest.AtomicTestKt.eq;
 
 public class UsingKotlinClass {

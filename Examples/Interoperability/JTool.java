@@ -1,5 +1,5 @@
-// javacode/JTool.java
-package javacode;
+// Interoperability/JTool.java
+package Interoperability;
 
 public class JTool {
   public static JTool get(String s) {

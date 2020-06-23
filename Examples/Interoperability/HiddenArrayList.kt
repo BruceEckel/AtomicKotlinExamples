@@ -1,4 +1,5 @@
 // Interoperability/HiddenArrayList.kt
+package interop
 import atomictest.eq
 
 fun main() {

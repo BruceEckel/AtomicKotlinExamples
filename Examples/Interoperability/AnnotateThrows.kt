@@ -1,5 +1,5 @@
 // Interoperability/AnnotateThrows.kt
-package checked
+package interop
 import java.io.IOException
 
 @Throws(IOException::class)

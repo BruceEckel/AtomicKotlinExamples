@@ -1,6 +1,6 @@
-// fromjava/CallTopLevelFunction.java
-package fromjava;
-import mypackage.TopLevelFunctionKt;
+// Interoperability/CallTopLevelFunction.java
+package Interoperability;
+import interop.TopLevelFunctionKt;
 import static atomictest.AtomicTestKt.eq;
 
 public class CallTopLevelFunction {

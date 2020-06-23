@@ -658,21 +658,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testExtensionsToJavaClass() {
-    testExample("Examples/fromkotlin/ExtensionsToJavaClass.kt", fromkotlin.ExtensionsToJavaClassKt::main);
-  }
-
-  @Test
-  public void testRandom() {
-    testExample("Examples/fromkotlin/Random.kt", RandomKt::main);
-  }
-
-  @Test
-  public void testUseBeanClass() {
-    testExample("Examples/fromkotlin/UseBeanClass.kt", UseBeanClassKt::main);
-  }
-
-  @Test
   public void testMultiplyByFour() {
     testExample("Examples/Functions/MultiplyByFour.kt", MultiplyByFourKt::main);
   }
@@ -1074,42 +1059,57 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAnnotatedJava() {
-    testExample("Examples/Interoperability/AnnotatedJava.kt", nullabilityannotations.AnnotatedJavaKt::main);
+    testExample("Examples/Interoperability/AnnotatedJava.kt", interop.AnnotatedJavaKt::main);
   }
 
   @Test
   public void testBigFibonacci() {
-    testExample("Examples/Interoperability/BigFibonacci.kt", adaptingjava.BigFibonacciKt::main);
+    testExample("Examples/Interoperability/BigFibonacci.kt", interop.BigFibonacciKt::main);
+  }
+
+  @Test
+  public void testExtensionsToJavaClass() {
+    testExample("Examples/Interoperability/ExtensionsToJavaClass.kt", interop.ExtensionsToJavaClassKt::main);
   }
 
   @Test
   public void testHiddenArrayList() {
-    testExample("Examples/Interoperability/HiddenArrayList.kt", HiddenArrayListKt::main);
+    testExample("Examples/Interoperability/HiddenArrayList.kt", interop.HiddenArrayListKt::main);
   }
 
   @Test
   public void testJavaList() {
-    testExample("Examples/Interoperability/JavaList.kt", JavaListKt::main);
+    testExample("Examples/Interoperability/JavaList.kt", interop.JavaListKt::main);
   }
 
   @Test
   public void testKotlinChecked() {
-    testExample("Examples/Interoperability/KotlinChecked.kt", KotlinCheckedKt::main);
+    testExample("Examples/Interoperability/KotlinChecked.kt", interop.KotlinCheckedKt::main);
   }
 
   @Test
   public void testNPEOnPlatformType() {
-    testExample("Examples/Interoperability/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
+    testExample("Examples/Interoperability/NPEOnPlatformType.kt", interop.NPEOnPlatformTypeKt::main);
   }
 
   @Test
   public void testPlatformTypes() {
-    testExample("Examples/Interoperability/PlatformTypes.kt", PlatformTypesKt::main);
+    testExample("Examples/Interoperability/PlatformTypes.kt", interop.PlatformTypesKt::main);
+  }
+
+  @Test
+  public void testRandom() {
+    testExample("Examples/Interoperability/Random.kt", interop.RandomKt::main);
   }
 
   @Test
   public void testReadOnlyCollections() {
-    testExample("Examples/Interoperability/ReadOnlyCollections.kt", ReadOnlyCollectionsKt::main);
+    testExample("Examples/Interoperability/ReadOnlyCollections.kt", interop.ReadOnlyCollectionsKt::main);
+  }
+
+  @Test
+  public void testUseBeanClass() {
+    testExample("Examples/Interoperability/UseBeanClass.kt", interop.UseBeanClassKt::main);
   }
 
   @Test
