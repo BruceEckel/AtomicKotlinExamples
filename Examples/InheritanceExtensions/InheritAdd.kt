@@ -2,7 +2,7 @@
 package inheritanceextensions
 import atomictest.eq
 
-class HVAC : Heater() {
+class HVAC: Heater() {
   fun cool(temperature: Int) =
     "cooling to $temperature"
 }

@@ -4,15 +4,15 @@ import atomictest.eq
 
 interface Creature
 
-class Human : Creature {
+class Human: Creature {
   fun greeting() = "I'm Human"
 }
 
-class Dog : Creature {
+class Dog: Creature {
   fun bark() = "Yip!"
 }
 
-class Alien : Creature {
+class Alien: Creature {
   fun mobility() = "Three legs"
 }
 

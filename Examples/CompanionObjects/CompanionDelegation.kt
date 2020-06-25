@@ -2,7 +2,7 @@
 package companionobjects
 import atomictest.*
 
-class ZIClosed : ZI {
+class ZIClosed: ZI {
   override fun f() = "ZIClosed.f()"
   override fun g() = "ZIClosed.g()"
 }

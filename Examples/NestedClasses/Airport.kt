@@ -9,8 +9,8 @@ class Airport(private val code: String) {
     fun contact(airport: Airport) =
       "Contacting ${airport.code}"
   }
-  private class PrivatePlane : Plane()
-  fun privatePlane() : Plane = PrivatePlane()
+  private class PrivatePlane: Plane()
+  fun privatePlane(): Plane = PrivatePlane()
 }
 
 fun main() {

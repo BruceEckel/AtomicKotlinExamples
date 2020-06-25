@@ -2,7 +2,7 @@
 package usingoperatorssoln3
 import kotlin.random.Random
 
-data class N(var n: Int) : Comparable<N> {
+data class N(var n: Int): Comparable<N> {
   override fun compareTo(other: N) =
     n.compareTo(other.n)
   override fun toString() = "N($n)"

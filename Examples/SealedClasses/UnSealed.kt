@@ -6,12 +6,12 @@ open class Transport
 
 data class Train(
   val line: String
-) : Transport()
+): Transport()
 
 data class Bus(
   val number: String,
   val capacity: Int
-) : Transport()
+): Transport()
 
 fun travel(transport: Transport) =
   when (transport) {

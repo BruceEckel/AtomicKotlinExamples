@@ -11,7 +11,7 @@ interface ShipControls {
   fun turboBoost(): String
 }
 
-class SpaceShipControls : ShipControls {
+class SpaceShipControls: ShipControls {
   override fun up(velocity: Int) =
     "up $velocity"
   override fun down(velocity: Int) =

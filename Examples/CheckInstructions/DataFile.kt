@@ -6,7 +6,7 @@ import java.nio.file.Paths
 
 val targetDir = File("DataFiles")
 
-class DataFile(val fileName: String) :
+class DataFile(val fileName: String):
   File(targetDir, fileName) {
   init {
     if (!targetDir.exists())

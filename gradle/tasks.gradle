@@ -1303,6 +1303,11 @@ task Invoke(type: JavaExec) {
     main = 'InvokeKt'
 }
 
+task IsInitialized(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lateinitialization.IsInitializedKt'
+}
+
 task IsKeyword(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.IsKeywordKt'
@@ -1376,6 +1381,21 @@ task LambdaIt(type: JavaExec) {
 task LambdaTypeInference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LambdaTypeInferenceKt'
+}
+
+task LateInitSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lateinitializationsoln1.LateInitSoln1Kt'
+}
+
+task LateInitSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lateinitializationsoln2.LateInitSoln2Kt'
+}
+
+task LateInitSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lateinitializationsoln3.LateInitSoln3Kt'
 }
 
 task LazyInitSoln1(type: JavaExec) {
@@ -3138,6 +3158,7 @@ task run (dependsOn: [
     'IntroducingCapture',
     'IntroducingNull',
     'Invoke',
+    'IsInitialized',
     'IsKeyword',
     'IterateOverString',
     'Iteration',
@@ -3153,6 +3174,9 @@ task run (dependsOn: [
     'LambdaAndNamedArgs',
     'LambdaIt',
     'LambdaTypeInference',
+    'LateInitSoln1',
+    'LateInitSoln2',
+    'LateInitSoln3',
     'LazyInitSoln1',
     'LazyInitSoln2',
     'LazyInitSoln3',

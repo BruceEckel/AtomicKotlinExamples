@@ -2,11 +2,10 @@
 package lateinitialization
 import atomictest.*
 
-class FaultySuitcase : Bag {
+class FaultySuitcase: Bag {
   lateinit var items: String
   override fun setUp() {}
-  fun checkSocks(): Boolean =
-    items.contains("socks")
+  fun checkSocks() = "socks" in items
 }
 
 fun main() {

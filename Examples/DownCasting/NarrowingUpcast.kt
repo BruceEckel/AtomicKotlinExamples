@@ -5,12 +5,12 @@ interface Base {
   fun f()
 }
 
-class Derived1 : Base {
+class Derived1: Base {
   override fun f() {}
   fun g() {}
 }
 
-class Derived2 : Base {
+class Derived2: Base {
   override fun f() {}
   fun h() {}
 }

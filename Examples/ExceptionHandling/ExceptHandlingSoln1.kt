@@ -6,18 +6,18 @@ data class Hamster(val name: String)
 
 open class HamsterCageException(
   val msg: String
-) : Exception() {
+): Exception() {
   override fun toString() =
     "HamsterCageException: $msg"
 }
 
-class CageFullException(val limit: Int) :
+class CageFullException(val limit: Int):
   HamsterCageException("Cage full > $limit")
 
-class NoSuchHamsterException(val id: String) :
+class NoSuchHamsterException(val id: String):
   HamsterCageException("No Hamster $id")
 
-class OutOfWaterException :
+class OutOfWaterException:
   HamsterCageException("Cage out of water")
 
 class HamsterCage(val capacity: Int) {   // STARTER CODE

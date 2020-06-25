@@ -14,17 +14,17 @@ interface Magician {
   fun doMagic() = "Magic!"
 }
 
-class Warrior :
+class Warrior:
   Character("Warrior"), Fighter {
   override fun play() = fight()
 }
 
-open class Elf(name: String = "Elf") :
+open class Elf(name: String = "Elf"):
   Character(name), Magician {
   override fun play() = doMagic()
 }
 
-class FightingElf :
+class FightingElf:
   Elf("FightingElf"), Fighter {
   override fun play() =
     super.play() + fight()

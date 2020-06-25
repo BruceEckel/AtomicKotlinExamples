@@ -7,13 +7,13 @@ open class GreatApe(
   val age: Int
 )
 
-open class Bonobo(weight: Double, age: Int) :
+open class Bonobo(weight: Double, age: Int):
   GreatApe(weight, age)
 
-class Chimpanzee(weight: Double, age: Int) :
+class Chimpanzee(weight: Double, age: Int):
   GreatApe(weight, age)
 
-class BonoboB(weight: Double, age: Int) :
+class BonoboB(weight: Double, age: Int):
   Bonobo(weight, age)
 
 fun info(ape: GreatApe) =

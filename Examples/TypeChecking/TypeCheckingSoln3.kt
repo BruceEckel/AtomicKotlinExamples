@@ -32,7 +32,7 @@ interface WaterWalker {
     "${this.name}: walk on water"
 }
 
-class WaterBeetle : Insect(), SwimmingInsect
+class WaterBeetle: Insect(), SwimmingInsect
 class WaterStrider: Insect(), WaterWalker
 class WhirligigBeetle: Insect(),
   SwimmingInsect, WaterWalker

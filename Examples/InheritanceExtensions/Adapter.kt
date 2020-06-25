@@ -13,7 +13,7 @@ fun useMyClass(mc: MyClass) {
   mc.h()
 }
 
-class MyClassAdaptedForLib :
+class MyClassAdaptedForLib:
   MyClass(), LibType {
   override fun f1() = h()
   override fun f2() = g()

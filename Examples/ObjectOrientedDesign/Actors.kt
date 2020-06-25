@@ -25,7 +25,7 @@ abstract sealed class Actor {
 // Continued ...
 // ... Continuing
 
-class Void() : Actor() {
+class Void(): Actor() {
   override val symbol = '~'
   // Should never try to get() this Room:
   override val room: Room
@@ -42,7 +42,7 @@ class Void() : Actor() {
 
 class Wall(
   override val room: Room = Room()
-) : Actor() {
+): Actor() {
   override val symbol = '#'
   override fun interact(robot: Robot) =
     robot.room // Stay in old room
@@ -56,7 +56,7 @@ class Wall(
 
 class Empty(
   override val room: Room = Room()
-) : Actor() {
+): Actor() {
   override val symbol = '_'
   // The Robot moves into the new room:
   override fun interact(robot: Robot) = room
@@ -67,7 +67,7 @@ class Empty(
 
 class Food(
   override val room: Room = Room()
-) : Actor() {
+): Actor() {
   override val symbol = '.'
   override fun interact(robot: Robot): Room {
     robot.energy++ // Consume food
@@ -81,7 +81,7 @@ class Food(
 
 class EndGame(
   override val room: Room = Room()
-) : Actor() {
+): Actor() {
   override val symbol = '!'
   override fun interact(robot: Robot) =
     Room(room.row, room.col, EndGame(room))
@@ -92,7 +92,7 @@ class EndGame(
 
 class Robot(
   override var room: Room = Room()
-) : Actor() {
+): Actor() {
   override val symbol = 'R'
   var energy = 0
   // Should never interact with itself:
@@ -110,7 +110,7 @@ class Robot(
 class Teleport(
   override val symbol: Char = 'T',
   override val room: Room = Room()
-) : Actor() {
+): Actor() {
   var target = Room()
   override fun toString() =
     "${this::class.simpleName}: ${id()}" +

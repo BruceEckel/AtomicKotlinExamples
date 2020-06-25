@@ -4,7 +4,7 @@ import atomictest.eq
 
 class IncorrectInputException(
   message: String
-) : Exception(message)
+): Exception(message)
 
 fun checkCode(code: Int) {
   if (code <= 1000) {

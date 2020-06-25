@@ -1,7 +1,7 @@
 // ResourceCleanup/ResourceCleanupSoln2.kt
 package resourcecleanupsoln2
 
-class Cleanup : AutoCloseable {
+class Cleanup: AutoCloseable {
   fun f() = println("f()")
   fun g() = println("g()")
   fun h() = println("h()")

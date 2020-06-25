@@ -2,11 +2,11 @@
 package companionobjects
 import atomictest.eq
 
-interface Extended : ZI {
+interface Extended: ZI {
   fun u(): String
 }
 
-class Extend : ZI by Companion, Extended {
+class Extend: ZI by Companion, Extended {
   companion object: ZI {
     override fun f() = "Extend.f()"
     override fun g() = "Extend.g()"

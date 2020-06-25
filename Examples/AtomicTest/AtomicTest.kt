@@ -13,12 +13,9 @@ private fun <L, R> runTest(
   println(actual)
   if (!test()) {
     print(ERROR_TAG)
-    val message: String =
-      if (checkEquals)
-        "$actual != $expected"
-      else
-        "$actual == $expected"
-    println(message)
+    println("$actual " +
+      (if(checkEquals) "!=" else "==") +
+      " $expected")
   }
 }
 
@@ -26,7 +23,7 @@ private fun <L, R> runTest(
  * Compares the string representation
  * of the object with the string `value`.
  */
-infix fun <T : Any> T.eq(value: String) {
+infix fun <T: Any> T.eq(value: String) {
   runTest(this, value) {
     this.toString() == value
   }
@@ -80,38 +77,22 @@ fun capture(f: () -> Unit): String =
       (e.message?.let { ": $it" } ?: "")
   }
 
-class Trace(
-  private val details: Boolean = false
-) {
-  private val content =
-    mutableListOf<String>()
+object trace {
+  private val trc = mutableListOf<String>()
   operator fun invoke(obj: Any?) {
-    content += obj.toString()
+    trc += obj.toString()
   }
   /**
    * Compares Trace contents to a multiline
    * String by ignoring line separators.
-   * Separators can be either newlines
-   * or whitespaces.
    */
   infix fun eq(multiline: String) {
-    val right = multiline.trimIndent()
-      .replace("\n", " ")
-    val out = content.joinToString(" ") {
-      it.replace("\n", " ")
+    val trace = trc.joinToString("\n")
+    val expected = multiline.trimIndent()
+      .trim().replace("\n", " ")
+    runTest(trace, multiline) {
+      trace.replace("\n", " ") == expected
     }
-    // Only compare the last part of out:
-    val left =
-      out.substring(out.length - right.length)
-    if (details) {
-      println("[Trace]: $left")
-      println("[Value]: $right")
-    }
-    val output = content.joinToString("\n")
-    runTest(output, multiline) {
-      left == right
-    }
+    trc.clear()
   }
 }
-
-val trace = Trace()

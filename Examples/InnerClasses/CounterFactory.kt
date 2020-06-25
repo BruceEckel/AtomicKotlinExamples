@@ -10,7 +10,7 @@ class CounterFactory {
   private var count = 0
   fun new(name: String): Counter {
     // Local inner class:
-    class Local : Counter {
+    class Local: Counter {
       init { trace("Local()") }
       override fun next(): Int {
         // Access local identifiers:
@@ -22,7 +22,7 @@ class CounterFactory {
   }
   fun new2(name: String): Counter {
     // Instance of an anonymous inner class:
-    return object : Counter {
+    return object: Counter {
       init { trace("Counter()") }
       override fun next(): Int {
         // Access local identifiers:

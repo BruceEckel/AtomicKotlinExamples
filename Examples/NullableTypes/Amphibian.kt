@@ -2,7 +2,7 @@
 
 interface Amphibian
 
-class Frog : Amphibian
+class Frog: Amphibian
 
 enum class Species {
   Frog, Toad, Salamander, Caecilian

@@ -6,18 +6,18 @@ interface Shape {
   fun erase(): String
 }
 
-class Circle : Shape {
+class Circle: Shape {
   override fun draw() = "Circle.draw"
   override fun erase() = "Circle.erase"
 }
 
-class Square : Shape {
+class Square: Shape {
   override fun draw() = "Square.draw"
   override fun erase() = "Square.erase"
   fun color() = "Square.color"
 }
 
-class Triangle : Shape {
+class Triangle: Shape {
   override fun draw() = "Triangle.draw"
   override fun erase() = "Triangle.erase"
   fun rotate() = "Triangle.rotate"

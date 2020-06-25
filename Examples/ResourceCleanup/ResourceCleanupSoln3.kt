@@ -2,7 +2,7 @@
 package resourcecleanupsoln3
 import atomictest.*
 
-class Cleanup : AutoCloseable {
+class Cleanup: AutoCloseable {
   fun f() = println("f()")
   fun g() = println("g()")
   fun h() = println("h()")

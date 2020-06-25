@@ -12,7 +12,7 @@ interface Game {
 
 class FillIt(
   val side: Int = 3, randomSeed: Int = 0
-) : Game {
+): Game {
   val rand = Random(randomSeed)
   private var state = PLAYING
   private val grid =

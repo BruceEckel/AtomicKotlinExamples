@@ -9,7 +9,7 @@ open class Base {
   open fun f2() = println("Base.f2")
 }
 
-class Derived : Base() {
+class Derived: Base() {
   override fun f1() {
     println("Derived.f1")
     super.f1()

@@ -12,10 +12,10 @@ sealed class Can: BeverageContainer() {
   override fun pour() = "Can: Pour"
 }
 
-class SteelCan : Can()
+class SteelCan: Can()
 class AluminumCan: Can()
 
-sealed class Bottle : BeverageContainer() {
+sealed class Bottle: BeverageContainer() {
   override fun open() = "Remove Cap"
   override fun pour() = "Bottle: Pour"
 }

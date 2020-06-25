@@ -12,7 +12,7 @@ class Can: BeverageContainer {
   override fun pour() = "Can: Pour"
 }
 
-open class Bottle : BeverageContainer {
+open class Bottle: BeverageContainer {
   override fun open() = "Remove Cap"
   override fun pour() = "Bottle: Pour"
 }

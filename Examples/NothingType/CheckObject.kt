@@ -2,7 +2,7 @@
 package nothingtype
 import atomictest.*
 
-class BadData(m: String) : Exception(m)
+class BadData(m: String): Exception(m)
 
 fun checkObject(obj: Any?): String =
   if (obj is String)

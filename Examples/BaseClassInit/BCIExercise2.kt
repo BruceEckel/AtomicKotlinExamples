@@ -7,7 +7,7 @@ open class Plate {
   }
 }
 
-class DinnerPlate : Plate() {
+class DinnerPlate: Plate() {
   init {
     println("DinnerPlate")
   }
@@ -19,19 +19,19 @@ open class Utensil {
   }
 }
 
-class Spoon : Utensil() {
+class Spoon: Utensil() {
   init {
     println("Spoon")
   }
 }
 
-class Fork : Utensil() {
+class Fork: Utensil() {
   init {
     println("Fork")
   }
 }
 
-class Knife : Utensil() {
+class Knife: Utensil() {
   init {
     println("Knife")
   }
@@ -43,7 +43,7 @@ open class Custom() {
   }
 }
 
-class PlaceSetting : Custom() {
+class PlaceSetting: Custom() {
   val spoon = Spoon()
   val fork = Fork()
   val knife = Knife()

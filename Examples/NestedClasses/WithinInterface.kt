@@ -7,7 +7,7 @@ interface Item {
   data class Type(val type: String)
 }
 
-class Bolt(type: String) : Item {
+class Bolt(type: String): Item {
   override val type = Item.Type(type)
 }
 

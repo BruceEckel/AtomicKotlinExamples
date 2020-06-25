@@ -6,11 +6,11 @@ open class Pet {
   open fun speak() = "Pet"
 }
 
-class Dog : Pet() {
+class Dog: Pet() {
   override fun speak() = "Bark!"
 }
 
-class Cat : Pet() {
+class Cat: Pet() {
   override fun speak() = "Meow"
 }
 

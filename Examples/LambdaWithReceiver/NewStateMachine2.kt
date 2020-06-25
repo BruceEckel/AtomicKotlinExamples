@@ -1,6 +1,7 @@
 // LambdaWithReceiver/NewStateMachine2.kt
 package statemachine2
 import statemachine.StateMachine
+import atomictest.*
 
 fun newStateMachine1(
   operate: (StateMachine) -> Unit     // [1]
@@ -25,4 +26,10 @@ fun main() {
   newStateMachine2 {
     finish()
   }
+  trace eq """
+    OFF -> ON
+    ON -> OFF
+    OFF -> ON
+    ON -> OFF
+  """
 }

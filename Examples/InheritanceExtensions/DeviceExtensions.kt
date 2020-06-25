@@ -16,7 +16,7 @@ fun Device.outdated() =
 class MyDevice(
   override val model: String,
   override val productionYear: Int
-) : Device
+): Device
 
 fun main() {
   val gadget: Device =

@@ -9,9 +9,9 @@ open class Shape(val color: String) {
   override fun toString() =
     "${this::class.simpleName} $color"
 }
-class Circle(color: String) : Shape(color)
-class Square(color: String) : Shape(color)
-class Triangle(color: String) : Shape(color)
+class Circle(color: String): Shape(color)
+class Square(color: String): Shape(color)
+class Triangle(color: String): Shape(color)
 
 fun get1(shapes: List<Shape>): Shape {
   val shape = shapes.random(rand)

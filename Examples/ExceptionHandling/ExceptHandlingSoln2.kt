@@ -1,9 +1,9 @@
 // ExceptionHandling/ExceptHandlingSoln2.kt
 package exceptionhandlingsolution2
 
-open class NumberFail : Exception()
-open class NoNumber : NumberFail()
-open class BadNumber : NumberFail()
+open class NumberFail: Exception()
+open class NoNumber: NumberFail()
+open class BadNumber: NumberFail()
 
 fun findNumber(s: String): String {
   var result = ""

@@ -7,9 +7,9 @@ open class GreatApe {
   val age = 12
 }
 
-open class Bonobo : GreatApe()
-class Chimpanzee : GreatApe()
-class BonoboB : Bonobo()
+open class Bonobo: GreatApe()
+class Chimpanzee: GreatApe()
+class BonoboB: Bonobo()
 
 fun info(ape: GreatApe) =
   "weight: ${ape.weight} age: ${ape.age}"

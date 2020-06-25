@@ -1238,6 +1238,26 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testIsInitialized() {
+    testExample("Examples/LateInitialization/IsInitialized.kt", lateinitialization.IsInitializedKt::main);
+  }
+
+  @Test
+  public void testLateInitSoln1() {
+    testExample("Examples/LateInitialization/LateInitSoln1.kt", lateinitializationsoln1.LateInitSoln1Kt::main);
+  }
+
+  @Test
+  public void testLateInitSoln2() {
+    testExample("Examples/LateInitialization/LateInitSoln2.kt", lateinitializationsoln2.LateInitSoln2Kt::main);
+  }
+
+  @Test
+  public void testLateInitSoln3() {
+    testExample("Examples/LateInitialization/LateInitSoln3.kt", lateinitializationsoln3.LateInitSoln3Kt::main);
+  }
+
+  @Test
   public void testSuitcase() {
     testExample("Examples/LateInitialization/Suitcase.kt", lateinitialization.SuitcaseKt::main);
   }

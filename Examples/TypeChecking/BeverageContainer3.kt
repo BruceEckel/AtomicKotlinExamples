@@ -13,7 +13,7 @@ abstract class Can: BeverageContainer {
   override fun open() = "Pop Top"
 }
 
-class SteelCan : Can() {
+class SteelCan: Can() {
   override fun recycle() = "Recycle Steel"
 }
 
@@ -21,7 +21,7 @@ class AluminumCan: Can() {
   override fun recycle() = "Recycle Aluminum"
 }
 
-abstract class Bottle : BeverageContainer {
+abstract class Bottle: BeverageContainer {
   override fun open() = "Remove Cap"
 }
 

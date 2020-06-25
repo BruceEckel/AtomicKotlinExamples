@@ -9,7 +9,7 @@ object Log {
   fun report() = messages.toList()
 }
 
-class Failure(msg: String) : Exception(msg)
+class Failure(msg: String): Exception(msg)
 
 fun fail(msg: String): Nothing {
   Log.add(msg)

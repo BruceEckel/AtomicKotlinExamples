@@ -4,7 +4,7 @@ import atomictest.*
 
 private var _debug = true
 
-class Failure(msg: String) : Exception(msg)
+class Failure(msg: String): Exception(msg)
 
 fun fail(msg: String): Nothing =
   throw Failure(msg)
