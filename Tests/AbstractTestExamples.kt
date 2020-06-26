@@ -1,5 +1,6 @@
 import atomictest.ERROR_TAG
 import org.junit.Assert
+import org.junit.runner.JUnitCore
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.File
@@ -7,6 +8,13 @@ import java.io.PrintStream
 import java.util.function.Consumer
 
 abstract class AbstractTestExamples {
+
+  private val junit = JUnitCore()
+
+  protected fun testJUnitClass(testClass: Class<*>) {
+    val result = junit.run(testClass)
+    Assert.assertTrue(result.wasSuccessful())
+  }
 
   protected fun testExample(fileName: String, main: Runnable) {
     testExample(fileName, Consumer { main.run() })
