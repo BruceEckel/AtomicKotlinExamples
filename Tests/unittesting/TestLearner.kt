@@ -3,6 +3,7 @@ package unittesting
 import unittesting.Language.*
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 fun makeLearner(
   id: Int,
@@ -15,8 +16,9 @@ class TestLearner {
   @Test
   fun testLearners() {
     val learner = makeLearner(10, Java)
-    val learners =
-      (1..9).map(::makeLearner)
-    assertEquals("", learner)
+    assertEquals("Test Name 10", learner.name)
+    val learners = (1..9).map(::makeLearner)
+    assertTrue(
+      learners.all { it.lang == Kotlin })
   }
 }
