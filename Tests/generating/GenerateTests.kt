@@ -2,19 +2,23 @@ package generating
 import java.io.File
 
 fun main() {
-  val exampleFiles =
-    File("Examples").listFiles()
-      .flatMap { atom ->
-        atom.listFiles().filter {
-          it.extension == "kt"
-        }.map {
-          ExampleInfo.create(it)
-        }
-      }
+  val exampleFiles = File("Examples")
+    .listFilesFixedOrder()
+    .flatMap { atom ->
+      atom
+        .listFilesFixedOrder()
+        .filter { it.extension == "kt" }
+    }
+  val testFiles = File("Tests/unittesting")
+    .listFilesFixedOrder()
+  val allFiles = (exampleFiles + testFiles)
+    .map { ExampleInfo.create(it) }
   File("Tests/TestExamples.java").writeText(
-    generateTests(exampleFiles
-      .filter { !it.name.startsWith("ExploreMaze")}))
+    generateTests(allFiles))
 }
+
+fun File.listFilesFixedOrder() = listFiles()!!
+    .sortedBy { it.name.toLowerCase() }
 
 data class ExampleInfo(
   val file: File,
@@ -45,7 +49,9 @@ fun generateTests(exampleInfoList: List<ExampleInfo>): String {
   val namesFrequency = mutableMapOf<String, Int>()
   val tests = mutableListOf<String>()
   for (exampleInfo in exampleInfoList) {
-    if (!exampleInfo.file.readText().contains("fun main")) continue
+    val text = exampleInfo.file.readText()
+    val isJunitTest = text.contains("import kotlin.test.") && text.contains("class ${exampleInfo.name}")
+    if (!text.contains("fun main") && !isJunitTest) continue
     val classForFileName = exampleInfo.classForFileName
     val index = if (classForFileName in namesFrequency) {
       val frequency = namesFrequency.getValue(classForFileName)
@@ -57,10 +63,16 @@ fun generateTests(exampleInfoList: List<ExampleInfo>): String {
     }
     val exampleName = """test${exampleInfo.name.capitalize()}$index"""
 
+    val testMethodBody = if (isJunitTest)
+      """testJUnitClass(${exampleInfo.packageName}.${exampleInfo.name}.class);"""
+    else {
+      """testExample("${(exampleInfo.file.path).replace("\\", "/")}", ${exampleInfo.qualifiedName}::main);"""
+    }
+
     tests += """
             @Test
             public void $exampleName() {
-              testExample("${(exampleInfo.file.path).replace("\\", "/")}", ${exampleInfo.qualifiedName}::main);
+              $testMethodBody
             }""".replaceIndent("  ")
   }
 
