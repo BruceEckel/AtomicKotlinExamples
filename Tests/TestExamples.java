@@ -2248,13 +2248,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCheckingArgument() {
-    testExample("Examples/ScopeFunctions/CheckingArgument.kt", scopefunctions.CheckingArgumentKt::main);
-  }
-
-  @Test
-  public void testLet() {
-    testExample("Examples/ScopeFunctions/Let.kt", scopefunctions.LetKt::main);
+  public void testCheckArgument() {
+    testExample("Examples/ScopeFunctions/CheckArgument.kt", scopefunctions.CheckArgumentKt::main);
   }
 
   @Test

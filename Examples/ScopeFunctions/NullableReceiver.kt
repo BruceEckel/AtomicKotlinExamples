@@ -2,7 +2,7 @@
 package scopefunctions
 import atomictest.*
 
-data class Window(       // [1]
+data class Window(
   val id: String = "none",
   var x: Int = 0,   // Horizontal location
   var y: Int = 0,   // Vertical Location

@@ -1,4 +1,4 @@
-// ScopeFunctions/CheckingArgument.kt
+// ScopeFunctions/CheckArgument.kt
 package scopefunctions
 import atomictest.trace
 
@@ -14,9 +14,9 @@ fun showGreetingWindow(
   greetingWindow?.let {
     showWindow(it)
   }
-  // Explicit lambda argument:
-  greetingWindow?.let { win ->
-    showWindow(win)
+  // Call let() on an expression:
+  windowById["greeting"]?.let {
+    showWindow(it)
   }
 }
 

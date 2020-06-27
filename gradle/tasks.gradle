@@ -373,6 +373,11 @@ task CharRange(type: JavaExec) {
     main = 'CharRangeKt'
 }
 
+task CheckArgument(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.CheckArgumentKt'
+}
+
 task CheckInstructionsSoln1(type: JavaExec) {
     classpath kotlinClassPath
     main = 'checkinstructionssoln1.CheckInstructionsSoln1Kt'
@@ -401,11 +406,6 @@ task CheckObject(type: JavaExec) {
 task CheckObject2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'nothingtype.CheckObject2Kt'
-}
-
-task CheckingArgument(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.CheckingArgumentKt'
 }
 
 task CheckingOptions(type: JavaExec) {
@@ -1421,11 +1421,6 @@ task LazyInt(type: JavaExec) {
 task LazySyntax(type: JavaExec) {
     classpath kotlinClassPath
     main = 'lazyinitialization.LazySyntaxKt'
-}
-
-task Let(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.LetKt'
 }
 
 task Level(type: JavaExec) {
@@ -2972,13 +2967,13 @@ task run (dependsOn: [
     'ChainedCalls',
     'ChangingAVal',
     'CharRange',
+    'CheckArgument',
     'CheckInstructionsSoln1',
     'CheckInstructionsSoln2',
     'CheckInstructionsSoln3',
     'CheckInstructionsSoln4',
     'CheckObject',
     'CheckObject2',
-    'CheckingArgument',
     'CheckingOptions',
     'ClassBodies',
     'Closed',
@@ -3182,7 +3177,6 @@ task run (dependsOn: [
     'LazyInitSoln3',
     'LazyInt',
     'LazySyntax',
-    'Let',
     'Level',
     'LibraryException',
     'ListCollection',

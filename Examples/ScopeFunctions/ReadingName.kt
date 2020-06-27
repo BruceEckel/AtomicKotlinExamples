@@ -1,4 +1,5 @@
 // ScopeFunctions/ReadingName.kt
+
 fun main() {
   println("Enter your name:")
   readLine()
