@@ -1,8 +1,8 @@
-// UnitTesting/TestStateMachine.kt
+// Tests/unittesting/StateMachineTest.kt
 package unittesting
 import kotlin.test.*
 
-class TestStateMachine {
+class StateMachineTest {
   private lateinit var sm: StateMachine // [1]
   @BeforeTest
   fun initStateMachine() {

@@ -2658,6 +2658,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testNoFramework() {
+    testExample("Examples/UnitTesting/NoFramework.kt", unittesting.NoFrameworkKt::main);
+  }
+
+  @Test
+  public void testUsingExpect() {
+    testExample("Examples/UnitTesting/UsingExpect.kt", unittesting.UsingExpectKt::main);
+  }
+
+  @Test
   public void testAssignment() {
     testExample("Examples/Upcasting/Assignment.kt", upcasting.AssignmentKt::main);
   }
@@ -2843,8 +2853,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testNoFramework() {
-    testExample("Tests/unittesting/NoFramework.kt", unittesting.NoFrameworkKt::main);
+  public void testLearnerTest() {
+    testJUnitClass(unittesting.LearnerTest.class);
   }
 
   @Test
@@ -2853,17 +2863,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTestLearner() {
-    testJUnitClass(unittesting.TestLearner.class);
-  }
-
-  @Test
-  public void testTestStateMachine() {
-    testJUnitClass(unittesting.TestStateMachine.class);
-  }
-
-  @Test
-  public void testUsingExpect() {
-    testExample("Tests/unittesting/UsingExpect.kt", unittesting.UsingExpectKt::main);
+  public void testStateMachineTest() {
+    testJUnitClass(unittesting.StateMachineTest.class);
   }
 }

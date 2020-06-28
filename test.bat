@@ -2,6 +2,8 @@
 echo gradlew clean
 call gradlew --warning-mode all clean
 echo:
+echo rm -rf Tests\unittesting
+call rm -rf Tests\unittesting
 echo bb code extract without_duplicates
 bb code extract without_duplicates
 echo:
