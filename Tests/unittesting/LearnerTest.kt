@@ -1,9 +1,7 @@
 // Tests/unittesting/LearnerTest.kt
 package unittesting
 import unittesting.Language.*
-import kotlin.test.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertTrue
+import kotlin.test.*
 
 class LearnerTest {
   fun makeLearner(
@@ -13,12 +11,12 @@ class LearnerTest {
     surname: String = "Test Surname $id"
   ) = Learner(id, name, surname, lang)
   @Test
-  fun `test One Learner`() {
+  fun `Single Learner`() {
     val learner = makeLearner(10, Java)
     assertEquals("Test Name 10", learner.name)
   }
   @Test
-  fun `test Multiple Learners`() {
+  fun `Multiple Learners`() {
     val learners = (1..9).map(::makeLearner)
     assertTrue(
       learners.all { it.lang == Kotlin })

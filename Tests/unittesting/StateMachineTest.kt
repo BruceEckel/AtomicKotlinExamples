@@ -9,12 +9,12 @@ class StateMachineTest {
     sm = StateMachine()                 // [2]
   }
   @Test
-  fun `test start`() {
+  fun Start() {
     sm.start()
     assertEquals(State.ON, sm.state)
   }
   @Test
-  fun `test pause and resume`() {
+  fun `Pause and resume`() {
     sm.start()
     sm.pause()
     assertEquals(State.PAUSED, sm.state)
