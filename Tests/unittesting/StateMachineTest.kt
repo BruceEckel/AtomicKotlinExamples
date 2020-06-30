@@ -3,11 +3,7 @@ package unittesting
 import kotlin.test.*
 
 class StateMachineTest {
-  private lateinit var sm: StateMachine // [1]
-  @BeforeTest
-  fun initStateMachine() {
-    sm = StateMachine()                 // [2]
-  }
+  val sm = StateMachine()
   @Test
   fun start() {
     sm.start()
