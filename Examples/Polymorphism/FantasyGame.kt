@@ -39,8 +39,8 @@ fun main() {
   )
   characters.forEach { it.playTurn() } // [3]
   trace eq """
-  Warrior: Fight!
-  Elf: Magic!
-  FightingElf: Magic!Fight!
+    Warrior: Fight!
+    Elf: Magic!
+    FightingElf: Magic!Fight!
   """
 }

@@ -9,9 +9,9 @@ fun main() {
     finish()
   }
   trace eq """
-  OFF -> ON
-  ON -> PAUSED
-  PAUSED -> ON
-  ON -> OFF
+    OFF -> ON
+    ON -> PAUSED
+    PAUSED -> ON
+    ON -> OFF
   """
 }

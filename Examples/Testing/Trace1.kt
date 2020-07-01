@@ -6,8 +6,8 @@ fun main() {
   trace(47)
   trace("line 2")
   trace eq """
-  line 1
-  47
-  line 2
+    line 1
+    47
+    line 2
   """
 }

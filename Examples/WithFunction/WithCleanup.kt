@@ -14,11 +14,11 @@ fun main() {
   trace("-----")
   Cleanup(2).use { it.show() }
   trace eq """
-  Create 1
-  show() 1
-  -----
-  Create 2
-  show() 2
-  Close 2
+    Create 1
+    show() 1
+    -----
+    Create 2
+    show() 2
+    Close 2
   """
 }

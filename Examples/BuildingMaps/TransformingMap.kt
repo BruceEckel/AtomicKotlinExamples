@@ -1,4 +1,5 @@
 // BuildingMaps/TransformingMap.kt
+package buildmaps
 import atomictest.eq
 
 fun main() {

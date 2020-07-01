@@ -1,4 +1,5 @@
 // BuildingMaps/GetOrPut.kt
+package buildmaps
 import atomictest.eq
 
 fun main() {

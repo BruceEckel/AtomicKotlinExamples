@@ -26,10 +26,10 @@ class BigEgg: Egg() {
 fun main() {
   BigEgg().g()
   trace eq """
-  Egg.Yolk()
-  New Egg()
-  Egg.Yolk()
-  BigEgg.Yolk()
-  BigEgg.Yolk.f()
+    Egg.Yolk()
+    New Egg()
+    Egg.Yolk()
+    BigEgg.Yolk()
+    BigEgg.Yolk.f()
   """
 }

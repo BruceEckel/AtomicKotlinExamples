@@ -27,7 +27,7 @@ fun main() {
   team.captain = "Bill"
   team.captain eq "Amanda"
   trace eq """
-  Adam -> Amanda
-  Name must start with 'A'
+    Adam -> Amanda
+    Name must start with 'A'
   """
 }

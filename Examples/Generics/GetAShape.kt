@@ -36,8 +36,8 @@ fun main() {
   val shape2: Circle = get2(circles)
   val shape3: Shape = get2(shapes)
   trace eq """
-  get1 Circle Red!
-  get2 Circle Green!
-  get2 Square Blue!
+    get1 Circle Red!
+    get2 Circle Green!
+    get2 Square Blue!
   """
 }

@@ -50,5 +50,5 @@ fun main() {
     ZIOpen.f()
     ZICompanionInheritance.g()
     ZICompanionInheritance.h()
-    """
+  """
 }

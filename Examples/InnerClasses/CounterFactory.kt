@@ -43,5 +43,5 @@ fun main() {
   trace eq """
     Local() Local 0 Local 1 Local 2 Local 3
     Counter() Anon 4 Anon 5 Anon 6 Anon 7
-    """
+  """
 }

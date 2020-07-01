@@ -14,13 +14,13 @@ fun main() {
     it.finish()
   }
   trace eq """
-  first
-  OFF -> ON
-  ON -> OFF
-  second
-  OFF -> ON
-  ON -> PAUSED
-  PAUSED -> ON
-  ON -> OFF
+    first
+    OFF -> ON
+    ON -> OFF
+    second
+    OFF -> ON
+    ON -> PAUSED
+    PAUSED -> ON
+    ON -> OFF
   """
 }

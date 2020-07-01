@@ -18,8 +18,8 @@ fun main() {
   trace(w)
   showAdjustedWindow(w)
   trace eq """
-  Window(id=none, x=0, y=0, w=200, h=100)
-  Showing none window...
-  Window(id=none, x=7, y=9, w=600, h=400)
+    Window(id=none, x=0, y=0, w=200, h=100)
+    Showing none window...
+    Window(id=none, x=7, y=9, w=600, h=400)
   """
 }

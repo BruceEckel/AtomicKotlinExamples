@@ -29,7 +29,7 @@ fun main() {
   showMainWindow(mapOf("none" to noneWindow))
   noneWindow.x eq 0
   trace eq """
-  Showing main window...
-  Window(id=main, x=10, y=10, w=400, h=200)
+    Showing main window...
+    Window(id=main, x=10, y=10, w=400, h=200)
   """
 }

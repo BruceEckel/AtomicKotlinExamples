@@ -1,5 +1,5 @@
 // BuildingMaps/People.kt
-package buildingmaps
+package buildmaps
 
 data class Person(
   val name: String,

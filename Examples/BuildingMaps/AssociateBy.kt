@@ -1,5 +1,5 @@
 // BuildingMaps/AssociateBy.kt
-import buildingmaps.*
+package buildmaps
 import atomictest.eq
 
 fun main() {

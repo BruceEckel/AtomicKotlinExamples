@@ -20,8 +20,7 @@ fun main() {
   trace(later.value)
   trace("Second 'value' access:")
   trace(later.value)
-  trace eq
-  """
+  trace eq """
     First 'value' access:
     Initializing 'later'
     5

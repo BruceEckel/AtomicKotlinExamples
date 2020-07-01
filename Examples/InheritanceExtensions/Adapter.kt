@@ -25,11 +25,11 @@ fun main() {
   utility2(mc)
   useMyClass(mc)
   trace eq """
-  h()
-  g()
-  g()
-  h()
-  g()
-  h()
+    h()
+    g()
+    g()
+    h()
+    g()
+    h()
   """
 }

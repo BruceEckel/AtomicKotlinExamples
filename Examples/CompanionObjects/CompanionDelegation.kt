@@ -34,5 +34,5 @@ fun main() {
     ZIClosed.f()
     ZIDelegationInheritance.g()
     ZIDelegationInheritance.h()
-    """
+  """
 }

@@ -22,7 +22,7 @@ fun main() {
   product.ident = 1193
   product eq "Plumbus 1193"
   trace eq """
-  name <0> to Plumbus
-  ident -1 to 1193
+    name <0> to Plumbus
+    ident -1 to 1193
   """
 }

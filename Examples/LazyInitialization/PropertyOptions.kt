@@ -26,8 +26,7 @@ fun main() {
   show(Properties::atDefinition)
   show(Properties::getter)
   show(Properties::lazyInit)
-  trace eq
-    """
+  trace eq """
     Compute 1
     atDefinition:
     1
@@ -41,5 +40,5 @@ fun main() {
     Compute 3
     3
     3
-    """
+  """
 }

@@ -140,17 +140,17 @@ task AssignmentOperators(type: JavaExec) {
 
 task AssociateBy(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'AssociateByKt'
+    main = 'buildmaps.AssociateByKt'
 }
 
 task AssociateByUnique(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'AssociateByUniqueKt'
+    main = 'buildmaps.AssociateByUniqueKt'
 }
 
 task AssociateWith(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'AssociateWithKt'
+    main = 'buildmaps.AssociateWithKt'
 }
 
 task AtomicTestCapture(type: JavaExec) {
@@ -445,7 +445,7 @@ task Color3(type: JavaExec) {
 
 task ColorBlend(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'colorblend.ColorBlendKt'
+    main = 'buildmaps.ColorBlendKt'
 }
 
 task ColorSet(type: JavaExec) {
@@ -581,11 +581,6 @@ task CustomLabel(type: JavaExec) {
 task Data(type: JavaExec) {
     classpath kotlinClassPath
     main = 'propertyaccessors.DataKt'
-}
-
-task DataClassCopy(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'DataClassCopyKt'
 }
 
 task DataClasses(type: JavaExec) {
@@ -870,7 +865,7 @@ task FilterIsInstance(type: JavaExec) {
 
 task FilterMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FilterMapKt'
+    main = 'buildmaps.FilterMapKt'
 }
 
 task FilterNotNull(type: JavaExec) {
@@ -1010,7 +1005,7 @@ task GetAShape(type: JavaExec) {
 
 task GetOrPut(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'GetOrPutKt'
+    main = 'buildmaps.GetOrPutKt'
 }
 
 task GetTrace(type: JavaExec) {
@@ -1050,12 +1045,12 @@ task GreaterThan2(type: JavaExec) {
 
 task GroupBy(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'GroupByKt'
+    main = 'buildmaps.GroupByKt'
 }
 
 task GroupByVsFilter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'GroupByVsFilterKt'
+    main = 'buildmaps.GroupByVsFilterKt'
 }
 
 task GuaranteedCleanup(type: JavaExec) {
@@ -1161,6 +1156,11 @@ task IfExpression(type: JavaExec) {
 task IfResult(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IfResultKt'
+}
+
+task ImmutableBlendMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'buildmaps.ImmutableBlendMapKt'
 }
 
 task Implementations(type: JavaExec) {
@@ -1643,16 +1643,6 @@ task MutListIsList(type: JavaExec) {
     main = 'MutListIsListKt'
 }
 
-task MutableBlendMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'mutableblendmap.MutableBlendMapKt'
-}
-
-task MutableBlendMap2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'mutableblendmap2.MutableBlendMap2Kt'
-}
-
 task MutableList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MutableListKt'
@@ -1716,6 +1706,11 @@ task NewStateMachine2(type: JavaExec) {
 task NoComputationYet(type: JavaExec) {
     classpath kotlinClassPath
     main = 'creatingsequences.NoComputationYetKt'
+}
+
+task NoExtOverride(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceextensions.NoExtOverrideKt'
 }
 
 task NoFramework(type: JavaExec) {
@@ -2088,26 +2083,6 @@ task ReadOnlyAndPlus(type: JavaExec) {
     main = 'ReadOnlyAndPlusKt'
 }
 
-task ReadOnlyBlendMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'readonlyblendmap.ReadOnlyBlendMapKt'
-}
-
-task ReadOnlyBlendMap2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'readonlyblendmap2.ReadOnlyBlendMap2Kt'
-}
-
-task ReadOnlyBlendMap3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'readonlyblendmap3.ReadOnlyBlendMap3Kt'
-}
-
-task ReadOnlyBlendMap4(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'readonlyblendmap4.ReadOnlyBlendMap4Kt'
-}
-
 task ReadOnlyCollections(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interop.ReadOnlyCollectionsKt'
@@ -2295,7 +2270,7 @@ task Share2(type: JavaExec) {
 
 task SimilarOperation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'SimilarOperationKt'
+    main = 'buildmaps.SimilarOperationKt'
 }
 
 task Simple(type: JavaExec) {
@@ -2550,7 +2525,7 @@ task Trace1(type: JavaExec) {
 
 task TransformingMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'TransformingMapKt'
+    main = 'buildmaps.TransformingMapKt'
 }
 
 task TrimMargin(type: JavaExec) {
@@ -2863,16 +2838,6 @@ task WithoutDefaultArguments(type: JavaExec) {
     main = 'withoutdefaultarguments.WithoutDefaultArgumentsKt'
 }
 
-task XYZFlatMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'xyzflatmap.XYZFlatMapKt'
-}
-
-task XYZMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'xyzmap.XYZMapKt'
-}
-
 task ZeroArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ZeroArgumentsKt'
@@ -3009,7 +2974,6 @@ task run (dependsOn: [
     'Cup2',
     'CustomLabel',
     'Data',
-    'DataClassCopy',
     'DataClasses',
     'DataFile',
     'Default',
@@ -3125,6 +3089,7 @@ task run (dependsOn: [
     'If6',
     'IfExpression',
     'IfResult',
+    'ImmutableBlendMap',
     'Implementations',
     'ImportClass',
     'ImportEverything',
@@ -3221,8 +3186,6 @@ task run (dependsOn: [
     'MultiplyByThree',
     'MultiplyByTwo',
     'MutListIsList',
-    'MutableBlendMap',
-    'MutableBlendMap2',
     'MutableList',
     'MutableMaps',
     'MutableSet',
@@ -3236,6 +3199,7 @@ task run (dependsOn: [
     'NewException',
     'NewStateMachine2',
     'NoComputationYet',
+    'NoExtOverride',
     'NoFramework',
     'NonNullAssert',
     'NonNullAssertCall',
@@ -3310,10 +3274,6 @@ task run (dependsOn: [
     'RangeOfInt',
     'RangeSum',
     'ReadOnlyAndPlus',
-    'ReadOnlyBlendMap',
-    'ReadOnlyBlendMap2',
-    'ReadOnlyBlendMap3',
-    'ReadOnlyBlendMap4',
     'ReadOnlyCollections',
     'ReadOnlyMaps',
     'ReadingName',
@@ -3465,8 +3425,6 @@ task run (dependsOn: [
     'WithSecondary',
     'WithinInterface',
     'WithoutDefaultArguments',
-    'XYZFlatMap',
-    'XYZMap',
     'ZeroArguments',
     'ZipAndTransform',
     'Zipper',

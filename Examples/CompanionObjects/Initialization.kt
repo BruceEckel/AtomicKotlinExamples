@@ -19,10 +19,10 @@ fun main() {
   CompanionInit()
   trace("After 3")
   trace eq """
-  Before
-  Companion Constructor
-  After 1
-  After 2
-  After 3
+    Before
+    Companion Constructor
+    After 1
+    After 2
+    After 3
   """
 }
