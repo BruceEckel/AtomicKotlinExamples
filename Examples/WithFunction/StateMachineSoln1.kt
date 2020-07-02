@@ -2,26 +2,26 @@
 package statemachinesoln1
 import statemachinesoln1.State.*
 
-enum class State { ON, OFF, PAUSED }
+enum class State { On, Off, Paused }
 
 class StateMachine {
-  var state: State = OFF
+  var state: State = Off
     private set
   private fun transition(
-    new: State, current: State = ON
+    new: State, current: State = On
   ) {
-    if (new == OFF && state != OFF) {
-      println("$state -> OFF")
-      state = OFF
+    if (new == Off && state != Off) {
+      println("$state -> Off")
+      state = Off
     } else if (state == current) {
       state = new
       println("$current -> $new")
     }
   }
-  fun start() = transition(ON, OFF)
-  fun pause() = transition(PAUSED, ON)
-  fun resume() = transition(ON, PAUSED)
-  fun finish() = transition(OFF)
+  fun start() = transition(On, Off)
+  fun pause() = transition(Paused, On)
+  fun resume() = transition(On, Paused)
+  fun finish() = transition(Off)
 }
 
 fun cycle1(sm: StateMachine) {
@@ -45,12 +45,12 @@ fun main() {
   cycle2(StateMachine())
 }
 /* Example Output:
-OFF -> ON
-ON -> PAUSED
-PAUSED -> ON
-ON -> OFF
-OFF -> ON
-ON -> PAUSED
-PAUSED -> ON
-ON -> OFF
+Off -> On
+On -> Paused
+Paused -> On
+On -> Off
+Off -> On
+On -> Paused
+Paused -> On
+On -> Off
 */

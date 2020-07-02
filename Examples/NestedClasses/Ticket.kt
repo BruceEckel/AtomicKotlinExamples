@@ -5,26 +5,26 @@ import nestedclasses.Ticket.Seat.*
 
 class Ticket(
   val name: String,
-  val seat: Seat = COACH
+  val seat: Seat = Coach
 ) {
   enum class Seat {
-    COACH,
-    PREMIUM,
-    BUSINESS,
-    FIRST
+    Coach,
+    Premium,
+    Business,
+    First
   }
   fun upgrade(): Ticket {
     val newSeat = values()[
       (seat.ordinal + 1)
-      .coerceAtMost(FIRST.ordinal)
+      .coerceAtMost(First.ordinal)
     ]
     return Ticket(name, newSeat)
   }
   fun meal() = when(seat) {
-    COACH -> "Bag Meal"
-    PREMIUM -> "Bag Meal with Cookie"
-    BUSINESS -> "Hot Meal"
-    FIRST -> "Private Chef"
+    Coach -> "Bag Meal"
+    Premium -> "Bag Meal with Cookie"
+    Business -> "Hot Meal"
+    First -> "Private Chef"
   }
   override fun toString() = "$seat"
 }
@@ -32,17 +32,17 @@ class Ticket(
 fun main() {
   val tickets = listOf(
     Ticket("Jerry"),
-    Ticket("Summer", PREMIUM),
-    Ticket("Squanchy", BUSINESS),
-    Ticket("Beth", FIRST)
+    Ticket("Summer", Premium),
+    Ticket("Squanchy", Business),
+    Ticket("Beth", First)
   )
   tickets.map(Ticket::meal) eq
     "[Bag Meal, Bag Meal with Cookie, " +
     "Hot Meal, Private Chef]"
   tickets.map(Ticket::upgrade) eq
-    "[PREMIUM, BUSINESS, FIRST, FIRST]"
+    "[Premium, Business, First, First]"
   tickets eq
-    "[COACH, PREMIUM, BUSINESS, FIRST]"
+    "[Coach, Premium, Business, First]"
   tickets.map(Ticket::meal) eq
     "[Bag Meal, Bag Meal with Cookie, " +
     "Hot Meal, Private Chef]"

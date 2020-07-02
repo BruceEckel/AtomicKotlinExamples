@@ -2,34 +2,20 @@
 package scopefunctions
 import atomictest.*
 
-fun showMainWindow(
-  windowById: Map<String, Window>
-) {
-  val mainWindow =
-    windowById["main"]?.apply {
-      x = 10
-      y = 10
-      w *= 2
-      h *= 2
+data class Plumbus(var id: Int)
+
+fun display(map: Map<String, Plumbus>) {
+  val plumbus =
+    map["main"]?.apply {
+      id += 10
     } ?: return                 // [1]
-  showWindow(mainWindow)
+  // ...
+  show(plumbus)
 }
 
-fun showWindow(window: Window) {
-  // ...
-  trace("Showing ${window.id} window...")
-  trace(window)
-}
+fun show(plumbus: Plumbus) {}
 
 fun main() {
-  val mainWindow = Window("main")
-  showMainWindow(mapOf("main" to mainWindow))
-  mainWindow.x eq 10
-  val noneWindow = Window()
-  showMainWindow(mapOf("none" to noneWindow))
-  noneWindow.x eq 0
-  trace eq """
-    Showing main window...
-    Window(id=main, x=10, y=10, w=400, h=200)
-  """
+  display(mapOf("main" to Plumbus(1)))
+  display(mapOf("none" to Plumbus(2)))
 }

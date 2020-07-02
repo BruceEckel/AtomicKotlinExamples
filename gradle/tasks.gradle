@@ -278,6 +278,11 @@ task BiggestLong(type: JavaExec) {
     main = 'BiggestLongKt'
 }
 
+task Blob(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.BlobKt'
+}
+
 task BmiWhen(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BmiWhenKt'
@@ -683,6 +688,11 @@ task DeviceMembers(type: JavaExec) {
     main = 'inheritanceextensions1.DeviceMembersKt'
 }
 
+task Differences(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.DifferencesKt'
+}
+
 task Direction(type: JavaExec) {
     classpath kotlinClassPath
     main = 'enumerations.DirectionKt'
@@ -1021,6 +1031,11 @@ task GetValue(type: JavaExec) {
 task GetterAndSetter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'summary2.GetterAndSetterKt'
+}
+
+task Gnome(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.GnomeKt'
 }
 
 task GreatApe(type: JavaExec) {
@@ -2095,12 +2110,12 @@ task ReadOnlyMaps(type: JavaExec) {
 
 task ReadingName(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ReadingNameKt'
+    main = 'scopefunctions.ReadingNameKt'
 }
 
 task ReadingNameWithIf(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ReadingNameWithIfKt'
+    main = 'scopefunctions.ReadingNameWithIfKt'
 }
 
 task ReadonlyVsMutableList(type: JavaExec) {
@@ -2808,11 +2823,6 @@ task WildAnimals(type: JavaExec) {
     main = 'WildAnimalsKt'
 }
 
-task WithCleanup(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'withfunction.WithCleanupKt'
-}
-
 task WithDefaultArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'withdefaultarguments.WithDefaultArgumentsKt'
@@ -2913,6 +2923,7 @@ task run (dependsOn: [
     'BeverageContainer3',
     'BigFibonacci',
     'BiggestLong',
+    'Blob',
     'BmiWhen',
     'BookExtensions',
     'Booleans',
@@ -2994,6 +3005,7 @@ task run (dependsOn: [
     'DestructuringMap',
     'DeviceExtensions',
     'DeviceMembers',
+    'Differences',
     'Direction',
     'DisplayAlienSpecies',
     'DoWhile',
@@ -3062,6 +3074,7 @@ task run (dependsOn: [
     'GetTrace',
     'GetValue',
     'GetterAndSetter',
+    'Gnome',
     'GreatApe',
     'GreatApe2',
     'GreatApe3',
@@ -3419,7 +3432,6 @@ task run (dependsOn: [
     'WhileLoop',
     'WhyFlatMap',
     'WildAnimals',
-    'WithCleanup',
     'WithDefaultArguments',
     'WithPropertyAccessor',
     'WithSecondary',

@@ -3,10 +3,10 @@ package statemachine
 import atomictest.*
 import statemachine.State.*
 
-enum class State { ON, OFF, PAUSED }
+enum class State { On, Off, Paused }
 
 class StateMachine {
-  var state: State = OFF
+  var state: State = Off
     private set
 
   private fun updateState(
@@ -18,11 +18,11 @@ class StateMachine {
     }
   }
 
-  fun start() = updateState(OFF, ON)
+  fun start() = updateState(Off, On)
 
-  fun pause() = updateState(ON, PAUSED)
+  fun pause() = updateState(On, Paused)
 
-  fun resume() = updateState(PAUSED, ON)
+  fun resume() = updateState(Paused, On)
 
-  fun finish() = updateState(null, OFF)
+  fun finish() = updateState(null, Off)
 }

@@ -4,21 +4,21 @@ import atomictest.eq
 import enumerations.Direction.*
 
 enum class Direction(val notation: String) {
-  NORTH("N"), SOUTH("S"),
-  EAST("E"), WEST("W");
+  North("N"), South("S"),
+  East("E"), West("W");
 
   val opposite: Direction
     get() = when (this) {
-      NORTH -> SOUTH
-      SOUTH -> NORTH
-      WEST -> EAST
-      EAST -> WEST
+      North -> South
+      South -> North
+      West -> East
+      East -> West
     }
 }
 
 fun main() {
-  NORTH.notation eq "N"
-  NORTH.opposite eq SOUTH
-  WEST.opposite.opposite eq WEST
-  NORTH.opposite.notation eq "S"
+  North.notation eq "N"
+  North.opposite eq South
+  West.opposite.opposite eq West
+  North.opposite.notation eq "S"
 }

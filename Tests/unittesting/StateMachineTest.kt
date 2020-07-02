@@ -7,17 +7,17 @@ class StateMachineTest {
   @Test
   fun start() {
     sm.start()
-    assertEquals(State.ON, sm.state)
+    assertEquals(State.On, sm.state)
   }
   @Test
   fun `pause and resume`() {
     sm.start()
     sm.pause()
-    assertEquals(State.PAUSED, sm.state)
+    assertEquals(State.Paused, sm.state)
     sm.resume()
-    assertEquals(State.ON, sm.state)
+    assertEquals(State.On, sm.state)
     sm.pause()
-    assertEquals(State.PAUSED, sm.state)
+    assertEquals(State.Paused, sm.state)
   }
   // ...
 }

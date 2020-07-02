@@ -9,9 +9,12 @@ class WithCompanion {
   fun g() = i + f()
 }
 
+fun WithCompanion.Companion.h() = f() * i
+
 fun main() {
-  WithCompanion.i eq 3
-  WithCompanion.f() eq 9
   val wc = WithCompanion()
   wc.g() eq 12
+  WithCompanion.i eq 3
+  WithCompanion.f() eq 9
+  WithCompanion.h() eq 27
 }

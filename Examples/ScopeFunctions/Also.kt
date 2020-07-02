@@ -9,7 +9,7 @@ fun showAdjustedWindow(window: Window) {
     w *= 3
     h *= 4
   }.also {                   // [1]
-    showWindow(it)
+//    showWindow(it)
   }
 }
 

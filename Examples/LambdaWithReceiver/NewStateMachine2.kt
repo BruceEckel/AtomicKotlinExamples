@@ -27,9 +27,9 @@ fun main() {
     finish()
   }
   trace eq """
-    OFF -> ON
-    ON -> OFF
-    OFF -> ON
-    ON -> OFF
+    Off -> On
+    On -> Off
+    Off -> On
+    On -> Off
   """
 }

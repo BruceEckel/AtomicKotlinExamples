@@ -15,12 +15,12 @@ fun main() {
   }
   trace eq """
     first
-    OFF -> ON
-    ON -> OFF
+    Off -> On
+    On -> Off
     second
-    OFF -> ON
-    ON -> PAUSED
-    PAUSED -> ON
-    ON -> OFF
+    Off -> On
+    On -> Paused
+    Paused -> On
+    On -> Off
   """
 }

@@ -2213,8 +2213,23 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testBlob() {
+    testExample("Examples/ScopeFunctions/Blob.kt", scopefunctions.BlobKt::main);
+  }
+
+  @Test
   public void testCheckArgument() {
     testExample("Examples/ScopeFunctions/CheckArgument.kt", scopefunctions.CheckArgumentKt::main);
+  }
+
+  @Test
+  public void testDifferences() {
+    testExample("Examples/ScopeFunctions/Differences.kt", scopefunctions.DifferencesKt::main);
+  }
+
+  @Test
+  public void testGnome() {
+    testExample("Examples/ScopeFunctions/Gnome.kt", scopefunctions.GnomeKt::main);
   }
 
   @Test
@@ -2224,12 +2239,12 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testReadingName() {
-    testExample("Examples/ScopeFunctions/ReadingName.kt", ReadingNameKt::main);
+    testExample("Examples/ScopeFunctions/ReadingName.kt", scopefunctions.ReadingNameKt::main);
   }
 
   @Test
   public void testReadingNameWithIf() {
-    testExample("Examples/ScopeFunctions/ReadingNameWithIf.kt", ReadingNameWithIfKt::main);
+    testExample("Examples/ScopeFunctions/ReadingNameWithIf.kt", scopefunctions.ReadingNameWithIfKt::main);
   }
 
   @Test
@@ -2810,11 +2825,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsingWith() {
     testExample("Examples/WithFunction/UsingWith.kt", withfunction.UsingWithKt::main);
-  }
-
-  @Test
-  public void testWithCleanup() {
-    testExample("Examples/WithFunction/WithCleanup.kt", withfunction.WithCleanupKt::main);
   }
 
   @Test
