@@ -7,7 +7,8 @@ a test of the code that is shown in the book, to verify that it is correct.
 Although you can download this repository and run the build system, the
 examples are more conveniently available pre-integrated with the Intellij IDEA
 development environment, along with the exercises and solutions for the book.
-See *AtomicKotlin.com* for the IDEA examples.
+See *AtomicKotlin.com* for the IDEA examples. (Note that you can also clone/download
+this repository and open it with IDEA).
 
 ## Quick Version
 
