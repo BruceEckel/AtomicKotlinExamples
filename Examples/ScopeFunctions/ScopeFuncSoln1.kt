@@ -1,48 +1,34 @@
 // ScopeFunctions/ScopeFuncSoln1.kt
 package scopefuncsoln1
-import classdelegation.SpaceShipControls
-import atomictest.*
+import atomictest.eq
+
+data class NumPair(var x: Int, var y: Int) {
+  fun add() = x + y
+  fun subtract() = x - y
+  fun multiply() = x * y
+}
 
 fun main() {
-  with(SpaceShipControls()) {
-    trace(forward(1))
-    trace(right(1))
-    trace(down(1))
-    this
-  }.let {
-    trace(it.forward(2))
-    trace(it.right(2))
-    trace(it.down(2))
-    it
-  }.run {
-    trace(forward(3))
-    trace(right(3))
-    trace(down(3))
-    this
-  }.apply {
-    trace(forward(4))
-    trace(right(4))
-    trace(down(4))
-  }.also {
-    trace(it.forward(5))
-    trace(it.right(5))
-    trace(it.down(5))
+  val np1 = NumPair(10, 20).apply {
+    x += 5
+    y += 6
   }
-  trace eq """
-    forward 1
-    right 1
-    down 1
-    forward 2
-    right 2
-    down 2
-    forward 3
-    right 3
-    down 3
-    forward 4
-    right 4
-    down 4
-    forward 5
-    right 5
-    down 5
-  """
+  np1 eq NumPair(15, 26)
+  val np2 = NumPair(30, 40).also {
+    it.x += 7
+    it.y += 8
+  }
+  np2 eq NumPair(37, 48)
+  val result1 = np1.run {
+    add() + subtract() + multiply()
+  }
+  result1 eq 420
+  val result2 = np2.let {
+    it.add() + it.subtract() + it.multiply()
+  }
+  result2 eq 1850
+  val result3 = with(np1) {
+    add() + subtract() + multiply()
+  }
+  result3 eq 420
 }
