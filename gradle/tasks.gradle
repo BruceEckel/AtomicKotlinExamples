@@ -718,11 +718,6 @@ task EagerVsLazyEvaluation(type: JavaExec) {
     main = 'creatingsequences.EagerVsLazyEvaluationKt'
 }
 
-task EasyKeys(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'hashing.EasyKeysKt'
-}
-
 task ElvisCall(type: JavaExec) {
     classpath kotlinClassPath
     main = 'elvisoperator.ElvisCallKt'
@@ -801,11 +796,6 @@ task ExtensionsToJavaClass(type: JavaExec) {
 task Factorial(type: JavaExec) {
     classpath kotlinClassPath
     main = 'recursion.FactorialKt'
-}
-
-task Factory(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesign.FactoryKt'
 }
 
 task Fail(type: JavaExec) {
@@ -1066,11 +1056,6 @@ task Handlers(type: JavaExec) {
 task HasChar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HasCharKt'
-}
-
-task HashCodeFailure(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'HashCodeFailureKt'
 }
 
 task Hello(type: JavaExec) {
@@ -1341,11 +1326,6 @@ task JoinToString(type: JavaExec) {
 task JulianMonth(type: JavaExec) {
     classpath kotlinClassPath
     main = 'checkinstructions.JulianMonthKt'
-}
-
-task KeyFailure(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'KeyFailureKt'
 }
 
 task KotlinChecked(type: JavaExec) {
@@ -1963,11 +1943,6 @@ task Pet(type: JavaExec) {
     main = 'polymorphism.PetKt'
 }
 
-task Pets(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'hashing.PetsKt'
-}
-
 task PlatformTypes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interop.PlatformTypesKt'
@@ -2188,11 +2163,6 @@ task RigidHolder(type: JavaExec) {
     main = 'introgenerics.RigidHolderKt'
 }
 
-task RobotExplorer(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'oodesign.RobotExplorerKt'
-}
-
 task Safe(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.SafeKt'
@@ -2273,11 +2243,6 @@ task SimpleConstructor(type: JavaExec) {
     main = 'complexconstructors.SimpleConstructorKt'
 }
 
-task SimpleHashing(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SimpleHashingKt'
-}
-
 task SimpleLoggingStrategy(type: JavaExec) {
     classpath kotlinClassPath
     main = 'logging.SimpleLoggingStrategyKt'
@@ -2341,11 +2306,6 @@ task StringBuilder(type: JavaExec) {
 task StringConcatenation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringConcatenationKt'
-}
-
-task StringHashCode(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'StringHashCodeKt'
 }
 
 task StringIndices(type: JavaExec) {
@@ -2626,11 +2586,6 @@ task UnitReturn(type: JavaExec) {
 task UnitReturnType(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UnitReturnTypeKt'
-}
-
-task UnpredictableHashing(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'UnpredictableHashingKt'
 }
 
 task Unsafe(type: JavaExec) {
@@ -2976,7 +2931,6 @@ task run (dependsOn: [
     'Drawing',
     'EagerEvaluation',
     'EagerVsLazyEvaluation',
-    'EasyKeys',
     'ElvisCall',
     'ElvisOperator',
     'EmptyProgram',
@@ -2993,7 +2947,6 @@ task run (dependsOn: [
     'ExtensionFuncs',
     'ExtensionsToJavaClass',
     'Factorial',
-    'Factory',
     'Fail',
     'FantasyGame',
     'FaultySuitcase',
@@ -3046,7 +2999,6 @@ task run (dependsOn: [
     'Hamsters',
     'Handlers',
     'HasChar',
-    'HashCodeFailure',
     'Hello',
     'HelloWorld',
     'HiddenArrayList',
@@ -3101,7 +3053,6 @@ task run (dependsOn: [
     'JetPack',
     'JoinToString',
     'JulianMonth',
-    'KeyFailure',
     'KotlinChecked',
     'LabeledReturn',
     'LambdaAndNamedArgs',
@@ -3225,7 +3176,6 @@ task run (dependsOn: [
     'Partition',
     'Perform',
     'Pet',
-    'Pets',
     'PlatformTypes',
     'PlayerInterface',
     'PlayingCards',
@@ -3270,7 +3220,6 @@ task run (dependsOn: [
     'ReturnLocal',
     'ReturningFunc',
     'RigidHolder',
-    'RobotExplorer',
     'Safe',
     'SafeCall',
     'SafeOperation',
@@ -3287,7 +3236,6 @@ task run (dependsOn: [
     'SimilarOperation',
     'Simple',
     'SimpleConstructor',
-    'SimpleHashing',
     'SimpleLoggingStrategy',
     'SimpleOperation',
     'SingleArgRequire',
@@ -3301,7 +3249,6 @@ task run (dependsOn: [
     'StrangeQuote',
     'StringBuilder',
     'StringConcatenation',
-    'StringHashCode',
     'StringIndices',
     'StringInvoke',
     'StringIsNullOr',
@@ -3358,7 +3305,6 @@ task run (dependsOn: [
     'Unexpected',
     'UnitReturn',
     'UnitReturnType',
-    'UnpredictableHashing',
     'Unsafe',
     'Usable',
     'UseALibrary',

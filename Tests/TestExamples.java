@@ -728,41 +728,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testEasyKeys() {
-    testExample("Examples/Hashing/EasyKeys.kt", hashing.EasyKeysKt::main);
-  }
-
-  @Test
-  public void testHashCodeFailure() {
-    testExample("Examples/Hashing/HashCodeFailure.kt", HashCodeFailureKt::main);
-  }
-
-  @Test
-  public void testKeyFailure() {
-    testExample("Examples/Hashing/KeyFailure.kt", KeyFailureKt::main);
-  }
-
-  @Test
-  public void testPets() {
-    testExample("Examples/Hashing/Pets.kt", hashing.PetsKt::main);
-  }
-
-  @Test
-  public void testSimpleHashing() {
-    testExample("Examples/Hashing/SimpleHashing.kt", SimpleHashingKt::main);
-  }
-
-  @Test
-  public void testStringHashCode() {
-    testExample("Examples/Hashing/StringHashCode.kt", StringHashCodeKt::main);
-  }
-
-  @Test
-  public void testUnpredictableHashing() {
-    testExample("Examples/Hashing/UnpredictableHashing.kt", UnpredictableHashingKt::main);
-  }
-
-  @Test
   public void testEmptyProgram() {
     testExample("Examples/HelloWorld/EmptyProgram.kt", EmptyProgramKt::main);
   }
@@ -1730,16 +1695,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsingLongs() {
     testExample("Examples/NumberTypes/UsingLongs.kt", UsingLongsKt::main);
-  }
-
-  @Test
-  public void testFactory() {
-    testExample("Examples/ObjectOrientedDesign/Factory.kt", oodesign.FactoryKt::main);
-  }
-
-  @Test
-  public void testRobotExplorer() {
-    testExample("Examples/ObjectOrientedDesign/RobotExplorer.kt", oodesign.RobotExplorerKt::main);
   }
 
   @Test
