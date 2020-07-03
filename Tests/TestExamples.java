@@ -2198,28 +2198,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAlso() {
-    testExample("Examples/ScopeFunctions/Also.kt", scopefunctions.AlsoKt::main);
-  }
-
-  @Test
-  public void testApplyIfNotNull() {
-    testExample("Examples/ScopeFunctions/ApplyIfNotNull.kt", scopefunctions.ApplyIfNotNullKt::main);
-  }
-
-  @Test
-  public void testApplyVsAlso() {
-    testExample("Examples/ScopeFunctions/ApplyVsAlso.kt", scopefunctions.ApplyVsAlsoKt::main);
-  }
-
-  @Test
   public void testBlob() {
     testExample("Examples/ScopeFunctions/Blob.kt", scopefunctions.BlobKt::main);
-  }
-
-  @Test
-  public void testCheckArgument() {
-    testExample("Examples/ScopeFunctions/CheckArgument.kt", scopefunctions.CheckArgumentKt::main);
   }
 
   @Test
@@ -2228,33 +2208,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testGnome() {
-    testExample("Examples/ScopeFunctions/Gnome.kt", scopefunctions.GnomeKt::main);
+  public void testMapLookup() {
+    testExample("Examples/ScopeFunctions/MapLookup.kt", scopefunctions.MapLookupKt::main);
   }
 
   @Test
-  public void testNullableReceiver() {
-    testExample("Examples/ScopeFunctions/NullableReceiver.kt", scopefunctions.NullableReceiverKt::main);
+  public void testNameTag() {
+    testExample("Examples/ScopeFunctions/NameTag.kt", scopefunctions.NameTagKt::main);
   }
 
   @Test
-  public void testReadingName() {
-    testExample("Examples/ScopeFunctions/ReadingName.kt", scopefunctions.ReadingNameKt::main);
-  }
-
-  @Test
-  public void testReadingNameWithIf() {
-    testExample("Examples/ScopeFunctions/ReadingNameWithIf.kt", scopefunctions.ReadingNameWithIfKt::main);
-  }
-
-  @Test
-  public void testResultOfApply() {
-    testExample("Examples/ScopeFunctions/ResultOfApply.kt", scopefunctions.ResultOfApplyKt::main);
-  }
-
-  @Test
-  public void testResultOfWith() {
-    testExample("Examples/ScopeFunctions/ResultOfWith.kt", scopefunctions.ResultOfWithKt::main);
+  public void testNullGnome() {
+    testExample("Examples/ScopeFunctions/NullGnome.kt", scopefunctions.NullGnomeKt::main);
   }
 
   @Test
@@ -2810,21 +2775,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testMixColors() {
     testExample("Examples/WhenExpressions/MixColors.kt", MixColorsKt::main);
-  }
-
-  @Test
-  public void testRepetitive() {
-    testExample("Examples/WithFunction/Repetitive.kt", withfunction.RepetitiveKt::main);
-  }
-
-  @Test
-  public void testStateMachineSoln1() {
-    testExample("Examples/WithFunction/StateMachineSoln1.kt", statemachinesoln1.StateMachineSoln1Kt::main);
-  }
-
-  @Test
-  public void testUsingWith() {
-    testExample("Examples/WithFunction/UsingWith.kt", withfunction.UsingWithKt::main);
   }
 
   @Test

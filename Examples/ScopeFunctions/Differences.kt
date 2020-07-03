@@ -17,7 +17,7 @@ fun main() {
   }
   let1 eq 2
 
-  // Named lambda argument:
+  // let() with named lambda argument:
   val let2: Int = Tag(2).let { tag ->
     tag.increment()
     tag.s = "let: ${tag.n}"
@@ -59,7 +59,7 @@ fun main() {
   }
   also1 eq "Tag(n=7)"
 
-  // Named lambda argument:
+  // also() with named lambda argument:
   val also2: Tag = Tag(7).also { tag ->
     tag.increment()
     tag.s = "also: ${tag.n}"

@@ -3,7 +3,6 @@ package scopefunctions
 import atomictest.*
 
 data class Blob(val id: Int): AutoCloseable {
-  init { trace("Create $id") }
   fun show() { trace("Show $id")}
   override fun close() = trace("Close $id")
 }
@@ -15,25 +14,25 @@ fun main() {
   Blob(4).apply { show() }
   Blob(5).also { it.show() }
   Blob(6).use { it.show() }
-  Blob(7).use {
-    it.run { show() }
-  }
+  Blob(7).use { it.run { show() } }
+  Blob(8).apply { show() }.also { it.close() }
+  Blob(9).also { it.show() }.apply { close() }
+  Blob(10).apply { show() }.use {  }
   trace eq """
-    Create 1
     Show 1
-    Create 2
     Show 2
-    Create 3
     Show 3
-    Create 4
     Show 4
-    Create 5
     Show 5
-    Create 6
     Show 6
     Close 6
-    Create 7
     Show 7
     Close 7
+    Show 8
+    Close 8
+    Show 9
+    Close 9
+    Show 10
+    Close 10
   """
 }

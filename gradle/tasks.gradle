@@ -48,11 +48,6 @@ task AllOperators(type: JavaExec) {
     main = 'operatoroverloading.AllOperatorsKt'
 }
 
-task Also(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.AlsoKt'
-}
-
 task Amphibian(type: JavaExec) {
     classpath kotlinClassPath
     main = 'AmphibianKt'
@@ -96,16 +91,6 @@ task AnyFromListOfStar(type: JavaExec) {
 task AnyInstead(type: JavaExec) {
     classpath kotlinClassPath
     main = 'introgenerics.AnyInsteadKt'
-}
-
-task ApplyIfNotNull(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.ApplyIfNotNullKt'
-}
-
-task ApplyVsAlso(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.ApplyVsAlsoKt'
 }
 
 task Arg(type: JavaExec) {
@@ -376,11 +361,6 @@ task ChangingAVal(type: JavaExec) {
 task CharRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CharRangeKt'
-}
-
-task CheckArgument(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.CheckArgumentKt'
 }
 
 task CheckInstructionsSoln1(type: JavaExec) {
@@ -1033,11 +1013,6 @@ task GetterAndSetter(type: JavaExec) {
     main = 'summary2.GetterAndSetterKt'
 }
 
-task Gnome(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.GnomeKt'
-}
-
 task GreatApe(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritance.ape1.GreatApeKt'
@@ -1558,6 +1533,11 @@ task MakeSalad(type: JavaExec) {
     main = 'Interoperability.MakeSalad'
 }
 
+task MapLookup(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.MapLookupKt'
+}
+
 task Mapping(type: JavaExec) {
     classpath kotlinClassPath
     main = 'MappingKt'
@@ -1678,6 +1658,11 @@ task NPEOnPlatformType(type: JavaExec) {
     main = 'interop.NPEOnPlatformTypeKt'
 }
 
+task NameTag(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.NameTagKt'
+}
+
 task NamedArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'color1.NamedArgumentsKt'
@@ -1758,6 +1743,11 @@ task NothingTypeSoln3(type: JavaExec) {
     main = 'nothingtypesoln3.NothingTypeSoln3Kt'
 }
 
+task NullGnome(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.NullGnomeKt'
+}
+
 task NullInMaps(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NullInMapsKt'
@@ -1776,11 +1766,6 @@ task NullableInMap(type: JavaExec) {
 task NullableParameter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NullableParameterKt'
-}
-
-task NullableReceiver(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.NullableReceiverKt'
 }
 
 task NullableReturn(type: JavaExec) {
@@ -2108,16 +2093,6 @@ task ReadOnlyMaps(type: JavaExec) {
     main = 'ReadOnlyMapsKt'
 }
 
-task ReadingName(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.ReadingNameKt'
-}
-
-task ReadingNameWithIf(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.ReadingNameWithIfKt'
-}
-
 task ReadonlyVsMutableList(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReadonlyVsMutableListKt'
@@ -2168,11 +2143,6 @@ task RepeatVerbose(type: JavaExec) {
     main = 'RepeatVerboseKt'
 }
 
-task Repetitive(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'withfunction.RepetitiveKt'
-}
-
 task RequireNotNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'checkinstructions.RequireNotNullKt'
@@ -2191,16 +2161,6 @@ task ResourceCleanupSoln2(type: JavaExec) {
 task ResourceCleanupSoln3(type: JavaExec) {
     classpath kotlinClassPath
     main = 'resourcecleanupsoln3.ResourceCleanupSoln3Kt'
-}
-
-task ResultOfApply(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.ResultOfApplyKt'
-}
-
-task ResultOfWith(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'scopefunctions.ResultOfWithKt'
 }
 
 task ReturnFromFun(type: JavaExec) {
@@ -2336,11 +2296,6 @@ task SpreadOperator(type: JavaExec) {
 task Stacktrace(type: JavaExec) {
     classpath kotlinClassPath
     main = 'stacktrace.StacktraceKt'
-}
-
-task StateMachineSoln1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'statemachinesoln1.StateMachineSoln1Kt'
 }
 
 task StateOfAClass(type: JavaExec) {
@@ -2743,11 +2698,6 @@ task UsingOperatorsSoln3(type: JavaExec) {
     main = 'usingoperatorssoln3.UsingOperatorsSoln3Kt'
 }
 
-task UsingWith(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'withfunction.UsingWithKt'
-}
-
 task Vals(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ValsKt'
@@ -2877,7 +2827,6 @@ task run (dependsOn: [
     'AddingIntToChar',
     'Airport',
     'AllOperators',
-    'Also',
     'Amphibian',
     'AnUnchangingVar',
     'AnalyzeInput',
@@ -2887,8 +2836,6 @@ task run (dependsOn: [
     'Any',
     'AnyFromListOfStar',
     'AnyInstead',
-    'ApplyIfNotNull',
-    'ApplyVsAlso',
     'Arg',
     'ArgumentOrder',
     'ArraySpread',
@@ -2943,7 +2890,6 @@ task run (dependsOn: [
     'ChainedCalls',
     'ChangingAVal',
     'CharRange',
-    'CheckArgument',
     'CheckInstructionsSoln1',
     'CheckInstructionsSoln2',
     'CheckInstructionsSoln3',
@@ -3074,7 +3020,6 @@ task run (dependsOn: [
     'GetTrace',
     'GetValue',
     'GetterAndSetter',
-    'Gnome',
     'GreatApe',
     'GreatApe2',
     'GreatApe3',
@@ -3179,6 +3124,7 @@ task run (dependsOn: [
     'MainArgConversion',
     'MainArgs',
     'MakeSalad',
+    'MapLookup',
     'Mapping',
     'Maps',
     'MatchingAgainstVals',
@@ -3203,6 +3149,7 @@ task run (dependsOn: [
     'MutableMaps',
     'MutableSet',
     'NPEOnPlatformType',
+    'NameTag',
     'NamedArguments',
     'NamingCompanionObjects',
     'NarrowingUpcast',
@@ -3219,11 +3166,11 @@ task run (dependsOn: [
     'NothingTypeSoln1',
     'NothingTypeSoln2',
     'NothingTypeSoln3',
+    'NullGnome',
     'NullInMaps',
     'NullableFunction',
     'NullableInMap',
     'NullableParameter',
-    'NullableReceiver',
     'NullableReturn',
     'NullableTypes',
     'Num',
@@ -3289,8 +3236,6 @@ task run (dependsOn: [
     'ReadOnlyAndPlus',
     'ReadOnlyCollections',
     'ReadOnlyMaps',
-    'ReadingName',
-    'ReadingNameWithIf',
     'ReadonlyVsMutableList',
     'RecursionLimits',
     'RecursiveEnumImport',
@@ -3301,13 +3246,10 @@ task run (dependsOn: [
     'RepeatFun',
     'RepeatThreeTimes',
     'RepeatVerbose',
-    'Repetitive',
     'RequireNotNull',
     'ResourceCleanupSoln1',
     'ResourceCleanupSoln2',
     'ResourceCleanupSoln3',
-    'ResultOfApply',
-    'ResultOfWith',
     'ReturnFromFun',
     'ReturnInsideLambda',
     'ReturnLocal',
@@ -3335,7 +3277,6 @@ task run (dependsOn: [
     'Speakers',
     'SpreadOperator',
     'Stacktrace',
-    'StateMachineSoln1',
     'StateOfAClass',
     'StoringLambda',
     'StrTemplates',
@@ -3416,7 +3357,6 @@ task run (dependsOn: [
     'UsingOperatorsSoln1',
     'UsingOperatorsSoln2',
     'UsingOperatorsSoln3',
-    'UsingWith',
     'Vals',
     'ValueFromMap',
     'VarArgs',
