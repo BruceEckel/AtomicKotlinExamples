@@ -2223,6 +2223,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testScopeFuncSoln1() {
+    testExample("Examples/ScopeFunctions/ScopeFuncSoln1.kt", scopefuncsoln1.ScopeFuncSoln1Kt::main);
+  }
+
+  @Test
+  public void testScopeFuncSoln2() {
+    testExample("Examples/ScopeFunctions/ScopeFuncSoln2.kt", scopefuncsoln2.ScopeFuncSoln2Kt::main);
+  }
+
+  @Test
+  public void testScopeFuncSoln3() {
+    testExample("Examples/ScopeFunctions/ScopeFuncSoln3.kt", scopefuncsoln3.ScopeFuncSoln3Kt::main);
+  }
+
+  @Test
   public void testSealedClasses() {
     testExample("Examples/SealedClasses/SealedClasses.kt", sealedclasses.SealedClassesKt::main);
   }

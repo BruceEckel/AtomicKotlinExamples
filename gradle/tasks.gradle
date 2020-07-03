@@ -2218,6 +2218,21 @@ task Scientist(type: JavaExec) {
     main = 'ScientistKt'
 }
 
+task ScopeFuncSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefuncsoln1.ScopeFuncSoln1Kt'
+}
+
+task ScopeFuncSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefuncsoln2.ScopeFuncSoln2Kt'
+}
+
+task ScopeFuncSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefuncsoln3.ScopeFuncSoln3Kt'
+}
+
 task SealedClasses(type: JavaExec) {
     classpath kotlinClassPath
     main = 'sealedclasses.SealedClassesKt'
@@ -3261,6 +3276,9 @@ task run (dependsOn: [
     'SafeOperation',
     'SayHello',
     'Scientist',
+    'ScopeFuncSoln1',
+    'ScopeFuncSoln2',
+    'ScopeFuncSoln3',
     'SealedClasses',
     'SealedSubclasses',
     'SealedVsAbstract',
