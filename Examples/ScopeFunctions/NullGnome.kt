@@ -3,6 +3,7 @@ package scopefunctions
 import atomictest.*
 
 fun whichGnome(gnome: Gnome?) {
+  trace(gnome?.name)
   gnome?.let { trace(it.who()) }
   gnome?.run { trace(who()) }
   gnome?.apply { trace(who()) }
@@ -10,13 +11,11 @@ fun whichGnome(gnome: Gnome?) {
 }
 
 fun main() {
-  trace("null:")
   whichGnome(null)
-  trace("Bob:")
   whichGnome(Gnome("Bob"))
   trace eq """
-    null:
-    Bob:
+    null
+    Bob
     Gnome: Bob
     Gnome: Bob
     Gnome: Bob

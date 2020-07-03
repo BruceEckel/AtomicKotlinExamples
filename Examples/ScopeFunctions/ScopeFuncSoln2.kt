@@ -4,29 +4,34 @@ import classdelegation.SpaceShipControls
 import atomictest.*
 
 fun main() {
+  var velocity = 1
   with(SpaceShipControls()) {
-    trace(forward(1))
-    trace(right(1))
-    trace(down(1))
+    trace(forward(velocity))
+    trace(right(velocity))
+    trace(down(velocity))
     this
   }.let {
-    trace(it.forward(2))
-    trace(it.right(2))
-    trace(it.down(2))
+    velocity++
+    trace(it.forward(velocity))
+    trace(it.right(velocity))
+    trace(it.down(velocity))
     it
   }.run {
-    trace(forward(3))
-    trace(right(3))
-    trace(down(3))
+    velocity++
+    trace(forward(velocity))
+    trace(right(velocity))
+    trace(down(velocity))
     this
   }.apply {
-    trace(forward(4))
-    trace(right(4))
-    trace(down(4))
+    velocity++
+    trace(forward(velocity))
+    trace(right(velocity))
+    trace(down(velocity))
   }.also {
-    trace(it.forward(5))
-    trace(it.right(5))
-    trace(it.down(5))
+    velocity++
+    trace(it.forward(velocity))
+    trace(it.right(velocity))
+    trace(it.down(velocity))
   }
   trace eq """
     forward 1

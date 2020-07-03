@@ -1,42 +1,38 @@
 // ScopeFunctions/NameTag.kt
 package scopefunctions
-import atomictest.*
+import atomictest.trace
 
-fun letx(name: String?) {
-  name
-    ?.takeUnless { it.isBlank() }
-    ?.let { trace("Hi! My name is: $it") }
-}
-
-fun runx(name: String?) {
-  name
-    ?.takeUnless { it.isBlank() }
-    ?.run { trace("Hi! My name is: $this") }
-}
-
-fun applyx(name: String?) {
-  name
-    ?.takeUnless { it.isBlank() }
-    ?.apply { trace("Hi! My name is: $this") }
-}
-
-fun alsox(name: String?) {
-  name
-    ?.takeUnless { it.isBlank() }
-    ?.also { trace("Hi! My name is: $it") }
-}
-
-val funcs =
-  listOf(::letx, ::runx, ::applyx, ::alsox)
+val functions = listOf(
+  fun(name: String?) {
+    name
+      ?.takeUnless { it.isBlank() }
+      ?.let { trace("Hi! I am $it") }
+  },
+  fun(name: String?) {
+    name
+      ?.takeUnless { it.isBlank() }
+      ?.run { trace("Hi! I am $this") }
+  },
+  fun(name: String?) {
+    name
+      ?.takeUnless { it.isBlank() }
+      ?.apply { trace("Hi! I am $this") }
+  },
+  fun(name: String?) {
+    name
+      ?.takeUnless { it.isBlank() }
+      ?.also { trace("Hi! I am $it") }
+  }
+)
 
 fun main() {
-  funcs.forEach { it(null) }
-  funcs.forEach { it("") }
-  funcs.forEach { it("Yumyulack") }
+  functions.forEach { it(null) }
+  functions.forEach { it("  ") }
+  functions.forEach { it("Yumyulack") }
   trace eq """
-    Hi! My name is: Yumyulack
-    Hi! My name is: Yumyulack
-    Hi! My name is: Yumyulack
-    Hi! My name is: Yumyulack
+    Hi! I am Yumyulack
+    Hi! I am Yumyulack
+    Hi! I am Yumyulack
+    Hi! I am Yumyulack
   """
 }
