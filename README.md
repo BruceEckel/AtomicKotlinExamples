@@ -14,7 +14,8 @@ this repository and open it with IDEA).
 
 Before you can run the examples from this repository, you must install the current version of 
 [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html),
-although some earlier versions should also work.
+although some earlier versions should also work. (If you get any errors try upgrading to
+a more recent version of Java).
 
 If you just want to download and check the code, [Download
 Here](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip)
