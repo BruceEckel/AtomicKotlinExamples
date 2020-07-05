@@ -195,7 +195,7 @@ task BasicFunctions(type: JavaExec) {
 
 task BasicGenerics(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'generics.BasicGenericsKt'
+    main = 'moregenerics.BasicGenericsKt'
 }
 
 task BasicLambda(type: JavaExec) {
@@ -330,7 +330,7 @@ task Car(type: JavaExec) {
 
 task CarHolder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'generics.CarHolderKt'
+    main = 'moregenerics.CarHolderKt'
 }
 
 task CarService(type: JavaExec) {
@@ -965,12 +965,12 @@ task GenericListExtensions(type: JavaExec) {
 
 task GenericSafeCast(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'generics.GenericSafeCastKt'
+    main = 'moregenerics.GenericSafeCastKt'
 }
 
 task GenericSpeakers(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'generics.GenericSpeakersKt'
+    main = 'moregenerics.GenericSpeakersKt'
 }
 
 task GermanOrdinals(type: JavaExec) {
@@ -980,7 +980,7 @@ task GermanOrdinals(type: JavaExec) {
 
 task GetAShape(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'generics.GetAShapeKt'
+    main = 'moregenerics.GetAShapeKt'
 }
 
 task GetOrPut(type: JavaExec) {
@@ -1080,7 +1080,7 @@ task Hierarchy(type: JavaExec) {
 
 task Holder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'generics.HolderKt'
+    main = 'moregenerics.HolderKt'
 }
 
 task Hotel(type: JavaExec) {
@@ -1930,7 +1930,7 @@ task Partition(type: JavaExec) {
 
 task Perform(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'generics.PerformKt'
+    main = 'moregenerics.PerformKt'
 }
 
 task Pet(type: JavaExec) {
@@ -2260,7 +2260,7 @@ task SortWith(type: JavaExec) {
 
 task Speakers(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'generics.SpeakersKt'
+    main = 'moregenerics.SpeakersKt'
 }
 
 task SpreadOperator(type: JavaExec) {

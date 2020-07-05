@@ -1,5 +1,5 @@
-// Generics/GenericSpeakers.kt
-package generics
+// MoreGenerics/GenericSpeakers.kt
+package moregenerics
 import atomictest.eq
 
 // Passing the target object:

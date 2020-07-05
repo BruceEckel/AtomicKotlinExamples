@@ -688,46 +688,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBasicGenerics() {
-    testExample("Examples/Generics/BasicGenerics.kt", generics.BasicGenericsKt::main);
-  }
-
-  @Test
-  public void testCarHolder() {
-    testExample("Examples/Generics/CarHolder.kt", generics.CarHolderKt::main);
-  }
-
-  @Test
-  public void testGenericSafeCast() {
-    testExample("Examples/Generics/GenericSafeCast.kt", generics.GenericSafeCastKt::main);
-  }
-
-  @Test
-  public void testGenericSpeakers() {
-    testExample("Examples/Generics/GenericSpeakers.kt", generics.GenericSpeakersKt::main);
-  }
-
-  @Test
-  public void testGetAShape() {
-    testExample("Examples/Generics/GetAShape.kt", generics.GetAShapeKt::main);
-  }
-
-  @Test
-  public void testHolder() {
-    testExample("Examples/Generics/Holder.kt", generics.HolderKt::main);
-  }
-
-  @Test
-  public void testPerform() {
-    testExample("Examples/Generics/Perform.kt", generics.PerformKt::main);
-  }
-
-  @Test
-  public void testSpeakers() {
-    testExample("Examples/Generics/Speakers.kt", generics.SpeakersKt::main);
-  }
-
-  @Test
   public void testEmptyProgram() {
     testExample("Examples/HelloWorld/EmptyProgram.kt", EmptyProgramKt::main);
   }
@@ -1460,6 +1420,46 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTopLevelFunctionRef() {
     testExample("Examples/MemberReferences/TopLevelFunctionRef.kt", memberreferences2.TopLevelFunctionRefKt::main);
+  }
+
+  @Test
+  public void testBasicGenerics() {
+    testExample("Examples/MoreGenerics/BasicGenerics.kt", moregenerics.BasicGenericsKt::main);
+  }
+
+  @Test
+  public void testCarHolder() {
+    testExample("Examples/MoreGenerics/CarHolder.kt", moregenerics.CarHolderKt::main);
+  }
+
+  @Test
+  public void testGenericSafeCast() {
+    testExample("Examples/MoreGenerics/GenericSafeCast.kt", moregenerics.GenericSafeCastKt::main);
+  }
+
+  @Test
+  public void testGenericSpeakers() {
+    testExample("Examples/MoreGenerics/GenericSpeakers.kt", moregenerics.GenericSpeakersKt::main);
+  }
+
+  @Test
+  public void testGetAShape() {
+    testExample("Examples/MoreGenerics/GetAShape.kt", moregenerics.GetAShapeKt::main);
+  }
+
+  @Test
+  public void testHolder() {
+    testExample("Examples/MoreGenerics/Holder.kt", moregenerics.HolderKt::main);
+  }
+
+  @Test
+  public void testPerform() {
+    testExample("Examples/MoreGenerics/Perform.kt", moregenerics.PerformKt::main);
+  }
+
+  @Test
+  public void testSpeakers() {
+    testExample("Examples/MoreGenerics/Speakers.kt", moregenerics.SpeakersKt::main);
   }
 
   @Test

@@ -1,5 +1,5 @@
-// Generics/Perform.kt
-package generics
+// MoreGenerics/Perform.kt
+package moregenerics
 import atomictest.eq
 
 fun <T> T.perform(

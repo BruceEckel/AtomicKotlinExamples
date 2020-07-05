@@ -1,5 +1,5 @@
-// Generics/GenericSafeCast.kt
-package generics
+// MoreGenerics/GenericSafeCast.kt
+package moregenerics
 import kotlin.reflect.KClass
 
 inline infix fun <reified T: Any> Any?.to(

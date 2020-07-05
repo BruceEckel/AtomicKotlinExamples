@@ -1,5 +1,5 @@
-// Generics/BasicGenerics.kt
-package generics
+// MoreGenerics/BasicGenerics.kt
+package moregenerics
 import atomictest.eq
 
 fun <T> gFunc(arg: T): T = arg

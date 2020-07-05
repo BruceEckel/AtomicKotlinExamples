@@ -1,5 +1,5 @@
-// Generics/Speakers.kt
-package generics
+// MoreGenerics/Speakers.kt
+package moregenerics
 import atomictest.eq
 
 class Person {

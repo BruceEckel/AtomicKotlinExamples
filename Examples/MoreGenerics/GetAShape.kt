@@ -1,5 +1,5 @@
-// Generics/GetAShape.kt
-package generics
+// MoreGenerics/GetAShape.kt
+package moregenerics
 import atomictest.*
 import kotlin.random.Random
 
