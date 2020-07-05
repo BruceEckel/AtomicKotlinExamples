@@ -5,12 +5,9 @@ import atomictest.eq
 fun main() {
   val strings: List<String> = buildList {
     add("Chars:")                       // [1]
-    for (ch in 'a'..'d') {
-      add("$ch")
-    }
+    ('a'..'d').forEach { add("$it") }
   }
-  strings eq
-    listOf("Chars:", "a", "b", "c", "d")
+  strings eq "[Chars:, a, b, c, d]"
 }
 
 fun <E> buildList(

@@ -1138,23 +1138,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testNewStateMachine2() {
-    testExample("Examples/LambdaWithReceiver/NewStateMachine2.kt", statemachine2.NewStateMachine2Kt::main);
-  }
-
-  @Test
   public void testStringBuilder() {
     testExample("Examples/LambdaWithReceiver/StringBuilder.kt", lambdawithreceiver.StringBuilderKt::main);
   }
 
   @Test
-  public void testUseNewStateMachine1() {
-    testExample("Examples/LambdaWithReceiver/UseNewStateMachine1.kt", statemachine.UseNewStateMachine1Kt::main);
-  }
-
-  @Test
-  public void testUseNewStateMachine2() {
-    testExample("Examples/LambdaWithReceiver/UseNewStateMachine2.kt", statemachine2.UseNewStateMachine2Kt::main);
+  public void testTransform() {
+    testExample("Examples/LambdaWithReceiver/Transform.kt", lambdawithreceiver.TransformKt::main);
   }
 
   @Test

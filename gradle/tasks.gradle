@@ -1678,11 +1678,6 @@ task NewException(type: JavaExec) {
     main = 'exceptionhandling.NewExceptionKt'
 }
 
-task NewStateMachine2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'statemachine2.NewStateMachine2Kt'
-}
-
 task NoComputationYet(type: JavaExec) {
     classpath kotlinClassPath
     main = 'creatingsequences.NoComputationYetKt'
@@ -2468,6 +2463,11 @@ task Trace1(type: JavaExec) {
     main = 'Trace1Kt'
 }
 
+task Transform(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.TransformKt'
+}
+
 task TransformingMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'buildmaps.TransformingMapKt'
@@ -2616,16 +2616,6 @@ task UseBeanClass(type: JavaExec) {
 task UseLines(type: JavaExec) {
     classpath kotlinClassPath
     main = 'resourcecleanup.UseLinesKt'
-}
-
-task UseNewStateMachine1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'statemachine.UseNewStateMachine1Kt'
-}
-
-task UseNewStateMachine2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'statemachine2.UseNewStateMachine2Kt'
 }
 
 task UsingAtomicTest(type: JavaExec) {
@@ -3123,7 +3113,6 @@ task run (dependsOn: [
     'NeverNull',
     'NewAngle',
     'NewException',
-    'NewStateMachine2',
     'NoComputationYet',
     'NoExtOverride',
     'NoFramework',
@@ -3281,6 +3270,7 @@ task run (dependsOn: [
     'Todo',
     'TopLevelFunctionRef',
     'Trace1',
+    'Transform',
     'TransformingMap',
     'TrimMargin',
     'TrimmedMembers',
@@ -3311,8 +3301,6 @@ task run (dependsOn: [
     'UseAtomicLog',
     'UseBeanClass',
     'UseLines',
-    'UseNewStateMachine1',
-    'UseNewStateMachine2',
     'UsingAtomicTest',
     'UsingDataClass',
     'UsingExpect',
