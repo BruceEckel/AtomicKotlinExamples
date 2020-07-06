@@ -348,6 +348,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testHashCode() {
+    testExample("Examples/DataClasses/HashCode.kt", HashCodeKt::main);
+  }
+
+  @Test
   public void testSimple() {
     testExample("Examples/DataClasses/Simple.kt", SimpleKt::main);
   }
@@ -1098,6 +1103,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testDelta() {
+    testExample("Examples/LambdaWithReceiver/Delta.kt", lambdawithreceiver.DeltaKt::main);
+  }
+
+  @Test
   public void testStringBuilder() {
     testExample("Examples/LambdaWithReceiver/StringBuilder.kt", lambdawithreceiver.StringBuilderKt::main);
   }
@@ -1400,6 +1410,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testConstructorReference() {
     testExample("Examples/MemberReferences/ConstructorReference.kt", memberreferences3.ConstructorReferenceKt::main);
+  }
+
+  @Test
+  public void testExtensionReference() {
+    testExample("Examples/MemberReferences/ExtensionReference.kt", memberreferences.ExtensionReferenceKt::main);
   }
 
   @Test

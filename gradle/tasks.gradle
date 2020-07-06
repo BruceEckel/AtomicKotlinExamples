@@ -633,6 +633,11 @@ task DelegatedControls(type: JavaExec) {
     main = 'classdelegation.DelegatedControlsKt'
 }
 
+task Delta(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.DeltaKt'
+}
+
 task Dereference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DereferenceKt'
@@ -786,6 +791,11 @@ task ExpressionInTemplate(type: JavaExec) {
 task ExtensionFuncs(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritanceextensions2.ExtensionFuncsKt'
+}
+
+task ExtensionReference(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'memberreferences.ExtensionReferenceKt'
 }
 
 task ExtensionsToJavaClass(type: JavaExec) {
@@ -1056,6 +1066,11 @@ task Handlers(type: JavaExec) {
 task HasChar(type: JavaExec) {
     classpath kotlinClassPath
     main = 'HasCharKt'
+}
+
+task HashCode(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'HashCodeKt'
 }
 
 task Hello(type: JavaExec) {
@@ -2904,6 +2919,7 @@ task run (dependsOn: [
     'DelegateAndExtend',
     'DelegateProvider',
     'DelegatedControls',
+    'Delta',
     'Dereference',
     'DereferenceNull',
     'DestructuringData',
@@ -2935,6 +2951,7 @@ task run (dependsOn: [
     'ExplicitTyping',
     'ExpressionInTemplate',
     'ExtensionFuncs',
+    'ExtensionReference',
     'ExtensionsToJavaClass',
     'Factorial',
     'Fail',
@@ -2989,6 +3006,7 @@ task run (dependsOn: [
     'Hamsters',
     'Handlers',
     'HasChar',
+    'HashCode',
     'Hello',
     'HelloWorld',
     'HiddenArrayList',

@@ -1,52 +1,51 @@
 // Sequences/EagerVsLazyEvaluation.kt
 package creatingsequences
+import atomictest.*
 
 fun Int.isEven(): Boolean {
-  println("$this.isEven()")
+  trace("$this.isEven()")
   return this % 2 == 0
 }
 
 fun Int.square(): Int {
-  println("$this.square()")
+  trace("$this.square()")
   return this * this
 }
 
 fun Int.lessThanTen(): Boolean {
-  println("${this}.lessThanTen()")
+  trace("${this}.lessThanTen()")
   return this < 10
 }
 
 fun main() {
   val list = listOf(1, 2, 3, 4)
 
-  println(">>> List:")
-  val r1 = list
+  trace(">>> List:")
+  trace(list
     .filter(Int::isEven)
     .map(Int::square)
-    .any(Int::lessThanTen)
-  println(r1)
+    .any(Int::lessThanTen))
 
-  println(">>> Sequence:")
-  val r2 = list.asSequence()
+  trace(">>> Sequence:")
+  trace(list.asSequence()
     .filter(Int::isEven)
     .map(Int::square)
-    .any(Int::lessThanTen)
-  println(r2)
+    .any(Int::lessThanTen))
+  trace eq """
+    >>> List:
+    1.isEven()
+    2.isEven()
+    3.isEven()
+    4.isEven()
+    2.square()
+    4.square()
+    4.lessThanTen()
+    true
+    >>> Sequence:
+    1.isEven()
+    2.isEven()
+    2.square()
+    4.lessThanTen()
+    true
+  """
 }
-/* Output:
->>> List:
-1.isEven()
-2.isEven()
-3.isEven()
-4.isEven()
-2.square()
-4.square()
-4.lessThanTen()
-true
->>> Sequence:
-1.isEven()
-2.isEven()
-2.square()
-4.lessThanTen()
-true
-*/

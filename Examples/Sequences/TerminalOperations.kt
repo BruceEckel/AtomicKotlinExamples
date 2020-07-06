@@ -1,20 +1,20 @@
 // Sequences/TerminalOperations.kt
 package creatingsequences
+import atomictest.*
 
 fun main() {
   val list = listOf(1, 2, 3, 4)
-  val r = list.asSequence()
+  trace(list.asSequence()
     .filter(Int::isEven)
     .map(Int::square)
-    .toList()
-  println(r)
+    .toList())
+  trace eq """
+    1.isEven()
+    2.isEven()
+    2.square()
+    3.isEven()
+    4.isEven()
+    4.square()
+    [4, 16]
+  """
 }
-/* Output:
-1.isEven()
-2.isEven()
-2.square()
-3.isEven()
-4.isEven()
-4.square()
-[4, 16]
-*/

@@ -1,8 +1,8 @@
 // BuildingMaps/ImmutableBlendMap.kt
+@file:OptIn(ExperimentalStdlibApi::class)
 package buildmaps
 
 class BlendMap {
-  @ExperimentalStdlibApi
   val map: Map<Pair<Color, Color>, Color> =
     buildMap {
       for (a in Color.values()) {
@@ -11,12 +11,10 @@ class BlendMap {
         }
       }
     }
-  @ExperimentalStdlibApi
   fun blend(a: Color, b: Color): Color =
     map.getOrDefault(a to b, Color.Brown)
 }
 
-@ExperimentalStdlibApi
 fun main() {
   colorBlendTest(BlendMap()::blend)
 }
