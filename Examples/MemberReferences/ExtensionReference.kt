@@ -2,7 +2,7 @@
 package memberreferences
 import atomictest.eq
 
-fun Int.times47() = this * 47
+fun Int.times47() = times(47)
 
 class Frog
 fun Frog.speak() = "Ribbit!"

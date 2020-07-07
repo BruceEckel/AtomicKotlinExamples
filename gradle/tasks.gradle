@@ -288,11 +288,6 @@ task Boxes(type: JavaExec) {
     main = 'BoxesKt'
 }
 
-task BuildLists(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'buildinglists.BuildListsKt'
-}
-
 task BuildString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'buildstring.BuildStringKt'
@@ -526,6 +521,11 @@ task Counter(type: JavaExec) {
 task CounterFactory(type: JavaExec) {
     classpath kotlinClassPath
     main = 'innerclasses.CounterFactoryKt'
+}
+
+task CreateList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'lambdawithreceiver.CreateListKt'
 }
 
 task CreateString(type: JavaExec) {
@@ -2850,7 +2850,6 @@ task run (dependsOn: [
     'BookExtensions',
     'Booleans',
     'Boxes',
-    'BuildLists',
     'BuildString',
     'ByOperations',
     'CallStack',
@@ -2898,6 +2897,7 @@ task run (dependsOn: [
     'CopyDataClass',
     'Counter',
     'CounterFactory',
+    'CreateList',
     'CreateString',
     'CreateString2',
     'CreatingLists',

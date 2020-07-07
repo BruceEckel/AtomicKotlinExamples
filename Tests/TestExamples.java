@@ -1093,13 +1093,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBuildLists() {
-    testExample("Examples/LambdaWithReceiver/BuildLists.kt", buildinglists.BuildListsKt::main);
+  public void testBuildString() {
+    testExample("Examples/LambdaWithReceiver/BuildString.kt", buildstring.BuildStringKt::main);
   }
 
   @Test
-  public void testBuildString() {
-    testExample("Examples/LambdaWithReceiver/BuildString.kt", buildstring.BuildStringKt::main);
+  public void testCreateList() {
+    testExample("Examples/LambdaWithReceiver/CreateList.kt", lambdawithreceiver.CreateListKt::main);
   }
 
   @Test

@@ -18,12 +18,16 @@ fun A.three3(lambda: A.(B, C) -> Int) =
 
 fun zeroAndThreeArgs() {
   val a = A()
-  val b = B()
-  val c = C()
   zero1 { af() }
   zero2 { af() }
   a.zero3 { af() }
   three1 { bb, cc ->
+    af() + bb.bf() + cc.cf()
+  }
+  three2 { bb, cc ->
+    af() + bb.bf() + cc.cf()
+  }
+  a.three3 { bb, cc ->
     af() + bb.bf() + cc.cf()
   }
 }

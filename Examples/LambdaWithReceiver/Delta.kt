@@ -3,14 +3,14 @@ package lambdawithreceiver
 import atomictest.eq
 
 fun Int.delta1(
-  start: Int.() -> Int,
-  end: Int.() -> Int,
-) = (end() - start()) * 10
-
-fun Int.delta2(
   start: (Int) -> Int,
   end: (Int) -> Int,
 ) = (end(this) - start(this)) * 10
+
+fun Int.delta2(
+  start: Int.() -> Int,
+  end: Int.() -> Int,
+) = (end() - start()) * 10
 
 fun start1(n: Int) = n + 3
 fun end1(n: Int) = n + 4
