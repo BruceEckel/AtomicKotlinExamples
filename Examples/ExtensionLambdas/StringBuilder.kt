@@ -1,5 +1,5 @@
-// LambdaWithReceiver/StringBuilder.kt
-package lambdawithreceiver
+// ExtensionLambdas/StringBuilder.kt
+package extensionlambdas
 import atomictest.eq
 
 fun main() {

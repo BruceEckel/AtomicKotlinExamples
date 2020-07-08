@@ -633,6 +633,41 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testAnonymousFunction() {
+    testExample("Examples/ExtensionLambdas/AnonymousFunction.kt", extensionlambdas.AnonymousFunctionKt::main);
+  }
+
+  @Test
+  public void testBuildString() {
+    testExample("Examples/ExtensionLambdas/BuildString.kt", buildstring.BuildStringKt::main);
+  }
+
+  @Test
+  public void testCreateList() {
+    testExample("Examples/ExtensionLambdas/CreateList.kt", extensionlambdas.CreateListKt::main);
+  }
+
+  @Test
+  public void testDelta() {
+    testExample("Examples/ExtensionLambdas/Delta.kt", extensionlambdas.DeltaKt::main);
+  }
+
+  @Test
+  public void testStringBuilder() {
+    testExample("Examples/ExtensionLambdas/StringBuilder.kt", extensionlambdas.StringBuilderKt::main);
+  }
+
+  @Test
+  public void testTransform() {
+    testExample("Examples/ExtensionLambdas/Transform.kt", extensionlambdas.TransformKt::main);
+  }
+
+  @Test
+  public void testVanbo() {
+    testExample("Examples/ExtensionLambdas/Vanbo.kt", extensionlambdas.VanboKt::main);
+  }
+
+  @Test
   public void testAnyFromListOfStar() {
     testExample("Examples/ExtensionProperties/AnyFromListOfStar.kt", extensionproperties.AnyFromListOfStarKt::main);
   }
@@ -1085,36 +1120,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testZeroArguments() {
     testExample("Examples/Lambdas/ZeroArguments.kt", ZeroArgumentsKt::main);
-  }
-
-  @Test
-  public void testAnonymousFunction() {
-    testExample("Examples/LambdaWithReceiver/AnonymousFunction.kt", lambdawithreceiver.AnonymousFunctionKt::main);
-  }
-
-  @Test
-  public void testBuildString() {
-    testExample("Examples/LambdaWithReceiver/BuildString.kt", buildstring.BuildStringKt::main);
-  }
-
-  @Test
-  public void testCreateList() {
-    testExample("Examples/LambdaWithReceiver/CreateList.kt", lambdawithreceiver.CreateListKt::main);
-  }
-
-  @Test
-  public void testDelta() {
-    testExample("Examples/LambdaWithReceiver/Delta.kt", lambdawithreceiver.DeltaKt::main);
-  }
-
-  @Test
-  public void testStringBuilder() {
-    testExample("Examples/LambdaWithReceiver/StringBuilder.kt", lambdawithreceiver.StringBuilderKt::main);
-  }
-
-  @Test
-  public void testTransform() {
-    testExample("Examples/LambdaWithReceiver/Transform.kt", lambdawithreceiver.TransformKt::main);
   }
 
   @Test

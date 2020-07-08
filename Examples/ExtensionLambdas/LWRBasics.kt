@@ -1,5 +1,5 @@
-// LambdaWithReceiver/LWRBasics.kt
-package lambdawithreceiver
+// ExtensionLambdas/LWRBasics.kt
+package extensionlambdas
 
 class X
 

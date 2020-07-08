@@ -1,5 +1,5 @@
-// LambdaWithReceiver/Transform.kt
-package lambdawithreceiver
+// ExtensionLambdas/Transform.kt
+package extensionlambdas
 import atomictest.eq
 
 val duplicate: String.(Int) -> String = {

@@ -1,5 +1,5 @@
-// LambdaWithReceiver/Delta.kt
-package lambdawithreceiver
+// ExtensionLambdas/Delta.kt
+package extensionlambdas
 import atomictest.eq
 
 fun Int.delta1(

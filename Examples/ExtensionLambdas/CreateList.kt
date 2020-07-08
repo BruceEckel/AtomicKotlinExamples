@@ -1,5 +1,5 @@
-// LambdaWithReceiver/CreateList.kt
-package lambdawithreceiver
+// ExtensionLambdas/CreateList.kt
+package extensionlambdas
 import atomictest.eq
 
 fun <E> createList(

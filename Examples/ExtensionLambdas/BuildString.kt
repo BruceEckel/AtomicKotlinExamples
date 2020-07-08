@@ -1,4 +1,4 @@
-// LambdaWithReceiver/BuildString.kt
+// ExtensionLambdas/BuildString.kt
 package buildstring
 import atomictest.eq
 

@@ -75,7 +75,7 @@ task AnnotatedJava(type: JavaExec) {
 
 task AnonymousFunction(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lambdawithreceiver.AnonymousFunctionKt'
+    main = 'extensionlambdas.AnonymousFunctionKt'
 }
 
 task Any(type: JavaExec) {
@@ -525,7 +525,7 @@ task CounterFactory(type: JavaExec) {
 
 task CreateList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lambdawithreceiver.CreateListKt'
+    main = 'extensionlambdas.CreateListKt'
 }
 
 task CreateString(type: JavaExec) {
@@ -635,7 +635,7 @@ task DelegatedControls(type: JavaExec) {
 
 task Delta(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lambdawithreceiver.DeltaKt'
+    main = 'extensionlambdas.DeltaKt'
 }
 
 task Dereference(type: JavaExec) {
@@ -2310,7 +2310,7 @@ task StrangeQuote(type: JavaExec) {
 
 task StringBuilder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lambdawithreceiver.StringBuilderKt'
+    main = 'extensionlambdas.StringBuilderKt'
 }
 
 task StringConcatenation(type: JavaExec) {
@@ -2480,7 +2480,7 @@ task Trace1(type: JavaExec) {
 
 task Transform(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lambdawithreceiver.TransformKt'
+    main = 'extensionlambdas.TransformKt'
 }
 
 task TransformingMap(type: JavaExec) {
@@ -2681,6 +2681,11 @@ task Vals(type: JavaExec) {
 task ValueFromMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ValueFromMapKt'
+}
+
+task Vanbo(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdas.VanboKt'
 }
 
 task VarArgs(type: JavaExec) {
@@ -3329,6 +3334,7 @@ task run (dependsOn: [
     'UsingOperatorsSoln3',
     'Vals',
     'ValueFromMap',
+    'Vanbo',
     'VarArgs',
     'VarargLikeList',
     'VarargSum',

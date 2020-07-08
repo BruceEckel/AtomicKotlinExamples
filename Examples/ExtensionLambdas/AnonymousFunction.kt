@@ -1,5 +1,5 @@
-// LambdaWithReceiver/AnonymousFunction.kt
-package lambdawithreceiver
+// ExtensionLambdas/AnonymousFunction.kt
+package extensionlambdas
 import atomictest.eq
 
 fun main() {

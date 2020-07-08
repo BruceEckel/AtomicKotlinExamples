@@ -1,4 +1,4 @@
-// LambdaWithReceiver/LWRStateMachine.kt
+// ExtensionLambdas/LWRStateMachine.kt
 package statemachine
 import atomictest.*
 import statemachine.State.*

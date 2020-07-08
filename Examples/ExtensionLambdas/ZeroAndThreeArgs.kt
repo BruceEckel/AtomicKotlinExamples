@@ -1,5 +1,5 @@
-// LambdaWithReceiver/ZeroAndThreeArgs.kt
-package lambdawithreceiver
+// ExtensionLambdas/ZeroAndThreeArgs.kt
+package extensionlambdas
 
 fun zero1(lambda: A.() -> Unit) = lambda(A())
 fun zero2(lambda: A.() -> Unit) = A().lambda()

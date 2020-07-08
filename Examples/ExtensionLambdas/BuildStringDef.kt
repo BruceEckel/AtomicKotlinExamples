@@ -1,4 +1,4 @@
-// LambdaWithReceiver/BuildStringDef.kt
+// ExtensionLambdas/BuildStringDef.kt
 package buildstring
 
 fun buildString(
