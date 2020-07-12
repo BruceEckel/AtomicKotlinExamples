@@ -638,23 +638,48 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBuildString() {
-    testExample("Examples/ExtensionLambdas/BuildString.kt", buildstring.BuildStringKt::main);
+  public void testExtensionLambdasSoln1() {
+    testExample("Examples/ExtensionLambdas/ExtensionLambdasSoln1.kt", extensionlambdasoln1.ExtensionLambdasSoln1Kt::main);
   }
 
   @Test
-  public void testCreateList() {
-    testExample("Examples/ExtensionLambdas/CreateList.kt", extensionlambdas.CreateListKt::main);
+  public void testExtensionLambdasSoln2() {
+    testExample("Examples/ExtensionLambdas/ExtensionLambdasSoln2.kt", extensionlambdasoln2.ExtensionLambdasSoln2Kt::main);
   }
 
   @Test
-  public void testDelta() {
-    testExample("Examples/ExtensionLambdas/Delta.kt", extensionlambdas.DeltaKt::main);
+  public void testExtensionLambdasSoln3() {
+    testExample("Examples/ExtensionLambdas/ExtensionLambdasSoln3.kt", extensionlambdasoln3.ExtensionLambdasSoln3Kt::main);
   }
 
   @Test
-  public void testStringBuilder() {
-    testExample("Examples/ExtensionLambdas/StringBuilder.kt", extensionlambdas.StringBuilderKt::main);
+  public void testExtensionPolymorphism() {
+    testExample("Examples/ExtensionLambdas/ExtensionPolymorphism.kt", extensionlambdas.ExtensionPolymorphismKt::main);
+  }
+
+  @Test
+  public void testFuncReferences() {
+    testExample("Examples/ExtensionLambdas/FuncReferences.kt", extensionlambdas.FuncReferencesKt::main);
+  }
+
+  @Test
+  public void testListsAndMaps() {
+    testExample("Examples/ExtensionLambdas/ListsAndMaps.kt", extensionlambdas.ListsAndMapsKt::main);
+  }
+
+  @Test
+  public void testParameters() {
+    testExample("Examples/ExtensionLambdas/Parameters.kt", extensionlambdas.ParametersKt::main);
+  }
+
+  @Test
+  public void testSandwich() {
+    testExample("Examples/ExtensionLambdas/Sandwich.kt", extensionlambdas.SandwichKt::main);
+  }
+
+  @Test
+  public void testStringCreation() {
+    testExample("Examples/ExtensionLambdas/StringCreation.kt", extensionlambdas.StringCreationKt::main);
   }
 
   @Test
@@ -1450,6 +1475,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testCarHolder() {
     testExample("Examples/MoreGenerics/CarHolder.kt", moregenerics.CarHolderKt::main);
+  }
+
+  @Test
+  public void testGenericReturnType() {
+    testExample("Examples/MoreGenerics/GenericReturnType.kt", moregenerics.GenericReturnTypeKt::main);
   }
 
   @Test

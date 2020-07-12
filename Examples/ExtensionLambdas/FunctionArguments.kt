@@ -20,4 +20,6 @@ fun lambdas() {
     aa.af() + bb.bf()
   }
   f2 { af() + it.bf() }
+  f1(fun(a: A, b: B) = a.af() + b.bf())
+  f2(fun(a: A, b: B) = a.af() + b.bf())
 }

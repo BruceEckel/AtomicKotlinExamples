@@ -288,11 +288,6 @@ task Boxes(type: JavaExec) {
     main = 'BoxesKt'
 }
 
-task BuildString(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'buildstring.BuildStringKt'
-}
-
 task ByOperations(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ByOperationsKt'
@@ -523,11 +518,6 @@ task CounterFactory(type: JavaExec) {
     main = 'innerclasses.CounterFactoryKt'
 }
 
-task CreateList(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionlambdas.CreateListKt'
-}
-
 task CreateString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CreateStringKt'
@@ -631,11 +621,6 @@ task DelegateProvider(type: JavaExec) {
 task DelegatedControls(type: JavaExec) {
     classpath kotlinClassPath
     main = 'classdelegation.DelegatedControlsKt'
-}
-
-task Delta(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionlambdas.DeltaKt'
 }
 
 task Dereference(type: JavaExec) {
@@ -793,6 +778,26 @@ task ExtensionFuncs(type: JavaExec) {
     main = 'inheritanceextensions2.ExtensionFuncsKt'
 }
 
+task ExtensionLambdasSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdasoln1.ExtensionLambdasSoln1Kt'
+}
+
+task ExtensionLambdasSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdasoln2.ExtensionLambdasSoln2Kt'
+}
+
+task ExtensionLambdasSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdasoln3.ExtensionLambdasSoln3Kt'
+}
+
+task ExtensionPolymorphism(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdas.ExtensionPolymorphismKt'
+}
+
 task ExtensionReference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences.ExtensionReferenceKt'
@@ -938,6 +943,11 @@ task FullyQualify(type: JavaExec) {
     main = 'FullyQualifyKt'
 }
 
+task FuncReferences(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdas.FuncReferencesKt'
+}
+
 task FunctionClosure(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FunctionClosureKt'
@@ -971,6 +981,11 @@ task GenericListExt(type: JavaExec) {
 task GenericListExtensions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'introgenerics.GenericListExtensionsKt'
+}
+
+task GenericReturnType(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'moregenerics.GenericReturnTypeKt'
 }
 
 task GenericSafeCast(type: JavaExec) {
@@ -1463,6 +1478,11 @@ task Lists(type: JavaExec) {
     main = 'ListsKt'
 }
 
+task ListsAndMaps(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdas.ListsAndMapsKt'
+}
+
 task LocalExtensions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LocalExtensionsKt'
@@ -1938,6 +1958,11 @@ task ParameterizedTypes(type: JavaExec) {
     main = 'ParameterizedTypesKt'
 }
 
+task Parameters(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdas.ParametersKt'
+}
+
 task Partition(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PartitionKt'
@@ -2188,6 +2213,11 @@ task SafeOperation(type: JavaExec) {
     main = 'SafeOperationKt'
 }
 
+task Sandwich(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdas.SandwichKt'
+}
+
 task SayHello(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SayHelloKt'
@@ -2308,14 +2338,14 @@ task StrangeQuote(type: JavaExec) {
     main = 'StrangeQuoteKt'
 }
 
-task StringBuilder(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'extensionlambdas.StringBuilderKt'
-}
-
 task StringConcatenation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'StringConcatenationKt'
+}
+
+task StringCreation(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'extensionlambdas.StringCreationKt'
 }
 
 task StringIndices(type: JavaExec) {
@@ -2855,7 +2885,6 @@ task run (dependsOn: [
     'BookExtensions',
     'Booleans',
     'Boxes',
-    'BuildString',
     'ByOperations',
     'CallStack',
     'CallTopLevelFunction',
@@ -2902,7 +2931,6 @@ task run (dependsOn: [
     'CopyDataClass',
     'Counter',
     'CounterFactory',
-    'CreateList',
     'CreateString',
     'CreateString2',
     'CreatingLists',
@@ -2924,7 +2952,6 @@ task run (dependsOn: [
     'DelegateAndExtend',
     'DelegateProvider',
     'DelegatedControls',
-    'Delta',
     'Dereference',
     'DereferenceNull',
     'DestructuringData',
@@ -2956,6 +2983,10 @@ task run (dependsOn: [
     'ExplicitTyping',
     'ExpressionInTemplate',
     'ExtensionFuncs',
+    'ExtensionLambdasSoln1',
+    'ExtensionLambdasSoln2',
+    'ExtensionLambdasSoln3',
+    'ExtensionPolymorphism',
     'ExtensionReference',
     'ExtensionsToJavaClass',
     'Factorial',
@@ -2985,6 +3016,7 @@ task run (dependsOn: [
     'ForWithCharRange',
     'ForWithRanges',
     'FullyQualify',
+    'FuncReferences',
     'FunctionClosure',
     'FunctionReference',
     'GardenItem',
@@ -2992,6 +3024,7 @@ task run (dependsOn: [
     'GenericHolder',
     'GenericListExt',
     'GenericListExtensions',
+    'GenericReturnType',
     'GenericSafeCast',
     'GenericSpeakers',
     'GermanOrdinals',
@@ -3090,6 +3123,7 @@ task run (dependsOn: [
     'ListOfStrings',
     'ListUsefulFunction',
     'Lists',
+    'ListsAndMaps',
     'LocalExtensions',
     'LocalFunctionReference',
     'LocalFunctions',
@@ -3185,6 +3219,7 @@ task run (dependsOn: [
     'Pairs',
     'ParameterizedReturn',
     'ParameterizedTypes',
+    'Parameters',
     'Partition',
     'Perform',
     'Pet',
@@ -3235,6 +3270,7 @@ task run (dependsOn: [
     'Safe',
     'SafeCall',
     'SafeOperation',
+    'Sandwich',
     'SayHello',
     'Scientist',
     'ScopeFuncSoln1',
@@ -3259,8 +3295,8 @@ task run (dependsOn: [
     'StoringLambda',
     'StrTemplates',
     'StrangeQuote',
-    'StringBuilder',
     'StringConcatenation',
+    'StringCreation',
     'StringIndices',
     'StringInvoke',
     'StringIsNullOr',
