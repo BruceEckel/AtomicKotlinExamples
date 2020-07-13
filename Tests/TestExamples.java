@@ -674,7 +674,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testSandwich() {
-    testExample("Examples/ExtensionLambdas/Sandwich.kt", extensionlambdas.SandwichKt::main);
+    testExample("Examples/ExtensionLambdas/Sandwich.kt", sandwich.SandwichKt::main);
   }
 
   @Test
@@ -1289,7 +1289,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testReturningFunc() {
-    testExample("Examples/LocalFunctions/ReturningFunc.kt", lambdawithreceiver.ReturningFuncKt::main);
+    testExample("Examples/LocalFunctions/ReturningFunc.kt", localfunctions.ReturningFuncKt::main);
   }
 
   @Test

@@ -2190,7 +2190,7 @@ task ReturnLocal(type: JavaExec) {
 
 task ReturningFunc(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lambdawithreceiver.ReturningFuncKt'
+    main = 'localfunctions.ReturningFuncKt'
 }
 
 task RigidHolder(type: JavaExec) {
@@ -2215,7 +2215,7 @@ task SafeOperation(type: JavaExec) {
 
 task Sandwich(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'extensionlambdas.SandwichKt'
+    main = 'sandwich.SandwichKt'
 }
 
 task SayHello(type: JavaExec) {

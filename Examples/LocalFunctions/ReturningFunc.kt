@@ -1,5 +1,5 @@
 // LocalFunctions/ReturningFunc.kt
-package lambdawithreceiver
+package localfunctions
 import atomictest.eq
 
 fun first(): (Int) -> Int {
