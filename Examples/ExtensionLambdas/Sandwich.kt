@@ -22,14 +22,12 @@ class Swiss: Ingredient()
 class Mustard: Ingredient()
 
 open class Sandwich: Recipe() {
-  fun grill(): Sandwich {
-    add(Grill())
+  fun action(op: Operation): Sandwich {
+    add(op)
     return this
   }
-  fun toast(): Sandwich {
-    add(Toast())
-    return this
-  }
+  fun grill() = action(Grill())
+  fun toast() = action(Toast())
 }
 
 fun sandwich(

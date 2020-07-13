@@ -9,8 +9,9 @@ val characters: List<String> = buildList {
 }
 
 val chars: Map<Char, Int> = buildMap {
-  for (ch in ('A'..'F').withIndex())
-    put(ch.value, ch.index)
+  ('A'..'F').forEachIndexed { n, ch ->
+    put(ch, n)
+  }
 }
 
 fun main() {
