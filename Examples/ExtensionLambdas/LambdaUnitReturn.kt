@@ -12,6 +12,7 @@ fun lambdaUnitReturn () {
     "Unit ignores the return value" +
     "So it can be anything ..."
   }
+  unitReturn { 1 } // ... of any type ...
   unitReturn { } // ... or nothing
   nonUnitReturn {
     "Must return the proper type"

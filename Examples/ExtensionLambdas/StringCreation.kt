@@ -2,17 +2,21 @@
 package extensionlambdas
 import atomictest.eq
 
-fun main() {
+private fun messy(): String {
   val built = StringBuilder()   // [1]
   built.append("ABCs: ")
   for (ch in 'a'..'z')
     built.append(ch)
-  built.toString() eq           // [2]
-    "ABCs: abcdefghijklmnopqrstuvwxyz"
+  return built.toString()       // [2]
+}
 
+private fun clean() =
   buildString {
     append("ABCs: ")
     for (ch in 'a'..'z')
       append(ch)
-  } eq built.trim()
+  }
+
+fun main() {
+  messy() eq clean()
 }

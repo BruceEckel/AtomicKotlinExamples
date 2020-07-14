@@ -2,12 +2,12 @@
 package sandwich
 import atomictest.eq
 
+open class Recipe: ArrayList<RecipeUnit>()
+
 open class RecipeUnit {
   override fun toString() =
     "${this::class.simpleName}"
 }
-
-open class Recipe: ArrayList<RecipeUnit>()
 
 open class Operation: RecipeUnit()
 class Toast: Operation()

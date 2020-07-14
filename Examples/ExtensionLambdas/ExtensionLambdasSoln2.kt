@@ -20,32 +20,30 @@ fun Sandwich.sandwich3(
   return this
 }
 
-val plainPBJ = sandwich2 {
+val PBJ1 = sandwich2 {
   add(PeanutButter())
   add(GrapeJelly())
 }
 
-val toastedPBJ = sandwich2({ toast() }) {
+val PBJ2 = sandwich2({ toast() }) {
   add(PeanutButter())
   add(GrapeJelly())
 }
 
-val toastedPBJ2 = Sandwich().toast().sandwich3 {
+val PBJ3 = Sandwich().toast().sandwich3 {
   add(PeanutButter())
   add(GrapeJelly())
 }
 
-val grilledPBJ = Sandwich().toast().sandwich3 {
+val PBJ4 = Sandwich().toast().sandwich3 {
   add(PeanutButter())
   add(GrapeJelly())
 }.grill()
 
 fun main() {
-  plainPBJ eq "[PeanutButter, GrapeJelly]"
-  toastedPBJ eq
-    "[Toast, PeanutButter, GrapeJelly]"
-  toastedPBJ2 eq
-    "[Toast, PeanutButter, GrapeJelly]"
-  grilledPBJ eq
+  PBJ1 eq "[PeanutButter, GrapeJelly]"
+  PBJ2 eq "[Toast, PeanutButter, GrapeJelly]"
+  PBJ3 eq "[Toast, PeanutButter, GrapeJelly]"
+  PBJ4 eq
     "[Toast, PeanutButter, GrapeJelly, Grill]"
 }
