@@ -7,12 +7,13 @@ val one: Int.(Int) -> Boolean = {
 }
 
 val two: Int.(Int, Int) -> Boolean = {
-  arg1, arg2 -> this % (arg1 + arg2) == 0
+  arg1, arg2 ->
+    this % (arg1 + arg2) == 0
 }
 
 val three: Int.(Int, Int, Int) -> Boolean = {
   arg1, arg2, arg3 ->
-  this % (arg1 + arg2 + arg3) == 0
+    this % (arg1 + arg2 + arg3) == 0
 }
 
 fun main() {

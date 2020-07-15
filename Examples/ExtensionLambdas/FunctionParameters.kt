@@ -16,8 +16,6 @@ fun f2(lambda: A.(B) -> Int) =
   A().lambda(B())
 
 fun lambdas() {
-  f1 { aa, bb ->
-    aa.af() + bb.bf()
-  }
+  f1 { aa, bb -> aa.af() + bb.bf() }
   f2 { af() + it.bf() }
 }

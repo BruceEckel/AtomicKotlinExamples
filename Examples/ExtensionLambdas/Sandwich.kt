@@ -12,9 +12,10 @@ open class RecipeUnit {
 open class Operation: RecipeUnit()
 class Toast: Operation()
 class Grill: Operation()
+class Cut: Operation()
 
 open class Ingredient: RecipeUnit()
-open class Bread: Ingredient()
+class Bread: Ingredient()
 class PeanutButter: Ingredient()
 class GrapeJelly: Ingredient()
 class Ham: Ingredient()
@@ -28,6 +29,7 @@ open class Sandwich: Recipe() {
   }
   fun grill() = action(Grill())
   fun toast() = action(Toast())
+  fun cut() = action(Cut())
 }
 
 fun sandwich(
@@ -37,6 +39,7 @@ fun sandwich(
   sandwich.add(Bread())
   sandwich.toast()
   sandwich.fillings()
+  sandwich.cut()
   return sandwich
 }
 
@@ -51,8 +54,8 @@ fun main() {
     add(Mustard())
     grill()
   }
-  pbj eq "[Bread, Toast, " +
-    "PeanutButter, GrapeJelly]"
-  hamAndSwiss eq "[Bread, Toast, " +
-    "Ham, Swiss, Mustard, Grill]"
+  pbj eq "[Bread, Toast, PeanutButter, " +
+    "GrapeJelly, Cut]"
+  hamAndSwiss eq "[Bread, Toast, Ham, " +
+    "Swiss, Mustard, Grill, Cut]"
 }
