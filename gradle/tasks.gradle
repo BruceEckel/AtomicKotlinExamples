@@ -195,7 +195,7 @@ task BasicFunctions(type: JavaExec) {
 
 task BasicGenerics(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'moregenerics.BasicGenericsKt'
+    main = 'creatinggenerics.BasicGenericsKt'
 }
 
 task BasicLambda(type: JavaExec) {
@@ -320,7 +320,7 @@ task Car(type: JavaExec) {
 
 task CarHolder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'moregenerics.CarHolderKt'
+    main = 'creatinggenerics.CarHolderKt'
 }
 
 task CarService(type: JavaExec) {
@@ -406,6 +406,16 @@ task Closures(type: JavaExec) {
 task Closures2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'Closures2Kt'
+}
+
+task CoachesAndClowns(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'reification.CoachesAndClownsKt'
+}
+
+task College(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'reification.CollegeKt'
 }
 
 task Color2(type: JavaExec) {
@@ -985,17 +995,17 @@ task GenericListExtensions(type: JavaExec) {
 
 task GenericReturnType(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'moregenerics.GenericReturnTypeKt'
+    main = 'reification.GenericReturnTypeKt'
 }
 
 task GenericSafeCast(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'moregenerics.GenericSafeCastKt'
+    main = 'reification.GenericSafeCastKt'
 }
 
 task GenericSpeakers(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'moregenerics.GenericSpeakersKt'
+    main = 'reification.GenericSpeakersKt'
 }
 
 task GermanOrdinals(type: JavaExec) {
@@ -1005,7 +1015,7 @@ task GermanOrdinals(type: JavaExec) {
 
 task GetAShape(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'moregenerics.GetAShapeKt'
+    main = 'creatinggenerics.GetAShapeKt'
 }
 
 task GetOrPut(type: JavaExec) {
@@ -1110,7 +1120,7 @@ task Hierarchy(type: JavaExec) {
 
 task Holder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'moregenerics.HolderKt'
+    main = 'creatinggenerics.HolderKt'
 }
 
 task Hotel(type: JavaExec) {
@@ -1301,6 +1311,11 @@ task IntroducingCapture(type: JavaExec) {
 task IntroducingNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IntroducingNullKt'
+}
+
+task Invariance(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'variance.InvarianceKt'
 }
 
 task Invoke(type: JavaExec) {
@@ -1970,7 +1985,7 @@ task Partition(type: JavaExec) {
 
 task Perform(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'moregenerics.PerformKt'
+    main = 'reification.PerformKt'
 }
 
 task Pet(type: JavaExec) {
@@ -2268,6 +2283,11 @@ task Share2(type: JavaExec) {
     main = 'objectshare2.Share2Kt'
 }
 
+task Signature(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'reification.SignatureKt'
+}
+
 task SimilarOperation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'buildmaps.SimilarOperationKt'
@@ -2305,7 +2325,7 @@ task SortWith(type: JavaExec) {
 
 task Speakers(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'moregenerics.SpeakersKt'
+    main = 'creatinggenerics.SpeakersKt'
 }
 
 task SpreadOperator(type: JavaExec) {
@@ -2909,6 +2929,8 @@ task run (dependsOn: [
     'Closed',
     'Closures',
     'Closures2',
+    'CoachesAndClowns',
+    'College',
     'Color2',
     'Color3',
     'ColorBlend',
@@ -3088,6 +3110,7 @@ task run (dependsOn: [
     'InterfaceCollision',
     'IntroducingCapture',
     'IntroducingNull',
+    'Invariance',
     'Invoke',
     'IsInitialized',
     'IsKeyword',
@@ -3281,6 +3304,7 @@ task run (dependsOn: [
     'SealedVsAbstract',
     'Sets',
     'Share2',
+    'Signature',
     'SimilarOperation',
     'Simple',
     'SimpleConstructor',

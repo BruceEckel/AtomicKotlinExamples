@@ -1,5 +1,5 @@
-// MoreGenerics/CarHolder.kt
-package moregenerics
+// CreatingGenerics/CarHolder.kt
+package creatinggenerics
 import atomictest.eq
 
 data class Car(val name: String = "Car")

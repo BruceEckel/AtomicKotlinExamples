@@ -338,6 +338,31 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testBasicGenerics() {
+    testExample("Examples/CreatingGenerics/BasicGenerics.kt", creatinggenerics.BasicGenericsKt::main);
+  }
+
+  @Test
+  public void testCarHolder() {
+    testExample("Examples/CreatingGenerics/CarHolder.kt", creatinggenerics.CarHolderKt::main);
+  }
+
+  @Test
+  public void testGetAShape() {
+    testExample("Examples/CreatingGenerics/GetAShape.kt", creatinggenerics.GetAShapeKt::main);
+  }
+
+  @Test
+  public void testHolder() {
+    testExample("Examples/CreatingGenerics/Holder.kt", creatinggenerics.HolderKt::main);
+  }
+
+  @Test
+  public void testSpeakers() {
+    testExample("Examples/CreatingGenerics/Speakers.kt", creatinggenerics.SpeakersKt::main);
+  }
+
+  @Test
   public void testCopyDataClass() {
     testExample("Examples/DataClasses/CopyDataClass.kt", CopyDataClassKt::main);
   }
@@ -1468,51 +1493,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBasicGenerics() {
-    testExample("Examples/MoreGenerics/BasicGenerics.kt", moregenerics.BasicGenericsKt::main);
-  }
-
-  @Test
-  public void testCarHolder() {
-    testExample("Examples/MoreGenerics/CarHolder.kt", moregenerics.CarHolderKt::main);
-  }
-
-  @Test
-  public void testGenericReturnType() {
-    testExample("Examples/MoreGenerics/GenericReturnType.kt", moregenerics.GenericReturnTypeKt::main);
-  }
-
-  @Test
-  public void testGenericSafeCast() {
-    testExample("Examples/MoreGenerics/GenericSafeCast.kt", moregenerics.GenericSafeCastKt::main);
-  }
-
-  @Test
-  public void testGenericSpeakers() {
-    testExample("Examples/MoreGenerics/GenericSpeakers.kt", moregenerics.GenericSpeakersKt::main);
-  }
-
-  @Test
-  public void testGetAShape() {
-    testExample("Examples/MoreGenerics/GetAShape.kt", moregenerics.GetAShapeKt::main);
-  }
-
-  @Test
-  public void testHolder() {
-    testExample("Examples/MoreGenerics/Holder.kt", moregenerics.HolderKt::main);
-  }
-
-  @Test
-  public void testPerform() {
-    testExample("Examples/MoreGenerics/Perform.kt", moregenerics.PerformKt::main);
-  }
-
-  @Test
-  public void testSpeakers() {
-    testExample("Examples/MoreGenerics/Speakers.kt", moregenerics.SpeakersKt::main);
-  }
-
-  @Test
   public void testArgumentOrder() {
     testExample("Examples/NamedAndDefaultArgs/ArgumentOrder.kt", color1.ArgumentOrderKt::main);
   }
@@ -2105,6 +2085,41 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testVerySlowFibonacci() {
     testExample("Examples/Recursion/VerySlowFibonacci.kt", slowfibonacci.VerySlowFibonacciKt::main);
+  }
+
+  @Test
+  public void testCoachesAndClowns() {
+    testExample("Examples/Reification/CoachesAndClowns.kt", reification.CoachesAndClownsKt::main);
+  }
+
+  @Test
+  public void testCollege() {
+    testExample("Examples/Reification/College.kt", reification.CollegeKt::main);
+  }
+
+  @Test
+  public void testGenericReturnType() {
+    testExample("Examples/Reification/GenericReturnType.kt", reification.GenericReturnTypeKt::main);
+  }
+
+  @Test
+  public void testGenericSafeCast() {
+    testExample("Examples/Reification/GenericSafeCast.kt", reification.GenericSafeCastKt::main);
+  }
+
+  @Test
+  public void testGenericSpeakers() {
+    testExample("Examples/Reification/GenericSpeakers.kt", reification.GenericSpeakersKt::main);
+  }
+
+  @Test
+  public void testPerform() {
+    testExample("Examples/Reification/Perform.kt", reification.PerformKt::main);
+  }
+
+  @Test
+  public void testSignature() {
+    testExample("Examples/Reification/Signature.kt", reification.SignatureKt::main);
   }
 
   @Test
@@ -2745,6 +2760,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testVariableArgList() {
     testExample("Examples/Varargs/VariableArgList.kt", VariableArgListKt::main);
+  }
+
+  @Test
+  public void testInvariance() {
+    testExample("Examples/Variance/Invariance.kt", variance.InvarianceKt::main);
   }
 
   @Test

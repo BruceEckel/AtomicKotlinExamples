@@ -1,5 +1,5 @@
-// MoreGenerics/GenericReturnType.kt
-package moregenerics
+// Reification/GenericReturnType.kt
+package reification
 import atomictest.*
 
 inline fun <reified T> f(i: Int): T =

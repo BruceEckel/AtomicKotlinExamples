@@ -1,5 +1,5 @@
-// MoreGenerics/GenericSafeCast.kt
-package moregenerics
+// Reification/GenericSafeCast.kt
+package reification
 import kotlin.reflect.KClass
 import atomictest.eq
 

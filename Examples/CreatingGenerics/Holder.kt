@@ -1,5 +1,5 @@
-// MoreGenerics/Holder.kt
-package moregenerics
+// CreatingGenerics/Holder.kt
+package creatinggenerics
 import atomictest.eq
 
 class Holder<T>(val a: T) {

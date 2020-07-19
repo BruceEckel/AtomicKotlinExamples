@@ -1,5 +1,6 @@
-// MoreGenerics/Perform.kt
-package moregenerics
+// Reification/Perform.kt
+package reification
+import creatinggenerics.*
 import atomictest.eq
 
 fun <T> T.perform(
