@@ -383,6 +383,11 @@ task CheckObject2(type: JavaExec) {
     main = 'nothingtype.CheckObject2Kt'
 }
 
+task CheckType(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenerics.CheckTypeKt'
+}
+
 task CheckingOptions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CheckingOptionsKt'
@@ -406,16 +411,6 @@ task Closures(type: JavaExec) {
 task Closures2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'Closures2Kt'
-}
-
-task CoachesAndClowns(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'reification.CoachesAndClownsKt'
-}
-
-task College(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'reification.CollegeKt'
 }
 
 task Color2(type: JavaExec) {
@@ -993,21 +988,6 @@ task GenericListExtensions(type: JavaExec) {
     main = 'introgenerics.GenericListExtensionsKt'
 }
 
-task GenericReturnType(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'reification.GenericReturnTypeKt'
-}
-
-task GenericSafeCast(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'reification.GenericSafeCastKt'
-}
-
-task GenericSpeakers(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'reification.GenericSpeakersKt'
-}
-
 task GermanOrdinals(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GermanOrdinalsKt'
@@ -1311,11 +1291,6 @@ task IntroducingCapture(type: JavaExec) {
 task IntroducingNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IntroducingNullKt'
-}
-
-task Invariance(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'variance.InvarianceKt'
 }
 
 task Invoke(type: JavaExec) {
@@ -1983,11 +1958,6 @@ task Partition(type: JavaExec) {
     main = 'PartitionKt'
 }
 
-task Perform(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'reification.PerformKt'
-}
-
 task Pet(type: JavaExec) {
     classpath kotlinClassPath
     main = 'polymorphism.PetKt'
@@ -2281,11 +2251,6 @@ task Sets(type: JavaExec) {
 task Share2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'objectshare2.Share2Kt'
-}
-
-task Signature(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'reification.SignatureKt'
 }
 
 task SimilarOperation(type: JavaExec) {
@@ -2924,13 +2889,12 @@ task run (dependsOn: [
     'CheckInstructionsSoln4',
     'CheckObject',
     'CheckObject2',
+    'CheckType',
     'CheckingOptions',
     'ClassBodies',
     'Closed',
     'Closures',
     'Closures2',
-    'CoachesAndClowns',
-    'College',
     'Color2',
     'Color3',
     'ColorBlend',
@@ -3046,9 +3010,6 @@ task run (dependsOn: [
     'GenericHolder',
     'GenericListExt',
     'GenericListExtensions',
-    'GenericReturnType',
-    'GenericSafeCast',
-    'GenericSpeakers',
     'GermanOrdinals',
     'GetAShape',
     'GetOrPut',
@@ -3110,7 +3071,6 @@ task run (dependsOn: [
     'InterfaceCollision',
     'IntroducingCapture',
     'IntroducingNull',
-    'Invariance',
     'Invoke',
     'IsInitialized',
     'IsKeyword',
@@ -3244,7 +3204,6 @@ task run (dependsOn: [
     'ParameterizedTypes',
     'Parameters',
     'Partition',
-    'Perform',
     'Pet',
     'PlatformTypes',
     'PlayerInterface',
@@ -3304,7 +3263,6 @@ task run (dependsOn: [
     'SealedVsAbstract',
     'Sets',
     'Share2',
-    'Signature',
     'SimilarOperation',
     'Simple',
     'SimpleConstructor',

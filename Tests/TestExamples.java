@@ -348,6 +348,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCheckType() {
+    testExample("Examples/CreatingGenerics/CheckType.kt", creatinggenerics.CheckTypeKt::main);
+  }
+
+  @Test
   public void testGetAShape() {
     testExample("Examples/CreatingGenerics/GetAShape.kt", creatinggenerics.GetAShapeKt::main);
   }
@@ -2088,41 +2093,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCoachesAndClowns() {
-    testExample("Examples/Reification/CoachesAndClowns.kt", reification.CoachesAndClownsKt::main);
-  }
-
-  @Test
-  public void testCollege() {
-    testExample("Examples/Reification/College.kt", reification.CollegeKt::main);
-  }
-
-  @Test
-  public void testGenericReturnType() {
-    testExample("Examples/Reification/GenericReturnType.kt", reification.GenericReturnTypeKt::main);
-  }
-
-  @Test
-  public void testGenericSafeCast() {
-    testExample("Examples/Reification/GenericSafeCast.kt", reification.GenericSafeCastKt::main);
-  }
-
-  @Test
-  public void testGenericSpeakers() {
-    testExample("Examples/Reification/GenericSpeakers.kt", reification.GenericSpeakersKt::main);
-  }
-
-  @Test
-  public void testPerform() {
-    testExample("Examples/Reification/Perform.kt", reification.PerformKt::main);
-  }
-
-  @Test
-  public void testSignature() {
-    testExample("Examples/Reification/Signature.kt", reification.SignatureKt::main);
-  }
-
-  @Test
   public void testAssignmentOperators() {
     testExample("Examples/RepetitionWithWhile/AssignmentOperators.kt", AssignmentOperatorsKt::main);
   }
@@ -2760,11 +2730,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testVariableArgList() {
     testExample("Examples/Varargs/VariableArgList.kt", VariableArgListKt::main);
-  }
-
-  @Test
-  public void testInvariance() {
-    testExample("Examples/Variance/Invariance.kt", variance.InvarianceKt::main);
   }
 
   @Test
