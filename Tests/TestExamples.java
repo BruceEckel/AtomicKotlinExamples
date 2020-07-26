@@ -368,6 +368,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testVariance() {
+    testExample("Examples/CreatingGenerics/Variance.kt", creatinggenerics.VarianceKt::main);
+  }
+
+  @Test
   public void testCopyDataClass() {
     testExample("Examples/DataClasses/CopyDataClass.kt", CopyDataClassKt::main);
   }

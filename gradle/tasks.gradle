@@ -2723,6 +2723,11 @@ task VariableArgList(type: JavaExec) {
     main = 'VariableArgListKt'
 }
 
+task Variance(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenerics.VarianceKt'
+}
+
 task Vars(type: JavaExec) {
     classpath kotlinClassPath
     main = 'VarsKt'
@@ -3357,6 +3362,7 @@ task run (dependsOn: [
     'VarargLikeList',
     'VarargSum',
     'VariableArgList',
+    'Variance',
     'Vars',
     'VerySlowFibonacci',
     'VisibleArgs',
