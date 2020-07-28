@@ -338,13 +338,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBasicGenerics() {
-    testExample("Examples/CreatingGenerics/BasicGenerics.kt", creatinggenerics.BasicGenericsKt::main);
-  }
-
-  @Test
-  public void testCarHolder() {
-    testExample("Examples/CreatingGenerics/CarHolder.kt", creatinggenerics.CarHolderKt::main);
+  public void testCarCrate() {
+    testExample("Examples/CreatingGenerics/CarCrate.kt", creatinggenerics.CarCrateKt::main);
   }
 
   @Test
@@ -353,23 +348,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCrate() {
+    testExample("Examples/CreatingGenerics/Crate.kt", creatinggenerics.CrateKt::main);
+  }
+
+  @Test
   public void testGetAShape() {
     testExample("Examples/CreatingGenerics/GetAShape.kt", creatinggenerics.GetAShapeKt::main);
   }
 
   @Test
-  public void testHolder() {
-    testExample("Examples/CreatingGenerics/Holder.kt", creatinggenerics.HolderKt::main);
-  }
-
-  @Test
   public void testSpeakers() {
     testExample("Examples/CreatingGenerics/Speakers.kt", creatinggenerics.SpeakersKt::main);
-  }
-
-  @Test
-  public void testVariance() {
-    testExample("Examples/CreatingGenerics/Variance.kt", creatinggenerics.VarianceKt::main);
   }
 
   @Test

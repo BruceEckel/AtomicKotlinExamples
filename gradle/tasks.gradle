@@ -193,11 +193,6 @@ task BasicFunctions(type: JavaExec) {
     main = 'BasicFunctionsKt'
 }
 
-task BasicGenerics(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'creatinggenerics.BasicGenericsKt'
-}
-
 task BasicLambda(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BasicLambdaKt'
@@ -318,9 +313,9 @@ task Car(type: JavaExec) {
     main = 'composition.CarKt'
 }
 
-task CarHolder(type: JavaExec) {
+task CarCrate(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'creatinggenerics.CarHolderKt'
+    main = 'creatinggenerics.CarCrateKt'
 }
 
 task CarService(type: JavaExec) {
@@ -521,6 +516,11 @@ task Counter(type: JavaExec) {
 task CounterFactory(type: JavaExec) {
     classpath kotlinClassPath
     main = 'innerclasses.CounterFactoryKt'
+}
+
+task Crate(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenerics.CrateKt'
 }
 
 task CreateString(type: JavaExec) {
@@ -1096,11 +1096,6 @@ task HiddenArrayList(type: JavaExec) {
 task Hierarchy(type: JavaExec) {
     classpath kotlinClassPath
     main = 'exceptionhandling.HierarchyKt'
-}
-
-task Holder(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'creatinggenerics.HolderKt'
 }
 
 task Hotel(type: JavaExec) {
@@ -2723,11 +2718,6 @@ task VariableArgList(type: JavaExec) {
     main = 'VariableArgListKt'
 }
 
-task Variance(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'creatinggenerics.VarianceKt'
-}
-
 task Vars(type: JavaExec) {
     classpath kotlinClassPath
     main = 'VarsKt'
@@ -2856,7 +2846,6 @@ task run (dependsOn: [
     'BMIMetric',
     'Backticks',
     'BasicFunctions',
-    'BasicGenerics',
     'BasicLambda',
     'BasicLogging',
     'BasicRead',
@@ -2881,7 +2870,7 @@ task run (dependsOn: [
     'CallTopLevelFunction2',
     'CaptureImplementation',
     'Car',
-    'CarHolder',
+    'CarCrate',
     'CarService',
     'Cat',
     'CatchChecked',
@@ -2922,6 +2911,7 @@ task run (dependsOn: [
     'CopyDataClass',
     'Counter',
     'CounterFactory',
+    'Crate',
     'CreateString',
     'CreateString2',
     'CreatingLists',
@@ -3037,7 +3027,6 @@ task run (dependsOn: [
     'HelloWorld',
     'HiddenArrayList',
     'Hierarchy',
-    'Holder',
     'Hotel',
     'House',
     'If1',
@@ -3362,7 +3351,6 @@ task run (dependsOn: [
     'VarargLikeList',
     'VarargSum',
     'VariableArgList',
-    'Variance',
     'Vars',
     'VerySlowFibonacci',
     'VisibleArgs',

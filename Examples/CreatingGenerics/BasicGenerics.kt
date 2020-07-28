@@ -1,35 +1,44 @@
 // CreatingGenerics/BasicGenerics.kt
 package creatinggenerics
-import atomictest.eq
 
-fun <T> gFunc(arg: T): T = arg
+fun <T> genericFunction(arg: T): T = arg
 
-class GClass<T>(val x: T) {
+class GenericClass<T>(val x: T) {
   fun f(): T = x
 }
 
-class MFunc {
+class GenericMemberFunction {
   fun <T> f(arg: T): T = arg
 }
 
-interface GInterface<T> {
+interface GenericInterface<T> {
   val x: T
   fun f(): T
 }
 
-fun main() {
-  gFunc("Yellow") eq "Yellow"
-  gFunc(1) eq 1
-  gFunc(Dog()).bark() eq "Ruff!"       // [1]
-  gFunc<Dog>(Dog()).bark() eq "Ruff!"
+class GenericImplementation<T>(
+  override val x: T
+) : GenericInterface<T> {
+  override fun f(): T = x
+}
 
-  GClass("Cyan").f() eq "Cyan"
-  GClass(11).f() eq 11
-  GClass(Dog()).f().bark() eq "Ruff!"  // [2]
-  GClass<Dog>(Dog()).f().bark() eq "Ruff!"
+fun basicGenerics() {
+  genericFunction("Yellow")
+  genericFunction(1)
+  genericFunction(Dog()).bark()   // [1]
+  genericFunction<Dog>(Dog()).bark()
 
-  MFunc().f("Amber") eq "Amber"
-  MFunc().f(111) eq 111
-  MFunc().f(Dog()).bark() eq "Ruff!"   // [3]
-  MFunc().f<Dog>(Dog()).bark() eq "Ruff!"
+  GenericClass("Cyan").f()
+  GenericClass(11).f()
+  GenericClass(Dog()).f().bark()  // [2]
+  GenericClass<Dog>(Dog()).f().bark()
+
+  GenericMemberFunction().f("Amber")
+  GenericMemberFunction().f(111)
+  GenericMemberFunction().f(Dog()).bark() // [3]
+  GenericMemberFunction().f<Dog>(Dog()).bark()
+
+  GenericImplementation("Cyan").f()
+  GenericImplementation(11).f()
+  GenericImplementation(Dog()).f().bark()
 }
