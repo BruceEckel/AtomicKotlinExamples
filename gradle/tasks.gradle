@@ -163,16 +163,6 @@ task AverageIncomeWithNull(type: JavaExec) {
     main = 'withnull.AverageIncomeWithNullKt'
 }
 
-task BCIExercise1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseClassInitializationExercise1.BCIExercise1Kt'
-}
-
-task BCIExercise2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'baseClassInitializationExercise2.BCIExercise2Kt'
-}
-
 task BMIEnglish(type: JavaExec) {
     classpath kotlinClassPath
     main = 'BMIEnglishKt'
@@ -1075,7 +1065,7 @@ task HasChar(type: JavaExec) {
 
 task HashCode(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'HashCodeKt'
+    main = 'dataclasses.HashCodeKt'
 }
 
 task Hello(type: JavaExec) {
@@ -1211,11 +1201,6 @@ task Inference(type: JavaExec) {
 task InfiniteRecursion(type: JavaExec) {
     classpath kotlinClassPath
     main = 'recursion.InfiniteRecursionKt'
-}
-
-task InhExtensionsEx2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'inheritanceAndExtensionsExercise2.InhExtensionsEx2Kt'
 }
 
 task InheritAdd(type: JavaExec) {
@@ -1971,11 +1956,6 @@ task PlayerInterface(type: JavaExec) {
 task PlayingCards(type: JavaExec) {
     classpath kotlinClassPath
     main = 'manipulatinglists.PlayingCardsKt'
-}
-
-task PolyExercise3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'polymorphismExercise3.PolyExercise3Kt'
 }
 
 task Postconditions(type: JavaExec) {
@@ -2840,8 +2820,6 @@ task run (dependsOn: [
     'AverageIncome',
     'AverageIncomeWithException',
     'AverageIncomeWithNull',
-    'BCIExercise1',
-    'BCIExercise2',
     'BMIEnglish',
     'BMIMetric',
     'Backticks',
@@ -3050,7 +3028,6 @@ task run (dependsOn: [
     'InferInt',
     'Inference',
     'InfiniteRecursion',
-    'InhExtensionsEx2',
     'InheritAdd',
     'InitSection',
     'Initialization',
@@ -3202,7 +3179,6 @@ task run (dependsOn: [
     'PlatformTypes',
     'PlayerInterface',
     'PlayingCards',
-    'PolyExercise3',
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',

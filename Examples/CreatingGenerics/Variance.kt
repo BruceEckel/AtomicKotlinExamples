@@ -17,10 +17,10 @@ fun normal() {
 
   val c1: Crate<Can> = Crate(Can())
   fc<Can>(Crate(Can()))
-  c1.add(Grape())
+  c1.put(Grape())
   var can: Can = c1.get()
   val c2: InCrate<Can> = InCrate(Can())
-  c2.add(Grape())
+  c2.put(Grape())
   val c3: OutCrate<Can> = OutCrate(Can())
   can = c3.get()
 }

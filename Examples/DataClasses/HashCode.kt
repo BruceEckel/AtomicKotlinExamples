@@ -1,4 +1,5 @@
 // DataClasses/HashCode.kt
+package dataclasses
 import atomictest.eq
 
 data class Key(val name: String, val id: Int)
