@@ -2,9 +2,9 @@
 package creatinggenerics
 import atomictest.eq
 
-class Crate<T>(private var item: T) {
-  fun put(new: T) { item = new }
-  fun get(): T = item
+class Crate<T>(private var contents: T) {
+  fun put(item: T) { contents = item }
+  fun get(): T = contents
 }
 
 fun main() {
