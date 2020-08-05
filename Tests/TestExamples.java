@@ -343,6 +343,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCreatingGenericsSoln1() {
+    testExample("Examples/CreatingGenerics/CreatingGenericsSoln1.kt", creatinggenericssoln1.CreatingGenericsSoln1Kt::main);
+  }
+
+  @Test
+  public void testCreatingGenericsSoln2() {
+    testExample("Examples/CreatingGenerics/CreatingGenericsSoln2.kt", creatinggenericssoln2.CreatingGenericsSoln2Kt::main);
+  }
+
+  @Test
+  public void testCreatingGenericsSoln3() {
+    testExample("Examples/CreatingGenerics/CreatingGenericsSoln3.kt", creatinggenericssoln3.CreatingGenericsSoln3Kt::main);
+  }
+
+  @Test
   public void testGetAShape() {
     testExample("Examples/CreatingGenerics/GetAShape.kt", creatinggenerics.GetAShapeKt::main);
   }

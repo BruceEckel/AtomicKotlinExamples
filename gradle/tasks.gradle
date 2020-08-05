@@ -523,6 +523,21 @@ task CreateString2(type: JavaExec) {
     main = 'CreateString2Kt'
 }
 
+task CreatingGenericsSoln1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenericssoln1.CreatingGenericsSoln1Kt'
+}
+
+task CreatingGenericsSoln2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenericssoln2.CreatingGenericsSoln2Kt'
+}
+
+task CreatingGenericsSoln3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenericssoln3.CreatingGenericsSoln3Kt'
+}
+
 task CreatingLists(type: JavaExec) {
     classpath kotlinClassPath
     main = 'CreatingListsKt'
@@ -2892,6 +2907,9 @@ task run (dependsOn: [
     'Crate',
     'CreateString',
     'CreateString2',
+    'CreatingGenericsSoln1',
+    'CreatingGenericsSoln2',
+    'CreatingGenericsSoln3',
     'CreatingLists',
     'Creature',
     'Cup',
