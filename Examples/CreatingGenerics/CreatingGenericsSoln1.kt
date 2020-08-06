@@ -1,47 +1,27 @@
 // CreatingGenerics/CreatingGenericsSoln1.kt
 package creatinggenericssoln1
-import atomictest.*
+import atomictest.eq
 
-interface Counter {
-  fun next(): Int
+interface Items<T> {
+  fun next(): T?
 }
 
-class CounterFactory {
-  private var count = 0
-  fun new(name: String): Counter {
-    // Local inner class:
-    class Local: Counter {
-      init { trace("Local()") }
-      override fun next(): Int {
-        // Access local identifiers:
-        trace("$name $count")
-        return count++
-      }
-    }
-    return Local()
-  }
-  fun new2(name: String): Counter {
-    // Instance of an anonymous inner class:
-    return object: Counter {
-      init { trace("Counter()") }
-      override fun next(): Int {
-        // Access local identifiers:
-        trace("$name $count")
-        return count++
-      }
+class ItemsFactory<T> {
+  private var index = 0
+  fun new(vararg items: T): Items<T> {
+    return object : Items<T> {
+      override fun next(): T? =
+        if (index >= items.size) null
+        else items[index++]
     }
   }
 }
 
 fun main() {
-  fun test(counter: Counter) {
-    (0..3).forEach { counter.next() }
-  }
-  val cf = CounterFactory()
-  test(cf.new("Local"))
-  test(cf.new2("Anon"))
-  trace eq """
-    Local() Local 0 Local 1 Local 2 Local 3
-    Counter() Anon 4 Anon 5 Anon 6 Anon 7
-  """
+  val s =
+    ItemsFactory<String>().new("A", "B", "C")
+  (0..3).map { s.next() } eq "[A, B, C, null]"
+  val i = ItemsFactory<Int>().new(1, 2, 3)
+  (0..3).map { i.next() }
+    .filterNotNull() eq "[1, 2, 3]"
 }
