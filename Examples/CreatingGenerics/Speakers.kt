@@ -4,23 +4,20 @@ import atomictest.eq
 
 class Person {
   fun speak() = "Hi!"
-  fun sit() = true
 }
 
 class Dog {
   fun bark() = "Ruff!"
-  fun lieDown() = true
 }
 
 class Robot {
-  fun connect() = "Beep!"
-  fun charge() = true
+  fun communicate() = "Beep!"
 }
 
 fun talk(speaker: Any) = when (speaker) {
   is Person -> speaker.speak()
   is Dog -> speaker.bark()
-  is Robot -> speaker.connect()
+  is Robot -> speaker.communicate()
   else -> "Not a talker" // Or exception
 }
 

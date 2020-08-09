@@ -468,6 +468,11 @@ task Confusing(type: JavaExec) {
     main = 'ConfusingKt'
 }
 
+task Constrained(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenerics.ConstrainedKt'
+}
+
 task ConstructorReference(type: JavaExec) {
     classpath kotlinClassPath
     main = 'memberreferences3.ConstructorReferenceKt'
@@ -996,11 +1001,6 @@ task GenericListExtensions(type: JavaExec) {
 task GermanOrdinals(type: JavaExec) {
     classpath kotlinClassPath
     main = 'GermanOrdinalsKt'
-}
-
-task GetAShape(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'creatinggenerics.GetAShapeKt'
 }
 
 task GetOrPut(type: JavaExec) {
@@ -1533,6 +1533,11 @@ task MakeSalad(type: JavaExec) {
     main = 'Interoperability.MakeSalad'
 }
 
+task MapCrate(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenerics.MapCrateKt'
+}
+
 task MapLookup(type: JavaExec) {
     classpath kotlinClassPath
     main = 'scopefunctions.MapLookupKt'
@@ -1711,6 +1716,11 @@ task NoExtOverride(type: JavaExec) {
 task NoFramework(type: JavaExec) {
     classpath kotlinClassPath
     main = 'unittesting.NoFrameworkKt'
+}
+
+task NonGenericConstraint(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenerics.NonGenericConstraintKt'
 }
 
 task NonNullAssert(type: JavaExec) {
@@ -2896,6 +2906,7 @@ task run (dependsOn: [
     'Computer',
     'Configuration',
     'Confusing',
+    'Constrained',
     'ConstructorReference',
     'ContactMap',
     'Convention',
@@ -3002,7 +3013,6 @@ task run (dependsOn: [
     'GenericListExt',
     'GenericListExtensions',
     'GermanOrdinals',
-    'GetAShape',
     'GetOrPut',
     'GetTrace',
     'GetValue',
@@ -3109,6 +3119,7 @@ task run (dependsOn: [
     'MainArgConversion',
     'MainArgs',
     'MakeSalad',
+    'MapCrate',
     'MapLookup',
     'Mapping',
     'Maps',
@@ -3145,6 +3156,7 @@ task run (dependsOn: [
     'NoComputationYet',
     'NoExtOverride',
     'NoFramework',
+    'NonGenericConstraint',
     'NonNullAssert',
     'NonNullAssertCall',
     'NothingTypeSoln1',

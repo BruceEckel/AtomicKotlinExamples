@@ -2,7 +2,9 @@
 package creatinggenerics
 import atomictest.eq
 
-data class Car(val name: String = "Car")
+class Car {
+  override fun toString() = "Car"
+}
 
 class CarCrate(private var c: Car) {
   fun put(car: Car) { c = car }
@@ -12,5 +14,5 @@ class CarCrate(private var c: Car) {
 fun main() {
   val cc = CarCrate(Car())
   val car: Car = cc.get()
-  car eq "Car(name=Car)"
+  car eq "Car"
 }

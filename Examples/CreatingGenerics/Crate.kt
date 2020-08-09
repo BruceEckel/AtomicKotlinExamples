@@ -10,5 +10,6 @@ open class Crate<T>(private var contents: T) {
 fun main() {
   val cc = Crate(Car())
   val car: Car = cc.get()
-  car eq "Car(name=Car)"
+  car eq "Car"
+  cc.map { it.toString() + "x" } eq "[Carx]"
 }
