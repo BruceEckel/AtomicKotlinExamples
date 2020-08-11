@@ -11,5 +11,4 @@ fun main() {
   val cc = Crate(Car())
   val car: Car = cc.get()
   car eq "Car"
-  cc.map { it.toString() + "x" } eq "[Carx]"
 }

@@ -4,28 +4,30 @@ import kotlin.random.Random
 
 private val rnd = Random(47)
 
-// Can't return exact type:
-fun List<Disposable>.aboth(): Disposable {
+// Accesses action() but can't return
+// the exact type:
+fun List<Disposable>.inexact(): Disposable {
   val d: Disposable = this[rnd.nextInt(size)]
   d.action()
   return d
 }
 
-fun <T> List<T>.uboth(): T {
+// Can't access action() without a constraint:
+fun <T> List<T>.noAccess(): T {
   val d: T = this[rnd.nextInt(size)]
-  // Can't access action() without constraint:
   // d.action()
   return d
 }
 
-fun <T: Disposable> List<T>.cboth(): T {
+// Access action() and return the exact type:
+fun <T: Disposable> List<T>.both(): T {
   val d: T = this[rnd.nextInt(size)]
   d.action()
   return d
 }
 
 fun constraints() {
-  val c: Recyclable = recyclables.cboth()
-  val u: Recyclable = recyclables.uboth()
-  val a: Disposable = recyclables.aboth()
+  val i: Disposable = recyclables.inexact()
+  val n: Recyclable = recyclables.noAccess()
+  val b: Recyclable = recyclables.both()
 }

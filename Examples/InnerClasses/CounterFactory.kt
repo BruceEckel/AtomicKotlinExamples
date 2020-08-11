@@ -2,7 +2,7 @@
 package innerclasses
 import atomictest.*
 
-interface Counter {
+fun interface Counter {
   fun next(): Int
 }
 
@@ -25,10 +25,16 @@ class CounterFactory {
     return object: Counter {
       init { trace("Counter()") }
       override fun next(): Int {
-        // Access local identifiers:
         trace("$name $count")
         return count++
       }
+    }
+  }
+  fun new3(name: String): Counter {
+    trace("Counter()")
+    return Counter { // SAM conversion
+      trace("$name $count")
+      count++
     }
   }
 }
@@ -40,8 +46,10 @@ fun main() {
   val cf = CounterFactory()
   test(cf.new("Local"))
   test(cf.new2("Anon"))
+  test(cf.new3("SAM"))
   trace eq """
     Local() Local 0 Local 1 Local 2 Local 3
     Counter() Anon 4 Anon 5 Anon 6 Anon 7
+    Counter() SAM 8 SAM 9 SAM 10 SAM 11
   """
 }

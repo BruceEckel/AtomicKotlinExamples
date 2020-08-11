@@ -4,13 +4,17 @@ import kotlin.random.Random
 
 private val rnd = Random(47)
 
-fun <T: Disposable> List<T>.crandom(): T =
+fun List<Disposable>.aRandom(): Disposable =
   this[rnd.nextInt(size)]
 
-fun <T> List<T>.urandom(): T =
+fun <T: Disposable> List<T>.bRandom(): T =
+  this[rnd.nextInt(size)]
+
+fun <T> List<T>.cRandom(): T =
   this[rnd.nextInt(size)]
 
 fun sameReturnType() {
-  val c: Recyclable = recyclables.crandom()
-  val u: Recyclable = recyclables.urandom()
+  val a: Disposable = recyclables.aRandom()
+  val b: Recyclable = recyclables.bRandom()
+  val c: Recyclable = recyclables.cRandom()
 }

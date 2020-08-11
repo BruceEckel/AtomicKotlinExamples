@@ -1,4 +1,4 @@
-// CreatingGenerics/BasicGenerics.kt
+// CreatingGenerics/DefiningGenerics.kt
 package creatinggenerics
 
 fun <T> gFunction(arg: T): T = arg

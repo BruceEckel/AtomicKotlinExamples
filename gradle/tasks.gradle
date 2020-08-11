@@ -1108,6 +1108,11 @@ task Hotel(type: JavaExec) {
     main = 'innerclasses.HotelKt'
 }
 
+task Hotness(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.HotnessKt'
+}
+
 task House(type: JavaExec) {
     classpath kotlinClassPath
     main = 'baseclassinit.HouseKt'
@@ -1186,6 +1191,11 @@ task ImportPythagorean(type: JavaExec) {
 task Improved(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ImprovedKt'
+}
+
+task InCrateAssignment(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenerics.InCrateAssignmentKt'
 }
 
 task InString(type: JavaExec) {
@@ -2183,6 +2193,11 @@ task RigidHolder(type: JavaExec) {
     main = 'introgenerics.RigidHolderKt'
 }
 
+task SAMImplementation(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.SAMImplementationKt'
+}
+
 task Safe(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.SafeKt'
@@ -3034,6 +3049,7 @@ task run (dependsOn: [
     'HiddenArrayList',
     'Hierarchy',
     'Hotel',
+    'Hotness',
     'House',
     'If1',
     'If2',
@@ -3050,6 +3066,7 @@ task run (dependsOn: [
     'ImportNameChange',
     'ImportPythagorean',
     'Improved',
+    'InCrateAssignment',
     'InString',
     'IncrementOperator',
     'IndexIntoString',
@@ -3249,6 +3266,7 @@ task run (dependsOn: [
     'ReturnLocal',
     'ReturningFunc',
     'RigidHolder',
+    'SAMImplementation',
     'Safe',
     'SafeCall',
     'SafeOperation',

@@ -2,16 +2,15 @@
 package creatinggenericssoln1
 import atomictest.eq
 
-interface Items<T> {
+fun interface Items<T> {
   fun next(): T?
 }
 
 fun <T> itemIter(vararg items: T): Items<T> {
-  return object : Items<T> {
-    private var index = 0
-    override fun next(): T? =
-      if (index >= items.size) null
-      else items[index++]
+  var index = 0
+  return Items {
+    if (index >= items.size) null
+    else items[index++]
   }
 }
 
