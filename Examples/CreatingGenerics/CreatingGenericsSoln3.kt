@@ -20,8 +20,8 @@ class Crate<T>(private var contents: T) :
 }
 
 fun main() {
-  val cg = Crate(Grape())
+  val cg: Crate<Grape> = Crate(Grape())
   val oc: OutCrate<Can> = cg
-  val cc = Crate(Can())
+  val cc: Crate<Can> = Crate(Can())
   val ic: InCrate<Grape> = cc
 }

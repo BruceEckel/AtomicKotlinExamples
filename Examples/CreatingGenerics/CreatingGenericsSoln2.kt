@@ -15,9 +15,13 @@ class CrateList<T> : ArrayList<Crate<T>>() {
 }
 
 fun main() {
-  val crateList = CrateList<String>()
+  val intCrates = CrateList<Int>()
+  (0..7).forEach { intCrates.add(it) }
+  intCrates eq
+    "[[0], [1], [2], [3], [4], [5], [6], [7]]"
+  val stringCrates = CrateList<String>()
   ('a'..'h').map { it.toString() }
-    .forEach { crateList.add(it) }
-  crateList eq
+    .forEach { stringCrates.add(it) }
+  stringCrates eq
     "[[a], [b], [c], [d], [e], [f], [g], [h]]"
 }
