@@ -2,14 +2,9 @@
 package creatinggenerics
 import atomictest.eq
 
-inline fun <reified T : Disposable> select() =
-  items.filterIsInstance<T>().map { it.name }
+inline fun <reified T> check(t: Any) = t is T
 
 fun main() {
-  select<Compost>() eq
-    "[Orange Peel, Apple Core]"
-  select<Donation>() eq "[Couch, Clothing]"
-  select<Recyclable>() eq
-    "[Plastic, Metal, Cardboard]"
-  select<Landfill>() eq "[Trash]"
+  check<String>("1") eq true
+  check<Int>("1") eq false
 }

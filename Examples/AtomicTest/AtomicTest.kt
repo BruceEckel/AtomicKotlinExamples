@@ -83,9 +83,9 @@ object trace {
     trc += obj.toString()
   }
   /**
-   * Compares Trace contents to a multiline
-   * String by ignoring line separators.
-   */
+  * Compares Trace contents to a multiline
+  * String by ignoring line separators.
+  */
   infix fun eq(multiline: String) {
     val trace = trc.joinToString("\n")
     val expected = multiline.trimIndent()

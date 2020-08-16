@@ -1,4 +1,5 @@
 // Sequences/InputLines1.kt
+package usingsequences
 
 fun main() {
   val lines = generateSequence {

@@ -1,4 +1,5 @@
 // Sequences/EagerEvaluation.kt
+package usingsequences
 import atomictest.eq
 
 fun main() {

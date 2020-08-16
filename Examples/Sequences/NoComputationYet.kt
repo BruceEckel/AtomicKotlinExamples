@@ -1,5 +1,5 @@
 // Sequences/NoComputationYet.kt
-package creatingsequences
+package usingsequences
 
 fun main() {
   val list = listOf(1, 2, 3, 4)

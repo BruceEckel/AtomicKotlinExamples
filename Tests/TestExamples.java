@@ -283,11 +283,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBear() {
-    testExample("Examples/Constructors/Bear.kt", complexconstructors.BearKt::main);
-  }
-
-  @Test
   public void testDisplayAlienSpecies() {
     testExample("Examples/Constructors/DisplayAlienSpecies.kt", DisplayAlienSpeciesKt::main);
   }
@@ -305,6 +300,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testVisibleArgs() {
     testExample("Examples/Constructors/VisibleArgs.kt", VisibleArgsKt::main);
+  }
+
+  @Test
+  public void testWombat() {
+    testExample("Examples/Constructors/Wombat.kt", WombatKt::main);
   }
 
   @Test
@@ -375,6 +375,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testNonGenericConstraint() {
     testExample("Examples/CreatingGenerics/NonGenericConstraint.kt", creatinggenerics.NonGenericConstraintKt::main);
+  }
+
+  @Test
+  public void testSelect() {
+    testExample("Examples/CreatingGenerics/Select.kt", creatinggenerics.SelectKt::main);
   }
 
   @Test
@@ -459,12 +464,12 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testForLoop() {
-    testExample("Examples/Destructuring/ForLoop.kt", destructuringInLoops.ForLoopKt::main);
+    testExample("Examples/Destructuring/ForLoop.kt", destructuring.ForLoopKt::main);
   }
 
   @Test
   public void testLoopWithIndex() {
-    testExample("Examples/Destructuring/LoopWithIndex.kt", destructuringInLoops.LoopWithIndexKt::main);
+    testExample("Examples/Destructuring/LoopWithIndex.kt", destructuring.LoopWithIndexKt::main);
   }
 
   @Test
@@ -559,7 +564,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testExceptHandlingSoln2() {
-    testExample("Examples/ExceptionHandling/ExceptHandlingSoln2.kt", exceptionhandlingsolution2.ExceptHandlingSoln2Kt::main);
+    testExample("Examples/ExceptionHandling/ExceptHandlingSoln2.kt", exceptionhandlingsoln2.ExceptHandlingSoln2Kt::main);
   }
 
   @Test
@@ -2264,32 +2269,32 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testDefineTakeIf() {
-    testExample("Examples/Sequences/DefineTakeIf.kt", definetakeif.DefineTakeIfKt::main);
+    testExample("Examples/Sequences/DefineTakeIf.kt", usingsequences.DefineTakeIfKt::main);
   }
 
   @Test
   public void testEagerEvaluation() {
-    testExample("Examples/Sequences/EagerEvaluation.kt", EagerEvaluationKt::main);
+    testExample("Examples/Sequences/EagerEvaluation.kt", usingsequences.EagerEvaluationKt::main);
   }
 
   @Test
   public void testEagerVsLazyEvaluation() {
-    testExample("Examples/Sequences/EagerVsLazyEvaluation.kt", creatingsequences.EagerVsLazyEvaluationKt::main);
+    testExample("Examples/Sequences/EagerVsLazyEvaluation.kt", usingsequences.EagerVsLazyEvaluationKt::main);
   }
 
   @Test
   public void testInputLines1() {
-    testExample("Examples/Sequences/InputLines1.kt", InputLines1Kt::main);
+    testExample("Examples/Sequences/InputLines1.kt", usingsequences.InputLines1Kt::main);
   }
 
   @Test
   public void testInputLines2() {
-    testExample("Examples/Sequences/InputLines2.kt", InputLines2Kt::main);
+    testExample("Examples/Sequences/InputLines2.kt", usingsequences.InputLines2Kt::main);
   }
 
   @Test
   public void testNoComputationYet() {
-    testExample("Examples/Sequences/NoComputationYet.kt", creatingsequences.NoComputationYetKt::main);
+    testExample("Examples/Sequences/NoComputationYet.kt", usingsequences.NoComputationYetKt::main);
   }
 
   @Test
@@ -2299,12 +2304,12 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testNumberSequence2() {
-    testExample("Examples/Sequences/NumberSequence2.kt", NumberSequence2Kt::main);
+    testExample("Examples/Sequences/NumberSequence2.kt", usingsequences.NumberSequence2Kt::main);
   }
 
   @Test
   public void testTerminalOperations() {
-    testExample("Examples/Sequences/TerminalOperations.kt", creatingsequences.TerminalOperationsKt::main);
+    testExample("Examples/Sequences/TerminalOperations.kt", usingsequences.TerminalOperationsKt::main);
   }
 
   @Test

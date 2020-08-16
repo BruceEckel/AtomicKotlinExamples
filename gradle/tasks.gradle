@@ -213,11 +213,6 @@ task BasicReadWrite2(type: JavaExec) {
     main = 'propertydelegation.BasicReadWrite2Kt'
 }
 
-task Bear(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'complexconstructors.BearKt'
-}
-
 task BetterSuitcase(type: JavaExec) {
     classpath kotlinClassPath
     main = 'lateinitialization.BetterSuitcaseKt'
@@ -590,7 +585,7 @@ task Default(type: JavaExec) {
 
 task DefineTakeIf(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'definetakeif.DefineTakeIfKt'
+    main = 'usingsequences.DefineTakeIfKt'
 }
 
 task DefiningExceptions(type: JavaExec) {
@@ -715,12 +710,12 @@ task Drawing(type: JavaExec) {
 
 task EagerEvaluation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'EagerEvaluationKt'
+    main = 'usingsequences.EagerEvaluationKt'
 }
 
 task EagerVsLazyEvaluation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'creatingsequences.EagerVsLazyEvaluationKt'
+    main = 'usingsequences.EagerVsLazyEvaluationKt'
 }
 
 task ElvisCall(type: JavaExec) {
@@ -760,7 +755,7 @@ task ExceptHandlingSoln1(type: JavaExec) {
 
 task ExceptHandlingSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'exceptionhandlingsolution2.ExceptHandlingSoln2Kt'
+    main = 'exceptionhandlingsoln2.ExceptHandlingSoln2Kt'
 }
 
 task ExceptHandlingSoln3(type: JavaExec) {
@@ -940,7 +935,7 @@ task ForLabeled(type: JavaExec) {
 
 task ForLoop(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'destructuringInLoops.ForLoopKt'
+    main = 'destructuring.ForLoopKt'
 }
 
 task ForWithCharRange(type: JavaExec) {
@@ -1250,12 +1245,12 @@ task InnerClassInheritance(type: JavaExec) {
 
 task InputLines1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'InputLines1Kt'
+    main = 'usingsequences.InputLines1Kt'
 }
 
 task InputLines2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'InputLines2Kt'
+    main = 'usingsequences.InputLines2Kt'
 }
 
 task Insects(type: JavaExec) {
@@ -1525,7 +1520,7 @@ task LongConstants(type: JavaExec) {
 
 task LoopWithIndex(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'destructuringInLoops.LoopWithIndexKt'
+    main = 'destructuring.LoopWithIndexKt'
 }
 
 task MainArgConversion(type: JavaExec) {
@@ -1715,7 +1710,7 @@ task NewException(type: JavaExec) {
 
 task NoComputationYet(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'creatingsequences.NoComputationYetKt'
+    main = 'usingsequences.NoComputationYetKt'
 }
 
 task NoExtOverride(type: JavaExec) {
@@ -1810,7 +1805,7 @@ task NumberSequence1(type: JavaExec) {
 
 task NumberSequence2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NumberSequence2Kt'
+    main = 'usingsequences.NumberSequence2Kt'
 }
 
 task NumberTypes(type: JavaExec) {
@@ -2258,6 +2253,11 @@ task SealedVsAbstract(type: JavaExec) {
     main = 'sealedclasses.SealedVsAbstractKt'
 }
 
+task Select(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenerics.SelectKt'
+}
+
 task Sets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SetsKt'
@@ -2460,7 +2460,7 @@ task TemperatureDelta(type: JavaExec) {
 
 task TerminalOperations(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'creatingsequences.TerminalOperationsKt'
+    main = 'usingsequences.TerminalOperationsKt'
 }
 
 task TestingExample(type: JavaExec) {
@@ -2808,6 +2808,11 @@ task WithoutDefaultArguments(type: JavaExec) {
     main = 'withoutdefaultarguments.WithoutDefaultArgumentsKt'
 }
 
+task Wombat(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'WombatKt'
+}
+
 task ZeroArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ZeroArgumentsKt'
@@ -2870,7 +2875,6 @@ task run (dependsOn: [
     'BasicRead2',
     'BasicReadWrite',
     'BasicReadWrite2',
-    'Bear',
     'BetterSuitcase',
     'BeverageContainer',
     'BeverageContainer2',
@@ -3279,6 +3283,7 @@ task run (dependsOn: [
     'SealedClasses',
     'SealedSubclasses',
     'SealedVsAbstract',
+    'Select',
     'Sets',
     'Share2',
     'SimilarOperation',
@@ -3389,6 +3394,7 @@ task run (dependsOn: [
     'WithSecondary',
     'WithinInterface',
     'WithoutDefaultArguments',
+    'Wombat',
     'ZeroArguments',
     'ZipAndTransform',
     'Zipper',

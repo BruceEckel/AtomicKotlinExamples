@@ -1,5 +1,5 @@
 // ExceptionHandling/ExceptHandlingSoln2.kt
-package exceptionhandlingsolution2
+package exceptionhandlingsoln2
 
 open class NumberFail: Exception()
 open class NoNumber: NumberFail()
@@ -72,7 +72,7 @@ AbCdE13fGhIj
 recover(The13thFloor9)
 AbCdE13fGhIj
 justFail(NoDigitsHere)
-exceptionhandlingsolution2.NoNumber
+exceptionhandlingsoln2.NoNumber
 recover(NoDigitsHere)
 AbCdE0fGhIj
 justFail(negative-11int)
@@ -80,7 +80,7 @@ AbCdE-11fGhIj
 recover(negative-11int)
 AbCdE-11fGhIj
 justFail(A float: 3.14159 (pi))
-exceptionhandlingsolution2.BadNumber
+exceptionhandlingsoln2.BadNumber
 recover(A float: 3.14159 (pi))
 AbCdE-1fGhIj
  */
