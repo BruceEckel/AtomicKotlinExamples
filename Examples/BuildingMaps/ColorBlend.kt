@@ -1,7 +1,7 @@
 // BuildingMaps/ColorBlend.kt
-package buildmaps
+package buildingmaps
 import atomictest.eq
-import buildmaps.Color.*
+import buildingmaps.Color.*
 
 fun blend(a: Color, b: Color): Color = when {
   a == b -> a

@@ -1,5 +1,5 @@
 // BuildingMaps/PaintColors.kt
-package buildmaps
+package buildingmaps
 
 enum class Color {
   Red, Blue, Yellow, Purple,

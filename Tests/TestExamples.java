@@ -89,57 +89,57 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testAssociateBy() {
-    testExample("Examples/BuildingMaps/AssociateBy.kt", buildmaps.AssociateByKt::main);
+    testExample("Examples/BuildingMaps/AssociateBy.kt", buildingmaps.AssociateByKt::main);
   }
 
   @Test
   public void testAssociateByUnique() {
-    testExample("Examples/BuildingMaps/AssociateByUnique.kt", buildmaps.AssociateByUniqueKt::main);
+    testExample("Examples/BuildingMaps/AssociateByUnique.kt", buildingmaps.AssociateByUniqueKt::main);
   }
 
   @Test
   public void testAssociateWith() {
-    testExample("Examples/BuildingMaps/AssociateWith.kt", buildmaps.AssociateWithKt::main);
+    testExample("Examples/BuildingMaps/AssociateWith.kt", buildingmaps.AssociateWithKt::main);
   }
 
   @Test
   public void testColorBlend() {
-    testExample("Examples/BuildingMaps/ColorBlend.kt", buildmaps.ColorBlendKt::main);
+    testExample("Examples/BuildingMaps/ColorBlend.kt", buildingmaps.ColorBlendKt::main);
   }
 
   @Test
   public void testFilterMap() {
-    testExample("Examples/BuildingMaps/FilterMap.kt", buildmaps.FilterMapKt::main);
+    testExample("Examples/BuildingMaps/FilterMap.kt", buildingmaps.FilterMapKt::main);
   }
 
   @Test
   public void testGetOrPut() {
-    testExample("Examples/BuildingMaps/GetOrPut.kt", buildmaps.GetOrPutKt::main);
+    testExample("Examples/BuildingMaps/GetOrPut.kt", buildingmaps.GetOrPutKt::main);
   }
 
   @Test
   public void testGroupBy() {
-    testExample("Examples/BuildingMaps/GroupBy.kt", buildmaps.GroupByKt::main);
+    testExample("Examples/BuildingMaps/GroupBy.kt", buildingmaps.GroupByKt::main);
   }
 
   @Test
   public void testGroupByVsFilter() {
-    testExample("Examples/BuildingMaps/GroupByVsFilter.kt", buildmaps.GroupByVsFilterKt::main);
+    testExample("Examples/BuildingMaps/GroupByVsFilter.kt", buildingmaps.GroupByVsFilterKt::main);
   }
 
   @Test
   public void testImmutableBlendMap() {
-    testExample("Examples/BuildingMaps/ImmutableBlendMap.kt", buildmaps.ImmutableBlendMapKt::main);
+    testExample("Examples/BuildingMaps/ImmutableBlendMap.kt", buildingmaps.ImmutableBlendMapKt::main);
   }
 
   @Test
   public void testSimilarOperation() {
-    testExample("Examples/BuildingMaps/SimilarOperation.kt", buildmaps.SimilarOperationKt::main);
+    testExample("Examples/BuildingMaps/SimilarOperation.kt", buildingmaps.SimilarOperationKt::main);
   }
 
   @Test
   public void testTransformingMap() {
-    testExample("Examples/BuildingMaps/TransformingMap.kt", buildmaps.TransformingMapKt::main);
+    testExample("Examples/BuildingMaps/TransformingMap.kt", buildingmaps.TransformingMapKt::main);
   }
 
   @Test
@@ -555,21 +555,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testDefiningExceptions() {
     testExample("Examples/ExceptionHandling/DefiningExceptions.kt", exceptionhandling.DefiningExceptionsKt::main);
-  }
-
-  @Test
-  public void testExceptHandlingSoln1() {
-    testExample("Examples/ExceptionHandling/ExceptHandlingSoln1.kt", exceptionhandlingsoln1.ExceptHandlingSoln1Kt::main);
-  }
-
-  @Test
-  public void testExceptHandlingSoln2() {
-    testExample("Examples/ExceptionHandling/ExceptHandlingSoln2.kt", exceptionhandlingsoln2.ExceptHandlingSoln2Kt::main);
-  }
-
-  @Test
-  public void testExceptHandlingSoln3() {
-    testExample("Examples/ExceptionHandling/ExceptHandlingSoln3.kt", exceptionhandlingsoln3.ExceptHandlingSoln3Kt::main);
   }
 
   @Test

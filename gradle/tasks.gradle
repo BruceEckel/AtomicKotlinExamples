@@ -125,17 +125,17 @@ task AssignmentOperators(type: JavaExec) {
 
 task AssociateBy(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.AssociateByKt'
+    main = 'buildingmaps.AssociateByKt'
 }
 
 task AssociateByUnique(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.AssociateByUniqueKt'
+    main = 'buildingmaps.AssociateByUniqueKt'
 }
 
 task AssociateWith(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.AssociateWithKt'
+    main = 'buildingmaps.AssociateWithKt'
 }
 
 task AtomicTestCapture(type: JavaExec) {
@@ -405,7 +405,7 @@ task Color3(type: JavaExec) {
 
 task ColorBlend(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.ColorBlendKt'
+    main = 'buildingmaps.ColorBlendKt'
 }
 
 task ColorSet(type: JavaExec) {
@@ -748,21 +748,6 @@ task EvaluationOrder(type: JavaExec) {
     main = 'EvaluationOrderKt'
 }
 
-task ExceptHandlingSoln1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'exceptionhandlingsoln1.ExceptHandlingSoln1Kt'
-}
-
-task ExceptHandlingSoln2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'exceptionhandlingsoln2.ExceptHandlingSoln2Kt'
-}
-
-task ExceptHandlingSoln3(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'exceptionhandlingsoln3.ExceptHandlingSoln3Kt'
-}
-
 task ExplicitCheck(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ExplicitCheckKt'
@@ -870,7 +855,7 @@ task FilterIsInstance(type: JavaExec) {
 
 task FilterMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.FilterMapKt'
+    main = 'buildingmaps.FilterMapKt'
 }
 
 task FilterNotNull(type: JavaExec) {
@@ -1000,7 +985,7 @@ task GermanOrdinals(type: JavaExec) {
 
 task GetOrPut(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.GetOrPutKt'
+    main = 'buildingmaps.GetOrPutKt'
 }
 
 task GetTrace(type: JavaExec) {
@@ -1040,12 +1025,12 @@ task GreaterThan2(type: JavaExec) {
 
 task GroupBy(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.GroupByKt'
+    main = 'buildingmaps.GroupByKt'
 }
 
 task GroupByVsFilter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.GroupByVsFilterKt'
+    main = 'buildingmaps.GroupByVsFilterKt'
 }
 
 task GuaranteedCleanup(type: JavaExec) {
@@ -1155,7 +1140,7 @@ task IfResult(type: JavaExec) {
 
 task ImmutableBlendMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.ImmutableBlendMapKt'
+    main = 'buildingmaps.ImmutableBlendMapKt'
 }
 
 task Implementations(type: JavaExec) {
@@ -2270,7 +2255,7 @@ task Share2(type: JavaExec) {
 
 task SimilarOperation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.SimilarOperationKt'
+    main = 'buildingmaps.SimilarOperationKt'
 }
 
 task Simple(type: JavaExec) {
@@ -2515,7 +2500,7 @@ task Transform(type: JavaExec) {
 
 task TransformingMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildmaps.TransformingMapKt'
+    main = 'buildingmaps.TransformingMapKt'
 }
 
 task TrimMargin(type: JavaExec) {
@@ -2982,9 +2967,6 @@ task run (dependsOn: [
     'EnumImport',
     'Evaluation',
     'EvaluationOrder',
-    'ExceptHandlingSoln1',
-    'ExceptHandlingSoln2',
-    'ExceptHandlingSoln3',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',
