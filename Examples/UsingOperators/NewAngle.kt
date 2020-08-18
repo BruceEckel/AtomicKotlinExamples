@@ -2,12 +2,12 @@
 import atomictest.eq
 
 fun main() {
-  val list = mutableListOf('a', 'b', 'c')
-  list[1] eq 'b' // operator get()
-  list.get(1) eq 'b' // Explicit call
-  list[2] = 'x' // operator set()
-  list.set(2, 'x') // Explicit call
-  list[2] eq 'x'
-  ('a' in list) eq true // operator contains()
-  list.contains('a') eq true // Explicit call
+  val list = MutableList(10) { 'a' + it }
+  list[7] eq 'h' // operator get()
+  list.get(8) eq 'i' // Explicit call
+  list[9] = 'x' // operator set()
+  list.set(9, 'x') // Explicit call
+  list[9] eq 'x'
+  ('d' in list) eq true // operator contains()
+  list.contains('e') eq true // Explicit call
 }

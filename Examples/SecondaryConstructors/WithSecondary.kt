@@ -14,7 +14,7 @@ class WithSecondary(i: Int) {
     this(s.first()) {                // [1]
     println("Secondary: \"$s\"")
   }
-  /* Won't compile without a call
+  /* Doesn't compile without a call
      to the primary constructor:
   constructor(f: Float) {            // [2]
     println("Secondary: $f")

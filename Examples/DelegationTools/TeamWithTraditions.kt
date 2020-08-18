@@ -4,29 +4,53 @@ import atomictest.*
 import kotlin.properties.Delegates
 import kotlin.reflect.KProperty
 
-fun AName(
+fun aName(
   property: KProperty<*>,
   old: String,
   new: String
 ) = if (new.startsWith("A")) {
-    trace("$old -> $new")
-    true
-  } else {
-    trace("Name must start with 'A'")
-    false
-  }
+  trace("$old -> $new")
+  true
+} else {
+  trace("Name must start with 'A'")
+  false
+}
 
-class TeamWithTraditions {
+interface Captain {
   var captain: String
-    by Delegates.vetoable("Adam", ::AName)
+}
+
+class TeamWithTraditions : Captain {
+  override var captain: String
+    by Delegates.vetoable("Adam", ::aName)
+}
+
+class TeamWithTraditions2 : Captain {
+  override var captain: String
+    by Delegates.vetoable("Adam") {
+      _, old, new ->
+        if (new.startsWith("A")) {
+          trace("$old -> $new")
+          true
+        } else {
+          trace("Name must start with 'A'")
+          false
+        }
+    }
 }
 
 fun main() {
-  val team = TeamWithTraditions()
-  team.captain = "Amanda"
-  team.captain = "Bill"
-  team.captain eq "Amanda"
+  listOf(
+    TeamWithTraditions(),
+    TeamWithTraditions2()
+  ).forEach {
+    it.captain = "Amanda"
+    it.captain = "Bill"
+    it.captain eq "Amanda"
+  }
   trace eq """
+    Adam -> Amanda
+    Name must start with 'A'
     Adam -> Amanda
     Name must start with 'A'
   """

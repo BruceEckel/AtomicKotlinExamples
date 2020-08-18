@@ -2,6 +2,10 @@
 package extensionlambdas
 import atomictest.eq
 
+val zero: Int.() -> Boolean = {
+  this == 0
+}
+
 val one: Int.(Int) -> Boolean = {
   this % it == 0
 }
@@ -17,6 +21,7 @@ val three: Int.(Int, Int, Int) -> Boolean = {
 }
 
 fun main() {
+  0.zero() eq true
   10.one(10) eq true
   20.two(10, 10) eq true
   30.three(10, 10, 10) eq true

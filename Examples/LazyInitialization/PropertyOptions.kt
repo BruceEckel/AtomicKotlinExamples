@@ -1,14 +1,13 @@
 // LazyInitialization/PropertyOptions.kt
 package lazyinitialization
-import atomictest.*
-import kotlin.reflect.KProperty1
+import atomictest.trace
 
 fun compute(i: Int): Int {
   trace("Compute $i")
   return i
 }
 
-class Properties {
+object Properties {
   val atDefinition = compute(1)
   val getter
     get() = compute(2)
@@ -17,15 +16,15 @@ class Properties {
 }
 
 fun main() {
-  val p = Properties()
-  fun show(prop: KProperty1<Properties, *>) {
-    trace("${prop.name}:")
-    trace("${prop.get(p)}")
-    trace("${prop.get(p)}")
+  listOf(
+    Properties::atDefinition,
+    Properties::getter,
+    Properties::lazyInit
+  ).forEach {
+    trace("${it.name}:")
+    trace("${it.get()}")
+    trace("${it.get()}")
   }
-  show(Properties::atDefinition)
-  show(Properties::getter)
-  show(Properties::lazyInit)
   trace eq """
     Compute 1
     atDefinition:

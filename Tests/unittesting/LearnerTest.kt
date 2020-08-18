@@ -5,10 +5,10 @@ import kotlin.test.*
 
 fun makeLearner(
   id: Int,
-  lang: Language = Kotlin,            // [1]
+  language: Language = Kotlin,         // [1]
   name: String = "Test Name $id",
   surname: String = "Test Surname $id"
-) = Learner(id, name, surname, lang)
+) = Learner(id, name, surname, language)
 
 class LearnerTest {
   @Test
@@ -20,6 +20,6 @@ class LearnerTest {
   fun `multiple Learners`() {
     val learners = (1..9).map(::makeLearner)
     assertTrue(
-      learners.all { it.lang == Kotlin })
+      learners.all { it.language == Kotlin })
   }
 }

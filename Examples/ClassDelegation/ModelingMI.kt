@@ -41,4 +41,7 @@ fun main() {
   button.paint() eq 50
   button.clicked() eq true
   button.hovering() eq true
+  // Can upcast to both delegated types:
+  val rectangle: Rectangle = button
+  val mouseManager: MouseManager = button
 }

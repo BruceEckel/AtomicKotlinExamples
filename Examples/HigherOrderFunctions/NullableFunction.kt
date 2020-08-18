@@ -6,7 +6,7 @@ fun main() {
     { null }
   val mightBeNull: ((String) -> Int)? = null
   returnTypeNullable("abc") eq null
-  // Won't compile without a null check:
+  // Doesn't compile without a null check:
   // mightBeNull("abc")
   if (mightBeNull != null) {
     mightBeNull("abc")

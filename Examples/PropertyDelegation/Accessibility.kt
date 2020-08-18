@@ -8,13 +8,9 @@ class Person(
   private val first: String,
   private val last: String
 ) {
-  val name by Name()
-  class Name:
-    ReadOnlyProperty<Person, String> {
-    override fun getValue(
-      thisRef: Person,
-      property: KProperty<*>
-    ) = "${thisRef.first} ${thisRef.last}"
+  val name by     // SAM conversion:
+  ReadOnlyProperty<Person, String> { _, _ ->
+    "$first $last"
   }
 }
 
