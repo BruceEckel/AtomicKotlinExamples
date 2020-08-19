@@ -1,4 +1,5 @@
 // Interoperability/CatchChecked.java
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package Interoperability;
 import interop.AnnotateThrowsKt;
 import java.io.IOException;

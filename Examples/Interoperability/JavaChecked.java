@@ -1,4 +1,5 @@
 // Interoperability/JavaChecked.java
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package Interoperability;
 import java.io.*;
 import java.nio.file.*;
