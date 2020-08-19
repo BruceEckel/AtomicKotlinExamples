@@ -1,4 +1,5 @@
 // NullableTypes/Amphibian.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 interface Amphibian
 

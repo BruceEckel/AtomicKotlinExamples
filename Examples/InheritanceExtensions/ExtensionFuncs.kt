@@ -1,4 +1,5 @@
 // InheritanceExtensions/ExtensionFuncs.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package inheritanceextensions2
 import inheritanceextensions.Heater
 import atomictest.eq

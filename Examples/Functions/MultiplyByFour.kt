@@ -1,4 +1,5 @@
 // Functions/MultiplyByFour.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun multiplyByFour(x: Int) = x * 4
 

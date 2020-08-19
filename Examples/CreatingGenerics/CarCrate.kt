@@ -1,4 +1,5 @@
 // CreatingGenerics/CarCrate.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package creatinggenerics
 import atomictest.eq
 

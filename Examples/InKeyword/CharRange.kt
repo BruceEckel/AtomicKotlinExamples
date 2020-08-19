@@ -1,4 +1,5 @@
 // InKeyword/CharRange.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun isDigit(ch: Char) = ch in '0'..'9'
 

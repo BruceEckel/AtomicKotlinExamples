@@ -1,4 +1,5 @@
 // OperationsOnCollections/PairOfLists.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 
 fun createPair() = Pair(1, "one")

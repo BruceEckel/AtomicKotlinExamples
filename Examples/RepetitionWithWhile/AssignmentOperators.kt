@@ -1,4 +1,5 @@
 // RepetitionWithWhile/AssignmentOperators.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   var n = 10

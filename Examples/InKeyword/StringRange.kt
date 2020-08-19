@@ -1,4 +1,5 @@
 // InKeyword/StringRange.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   println("ab" in "aa".."az")

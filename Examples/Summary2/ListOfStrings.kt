@@ -1,4 +1,5 @@
 // Summary2/ListOfStrings.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val jabber = """

@@ -1,4 +1,5 @@
 // Summary1/While.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun testCondition(i: Int) = i < 100
 

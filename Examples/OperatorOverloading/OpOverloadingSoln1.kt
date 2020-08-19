@@ -1,4 +1,5 @@
 // OperatorOverloading/OpOverloadingSoln1.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package opoverloadingsoln1
 import atomictest.*
 

@@ -1,4 +1,5 @@
 // NumberTypes/BMIMetric.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun bmiMetric(
   weight: Double,

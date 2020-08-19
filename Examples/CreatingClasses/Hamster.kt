@@ -1,4 +1,5 @@
 // CreatingClasses/Hamster.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Hamster {
   fun speak() = "Squeak! "

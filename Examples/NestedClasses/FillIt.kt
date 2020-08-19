@@ -1,4 +1,5 @@
 // NestedClasses/FillIt.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package nestedclasses
 import nestedclasses.Game.State.*
 import nestedclasses.Game.Mark.*

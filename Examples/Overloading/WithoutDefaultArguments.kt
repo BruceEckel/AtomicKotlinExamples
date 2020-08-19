@@ -1,4 +1,5 @@
 // Overloading/WithoutDefaultArguments.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package withoutdefaultarguments
 import atomictest.eq
 

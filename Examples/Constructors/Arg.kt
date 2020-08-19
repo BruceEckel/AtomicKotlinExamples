@@ -1,4 +1,5 @@
 // Constructors/Arg.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Alien(name: String) {
   val greeting = "Poor $name!"

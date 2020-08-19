@@ -1,4 +1,5 @@
 // WhenExpressions/AnalyzeInput.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Coordinates(var x: Int, var y: Int) {
   override fun toString(): String {

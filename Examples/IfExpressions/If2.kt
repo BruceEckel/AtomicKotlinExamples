@@ -1,4 +1,5 @@
 // IfExpressions/If2.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val x: Boolean = 1 >= 1

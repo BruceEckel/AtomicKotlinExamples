@@ -1,4 +1,5 @@
 // StringTemplates/StringConcatenation.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val s = "hi\n" // \n is a newline character

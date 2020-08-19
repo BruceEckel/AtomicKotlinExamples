@@ -1,4 +1,5 @@
 // Packages/ImportClass.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import kotlin.math.PI
 import kotlin.math.cos  // Cosine
 

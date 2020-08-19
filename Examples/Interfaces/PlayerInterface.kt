@@ -1,4 +1,5 @@
 // Interfaces/PlayerInterface.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package propertiesininterfaces
 import atomictest.eq
 

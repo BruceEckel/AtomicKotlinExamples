@@ -1,4 +1,5 @@
 // LocalFunctions/LabeledReturn.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val list = listOf(1, 2, 3, 4, 5)

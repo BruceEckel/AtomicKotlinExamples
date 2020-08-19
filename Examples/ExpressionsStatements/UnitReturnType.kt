@@ -1,4 +1,5 @@
 // ExpressionsStatements/UnitReturnType.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun unitFun() = Unit
 

@@ -1,4 +1,5 @@
 // CreatingGenerics/CreatingGenericsSoln3.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package creatinggenericssoln3
 import creatinggenerics.Can
 import creatinggenerics.Grape

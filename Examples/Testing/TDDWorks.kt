@@ -1,4 +1,5 @@
 // Testing/TDDWorks.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package testing3
 import atomictest.eq
 

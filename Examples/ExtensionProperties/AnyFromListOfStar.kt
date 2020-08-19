@@ -1,4 +1,5 @@
 // ExtensionProperties/AnyFromListOfStar.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package extensionproperties
 import atomictest.eq
 

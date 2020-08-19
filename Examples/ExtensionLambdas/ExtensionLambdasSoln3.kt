@@ -1,4 +1,5 @@
 // ExtensionLambdas/ExtensionLambdasSoln3.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package extensionlambdasoln3
 import atomictest.eq
 

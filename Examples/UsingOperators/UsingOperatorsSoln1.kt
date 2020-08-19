@@ -1,4 +1,5 @@
 // UsingOperators/UsingOperatorsSoln1.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package usingoperatorssoln1
 
 data class DataMany(

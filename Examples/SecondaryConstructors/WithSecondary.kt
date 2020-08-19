@@ -1,4 +1,5 @@
 // SecondaryConstructors/WithSecondary.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package secondaryconstructors
 
 class WithSecondary(i: Int) {

@@ -1,4 +1,5 @@
 // LocalFunctions/Session.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package localfunctions
 
 class Session(

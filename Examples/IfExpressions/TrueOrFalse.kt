@@ -1,4 +1,5 @@
 // IfExpressions/TrueOrFalse.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun trueOrFalse(exp: Boolean): String {
   if (exp)

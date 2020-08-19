@@ -1,4 +1,5 @@
 // Packages/FullyQualify.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   println(kotlin.math.PI)

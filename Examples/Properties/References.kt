@@ -1,4 +1,5 @@
 // Properties/References.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Kitchen {
   var table: String = "Round table"

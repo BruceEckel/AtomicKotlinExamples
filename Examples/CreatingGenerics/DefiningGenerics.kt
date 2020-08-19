@@ -1,4 +1,5 @@
 // CreatingGenerics/DefiningGenerics.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package creatinggenerics
 
 fun <T> gFunction(arg: T): T = arg

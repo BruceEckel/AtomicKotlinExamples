@@ -1,4 +1,5 @@
 // Testing/TDDFail.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package testing1
 import atomictest.eq
 

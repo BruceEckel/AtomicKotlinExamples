@@ -1,4 +1,5 @@
 // Enumerations/Direction.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package enumerations
 import atomictest.eq
 import enumerations.Direction.*

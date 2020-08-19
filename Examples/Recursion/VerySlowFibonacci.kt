@@ -1,4 +1,5 @@
 // Recursion/VerySlowFibonacci.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package slowfibonacci
 import atomictest.eq
 

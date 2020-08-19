@@ -1,4 +1,5 @@
 // NamedAndDefaultArgs/Color2.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package color2
 import atomictest.eq
 

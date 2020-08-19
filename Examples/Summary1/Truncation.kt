@@ -1,4 +1,5 @@
 // Summary1/Truncation.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val d1: Double = 3.0 + 2 / 5

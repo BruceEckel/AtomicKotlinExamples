@@ -1,4 +1,5 @@
 // Exceptions/AverageIncomeWithNull.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package withnull
 import atomictest.eq
 

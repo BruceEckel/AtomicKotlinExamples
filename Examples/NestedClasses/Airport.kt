@@ -1,4 +1,5 @@
 // NestedClasses/Airport.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package nestedclasses
 import atomictest.eq
 import nestedclasses.Airport.Plane

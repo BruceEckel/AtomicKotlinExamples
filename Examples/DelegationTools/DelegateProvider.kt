@@ -1,4 +1,5 @@
 // DelegationTools/DelegateProvider.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package delegationtools
 import kotlin.reflect.KProperty
 import atomictest.*

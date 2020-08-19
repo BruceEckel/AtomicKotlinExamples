@@ -1,4 +1,5 @@
 // ResourceCleanup/ResourceCleanupSoln2.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package resourcecleanupsoln2
 
 class Cleanup: AutoCloseable {

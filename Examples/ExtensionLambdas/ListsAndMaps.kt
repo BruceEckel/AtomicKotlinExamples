@@ -1,4 +1,5 @@
 // ExtensionLambdas/ListsAndMaps.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 @file:OptIn(ExperimentalStdlibApi::class)
 package extensionlambdas
 import atomictest.eq

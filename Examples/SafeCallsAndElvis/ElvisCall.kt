@@ -1,4 +1,5 @@
 // SafeCallsAndElvis/ElvisCall.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package elvisoperator
 import atomictest.eq
 

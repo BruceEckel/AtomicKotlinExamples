@@ -1,4 +1,5 @@
 // BuildingMaps/TransformingMap.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package buildingmaps
 import atomictest.eq
 

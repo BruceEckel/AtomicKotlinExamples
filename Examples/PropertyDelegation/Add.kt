@@ -1,4 +1,5 @@
 // PropertyDelegation/Add.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package propertydelegation2
 import atomictest.eq
 import kotlin.reflect.KProperty

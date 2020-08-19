@@ -1,4 +1,5 @@
 // HigherOrderFunctions/RepeatFun.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package definingrepeat
 
 fun repeat(

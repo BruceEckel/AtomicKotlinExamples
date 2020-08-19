@@ -1,4 +1,5 @@
 // Maps/ContactMap.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 
 class Contact(

@@ -1,4 +1,5 @@
 // Properties/AnUnchangingVar.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Sofa {
   val cover: String = "Loveseat cover"

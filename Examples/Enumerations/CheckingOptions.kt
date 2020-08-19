@@ -1,4 +1,5 @@
 // Enumerations/CheckingOptions.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 import enumerations.Level
 import enumerations.Level.*

@@ -1,4 +1,5 @@
 // NamedAndDefaultArgs/Color3.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package color3
 import atomictest.eq
 

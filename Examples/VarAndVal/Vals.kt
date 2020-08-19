@@ -1,4 +1,5 @@
 // VarAndVal/Vals.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val whole = 11

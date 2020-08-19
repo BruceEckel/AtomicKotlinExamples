@@ -1,4 +1,5 @@
 // DelegationTools/Team.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package delegationtools
 import kotlin.properties.Delegates.observable
 import atomictest.eq

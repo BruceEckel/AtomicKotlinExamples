@@ -1,4 +1,5 @@
 // StringTemplates/StringTemplates.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val answer = 42

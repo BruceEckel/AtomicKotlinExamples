@@ -1,4 +1,5 @@
 // Visibility/MultipleRef.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Counter(var start: Int) {
   fun increment() {

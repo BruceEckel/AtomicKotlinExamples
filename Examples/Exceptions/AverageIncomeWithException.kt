@@ -1,4 +1,5 @@
 // Exceptions/AverageIncomeWithException.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package properexception
 import atomictest.*
 

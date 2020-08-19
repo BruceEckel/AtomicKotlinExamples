@@ -1,4 +1,5 @@
 // CheckInstructions/QuadraticRequire.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package checkinstructions
 import kotlin.math.sqrt
 import atomictest.*

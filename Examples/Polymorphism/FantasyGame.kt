@@ -1,4 +1,5 @@
 // Polymorphism/FantasyGame.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package polymorphism
 import atomictest.*
 

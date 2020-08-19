@@ -1,4 +1,5 @@
 // Packages/ImportPythagorean.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import pythagorean.RightTriangle
 
 fun main() {

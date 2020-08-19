@@ -1,4 +1,5 @@
 // Logging/LoggingSoln3.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package loggingsoln3
 import atomictest.eq
 import checkinstructions.DataFile

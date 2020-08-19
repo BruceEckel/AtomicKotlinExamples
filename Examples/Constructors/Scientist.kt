@@ -1,4 +1,5 @@
 // Constructors/Scientist.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Scientist(val name: String) {
   override fun toString(): String {

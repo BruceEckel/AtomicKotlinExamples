@@ -1,4 +1,5 @@
 // Interoperability/PlatformTypes.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package interop
 import Interoperability.JTool
 import atomictest.eq

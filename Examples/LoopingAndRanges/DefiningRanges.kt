@@ -1,4 +1,5 @@
 // LoopingAndRanges/DefiningRanges.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val range1 = 1..10             // [1]

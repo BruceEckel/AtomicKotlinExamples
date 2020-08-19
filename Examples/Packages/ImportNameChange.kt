@@ -1,4 +1,5 @@
 // Packages/ImportNameChange.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import kotlin.math.PI as circleRatio
 import kotlin.math.cos as cosine
 

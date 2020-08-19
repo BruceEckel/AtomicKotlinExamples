@@ -1,4 +1,5 @@
 // Interoperability/CollectionStructure.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package collectionstructure
 
 interface Collection<E>

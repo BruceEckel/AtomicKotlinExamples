@@ -1,4 +1,5 @@
 // ManipulatingLists/PlayingCards.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package manipulatinglists
 import kotlin.random.Random
 import atomictest.*

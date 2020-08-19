@@ -1,4 +1,5 @@
 // Varargs/VarargLikeList.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun evaluate(vararg ints: Int) {
   println("Size: ${ints.size}")

@@ -1,4 +1,5 @@
 // BuildingMaps/People.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package buildingmaps
 
 data class Person(

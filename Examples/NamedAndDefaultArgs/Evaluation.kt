@@ -1,4 +1,5 @@
 // NamedAndDefaultArgs/Evaluation.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class DefaultArg
 

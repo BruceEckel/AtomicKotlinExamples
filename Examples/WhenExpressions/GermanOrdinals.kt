@@ -1,4 +1,5 @@
 // WhenExpressions/GermanOrdinals.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 
 val numbers = mapOf(

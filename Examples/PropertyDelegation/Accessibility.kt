@@ -1,4 +1,5 @@
 // PropertyDelegation/Accessibility.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package propertydelegation
 import atomictest.eq
 import kotlin.properties.ReadOnlyProperty

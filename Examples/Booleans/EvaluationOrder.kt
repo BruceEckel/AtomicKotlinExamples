@@ -1,4 +1,5 @@
 // Booleans/EvaluationOrder.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val sunny = true

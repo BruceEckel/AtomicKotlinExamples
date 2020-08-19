@@ -1,4 +1,5 @@
 // PropertyDelegation/FileDelegate.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package propertydelegation
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty

@@ -1,4 +1,5 @@
 // DataClasses/DataClasses.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package dataclasses
 import atomictest.*
 

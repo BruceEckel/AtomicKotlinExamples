@@ -1,4 +1,5 @@
 // LoopingAndRanges/RepeatThreeTimes.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   for (i in 1..3) {

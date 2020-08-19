@@ -1,4 +1,5 @@
 // LocalFunctions/LocalFunctions.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val logMsg = StringBuilder()

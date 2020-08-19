@@ -1,4 +1,5 @@
 // Varargs/VarargSum.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 
 fun sum(vararg numbers: Int): Int {

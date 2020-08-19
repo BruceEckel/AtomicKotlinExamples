@@ -1,4 +1,5 @@
 // Properties/TopLevelProperty.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 val constant = 42
 

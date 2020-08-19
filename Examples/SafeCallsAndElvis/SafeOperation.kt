@@ -1,4 +1,5 @@
 // SafeCallsAndElvis/SafeOperation.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun String.echo() {
   println(this.toUpperCase())

@@ -1,4 +1,5 @@
 // UsingOperators/UsingOperatorsSoln3.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package usingoperatorssoln3
 import kotlin.random.Random
 

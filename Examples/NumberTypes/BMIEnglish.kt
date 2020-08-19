@@ -1,4 +1,5 @@
 // NumberTypes/BMIEnglish.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun bmiEnglish(
   weight: Int,

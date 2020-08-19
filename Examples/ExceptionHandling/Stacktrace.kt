@@ -1,4 +1,5 @@
 // ExceptionHandling/Stacktrace.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package stacktrace
 import exceptionhandling.Exception1
 

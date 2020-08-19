@@ -1,4 +1,5 @@
 // BaseClassInit/OtherConstructors.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package baseclassinit
 import atomictest.eq
 

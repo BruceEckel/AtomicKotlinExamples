@@ -1,4 +1,5 @@
 // NumberTypes/LongConstants.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val i = 0          // Infers Int

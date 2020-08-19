@@ -1,4 +1,5 @@
 // InheritanceExtensions/InheritAdd.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package inheritanceextensions
 import atomictest.eq
 

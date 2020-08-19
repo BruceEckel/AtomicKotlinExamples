@@ -1,4 +1,5 @@
 // Varargs/MainArgConversion.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main(args: Array<String>) {
   if (args.size < 3) return

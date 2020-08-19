@@ -1,4 +1,5 @@
 // ObjectsEverywhere/NumberConversions.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun fraction(numerator: Long, denom: Long) =
   numerator.toDouble() / denom

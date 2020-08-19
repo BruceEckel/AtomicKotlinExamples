@@ -1,4 +1,5 @@
 // Abstract/Implementations.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package abstractclasses
 import atomictest.eq
 

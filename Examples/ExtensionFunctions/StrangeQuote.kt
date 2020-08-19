@@ -1,4 +1,5 @@
 // ExtensionFunctions/StrangeQuote.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 import quoting.singleQuote
 import quoting.doubleQuote

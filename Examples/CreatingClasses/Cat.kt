@@ -1,4 +1,5 @@
 // CreatingClasses/Cat.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Cat {
   fun meow() = "mrrrow!"

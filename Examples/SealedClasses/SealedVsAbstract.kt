@@ -1,4 +1,5 @@
 // SealedClasses/SealedVsAbstract.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package sealedclasses
 
 abstract class Abstract(val av: String) {

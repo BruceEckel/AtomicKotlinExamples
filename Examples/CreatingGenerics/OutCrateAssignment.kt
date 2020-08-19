@@ -1,4 +1,5 @@
 // CreatingGenerics/OutCrateAssignment.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package creatinggenerics
 
 val ocg: OutCrate<Grape> = OutCrate(Grape())

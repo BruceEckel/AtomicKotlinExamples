@@ -1,4 +1,5 @@
 // CheckInstructions/CheckInstructionsSoln4.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package checkinstructionssoln4
 import atomictest.*
 

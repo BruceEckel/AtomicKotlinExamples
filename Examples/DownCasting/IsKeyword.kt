@@ -1,4 +1,5 @@
 // DownCasting/IsKeyword.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package downcasting
 
 fun main() {

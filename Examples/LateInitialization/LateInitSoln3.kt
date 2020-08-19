@@ -1,4 +1,5 @@
 // LateInitialization/LateInitSoln3.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package lateinitializationsoln3
 import atomictest.*
 

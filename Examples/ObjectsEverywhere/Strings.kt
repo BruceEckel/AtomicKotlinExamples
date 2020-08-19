@@ -1,4 +1,5 @@
 // ObjectsEverywhere/Strings.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val s = "AbcD"

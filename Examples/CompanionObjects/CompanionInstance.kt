@@ -1,4 +1,5 @@
 // CompanionObjects/CompanionInstance.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package companionobjects
 import atomictest.*
 

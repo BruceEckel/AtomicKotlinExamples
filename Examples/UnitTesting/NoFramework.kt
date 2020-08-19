@@ -1,4 +1,5 @@
 // UnitTesting/NoFramework.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package unittesting
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue

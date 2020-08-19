@@ -1,4 +1,5 @@
 // Upcasting/Shapes.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package upcasting
 
 interface Shape {

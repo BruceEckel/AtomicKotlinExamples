@@ -1,4 +1,5 @@
 // CreatingGenerics/InCrateAssignment.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package creatinggenerics
 
 val icc: InCrate<Can> = InCrate(Can())

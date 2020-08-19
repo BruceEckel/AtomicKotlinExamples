@@ -1,4 +1,5 @@
 // LazyInitialization/PropertyOptions.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package lazyinitialization
 import atomictest.trace
 

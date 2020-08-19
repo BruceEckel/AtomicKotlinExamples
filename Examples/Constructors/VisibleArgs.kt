@@ -1,4 +1,5 @@
 // Constructors/VisibleArgs.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 class MutableNameAlien(var name: String)
 

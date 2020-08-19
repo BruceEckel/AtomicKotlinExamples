@@ -1,4 +1,5 @@
 // ScopeFunctions/Gnome.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package scopefunctions
 
 class Gnome(val name: String) {

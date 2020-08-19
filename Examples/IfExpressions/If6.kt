@@ -1,4 +1,5 @@
 // IfExpressions/If6.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val num = 10

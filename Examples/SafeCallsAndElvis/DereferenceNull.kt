@@ -1,4 +1,5 @@
 // SafeCallsAndElvis/DereferenceNull.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val s: String? = null

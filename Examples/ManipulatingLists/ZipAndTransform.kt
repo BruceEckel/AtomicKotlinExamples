@@ -1,4 +1,5 @@
 // ManipulatingLists/ZipAndTransform.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package manipulatinglists
 import atomictest.eq
 

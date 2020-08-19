@@ -1,4 +1,5 @@
 // LoopingAndRanges/AddingIntToChar.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val ch: Char = 'a'

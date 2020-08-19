@@ -1,4 +1,5 @@
 // Inheritance/GreatApe2.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package inheritance.ape2
 import atomictest.eq
 

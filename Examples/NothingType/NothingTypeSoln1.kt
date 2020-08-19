@@ -1,4 +1,5 @@
 // NothingType/NothingTypeSoln1.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package nothingtypesoln1
 import atomictest.*
 

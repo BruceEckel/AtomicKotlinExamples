@@ -1,4 +1,5 @@
 // NothingType/CheckObject.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package nothingtype
 import atomictest.*
 

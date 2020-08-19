@@ -1,4 +1,5 @@
 // ExtensionLambdas/FunctionParameters.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package extensionlambdas
 
 class A {

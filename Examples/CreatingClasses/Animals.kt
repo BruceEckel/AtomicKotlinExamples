@@ -1,4 +1,5 @@
 // CreatingClasses/Animals.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 // Create some classes:
 class Giraffe

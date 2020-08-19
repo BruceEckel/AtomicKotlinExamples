@@ -1,4 +1,5 @@
 // Inheritance/OpenAndFinalClasses.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package inheritance
 
 // This class can be inherited:

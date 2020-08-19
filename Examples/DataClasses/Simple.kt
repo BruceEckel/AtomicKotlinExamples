@@ -1,4 +1,5 @@
 // DataClasses/Simple.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 
 data class Simple(

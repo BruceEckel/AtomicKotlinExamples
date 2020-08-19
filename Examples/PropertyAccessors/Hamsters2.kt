@@ -1,4 +1,5 @@
 // PropertyAccessors/Hamsters2.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 package propertyaccessors
 
 class Cage2(private val maxCapacity: Int) {

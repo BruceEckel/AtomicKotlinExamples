@@ -1,4 +1,5 @@
 // LoopingAndRanges/ForWithRanges.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun showRange(r: IntProgression) {
   for (i in r) {

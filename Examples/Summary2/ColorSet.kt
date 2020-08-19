@@ -1,4 +1,5 @@
 // Summary2/ColorSet.kt
+// ©2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 
 val colors =
