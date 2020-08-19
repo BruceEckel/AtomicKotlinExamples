@@ -7,8 +7,8 @@ call rm -rf Tests\unittesting
 echo bb code extract without_duplicates
 bb code extract without_duplicates
 echo:
-echo mv Examples\Copyright.txt .
-call mv Examples\Copyright.txt .
+echo mv -f Examples\Copyright.txt .
+call mv -f Examples\Copyright.txt .
 echo:
 echo rm Tests\TestExamples.java
 call rm Tests\TestExamples.java
