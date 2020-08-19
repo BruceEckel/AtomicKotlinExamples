@@ -9,7 +9,7 @@ remainder of this README shows you how.
 
 Exercises and solutions for the book can be found at [AtomicKotlin.com/exercises](https://www.atomickotlin.com/exercises).
 
-## Quick Version
+## Building From the Command Line: Quick Version
 
 Before you can run the examples from this repository, you must install the current version of 
 [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html),
@@ -53,7 +53,7 @@ To compile and run examples using the Kotlin command-line tools, see
 
 Follow the tutorials [Here](https://www.atomickotlin.com/exercises/).
 
-# Detailed Instructions
+# Building From the Command Line: Detailed Instructions
 
 If you are not familiar with the command line, first read [Command-Line
 Basics](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Basics.md).
