@@ -49,10 +49,6 @@ corresponding to the atom names.
 To compile and run examples using the Kotlin command-line tools, see
 [Command-Line Hello World](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Hello_World.md).
 
-## Using JetBrains IDEA
-
-Follow the tutorials [Here](https://www.atomickotlin.com/exercises/).
-
 # Building From the Command Line: Detailed Instructions
 
 If you are not familiar with the command line, first read [Command-Line
