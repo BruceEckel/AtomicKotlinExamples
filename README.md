@@ -4,7 +4,8 @@ These are the code examples from the book [Atomic Kotlin](https://www.AtomicKotl
 automatic extraction process directly from the book. This repository provides
 a test of the code that is shown in the book, to verify that it is correct.
 
-You can clone/download this repository and open it with IntelliJ IDEA.
+You can clone/download this repository and open it with IntelliJ IDEA. If you want to build from the command line, the
+remainder of this README shows you how.
 
 Exercises and solutions for the book can be found at [AtomicKotlin.com/exercises](https://www.atomickotlin.com/exercises).
 
