@@ -1,5 +1,5 @@
 // Summary2/ArraySpread.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val array = intArrayOf(4, 5)      // [1]

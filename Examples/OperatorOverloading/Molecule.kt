@@ -1,5 +1,5 @@
 // OperatorOverloading/Molecule.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 
 data class Molecule(

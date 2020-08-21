@@ -1,5 +1,5 @@
 // PropertyDelegation/BasicReadWrite2.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package propertydelegation
 import atomictest.eq
 import kotlin.properties.ReadWriteProperty

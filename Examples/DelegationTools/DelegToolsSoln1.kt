@@ -1,5 +1,5 @@
 // DelegationTools/DelegToolsSoln1.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package delegtoolssoln1
 import kotlin.properties.Delegates
 import atomictest.*

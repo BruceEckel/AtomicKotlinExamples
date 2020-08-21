@@ -1,5 +1,5 @@
 // Abstract/NoMultipleInheritance.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package multipleinheritance1
 
 open class Animal

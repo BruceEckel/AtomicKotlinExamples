@@ -1,5 +1,5 @@
 // InKeyword/MembershipUsingBounds.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val percent = 35

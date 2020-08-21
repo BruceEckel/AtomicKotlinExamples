@@ -1,5 +1,5 @@
 // NestedClasses/ReturnLocal.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package nestedclasses
 
 interface Amphibian

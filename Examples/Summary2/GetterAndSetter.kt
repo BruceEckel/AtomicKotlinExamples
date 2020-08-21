@@ -1,5 +1,5 @@
 // Summary2/GetterAndSetter.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package summary2
 
 class GetterAndSetter {

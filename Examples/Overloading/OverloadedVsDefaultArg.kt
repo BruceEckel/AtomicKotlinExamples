@@ -1,5 +1,5 @@
 // Overloading/OverloadedVsDefaultArg.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package overloadingvsdefaultargs
 
 fun foo(n: Int = 99) = print("foo-1-$n")

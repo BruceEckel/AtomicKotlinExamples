@@ -1,5 +1,5 @@
 // CreatingGenerics/InAndOutCrates.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package creatinggenerics
 
 class InCrate<in T>(private var contents: T) {

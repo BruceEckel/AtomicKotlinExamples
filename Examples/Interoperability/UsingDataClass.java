@@ -1,5 +1,5 @@
 // Interoperability/UsingDataClass.java
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package Interoperability;
 import java.util.HashMap;
 import static atomictest.AtomicTestKt.eq;

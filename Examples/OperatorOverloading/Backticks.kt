@@ -1,5 +1,5 @@
 // OperatorOverloading/Backticks.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun `A long name with spaces`() = Unit
 

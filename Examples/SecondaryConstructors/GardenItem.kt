@@ -1,5 +1,5 @@
 // SecondaryConstructors/GardenItem.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package secondaryconstructors
 import atomictest.eq
 import secondaryconstructors.Material.*

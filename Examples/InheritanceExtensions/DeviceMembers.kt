@@ -1,5 +1,5 @@
 // InheritanceExtensions/DeviceMembers.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package inheritanceextensions1
 import atomictest.eq
 

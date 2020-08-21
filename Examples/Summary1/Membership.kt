@@ -1,5 +1,5 @@
 // Summary1/Membership.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun inNumRange(n: Int) = n in 50..100
 

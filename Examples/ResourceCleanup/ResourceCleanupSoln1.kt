@@ -1,5 +1,5 @@
 // ResourceCleanup/ResourceCleanupSoln1.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package resourcecleanupsoln1
 import java.io.File
 

@@ -1,5 +1,5 @@
 // InKeyword/FloatingPointRange.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun inFloatRange(n: Double) {
   val r = 1.0..10.0

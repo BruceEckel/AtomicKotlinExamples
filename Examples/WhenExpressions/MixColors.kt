@@ -1,5 +1,5 @@
 // WhenExpressions/MixColors.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 
 fun mixColors(first: String, second: String) =

@@ -1,5 +1,5 @@
 // Properties/Cup.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Cup {
   var percentFull = 0

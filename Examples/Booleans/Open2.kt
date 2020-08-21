@@ -1,5 +1,5 @@
 // Booleans/Open2.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun isOpen2(hour: Int) {
   val open = 9

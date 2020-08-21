@@ -1,5 +1,5 @@
 // Summary2/Boxes.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 private var count = 0                   // [1]
 

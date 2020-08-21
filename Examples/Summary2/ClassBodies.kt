@@ -1,5 +1,5 @@
 // Summary2/ClassBodies.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 class NoBody
 

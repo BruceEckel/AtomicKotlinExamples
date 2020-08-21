@@ -1,5 +1,5 @@
 // RepetitionWithWhile/WhileLoop.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun condition(i: Int) = i < 100  // [1]
 

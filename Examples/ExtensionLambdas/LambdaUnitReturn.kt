@@ -1,5 +1,5 @@
 // ExtensionLambdas/LambdaUnitReturn.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package extensionlambdas
 
 fun unitReturn(lambda: A.() -> Unit) =

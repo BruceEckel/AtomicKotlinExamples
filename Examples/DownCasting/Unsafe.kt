@@ -1,5 +1,5 @@
 // DownCasting/Unsafe.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package downcasting
 import atomictest.*
 

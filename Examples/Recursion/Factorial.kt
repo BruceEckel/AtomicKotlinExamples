@@ -1,5 +1,5 @@
 // Recursion/Factorial.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package recursion
 import atomictest.eq
 

@@ -1,5 +1,5 @@
 // PropertyAccessors/Default.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 class Default {
   var i: Int = 0

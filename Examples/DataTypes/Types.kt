@@ -1,5 +1,5 @@
 // DataTypes/Types.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val whole: Int = 11              // [1]

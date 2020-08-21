@@ -1,5 +1,5 @@
 // BuildingMaps/ImmutableBlendMap.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 @file:OptIn(ExperimentalStdlibApi::class)
 package buildingmaps
 

@@ -1,5 +1,5 @@
 // Summary2/VarArgs.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun varargs(s: String, vararg ints: Int) {
   for (i in ints) {

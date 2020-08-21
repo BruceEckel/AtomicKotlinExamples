@@ -1,5 +1,5 @@
 // DataTypes/Inference.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val n = 1 + 1.2

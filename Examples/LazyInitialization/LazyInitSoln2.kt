@@ -1,5 +1,5 @@
 // LazyInitialization/LazyInitSoln2.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package lazyinitsoln2
 import atomictest.*
 

@@ -1,5 +1,5 @@
 // ExpressionsStatements/Confusing.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   var i = 1

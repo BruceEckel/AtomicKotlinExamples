@@ -1,5 +1,5 @@
 // LoopingAndRanges/HasChar.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun hasChar(s: String, ch: Char): Boolean {
   for (c in s) {

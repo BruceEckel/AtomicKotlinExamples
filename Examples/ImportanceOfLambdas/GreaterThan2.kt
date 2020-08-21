@@ -1,5 +1,5 @@
 // ImportanceOfLambdas/GreaterThan2.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 
 fun greaterThan2(nums: List<Int>): List<Int> {

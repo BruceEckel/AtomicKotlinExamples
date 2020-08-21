@@ -1,5 +1,5 @@
 // Functions/SayHello.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun sayHello() {
   println("Hallo!")

@@ -1,5 +1,5 @@
 // ExpressionsStatements/AssigningAnIf.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   val result1 = if (11 > 42) 9 else 5

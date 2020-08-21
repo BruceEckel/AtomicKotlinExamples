@@ -1,5 +1,5 @@
 // CreatingGenerics/ReificationC.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package creatinggenerics
 
 fun <T> c(class_: Class<T>) = a(class_)

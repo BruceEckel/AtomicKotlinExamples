@@ -1,5 +1,5 @@
 // LoopingAndRanges/ForWithCharRange.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun main() {
   for (c in 'a'..'z') {

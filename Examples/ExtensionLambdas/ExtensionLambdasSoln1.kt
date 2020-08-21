@@ -1,5 +1,5 @@
 // ExtensionLambdas/ExtensionLambdasSoln1.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package extensionlambdasoln1
 import atomictest.eq
 import kotlinx.collections.immutable.*

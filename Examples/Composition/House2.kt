@@ -1,5 +1,5 @@
 // Composition/House2.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package composition2
 
 interface Building

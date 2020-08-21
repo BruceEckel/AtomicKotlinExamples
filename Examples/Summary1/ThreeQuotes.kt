@@ -1,5 +1,5 @@
 // Summary1/ThreeQuotes.kt
-// ©2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 
 fun json(q: String, a: Int) = """{
   "question" : "$q",
