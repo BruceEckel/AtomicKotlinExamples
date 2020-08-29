@@ -8,7 +8,6 @@ fun main() {
     All mimsy were the borogoves,
       And the mome raths outgrabe.
   """.trim().split(Regex("\\W+"))
-
   println(jabber.take(5))
   println(jabber.slice(6..12))
   println(jabber.slice(6..18 step 2))
