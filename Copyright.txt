@@ -62,10 +62,12 @@ SERVICES FROM MINDVIEW LLC, AND MINDVIEW LLC HAS NO
 OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
 ENHANCEMENTS, OR MODIFICATIONS.
 
-Please note that MindView LLC maintains a Web site which
-is the sole distribution point for electronic copies of the
-Source Code, https://github.com/BruceEckel/AtomicKotlinExamples,
-where it is freely available under the terms stated above.
+Please note that MindView LLC maintains a Web site which is
+the sole distribution point for electronic copies of the
+Source Code, where it is freely available under the terms
+stated above:
+
+  https://github.com/BruceEckel/AtomicKotlinExamples
 
 If you think you've found an error in the Source Code,
 please submit a correction at:
