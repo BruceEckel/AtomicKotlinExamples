@@ -9,9 +9,9 @@ sealed class Insect {
   open fun fly() = "${this.name}: fly"
 }
 
-class HouseFly: Insect()
+class HouseFly : Insect()
 
-class Flea: Insect() {
+class Flea : Insect() {
   override fun fly() =
     throw Exception("Flea cannot fly")
   fun crawl() = "Flea: crawl"
@@ -33,9 +33,9 @@ interface WaterWalker {
     "${this.name}: walk on water"
 }
 
-class WaterBeetle: Insect(), SwimmingInsect
-class WaterStrider: Insect(), WaterWalker
-class WhirligigBeetle: Insect(),
+class WaterBeetle : Insect(), SwimmingInsect
+class WaterStrider : Insect(), WaterWalker
+class WhirligigBeetle : Insect(),
   SwimmingInsect, WaterWalker
 
 fun Insect.water() =

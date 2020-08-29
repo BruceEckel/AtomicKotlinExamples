@@ -7,7 +7,7 @@ open class Base {
   open fun f() = 1
 }
 
-class Derived: Base() {
+class Derived : Base() {
   override fun f() = 99
 }
 

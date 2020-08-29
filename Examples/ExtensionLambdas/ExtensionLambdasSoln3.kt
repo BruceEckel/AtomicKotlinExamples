@@ -3,7 +3,7 @@
 package extensionlambdasoln3
 import atomictest.eq
 
-open class Cleanser: ArrayList<String>() {
+open class Cleanser : ArrayList<String>() {
   fun selectContainer() {
     add("Container selected")
   }
@@ -16,7 +16,7 @@ open class Cleanser: ArrayList<String>() {
   fun water() { add("water") }
 }
 
-class SprayCleanser: Cleanser() {
+class SprayCleanser : Cleanser() {
   fun selectSprayer() {
     add("Sprayer selected")
   }

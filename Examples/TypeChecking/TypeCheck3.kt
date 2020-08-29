@@ -8,13 +8,13 @@ sealed class Shape {
   fun draw() = "${this.name}: Draw"
 }
 
-class Circle: Shape()
+class Circle : Shape()
 
-class Square: Shape() {
+class Square : Shape() {
   fun rotate() = "Square: Rotate"
 }
 
-class Triangle: Shape() {
+class Triangle : Shape() {
   fun rotate() = "Triangle: Rotate"
 }
 

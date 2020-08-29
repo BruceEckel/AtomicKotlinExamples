@@ -7,15 +7,15 @@ interface Player {
   val symbol: Char
 }
 
-class Food: Player {
+class Food : Player {
   override val symbol = '.'
 }
 
-class Robot: Player {
+class Robot : Player {
   override val symbol get() = 'R'
 }
 
-class Wall(override val symbol: Char): Player
+class Wall(override val symbol: Char) : Player
 
 fun main() {
   listOf(Food(), Robot(), Wall('|')).map {

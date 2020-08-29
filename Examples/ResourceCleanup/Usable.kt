@@ -3,7 +3,7 @@
 package resourcecleanup
 import atomictest.*
 
-class Usable(): AutoCloseable {
+class Usable() : AutoCloseable {
   fun func() = trace("func()")
   override fun close() = trace("close()")
 }

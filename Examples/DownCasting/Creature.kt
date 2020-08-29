@@ -5,15 +5,15 @@ import atomictest.eq
 
 interface Creature
 
-class Human: Creature {
+class Human : Creature {
   fun greeting() = "I'm Human"
 }
 
-class Dog: Creature {
+class Dog : Creature {
   fun bark() = "Yip!"
 }
 
-class Alien: Creature {
+class Alien : Creature {
   fun mobility() = "Three legs"
 }
 
@@ -30,6 +30,6 @@ fun main() {
   what(c) eq "I'm Human"
   what(Dog()) eq "Yip!"
   what(Alien()) eq "Three legs"
-  class Who: Creature
+  class Who : Creature
   what(Who()) eq "Something else"
 }

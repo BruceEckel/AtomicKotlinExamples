@@ -10,7 +10,7 @@ class ReadWriteable2(var i: Int) {
   var value: String by BasicReadWrite2()
 }
 
-class BasicReadWrite2:
+class BasicReadWrite2 :
   ReadWriteProperty<ReadWriteable2, String> {
   override operator fun getValue(
     rw: ReadWriteable2,

@@ -11,7 +11,7 @@ abstract class Abstract(val av: String) {
   constructor(c: Char) : this(c.toString())
 }
 
-open class Concrete(): Abstract("") {
+open class Concrete() : Abstract("") {
   override fun concreteFunction() {}
   override val concreteProperty = ""
   override fun abstractFunction() = ""
@@ -27,7 +27,7 @@ sealed class Sealed(val av: String) {
   constructor(c: Char) : this(c.toString())
 }
 
-open class SealedSubclass(): Sealed("") {
+open class SealedSubclass() : Sealed("") {
   override fun concreteFunction() {}
   override val concreteProperty = ""
   override fun abstractFunction() = ""

@@ -7,11 +7,11 @@ interface Shape {
   fun draw(): String
 }
 
-class Circle: Shape {
+class Circle : Shape {
   override fun draw() = "Circle: Draw"
 }
 
-class Square: Shape {
+class Square : Shape {
   override fun draw() = "Square: Draw"
   fun rotate() = "Square: Rotate"
 }

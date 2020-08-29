@@ -3,8 +3,8 @@
 package lateinitializationsoln1
 
 interface PowerPlant
-class ElectricMotor: PowerPlant
-class CombustionEngine: PowerPlant
+class ElectricMotor : PowerPlant
+class CombustionEngine : PowerPlant
 
 class Vehicle {
   lateinit var powerPlant: PowerPlant

@@ -14,7 +14,7 @@ fun useMyClass(mc: MyClass) {
   mc.h()
 }
 
-class MyClassAdaptedForLib: LibType {
+class MyClassAdaptedForLib : LibType {
   val field = MyClass()
   override fun f1() = field.h()
   override fun f2() = field.g()

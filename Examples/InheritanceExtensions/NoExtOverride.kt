@@ -7,7 +7,7 @@ open class Base {
   open fun f() = "Base.f()"
 }
 
-class Derived: Base() {
+class Derived : Base() {
   override fun f() = "Derived.f()"
 }
 

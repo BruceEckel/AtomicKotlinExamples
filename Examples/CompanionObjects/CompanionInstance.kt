@@ -8,7 +8,7 @@ interface ZI {
   fun g(): String
 }
 
-open class ZIOpen: ZI {
+open class ZIOpen : ZI {
   override fun f() = "ZIOpen.f()"
   override fun g() = "ZIOpen.g()"
 }

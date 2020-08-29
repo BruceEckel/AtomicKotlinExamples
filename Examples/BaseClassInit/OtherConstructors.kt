@@ -5,7 +5,7 @@ import atomictest.eq
 
 open class Base(val i: Int)
 
-class Derived: Base {
+class Derived : Base {
   constructor(i: Int) : super(i)
   constructor() : this(9)
 }

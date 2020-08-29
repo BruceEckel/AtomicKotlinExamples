@@ -5,7 +5,7 @@ import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 import checkinstructions.DataFile
 
-class FileDelegate:
+class FileDelegate :
   ReadWriteProperty<Any?, String> {
   override fun getValue(
     thisRef: Any?,

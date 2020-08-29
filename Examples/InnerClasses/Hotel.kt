@@ -9,7 +9,7 @@ class Hotel(private val reception: String) {
     fun callReception() =
       "Room $id Calling $reception"
   }
-  private inner class Closet: Room()
+  private inner class Closet : Room()
   fun closet(): Room = Closet()
 }
 

@@ -8,9 +8,9 @@ interface Insect {
   fun fly() = "${this.name}: fly"
 }
 
-class HouseFly: Insect
+class HouseFly : Insect
 
-class Flea: Insect {
+class Flea : Insect {
   override fun fly() =
     throw Exception("Flea cannot fly")
   fun crawl() = "Flea: crawl"
@@ -32,9 +32,9 @@ interface WaterWalker: Insect {
     "${this.name}: walk on water"
 }
 
-class WaterBeetle: SwimmingInsect
-class WaterStrider: WaterWalker
-class WhirligigBeetle:
+class WaterBeetle : SwimmingInsect
+class WaterStrider : WaterWalker
+class WhirligigBeetle :
   SwimmingInsect, WaterWalker
 
 fun Insect.water() =

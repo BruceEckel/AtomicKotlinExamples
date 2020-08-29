@@ -5,10 +5,10 @@ package inheritance
 // This class can be inherited:
 open class Parent
 
-class Child: Parent()
+class Child : Parent()
 
 // Child is not open, so this fails:
-// class GrandChild: Child()
+// class GrandChild : Child()
 
 // This class can't be inherited:
 final class Single

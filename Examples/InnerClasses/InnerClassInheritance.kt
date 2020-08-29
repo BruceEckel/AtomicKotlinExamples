@@ -14,8 +14,8 @@ open class Egg {
   fun g() { yolk.f() }
 }
 
-class BigEgg: Egg() {
-  inner class Yolk: Egg.Yolk() {
+class BigEgg : Egg() {
+  inner class Yolk : Egg.Yolk() {
     init { trace("BigEgg.Yolk()") }
     override fun f() {
       trace("BigEgg.Yolk.f()")

@@ -12,7 +12,7 @@ class PetCreator {
   fun dog(): Pet {
     val say = "Bark"
     // Local inner class:
-    class Dog: Pet {
+    class Dog : Pet {
       override fun speak() = say + home()
     }
     return Dog()

@@ -3,7 +3,7 @@
 package scopefunctions
 import atomictest.*
 
-data class Blob(val id: Int): AutoCloseable {
+data class Blob(val id: Int) : AutoCloseable {
   fun show() { trace("Show $id")}
   override fun close() = trace("Close $id")
 }

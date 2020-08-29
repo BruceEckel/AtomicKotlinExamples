@@ -9,13 +9,13 @@ interface Shape {
   fun rotate() = ""
 }
 
-class Circle: Shape
+class Circle : Shape
 
-class Square: Shape {
+class Square : Shape {
   override fun rotate() = "Square: Rotate"
 }
 
-class Triangle: Shape {
+class Triangle : Shape {
   override fun rotate() = "Triangle: Rotate"
 }
 

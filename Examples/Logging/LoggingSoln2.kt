@@ -5,15 +5,15 @@ import atomictest.eq
 import atomiclog.Logger
 import loggingsoln2.Status.*
 
-open class Except: Exception() {
+open class Except : Exception() {
   override fun toString() =
     "${this::class.simpleName}"
 }
 
-open class DBFail: Except()
-class DBOpenFail: DBFail()
-class DBWriteFail: DBFail()
-class DBCloseFail: DBFail()
+open class DBFail : Except()
+class DBOpenFail : DBFail()
+class DBWriteFail : DBFail()
+class DBCloseFail : DBFail()
 
 class DataBase {
   fun open(id: Int, level: Int) {
@@ -27,9 +27,9 @@ class DataBase {
   }
 }
 
-open class NetworkFail: Except()
-class NetworkOpenFail: NetworkFail()
-class NetworkCloseFail: NetworkFail()
+open class NetworkFail : Except()
+class NetworkOpenFail : NetworkFail()
+class NetworkCloseFail : NetworkFail()
 
 class NetConnection(val url: String) {
   fun open(id: Int, level: Int) {

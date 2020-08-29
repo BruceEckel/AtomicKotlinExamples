@@ -3,7 +3,7 @@
 package nothingtypesoln1
 import atomictest.*
 
-class Failure(msg: String): Exception(msg)
+class Failure(msg: String) : Exception(msg)
 
 fun fail(msg: String): Nothing {
   println(msg)

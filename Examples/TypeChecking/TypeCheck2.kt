@@ -3,7 +3,7 @@
 package typechecking
 import atomictest.eq
 
-class Triangle: Shape {
+class Triangle : Shape {
   override fun draw() = "Triangle: Draw"
   fun rotate() = "Triangle: Rotate"
 }

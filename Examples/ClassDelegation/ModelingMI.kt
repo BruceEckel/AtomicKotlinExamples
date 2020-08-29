@@ -19,7 +19,7 @@ interface MouseManager {
   fun hovering(): Boolean
 }
 
-class UserInput: MouseManager {
+class UserInput : MouseManager {
   override fun clicked() = true
   override fun hovering() = true
 }
@@ -27,7 +27,7 @@ class UserInput: MouseManager {
 // Even if we make the classes open, we
 // get an error because only one class may
 // appear in a supertype list:
-// class Button: ButtonImage(), UserInput()
+// class Button : ButtonImage(), UserInput()
 
 class Button(
   val width: Int,

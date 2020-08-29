@@ -8,7 +8,7 @@ interface WithPropertyAccessor {
     get() = 11
 }
 
-class Impl: WithPropertyAccessor
+class Impl : WithPropertyAccessor
 
 fun main() {
   Impl().a eq 11

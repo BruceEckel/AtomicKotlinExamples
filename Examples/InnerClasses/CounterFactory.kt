@@ -11,7 +11,7 @@ class CounterFactory {
   private var count = 0
   fun new(name: String): Counter {
     // Local inner class:
-    class Local: Counter {
+    class Local : Counter {
       init { trace("Local()") }
       override fun next(): Int {
         // Access local identifiers:

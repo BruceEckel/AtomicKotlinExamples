@@ -7,7 +7,7 @@ interface Hotness {
   fun feedback(): String
 }
 
-enum class SpiceLevel: Hotness {
+enum class SpiceLevel : Hotness {
   Mild {
     override fun feedback() =
       "It adds flavor!"

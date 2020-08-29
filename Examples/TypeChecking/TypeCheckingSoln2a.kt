@@ -8,24 +8,24 @@ sealed class BeverageContainer {
   abstract fun pour(): String
 }
 
-sealed class Can: BeverageContainer() {
+sealed class Can : BeverageContainer() {
   override fun open() = "Pop Top"
   override fun pour() = "Can: Pour"
 }
 
-class SteelCan: Can()
-class AluminumCan: Can()
+class SteelCan : Can()
+class AluminumCan : Can()
 
-sealed class Bottle: BeverageContainer() {
+sealed class Bottle : BeverageContainer() {
   override fun open() = "Remove Cap"
   override fun pour() = "Bottle: Pour"
 }
 
-class GlassBottle: Bottle()
-sealed class PlasticBottle: Bottle()
-class PETBottle: PlasticBottle()
-class HDPEBottle: PlasticBottle()
-class DecomposableBottle: PlasticBottle()
+class GlassBottle : Bottle()
+sealed class PlasticBottle : Bottle()
+class PETBottle : PlasticBottle()
+class HDPEBottle : PlasticBottle()
+class DecomposableBottle : PlasticBottle()
 
 fun BeverageContainer.recycle2() =
   when(this) {

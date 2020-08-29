@@ -8,18 +8,18 @@ interface BeverageContainer {
   fun pour(): String
 }
 
-class Can: BeverageContainer {
+class Can : BeverageContainer {
   override fun open() = "Pop Top"
   override fun pour() = "Can: Pour"
 }
 
-open class Bottle: BeverageContainer {
+open class Bottle : BeverageContainer {
   override fun open() = "Remove Cap"
   override fun pour() = "Bottle: Pour"
 }
 
-class GlassBottle: Bottle()
-class PlasticBottle: Bottle()
+class GlassBottle : Bottle()
+class PlasticBottle : Bottle()
 
 fun BeverageContainer.recycle() =
   when(this) {

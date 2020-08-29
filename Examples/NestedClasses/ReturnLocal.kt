@@ -5,7 +5,7 @@ package nestedclasses
 interface Amphibian
 
 fun createAmphibian(): Amphibian {
-  class Frog: Amphibian
+  class Frog : Amphibian
   return Frog()
 }
 

@@ -4,4 +4,4 @@ package inheritance
 
 open class Base
 
-class Derived: Base()
+class Derived : Base()
