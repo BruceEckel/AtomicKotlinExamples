@@ -1,5 +1,6 @@
 // Logging/LoggingSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package loggingsoln2
 import atomictest.eq
 import atomiclog.Logger
@@ -101,12 +102,13 @@ fun main() {
     } catch (e: Except) {
       logger.error("main(): $e")
     }
-  logger.logFile.readText() eq
-"""Error: DBOpenFail
-Error: NetworkOpenFail
-Error: DBWriteFail
-Error: NetworkCloseFail
-Error: DBCloseFail
-Error: main(): DBCloseFail
-"""
+  logger.logFile.readText().trimIndent() eq
+  """
+  Error: DBOpenFail
+  Error: NetworkOpenFail
+  Error: DBWriteFail
+  Error: NetworkCloseFail
+  Error: DBCloseFail
+  Error: main(): DBCloseFail
+  """
 }

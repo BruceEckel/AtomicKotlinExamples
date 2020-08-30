@@ -1,5 +1,6 @@
 // Logging/LoggingSoln3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package loggingsoln3
 import atomictest.eq
 import checkinstructions.DataFile
@@ -38,21 +39,22 @@ fun main() {
     debugLevel = it
     logger.report("debugLevel($debugLevel)")
   }
-  logger.logFile.readText() eq
-"""Trace: debugLevel(Trace)
-Debug: debugLevel(Trace)
-Info: debugLevel(Trace)
-Warn: debugLevel(Trace)
-Error: debugLevel(Trace)
-Debug: debugLevel(Debug)
-Info: debugLevel(Debug)
-Warn: debugLevel(Debug)
-Error: debugLevel(Debug)
-Info: debugLevel(Info)
-Warn: debugLevel(Info)
-Error: debugLevel(Info)
-Warn: debugLevel(Warn)
-Error: debugLevel(Warn)
-Error: debugLevel(Error)
-"""
+  logger.logFile.readText().trimIndent() eq
+  """
+  Trace: debugLevel(Trace)
+  Debug: debugLevel(Trace)
+  Info: debugLevel(Trace)
+  Warn: debugLevel(Trace)
+  Error: debugLevel(Trace)
+  Debug: debugLevel(Debug)
+  Info: debugLevel(Debug)
+  Warn: debugLevel(Debug)
+  Error: debugLevel(Debug)
+  Info: debugLevel(Info)
+  Warn: debugLevel(Info)
+  Error: debugLevel(Info)
+  Warn: debugLevel(Warn)
+  Error: debugLevel(Warn)
+  Error: debugLevel(Error)
+  """
 }

@@ -1,5 +1,6 @@
 // Logging/LoggingSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package loggingsoln1
 import atomictest.*
 import atomiclog.Logger
@@ -52,12 +53,13 @@ fun main() {
     pipe.level.up()
     pipe.checkLevel()
   }
-  pipe.logger.logFile.readText() eq
-"""Trace: Level 2
-Debug: Level 4
-Info: Level 6
-Warn: Level 8
-Error: Level 10
-Error: Level 10
-"""
+  pipe.logger.logFile.readText().trimIndent() eq
+  """
+  Trace: Level 2
+  Debug: Level 4
+  Info: Level 6
+  Warn: Level 8
+  Error: Level 10
+  Error: Level 10
+  """
 }

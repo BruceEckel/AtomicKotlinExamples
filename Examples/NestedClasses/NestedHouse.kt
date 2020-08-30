@@ -45,5 +45,5 @@ fun main() {
    (Toilet clean Sink clean) Bathroom clean
   ) Guest Bedroom clean
   ) House clean
-  """.trimIndent()
+  """
 }
