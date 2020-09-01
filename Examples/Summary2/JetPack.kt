@@ -1,5 +1,6 @@
 // Summary2/JetPack.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package summary2
 
 class JetPack(
   private var fuel: Double     // [1]

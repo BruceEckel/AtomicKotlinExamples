@@ -1,6 +1,6 @@
 // BuildingMaps/GroupBy.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package buildingmaps
+import buildingmaps.*
 import atomictest.eq
 
 fun main() {

@@ -1,8 +1,7 @@
 // ExtensionFunctions/StrangeQuote.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package extensionfunctions
 import atomictest.eq
-import quoting.singleQuote
-import quoting.doubleQuote
 
 // Apply two sets of single quotes:
 fun String.strangeQuote() =

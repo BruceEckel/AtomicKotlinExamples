@@ -1,5 +1,6 @@
 // CompanionObjects/ObjectProperty.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package companionobjects
 import atomictest.eq
 
 class WithObjectProperty {

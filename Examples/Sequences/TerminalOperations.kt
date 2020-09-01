@@ -1,6 +1,6 @@
 // Sequences/TerminalOperations.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package usingsequences
+import usingsequences.*
 import atomictest.*
 
 fun main() {

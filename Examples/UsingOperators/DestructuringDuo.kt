@@ -1,5 +1,6 @@
 // UsingOperators/DestructuringDuo.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package usingoperators
 import atomictest.*
 
 class Duo(val x: Int, val y: Int) {

@@ -1,5 +1,6 @@
 // HigherOrderFunctions/Any.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package higherorderfunctions
 import atomictest.eq
 
 fun <T> List<T>.any(                    // [1]

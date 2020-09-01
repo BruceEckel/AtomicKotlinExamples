@@ -1,6 +1,6 @@
 // SafeCallsAndElvis/ElvisCall.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package elvisoperator
+package safecalls
 import atomictest.eq
 
 fun checkLength(s: String?, expected: Int) {

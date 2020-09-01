@@ -1,5 +1,6 @@
 // LazyInitialization/LazyInt.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package lazyinitialization
 import atomictest.*
 
 class LazyInt(val init: () -> Int) {

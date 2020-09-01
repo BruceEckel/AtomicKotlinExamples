@@ -1,6 +1,6 @@
 // NamedAndDefaultArgs/ArgumentOrder.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package color1
+import color1.color
 import atomictest.eq
 
 fun main() {

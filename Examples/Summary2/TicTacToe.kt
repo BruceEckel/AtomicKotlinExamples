@@ -1,5 +1,6 @@
 // Summary2/TicTacToe.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package summary2
 import atomictest.eq
 
 class Cell {

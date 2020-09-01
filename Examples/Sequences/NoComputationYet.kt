@@ -1,6 +1,6 @@
 // Sequences/NoComputationYet.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package usingsequences
+import usingsequences.*
 
 fun main() {
   val list = listOf(1, 2, 3, 4)

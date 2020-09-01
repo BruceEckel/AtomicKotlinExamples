@@ -1,6 +1,6 @@
 // Destructuring/PairDestructuring.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package destructuring
+import destructuring.compute
 import atomictest.eq
 
 fun main() {

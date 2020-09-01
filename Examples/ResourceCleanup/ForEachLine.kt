@@ -1,6 +1,5 @@
 // ResourceCleanup/ForEachLine.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package resourcecleanup
 import checkinstructions.DataFile
 import atomictest.*
 

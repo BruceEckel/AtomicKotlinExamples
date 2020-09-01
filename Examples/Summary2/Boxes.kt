@@ -1,5 +1,6 @@
 // Summary2/Boxes.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package summary2
 
 private var count = 0                   // [1]
 

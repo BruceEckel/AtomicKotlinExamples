@@ -1,5 +1,6 @@
 // Summary2/Quadratic.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package summary2
 import kotlin.math.sqrt
 import atomictest.*
 

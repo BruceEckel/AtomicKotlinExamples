@@ -1,5 +1,6 @@
 // ExtensionFunctions/BookExtensions.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package extensionfunctions
 import atomictest.eq
 
 class Book(val title: String)

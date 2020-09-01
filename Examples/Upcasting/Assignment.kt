@@ -1,6 +1,6 @@
 // Upcasting/Assignment.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package upcasting
+import upcasting.*
 
 fun main() {
   val shape1: Shape = Square()

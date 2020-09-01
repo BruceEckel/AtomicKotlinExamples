@@ -1,6 +1,5 @@
 // ScopeFunctions/ScopeFuncSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package scopefuncsoln2
 import classdelegation.SpaceShipControls
 import atomictest.*
 

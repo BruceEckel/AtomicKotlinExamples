@@ -1,5 +1,6 @@
 // Overloading/MemberVsExtension.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package overloading
 import atomictest.eq
 
 class My {

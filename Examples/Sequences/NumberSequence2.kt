@@ -1,6 +1,5 @@
 // Sequences/NumberSequence2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package usingsequences
 import atomictest.eq
 
 fun main() {

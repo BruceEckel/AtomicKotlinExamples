@@ -1,6 +1,5 @@
 // Interoperability/ReadOnlyCollections.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package interop
 import atomictest.eq
 
 fun main() {

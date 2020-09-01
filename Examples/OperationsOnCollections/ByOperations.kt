@@ -1,5 +1,6 @@
 // OperationsOnCollections/ByOperations.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package operationsoncollections
 import atomictest.eq
 
 data class Product(

@@ -1,6 +1,5 @@
 // UsingOperators/DestructuringMap.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package usingoperators
 import atomictest.eq
 
 fun main() {

@@ -1,5 +1,6 @@
 // Exceptions/ToIntException.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package exceptions
 
 fun erroneousCode() {
   // Uncomment this line to get an exception:

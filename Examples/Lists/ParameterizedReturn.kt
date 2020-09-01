@@ -1,5 +1,6 @@
 // Lists/ParameterizedReturn.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package lists
 import atomictest.eq
 
 // Return type is inferred:

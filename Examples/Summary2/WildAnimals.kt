@@ -1,5 +1,6 @@
 // Summary2/WildAnimals.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package summary2
 import atomictest.eq
 
 class Badger(id: String, years: Int) {

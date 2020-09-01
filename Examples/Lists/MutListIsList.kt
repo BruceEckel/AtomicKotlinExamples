@@ -1,5 +1,6 @@
 // Lists/MutListIsList.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package lists
 import atomictest.eq
 
 fun getList(): List<Int> {

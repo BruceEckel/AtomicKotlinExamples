@@ -1,5 +1,6 @@
 // Overloading/OverloadingAdd.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package overloading
 import atomictest.eq
 
 fun addInt(i: Int, j: Int) = i + j

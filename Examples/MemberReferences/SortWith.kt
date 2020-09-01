@@ -1,6 +1,6 @@
 // MemberReferences/SortWith.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package memberreferences1
+import memberreferences1.Message
 import atomictest.eq
 
 fun main() {

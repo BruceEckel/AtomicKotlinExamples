@@ -1,6 +1,6 @@
 // LocalFunctions/ReturnInsideLambda.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package localfunctions
+import localfunctions.*
 import atomictest.eq
 
 fun main() {

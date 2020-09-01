@@ -1,5 +1,6 @@
 // DataClasses/CopyDataClass.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package dataclasses
 import atomictest.eq
 
 data class DetailedContact(

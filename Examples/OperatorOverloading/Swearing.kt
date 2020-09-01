@@ -1,5 +1,6 @@
 // OperatorOverloading/Swearing.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package operatoroverloading
 import atomictest.eq
 
 infix fun String.`#!%`(s: String) =

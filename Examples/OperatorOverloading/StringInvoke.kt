@@ -1,5 +1,6 @@
 // OperatorOverloading/StringInvoke.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package operatoroverloading
 import atomictest.eq
 
 operator fun String.invoke(

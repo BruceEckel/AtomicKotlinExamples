@@ -1,5 +1,6 @@
 // Summary2/VarArgs.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package summary2
 
 fun varargs(s: String, vararg ints: Int) {
   for (i in ints) {

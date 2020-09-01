@@ -1,6 +1,6 @@
 // DownCasting/IsKeyword.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package downcasting
+import downcasting.*
 
 fun main() {
   val b1: Base = Derived1() // Upcast

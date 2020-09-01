@@ -50,7 +50,7 @@ task AllOperators(type: JavaExec) {
 
 task Amphibian(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'AmphibianKt'
+    main = 'nullabletypes.AmphibianKt'
 }
 
 task AnUnchangingVar(type: JavaExec) {
@@ -60,7 +60,7 @@ task AnUnchangingVar(type: JavaExec) {
 
 task AnalyzeInput(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'AnalyzeInputKt'
+    main = 'whenexpressions.AnalyzeInputKt'
 }
 
 task Animals(type: JavaExec) {
@@ -80,12 +80,12 @@ task AnonymousFunction(type: JavaExec) {
 
 task Any(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'AnyKt'
+    main = 'higherorderfunctions.AnyKt'
 }
 
 task AnyFromListOfStar(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'extensionproperties.AnyFromListOfStarKt'
+    main = 'AnyFromListOfStarKt'
 }
 
 task AnyInstead(type: JavaExec) {
@@ -100,7 +100,7 @@ task Arg(type: JavaExec) {
 
 task ArgumentOrder(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'color1.ArgumentOrderKt'
+    main = 'ArgumentOrderKt'
 }
 
 task ArraySpread(type: JavaExec) {
@@ -115,7 +115,7 @@ task AssigningAnIf(type: JavaExec) {
 
 task Assignment(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'upcasting.AssignmentKt'
+    main = 'AssignmentKt'
 }
 
 task AssignmentOperators(type: JavaExec) {
@@ -125,17 +125,17 @@ task AssignmentOperators(type: JavaExec) {
 
 task AssociateBy(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildingmaps.AssociateByKt'
+    main = 'AssociateByKt'
 }
 
 task AssociateByUnique(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildingmaps.AssociateByUniqueKt'
+    main = 'AssociateByUniqueKt'
 }
 
 task AssociateWith(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildingmaps.AssociateWithKt'
+    main = 'AssociateWithKt'
 }
 
 task AtomicTestCapture(type: JavaExec) {
@@ -145,7 +145,7 @@ task AtomicTestCapture(type: JavaExec) {
 
 task AutoCloseable(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'resourcecleanup.AutoCloseableKt'
+    main = 'AutoCloseableKt'
 }
 
 task AverageIncome(type: JavaExec) {
@@ -175,7 +175,7 @@ task BMIMetric(type: JavaExec) {
 
 task Backticks(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'BackticksKt'
+    main = 'operatoroverloading.BackticksKt'
 }
 
 task BasicFunctions(type: JavaExec) {
@@ -250,12 +250,12 @@ task Blob(type: JavaExec) {
 
 task BmiWhen(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'BmiWhenKt'
+    main = 'whenexpressions.BmiWhenKt'
 }
 
 task BookExtensions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'BookExtensionsKt'
+    main = 'extensionfunctions.BookExtensionsKt'
 }
 
 task Booleans(type: JavaExec) {
@@ -265,12 +265,12 @@ task Booleans(type: JavaExec) {
 
 task Boxes(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'BoxesKt'
+    main = 'summary2.BoxesKt'
 }
 
 task ByOperations(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ByOperationsKt'
+    main = 'operationsoncollections.ByOperationsKt'
 }
 
 task CallStack(type: JavaExec) {
@@ -370,12 +370,12 @@ task CheckType(type: JavaExec) {
 
 task CheckingOptions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'CheckingOptionsKt'
+    main = 'enumerations.CheckingOptionsKt'
 }
 
 task ClassBodies(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ClassBodiesKt'
+    main = 'summary2.ClassBodiesKt'
 }
 
 task Closed(type: JavaExec) {
@@ -410,7 +410,7 @@ task ColorBlend(type: JavaExec) {
 
 task ColorSet(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ColorSetKt'
+    main = 'summary2.ColorSetKt'
 }
 
 task CompanionDelegation(type: JavaExec) {
@@ -430,7 +430,7 @@ task CompanionInstance(type: JavaExec) {
 
 task CompanionObject(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'CompanionObjectKt'
+    main = 'companionobjects.CompanionObjectKt'
 }
 
 task CompareTo(type: JavaExec) {
@@ -475,7 +475,7 @@ task ConstructorReference(type: JavaExec) {
 
 task ContactMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ContactMapKt'
+    main = 'maps.ContactMapKt'
 }
 
 task Convention(type: JavaExec) {
@@ -495,7 +495,7 @@ task Cookie(type: JavaExec) {
 
 task CopyDataClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'CopyDataClassKt'
+    main = 'dataclasses.CopyDataClassKt'
 }
 
 task Counter(type: JavaExec) {
@@ -580,7 +580,7 @@ task DataFile(type: JavaExec) {
 
 task Default(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'DefaultKt'
+    main = 'propertyaccessors.DefaultKt'
 }
 
 task DefineTakeIf(type: JavaExec) {
@@ -600,7 +600,7 @@ task DefiningRanges(type: JavaExec) {
 
 task Definition(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'DefinitionKt'
+    main = 'nullableextensions.DefinitionKt'
 }
 
 task DelegToolsSoln1(type: JavaExec) {
@@ -650,12 +650,12 @@ task DestructuringData(type: JavaExec) {
 
 task DestructuringDuo(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'DestructuringDuoKt'
+    main = 'usingoperators.DestructuringDuoKt'
 }
 
 task DestructuringMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingoperators.DestructuringMapKt'
+    main = 'DestructuringMapKt'
 }
 
 task DeviceExtensions(type: JavaExec) {
@@ -710,7 +710,7 @@ task Drawing(type: JavaExec) {
 
 task EagerEvaluation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingsequences.EagerEvaluationKt'
+    main = 'EagerEvaluationKt'
 }
 
 task EagerVsLazyEvaluation(type: JavaExec) {
@@ -720,7 +720,7 @@ task EagerVsLazyEvaluation(type: JavaExec) {
 
 task ElvisCall(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'elvisoperator.ElvisCallKt'
+    main = 'safecalls.ElvisCallKt'
 }
 
 task ElvisOperator(type: JavaExec) {
@@ -740,7 +740,7 @@ task EnumImport(type: JavaExec) {
 
 task Evaluation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'EvaluationKt'
+    main = 'namedanddefault.EvaluationKt'
 }
 
 task EvaluationOrder(type: JavaExec) {
@@ -760,7 +760,7 @@ task ExplicitDelegation(type: JavaExec) {
 
 task ExplicitTyping(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ExplicitTypingKt'
+    main = 'summary2.ExplicitTypingKt'
 }
 
 task ExpressionInTemplate(type: JavaExec) {
@@ -845,17 +845,17 @@ task Filter(type: JavaExec) {
 
 task FilterEven(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FilterEvenKt'
+    main = 'importanceoflambdas.FilterEvenKt'
 }
 
 task FilterIsInstance(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'downcasting.FilterIsInstanceKt'
+    main = 'FilterIsInstanceKt'
 }
 
 task FilterMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildingmaps.FilterMapKt'
+    main = 'FilterMapKt'
 }
 
 task FilterNotNull(type: JavaExec) {
@@ -905,7 +905,7 @@ task ForControl(type: JavaExec) {
 
 task ForEachLine(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'resourcecleanup.ForEachLineKt'
+    main = 'ForEachLineKt'
 }
 
 task ForIsAStatement(type: JavaExec) {
@@ -920,7 +920,7 @@ task ForLabeled(type: JavaExec) {
 
 task ForLoop(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'destructuring.ForLoopKt'
+    main = 'ForLoopKt'
 }
 
 task ForWithCharRange(type: JavaExec) {
@@ -945,7 +945,7 @@ task FuncReferences(type: JavaExec) {
 
 task FunctionClosure(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'FunctionClosureKt'
+    main = 'importanceoflambdas.FunctionClosureKt'
 }
 
 task FunctionReference(type: JavaExec) {
@@ -980,12 +980,12 @@ task GenericListExtensions(type: JavaExec) {
 
 task GermanOrdinals(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'GermanOrdinalsKt'
+    main = 'whenexpressions.GermanOrdinalsKt'
 }
 
 task GetOrPut(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildingmaps.GetOrPutKt'
+    main = 'GetOrPutKt'
 }
 
 task GetTrace(type: JavaExec) {
@@ -1020,17 +1020,17 @@ task GreatApe3(type: JavaExec) {
 
 task GreaterThan2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'GreaterThan2Kt'
+    main = 'importanceoflambdas.GreaterThan2Kt'
 }
 
 task GroupBy(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildingmaps.GroupByKt'
+    main = 'GroupByKt'
 }
 
 task GroupByVsFilter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildingmaps.GroupByVsFilterKt'
+    main = 'GroupByVsFilterKt'
 }
 
 task GuaranteedCleanup(type: JavaExec) {
@@ -1075,7 +1075,7 @@ task HelloWorld(type: JavaExec) {
 
 task HiddenArrayList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interop.HiddenArrayListKt'
+    main = 'HiddenArrayListKt'
 }
 
 task Hierarchy(type: JavaExec) {
@@ -1230,12 +1230,12 @@ task InnerClassInheritance(type: JavaExec) {
 
 task InputLines1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingsequences.InputLines1Kt'
+    main = 'InputLines1Kt'
 }
 
 task InputLines2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingsequences.InputLines2Kt'
+    main = 'InputLines2Kt'
 }
 
 task Insects(type: JavaExec) {
@@ -1260,7 +1260,7 @@ task IntegerOverflow(type: JavaExec) {
 
 task InterestingSessions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'localfunctions.InterestingSessionsKt'
+    main = 'InterestingSessionsKt'
 }
 
 task InterfaceCollision(type: JavaExec) {
@@ -1280,7 +1280,7 @@ task IntroducingNull(type: JavaExec) {
 
 task Invoke(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'InvokeKt'
+    main = 'operatoroverloading.InvokeKt'
 }
 
 task IsInitialized(type: JavaExec) {
@@ -1290,7 +1290,7 @@ task IsInitialized(type: JavaExec) {
 
 task IsKeyword(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'downcasting.IsKeywordKt'
+    main = 'IsKeywordKt'
 }
 
 task IterateOverString(type: JavaExec) {
@@ -1315,12 +1315,12 @@ task JavaChecked(type: JavaExec) {
 
 task JavaList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interop.JavaListKt'
+    main = 'JavaListKt'
 }
 
 task JetPack(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'JetPackKt'
+    main = 'summary2.JetPackKt'
 }
 
 task JoinToString(type: JavaExec) {
@@ -1335,7 +1335,7 @@ task JulianMonth(type: JavaExec) {
 
 task KotlinChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interop.KotlinCheckedKt'
+    main = 'KotlinCheckedKt'
 }
 
 task LabeledReturn(type: JavaExec) {
@@ -1390,7 +1390,7 @@ task LazyInitSoln3(type: JavaExec) {
 
 task LazyInt(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'LazyIntKt'
+    main = 'lazyinitialization.LazyIntKt'
 }
 
 task LazySyntax(type: JavaExec) {
@@ -1430,7 +1430,7 @@ task ListOf(type: JavaExec) {
 
 task ListOfNothing(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nothingtype.ListOfNothingKt'
+    main = 'ListOfNothingKt'
 }
 
 task ListOfStar(type: JavaExec) {
@@ -1465,7 +1465,7 @@ task LocalExtensions(type: JavaExec) {
 
 task LocalFunctionReference(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'localfunctions.LocalFunctionReferenceKt'
+    main = 'LocalFunctionReferenceKt'
 }
 
 task LocalFunctions(type: JavaExec) {
@@ -1480,7 +1480,7 @@ task LocalInnerClasses(type: JavaExec) {
 
 task LogChanges(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'LogChangesKt'
+    main = 'propertyaccessors.LogChangesKt'
 }
 
 task LoggingSoln1(type: JavaExec) {
@@ -1505,7 +1505,7 @@ task LongConstants(type: JavaExec) {
 
 task LoopWithIndex(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'destructuring.LoopWithIndexKt'
+    main = 'LoopWithIndexKt'
 }
 
 task MainArgConversion(type: JavaExec) {
@@ -1555,7 +1555,7 @@ task MemberOperator(type: JavaExec) {
 
 task MemberVsExtension(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'MemberVsExtensionKt'
+    main = 'overloading.MemberVsExtensionKt'
 }
 
 task Membership(type: JavaExec) {
@@ -1575,7 +1575,7 @@ task MembershipUsingBounds(type: JavaExec) {
 
 task MixColors(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'MixColorsKt'
+    main = 'whenexpressions.MixColorsKt'
 }
 
 task ModelingMI(type: JavaExec) {
@@ -1590,7 +1590,7 @@ task Modulus(type: JavaExec) {
 
 task Molecule(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'MoleculeKt'
+    main = 'operatoroverloading.MoleculeKt'
 }
 
 task MultipleArgs(type: JavaExec) {
@@ -1630,7 +1630,7 @@ task MultiplyByTwo(type: JavaExec) {
 
 task MutListIsList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'MutListIsListKt'
+    main = 'lists.MutListIsListKt'
 }
 
 task MutableList(type: JavaExec) {
@@ -1650,7 +1650,7 @@ task MutableSet(type: JavaExec) {
 
 task NPEOnPlatformType(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interop.NPEOnPlatformTypeKt'
+    main = 'NPEOnPlatformTypeKt'
 }
 
 task NameTag(type: JavaExec) {
@@ -1665,7 +1665,7 @@ task NamedArguments(type: JavaExec) {
 
 task NamingCompanionObjects(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NamingCompanionObjectsKt'
+    main = 'companionobjects.NamingCompanionObjectsKt'
 }
 
 task NarrowingUpcast(type: JavaExec) {
@@ -1695,7 +1695,7 @@ task NewException(type: JavaExec) {
 
 task NoComputationYet(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingsequences.NoComputationYetKt'
+    main = 'NoComputationYetKt'
 }
 
 task NoExtOverride(type: JavaExec) {
@@ -1760,7 +1760,7 @@ task NullableInMap(type: JavaExec) {
 
 task NullableParameter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'NullableParameterKt'
+    main = 'nullableextensions.NullableParameterKt'
 }
 
 task NullableReturn(type: JavaExec) {
@@ -1790,7 +1790,7 @@ task NumberSequence1(type: JavaExec) {
 
 task NumberSequence2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingsequences.NumberSequence2Kt'
+    main = 'NumberSequence2Kt'
 }
 
 task NumberTypes(type: JavaExec) {
@@ -1800,12 +1800,12 @@ task NumberTypes(type: JavaExec) {
 
 task ObjectCounter(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ObjectCounterKt'
+    main = 'companionobjects.ObjectCounterKt'
 }
 
 task ObjectFunctions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ObjectFunctionsKt'
+    main = 'companionobjects.ObjectFunctionsKt'
 }
 
 task ObjectInheritance(type: JavaExec) {
@@ -1825,7 +1825,7 @@ task ObjectNesting(type: JavaExec) {
 
 task ObjectProperty(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ObjectPropertyKt'
+    main = 'companionobjects.ObjectPropertyKt'
 }
 
 task ObserveAnimals(type: JavaExec) {
@@ -1910,22 +1910,22 @@ task OverloadedVsDefaultArg(type: JavaExec) {
 
 task Overloading(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'OverloadingKt'
+    main = 'overloading.OverloadingKt'
 }
 
 task OverloadingAdd(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'OverloadingAddKt'
+    main = 'overloading.OverloadingAddKt'
 }
 
 task PairDestructuring(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'destructuring.PairDestructuringKt'
+    main = 'PairDestructuringKt'
 }
 
 task PairOfLists(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'PairOfListsKt'
+    main = 'operationsoncollections.PairOfListsKt'
 }
 
 task Pairs(type: JavaExec) {
@@ -1935,7 +1935,7 @@ task Pairs(type: JavaExec) {
 
 task ParameterizedReturn(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ParameterizedReturnKt'
+    main = 'lists.ParameterizedReturnKt'
 }
 
 task ParameterizedTypes(type: JavaExec) {
@@ -2025,7 +2025,7 @@ task PropertyReference(type: JavaExec) {
 
 task Quadratic(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'QuadraticKt'
+    main = 'summary2.QuadraticKt'
 }
 
 task QuadraticRequire(type: JavaExec) {
@@ -2045,12 +2045,12 @@ task Quote(type: JavaExec) {
 
 task Quoting(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'quoting.QuotingKt'
+    main = 'extensionfunctions.QuotingKt'
 }
 
 task Random(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interop.RandomKt'
+    main = 'RandomKt'
 }
 
 task RangeOfInt(type: JavaExec) {
@@ -2070,7 +2070,7 @@ task ReadOnlyAndPlus(type: JavaExec) {
 
 task ReadOnlyCollections(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interop.ReadOnlyCollectionsKt'
+    main = 'ReadOnlyCollectionsKt'
 }
 
 task ReadOnlyMaps(type: JavaExec) {
@@ -2155,7 +2155,7 @@ task ReturnFromFun(type: JavaExec) {
 
 task ReturnInsideLambda(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'localfunctions.ReturnInsideLambdaKt'
+    main = 'ReturnInsideLambdaKt'
 }
 
 task ReturnLocal(type: JavaExec) {
@@ -2190,7 +2190,7 @@ task SafeCall(type: JavaExec) {
 
 task SafeOperation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'SafeOperationKt'
+    main = 'safecalls.SafeOperationKt'
 }
 
 task Sandwich(type: JavaExec) {
@@ -2215,7 +2215,7 @@ task ScopeFuncSoln1(type: JavaExec) {
 
 task ScopeFuncSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'scopefuncsoln2.ScopeFuncSoln2Kt'
+    main = 'ScopeFuncSoln2Kt'
 }
 
 task ScopeFuncSoln3(type: JavaExec) {
@@ -2255,12 +2255,12 @@ task Share2(type: JavaExec) {
 
 task SimilarOperation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildingmaps.SimilarOperationKt'
+    main = 'SimilarOperationKt'
 }
 
 task Simple(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'SimpleKt'
+    main = 'dataclasses.SimpleKt'
 }
 
 task SimpleConstructor(type: JavaExec) {
@@ -2285,7 +2285,7 @@ task SingleArgRequire(type: JavaExec) {
 
 task SortWith(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'memberreferences1.SortWithKt'
+    main = 'SortWithKt'
 }
 
 task Speakers(type: JavaExec) {
@@ -2320,7 +2320,7 @@ task StrTemplates(type: JavaExec) {
 
 task StrangeQuote(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'StrangeQuoteKt'
+    main = 'extensionfunctions.StrangeQuoteKt'
 }
 
 task StringConcatenation(type: JavaExec) {
@@ -2340,7 +2340,7 @@ task StringIndices(type: JavaExec) {
 
 task StringInvoke(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'StringInvokeKt'
+    main = 'operatoroverloading.StringInvokeKt'
 }
 
 task StringIsNullOr(type: JavaExec) {
@@ -2395,7 +2395,7 @@ task SumViaFold(type: JavaExec) {
 
 task Swearing(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'SwearingKt'
+    main = 'operatoroverloading.SwearingKt'
 }
 
 task TDDFail(type: JavaExec) {
@@ -2435,7 +2435,7 @@ task TeamWithTraditions(type: JavaExec) {
 
 task Temperature(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'TemperatureKt'
+    main = 'summary2.TemperatureKt'
 }
 
 task TemperatureDelta(type: JavaExec) {
@@ -2445,7 +2445,7 @@ task TemperatureDelta(type: JavaExec) {
 
 task TerminalOperations(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingsequences.TerminalOperationsKt'
+    main = 'TerminalOperationsKt'
 }
 
 task TestingExample(type: JavaExec) {
@@ -2460,7 +2460,7 @@ task ThreeQuotes(type: JavaExec) {
 
 task TicTacToe(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'TicTacToeKt'
+    main = 'summary2.TicTacToeKt'
 }
 
 task Ticket(type: JavaExec) {
@@ -2475,7 +2475,7 @@ task ToDoubleException(type: JavaExec) {
 
 task ToIntException(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'ToIntExceptionKt'
+    main = 'exceptions.ToIntExceptionKt'
 }
 
 task Todo(type: JavaExec) {
@@ -2500,7 +2500,7 @@ task Transform(type: JavaExec) {
 
 task TransformingMap(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'buildingmaps.TransformingMapKt'
+    main = 'TransformingMapKt'
 }
 
 task TrimMargin(type: JavaExec) {
@@ -2545,7 +2545,7 @@ task TwoArgLambda(type: JavaExec) {
 
 task TwoFunctionsWithVarargs(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'TwoFunctionsWithVarargsKt'
+    main = 'varargs.TwoFunctionsWithVarargsKt'
 }
 
 task TypeCheck1(type: JavaExec) {
@@ -2635,17 +2635,17 @@ task UseALibrary(type: JavaExec) {
 
 task UseAtomicLog(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'UseAtomicLogKt'
+    main = 'useatomiclog.UseAtomicLogKt'
 }
 
 task UseBeanClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'interop.UseBeanClassKt'
+    main = 'UseBeanClassKt'
 }
 
 task UseLines(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'resourcecleanup.UseLinesKt'
+    main = 'UseLinesKt'
 }
 
 task UsingAtomicTest(type: JavaExec) {
@@ -2705,22 +2705,22 @@ task Vanbo(type: JavaExec) {
 
 task VarArgs(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'VarArgsKt'
+    main = 'summary2.VarArgsKt'
 }
 
 task VarargLikeList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'VarargLikeListKt'
+    main = 'varargs.VarargLikeListKt'
 }
 
 task VarargSum(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'VarargSumKt'
+    main = 'varargs.VarargSumKt'
 }
 
 task VariableArgList(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'VariableArgListKt'
+    main = 'varargs.VariableArgListKt'
 }
 
 task Vars(type: JavaExec) {
@@ -2765,7 +2765,7 @@ task WhyFlatMap(type: JavaExec) {
 
 task WildAnimals(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'WildAnimalsKt'
+    main = 'summary2.WildAnimalsKt'
 }
 
 task WithDefaultArguments(type: JavaExec) {

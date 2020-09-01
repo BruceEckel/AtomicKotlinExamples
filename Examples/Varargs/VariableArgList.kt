@@ -1,5 +1,6 @@
 // Varargs/VariableArgList.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+package varargs
 
 fun v(s: String, vararg d: Double) {}
 
