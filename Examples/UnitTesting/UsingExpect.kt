@@ -12,14 +12,16 @@ fun main() {
   testFortyTwo2()
   capture {
     testFortyTwo2(43)
-  } eq "AssertionError: " +
-    "Incorrect, expected:<43> but was:<42>"
+  } contains
+    listOf("expected:",
+      "<43> but was:", "<42>")
   assertFails { testFortyTwo2(43) }
   capture {
     assertFails { testFortyTwo2() }
-  } eq "AssertionError: Expected an " +
-    "exception to be thrown, but was " +
-    "completed successfully."
+  } contains
+    listOf("Expected an exception",
+      "to be thrown",
+      "but was completed successfully.")
   assertFailsWith<AssertionError> {
     testFortyTwo2(43)
   }
@@ -27,8 +29,8 @@ fun main() {
     assertFailsWith<AssertionError> {
       testFortyTwo2()
     }
-  } eq "AssertionError: Expected an " +
-    "exception of class " +
-    "java.lang.AssertionError to be " +
-    "thrown, but was completed successfully."
+  } contains
+    listOf("Expected an exception",
+      "to be thrown",
+      "but was completed successfully.")
 }

@@ -218,6 +218,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCompanionEx1() {
+    testExample("Examples/CompanionObjects/CompanionEx1.kt", companionObjectsExercise1.CompanionEx1Kt::main);
+  }
+
+  @Test
+  public void testCompanionEx2() {
+    testExample("Examples/CompanionObjects/CompanionEx2.kt", companionObjectsExercise2.CompanionEx2Kt::main);
+  }
+
+  @Test
+  public void testCompanionEx3() {
+    testExample("Examples/CompanionObjects/CompanionEx3.kt", companionObjectsExercise3.CompanionEx3Kt::main);
+  }
+
+  @Test
   public void testCompanionFactory() {
     testExample("Examples/CompanionObjects/CompanionFactory.kt", companionobjects.CompanionFactoryKt::main);
   }
@@ -260,6 +275,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testObjectProperty() {
     testExample("Examples/CompanionObjects/ObjectProperty.kt", companionobjects.ObjectPropertyKt::main);
+  }
+
+  @Test
+  public void testExercise1() {
+    testExample("Examples/ComplexConstructors/Exercise1.kt", complexConstructorsExercise1.Exercise1Kt::main);
+  }
+
+  @Test
+  public void testExercise2() {
+    testExample("Examples/ComplexConstructors/Exercise2.kt", complexConstructorsExercise2.Exercise2Kt::main);
+  }
+
+  @Test
+  public void testExercise3() {
+    testExample("Examples/ComplexConstructors/Exercise3.kt", complexConstructorsExercise3.Exercise3Kt::main);
   }
 
   @Test
@@ -490,6 +520,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testCreature() {
     testExample("Examples/DownCasting/Creature.kt", downcasting.CreatureKt::main);
+  }
+
+  @Test
+  public void testDownCastEx1() {
+    testExample("Examples/DownCasting/DownCastEx1.kt", downcastingExercise1.DownCastEx1Kt::main);
+  }
+
+  @Test
+  public void testDownCastEx2() {
+    testExample("Examples/DownCasting/DownCastEx2.kt", downcastingExercise2.DownCastEx2Kt::main);
+  }
+
+  @Test
+  public void testDownCastEx3() {
+    testExample("Examples/DownCasting/DownCastEx3.kt", downcastingExercise3.DownCastEx3Kt::main);
   }
 
   @Test
@@ -963,6 +1008,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testInhExtensionsEx1() {
+    testExample("Examples/InheritanceExtensions/InhExtensionsEx1.kt", inheritanceAndExtensionsExercise2.InhExtensionsEx1Kt::main);
+  }
+
+  @Test
   public void testNoExtOverride() {
     testExample("Examples/InheritanceExtensions/NoExtOverride.kt", inheritanceextensions.NoExtOverrideKt::main);
   }
@@ -1020,6 +1070,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testInnerClassInheritance() {
     testExample("Examples/InnerClasses/InnerClassInheritance.kt", innerclasses.InnerClassInheritanceKt::main);
+  }
+
+  @Test
+  public void testInnerEx1() {
+    testExample("Examples/InnerClasses/InnerEx1.kt", innerClassesExercise1.InnerEx1Kt::main);
+  }
+
+  @Test
+  public void testInnerEx2() {
+    testExample("Examples/InnerClasses/InnerEx2.kt", innerClassesExercise2.InnerEx2Kt::main);
+  }
+
+  @Test
+  public void testInnerEx3() {
+    testExample("Examples/InnerClasses/InnerEx3.kt", innerClassesExercise3.InnerEx3Kt::main);
   }
 
   @Test
@@ -1493,6 +1558,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testMemberReferencesEx1() {
+    testExample("Examples/MemberReferences/MemberReferencesEx1.kt", memberReferencesExercise1.MemberReferencesEx1Kt::main);
+  }
+
+  @Test
   public void testPropertyReference() {
     testExample("Examples/MemberReferences/PropertyReference.kt", memberreferences1.PropertyReferenceKt::main);
   }
@@ -1555,6 +1625,26 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testFillIt() {
     testExample("Examples/NestedClasses/FillIt.kt", nestedclasses.FillItKt::main);
+  }
+
+  @Test
+  public void testNestedEx1() {
+    testExample("Examples/NestedClasses/NestedEx1.kt", nestedClassesExercise1.NestedEx1Kt::main);
+  }
+
+  @Test
+  public void testNestedEx2() {
+    testExample("Examples/NestedClasses/NestedEx2.kt", nestedClassesExercise2.NestedEx2Kt::main);
+  }
+
+  @Test
+  public void testNestedEx3() {
+    testExample("Examples/NestedClasses/NestedEx3.kt", nestedClassesExercise3.NestedEx3Kt::main);
+  }
+
+  @Test
+  public void testNestedEx4() {
+    testExample("Examples/NestedClasses/NestedEx4.kt", nestedClassesExercise4.NestedEx4Kt::main);
   }
 
   @Test
@@ -1730,6 +1820,21 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUsingLongs() {
     testExample("Examples/NumberTypes/UsingLongs.kt", UsingLongsKt::main);
+  }
+
+  @Test
+  public void testObjectEx1() {
+    testExample("Examples/Objects/ObjectEx1.kt", objectsExercise1.ObjectEx1Kt::main);
+  }
+
+  @Test
+  public void testObjectEx2() {
+    testExample("Examples/Objects/ObjectEx2.kt", objectsExercise2.ObjectEx2Kt::main);
+  }
+
+  @Test
+  public void testObjectEx3() {
+    testExample("Examples/Objects/ObjectEx3.kt", objectsExercise3.ObjectEx3Kt::main);
   }
 
   @Test
@@ -2228,6 +2333,21 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testSealedEx1() {
+    testExample("Examples/SealedClasses/SealedEx1.kt", sealedClassesExercise1.SealedEx1Kt::main);
+  }
+
+  @Test
+  public void testSealedEx2() {
+    testExample("Examples/SealedClasses/SealedEx2.kt", sealedClassesExercise2.SealedEx2Kt::main);
+  }
+
+  @Test
+  public void testSealedEx3() {
+    testExample("Examples/SealedClasses/SealedEx3.kt", sealedClassesExercise3.SealedEx3Kt::main);
+  }
+
+  @Test
   public void testSealedSubclasses() {
     testExample("Examples/SealedClasses/SealedSubclasses.kt", sealedclasses.SealedSubclassesKt::main);
   }
@@ -2625,6 +2745,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTrimmedMembers() {
     testExample("Examples/Upcasting/TrimmedMembers.kt", upcasting.TrimmedMembersKt::main);
+  }
+
+  @Test
+  public void testUpcastExercise1() {
+    testExample("Examples/Upcasting/UpcastExercise1.kt", upcastingExercise1.UpcastExercise1Kt::main);
   }
 
   @Test

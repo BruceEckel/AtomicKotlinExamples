@@ -4,14 +4,15 @@ package classdelegation
 import atomictest.eq
 
 interface Rectangle {
-  fun paint(): Int
+  fun paint(): String
 }
 
 class ButtonImage(
   val width: Int,
   val height: Int
 ): Rectangle {
-  override fun paint() = width * height
+  override fun paint() =
+    "painting ButtonImage($width, $height)"
 }
 
 interface MouseManager {
@@ -39,7 +40,8 @@ class Button(
 
 fun main() {
   val button = Button(10, 5)
-  button.paint() eq 50
+  button.paint() eq
+    "painting ButtonImage(10, 5)"
   button.clicked() eq true
   button.hovering() eq true
   // Can upcast to both delegated types:

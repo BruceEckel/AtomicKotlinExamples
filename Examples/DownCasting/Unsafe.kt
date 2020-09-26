@@ -17,5 +17,5 @@ fun main() {
   dogBarkUnsafe2(Dog()) eq "Yip!Yip!"
   (capture {
     dogBarkUnsafe(Human())
-  }).startsWith("ClassCastException") eq true
+  }) contains listOf("ClassCastException")
 }

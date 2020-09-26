@@ -25,9 +25,10 @@ fun main() {
   testAllGood()
   capture {
     testFortyTwo(43)
-  } eq "AssertionError: " +
-    "Incorrect, expected:<43> but was:<42>"
+  } contains
+    listOf("expected:", "<43>",
+      "but was", "<42>")
   capture {
     testAllGood(false)
-  } eq "AssertionError: Not good"
+  } contains listOf("Error", "Not good")
 }

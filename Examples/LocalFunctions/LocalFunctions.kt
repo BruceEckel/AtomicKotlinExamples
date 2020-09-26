@@ -4,7 +4,7 @@
 fun main() {
   val logMsg = StringBuilder()
   fun log(message: String) =
-    logMsg.appendln(message)
+    logMsg.appendLine(message)
   log("Starting computation")
   val x = 42  // Imitate computation
   log("Computation result: $x")

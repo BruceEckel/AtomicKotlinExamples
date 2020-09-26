@@ -418,6 +418,21 @@ task CompanionDelegation(type: JavaExec) {
     main = 'companionobjects.CompanionDelegationKt'
 }
 
+task CompanionEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionObjectsExercise1.CompanionEx1Kt'
+}
+
+task CompanionEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionObjectsExercise2.CompanionEx2Kt'
+}
+
+task CompanionEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'companionObjectsExercise3.CompanionEx3Kt'
+}
+
 task CompanionFactory(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjects.CompanionFactoryKt'
@@ -703,6 +718,21 @@ task Dog(type: JavaExec) {
     main = 'DogKt'
 }
 
+task DownCastEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcastingExercise1.DownCastEx1Kt'
+}
+
+task DownCastEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcastingExercise2.DownCastEx2Kt'
+}
+
+task DownCastEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'downcastingExercise3.DownCastEx3Kt'
+}
+
 task Drawing(type: JavaExec) {
     classpath kotlinClassPath
     main = 'upcasting.DrawingKt'
@@ -746,6 +776,21 @@ task Evaluation(type: JavaExec) {
 task EvaluationOrder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EvaluationOrderKt'
+}
+
+task Exercise1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexConstructorsExercise1.Exercise1Kt'
+}
+
+task Exercise2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexConstructorsExercise2.Exercise2Kt'
+}
+
+task Exercise3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'complexConstructorsExercise3.Exercise3Kt'
 }
 
 task ExplicitCheck(type: JavaExec) {
@@ -1208,6 +1253,11 @@ task InfiniteRecursion(type: JavaExec) {
     main = 'recursion.InfiniteRecursionKt'
 }
 
+task InhExtensionsEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'inheritanceAndExtensionsExercise2.InhExtensionsEx1Kt'
+}
+
 task InheritAdd(type: JavaExec) {
     classpath kotlinClassPath
     main = 'inheritanceextensions.InheritAddKt'
@@ -1226,6 +1276,21 @@ task Initialization(type: JavaExec) {
 task InnerClassInheritance(type: JavaExec) {
     classpath kotlinClassPath
     main = 'innerclasses.InnerClassInheritanceKt'
+}
+
+task InnerEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innerClassesExercise1.InnerEx1Kt'
+}
+
+task InnerEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innerClassesExercise2.InnerEx2Kt'
+}
+
+task InnerEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'innerClassesExercise3.InnerEx3Kt'
 }
 
 task InputLines1(type: JavaExec) {
@@ -1553,6 +1618,11 @@ task MemberOperator(type: JavaExec) {
     main = 'operatoroverloading.MemberOperatorKt'
 }
 
+task MemberReferencesEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'memberReferencesExercise1.MemberReferencesEx1Kt'
+}
+
 task MemberVsExtension(type: JavaExec) {
     classpath kotlinClassPath
     main = 'overloading.MemberVsExtensionKt'
@@ -1671,6 +1741,26 @@ task NamingCompanionObjects(type: JavaExec) {
 task NarrowingUpcast(type: JavaExec) {
     classpath kotlinClassPath
     main = 'downcasting.NarrowingUpcastKt'
+}
+
+task NestedEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedClassesExercise1.NestedEx1Kt'
+}
+
+task NestedEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedClassesExercise2.NestedEx2Kt'
+}
+
+task NestedEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedClassesExercise3.NestedEx3Kt'
+}
+
+task NestedEx4(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nestedClassesExercise4.NestedEx4Kt'
 }
 
 task NestedHouse(type: JavaExec) {
@@ -1801,6 +1891,21 @@ task NumberTypes(type: JavaExec) {
 task ObjectCounter(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjects.ObjectCounterKt'
+}
+
+task ObjectEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'objectsExercise1.ObjectEx1Kt'
+}
+
+task ObjectEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'objectsExercise2.ObjectEx2Kt'
+}
+
+task ObjectEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'objectsExercise3.ObjectEx3Kt'
 }
 
 task ObjectFunctions(type: JavaExec) {
@@ -2228,6 +2333,21 @@ task SealedClasses(type: JavaExec) {
     main = 'sealedclasses.SealedClassesKt'
 }
 
+task SealedEx1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sealedClassesExercise1.SealedEx1Kt'
+}
+
+task SealedEx2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sealedClassesExercise2.SealedEx2Kt'
+}
+
+task SealedEx3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sealedClassesExercise3.SealedEx3Kt'
+}
+
 task SealedSubclasses(type: JavaExec) {
     classpath kotlinClassPath
     main = 'sealedclasses.SealedSubclassesKt'
@@ -2623,6 +2743,11 @@ task Unsafe(type: JavaExec) {
     main = 'downcasting.UnsafeKt'
 }
 
+task UpcastExercise1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'upcastingExercise1.UpcastExercise1Kt'
+}
+
 task Usable(type: JavaExec) {
     classpath kotlinClassPath
     main = 'resourcecleanup.UsableKt'
@@ -2901,6 +3026,9 @@ task run (dependsOn: [
     'ColorBlend',
     'ColorSet',
     'CompanionDelegation',
+    'CompanionEx1',
+    'CompanionEx2',
+    'CompanionEx3',
     'CompanionFactory',
     'CompanionInstance',
     'CompanionObject',
@@ -2958,6 +3086,9 @@ task run (dependsOn: [
     'DoWhileControl',
     'DoWhileLoop',
     'Dog',
+    'DownCastEx1',
+    'DownCastEx2',
+    'DownCastEx3',
     'Drawing',
     'EagerEvaluation',
     'EagerVsLazyEvaluation',
@@ -2967,6 +3098,9 @@ task run (dependsOn: [
     'EnumImport',
     'Evaluation',
     'EvaluationOrder',
+    'Exercise1',
+    'Exercise2',
+    'Exercise3',
     'ExplicitCheck',
     'ExplicitDelegation',
     'ExplicitTyping',
@@ -3059,10 +3193,14 @@ task run (dependsOn: [
     'InferInt',
     'Inference',
     'InfiniteRecursion',
+    'InhExtensionsEx1',
     'InheritAdd',
     'InitSection',
     'Initialization',
     'InnerClassInheritance',
+    'InnerEx1',
+    'InnerEx2',
+    'InnerEx3',
     'InputLines1',
     'InputLines2',
     'Insects',
@@ -3128,6 +3266,7 @@ task run (dependsOn: [
     'Maps',
     'MatchingAgainstVals',
     'MemberOperator',
+    'MemberReferencesEx1',
     'MemberVsExtension',
     'Membership',
     'MembershipInRange',
@@ -3152,6 +3291,10 @@ task run (dependsOn: [
     'NamedArguments',
     'NamingCompanionObjects',
     'NarrowingUpcast',
+    'NestedEx1',
+    'NestedEx2',
+    'NestedEx3',
+    'NestedEx4',
     'NestedHouse',
     'NeverNull',
     'NewAngle',
@@ -3178,6 +3321,9 @@ task run (dependsOn: [
     'NumberSequence2',
     'NumberTypes',
     'ObjectCounter',
+    'ObjectEx1',
+    'ObjectEx2',
+    'ObjectEx3',
     'ObjectFunctions',
     'ObjectInheritance',
     'ObjectKeyword',
@@ -3263,6 +3409,9 @@ task run (dependsOn: [
     'ScopeFuncSoln2',
     'ScopeFuncSoln3',
     'SealedClasses',
+    'SealedEx1',
+    'SealedEx2',
+    'SealedEx3',
     'SealedSubclasses',
     'SealedVsAbstract',
     'Select',
@@ -3342,6 +3491,7 @@ task run (dependsOn: [
     'UnitReturn',
     'UnitReturnType',
     'Unsafe',
+    'UpcastExercise1',
     'Usable',
     'UseALibrary',
     'UseAtomicLog',
