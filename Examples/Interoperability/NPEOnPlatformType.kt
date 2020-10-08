@@ -8,7 +8,7 @@ fun main() {
   xn?.method() eq null              // [2]
   capture {
     xn.method()                     // [3]
-  } eq "NullPointerException"
+  } contains listOf("NullPointerException")
 
   val yn: JTool? = JTool.get(null)  // [4]
   yn?.method() eq null
