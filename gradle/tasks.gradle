@@ -1183,11 +1183,6 @@ task IfResult(type: JavaExec) {
     main = 'IfResultKt'
 }
 
-task ImmutableBlendMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'buildingmaps.ImmutableBlendMapKt'
-}
-
 task Implementations(type: JavaExec) {
     classpath kotlinClassPath
     main = 'abstractclasses.ImplementationsKt'
@@ -2171,6 +2166,11 @@ task RangeSum(type: JavaExec) {
 task ReadOnlyAndPlus(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReadOnlyAndPlusKt'
+}
+
+task ReadOnlyBlendMap(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'buildingmaps.ReadOnlyBlendMapKt'
 }
 
 task ReadOnlyCollections(type: JavaExec) {
@@ -3179,7 +3179,6 @@ task run (dependsOn: [
     'If6',
     'IfExpression',
     'IfResult',
-    'ImmutableBlendMap',
     'Implementations',
     'ImportClass',
     'ImportEverything',
@@ -3377,6 +3376,7 @@ task run (dependsOn: [
     'RangeOfInt',
     'RangeSum',
     'ReadOnlyAndPlus',
+    'ReadOnlyBlendMap',
     'ReadOnlyCollections',
     'ReadOnlyMaps',
     'ReadonlyVsMutableList',

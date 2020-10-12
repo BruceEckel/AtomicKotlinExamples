@@ -128,8 +128,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testImmutableBlendMap() {
-    testExample("Examples/BuildingMaps/ImmutableBlendMap.kt", buildingmaps.ImmutableBlendMapKt::main);
+  public void testReadOnlyBlendMap() {
+    testExample("Examples/BuildingMaps/ReadOnlyBlendMap.kt", buildingmaps.ReadOnlyBlendMapKt::main);
   }
 
   @Test
