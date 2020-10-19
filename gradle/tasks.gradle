@@ -2318,11 +2318,6 @@ task ScopeFuncSoln1(type: JavaExec) {
     main = 'scopefuncsoln1.ScopeFuncSoln1Kt'
 }
 
-task ScopeFuncSoln2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'ScopeFuncSoln2Kt'
-}
-
 task ScopeFuncSoln3(type: JavaExec) {
     classpath kotlinClassPath
     main = 'scopefuncsoln3.ScopeFuncSoln3Kt'
@@ -3406,7 +3401,6 @@ task run (dependsOn: [
     'SayHello',
     'Scientist',
     'ScopeFuncSoln1',
-    'ScopeFuncSoln2',
     'ScopeFuncSoln3',
     'SealedClasses',
     'SealedEx1',

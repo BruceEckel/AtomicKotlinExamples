@@ -2318,11 +2318,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testScopeFuncSoln2() {
-    testExample("Examples/ScopeFunctions/ScopeFuncSoln2.kt", ScopeFuncSoln2Kt::main);
-  }
-
-  @Test
   public void testScopeFuncSoln3() {
     testExample("Examples/ScopeFunctions/ScopeFuncSoln3.kt", scopefuncsoln3.ScopeFuncSoln3Kt::main);
   }

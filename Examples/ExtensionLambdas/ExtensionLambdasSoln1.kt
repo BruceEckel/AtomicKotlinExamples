@@ -2,7 +2,6 @@
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package extensionlambdasoln1
 import atomictest.eq
-import kotlinx.collections.immutable.*
 
 fun createString(
   build: StringBuilder.() -> Unit
@@ -17,7 +16,7 @@ fun <T> createList(
 ): List<T> {
   val list = ArrayList<T>()
   list.build()
-  return list.toImmutableList()
+  return list
 }
 
 fun <K, V> createMap(
@@ -25,7 +24,7 @@ fun <K, V> createMap(
 ): Map<K, V> {
   val map = HashMap<K, V>()
   map.build()
-  return map.toImmutableMap()
+  return map
 }
 
 @OptIn(ExperimentalStdlibApi::class)
