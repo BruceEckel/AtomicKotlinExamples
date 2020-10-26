@@ -4,8 +4,8 @@ These are the code examples from the book [Atomic Kotlin](https://www.AtomicKotl
 automatic extraction process directly from the book. This repository provides
 a test of the code that is shown in the book, to verify that it is correct.
 
-If you want to access and experiment with the book examples, the easiest approach is to clone/download 
-this repository and open it with IntelliJ IDEA. For most people, that's all they need and they can 
+If you want to access and experiment with the book examples, the easiest approach is to clone/download
+this repository and open it with IntelliJ IDEA. For most people, that's all they need and they can
 ignore the rest of this README.
 
 If you want to build from the command line, the remainder of this README shows you how.
@@ -14,7 +14,7 @@ Exercises and solutions for the book can be found at [AtomicKotlin.com/exercises
 
 ## Building From the Command Line: Quick Version
 
-Before you can run the examples from this repository, you must install the current version of 
+Before you can run the examples from this repository, you must install the current version of
 [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html),
 although some earlier versions should also work. (If you get any errors try upgrading to
 a more recent version of Java).
@@ -174,7 +174,7 @@ If you get a *Permission denied* error on OSX or Linux, run `chmod +x ./run.sh`
 
 The Kotlin interpreter is also called the REPL (for *Read-Evaluate-Print-
 Loop*). To use this you must first install the
-latest version (1.3 or higher) of the [Kotlin command-line
+latest version (1.4 or higher) of the [Kotlin command-line
 compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 > NOTE: You do not need to install command-line Kotlin for the operations
@@ -182,7 +182,7 @@ compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 ## Install Kotlin
 
-In this book, we use Kotlin version 1.3, the latest available at the time. The
+In this book, we use Kotlin version 1.4, the latest available at the time. The
 detailed installation instructions for the command-line compiler are available
 at [The Kotlin Site](https://kotlinlang.org/docs/tutorials/command-line.html).
 
@@ -201,13 +201,13 @@ You get the REPL when you type `kotlinc` by itself on the command line. You
 should see something like the following:
 
 ```
-Welcome to Kotlin version 1.3 (JRE 1.8.0_144-b01)
+Welcome to Kotlin version 1.4 (JRE 1.8.0_144-b01)
 Type :help for help, :quit for quit
 >>>
 ```
 
 The exact version numbers will vary depending on the versions of Kotlin
-and Java you've installed, but make sure that you're running Kotlin 1.3
+and Java you've installed, but make sure that you're running Kotlin 1.4
 or greater.
 
 The REPL gives you immediate interactive feedback, which is helpful for
