@@ -5,8 +5,8 @@ import kotlin.random.Random
 
 private val rnd = Random(47)
 
-// Accesses action() but can't return
-// the exact type:
+// Accesses action() but can't
+// return the exact type:
 fun List<Disposable>.inexact(): Disposable {
   val d: Disposable = this[rnd.nextInt(size)]
   d.action()

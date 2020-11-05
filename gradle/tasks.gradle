@@ -768,6 +768,11 @@ task EnumImport(type: JavaExec) {
     main = 'EnumImportKt'
 }
 
+task Erasure(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'creatinggenerics.ErasureKt'
+}
+
 task Evaluation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'namedanddefault.EvaluationKt'
@@ -3091,6 +3096,7 @@ task run (dependsOn: [
     'ElvisOperator',
     'EmptyProgram',
     'EnumImport',
+    'Erasure',
     'Evaluation',
     'EvaluationOrder',
     'Exercise1',

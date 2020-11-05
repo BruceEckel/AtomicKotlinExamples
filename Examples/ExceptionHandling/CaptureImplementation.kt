@@ -1,21 +1,24 @@
 // ExceptionHandling/CaptureImplementation.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package exceptionhandling
-import atomictest.eq
+import atomictest.CapturedException
 
-fun capture(f: () -> Unit): String =  // [1]
-  try {                               // [2]
+fun capture(f:() -> Unit): CapturedException =
+  try {                                 // [1]
     f()
-    "Error: Expected an exception"    // [3]
-  } catch (e: Throwable) {            // [4]
-    "${e::class.simpleName}: ${e.message}"
+    CapturedException(null,             // [2]
+      "<Error>: Expected an exception")
+  } catch (e: Throwable) {              // [3]
+    CapturedException(e::class,         // [4]
+      if (e.message != null) ": ${e.message}"
+      else "")
   }
 
 fun main() {
   capture {
     throw Exception("!!!")
-  } eq "Exception: !!!"
+  } eq "Exception: !!!"                 // [5]
   capture {
     1
-  } eq "Error: Expected an exception"
+  } eq "<Error>: Expected an exception"
 }

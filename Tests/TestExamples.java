@@ -393,6 +393,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testErasure() {
+    testExample("Examples/CreatingGenerics/Erasure.kt", creatinggenerics.ErasureKt::main);
+  }
+
+  @Test
   public void testInCrateAssignment() {
     testExample("Examples/CreatingGenerics/InCrateAssignment.kt", creatinggenerics.InCrateAssignmentKt::main);
   }
