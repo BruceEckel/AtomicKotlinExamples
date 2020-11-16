@@ -1,5 +1,12 @@
 # Atomic Kotlin Examples
 
+If you want to experiment with the code examples from the book [Atomic
+Kotlin](https://www.AtomicKotlin.com), you've come to the right place.
+
+This repository was created by an automatic extraction process directly from
+the book. It provides a test of the code that is shown in the book, to verify
+that it is correct.
+
 ## Contents
 
 - [Introduction](#introduction)
@@ -28,11 +35,6 @@
   * [Packages](#packages)
 
 # Introduction
-
-These are the code examples from the book [Atomic
-Kotlin](https://www.AtomicKotlin.com), created by an automatic extraction
-process directly from the book. This repository provides a test of the code
-that is shown in the book, to verify that it is correct.
 
 To access and experiment with the book examples, the easiest approach is to
 clone/download this repository and open it with IntelliJ IDEA. This is all that
