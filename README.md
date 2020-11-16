@@ -18,11 +18,10 @@ includes tests to verify that the code in the book is correct.
     + [Linux](#linux)
   * [Verify Your Installation](#verify-your-installation)
   * [Installing and Running the Book Examples](#installing-and-running-the-book-examples)
-- [Using `run`](#using-run)
+- [Testing](#testing)
 - [Running Kotlin from the Command Line](#running-kotlin-from-the-command-line)
   * [Install Kotlin](#install-kotlin)
   * [The REPL](#the-repl)
-- [Testing](#testing)
 - [Compilers vs. Interpreters](#compilers-vs-interpreters)
 - [Appendix A: Command-Line Basics](#appendix-a-command-line-basics)
   * [Editors](#editors)
@@ -32,6 +31,7 @@ includes tests to verify that the code in the book is correct.
     + [Basic Shell Operations](#basic-shell-operations)
 - [Appendix B: Command-Line Hello World](#appendix-b-command-line-hello-world)
   * [Packages](#packages)
+- [Appendix C: Using `run`](#appendix-c-using-run)
 
 # Introduction
 
@@ -201,9 +201,9 @@ You should see something like the following (Version numbers and actual text
 will vary):
 
 ```
-java version "10.0.2" 2018-07-17
-Java(TM) SE Runtime Environment 18.3 (build 10.0.2+13)
-Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.2+13, mixed mode)
+openjdk version "11" 2018-09-25
+OpenJDK Runtime Environment 18.9 (build 11+28)
+OpenJDK 64-Bit Server VM 18.9 (build 11+28, mixed mode)
 ```
 
 If you see a message that the command is not found or not recognized, review
@@ -238,23 +238,19 @@ builds and runs will be much faster.
 Note that you must be connected to the Internet the first time you run `gradlew`
 so that Gradle can download the necessary packages.
 
-# Using `run`
+# Testing
 
-In each atom-named subdirectory under the `Examples` directory, you will see
-two files: `run.bat` and `run.sh`. These are convenience commands for Windows
-and Mac/Linux that allow you to compile and run the examples in that
-subdirectory. They are not necessary to build the code, but if you begin
-experimenting with individual examples they are helpful.
+The test system is built in so that we (the authors) can verify the correctness
+of what goes into the book. You don't need to run the tests, but if you want
+to:
 
-To run these scripts, you must first install a recent version of
-[Python 3](https://www.python.org/downloads/).
+1. `gradlew GenerateTests` generates tests from the sources in this repository.
+   It creates (or recreates) the file `TestExamples.java`. You normally don't need to run this; the
+   `TestExamples.java` in the repository should be up to date.
 
-If you just type `run` (`./run.sh` in Mac/Linux), it will (using
-Gradle) compile and run all the examples in the directory. You can also type
-`run AnExample.kt` to compile and run the example `AnExample.kt` (assuming it
-has a `main()`).
+2. `gradlew TestExamples` runs the tests in `TestExamples.java`.
 
-If you get a *Permission denied* error on OSX or Linux, run `chmod +x ./run.sh`
+Alternatively, `TestExamples.java` can be called as a regular **JUnit** test class.
 
 # Running Kotlin from the Command Line
 
@@ -312,20 +308,6 @@ Find out more by typing `:help` at the Kotlin prompt. To exit the REPL, type:
 
 To compile and run examples using the Kotlin command-line tools, see
 [Command-Line Hello World](#appendix-b-command-line-hello-world).
-
-# Testing
-
-The test system is built in so that we (the authors) can verify the correctness
-of what goes into the book. You don't need to run the tests, but if you want
-to:
-
-1. `gradlew GenerateTests` generates tests from the sources in this repository.
-   It creates (or recreates) the file `TestExamples.java`. You normally don't need to run this; the
-   `TestExamples.java` in the repository should be up to date.
-
-2. `gradlew TestExamples` runs the tests in `TestExamples.java`.
-
-Alternatively, `TestExamples.java` can be called as a regular **JUnit** test class.
 
 # Compilers vs. Interpreters
 
@@ -591,3 +573,20 @@ give the package name followed by a "dot," then the program's name:
 kotlin bar.FooKt
 ```
 
+# Appendix C: Using `run`
+
+In each atom-named subdirectory under the `Examples` directory, you will see
+two files: `run.bat` and `run.sh`. These are convenience commands for Windows
+and Mac/Linux that allow you to compile and run the examples in that
+subdirectory. They are not necessary to build the code, but if you begin
+experimenting with individual examples they are helpful.
+
+To run these scripts, you must first install a recent version of
+[Python 3](https://www.python.org/downloads/).
+
+If you just type `run` (`./run.sh` in Mac/Linux), it will (using
+Gradle) compile and run all the examples in the directory. You can also type
+`run AnExample.kt` to compile and run the example `AnExample.kt` (assuming it
+has a `main()`).
+
+If you get a *Permission denied* error on OSX or Linux, run `chmod +x ./run.sh`
