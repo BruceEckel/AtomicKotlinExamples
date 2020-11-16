@@ -107,9 +107,10 @@ upgrading to a more recent version of Java).
 
 If you just want to download and check the code, [Download
 Here](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip)
-and unzip into your destination directory. Open a shell/command window and
-move into the root of that directory. You'll know you are in the right
-directory if you see the files `gradlew` and `gradlew.bat`.
+and [unzip it](#unpacking-a-zip-archive) into your destination directory. Open
+a shell/command window and move into the root of that directory. You'll know
+you are in the right directory if you see the files `gradlew` and
+`gradlew.bat`.
 
 You'll need an Internet connection the first time you compile the code,
 because Gradle needs to first install itself, then all the support libraries.
@@ -219,7 +220,7 @@ is the same for all platforms:
 1. Download the book examples from the
 [GitHub Repository](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip).
 
-2. `unzip` the downloaded file into the directory of your choice.
+2. [unzip it](#unpacking-a-zip-archive) the downloaded file into the directory of your choice.
 
 3. Use the Windows Explorer, the Mac Finder, or Nautilus or equivalent on Linux
 to browse to the directory where you uzipped `AtomicKotlinExamples`, and open a
