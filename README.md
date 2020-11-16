@@ -1,7 +1,7 @@
 # Atomic Kotlin Examples
 
 If you want to experiment with the code examples from the book [Atomic
-Kotlin](https://www.AtomicKotlin.com), you've come to the right place.
+Kotlin](https://www.AtomicKotlin.com), you're in the right place.
 
 These examples are automatically extracted directly from the book. This repository
 includes tests to verify that the code in the book is correct.
@@ -36,7 +36,7 @@ includes tests to verify that the code in the book is correct.
 
 # Introduction
 
-To access and experiment with the book examples, the easiest approach is to
+The easiest way to access and experiment with the book examples is to
 clone/download this repository and open it with IntelliJ IDEA. This is all that
 most people need, and those people can ignore the rest of this README.
 
@@ -92,7 +92,8 @@ You'll see something like this:
 6. If you don't already have a JDK (*Java Development Kit*) on your machine,
 you will see error messages. A JDK is necessary to compile both Java and
 Kotlin. You can [install one from within
-IntelliJ](https://www.jetbrains.com/help/idea/sdk.html#jdk-from-ide).
+IntelliJ](https://www.jetbrains.com/help/idea/sdk.html#jdk-from-ide). Once the
+JDK is installed, IDEA will also be able to compile Kotlin.
 
 **NOTE**: The first program you run will take awhile, because IntelliJ IDEA is
 building the entire project. Subsequent programs will start much more quickly.
@@ -219,7 +220,7 @@ is the same for all platforms:
 1. Download the book examples from the
 [GitHub Repository](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip).
 
-2. [unzip it](#unpacking-a-zip-archive) the downloaded file into the directory of your choice.
+2. [Unzip](#unpacking-a-zip-archive) the downloaded file into the directory of your choice.
 
 3. Use the Windows Explorer, the Mac Finder, or Nautilus or equivalent on Linux
 to browse to the directory where you uzipped `AtomicKotlinExamples`, and
@@ -238,20 +239,6 @@ builds and runs will be much faster.
 
 Note that you must be connected to the Internet the first time you run `gradlew`
 so that Gradle can download the necessary packages.
-
-# Testing
-
-The test system is built in so that we (the authors) can verify the correctness
-of what goes into the book. You don't need to run the tests, but if you want
-to:
-
-1. `gradlew GenerateTests` generates tests from the sources in this repository.
-   It creates (or recreates) the file `TestExamples.java`. You normally don't need to run this; the
-   `TestExamples.java` in the repository should be up to date.
-
-2. `gradlew TestExamples` runs the tests in `TestExamples.java`.
-
-Alternatively, `TestExamples.java` can be called as a regular **JUnit** test class.
 
 # Compilers and Interpreters
 
@@ -574,6 +561,26 @@ Find out more by typing `:help` at the Kotlin prompt. To exit the REPL, type:
 
 To compile and run examples using the Kotlin command-line tools, see
 [Command-Line Hello World](#appendix-b-command-line-hello-world).
+
+# Appendix D: Testing
+
+The test system is built in so that we (the authors) can verify the correctness
+of what goes into the book.
+
+You don't need to run the tests, but if you want to, you can just run `gradlew
+test` (on Windows) or `./gradlew test` (Mac/Linux).
+
+There are two steps in creating and running the tests, which you can run
+separately if you want (again, just running the Gradle `test` command will
+validate the code, so you don't need to do the following steps):
+
+1. `gradlew GenerateTests` generates tests from the sources in this repository.
+   It creates (or recreates) the file `TestExamples.java`. You normally don't need to run this; the
+   `TestExamples.java` in the repository should be up to date.
+
+2. `gradlew TestExamples` runs the tests in `TestExamples.java`.
+
+Alternatively, `TestExamples.java` can be called as a regular **JUnit** test class.
 
 # Appendix D: Using `run`
 
