@@ -324,7 +324,7 @@ Kotlin source code can be compiled to different target platforms:
 - **JVM**. The source code gets compiled into JVM bytecode (`.class` files),
 which can then be run on any Java Virtual Machine (JVM).
 
-**Android**. Android its own runtime called
+- **Android**. Android its own runtime called
 [ART](https://source.android.com/devices/tech/dalvik) (the predecessor was
 called Dalvik). The Kotlin source code is compiled into *Dalvik Executable Format*
 (`.dex` files).
