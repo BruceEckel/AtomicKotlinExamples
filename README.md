@@ -1,5 +1,7 @@
 # Atomic Kotlin Examples
 
+## Contents
+
 - [Introduction](#introduction)
 - [Compiling and Running Programs in IntelliJ IDEA](#compiling-and-running-programs-in-intellij-idea)
 - [Building From the Command Line: Quick Version](#building-from-the-command-line-quick-version)
@@ -42,6 +44,12 @@ both IntelliJ IDEA and the command line.
 Exercises and solutions for the book can be found at
 [AtomicKotlin.com/exercises](https://www.atomickotlin.com/exercises).
 
+**Note**: If any terminology or processes described here are still not clear to
+you, you can usually find explanations or answers through
+[Google](https://www.google.com/). For more specific issues or problems, try
+[StackOverflow](http://stackoverflow.com/). Sometimes you can find installation
+instructions on [YouTube](https://www.youtube.com/).
+
 # Compiling and Running Programs in IntelliJ IDEA
 
 The easiest and fastest way to start using the examples in this book is by
@@ -54,7 +62,7 @@ repository](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zi
 and unpack it.
 
 3. Go to `File | Open` in the IntelliJ IDEA menu. Navigate to where you unpacked
-the repository and open the `build.gradle` file. You should see this dialog box:
+the repository and open the `build.gradle` file. You should see a dialog box like this:
 
     ![](images/buildgradle.png)
 
@@ -69,16 +77,21 @@ You'll see something like this:
 
     ![](images/helloworld.png)
 
-    Click on the green triangle in the gutter area near the class declaration and
-    select `Run`. It should look like this:
+    Click on the green triangle in the gutter area to the left of `fun main() {`
+    and select `Run`. It should look like this:
 
     ![](images/runhelloworld.png)
 
-    Choose the top one, the `Run` option, and IntelliJ IDEA will run your program
-    and display the resulting output.
+    Choose the top one, the `Run` option, and IntelliJ IDEA will run your
+    program and display the resulting output.
+
+6. If you don't already have a JDK (*Java Development Kit*) on your machine,
+you will see error messages. A JDK is necessary to compile both Java and
+Kotlin. You can [install one from within
+IntelliJ](https://www.jetbrains.com/help/idea/sdk.html#jdk-from-ide).
 
 **NOTE**: The first program you run will take awhile, because IntelliJ IDEA is
-building the entire project. Subsequent programs will run much more quickly.
+building the entire project. Subsequent programs will start much more quickly.
 
 # Building From the Command Line: Quick Version
 
@@ -133,12 +146,12 @@ Java; the development kit also works but is not required).
 
 ### Windows
 
-1. Follow the instructions at this link to [Install Chocolatey](https://chocolatey.org/).
+1. Follow the instructions to [install Chocolatey](https://chocolatey.org/).
 
 2. At a shell prompt, type: `choco install jdk8` (you may also select a more
-recent version, like jdk11). The installation process takes some time, but when
-it's finished Java is installed and the necessary environment variables are
-set.
+recent version, like `jdk11`). The installation process takes some time, but
+when it's finished Java is installed and the necessary environment variables
+are set.
 
 ### Macintosh
 
@@ -212,7 +225,7 @@ shell there.
 `gradlew.bat` in that directory, along with numerous other files and
 directories. The directories correspond to the chapters in the book.
 
-5. At the shell prompt, type `gradlew run` (Windows) or `./gradlew run`
+5. At the shell prompt, type `gradlew test` (Windows) or `./gradlew test`
 (Mac/Linux).
 
 The first time you do this, Gradle will install itself and numerous other
@@ -267,8 +280,8 @@ installation.
 
 ## The REPL
 
-You get the REPL when you type `kotlinc` by itself on the command line. You
-should see something like the following:
+To start the REPL, type `kotlinc` by itself on the command line. You should see
+something like the following:
 
 ```
 Welcome to Kotlin version 1.4 (JRE 1.8.0_144-b01)
@@ -288,8 +301,7 @@ experimentation. For example, you can do arithmetic:
 474.6
 ```
 
-Find out more by typing `:help` at the Kotlin prompt. To exit the REPL,
-type:
+Find out more by typing `:help` at the Kotlin prompt. To exit the REPL, type:
 
 ```
 >>> :quit
@@ -316,47 +328,39 @@ Alternatively, `TestExamples.java` can be called as a regular **JUnit** test cla
 
 Kotlin is a *compiled* language rather than an *interpreted* one. The
 instructions of an interpreted language are executed directly by a separate
-program called an *interpreter*. The source code of a compiled language is
-converted into a different representation that runs as its own program, either
-directly on a hardware processor or on a *virtual machine* that emulates a
-processor:
+program called an *interpreter*. In contrast, the source code of a compiled
+language is converted into a different representation that runs as its own
+program, either directly on a hardware processor or on a *virtual machine* that
+emulates a processor:
 
 ![](images/compilation.png)
 
 An IDE like IntelliJ IDEA simplifies this task and makes the intermediate stage
 invisible.
 
-Languages such as C, C++, Go and Rust compile into code that the underlying
-hardware CPU can run directly. Languages like Java and the JVM version of Kotlin
-compile into *bytecode* which is
-The main benefit of bytecode is that it can be shipped separately without the
-source code. Bytecode is conceptually much closer to the very first programming
-languages containing *machine instructions*, and it's something that a machine
-can run.
+Languages such as C, C++, Go and Rust compile into *machine code* which runs
+directly on the underlying hardware CPU. Languages like Java and Kotlin compile
+into *bytecode* which is an intermediate-level format that doesn't run directly
+on the hardware CPU, but instead on a *virtual machine*, which is a program
+that executes bytecode instructions. The JVM version of Kotlin runs on the
+*Java Virtual Machine* (JVM).
 
-At *compile time*, the code is checked by the compiler, and all errors are
-reported. IntelliJ IDEA highlights these errors when you type the code, so  you
-can quickly see and fix them. If there are no errors, the source code can be
-successfully compiled into machine-language instructions, often called
-bytecode.
+The primary benefit of a virtual machine is portability. The same bytecode can
+run on any computer that has a virtual machine written for it. Virtual machines
+can be optimized for particular hardware and to solve special speed problems.
+The JVM contains main years of such optimizations, and has been implemented on
+many platforms.
 
-*Run time* is the process of running the program. The result of the compilation
-(the specific format depends on the target platform) can run independently,
-the source code is not needed for execution.
+At *compile time*, the code is checked by the compiler and all errors are
+reported. IntelliJ IDEA highlights these errors when you input the code, so you
+can quickly discover and fix any problems. If there are no errors, the source
+code can be successfully compiled into bytecode.
 
-No program (except a trivial one) can be written without mistakes or errors.
-Mistakes make an inseparable part of the development process. Different
-languages try hard to minimize the number of possible errors.
-
-We distinguish "compile-time error" and "run-time error". The compile-time
-error is an error that happens while you're writing the code, and you can
-immediately fix it. The runtime error is an error that only happens when you
-run the program. The runtime errors are more expensive to fix; it's always
-better and cheaper to fix an error at an early stage.
-
-One of the important Kotlin goals is to catch as many errors as possible during
-the compilation time, or in other words, to prevent them from happening later
-at runtime.
+A *compile-time error* happens while you're writing the code, and you can
+immediately fix it. A *runtime error* cannot be detected at compile time, so it
+only emerges when you run the program. Typically, runtime errors are more
+difficult to discover and often more expensive to fix. An important Kotlin goal
+is to catch as many errors as possible at compile time.
 
 Kotlin source code can be compiled to different target platforms:
 
@@ -376,51 +380,38 @@ This book focuses on the language itself, using JVM as the only target
 platform. After you know the language, you can apply Kotlin on different
 application and target platforms.
 
-
 # Appendix A: Command-Line Basics
 
 Because it is possible for a "dedicated beginner" to learn programming from
-this book, you may not have previously used the computer's command-line shell.
-If you have, you can go directly to the installation instructions.
-
-If any terminology or processes described here are still not clear to
-you, you can usually find explanations or answers through
-[Google](https://www.google.com/). For more specific issues or problems,
-try [StackOverflow](http://stackoverflow.com/). Sometimes you can find
-installation instructions on [YouTube](https://www.youtube.com/).
+this book, you may not have previously used your computer's command-line shell.
+If you have, you can go directly to the
+[installation instructions](#building-from-the-command-line-detailed-instructions).
 
 ## Editors
 
-To create and modify Kotlin program files---the code listings shown in this
-book---you need a program called an *editor*. You'll also need the editor to
+To create and modify Kotlin program files&mdash;the code listings shown in this
+book&mdash;you need a program called an *editor*. You'll also need the editor to
 make changes to your system configuration files, which is sometimes required
 during installation.
 
 Programming editors vary from heavyweight *Integrated Development Environments*
-(IDEs, like Eclipse, NetBeans and IntelliJ IDEA) to more basic text manipulation
-applications. If you already have an IDE and are comfortable with it, feel free
-to use that for this book, but in the interest of keeping things simple, We'll use
-the *Atom* editor. Find it at
-[atom.io](https://atom.io/).
+(IDEs, like Eclipse, NetBeans and IntelliJ IDEA) to more basic text
+manipulation applications. If you already have an IDE and are comfortable with
+it, feel free to use that for this book.
 
-Atom is free and open-source, is very simple to install, works on all platforms
-(Windows, Mac and Linux), and has a built-in Kotlin mode that is automatically
-invoked when you open a Kotlin file. It isn't a heavy-duty IDE so it doesn't get
-confusing, which is ideal for this book. On the other hand, it has some handy
-editing features that you'll probably come to love. More details are on their
-site.
-
-There are many other editors; these are a subculture unto themselves and people
-even get into heated arguments about their merits. If you find one you like
-better, it's not too hard to change. The important thing is to choose one and
-get comfortable with it.
+Numerous explanations in this book are specific to IntelliJ IDEA so if you
+don't already have an IDE you might as well start with IDEA. There are many
+other editors; these are a subculture unto themselves and people sometimes get
+into heated arguments about their merits. If you find one you like better, it's
+not too hard to change. The important thing is to choose one and get
+comfortable with it.
 
 ## The Shell
 
 If you haven't programmed before, you might be unfamiliar with your operating
 system *shell* (also called the *command prompt* in Windows). The shell harkens
 back to the early days of computing when everything happened by typing commands
-and the computer responded by displaying responses---everything was text-based.
+and the computer responded by displaying responses&mdash;everything was text-based.
 
 Although it can seem primitive in the age of graphical user interfaces, a shell
 provides a surprising number of valuable features. We'll use it regularly in
