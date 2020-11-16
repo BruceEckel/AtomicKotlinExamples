@@ -108,9 +108,9 @@ upgrading to a more recent version of Java).
 If you just want to download and check the code, [Download
 Here](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip)
 and [unzip it](#unpacking-a-zip-archive) into your destination directory. Open
-a shell/command window and move into the root of that directory. You'll know
-you are in the right directory if you see the files `gradlew` and
-`gradlew.bat`.
+a [shell/command window](#appendix-a-command-line-basics) and move into the
+root of that directory. You'll know you are in the right directory if you see
+the files `gradlew` and `gradlew.bat`.
 
 You'll need an Internet connection the first time you compile the code,
 because Gradle needs to first install itself, then all the support libraries.
@@ -146,17 +146,16 @@ Basics](#appendix-a-command-line-basics).
 
 ## Install Java
 
-Kotlin runs on top of Java, so you must first install Java (you only need basic
-Java; the development kit also works but is not required).
+Kotlin runs on top of Java, so you must first install the *Java Development Kit* (JDK).
 
 ### Windows
 
 1. Follow the instructions to [install Chocolatey](https://chocolatey.org/).
 
-2. At a shell prompt, type: `choco install jdk8` (you may also select a more
-recent version, like `jdk11`). The installation process takes some time, but
-when it's finished Java is installed and the necessary environment variables
-are set.
+2. At a [shell prompt](#appendix-a-command-line-basics), type: `choco install
+jdk8` (you may also select a more recent version, like `jdk11`). The
+installation process takes some time, but when it's finished Java is installed
+and the necessary environment variables are set.
 
 ### Macintosh
 
@@ -165,8 +164,8 @@ examples in this book, so you'll need to update it to (at least) Java 8.
 
   1.  Follow the instructions at this link to [Install HomeBrew](http://brew.sh/)
 
-  2.  At a shell prompt, first type `brew update`. When that completes, enter
-      `brew cask install java`.
+  2.  At a [shell prompt](#appendix-a-command-line-basics), first type
+      `brew update`. When that completes, enter `brew cask install java`.
 
 **NOTE:** Sometimes the default version of Java that you get with the above
 installation will be too recent and not validated by the Mac's security
@@ -177,7 +176,7 @@ search for the error message produced by the Mac).
 
 ### Linux
 
-Use the standard package installer with the following shell commands:
+Use the standard package installer with the following [shell commands](#appendix-a-command-line-basics):
 
 *Ubuntu/Debian*:
 
@@ -193,7 +192,7 @@ su -c "yum install java-1.8.0-openjdk"
 
 ## Verify Your Installation
 
-Open a new shell and type:
+[Open a new shell](#appendix-a-command-line-basics) and type:
 
 ```
 java -version
@@ -223,8 +222,8 @@ is the same for all platforms:
 2. [unzip it](#unpacking-a-zip-archive) the downloaded file into the directory of your choice.
 
 3. Use the Windows Explorer, the Mac Finder, or Nautilus or equivalent on Linux
-to browse to the directory where you uzipped `AtomicKotlinExamples`, and open a
-shell there.
+to browse to the directory where you uzipped `AtomicKotlinExamples`, and
+[open a shell](#appendix-a-command-line-basics) there.
 
 4. If you're in the right directory, you should see files named `gradlew` and
 `gradlew.bat` in that directory, along with numerous other files and
