@@ -3,7 +3,7 @@
 If you want to experiment with the code examples from the book [Atomic
 Kotlin](https://www.AtomicKotlin.com), you've come to the right place.
 
-The examples are automatically extracted directly from the book. This repository
+These examples are automatically extracted directly from the book. This repository
 includes tests to verify that the code in the book is correct.
 
 ## Contents
@@ -19,19 +19,20 @@ includes tests to verify that the code in the book is correct.
   * [Verify Your Installation](#verify-your-installation)
   * [Installing and Running the Book Examples](#installing-and-running-the-book-examples)
 - [Testing](#testing)
-- [Running Kotlin from the Command Line](#running-kotlin-from-the-command-line)
-  * [Install Kotlin](#install-kotlin)
-  * [The REPL](#the-repl)
-- [Compilers vs. Interpreters](#compilers-vs-interpreters)
+- [Compilers and Interpreters](#compilers-and-interpreters)
 - [Appendix A: Command-Line Basics](#appendix-a-command-line-basics)
   * [Editors](#editors)
   * [The Shell](#the-shell)
     + [Starting a Shell](#starting-a-shell)
     + [Directories](#directories)
     + [Basic Shell Operations](#basic-shell-operations)
+    + [Unpacking a Zip Archive](#unpacking-a-zip-archive)
 - [Appendix B: Command-Line Hello World](#appendix-b-command-line-hello-world)
   * [Packages](#packages)
-- [Appendix C: Using `run`](#appendix-c-using-run)
+- [Appendix C: The Kotlin REPL](#appendix-c-the-kotlin-repl)
+  * [Install Kotlin](#install-kotlin)
+  * [The REPL](#the-repl)
+- [Appendix D: Using `run`](#appendix-d-using-run)
 
 # Introduction
 
@@ -61,10 +62,10 @@ to install IntelliJ IDEA.
 
 2. Download the [zipped code
 repository](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip)
-and unzip it.
+and [unzip it](#unpacking-a-zip-archive).
 
 3. Start IntelliJ IDEA and select the `File | Open` menu item. Navigate to
-where you unpacked the repository and open the `build.gradle` file. You should
+where you unzipped the repository and open the `build.gradle` file. You should
 see a dialog box like this:
 
     ![](images/buildgradle.png)
@@ -252,64 +253,7 @@ to:
 
 Alternatively, `TestExamples.java` can be called as a regular **JUnit** test class.
 
-# Running Kotlin from the Command Line
-
-The Kotlin interpreter is also called the REPL (for *Read-Evaluate-Print-
-Loop*). To use this you must first install the
-latest version (1.4 or higher) of the [Kotlin command-line
-compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
-
-> NOTE: You do not need to install command-line Kotlin for the operations
-> described previously in this README.
-
-## Install Kotlin
-
-In this book, we use Kotlin version 1.4, the latest available at the time. The
-detailed installation instructions for the command-line compiler are available
-at [The Kotlin Site](https://kotlinlang.org/docs/tutorials/command-line.html).
-
-To check your installation, open a new shell and type:
-
-```
-kotlin -version
-```
-
-at the shell prompt. You'll see the version information for your Kotlin
-installation.
-
-## The REPL
-
-To start the REPL, type `kotlinc` by itself on the command line. You should see
-something like the following:
-
-```
-Welcome to Kotlin version 1.4 (JRE 1.8.0_144-b01)
-Type :help for help, :quit for quit
->>>
-```
-
-The exact version numbers will vary depending on the versions of Kotlin
-and Java you've installed, but make sure that you're running Kotlin 1.4
-or greater.
-
-The REPL gives you immediate interactive feedback, which is helpful for
-experimentation. For example, you can do arithmetic:
-
-```
->>> 42 * 11.3
-474.6
-```
-
-Find out more by typing `:help` at the Kotlin prompt. To exit the REPL, type:
-
-```
->>> :quit
-```
-
-To compile and run examples using the Kotlin command-line tools, see
-[Command-Line Hello World](#appendix-b-command-line-hello-world).
-
-# Compilers vs. Interpreters
+# Compilers and Interpreters
 
 Kotlin is a *compiled* language rather than an *interpreted* one. The
 instructions of an interpreted language are executed directly by a separate
@@ -402,6 +346,10 @@ Although it can seem primitive in the age of graphical user interfaces, a shell
 provides a surprising number of valuable features. We'll use it regularly in
 this book, both as part of the installation process and to run Kotlin programs.
 
+To learn more about your shell than we cover here, search Wikipedia for
+[Windows Shell](https://en.wikipedia.org/wiki/Windows_shell) or [Bash
+Shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) for Mac/Linux.
+
 ### Starting a Shell
 
 **Mac**: Click on the *Spotlight* (the magnifying-glass icon in the upper-right
@@ -489,19 +437,16 @@ shell:
     This gives you a list of all the commands you've entered. Mac/Linux provides
     numbers to refer to when you want to repeat a command.
 
--   **Unpacking a zip archive**: A file name ending with `.zip` is an
-    archive containing other files in a compressed format. Both Linux
-    and Mac have command-line `unzip` utilities, and it's possible
-    to install a command-line `unzip` for Windows via the Internet.
-    However, in all three systems the graphical file browser (Windows
-    Explorer, the Mac Finder, or Nautilus or equivalent on Linux) will
-    browse to the directory containing your zip file. Then
-    right-mouse-click on the file and select "Open" on the Mac, "Extract
-    Here" on Linux, or "Extract all ..." on Windows.
+### Unpacking a Zip Archive
 
-To learn more about your shell, search Wikipedia for [Windows
-Shell](https://en.wikipedia.org/wiki/Windows_shell) or [Bash
-Shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) for Mac/Linux.
+A file name ending with `.zip` is an archive containing other files in a
+compressed format. Both Linux and Mac have command-line `unzip` utilities, and
+it's possible to install a command-line `unzip` for Windows via the Internet.
+
+However, in all three systems the graphical file browser (Windows Explorer, the
+Mac Finder, or Nautilus or equivalent on Linux) will browse to the directory
+containing your zip file. Then right-mouse-click on the file and select "Open"
+on the Mac, "Extract Here" on Linux, or "Extract all ..." on Windows.
 
 # Appendix B: Command-Line Hello World
 
@@ -573,7 +518,64 @@ give the package name followed by a "dot," then the program's name:
 kotlin bar.FooKt
 ```
 
-# Appendix C: Using `run`
+# Appendix C: The Kotlin REPL
+
+The Kotlin interpreter is also called the REPL (for *Read-Evaluate-Print-
+Loop*). To use this you must first install the
+latest version (1.4 or higher) of the [Kotlin command-line
+compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
+
+> NOTE: You do not need to install command-line Kotlin for the operations
+> described previously in this README.
+
+## Install Kotlin
+
+In this book, we use Kotlin version 1.4, the latest available at the time. The
+detailed installation instructions for the command-line compiler are available
+at [The Kotlin Site](https://kotlinlang.org/docs/tutorials/command-line.html).
+
+To check your installation, open a new shell and type:
+
+```
+kotlin -version
+```
+
+at the shell prompt. You'll see the version information for your Kotlin
+installation.
+
+## The REPL
+
+To start the REPL, type `kotlinc` by itself on the command line. You should see
+something like the following:
+
+```
+Welcome to Kotlin version 1.4 (JRE 1.8.0_144-b01)
+Type :help for help, :quit for quit
+>>>
+```
+
+The exact version numbers will vary depending on the versions of Kotlin
+and Java you've installed, but make sure that you're running Kotlin 1.4
+or greater.
+
+The REPL gives you immediate interactive feedback, which is helpful for
+experimentation. For example, you can do arithmetic:
+
+```
+>>> 42 * 11.3
+474.6
+```
+
+Find out more by typing `:help` at the Kotlin prompt. To exit the REPL, type:
+
+```
+>>> :quit
+```
+
+To compile and run examples using the Kotlin command-line tools, see
+[Command-Line Hello World](#appendix-b-command-line-hello-world).
+
+# Appendix D: Using `run`
 
 In each atom-named subdirectory under the `Examples` directory, you will see
 two files: `run.bat` and `run.sh`. These are convenience commands for Windows
