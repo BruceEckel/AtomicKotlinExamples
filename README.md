@@ -3,9 +3,8 @@
 If you want to experiment with the code examples from the book [Atomic
 Kotlin](https://www.AtomicKotlin.com), you've come to the right place.
 
-This repository was created by an automatic extraction process directly from
-the book. It provides a test of the code that is shown in the book, to verify
-that it is correct.
+The examples are automatically extracted directly from the book. This repository
+includes tests to verify that the code in the book is correct.
 
 ## Contents
 
