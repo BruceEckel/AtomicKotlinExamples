@@ -7,9 +7,9 @@ data class Contact(
   val name: String,
   val mobile: String
 ): Comparable<Contact> {
-  override
-  fun compareTo(other: Contact): Int =
-    name.compareTo(other.name)
+  override fun compareTo(
+    other: Contact
+  ): Int = name.compareTo(other.name)
 }
 
 fun main() {

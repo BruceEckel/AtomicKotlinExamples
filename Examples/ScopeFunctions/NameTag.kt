@@ -7,23 +7,23 @@ val functions = listOf(
   fun(name: String?) {
     name
       ?.takeUnless { it.isBlank() }
-      ?.let { trace("Hi! I am $it") }
+      ?.let { trace("$it in let") }
   },
   fun(name: String?) {
     name
       ?.takeUnless { it.isBlank() }
-      ?.run { trace("Hi! I am $this") }
+      ?.run { trace("$this in run") }
   },
   fun(name: String?) {
     name
       ?.takeUnless { it.isBlank() }
-      ?.apply { trace("Hi! I am $this") }
+      ?.apply { trace("$this in apply") }
   },
   fun(name: String?) {
     name
       ?.takeUnless { it.isBlank() }
-      ?.also { trace("Hi! I am $it") }
-  }
+      ?.also { trace("$it in also") }
+  },
 )
 
 fun main() {
@@ -31,9 +31,9 @@ fun main() {
   functions.forEach { it("  ") }
   functions.forEach { it("Yumyulack") }
   trace eq """
-    Hi! I am Yumyulack
-    Hi! I am Yumyulack
-    Hi! I am Yumyulack
-    Hi! I am Yumyulack
+    Yumyulack in let
+    Yumyulack in run
+    Yumyulack in apply
+    Yumyulack in also
   """
 }

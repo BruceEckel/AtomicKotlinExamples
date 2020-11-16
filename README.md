@@ -1,23 +1,43 @@
 # Atomic Kotlin Examples
 
-These are the code examples from the book [Atomic Kotlin](https://www.AtomicKotlin.com), created by an
-automatic extraction process directly from the book. This repository provides
-a test of the code that is shown in the book, to verify that it is correct.
+- [Introduction](#introduction)
+- [Building From the Command Line: Quick Version](#building-from-the-command-line--quick-version)
+- [Building From the Command Line: Detailed Instructions](#building-from-the-command-line--detailed-instructions)
+  * [Install Java](#install-java)
+    + [Windows](#windows)
+    + [Macintosh](#macintosh)
+    + [Linux](#linux)
+  * [Verify Your Installation](#verify-your-installation)
+  * [Installing and Running the Book Examples](#installing-and-running-the-book-examples)
+- [Using `run`](#using--run-)
+- [Running Kotlin from the Command Line](#running-kotlin-from-the-command-line)
+  * [Install Kotlin](#install-kotlin)
+  * [The REPL](#the-repl)
+- [Testing](#testing)
 
-If you want to access and experiment with the book examples, the easiest approach is to clone/download
-this repository and open it with IntelliJ IDEA. For most people, that's all they need and they can
-ignore the rest of this README.
+## Introduction
 
-If you want to build from the command line, the remainder of this README shows you how.
+These are the code examples from the book [Atomic
+Kotlin](https://www.AtomicKotlin.com), created by an automatic extraction
+process directly from the book. This repository provides a test of the code
+that is shown in the book, to verify that it is correct.
+
+To access and experiment with the book examples, the easiest approach is to
+clone/download this repository and open it with IntelliJ IDEA. This is all that
+most people need, and those people can ignore the rest of this README.
+
+The remainder of this README shows you how to build and test the examples using
+the command line.
 
 Exercises and solutions for the book can be found at [AtomicKotlin.com/exercises](https://www.atomickotlin.com/exercises).
 
 ## Building From the Command Line: Quick Version
 
-Before you can run the examples from this repository, you must install the current version of
+Before you can run the examples from this repository, you must install the
+current version of
 [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html),
-although some earlier versions should also work. (If you get any errors try upgrading to
-a more recent version of Java).
+although some earlier versions should also work. (If you get any errors, try
+upgrading to a more recent version of Java).
 
 If you just want to download and check the code, [Download
 Here](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip)
@@ -66,9 +86,10 @@ Java; the development kit also works but is not required).
 
 1. Follow the instructions at this link to [Install Chocolatey](https://chocolatey.org/).
 
-2. At a shell prompt, type: `choco install jdk8` (you may also select a more recent version). This  takes some time,
-but when it's finished Java is installed and the necessary environment
-variables are set.
+2. At a shell prompt, type: `choco install jdk8` (you may also select a more
+recent version, like jdk11). The installation process takes some time, but when
+it's finished Java is installed and the necessary environment variables are
+set.
 
 ### Macintosh
 

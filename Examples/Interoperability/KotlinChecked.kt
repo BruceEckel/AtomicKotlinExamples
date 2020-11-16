@@ -4,8 +4,7 @@ import atomictest.eq
 import java.io.File
 
 fun main() {
-  File("Examples/Interoperability/" +
-    "KotlinChecked.kt")
+  File("DataFiles/file_wubba.txt")
     .readLines()[0] eq
-    "// Interoperability/KotlinChecked.kt"
+    "wubba lubba dub dub"
 }

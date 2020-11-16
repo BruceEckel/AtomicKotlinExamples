@@ -4,8 +4,9 @@ package scopefunctions
 import atomictest.*
 
 data class Blob(val id: Int) : AutoCloseable {
-  fun show() { trace("Show $id")}
-  override fun close() = trace("Close $id")
+  override fun toString() = "Blob($id)"
+  fun show() { trace("$this")}
+  override fun close() = trace("Close $this")
 }
 
 fun main() {
@@ -20,20 +21,20 @@ fun main() {
   Blob(9).also { it.show() }.apply { close() }
   Blob(10).apply { show() }.use {  }
   trace eq """
-    Show 1
-    Show 2
-    Show 3
-    Show 4
-    Show 5
-    Show 6
-    Close 6
-    Show 7
-    Close 7
-    Show 8
-    Close 8
-    Show 9
-    Close 9
-    Show 10
-    Close 10
+    Blob(1)
+    Blob(2)
+    Blob(3)
+    Blob(4)
+    Blob(5)
+    Blob(6)
+    Close Blob(6)
+    Blob(7)
+    Close Blob(7)
+    Blob(8)
+    Close Blob(8)
+    Blob(9)
+    Close Blob(9)
+    Blob(10)
+    Close Blob(10)
   """
 }

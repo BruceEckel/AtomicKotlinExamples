@@ -11,7 +11,7 @@ private fun messy(): String {
 }
 
 private fun clean() = buildString {
-  append("ABCs: ")
+  append("ABCs: ")                 // [3]
   ('a'..'z').forEach { append(it) }
 }
 

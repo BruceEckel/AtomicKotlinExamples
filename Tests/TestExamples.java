@@ -458,8 +458,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testDelegateProvider() {
-    testExample("Examples/DelegationTools/DelegateProvider.kt", delegationtools.DelegateProviderKt::main);
+  public void testCarService() {
+    testExample("Examples/DelegationTools/CarService.kt", propertydelegation.CarServiceKt::main);
   }
 
   @Test
@@ -1160,6 +1160,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testPlatformTypes() {
     testExample("Examples/Interoperability/PlatformTypes.kt", interop.PlatformTypesKt::main);
+  }
+
+  @Test
+  public void testPrimitiveVsWrapperK() {
+    testExample("Examples/Interoperability/PrimitiveVsWrapperK.kt", interop.PrimitiveVsWrapperKKt::main);
   }
 
   @Test
@@ -1933,13 +1938,48 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testAllOperators() {
-    testExample("Examples/OperatorOverloading/AllOperators.kt", operatoroverloading.AllOperatorsKt::main);
+  public void testArithmeticOperators() {
+    testExample("Examples/OperatorOverloading/ArithmeticOperators.kt", operatoroverloading.ArithmeticOperatorsKt::main);
   }
 
   @Test
   public void testBackticks() {
     testExample("Examples/OperatorOverloading/Backticks.kt", operatoroverloading.BackticksKt::main);
+  }
+
+  @Test
+  public void testComparison() {
+    testExample("Examples/OperatorOverloading/Comparison.kt", operatoroverloading.ComparisonKt::main);
+  }
+
+  @Test
+  public void testConfusingPrecedence() {
+    testExample("Examples/OperatorOverloading/ConfusingPrecedence.kt", operatoroverloading.ConfusingPrecedenceKt::main);
+  }
+
+  @Test
+  public void testContainerAccess() {
+    testExample("Examples/OperatorOverloading/ContainerAccess.kt", operatoroverloading.ContainerAccessKt::main);
+  }
+
+  @Test
+  public void testDefaultEquality() {
+    testExample("Examples/OperatorOverloading/DefaultEquality.kt", operatoroverloading.DefaultEqualityKt::main);
+  }
+
+  @Test
+  public void testDefiningEquality() {
+    testExample("Examples/OperatorOverloading/DefiningEquality.kt", operatoroverloading.DefiningEqualityKt::main);
+  }
+
+  @Test
+  public void testDifferentTypes() {
+    testExample("Examples/OperatorOverloading/DifferentTypes.kt", operatoroverloading.DifferentTypesKt::main);
+  }
+
+  @Test
+  public void testEqualsForNullable() {
+    testExample("Examples/OperatorOverloading/EqualsForNullable.kt", operatoroverloading.EqualsForNullableKt::main);
   }
 
   @Test
@@ -1975,6 +2015,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testOpOverloadingSoln3() {
     testExample("Examples/OperatorOverloading/OpOverloadingSoln3.kt", opoverloadingsoln3.OpOverloadingSoln3Kt::main);
+  }
+
+  @Test
+  public void testRanges() {
+    testExample("Examples/OperatorOverloading/Ranges.kt", operatoroverloading.RangesKt::main);
   }
 
   @Test
@@ -2133,11 +2178,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testCarService() {
-    testExample("Examples/PropertyDelegation/CarService.kt", propertydelegation.CarServiceKt::main);
-  }
-
-  @Test
   public void testConfiguration() {
     testExample("Examples/PropertyDelegation/Configuration.kt", propertydelegation.ConfigurationKt::main);
   }
@@ -2293,13 +2333,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testBlob() {
-    testExample("Examples/ScopeFunctions/Blob.kt", scopefunctions.BlobKt::main);
+  public void testAndNullability() {
+    testExample("Examples/ScopeFunctions/AndNullability.kt", scopefunctions.AndNullabilityKt::main);
   }
 
   @Test
-  public void testDifferences() {
-    testExample("Examples/ScopeFunctions/Differences.kt", scopefunctions.DifferencesKt::main);
+  public void testBlob() {
+    testExample("Examples/ScopeFunctions/Blob.kt", scopefunctions.BlobKt::main);
   }
 
   @Test
@@ -2310,6 +2350,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testNameTag() {
     testExample("Examples/ScopeFunctions/NameTag.kt", scopefunctions.NameTagKt::main);
+  }
+
+  @Test
+  public void testNesting() {
+    testExample("Examples/ScopeFunctions/Nesting.kt", scopefunctions.NestingKt::main);
   }
 
   @Test
@@ -2750,6 +2795,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testUpcastExercise1() {
     testExample("Examples/Upcasting/UpcastExercise1.kt", upcastingExercise1.UpcastExercise1Kt::main);
+  }
+
+  @Test
+  public void testComparableRange() {
+    testExample("Examples/UsingOperators/ComparableRange.kt", usingoperators.ComparableRangeKt::main);
   }
 
   @Test

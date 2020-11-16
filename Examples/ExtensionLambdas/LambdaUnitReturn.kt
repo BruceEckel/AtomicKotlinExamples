@@ -14,7 +14,7 @@ fun lambdaUnitReturn () {
     "So it can be anything ..."
   }
   unitReturn { 1 } // ... of any type ...
-  unitReturn { } // ... or nothing
+  unitReturn { }   // ... or nothing
   nonUnitReturn {
     "Must return the proper type"
   }

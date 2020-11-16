@@ -43,11 +43,6 @@ task Airport(type: JavaExec) {
     main = 'nestedclasses.AirportKt'
 }
 
-task AllOperators(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'operatoroverloading.AllOperatorsKt'
-}
-
 task Amphibian(type: JavaExec) {
     classpath kotlinClassPath
     main = 'nullabletypes.AmphibianKt'
@@ -61,6 +56,11 @@ task AnUnchangingVar(type: JavaExec) {
 task AnalyzeInput(type: JavaExec) {
     classpath kotlinClassPath
     main = 'whenexpressions.AnalyzeInputKt'
+}
+
+task AndNullability(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.AndNullabilityKt'
 }
 
 task Animals(type: JavaExec) {
@@ -101,6 +101,11 @@ task Arg(type: JavaExec) {
 task ArgumentOrder(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ArgumentOrderKt'
+}
+
+task ArithmeticOperators(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operatoroverloading.ArithmeticOperatorsKt'
 }
 
 task ArraySpread(type: JavaExec) {
@@ -448,9 +453,19 @@ task CompanionObject(type: JavaExec) {
     main = 'companionobjects.CompanionObjectKt'
 }
 
+task ComparableRange(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'usingoperators.ComparableRangeKt'
+}
+
 task CompareTo(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingoperators.CompareToKt'
+}
+
+task Comparison(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operatoroverloading.ComparisonKt'
 }
 
 task ComposeAdapter(type: JavaExec) {
@@ -478,6 +493,11 @@ task Confusing(type: JavaExec) {
     main = 'ConfusingKt'
 }
 
+task ConfusingPrecedence(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operatoroverloading.ConfusingPrecedenceKt'
+}
+
 task Constrained(type: JavaExec) {
     classpath kotlinClassPath
     main = 'creatinggenerics.ConstrainedKt'
@@ -491,6 +511,11 @@ task ConstructorReference(type: JavaExec) {
 task ContactMap(type: JavaExec) {
     classpath kotlinClassPath
     main = 'maps.ContactMapKt'
+}
+
+task ContainerAccess(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operatoroverloading.ContainerAccessKt'
 }
 
 task Convention(type: JavaExec) {
@@ -598,9 +623,19 @@ task Default(type: JavaExec) {
     main = 'propertyaccessors.DefaultKt'
 }
 
+task DefaultEquality(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operatoroverloading.DefaultEqualityKt'
+}
+
 task DefineTakeIf(type: JavaExec) {
     classpath kotlinClassPath
     main = 'usingsequences.DefineTakeIfKt'
+}
+
+task DefiningEquality(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operatoroverloading.DefiningEqualityKt'
 }
 
 task DefiningExceptions(type: JavaExec) {
@@ -636,11 +671,6 @@ task DelegToolsSoln3(type: JavaExec) {
 task DelegateAndExtend(type: JavaExec) {
     classpath kotlinClassPath
     main = 'companionobjects.DelegateAndExtendKt'
-}
-
-task DelegateProvider(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'delegationtools.DelegateProviderKt'
 }
 
 task DelegatedControls(type: JavaExec) {
@@ -683,9 +713,9 @@ task DeviceMembers(type: JavaExec) {
     main = 'inheritanceextensions1.DeviceMembersKt'
 }
 
-task Differences(type: JavaExec) {
+task DifferentTypes(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'scopefunctions.DifferencesKt'
+    main = 'operatoroverloading.DifferentTypesKt'
 }
 
 task Direction(type: JavaExec) {
@@ -766,6 +796,11 @@ task EmptyProgram(type: JavaExec) {
 task EnumImport(type: JavaExec) {
     classpath kotlinClassPath
     main = 'EnumImportKt'
+}
+
+task EqualsForNullable(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operatoroverloading.EqualsForNullableKt'
 }
 
 task Erasure(type: JavaExec) {
@@ -1768,6 +1803,11 @@ task NestedHouse(type: JavaExec) {
     main = 'nestedclasses.NestedHouseKt'
 }
 
+task Nesting(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.NestingKt'
+}
+
 task NeverNull(type: JavaExec) {
     classpath kotlinClassPath
     main = 'delegationtools.NeverNullKt'
@@ -2093,6 +2133,16 @@ task Predicates(type: JavaExec) {
     main = 'PredicatesKt'
 }
 
+task PrimitiveVsWrapperJ(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Interoperability.PrimitiveVsWrapperJ'
+}
+
+task PrimitiveVsWrapperK(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interop.PrimitiveVsWrapperKKt'
+}
+
 task PropDelegationSoln1(type: JavaExec) {
     classpath kotlinClassPath
     main = 'propertydelegationsoln1.PropDelegationSoln1Kt'
@@ -2166,6 +2216,11 @@ task RangeOfInt(type: JavaExec) {
 task RangeSum(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RangeSumKt'
+}
+
+task Ranges(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operatoroverloading.RangesKt'
 }
 
 task ReadOnlyAndPlus(type: JavaExec) {
@@ -2768,6 +2823,11 @@ task UseBeanClass(type: JavaExec) {
     main = 'UseBeanClassKt'
 }
 
+task UseDataClass(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Interoperability.UseDataClass'
+}
+
 task UseLines(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UseLinesKt'
@@ -2776,11 +2836,6 @@ task UseLines(type: JavaExec) {
 task UsingAtomicTest(type: JavaExec) {
     classpath kotlinClassPath
     main = 'UsingAtomicTestKt'
-}
-
-task UsingDataClass(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'Interoperability.UsingDataClass'
 }
 
 task UsingExpect(type: JavaExec) {
@@ -2951,10 +3006,10 @@ task run (dependsOn: [
     'Add',
     'AddingIntToChar',
     'Airport',
-    'AllOperators',
     'Amphibian',
     'AnUnchangingVar',
     'AnalyzeInput',
+    'AndNullability',
     'Animals',
     'AnnotatedJava',
     'AnonymousFunction',
@@ -2963,6 +3018,7 @@ task run (dependsOn: [
     'AnyInstead',
     'Arg',
     'ArgumentOrder',
+    'ArithmeticOperators',
     'ArraySpread',
     'AssigningAnIf',
     'Assignment',
@@ -3032,15 +3088,19 @@ task run (dependsOn: [
     'CompanionFactory',
     'CompanionInstance',
     'CompanionObject',
+    'ComparableRange',
     'CompareTo',
+    'Comparison',
     'ComposeAdapter',
     'Computation',
     'Computer',
     'Configuration',
     'Confusing',
+    'ConfusingPrecedence',
     'Constrained',
     'ConstructorReference',
     'ContactMap',
+    'ContainerAccess',
     'Convention',
     'Conversion',
     'Cookie',
@@ -3062,7 +3122,9 @@ task run (dependsOn: [
     'DataClasses',
     'DataFile',
     'Default',
+    'DefaultEquality',
     'DefineTakeIf',
+    'DefiningEquality',
     'DefiningExceptions',
     'DefiningRanges',
     'Definition',
@@ -3070,7 +3132,6 @@ task run (dependsOn: [
     'DelegToolsSoln2',
     'DelegToolsSoln3',
     'DelegateAndExtend',
-    'DelegateProvider',
     'DelegatedControls',
     'Dereference',
     'DereferenceNull',
@@ -3079,7 +3140,7 @@ task run (dependsOn: [
     'DestructuringMap',
     'DeviceExtensions',
     'DeviceMembers',
-    'Differences',
+    'DifferentTypes',
     'Direction',
     'DisplayAlienSpecies',
     'DoWhile',
@@ -3096,6 +3157,7 @@ task run (dependsOn: [
     'ElvisOperator',
     'EmptyProgram',
     'EnumImport',
+    'EqualsForNullable',
     'Erasure',
     'Evaluation',
     'EvaluationOrder',
@@ -3296,6 +3358,7 @@ task run (dependsOn: [
     'NestedEx3',
     'NestedEx4',
     'NestedHouse',
+    'Nesting',
     'NeverNull',
     'NewAngle',
     'NewException',
@@ -3361,6 +3424,8 @@ task run (dependsOn: [
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',
+    'PrimitiveVsWrapperJ',
+    'PrimitiveVsWrapperK',
     'PropDelegationSoln1',
     'PropDelegationSoln2',
     'PropDelegationSoln3',
@@ -3376,6 +3441,7 @@ task run (dependsOn: [
     'Random',
     'RangeOfInt',
     'RangeSum',
+    'Ranges',
     'ReadOnlyAndPlus',
     'ReadOnlyBlendMap',
     'ReadOnlyCollections',
@@ -3496,9 +3562,9 @@ task run (dependsOn: [
     'UseALibrary',
     'UseAtomicLog',
     'UseBeanClass',
+    'UseDataClass',
     'UseLines',
     'UsingAtomicTest',
-    'UsingDataClass',
     'UsingExpect',
     'UsingKotlinClass',
     'UsingLongs',

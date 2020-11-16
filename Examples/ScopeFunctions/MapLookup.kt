@@ -10,7 +10,7 @@ fun display(map: Map<String, Plumbus>) {
   val pb1: Plumbus = map["main"]?.let {
     it.id += 10
     it
-  } ?: return                         // [1]
+  } ?: return
   trace(pb1)
 
   val pb2: Plumbus? = map["main"]?.run {
