@@ -7,7 +7,6 @@ These examples are automatically extracted directly from the book. This reposito
 includes tests to verify that the code in the book is correct.
 
 ## Contents
-
 - [Introduction](#introduction)
 - [Compiling and Running Programs in IntelliJ IDEA](#compiling-and-running-programs-in-intellij-idea)
 - [Building From the Command Line: Quick Version](#building-from-the-command-line-quick-version)
@@ -18,7 +17,6 @@ includes tests to verify that the code in the book is correct.
     + [Linux](#linux)
   * [Verify Your Installation](#verify-your-installation)
   * [Installing and Running the Book Examples](#installing-and-running-the-book-examples)
-- [Testing](#testing)
 - [Compilers and Interpreters](#compilers-and-interpreters)
 - [Appendix A: Command-Line Basics](#appendix-a-command-line-basics)
   * [Editors](#editors)
@@ -32,6 +30,7 @@ includes tests to verify that the code in the book is correct.
 - [Appendix C: The Kotlin REPL](#appendix-c-the-kotlin-repl)
   * [Install Kotlin](#install-kotlin)
   * [The REPL](#the-repl)
+- [Appendix D: Testing](#appendix-d-testing)
 - [Appendix D: Using `run`](#appendix-d-using-run)
 
 # Introduction
