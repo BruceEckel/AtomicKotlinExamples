@@ -14,8 +14,10 @@
   * [Install Kotlin](#install-kotlin)
   * [The REPL](#the-repl)
 - [Testing](#testing)
+- [Compiling and Running Programs in IntelliJ IDEA](#compiling-and-running-programs-in-intellij-idea)
+- [Compilers vs. Interpreters](#compilers-vs-interpreters)
 
-## Introduction
+# Introduction
 
 These are the code examples from the book [Atomic
 Kotlin](https://www.AtomicKotlin.com), created by an automatic extraction
@@ -31,7 +33,7 @@ the command line.
 
 Exercises and solutions for the book can be found at [AtomicKotlin.com/exercises](https://www.atomickotlin.com/exercises).
 
-## Building From the Command Line: Quick Version
+# Building From the Command Line: Quick Version
 
 Before you can run the examples from this repository, you must install the
 current version of
@@ -263,3 +265,74 @@ to:
 
 Alternatively, `TestExamples.java` can be called as a regular **JUnit** test class.
 
+# Compiling and Running Programs in IntelliJ IDEA
+
+To run an example from the book in IntelliJ IDEA, your code will look like
+this:
+
+![](images/main.png)
+
+Click on the green triangle in the gutter area near the class declaration and
+select `Run`. It should look like this:
+
+![](images/runmain.png)
+
+IDE runs your program and shows the resulting output.
+
+# Compilers vs. Interpreters
+
+Kotlin is a *compiled* language rather than an *interpreted* one. The
+instructions of an interpreted language are executed directly, while the source
+code of a compiled language is converted into an intermediate representation
+that runs separately:
+
+![](images/compilation.png)
+
+IDE simplifies the process for you and makes the intermediate stage invisible.
+
+The main benefit of bytecode is that it can be shipped separately without the
+source code. Bytecode is conceptually much closer to the very first programming
+languages containing "machine instructions," and it's something that a machine
+can run.
+
+At *compile time*, the code is checked by the compiler, and all errors are
+reported. IntelliJ IDEA highlights these errors when you type the code, so  you
+can quickly see and fix them. If there are no errors, the source code can be
+successfully compiled into machine-language instructions, often called
+bytecode.
+
+*Run time* is the process of running the program. The result of the compilation
+(the specific format depends on the target platform) can run independently,
+the source code is not needed for execution.
+
+No program (except a trivial one) can be written without mistakes or errors.
+Mistakes make an inseparable part of the development process. Different
+languages try hard to minimize the number of possible errors.
+
+We distinguish "compile-time error" and "run-time error". The compile-time
+error is an error that happens while you're writing the code, and you can
+immediately fix it. The runtime error is an error that only happens when you
+run the program. The runtime errors are more expensive to fix; it's always
+better and cheaper to fix an error at an early stage.
+
+One of the important Kotlin goals is to catch as many errors as possible during
+the compilation time, or in other words, to prevent them from happening later
+at runtime.
+
+Kotlin source code can be compiled to different target platforms:
+
+- **JVM**. The source code gets compiled into JVM bytecode (`.class` files),
+which can then be run on any Java Virtual Machine (JVM).
+
+**Android**. Android its own runtime called
+[ART](https://source.android.com/devices/tech/dalvik) (the predecessor was
+called Dalvik). The Kotlin source code is compiled into *Dalvik Executable Format*
+(`.dex` files).
+
+- **JavaScript**, to run inside a web browser.
+
+- **Native Binaries**, to target specific platforms.
+
+This book focuses on the language itself, using JVM as the only target
+platform. After you know the language, you can apply Kotlin on different
+application and target platforms.
