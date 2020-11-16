@@ -56,14 +56,16 @@ instructions on [YouTube](https://www.youtube.com/).
 The easiest and fastest way to start using the examples in this book is by
 compiling and running them using IntelliJ IDEA:
 
-1. Follow the instructions [here]() to install IntelliJ IDEA.
+1. Follow the instructions [here](https://www.jetbrains.com/help/idea/installation-guide.html)
+to install IntelliJ IDEA.
 
 2. Download the [zipped code
 repository](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip)
-and unpack it.
+and unzip it.
 
-3. Go to `File | Open` in the IntelliJ IDEA menu. Navigate to where you unpacked
-the repository and open the `build.gradle` file. You should see a dialog box like this:
+3. Start IntelliJ IDEA and select the `File | Open` menu item. Navigate to
+where you unpacked the repository and open the `build.gradle` file. You should
+see a dialog box like this:
 
     ![](images/buildgradle.png)
 
@@ -108,6 +110,11 @@ and unzip into your destination directory. Open a shell/command window and
 move into the root of that directory. You'll know you are in the right
 directory if you see the files `gradlew` and `gradlew.bat`.
 
+You'll need an Internet connection the first time you compile the code,
+because Gradle needs to first install itself, then all the support libraries.
+Once these are installed you can perform additional compiling and running
+offline.
+
 On Mac/Linux, enter:
 
 ```
@@ -121,11 +128,6 @@ On Windows, enter
 ```
 gradlew test
 ```
-
-You'll need an Internet connection the first time you compile the code,
-because Gradle needs to first install itself, then all the support libraries.
-Once these are installed you can perform additional compiling and running
-offline.
 
 If all goes well, the tests will run. Everything should complete without errors.
 
