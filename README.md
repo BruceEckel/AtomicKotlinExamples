@@ -56,9 +56,9 @@ and unpack it.
 3. Go to `File | Open` in the IntelliJ IDEA menu. Navigate to where you unpacked
 the repository and open the `build.gradle` file. You should see this dialog box:
 
-![](images/buildgradle.png)
+    ![](images/buildgradle.png)
 
-Select the `Open as Project` button.
+    Select the `Open as Project` button.
 
 4. If you don't see a `Project` window on the left side, go to the menu and select
 `View | Tool Windows | Project` to turn it on.
@@ -67,15 +67,15 @@ Select the `Open as Project` button.
 the `HelloWorld` folder to open that, then double-click on `HelloWorld.kt`.
 You'll see something like this:
 
-![](images/helloworld.png)
+    ![](images/helloworld.png)
 
-Click on the green triangle in the gutter area near the class declaration and
-select `Run`. It should look like this:
+    Click on the green triangle in the gutter area near the class declaration and
+    select `Run`. It should look like this:
 
-![](images/runhelloworld.png)
+    ![](images/runhelloworld.png)
 
-Choose the top one, the `Run` option, and IntelliJ IDEA will run your program
-and display the resulting output.
+    Choose the top one, the `Run` option, and IntelliJ IDEA will run your program
+    and display the resulting output.
 
 **NOTE**: The first program you run will take awhile, because IntelliJ IDEA is
 building the entire project. Subsequent programs will run much more quickly.
