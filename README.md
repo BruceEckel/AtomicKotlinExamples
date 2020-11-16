@@ -1,6 +1,7 @@
 # Atomic Kotlin Examples
 
 - [Introduction](#introduction)
+- [Compiling and Running Programs in IntelliJ IDEA](#compiling-and-running-programs-in-intellij-idea)
 - [Building From the Command Line: Quick Version](#building-from-the-command-line-quick-version)
 - [Building From the Command Line: Detailed Instructions](#building-from-the-command-line-detailed-instructions)
   * [Install Java](#install-java)
@@ -14,8 +15,15 @@
   * [Install Kotlin](#install-kotlin)
   * [The REPL](#the-repl)
 - [Testing](#testing)
-- [Compiling and Running Programs in IntelliJ IDEA](#compiling-and-running-programs-in-intellij-idea)
 - [Compilers vs. Interpreters](#compilers-vs-interpreters)
+- [Appendix A: Command-Line Basics](#appendix-a-command-line-basics)
+  * [Editors](#editors)
+  * [The Shell](#the-shell)
+    + [Starting a Shell](#starting-a-shell)
+    + [Directories](#directories)
+    + [Basic Shell Operations](#basic-shell-operations)
+- [Appendix B: Command-Line Hello World](#appendix-b-command-line-hello-world)
+  * [Packages](#packages)
 
 # Introduction
 
@@ -29,9 +37,48 @@ clone/download this repository and open it with IntelliJ IDEA. This is all that
 most people need, and those people can ignore the rest of this README.
 
 The remainder of this README shows you how to build and test the examples using
-the command line.
+both IntelliJ IDEA and the command line.
 
-Exercises and solutions for the book can be found at [AtomicKotlin.com/exercises](https://www.atomickotlin.com/exercises).
+Exercises and solutions for the book can be found at
+[AtomicKotlin.com/exercises](https://www.atomickotlin.com/exercises).
+
+# Compiling and Running Programs in IntelliJ IDEA
+
+The easiest and fastest way to start using the examples in this book is by
+compiling and running them using IntelliJ IDEA:
+
+1. Follow the instructions [here]() to install IntelliJ IDEA.
+
+2. Download the [zipped code
+repository](https://github.com/BruceEckel/AtomicKotlinExamples/archive/master.zip)
+and unpack it.
+
+3. Go to `File | Open` in the IntelliJ IDEA menu. Navigate to where you unpacked
+the repository and open the `build.gradle` file. You should see this dialog box:
+
+![](images/buildgradle.png)
+
+Select the `Open as Project` button.
+
+4. If you don't see a `Project` window on the left side, go to the menu and select
+`View | Tool Windows | Project` to turn it on.
+
+5. You'll see an `Examples` folder. Click on it to open it, then navigate to
+the `HelloWorld` folder to open that, then double-click on `HelloWorld.kt`.
+You'll see something like this:
+
+![](images/helloworld.png)
+
+Click on the green triangle in the gutter area near the class declaration and
+select `Run`. It should look like this:
+
+![](images/runhelloworld.png)
+
+Choose the top one, the `Run` option, and IntelliJ IDEA will run your program
+and display the resulting output.
+
+**NOTE**: The first program you run will take awhile, because IntelliJ IDEA is
+building the entire project. Subsequent programs will run much more quickly.
 
 # Building From the Command Line: Quick Version
 
@@ -72,12 +119,12 @@ All the book examples are in the subdirectory `Examples` in subdirectories
 corresponding to the atom names.
 
 To compile and run examples using the Kotlin command-line tools, see
-[Command-Line Hello World](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Hello_World.md).
+[Command-Line Hello World](#appendix-b-command-line-hello-world).
 
 # Building From the Command Line: Detailed Instructions
 
 If you are not familiar with the command line, first read [Command-Line
-Basics](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Basics.md).
+Basics](#appendix-a-command-line-basics).
 
 ## Install Java
 
@@ -249,7 +296,7 @@ type:
 ```
 
 To compile and run examples using the Kotlin command-line tools, see
-[Command-Line Hello World](https://github.com/BruceEckel/AtomicKotlinExamples/blob/master/Command_Line_Hello_World.md).
+[Command-Line Hello World](#appendix-b-command-line-hello-world).
 
 # Testing
 
@@ -265,34 +312,26 @@ to:
 
 Alternatively, `TestExamples.java` can be called as a regular **JUnit** test class.
 
-# Compiling and Running Programs in IntelliJ IDEA
-
-To run an example from the book in IntelliJ IDEA, your code will look like
-this:
-
-![](images/main.png)
-
-Click on the green triangle in the gutter area near the class declaration and
-select `Run`. It should look like this:
-
-![](images/runmain.png)
-
-IDE runs your program and shows the resulting output.
-
 # Compilers vs. Interpreters
 
 Kotlin is a *compiled* language rather than an *interpreted* one. The
-instructions of an interpreted language are executed directly, while the source
-code of a compiled language is converted into an intermediate representation
-that runs separately:
+instructions of an interpreted language are executed directly by a separate
+program called an *interpreter*. The source code of a compiled language is
+converted into a different representation that runs as its own program, either
+directly on a hardware processor or on a *virtual machine* that emulates a
+processor:
 
 ![](images/compilation.png)
 
-IDE simplifies the process for you and makes the intermediate stage invisible.
+An IDE like IntelliJ IDEA simplifies this task and makes the intermediate stage
+invisible.
 
+Languages such as C, C++, Go and Rust compile into code that the underlying
+hardware CPU can run directly. Languages like Java and the JVM version of Kotlin
+compile into *bytecode* which is
 The main benefit of bytecode is that it can be shipped separately without the
 source code. Bytecode is conceptually much closer to the very first programming
-languages containing "machine instructions," and it's something that a machine
+languages containing *machine instructions*, and it's something that a machine
 can run.
 
 At *compile time*, the code is checked by the compiler, and all errors are
@@ -336,3 +375,225 @@ called Dalvik). The Kotlin source code is compiled into *Dalvik Executable Forma
 This book focuses on the language itself, using JVM as the only target
 platform. After you know the language, you can apply Kotlin on different
 application and target platforms.
+
+
+# Appendix A: Command-Line Basics
+
+Because it is possible for a "dedicated beginner" to learn programming from
+this book, you may not have previously used the computer's command-line shell.
+If you have, you can go directly to the installation instructions.
+
+If any terminology or processes described here are still not clear to
+you, you can usually find explanations or answers through
+[Google](https://www.google.com/). For more specific issues or problems,
+try [StackOverflow](http://stackoverflow.com/). Sometimes you can find
+installation instructions on [YouTube](https://www.youtube.com/).
+
+## Editors
+
+To create and modify Kotlin program files---the code listings shown in this
+book---you need a program called an *editor*. You'll also need the editor to
+make changes to your system configuration files, which is sometimes required
+during installation.
+
+Programming editors vary from heavyweight *Integrated Development Environments*
+(IDEs, like Eclipse, NetBeans and IntelliJ IDEA) to more basic text manipulation
+applications. If you already have an IDE and are comfortable with it, feel free
+to use that for this book, but in the interest of keeping things simple, We'll use
+the *Atom* editor. Find it at
+[atom.io](https://atom.io/).
+
+Atom is free and open-source, is very simple to install, works on all platforms
+(Windows, Mac and Linux), and has a built-in Kotlin mode that is automatically
+invoked when you open a Kotlin file. It isn't a heavy-duty IDE so it doesn't get
+confusing, which is ideal for this book. On the other hand, it has some handy
+editing features that you'll probably come to love. More details are on their
+site.
+
+There are many other editors; these are a subculture unto themselves and people
+even get into heated arguments about their merits. If you find one you like
+better, it's not too hard to change. The important thing is to choose one and
+get comfortable with it.
+
+## The Shell
+
+If you haven't programmed before, you might be unfamiliar with your operating
+system *shell* (also called the *command prompt* in Windows). The shell harkens
+back to the early days of computing when everything happened by typing commands
+and the computer responded by displaying responses---everything was text-based.
+
+Although it can seem primitive in the age of graphical user interfaces, a shell
+provides a surprising number of valuable features. We'll use it regularly in
+this book, both as part of the installation process and to run Kotlin programs.
+
+### Starting a Shell
+
+**Mac**: Click on the *Spotlight* (the magnifying-glass icon in the upper-right
+corner of the screen) and type "terminal." Click on the application that looks
+like a little TV screen (you might also be able to hit "Return"). This starts a
+shell in your home directory.
+
+**Windows**: First, start the Windows Explorer to navigate through your
+directories:
+
+- *Windows 7*: click the "Start" button in the lower left corner of the screen.
+In the Start Menu search box area type "explorer" and then press the "Enter"
+key.
+
+- *Windows 8*: click Windows+Q, type "explorer" and then press the "Enter" key.
+
+- *Windows 10*: click Windows+E.
+
+Once the Windows Explorer is running, move through the folders on your computer
+by double-clicking on them with the mouse. Navigate to the desired folder. Now
+click the file tab at the top left of the Explorer window and select "Open
+Windows Powershell." This opens a shell in the destination directory.
+
+**Linux**: To open a shell in your home directory:
+
+- *Debian*: Press Alt+F2. In the dialog that pops up, type 'gnome-terminal'
+
+- *Ubuntu*: Either right-click on the desktop and select 'Open Terminal', or
+  press Ctrl+Alt+T
+
+- *Redhat*: Right-click on the desktop and select 'Open Terminal'
+
+- *Fedora*: Press Alt+F2. In the dialog that pops up, type 'gnome-terminal'
+
+
+### Directories
+
+*Directories* are one of the fundamental elements of a shell. Directories hold
+files, as well as other directories. Think of a directory as a tree with
+branches. If `books` is a directory on your system and it has two other
+directories as branches, for example `math` and `art`, we say that you have a
+directory `books` with two *subdirectories* `math` and `art`. We refer to them
+as `books/math` and `books/art` since `books` is their *parent* directory.
+Note that Windows uses backslashes rather than forward slashes to separate the
+parts of a directory.
+
+### Basic Shell Operations
+
+The shell operations I show here are approximately identical across operating
+systems. For the purposes of this book, here are the essential operations in a
+shell:
+
+-   **Change directory**: Use `cd` followed by the name of the
+    directory where you want to move, or `cd ..` if you want to move
+    up a directory. If you want to move to a different directory while
+    remembering where you came from, use `pushd` followed by the different
+    directory name. Then, to return to the previous directory, just say
+    `popd`.
+
+-   **Directory listing**: `ls` (`dir` in Windows) displays all the files and
+    subdirectory names in the current directory. Use the wildcard `*` (asterisk) to
+    narrow your search. For example, if you want to list all the files ending in
+    ".kt," you say `ls *.kt` (Windows: `dir *.kt`). If you want to list the
+    files starting with "F" and ending in ".kt," you say `ls F*.kt` (Windows:
+    `dir F*.kt`).
+
+-   **Create a directory**: use the `mkdir` ("make directory") command
+    (Windows: `md`), followed by the name of the directory you want to create.
+    For example, `mkdir books` (Windows: `md books`).
+
+-   **Remove a file**: Use `rm` ("remove") followed by the name of the file
+    you wish to remove (Windows: `del`). For example, `rm somefile.kt` (Windows:
+    `del somefile.kt`).
+
+-   **Remove a directory**: use the `rm -r` command to remove the files in
+    the directory and the directory itself (Windows: `deltree`). For example,
+    `rm -r books` (Windows: `deltree books`).
+
+-   **Repeat a command**: The "up arrow" on all three operating
+    systems moves through previous commands so you can edit and
+    repeat them. On Mac/Linux, `!!` repeats the last command and
+    `!n` repeats the nth command.
+
+-   **Command history**: Use `history` in Mac/Linux or press the F7 key in Windows.
+    This gives you a list of all the commands you've entered. Mac/Linux provides
+    numbers to refer to when you want to repeat a command.
+
+-   **Unpacking a zip archive**: A file name ending with `.zip` is an
+    archive containing other files in a compressed format. Both Linux
+    and Mac have command-line `unzip` utilities, and it's possible
+    to install a command-line `unzip` for Windows via the Internet.
+    However, in all three systems the graphical file browser (Windows
+    Explorer, the Mac Finder, or Nautilus or equivalent on Linux) will
+    browse to the directory containing your zip file. Then
+    right-mouse-click on the file and select "Open" on the Mac, "Extract
+    Here" on Linux, or "Extract all ..." on Windows.
+
+To learn more about your shell, search Wikipedia for [Windows
+Shell](https://en.wikipedia.org/wiki/Windows_shell) or [Bash
+Shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) for Mac/Linux.
+
+# Appendix B: Command-Line Hello World
+
+In which we see how to compile and run the program shown in the "Hello World"
+atom in the book, using the latest version (1.4 or higher) of the [Kotlin command-line
+compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
+
+Open up a console window in the `HelloWorld` directory, where you'll see
+`HelloWorld.kt`, and type:
+
+```
+kotlinc HelloWorld.kt
+```
+
+`kotlinc` means "Kotlin compiler." The compiler is the program that takes
+your program and turns it into something that will run; this process is
+called *compiling*.
+
+Assuming you've typed the code correctly, you should get back the console
+prompt, with no other messages. If you get error messages, try to discover
+where you've mis-typed the code, correct it and try again. Once you are
+successful, you're ready to run the program.
+
+There's one more thing: When you run `kotlinc`, the resulting program doesn't
+have the same name as the source program. Instead, the compiler appends a `Kt`
+to the name. To see it, run `ls` or `dir` on the `helloworld` subdirectory.
+You'll see that the directory contains `HelloWorldKt.class`. What's important is
+the part before the `.class` (You'll learn about the idea of classes in later
+atoms). This is the actual name of the program: `HelloWorldKt`.
+
+Now we can run the program:
+
+```
+kotlin HelloWorldKt
+```
+
+And you'll see the output on the console:
+
+```
+Hello, world!
+```
+
+## Packages
+
+If the program is in a package, the package name is also required to run the
+program. That is, if `Foo.kt` contains a `package` statement:
+
+```
+package bar
+```
+
+then you cannot simply say:
+
+```
+kotlin Foo
+```
+
+You'll get a message starting with `error: could not find or load`...
+
+If you were to compile this program, you'd
+see there's a new subdirectory called `bar`. The name of the
+subdirectory that appears when you run `kotlinc` corresponds to the `package`
+name in the program that was compiled.
+
+If the program is packaged under `bar`, we
+give the package name followed by a "dot," then the program's name:
+
+```
+kotlin bar.FooKt
+```
+
