@@ -1,15 +1,15 @@
 # Atomic Kotlin Examples
 
 - [Introduction](#introduction)
-- [Building From the Command Line: Quick Version](#building-from-the-command-line--quick-version)
-- [Building From the Command Line: Detailed Instructions](#building-from-the-command-line--detailed-instructions)
+- [Building From the Command Line: Quick Version](#building-from-the-command-line-quick-version)
+- [Building From the Command Line: Detailed Instructions](#building-from-the-command-line-detailed-instructions)
   * [Install Java](#install-java)
     + [Windows](#windows)
     + [Macintosh](#macintosh)
     + [Linux](#linux)
   * [Verify Your Installation](#verify-your-installation)
   * [Installing and Running the Book Examples](#installing-and-running-the-book-examples)
-- [Using `run`](#using--run-)
+- [Using `run`](#using-run)
 - [Running Kotlin from the Command Line](#running-kotlin-from-the-command-line)
   * [Install Kotlin](#install-kotlin)
   * [The REPL](#the-repl)
