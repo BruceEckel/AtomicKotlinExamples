@@ -79,12 +79,12 @@ You'll see something like this:
 
     ![](images/helloworld.png)
 
-    Click on the green triangle in the gutter area to the left of `fun main() {`
-    and select `Run`. It should look like this:
+    Click on the green triangle in the gutter area to the left of `fun main() {`.
+    It should look like this:
 
     ![](images/runhelloworld.png)
 
-    Choose the top one, the `Run` option, and IntelliJ IDEA will run your
+    Select the top one, the `Run` option, and IntelliJ IDEA will run your
     program and display the resulting output.
 
 6. If you don't already have a JDK (*Java Development Kit*) on your machine,
