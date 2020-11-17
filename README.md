@@ -326,7 +326,7 @@ parts of a directory.
 
 ### Basic Shell Operations
 
-The shell operations I show here are approximately identical across operating
+The shell operations shown here are approximately identical across operating
 systems. For the purposes of this book, here are the essential operations in a
 shell:
 
