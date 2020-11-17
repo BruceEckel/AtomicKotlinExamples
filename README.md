@@ -73,7 +73,7 @@ see a dialog box like this:
 `View | Tool Windows | Project` to turn it on.
 
 5. You'll see an `Examples` folder. Click on it to open it, then navigate to
-the `HelloWorld` folder to open that, then double-click on `HelloWorld.kt`.
+the `HelloWorld` folder and open that, then double-click on `HelloWorld.kt`.
 You'll see something like this:
 
     ![](images/helloworld.png)
@@ -86,14 +86,15 @@ You'll see something like this:
     Select the top one, the `Run` option, and IntelliJ IDEA will run your
     program and display the resulting output.
 
+    **NOTE**: The first program you run will take awhile, because IntelliJ IDEA
+    is building the entire project. Subsequent programs will start much more
+    quickly.
+
 6. If you don't already have a JDK (*Java Development Kit*) on your machine,
 you will see error messages. A JDK is necessary to compile both Java and
 Kotlin. You can [install one from within
 IntelliJ](https://www.jetbrains.com/help/idea/sdk.html#jdk-from-ide). Once the
 JDK is installed, IDEA will also be able to compile Kotlin.
-
-**NOTE**: The first program you run will take awhile, because IntelliJ IDEA is
-building the entire project. Subsequent programs will start much more quickly.
 
 # Building From the Command Line: Quick Version
 
@@ -271,12 +272,11 @@ back to the early days of computing when everything happened by typing commands
 and the computer responded by displaying responses&mdash;everything was text-based.
 
 Although it can seem primitive in the age of graphical user interfaces, a shell
-provides a surprising number of valuable features. We'll use it regularly in
-this book, both as part of the installation process and to run Kotlin programs.
+provides a surprising number of valuable features.
 
-To learn more about your shell than we cover here, search Wikipedia for
-[Windows Shell](https://en.wikipedia.org/wiki/Windows_shell) or [Bash
-Shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) for Mac/Linux.
+To learn more about your shell than we cover here, see
+[Bash Shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) for Mac/Linux
+or [Windows Shell](https://en.wikipedia.org/wiki/Windows_shell).
 
 ### Starting a Shell
 
