@@ -17,7 +17,6 @@ includes tests to verify that the code in the book is correct.
     + [Linux](#linux)
   * [Verify Your Installation](#verify-your-installation)
   * [Installing and Running the Book Examples](#installing-and-running-the-book-examples)
-- [Compilers and Interpreters](#compilers-and-interpreters)
 - [Appendix A: Command-Line Basics](#appendix-a-command-line-basics)
   * [Editors](#editors)
   * [The Shell](#the-shell)
