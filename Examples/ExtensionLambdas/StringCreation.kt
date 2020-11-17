@@ -11,10 +11,14 @@ private fun messy(): String {
 }
 
 private fun clean() = buildString {
-  append("ABCs: ")                 // [3]
+  append("ABCs: ")
   ('a'..'z').forEach { append(it) }
 }
 
+private fun cleaner() =
+  "ABCs: " + ('a'..'z').fold("", String::plus)
+
 fun main() {
   messy() eq clean()
+  clean() eq cleaner()
 }
