@@ -2,7 +2,8 @@ import pprint
 import re
 from pathlib import Path
 
-readme_file = Path("README.md")
+readme_file = Path("../README.md")
+assert readme_file.exists()
 readme = readme_file.read_text().splitlines()
 contents_header = "## Contents"
 
