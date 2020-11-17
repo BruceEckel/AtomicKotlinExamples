@@ -238,62 +238,6 @@ builds and runs will be much faster.
 Note that you must be connected to the Internet the first time you run `gradlew`
 so that Gradle can download the necessary packages.
 
-# Compilers and Interpreters
-
-Kotlin is a *compiled* language rather than an *interpreted* one. The
-instructions of an interpreted language are executed directly by a separate
-program called an *interpreter*. In contrast, the source code of a compiled
-language is converted into a different representation that runs as its own
-program, either directly on a hardware processor or on a *virtual machine* that
-emulates a processor:
-
-![](images/compilation.png)
-
-An IDE like IntelliJ IDEA simplifies this task and makes the intermediate stage
-invisible.
-
-Languages such as C, C++, Go and Rust compile into *machine code* which runs
-directly on the underlying hardware CPU. Languages like Java and Kotlin compile
-into *bytecode* which is an intermediate-level format that doesn't run directly
-on the hardware CPU, but instead on a *virtual machine*, which is a program
-that executes bytecode instructions. The JVM version of Kotlin runs on the
-*Java Virtual Machine* (JVM).
-
-The primary benefit of a virtual machine is portability. The same bytecode can
-run on any computer that has a virtual machine written for it. Virtual machines
-can be optimized for particular hardware and to solve special speed problems.
-The JVM contains main years of such optimizations, and has been implemented on
-many platforms.
-
-At *compile time*, the code is checked by the compiler and all errors are
-reported. IntelliJ IDEA highlights these errors when you input the code, so you
-can quickly discover and fix any problems. If there are no errors, the source
-code can be successfully compiled into bytecode.
-
-A *compile-time error* happens while you're writing the code, and you can
-immediately fix it. A *runtime error* cannot be detected at compile time, so it
-only emerges when you run the program. Typically, runtime errors are more
-difficult to discover and often more expensive to fix. An important Kotlin goal
-is to catch as many errors as possible at compile time.
-
-Kotlin source code can be compiled to different target platforms:
-
-- **JVM**. The source code gets compiled into JVM bytecode (`.class` files),
-which can then be run on any Java Virtual Machine (JVM).
-
-- **Android**. Android its own runtime called
-[ART](https://source.android.com/devices/tech/dalvik) (the predecessor was
-called Dalvik). The Kotlin source code is compiled into *Dalvik Executable Format*
-(`.dex` files).
-
-- **JavaScript**, to run inside a web browser.
-
-- **Native Binaries**, to target specific platforms.
-
-This book focuses on the language itself, using JVM as the only target
-platform. After you know the language, you can apply Kotlin on different
-application and target platforms.
-
 # Appendix A: Command-Line Basics
 
 Because it is possible for a "dedicated beginner" to learn programming from
