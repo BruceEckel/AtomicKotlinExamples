@@ -1153,6 +1153,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testKotlinWrapper() {
+    testExample("Examples/Interoperability/KotlinWrapper.kt", interop.KotlinWrapperKt::main);
+  }
+
+  @Test
   public void testNPEOnPlatformType() {
     testExample("Examples/Interoperability/NPEOnPlatformType.kt", NPEOnPlatformTypeKt::main);
   }
@@ -1160,11 +1165,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testPlatformTypes() {
     testExample("Examples/Interoperability/PlatformTypes.kt", interop.PlatformTypesKt::main);
-  }
-
-  @Test
-  public void testPrimitiveVsWrapperK() {
-    testExample("Examples/Interoperability/PrimitiveVsWrapperK.kt", interop.PrimitiveVsWrapperKKt::main);
   }
 
   @Test

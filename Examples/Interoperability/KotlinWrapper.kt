@@ -1,11 +1,11 @@
-// Interoperability/PrimitiveVsWrapperK.kt
+// Interoperability/KotlinWrapper.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package interop
 
 fun main() {
-  // primitive int under the hood
+  // Generates a primitive int:
   val i = 10
-  // wrapper types under the hood
+  // Generates wrapper types:
   val iOrNull: Int? = null
   val list: List<Int> = listOf(1, 2, 3)
 }

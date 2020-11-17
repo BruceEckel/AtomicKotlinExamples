@@ -1,10 +1,9 @@
-// Interoperability/PrimitiveVsWrapperJ.java
+// Interoperability/JavaWrapper.java
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package Interoperability;
-
 import java.util.List;
 
-public class PrimitiveVsWrapperJ {
+public class JavaWrapper {
   public static void main(String[] args) {
     // Primitive type
     int i = 10;

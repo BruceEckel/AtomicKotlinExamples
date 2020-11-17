@@ -1418,6 +1418,11 @@ task JavaList(type: JavaExec) {
     main = 'JavaListKt'
 }
 
+task JavaWrapper(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'Interoperability.JavaWrapper'
+}
+
 task JetPack(type: JavaExec) {
     classpath kotlinClassPath
     main = 'summary2.JetPackKt'
@@ -1436,6 +1441,11 @@ task JulianMonth(type: JavaExec) {
 task KotlinChecked(type: JavaExec) {
     classpath kotlinClassPath
     main = 'KotlinCheckedKt'
+}
+
+task KotlinWrapper(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interop.KotlinWrapperKt'
 }
 
 task LabeledReturn(type: JavaExec) {
@@ -2131,16 +2141,6 @@ task PostfixVsPrefix(type: JavaExec) {
 task Predicates(type: JavaExec) {
     classpath kotlinClassPath
     main = 'PredicatesKt'
-}
-
-task PrimitiveVsWrapperJ(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'Interoperability.PrimitiveVsWrapperJ'
-}
-
-task PrimitiveVsWrapperK(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'interop.PrimitiveVsWrapperKKt'
 }
 
 task PropDelegationSoln1(type: JavaExec) {
@@ -3281,10 +3281,12 @@ task run (dependsOn: [
     'IterationVsMembership',
     'JavaChecked',
     'JavaList',
+    'JavaWrapper',
     'JetPack',
     'JoinToString',
     'JulianMonth',
     'KotlinChecked',
+    'KotlinWrapper',
     'LabeledReturn',
     'LambdaAndNamedArgs',
     'LambdaIt',
@@ -3424,8 +3426,6 @@ task run (dependsOn: [
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',
-    'PrimitiveVsWrapperJ',
-    'PrimitiveVsWrapperK',
     'PropDelegationSoln1',
     'PropDelegationSoln2',
     'PropDelegationSoln3',
