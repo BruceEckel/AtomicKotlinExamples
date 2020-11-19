@@ -1,4 +1,4 @@
-// Interoperability/CollectionStructure.kt
+// interoperability/CollectionStructure.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package collectionstructure
 

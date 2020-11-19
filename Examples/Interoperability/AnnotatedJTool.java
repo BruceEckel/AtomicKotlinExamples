@@ -1,6 +1,6 @@
-// Interoperability/AnnotatedJTool.java
+// interoperability/AnnotatedJTool.java
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package Interoperability;
+package interoperability;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

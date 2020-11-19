@@ -1,4 +1,4 @@
-// Interoperability/KotlinChecked.kt
+// interoperability/KotlinChecked.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 import java.io.File

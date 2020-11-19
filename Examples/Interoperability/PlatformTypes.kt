@@ -1,7 +1,7 @@
-// Interoperability/PlatformTypes.kt
+// interoperability/PlatformTypes.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package interop
-import Interoperability.JTool
+import interoperability.JTool
 import atomictest.eq
 
 object KotlinCode {
@@ -16,10 +16,10 @@ fun main() {
     b.method() eq "Success"
     c.method() eq "Success"      // [5]
     ::a.returnType eq
-      "Interoperability.JTool?"
+      "interoperability.JTool?"
     ::b.returnType eq
-      "Interoperability.JTool"
+      "interoperability.JTool"
     ::c.returnType eq
-      "Interoperability.JTool!"  // [6]
+      "interoperability.JTool!"  // [6]
   }
 }

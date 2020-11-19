@@ -1,6 +1,6 @@
-// Interoperability/JTool.java
+// interoperability/JTool.java
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package Interoperability;
+package interoperability;
 
 public class JTool {
   public static JTool get(String s) {

@@ -1,4 +1,4 @@
-// Interoperability/Random.kt
+// interoperability/Random.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 import java.util.Random

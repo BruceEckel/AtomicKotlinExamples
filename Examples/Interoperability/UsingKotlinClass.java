@@ -1,6 +1,6 @@
-// Interoperability/UsingKotlinClass.java
+// interoperability/UsingKotlinClass.java
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package Interoperability;
+package interoperability;
 import interop.Basic;
 import static atomictest.AtomicTestKt.eq;
 

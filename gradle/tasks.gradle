@@ -285,12 +285,12 @@ task CallStack(type: JavaExec) {
 
 task CallTopLevelFunction(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'Interoperability.CallTopLevelFunction'
+    main = 'interoperability.CallTopLevelFunction'
 }
 
 task CallTopLevelFunction2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'Interoperability.CallTopLevelFunction2'
+    main = 'interoperability.CallTopLevelFunction2'
 }
 
 task CaptureImplementation(type: JavaExec) {
@@ -320,7 +320,7 @@ task Cat(type: JavaExec) {
 
 task CatchChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'Interoperability.CatchChecked'
+    main = 'interoperability.CatchChecked'
 }
 
 task ChainedCalls(type: JavaExec) {
@@ -1410,7 +1410,7 @@ task IterationVsMembership(type: JavaExec) {
 
 task JavaChecked(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'Interoperability.JavaChecked'
+    main = 'interoperability.JavaChecked'
 }
 
 task JavaList(type: JavaExec) {
@@ -1420,7 +1420,7 @@ task JavaList(type: JavaExec) {
 
 task JavaWrapper(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'Interoperability.JavaWrapper'
+    main = 'interoperability.JavaWrapper'
 }
 
 task JetPack(type: JavaExec) {
@@ -1630,7 +1630,7 @@ task MainArgs(type: JavaExec) {
 
 task MakeSalad(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'Interoperability.MakeSalad'
+    main = 'interoperability.MakeSalad'
 }
 
 task MapCrate(type: JavaExec) {
@@ -2358,6 +2358,11 @@ task SafeOperation(type: JavaExec) {
     main = 'safecalls.SafeOperationKt'
 }
 
+task SamConversion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.SamConversionKt'
+}
+
 task Sandwich(type: JavaExec) {
     classpath kotlinClassPath
     main = 'sandwich.SandwichKt'
@@ -2825,7 +2830,7 @@ task UseBeanClass(type: JavaExec) {
 
 task UseDataClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'Interoperability.UseDataClass'
+    main = 'interoperability.UseDataClass'
 }
 
 task UseLines(type: JavaExec) {
@@ -2845,7 +2850,7 @@ task UsingExpect(type: JavaExec) {
 
 task UsingKotlinClass(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'Interoperability.UsingKotlinClass'
+    main = 'interoperability.UsingKotlinClass'
 }
 
 task UsingLongs(type: JavaExec) {
@@ -3469,6 +3474,7 @@ task run (dependsOn: [
     'Safe',
     'SafeCall',
     'SafeOperation',
+    'SamConversion',
     'Sandwich',
     'SayHello',
     'Scientist',

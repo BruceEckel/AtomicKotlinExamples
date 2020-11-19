@@ -1,6 +1,6 @@
-// Interoperability/Chameleon.java
+// interoperability/Chameleon.java
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package Interoperability;
+package interoperability;
 import java.io.Serializable;
 
 public class Chameleon

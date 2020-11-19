@@ -1,4 +1,4 @@
-// Interoperability/ReadOnlyCollections.kt
+// interoperability/ReadOnlyCollections.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 

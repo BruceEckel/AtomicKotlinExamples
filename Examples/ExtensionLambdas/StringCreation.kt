@@ -16,7 +16,7 @@ private fun clean() = buildString {
 }
 
 private fun cleaner() =
-  "ABCs: " + ('a'..'z').fold("", String::plus)
+  ('a'..'z').joinToString("", "ABCs: ")
 
 fun main() {
   messy() eq clean()

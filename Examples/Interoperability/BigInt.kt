@@ -1,4 +1,4 @@
-// Interoperability/BigInt.kt
+// interoperability/BigInt.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package biginteger
 import java.math.BigInteger

@@ -1,6 +1,6 @@
-// Interoperability/JavaChecked.java
+// interoperability/JavaChecked.java
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package Interoperability;
+package interoperability;
 import java.io.*;
 import java.nio.file.*;
 import static atomictest.AtomicTestKt.eq;

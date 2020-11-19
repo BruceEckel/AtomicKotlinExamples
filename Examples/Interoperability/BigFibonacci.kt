@@ -1,4 +1,4 @@
-// Interoperability/BigFibonacci.kt
+// interoperability/BigFibonacci.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package interop
 import atomictest.eq

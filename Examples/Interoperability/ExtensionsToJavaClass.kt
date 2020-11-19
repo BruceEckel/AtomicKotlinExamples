@@ -1,7 +1,7 @@
-// Interoperability/ExtensionsToJavaClass.kt
+// interoperability/ExtensionsToJavaClass.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package interop
-import Interoperability.Chameleon
+import interoperability.Chameleon
 import atomictest.eq
 
 fun Chameleon.adjustToTemperature(

@@ -1,4 +1,4 @@
-// Interoperability/JavaList.kt
+// interoperability/JavaList.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 import atomictest.eq
 

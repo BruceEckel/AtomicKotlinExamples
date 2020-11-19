@@ -1,6 +1,6 @@
-// Interoperability/NPEOnPlatformType.kt
+// interoperability/NPEOnPlatformType.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-import Interoperability.JTool
+import interoperability.JTool
 import atomictest.*
 
 fun main() {

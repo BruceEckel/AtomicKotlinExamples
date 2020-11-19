@@ -1,6 +1,6 @@
-// Interoperability/UseBeanClass.kt
+// interoperability/UseBeanClass.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-import Interoperability.Chameleon
+import interoperability.Chameleon
 import atomictest.eq
 
 fun main() {

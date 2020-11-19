@@ -1,6 +1,6 @@
-// Interoperability/CatchChecked.java
+// interoperability/CatchChecked.java
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package Interoperability;
+package interoperability;
 import interop.AnnotateThrowsKt;
 import java.io.IOException;
 import static atomictest.AtomicTestKt.eq;

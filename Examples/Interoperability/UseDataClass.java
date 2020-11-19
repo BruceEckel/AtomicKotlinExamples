@@ -1,26 +1,28 @@
-// Interoperability/UseDataClass.java
+// interoperability/UseDataClass.java
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package Interoperability;
+package interoperability;
 import java.util.HashMap;
 import static atomictest.AtomicTestKt.eq;
 
 public class UseDataClass {
   public static void main(String[] args) {
-    Muppet m = new Muppet("Ernie", 6);
-    int ageErnie = m.getAge();
-    m.setName("Bert");
-    m.setAge(7);
-    eq(ageErnie < m.getAge(), true);
-    eq(m, "Muppet(name=Bert, age=7)");
+    Staff e = new Staff(
+      "Fluffy", "Office Manager");
+    eq(e.getRole(), "Office Manager");
+    e.setName("Uranus");
+    e.setRole("Assistant");
+    eq(e,
+      "Staff(name=Uranus, role=Assistant)");
 
     // Call copy() from the data class:
-    Muppet mc = m.copy("???", 5);
-    eq(mc, "Muppet(name=???, age=5)");
+    Staff cf = e.copy("Cornfed", "Sidekick");
+    eq(cf,
+      "Staff(name=Cornfed, role=Sidekick)");
 
-    HashMap<Muppet, String> hm =
+    HashMap<Staff, String> hm =
       new HashMap<>();
-    // Muppets work as hash keys:
-    hm.put(m, "Happy Muppet");
-    eq(hm.get(m), "Happy Muppet");
+    // Employees work as hash keys:
+    hm.put(e, "Cheerful");
+    eq(hm.get(e), "Cheerful");
   }
 }
