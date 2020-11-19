@@ -6,6 +6,12 @@ Kotlin](https://www.AtomicKotlin.com), you're in the right place.
 These examples are automatically extracted directly from the book. This repository
 includes tests to verify that the code in the book is correct.
 
+> **NOTE** If you are planning to solve the exercises after reading each atom
+> (and you should), you can get the exercises AND all these examples together by
+> installing [the educational course](https://www.atomickotlin.com/exercises/).
+> If you're going to solve the exercises, you can just install the course and you
+> don't need to install the examples from this repository.
+
 ## Contents
 - [Introduction](#introduction)
 - [Compiling and Running Programs in IntelliJ IDEA](#compiling-and-running-programs-in-intellij-idea)
@@ -50,12 +56,6 @@ you, you can usually find explanations or answers through
 instructions on [YouTube](https://www.youtube.com/).
 
 # Compiling and Running Programs in IntelliJ IDEA
-
-> **NOTE** If you are planning to solve the exercises after reading each atom
-> (and you should), you can get the exercises AND all these examples together by
-> installing [the educational course](https://www.atomickotlin.com/exercises/).
-> If you're going to solve the exercises, you can just install the course and you
-> don't need to install the examples from this repository.
 
 The easiest and fastest way to start using the examples in this book is by
 compiling and running them using IntelliJ IDEA:
