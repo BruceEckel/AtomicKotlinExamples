@@ -4,11 +4,11 @@ package innerclasses
 import atomictest.eq
 import typechecking.name
 
-class Fruit { // implicit label @Fruit
+class Fruit { // Implicit label @Fruit
   fun changeColor(color: String) =
     "Fruit $color"
   fun absorbWater(amount: Int) {}
-  inner class Seed { // implicit label @Seed
+  inner class Seed { // Implicit label @Seed
     fun changeColor(color: String) =
       "Seed $color"
     fun germinate() {}
@@ -23,7 +23,7 @@ class Fruit { // implicit label @Fruit
       // Cannot access a further-inner class:
       // this@DNA.name
     }
-    inner class DNA { // implicit label @DNA
+    inner class DNA { // Implicit label @DNA
       fun changeColor(color: String) {
         // changeColor(color) // Recursive
         this@Seed.changeColor(color)

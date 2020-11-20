@@ -3,8 +3,8 @@
 package interoperability;
 import java.io.Serializable;
 
-public class Chameleon
-        implements Serializable {
+public
+class Chameleon implements Serializable {
   private int size;
   private String color;
   public int getSize() {
