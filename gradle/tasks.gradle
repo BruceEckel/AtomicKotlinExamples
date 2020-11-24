@@ -713,6 +713,11 @@ task DeviceMembers(type: JavaExec) {
     main = 'inheritanceextensions1.DeviceMembersKt'
 }
 
+task Differences(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'scopefunctions.DifferencesKt'
+}
+
 task DifferentTypes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'operatoroverloading.DifferentTypesKt'
@@ -1616,6 +1621,11 @@ task LongConstants(type: JavaExec) {
 task LoopWithIndex(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LoopWithIndexKt'
+}
+
+task Main(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'packagesExercise3.MainKt'
 }
 
 task MainArgConversion(type: JavaExec) {
@@ -2603,6 +2613,56 @@ task TakeOrDrop(type: JavaExec) {
     main = 'TakeOrDropKt'
 }
 
+task Task1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'whenExpressionsExercise1.Task1Kt'
+}
+
+task Task10(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'summaryIExercise10.Task10Kt'
+}
+
+task Task2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'whenExpressionsExercise2.Task2Kt'
+}
+
+task Task3(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'whenExpressionsExercise3.Task3Kt'
+}
+
+task Task4(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'variableArgumentListsExercise4.Task4Kt'
+}
+
+task Task5(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'summaryIIExercise5.Task5Kt'
+}
+
+task Task6(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'summaryIIExercise6.Task6Kt'
+}
+
+task Task7(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'summaryIIExercise7.Task7Kt'
+}
+
+task Task8(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'summaryIIExercise8.Task8Kt'
+}
+
+task Task9(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'summaryIExercise9.Task9Kt'
+}
+
 task Team(type: JavaExec) {
     classpath kotlinClassPath
     main = 'delegationtools.TeamKt'
@@ -3145,6 +3205,7 @@ task run (dependsOn: [
     'DestructuringMap',
     'DeviceExtensions',
     'DeviceMembers',
+    'Differences',
     'DifferentTypes',
     'Direction',
     'DisplayAlienSpecies',
@@ -3326,6 +3387,7 @@ task run (dependsOn: [
     'LoggingSoln3',
     'LongConstants',
     'LoopWithIndex',
+    'Main',
     'MainArgConversion',
     'MainArgs',
     'MakeSalad',
@@ -3523,6 +3585,16 @@ task run (dependsOn: [
     'TDDWorks',
     'TailRecursiveSum',
     'TakeOrDrop',
+    'Task1',
+    'Task10',
+    'Task2',
+    'Task3',
+    'Task4',
+    'Task5',
+    'Task6',
+    'Task7',
+    'Task8',
+    'Task9',
     'Team',
     'TeamWithTraditions',
     'Temperature',
