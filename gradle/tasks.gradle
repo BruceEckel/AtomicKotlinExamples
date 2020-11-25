@@ -2933,6 +2933,11 @@ task UsingOperatorsSoln3(type: JavaExec) {
     main = 'usingoperatorssoln3.UsingOperatorsSoln3Kt'
 }
 
+task UsingTrace(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'UsingTraceKt'
+}
+
 task Vals(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ValsKt'
@@ -3649,6 +3654,7 @@ task run (dependsOn: [
     'UsingOperatorsSoln1',
     'UsingOperatorsSoln2',
     'UsingOperatorsSoln3',
+    'UsingTrace',
     'Vals',
     'ValueFromMap',
     'Vanbo',

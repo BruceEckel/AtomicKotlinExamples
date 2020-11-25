@@ -3648,6 +3648,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testUsingTrace() {
+    testExample("Examples/Testing/UsingTrace.kt", UsingTraceKt::main);
+  }
+
+  @Test
   public void testBeverageContainer() {
     testExample("Examples/TypeChecking/BeverageContainer.kt", typechecking.BeverageContainerKt::main);
   }

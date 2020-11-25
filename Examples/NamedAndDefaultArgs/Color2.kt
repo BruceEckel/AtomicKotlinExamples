@@ -6,7 +6,7 @@ import atomictest.eq
 fun color(
   red: Int = 0,
   green: Int = 0,
-  blue: Int = 0
+  blue: Int = 0,
 ) = "($red, $green, $blue)"
 
 fun main() {
