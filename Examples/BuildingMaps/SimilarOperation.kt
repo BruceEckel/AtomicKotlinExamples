@@ -7,5 +7,5 @@ fun main() {
     -2 to "minus two")
   map.any { (key, _) -> key < 0 } eq true
   map.all { (key, _) -> key < 0 } eq false
-  map.maxBy { it.key }?.value eq "one"
+  map.maxByOrNull { it.key }?.value eq "one"
 }

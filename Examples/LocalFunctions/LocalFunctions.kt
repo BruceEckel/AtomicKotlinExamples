@@ -1,5 +1,6 @@
 // LocalFunctions/LocalFunctions.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
+import atomictest.eq
 
 fun main() {
   val logMsg = StringBuilder()
@@ -8,9 +9,8 @@ fun main() {
   log("Starting computation")
   val x = 42  // Imitate computation
   log("Computation result: $x")
-  println(logMsg.toString())
+  logMsg.toString().trim() eq """
+    Starting computation
+    Computation result: 42
+  """
 }
-/* Output:
-Starting computation
-Computation result: 42
-*/

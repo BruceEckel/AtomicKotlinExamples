@@ -5,8 +5,7 @@ import atomictest.eq
 fun main() {
   val doubles =
     listOf(1.1, 2.2, 3.3, 4.4)
-  doubles.min() eq 1.1
-  doubles.max() eq 4.4
+  doubles.sum() eq 11.0
 
   val strings = listOf("Twas", "Brillig",
     "And", "Slithy", "Toves")

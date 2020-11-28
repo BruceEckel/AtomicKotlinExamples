@@ -20,12 +20,12 @@ fun main() {
   } catch (e: IncorrectInputException) {
     e.message eq "Code must be > 1000: 161"
   } catch (e: IllegalArgumentException) {
-    println("Shouldn't get here")
+    "Produces error" eq "if it gets here"
   }
   try {
     checkCode("1".toInt(1))
   } catch (e: IncorrectInputException) {
-    println("Shouldn't get here")
+    "Produces error" eq "if it gets here"
   } catch (e: IllegalArgumentException) {
     e.message eq
       "radix 1 was not in valid range 2..36"

@@ -1,15 +1,16 @@
 // PropertyAccessors/Default.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package propertyaccessors
+import atomictest.*
 
 class Default {
   var i: Int = 0
     get() {
-      println("get()")
+      trace("get()")
       return field         // [1]
     }
     set(value) {
-      println("set($value)")
+      trace("set($value)")
       field = value        // [2]
     }
 }
@@ -17,10 +18,10 @@ class Default {
 fun main() {
   val d = Default()
   d.i = 2
-  println(d.i)
+  trace(d.i)
+  trace eq """
+    set(2)
+    get()
+    2
+  """
 }
-/* Output:
-set(2)
-get()
-2
-*/

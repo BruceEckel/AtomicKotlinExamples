@@ -17,13 +17,15 @@ fun main() {
   ascii.keys eq "[A, B, C, I, J, K]"
   ascii.values eq
     "[65, 66, 67, 73, 74, 75]"
+  var kv = ""
   for (entry in ascii) {             // [2]
-    print("${entry.key}:${entry.value},")
+    kv += "${entry.key}:${entry.value},"
   }
-  println()
+  kv eq "A:65,B:66,C:67,I:73,J:74,K:75,"
+  kv = ""
   for ((key, value) in ascii)        // [3]
-    print("$key:$value,")
-  println()
+    kv += "$key:$value,"
+  kv eq "A:65,B:66,C:67,I:73,J:74,K:75,"
   val mutable = ascii.toMutableMap() // [4]
   mutable.remove("I")
   mutable eq
@@ -35,14 +37,3 @@ fun main() {
   mutable["A"] = 100
   mutable eq "{A=100}"
 }
-/* Output:
-{A=65, B=66, C=67, I=73, J=74, K=75}
-66
-[A, B, C, I, J, K]
-[65, 66, 67, 73, 74, 75]
-A:65,B:66,C:67,I:73,J:74,K:75,
-A:65,B:66,C:67,I:73,J:74,K:75,
-{A=65, B=66, C=67, J=74, K=75}
-{A=65, B=66, C=67, J=74, K=75, Z=90}
-{A=100}
-*/

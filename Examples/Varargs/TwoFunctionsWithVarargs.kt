@@ -1,19 +1,19 @@
 // Varargs/TwoFunctionsWithVarargs.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package varargs
+import atomictest.eq
 
-fun first(vararg numbers: Int) {
+fun first(vararg numbers: Int): String {
+  var result = ""
   for (i in numbers) {
-    print("[$i]")
+    result += "[$i]"
   }
+  return result
 }
 
 fun second(vararg numbers: Int) =
   first(*numbers)
 
 fun main() {
-  second(7, 9, 32)
+  second(7, 9, 32) eq "[7][9][32]"
 }
-/* Output:
-[7][9][32]
-*/
