@@ -1,7 +1,6 @@
 // Sequences/Task6.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package sequencesExercise6
-
 import atomictest.eq
 
 fun from(n: Int): Sequence<Int> = generateSequence(n) { it + 1 }

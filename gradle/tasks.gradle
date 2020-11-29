@@ -1048,6 +1048,16 @@ task GardenItem(type: JavaExec) {
     main = 'secondaryconstructors.GardenItemKt'
 }
 
+task GenerateSequence1(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GenerateSequence1Kt'
+}
+
+task GenerateSequence2(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'GenerateSequence2Kt'
+}
+
 task GenericFunction(type: JavaExec) {
     classpath kotlinClassPath
     main = 'introgenerics.GenericFunctionKt'
@@ -1333,16 +1343,6 @@ task InnerEx3(type: JavaExec) {
     main = 'innerClassesExercise3.InnerEx3Kt'
 }
 
-task InputLines1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'InputLines1Kt'
-}
-
-task InputLines2(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'InputLines2Kt'
-}
-
 task Insects(type: JavaExec) {
     classpath kotlinClassPath
     main = 'typechecking.InsectsKt'
@@ -1386,6 +1386,11 @@ task IntroducingNull(type: JavaExec) {
 task Invoke(type: JavaExec) {
     classpath kotlinClassPath
     main = 'operatoroverloading.InvokeKt'
+}
+
+task InvokeFunctionType(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'operatoroverloading.InvokeFunctionTypeKt'
 }
 
 task IsInitialized(type: JavaExec) {
@@ -2348,6 +2353,11 @@ task RigidHolder(type: JavaExec) {
     main = 'introgenerics.RigidHolderKt'
 }
 
+task RunningFold(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'RunningFoldKt'
+}
+
 task SAMImplementation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces.SAMImplementationKt'
@@ -3277,6 +3287,8 @@ task run (dependsOn: [
     'FunctionClosure',
     'FunctionReference',
     'GardenItem',
+    'GenerateSequence1',
+    'GenerateSequence2',
     'GenericFunction',
     'GenericHolder',
     'GenericListExt',
@@ -3334,8 +3346,6 @@ task run (dependsOn: [
     'InnerEx1',
     'InnerEx2',
     'InnerEx3',
-    'InputLines1',
-    'InputLines2',
     'Insects',
     'IntDivisionTruncates',
     'IntRanges',
@@ -3345,6 +3355,7 @@ task run (dependsOn: [
     'IntroducingCapture',
     'IntroducingNull',
     'Invoke',
+    'InvokeFunctionType',
     'IsInitialized',
     'IsKeyword',
     'IterateOverString',
@@ -3537,6 +3548,7 @@ task run (dependsOn: [
     'ReturnLocal',
     'ReturningFunc',
     'RigidHolder',
+    'RunningFold',
     'SAMImplementation',
     'Safe',
     'SafeCall',

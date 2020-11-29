@@ -8,9 +8,8 @@ class Color(
   val green: Int = 0,
   val blue: Int = 0,
 ) {
-  override fun toString(): String {
-    return "($red, $green, $blue)"
-  }
+  override fun toString() =
+    "($red, $green, $blue)"
 }
 
 fun main() {

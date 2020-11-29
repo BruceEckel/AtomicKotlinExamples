@@ -1,7 +1,6 @@
 // WhenExpressions/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package whenExpressionsExercise2
-
 import atomictest.eq
 
 fun temperature(temperature: Int): String =

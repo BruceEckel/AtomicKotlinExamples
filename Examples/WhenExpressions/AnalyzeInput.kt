@@ -1,53 +1,48 @@
 // WhenExpressions/AnalyzeInput.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package whenexpressions
+import atomictest.*
 
-class Coordinates(var x: Int, var y: Int) {
-  override fun toString(): String {
-    return "($x, $y)"
-  }
+class Coordinates {
+  var x: Int = 0
+    set(value) {
+      trace("x gets $value")
+      field = value
+    }
+  var y: Int = 0
+    set(value) {
+      trace("y gets $value")
+      field = value
+    }
+  override fun toString() = "($x, $y)"
 }
 
-fun readInput() {
-  println("""|Welcome! Type 'up', 'down',
-    |'left', 'right' or 'nowhere' to move;
-    |'exit' to exit.""".trimMargin())
-  val coordinates = Coordinates(0, 0)
-  while (true) {
-    println("Your coordinates: $coordinates")
-    println("Where do you want to move?")
-    when (readLine()) {                // [1]
+fun processInputs(inputs: List<String>) {
+  val coordinates = Coordinates()
+  for (input in inputs) {
+    when (input) {                     // [1]
       "up", "u" -> coordinates.y--     // [2]
       "down", "d" -> coordinates.y++
       "left", "l" -> coordinates.x--
       "right", "r" -> {                // [3]
+        trace("Moving right")
         coordinates.x++
       }
       "nowhere" -> {}                  // [4]
       "exit" -> return                 // [5]
-      else -> println("Sorry, " +
-        "I don't understand you")
+      else -> trace("bad input: $input")
     }
   }
 }
 
 fun main() {
-  readInput()
+  processInputs(listOf("up", "right", "d",
+    "nowhere", "left", "exit"))
+  trace eq """
+    y gets -1
+    Moving right
+    x gets 1
+    y gets 0
+    x gets 0
+  """
 }
-/* Input/Output:
-Welcome! Type 'up', 'down',
-'left', 'right' or 'nowhere' to move;
-'exit' to exit.
-Your coordinates: (0, 0)
-Where do you want to move?
->>> right
-Your coordinates: (1, 0)
-Where do you want to move?
->>> d
-Your coordinates: (1, 1)
-Where do you want to move?
->>> nowhere
-Your coordinates: (1, 1)
-Where do you want to move?
->>> exit
-*/

@@ -1,7 +1,6 @@
 // WhenExpressions/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package whenExpressionsExercise1
-
 import atomictest.capture
 import atomictest.eq
 

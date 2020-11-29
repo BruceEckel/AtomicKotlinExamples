@@ -1043,6 +1043,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testRunningFold() {
+    testExample("Examples/FoldingLists/RunningFold.kt", RunningFoldKt::main);
+  }
+
+  @Test
   public void testSumViaFold() {
     testExample("Examples/FoldingLists/SumViaFold.kt", SumViaFoldKt::main);
   }
@@ -2623,6 +2628,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testInvokeFunctionType() {
+    testExample("Examples/OperatorOverloading/InvokeFunctionType.kt", operatoroverloading.InvokeFunctionTypeKt::main);
+  }
+
+  @Test
   public void testMemberOperator() {
     testExample("Examples/OperatorOverloading/MemberOperator.kt", operatoroverloading.MemberOperatorKt::main);
   }
@@ -3218,13 +3228,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testInputLines1() {
-    testExample("Examples/Sequences/InputLines1.kt", InputLines1Kt::main);
+  public void testGenerateSequence1() {
+    testExample("Examples/Sequences/GenerateSequence1.kt", GenerateSequence1Kt::main);
   }
 
   @Test
-  public void testInputLines2() {
-    testExample("Examples/Sequences/InputLines2.kt", InputLines2Kt::main);
+  public void testGenerateSequence2() {
+    testExample("Examples/Sequences/GenerateSequence2.kt", GenerateSequence2Kt::main);
   }
 
   @Test

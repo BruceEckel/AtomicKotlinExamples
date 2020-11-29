@@ -10,8 +10,7 @@ class Func {
     "invoke($i, $j)"
   operator fun invoke(
     i: Int, j: String, k: Double
-  ) =
-    "invoke($i, $j, $k)"
+  ) = "invoke($i, $j, $k)"
 }
 
 fun main() {

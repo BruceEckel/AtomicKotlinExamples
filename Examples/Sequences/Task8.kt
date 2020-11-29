@@ -1,7 +1,6 @@
 // Sequences/Task8.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package sequencesExercise8
-
 import atomictest.eq
 
 fun fibonacci(): Sequence<Int> {
