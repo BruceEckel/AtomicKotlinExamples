@@ -408,11 +408,6 @@ task Color3(type: JavaExec) {
     main = 'color3.Color3Kt'
 }
 
-task ColorBlend(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'buildingmaps.ColorBlendKt'
-}
-
 task ColorSet(type: JavaExec) {
     classpath kotlinClassPath
     main = 'summary2.ColorSetKt'
@@ -546,6 +541,11 @@ task Counter(type: JavaExec) {
 task CounterFactory(type: JavaExec) {
     classpath kotlinClassPath
     main = 'innerclasses.CounterFactoryKt'
+}
+
+task CovariantList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'variance.CovariantListKt'
 }
 
 task Crate(type: JavaExec) {
@@ -1268,9 +1268,9 @@ task Improved(type: JavaExec) {
     main = 'ImprovedKt'
 }
 
-task InCrateAssignment(type: JavaExec) {
+task InBoxAssignment(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'creatinggenerics.InCrateAssignmentKt'
+    main = 'variance.InBoxAssignmentKt'
 }
 
 task InString(type: JavaExec) {
@@ -2243,11 +2243,6 @@ task ReadOnlyAndPlus(type: JavaExec) {
     main = 'ReadOnlyAndPlusKt'
 }
 
-task ReadOnlyBlendMap(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'buildingmaps.ReadOnlyBlendMapKt'
-}
-
 task ReadOnlyCollections(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReadOnlyCollectionsKt'
@@ -3159,7 +3154,6 @@ task run (dependsOn: [
     'Closures2',
     'Color2',
     'Color3',
-    'ColorBlend',
     'ColorSet',
     'CompanionDelegation',
     'CompanionEx1',
@@ -3187,6 +3181,7 @@ task run (dependsOn: [
     'CopyDataClass',
     'Counter',
     'CounterFactory',
+    'CovariantList',
     'Crate',
     'CreateString',
     'CreateString2',
@@ -3331,7 +3326,7 @@ task run (dependsOn: [
     'ImportNameChange',
     'ImportPythagorean',
     'Improved',
-    'InCrateAssignment',
+    'InBoxAssignment',
     'InString',
     'IncrementOperator',
     'IndexIntoString',
@@ -3526,7 +3521,6 @@ task run (dependsOn: [
     'RangeSum',
     'Ranges',
     'ReadOnlyAndPlus',
-    'ReadOnlyBlendMap',
     'ReadOnlyCollections',
     'ReadOnlyMaps',
     'ReadonlyVsMutableList',

@@ -10,9 +10,5 @@ fun main() {
 }
 
 fun useList(list: List<Any>) {
-  // Doesn't compile:
-  /*
-  if (list is List<String>) {   // [1]
-  }
-  */
+  // if (list is List<String>) {}   // [1]
 }

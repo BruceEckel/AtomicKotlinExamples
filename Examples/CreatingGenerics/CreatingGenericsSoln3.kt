@@ -1,19 +1,19 @@
 // CreatingGenerics/CreatingGenericsSoln3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package creatinggenericssoln3
-import creatinggenerics.Can
-import creatinggenerics.Grape
+import variance.Cat
+import variance.Dog
 
-interface InCrate<in T> {
+interface InBox<in T> {
   fun put(item: T)
 }
 
-interface OutCrate<out T> {
+interface OutBox<out T> {
   fun get(): T
 }
 
-class Crate<T>(private var contents: T) :
-  InCrate<T>, OutCrate<T> {
+class Box<T>(private var contents: T) :
+  InBox<T>, OutBox<T> {
   override fun put(item: T) {
     contents = item
   }
@@ -21,8 +21,9 @@ class Crate<T>(private var contents: T) :
 }
 
 fun main() {
-  val cg: Crate<Grape> = Crate(Grape())
-  val oc: OutCrate<Can> = cg
-  val cc: Crate<Can> = Crate(Can())
-  val ic: InCrate<Grape> = cc
+  val catBox: Box<Cat> = Box(Cat())
+  val anyBox: OutBox<Any> = catBox
+  val x: Any = catBox.get()
+  val ic: InBox<Cat> = Box<Any>(Dog())
+  ic.put(Cat())
 }

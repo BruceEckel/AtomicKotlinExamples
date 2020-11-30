@@ -153,11 +153,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testColorBlend() {
-    testExample("Examples/BuildingMaps/ColorBlend.kt", buildingmaps.ColorBlendKt::main);
-  }
-
-  @Test
   public void testFilterMap() {
     testExample("Examples/BuildingMaps/FilterMap.kt", FilterMapKt::main);
   }
@@ -175,11 +170,6 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testGroupByVsFilter() {
     testExample("Examples/BuildingMaps/GroupByVsFilter.kt", GroupByVsFilterKt::main);
-  }
-
-  @Test
-  public void testReadOnlyBlendMap() {
-    testExample("Examples/BuildingMaps/ReadOnlyBlendMap.kt", buildingmaps.ReadOnlyBlendMapKt::main);
   }
 
   @Test
@@ -493,6 +483,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testCovariantList() {
+    testExample("Examples/CreatingGenerics/CovariantList.kt", variance.CovariantListKt::main);
+  }
+
+  @Test
   public void testCrate() {
     testExample("Examples/CreatingGenerics/Crate.kt", creatinggenerics.CrateKt::main);
   }
@@ -518,8 +513,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testInCrateAssignment() {
-    testExample("Examples/CreatingGenerics/InCrateAssignment.kt", creatinggenerics.InCrateAssignmentKt::main);
+  public void testInBoxAssignment() {
+    testExample("Examples/CreatingGenerics/InBoxAssignment.kt", variance.InBoxAssignmentKt::main);
   }
 
   @Test
