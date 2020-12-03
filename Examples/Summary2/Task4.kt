@@ -1,7 +1,6 @@
 // Summary2/Task4.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package summaryIIExercise4
-
 import atomictest.capture
 import atomictest.eq
 import java.lang.IllegalArgumentException

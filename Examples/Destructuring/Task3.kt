@@ -15,7 +15,7 @@ fun displayPersonInfo(person: Person) {
 }
 
 fun main() {
-//  val person = Person("Alice",  30)
+  // val person = Person("Alice",  30)
   val person = Person("Alice", "Johnson", 30)
   displayPersonInfo(person)
 }

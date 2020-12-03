@@ -1,7 +1,6 @@
 // Sets/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package setsExercise2
-
 import kotlin.random.Random
 
 fun experiment(): Int {

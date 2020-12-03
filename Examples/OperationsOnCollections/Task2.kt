@@ -1,7 +1,6 @@
 // OperationsOnCollections/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package operationsOnCollectionsExercise2
-
 import atomictest.eq
 
 val operation = { x: Int ->

@@ -1,7 +1,6 @@
 // OperationsOnCollections/Task4.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package operationsOnCollectionsExercise4
-
 import atomictest.eq
 
 fun List<Int>.allNonZero() = all { it != 0 }

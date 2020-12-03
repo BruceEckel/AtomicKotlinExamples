@@ -1,7 +1,6 @@
 // ManipulatingLists/Task5.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package manipulatingListsExercise5
-
 import atomictest.eq
 
 fun <T, R> List<T>.flatMap(f: (T) -> List<R>): List<R> =

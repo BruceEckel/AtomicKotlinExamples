@@ -1,7 +1,6 @@
 // HigherOrderFunctions/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package higherOrderFunctionsExercise2
-
 import atomictest.eq
 
 fun List<Int>.transformVersion1(): List<Int> =

@@ -1,7 +1,6 @@
 // ClassDelegation/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package classDelegationExercise2
-
 import atomictest.trace
 
 // Duck Library

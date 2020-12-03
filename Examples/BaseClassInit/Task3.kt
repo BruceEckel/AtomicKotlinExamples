@@ -1,7 +1,6 @@
 // BaseClassInit/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package baseClassInitializationExercise3
-
 import atomictest.trace
 
 open class Animal(val sound: String = "???")

@@ -1,7 +1,6 @@
 // Inheritance/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package inheritanceExercise3
-
 import atomictest.eq
 
 open class Game {

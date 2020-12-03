@@ -1,22 +1,23 @@
 // MemberReferences/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package memberReferencesExercise3
-
 import atomictest.eq
 
 val Int.isEven: Boolean
   get() = this % 2 == 0
 
-private fun getNonTrivialDivisors(i: Int): List<Int> {
-  return (2 until i).filter { i % it == 0 }
+// Returns all the divisors of the number
+// except 1 and the number itself
+private fun getNonTrivialDivisors(num: Int): List<Int> {
+  return (2 until num).filter { num % it == 0 }
 }
 
 fun Int.isPrime(): Boolean {
   return this != 1 && getNonTrivialDivisors(this).isEmpty()
 }
 
-fun isPerfect(i: Int): Boolean {
-  return i != 1 && 1 + getNonTrivialDivisors(i).sum() == i
+fun isPerfect(num: Int): Boolean {
+  return num != 1 && 1 + getNonTrivialDivisors(num).sum() == num
 }
 
 fun main() {

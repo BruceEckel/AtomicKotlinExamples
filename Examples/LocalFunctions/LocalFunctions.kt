@@ -9,7 +9,7 @@ fun main() {
   log("Starting computation")
   val x = 42  // Imitate computation
   log("Computation result: $x")
-  logMsg.toString().trim() eq """
+  logMsg.toString() eq """
     Starting computation
     Computation result: 42
   """

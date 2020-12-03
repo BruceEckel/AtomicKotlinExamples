@@ -1,7 +1,6 @@
 // HigherOrderFunctions/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package higherOrderFunctionsExercise3
-
 import atomictest.eq
 
 fun <T, R : Any> Iterable<T>.mapIndexedNotNull(

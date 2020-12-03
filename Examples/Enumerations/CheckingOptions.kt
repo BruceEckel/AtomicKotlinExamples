@@ -1,7 +1,8 @@
 // Enumerations/CheckingOptions.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package enumerations
+package checkingoptions
 import atomictest.*
+import enumerations.Level
 import enumerations.Level.*
 
 fun checkLevel(level: Level) {

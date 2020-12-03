@@ -2,4 +2,10 @@
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package nullableTypesExercise2
 
-// Type your solution here
+fun zilch(): String? = null
+fun zilch2(): String? = zilch()
+
+fun main() {
+  var x: String? = zilch()
+  var y: String? = zilch2()
+}

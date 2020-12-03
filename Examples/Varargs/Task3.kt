@@ -1,7 +1,6 @@
 // Varargs/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package variableArgumentListsExercise3
-
 import atomictest.eq
 
 fun listOfChunks(size: Int, vararg elements: String): List<List<String>> {

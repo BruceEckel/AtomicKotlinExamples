@@ -20,7 +20,7 @@ fun main() {
   println("list: $list")
   val set = list.toSortedSet()
   println("sorted set (1): $set")
-  set.min()!!.n += 2
+  set.minOrNull()!!.n += 2
   println("sorted set (2): $set")
 }
 /* Exercise Output:

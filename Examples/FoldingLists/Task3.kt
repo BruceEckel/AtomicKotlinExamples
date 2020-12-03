@@ -1,7 +1,6 @@
 // FoldingLists/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package foldingListsExercise3
-
 import atomictest.eq
 
 fun <T> List<T>.any(predicate: (T) -> Boolean): Boolean =

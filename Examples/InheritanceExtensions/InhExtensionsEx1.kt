@@ -1,7 +1,6 @@
 // InheritanceExtensions/InhExtensionsEx1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package inheritanceAndExtensionsExercise2
-
 import atomictest.*
 
 open class Dog {

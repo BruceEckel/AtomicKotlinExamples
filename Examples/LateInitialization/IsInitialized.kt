@@ -18,10 +18,5 @@ fun main() {
   trace(withlate.status())
   withlate.x = "Set"
   trace(withlate.status())
-  trace eq """
-    false
-    true
-    false
-    true
-  """
+  trace eq "false true false true"
 }

@@ -1,7 +1,6 @@
 // Testing/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package testingExercise3
-
 import atomictest.eq
 
 fun squareArea(x: Int) = x * x

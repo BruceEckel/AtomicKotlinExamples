@@ -1,7 +1,6 @@
 // BaseClassInit/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package baseClassInitializationExercise2
-
 import atomictest.trace
 
 open class Plate(description: String) {

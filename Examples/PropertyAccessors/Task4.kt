@@ -1,7 +1,6 @@
 // PropertyAccessors/Task4.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package propertyAccessorsExercise4
-
 import atomictest.eq
 
 class AccessCounter {

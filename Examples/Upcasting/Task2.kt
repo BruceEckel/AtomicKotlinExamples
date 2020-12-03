@@ -1,7 +1,6 @@
 // Upcasting/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package upcastingExercise2
-
 import atomictest.trace
 
 interface Apple {

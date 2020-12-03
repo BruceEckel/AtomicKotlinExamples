@@ -1,7 +1,6 @@
 // Upcasting/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package upcastingExercise3
-
 import atomictest.trace
 
 interface Fighter {

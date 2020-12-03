@@ -1,7 +1,6 @@
 // Summary2/Task8.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package summaryIIExercise8
-
 import atomictest.eq
 
 val romanNumeralToIntMap: Map<String, Int> = mapOf(

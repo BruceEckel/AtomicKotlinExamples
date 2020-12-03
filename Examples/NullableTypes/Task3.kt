@@ -1,7 +1,6 @@
 // NullableTypes/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package nullableTypesExercise3
-
 import atomictest.eq
 
 fun countHexadecimalNumbers(codes: List<String>): Map<Int, Int> {

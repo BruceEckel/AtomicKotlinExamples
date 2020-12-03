@@ -1,7 +1,6 @@
 // Inheritance/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package inheritanceExercise1
-
 import atomictest.eq
 
 open class Cleanser {

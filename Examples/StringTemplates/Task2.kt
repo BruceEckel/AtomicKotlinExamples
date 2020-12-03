@@ -3,7 +3,7 @@
 package stringTemplatesExercise2
 
 fun record(index: Int, status: String, message: String): String =
-  "$index. [$status] $message\n"
+  "$index [$status] $message\n"
 
 fun main() {
   print(record(1, "OK", "Everything is fine."))
@@ -11,6 +11,6 @@ fun main() {
 }
 
 /* Output:
-1. [OK] Everything is fine.
-2. [Fail] Something has broken.
+1 [OK] Everything is fine.
+2 [Fail] Something has broken.
 */

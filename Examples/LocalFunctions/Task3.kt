@@ -1,7 +1,6 @@
 // LocalFunctions/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package localFunctionsExercise3
-
 import atomictest.eq
 
 fun createContainer(): Pair<(Int) -> Unit, () -> Int?> {

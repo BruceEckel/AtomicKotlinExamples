@@ -1,7 +1,6 @@
 // BuildingMaps/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package buildingMapsExercise1
-
 import atomictest.eq
 
 data class Person(val name: String, val age: Int)
@@ -19,6 +18,4 @@ fun main() {
   demographic(people) eq
     mapOf(21 to listOf("Alice"),
       25 to listOf("Bob", "Charlie"))
-
-  buildString { }
 }

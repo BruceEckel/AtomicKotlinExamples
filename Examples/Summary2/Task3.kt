@@ -1,7 +1,6 @@
 // Summary2/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package summaryIIExercise3
-
 import atomictest.*
 
 class FixedSizeHolder(private val limit: Int) {

@@ -1,7 +1,6 @@
 // Testing/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package testingExercise1
-
 import atomictest.eq
 
 fun abs(number: Int): Int = if (number > 0) number else -number

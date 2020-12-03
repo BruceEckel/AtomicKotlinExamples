@@ -1,7 +1,6 @@
 // ExtensionFunctions/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package extensionFunctionsExercise2
-
 import atomictest.eq
 
 fun Int.isOdd(): Boolean = this % 2 == 1

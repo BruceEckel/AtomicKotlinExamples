@@ -17,4 +17,4 @@ val ages = listOf(21, 15, 25, 25, 42, 21,
 fun people(): List<Person> =
   names.zip(ages) { name, age ->
     Person(name, age)
-}
+  }

@@ -1,7 +1,6 @@
 // IntroGenerics/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package introductionToGenericsExercise1
-
 import atomictest.eq
 
 fun <T> List<T>.secondOrNull(): T? = getOrNull(1)

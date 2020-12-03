@@ -1,7 +1,6 @@
 // FoldingLists/Task4.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package foldingListsExercise4
-
 import atomictest.eq
 
 class Condition(val check: (Int) -> Boolean)
@@ -20,7 +19,6 @@ fun main() {
   val isEvenPositiveAndLessThan10 = conditions.combineAll()
 
   isEvenPositiveAndLessThan10.check(8) eq true
-
   isEvenPositiveAndLessThan10.check(5) eq false
   isEvenPositiveAndLessThan10.check(12) eq false
 }

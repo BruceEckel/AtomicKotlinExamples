@@ -1,7 +1,6 @@
 // PropertyAccessors/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package propertyAccessorsExercise2
-
 import atomictest.eq
 
 class Accessible {

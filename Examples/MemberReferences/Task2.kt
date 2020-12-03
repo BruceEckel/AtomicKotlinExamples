@@ -1,7 +1,6 @@
 // MemberReferences/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package memberReferencesExercise2
-
 import atomictest.eq
 
 data class Student(

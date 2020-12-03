@@ -1,6 +1,7 @@
 // LocalFunctions/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package localFunctionsExercise1
+import atomictest.eq
 
 fun f(): Int {
   fun g(): Int {
@@ -11,5 +12,5 @@ fun f(): Int {
 }
 
 fun main() {
-  println(f())
+  f() eq 47
 }

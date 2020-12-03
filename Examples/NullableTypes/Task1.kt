@@ -1,7 +1,6 @@
 // NullableTypes/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package nullableTypesExercise1
-
 import atomictest.eq
 
 class Hamster(val name: String) {

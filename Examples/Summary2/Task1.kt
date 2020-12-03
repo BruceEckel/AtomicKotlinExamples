@@ -1,7 +1,6 @@
 // Summary2/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package summaryIIExercise1
-
 import atomictest.eq
 
 class Boring {

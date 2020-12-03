@@ -38,7 +38,7 @@ fun main() {
     debugLevel = it
     logger.report("debugLevel($debugLevel)")
   }
-  logger.logFile.readText().trimIndent() eq
+  logger.logFile.readText() eq
   """
   Trace: debugLevel(Trace)
   Debug: debugLevel(Trace)

@@ -1,7 +1,6 @@
 // Upcasting/UpcastExercise1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package upcastingExercise1
-
 import atomictest.trace
 
 interface Rodent {

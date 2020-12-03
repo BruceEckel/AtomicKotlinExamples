@@ -1,7 +1,6 @@
 // DataClasses/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package dataClassesExercise3
-
 import atomictest.eq
 
 data class Book(val title: String, val authors: List<Author>)

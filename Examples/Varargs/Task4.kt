@@ -1,7 +1,6 @@
 // Varargs/Task4.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package variableArgumentListsExercise4
-
 import atomictest.eq
 
 fun flatten(listOfLists: List<List<String>>): List<String> {

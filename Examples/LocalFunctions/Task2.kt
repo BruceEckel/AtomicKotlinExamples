@@ -1,7 +1,6 @@
 // LocalFunctions/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package localFunctionsExercise2
-
 import atomictest.eq
 
 fun createCounter(): Pair<() -> Unit, () -> Int> {

@@ -11,7 +11,7 @@ fun main() {
   for (i in ints) {                    // [2]
     result += "$i "
   }
-  result eq "99 3 5 7 11 13 "
+  result eq "99 3 5 7 11 13"
 
   // "Indexing" into the List:
   ints[4] eq 11                        // [3]

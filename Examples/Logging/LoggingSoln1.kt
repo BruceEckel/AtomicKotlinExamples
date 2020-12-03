@@ -52,7 +52,7 @@ fun main() {
     pipe.level.up()
     pipe.checkLevel()
   }
-  pipe.logger.logFile.readText().trimIndent() eq
+  pipe.logger.logFile.readText() eq
   """
   Trace: Level 2
   Debug: Level 4

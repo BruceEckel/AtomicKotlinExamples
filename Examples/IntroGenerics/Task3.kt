@@ -1,7 +1,6 @@
 // IntroGenerics/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package introductionToGenericsExercise3
-
 import atomictest.eq
 
 class CountingSet<E> {
@@ -19,7 +18,6 @@ class CountingSet<E> {
 }
 
 fun main() {
-/*
   val cs = CountingSet<String>()
   cs.add("abc")
   cs.add("abc")
@@ -27,5 +25,4 @@ fun main() {
   cs.count("abc") eq 2
   cs.count("def") eq 1
   cs.count("xyz") eq 0
-*/
 }

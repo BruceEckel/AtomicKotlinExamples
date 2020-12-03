@@ -1,4 +1,4 @@
-// Interfaces/SamConversion.kt
+// Interfaces/SAMConversion.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package interfaces
 import atomictest.trace
@@ -14,8 +14,5 @@ fun delayAction(action: Action) {
 
 fun main() {
   delayAction { trace("Hey!") }
-  trace eq """
-    Delaying...
-    Hey!
-  """.trimIndent()
+  trace eq "Delaying... Hey!"
 }

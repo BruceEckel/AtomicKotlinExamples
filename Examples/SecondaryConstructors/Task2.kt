@@ -1,7 +1,6 @@
 // SecondaryConstructors/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package secondaryConstructorsExercise2
-
 import atomictest.eq
 
 data class SpaceShip(val name: String) {

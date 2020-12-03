@@ -1,7 +1,6 @@
 // Recursion/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package recursionExercise3
-
 import atomictest.eq
 
 // For comparison

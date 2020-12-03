@@ -1,7 +1,6 @@
 // ManipulatingLists/Task7.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package manipulatingListsExercise7
-
 import atomictest.eq
 
 fun <T> List<T>.filter(f: (T) -> Boolean): List<T> =

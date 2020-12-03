@@ -1,7 +1,6 @@
 // BuildingMaps/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package buildingMapsExercise2
-
 import atomictest.eq
 
 fun <T, R> List<T>.groupBy(keySelector: (T) -> R): Map<R, List<T>> {

@@ -21,11 +21,11 @@ fun main() {
   for (entry in constants) {           // [2]
     s += "${entry.key}=${entry.value}, "
   }
-  s eq "Pi=3.141, e=2.718, phi=1.618, "
+  s eq "Pi=3.141, e=2.718, phi=1.618,"
 
   s = ""
   // Unpack during iteration:
   for ((key, value) in constants)      // [3]
     s += "$key=$value, "
-  s eq "Pi=3.141, e=2.718, phi=1.618, "
+  s eq "Pi=3.141, e=2.718, phi=1.618,"
 }

@@ -10,8 +10,5 @@ class Usable() : AutoCloseable {
 
 fun main() {
   Usable().use { it.func() }
-  trace eq """
-    func()
-    close()
-  """
+  trace eq "func() close()"
 }

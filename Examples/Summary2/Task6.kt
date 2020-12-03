@@ -1,7 +1,6 @@
 // Summary2/Task6.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package summaryIIExercise6
-
 import atomictest.eq
 
 class Temperature {

@@ -11,6 +11,5 @@ fun main() {
     if (i == 40) break
     nums.add(i)
   }
-  nums eq
-    listOf(0, 4, 12, 16, 20, 24, 28, 32, 36)
+  nums eq "[0, 4, 12, 16, 20, 24, 28, 32, 36]"
 }

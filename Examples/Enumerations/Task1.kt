@@ -1,7 +1,6 @@
 // Enumerations/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package enumerationsExercise1
-
 import enumerationsExercise1.Direction.*
 
 enum class Direction {

@@ -2,7 +2,6 @@
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package listsExercise1
 import atomictest.eq
-import listsExercise2.IntList
 
 fun findMax(list: IntList): Int {
   var max = 0

@@ -1,7 +1,6 @@
 // FoldingLists/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package foldingListsExercise1
-
 import atomictest.eq
 
 fun <T> List<T>.size(): Int =

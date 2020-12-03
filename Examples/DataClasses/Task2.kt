@@ -14,11 +14,13 @@ fun AirlineTicket.transferTicket(
   otherFirstName: String,
   otherLastName: String
 ): AirlineTicket {
-  return this.copy(firstName = otherFirstName, lastName = otherLastName)
+  return this.copy(firstName = otherFirstName,
+    lastName = otherLastName)
 }
 
 fun main() {
-  val ticket = AirlineTicket("Bruce", "Eckel", 123456, "DEN", "HND")
+  val ticket = AirlineTicket("Bruce", "Eckel",
+    123456, "DEN", "HND")
   println(ticket.transferTicket("Svetlana", "Isakova"))
 }
 /* Output:

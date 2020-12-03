@@ -1,7 +1,6 @@
 // SecondaryConstructors/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package secondaryConstructorsExercise1
-
 import atomictest.eq
 
 data class Flower1(val type: String) {

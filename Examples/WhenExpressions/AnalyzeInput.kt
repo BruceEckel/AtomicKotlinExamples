@@ -36,13 +36,13 @@ fun processInputs(inputs: List<String>) {
 }
 
 fun main() {
-  processInputs(listOf("up", "right", "d",
-    "nowhere", "left", "exit"))
+  processInputs(listOf("up", "d", "nowhere",
+    "left",  "right", "exit", "r"))
   trace eq """
     y gets -1
-    Moving right
-    x gets 1
     y gets 0
+    x gets -1
+    Moving right
     x gets 0
   """
 }

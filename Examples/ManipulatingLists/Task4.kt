@@ -1,7 +1,6 @@
 // ManipulatingLists/Task4.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package manipulatingListsExercise4
-
 import atomictest.eq
 
 class Person(

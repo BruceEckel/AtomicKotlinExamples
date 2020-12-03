@@ -1,7 +1,6 @@
 // SecondaryConstructors/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package secondaryConstructorsExercise3
-
 import atomictest.eq
 import secondaryConstructorsExercise3.Material.*
 

@@ -1,7 +1,6 @@
 // Summary2/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package summaryIIExercise2
-
 import atomictest.eq
 
 class Boring2(val a: Double, val b: String, val c: Int) {

@@ -1,7 +1,6 @@
 // Enumerations/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package enumerationsExercise3
-
 import atomictest.eq
 import enumerationsExercise3.Result.*
 import enumerationsExercise3.Rochambeau.*
@@ -20,10 +19,11 @@ fun winner(first: Rochambeau, second: Rochambeau): Result {
     ROCK to SCISSORS,
     SCISSORS to PAPER,
     PAPER to ROCK)
-  if (winningCombinations[first] == second) {
-    return FIRST_WINS
+  return if (winningCombinations[first] == second) {
+    FIRST_WINS
+  } else {
+    SECOND_WINS
   }
-  return SECOND_WINS
 }
 
 fun main() {

@@ -1,7 +1,6 @@
 // ManipulatingLists/Task6.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package manipulatingListsExercise6
-
 import atomictest.eq
 
 fun <T> List<List<T>>.flatten(): List<T> =

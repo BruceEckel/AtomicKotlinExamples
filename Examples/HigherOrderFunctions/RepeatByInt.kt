@@ -3,9 +3,6 @@
 import atomictest.*
 
 fun main() {
-  repeat(2) { trace("hi!") }
-  trace eq """
-    hi!
-    hi!
-  """
+  repeat(4) { trace("hi!") }
+  trace eq "hi! hi! hi! hi!"
 }

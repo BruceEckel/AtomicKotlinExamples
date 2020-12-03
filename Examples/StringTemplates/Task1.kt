@@ -8,6 +8,6 @@ fun findMax(first: Int, second: Int): Int =
 fun main() {
   val first = 17
   val second = 31
-  println("The maximum between $first and $second is " +
+  println("The maximum of $first and $second is " +
     "${findMax(first, second)}.")
 }

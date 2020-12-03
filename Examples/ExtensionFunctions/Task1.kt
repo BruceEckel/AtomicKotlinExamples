@@ -1,7 +1,6 @@
 // ExtensionFunctions/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package extensionFunctionsExercise1
-
 import atomictest.eq
 
 fun String.wrapInTag(tagName: String): String = "<$tagName>$this</$tagName>"

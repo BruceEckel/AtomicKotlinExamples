@@ -1,7 +1,6 @@
 // Testing/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package testingExercise2
-
 import atomictest.eq
 import atomictest.neq
 

@@ -1,7 +1,6 @@
 // HigherOrderFunctions/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package higherOrderFunctionsExercise1
-
 import atomictest.eq
 
 fun <T, R> List<T>.map(transform: (T) -> R): List<R> {

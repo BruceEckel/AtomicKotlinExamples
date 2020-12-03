@@ -1,7 +1,6 @@
 // ManipulatingLists/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package manipulatingListsExercise2
-
 import atomictest.eq
 
 fun <T> List<T>.zipWithIndex(): List<Pair<T, Int>> =

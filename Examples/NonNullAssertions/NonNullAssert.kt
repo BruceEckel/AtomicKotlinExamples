@@ -3,12 +3,10 @@
 import atomictest.*
 
 fun main() {
-  val s1: String? = "abc"
-  s1!! eq "abc"
-
-  val s2: String? = null
-  // Ignore nullability:
+  var x: String? = "abc"
+  x!! eq "abc"
+  x = null
   capture {
-    val s3: String = s2!!
+    val s: String = x!!
   } eq "NullPointerException"
 }

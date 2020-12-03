@@ -1,7 +1,6 @@
 // SafeCallsAndElvis/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package safeCallsAndTheElvisOperatorExercise2
-
 import atomictest.eq
 
 data class Client(
@@ -17,12 +16,12 @@ data class Address(
   val city: String? = null,
   val street: String? = null)
 
-fun Client.comesFromMunich(): Boolean =
+fun Client.fromMunich(): Boolean =
   personalInfo?.address?.city == "Munich"
 
 fun main() {
   val alice = Client("Alice",
     PersonalInfo(address = Address("Germany", "Munich")))
-  alice.comesFromMunich() eq true
-  Client("Bob").comesFromMunich() eq false
+  alice.fromMunich() eq true
+  Client("Bob").fromMunich() eq false
 }

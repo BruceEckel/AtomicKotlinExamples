@@ -101,7 +101,7 @@ fun main() {
     } catch (e: Except) {
       logger.error("main(): $e")
     }
-  logger.logFile.readText().trimIndent() eq
+  logger.logFile.readText() eq
   """
   Error: DBOpenFail
   Error: NetworkOpenFail

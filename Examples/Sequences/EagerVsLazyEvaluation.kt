@@ -1,6 +1,6 @@
 // Sequences/EagerVsLazyEvaluation.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package usingsequences
+package sequences
 import atomictest.*
 
 fun Int.isEven(): Boolean {
@@ -20,18 +20,20 @@ fun Int.lessThanTen(): Boolean {
 
 fun main() {
   val list = listOf(1, 2, 3, 4)
-
   trace(">>> List:")
-  trace(list
-    .filter(Int::isEven)
-    .map(Int::square)
-    .any(Int::lessThanTen))
-
+  trace(
+    list
+      .filter(Int::isEven)
+      .map(Int::square)
+      .any(Int::lessThanTen)
+  )
   trace(">>> Sequence:")
-  trace(list.asSequence()
-    .filter(Int::isEven)
-    .map(Int::square)
-    .any(Int::lessThanTen))
+  trace(
+    list.asSequence()
+      .filter(Int::isEven)
+      .map(Int::square)
+      .any(Int::lessThanTen)
+  )
   trace eq """
     >>> List:
     1.isEven()

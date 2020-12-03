@@ -1,7 +1,6 @@
 // NullableExtensions/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package extensionsForNullableTypesExercise2
-
 import atomictest.eq
 
 fun Boolean?.and(that: Boolean?): Boolean? =

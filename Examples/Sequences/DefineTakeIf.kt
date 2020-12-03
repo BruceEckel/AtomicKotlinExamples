@@ -1,6 +1,6 @@
 // Sequences/DefineTakeIf.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package usingsequences
+package sequences
 import atomictest.eq
 
 fun <T> T.takeIf(

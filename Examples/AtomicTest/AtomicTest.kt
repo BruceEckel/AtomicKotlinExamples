@@ -25,9 +25,9 @@ private fun <L, R> runTest(
  * Compares the string representation
  * of the object with the string `value`.
  */
-infix fun <T : Any> T.eq(value: String) {
-  runTest(this, value) {
-    this.toString() == value.trimIndent()
+infix fun <T : Any> T.eq(rval: String) {
+  runTest(this, rval) {
+    this.toString().trim() == rval.trimIndent()
   }
 }
 
@@ -35,9 +35,9 @@ infix fun <T : Any> T.eq(value: String) {
  * Verifies that this object is
  * equal to `value`.
  */
-infix fun <T> T.eq(value: T) {
-  runTest(this, value) {
-    this == value
+infix fun <T> T.eq(rval: T) {
+  runTest(this, rval) {
+    this == rval
   }
 }
 
@@ -45,9 +45,9 @@ infix fun <T> T.eq(value: T) {
  * Verifies that this object is not
  * equal to `value`.
  */
-infix fun <T> T.neq(value: T) {
-  runTest(this, value, checkEquals = false) {
-    this != value
+infix fun <T> T.neq(rval: T) {
+  runTest(this, rval, checkEquals = false) {
+    this != rval
   }
 }
 
@@ -55,9 +55,9 @@ infix fun <T> T.neq(value: T) {
  * Verifies that a `Double` number is equal
  * to `value` within a positive delta.
  */
-infix fun Double.eq(value: Double) {
-  runTest(this, value) {
-    abs(this - value) < 0.0000001
+infix fun Double.eq(rval: Double) {
+  runTest(this, rval) {
+    abs(this - rval) < 0.0000001
   }
 }
 

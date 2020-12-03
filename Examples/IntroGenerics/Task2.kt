@@ -1,7 +1,6 @@
 // IntroGenerics/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package introductionToGenericsExercise2
-
 import atomictest.eq
 
 fun <T> List<T>.reversed(): List<T> {

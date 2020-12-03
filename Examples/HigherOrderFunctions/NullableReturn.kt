@@ -7,9 +7,7 @@ fun main() {
     { s: String -> s.toIntOrNull() }
   transform("112") eq 112
   transform("abc") eq null
-
-  val list = listOf("112", "abc")
-  list.mapNotNull(transform) eq listOf(112)
-  list.mapNotNull { it.toIntOrNull() } eq
-    listOf(112)
+  val x = listOf("112", "abc")
+  x.mapNotNull(transform) eq "[112]"
+  x.mapNotNull { it.toIntOrNull() } eq "[112]"
 }

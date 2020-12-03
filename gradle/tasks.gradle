@@ -293,6 +293,11 @@ task CallTopLevelFunction2(type: JavaExec) {
     main = 'interoperability.CallTopLevelFunction2'
 }
 
+task CallingReference(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'higherorderfunctions.CallingReferenceKt'
+}
+
 task CaptureImplementation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'exceptionhandling.CaptureImplementationKt'
@@ -375,7 +380,7 @@ task CheckType(type: JavaExec) {
 
 task CheckingOptions(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'enumerations.CheckingOptionsKt'
+    main = 'checkingoptions.CheckingOptionsKt'
 }
 
 task ClassBodies(type: JavaExec) {
@@ -630,7 +635,7 @@ task DefaultEquality(type: JavaExec) {
 
 task DefineTakeIf(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingsequences.DefineTakeIfKt'
+    main = 'sequences.DefineTakeIfKt'
 }
 
 task DefiningEquality(type: JavaExec) {
@@ -646,11 +651,6 @@ task DefiningExceptions(type: JavaExec) {
 task DefiningRanges(type: JavaExec) {
     classpath kotlinClassPath
     main = 'DefiningRangesKt'
-}
-
-task Definition(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'nullableextensions.DefinitionKt'
 }
 
 task DelegToolsSoln1(type: JavaExec) {
@@ -780,7 +780,7 @@ task EagerEvaluation(type: JavaExec) {
 
 task EagerVsLazyEvaluation(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingsequences.EagerVsLazyEvaluationKt'
+    main = 'sequences.EagerVsLazyEvaluationKt'
 }
 
 task ElvisCall(type: JavaExec) {
@@ -971,11 +971,6 @@ task FlattenAndFlatMap(type: JavaExec) {
 task FloatingPointRange(type: JavaExec) {
     classpath kotlinClassPath
     main = 'FloatingPointRangeKt'
-}
-
-task FoldAndReduce(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'FoldAndReduceKt'
 }
 
 task FoldRight(type: JavaExec) {
@@ -1403,6 +1398,11 @@ task IsKeyword(type: JavaExec) {
     main = 'IsKeywordKt'
 }
 
+task IsPlus(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'higherorderfunctions.IsPlusKt'
+}
+
 task IterateOverString(type: JavaExec) {
     classpath kotlinClassPath
     main = 'IterateOverStringKt'
@@ -1626,11 +1626,6 @@ task LongConstants(type: JavaExec) {
 task LoopWithIndex(type: JavaExec) {
     classpath kotlinClassPath
     main = 'LoopWithIndexKt'
-}
-
-task Main(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'packagesExercise3.MainKt'
 }
 
 task MainArgConversion(type: JavaExec) {
@@ -1903,6 +1898,11 @@ task NullInMaps(type: JavaExec) {
     main = 'NullInMapsKt'
 }
 
+task NullableExtension(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'nullableextensions.NullableExtensionKt'
+}
+
 task NullableFunction(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NullableFunctionKt'
@@ -1936,11 +1936,6 @@ task Num(type: JavaExec) {
 task NumberConversions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'NumberConversionsKt'
-}
-
-task NumberSequence1(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'NumberSequence1Kt'
 }
 
 task NumberSequence2(type: JavaExec) {
@@ -2046,11 +2041,6 @@ task Open1(type: JavaExec) {
 task Open2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'Open2Kt'
-}
-
-task OperationsOnSets(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'OperationsOnSetsKt'
 }
 
 task OperatorPlus(type: JavaExec) {
@@ -2268,6 +2258,11 @@ task RecursiveEnumImport(type: JavaExec) {
     main = 'enumerations.RecursiveEnumImportKt'
 }
 
+task ReduceAndReduceRight(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ReduceAndReduceRightKt'
+}
+
 task References(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ReferencesKt'
@@ -2280,7 +2275,7 @@ task RemoveDuplicates(type: JavaExec) {
 
 task Repeat(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'RepeatKt'
+    main = 'higherorderfunctions.RepeatKt'
 }
 
 task RepeatByInt(type: JavaExec) {
@@ -2288,19 +2283,14 @@ task RepeatByInt(type: JavaExec) {
     main = 'RepeatByIntKt'
 }
 
-task RepeatFun(type: JavaExec) {
+task RepeatHi(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'definingrepeat.RepeatFunKt'
+    main = 'RepeatHiKt'
 }
 
 task RepeatThreeTimes(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RepeatThreeTimesKt'
-}
-
-task RepeatVerbose(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'RepeatVerboseKt'
 }
 
 task RequireNotNull(type: JavaExec) {
@@ -2353,6 +2343,11 @@ task RunningFold(type: JavaExec) {
     main = 'RunningFoldKt'
 }
 
+task SAMConversion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.SAMConversionKt'
+}
+
 task SAMImplementation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces.SAMImplementationKt'
@@ -2371,11 +2366,6 @@ task SafeCall(type: JavaExec) {
 task SafeOperation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'safecalls.SafeOperationKt'
-}
-
-task SamConversion(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'interfaces.SamConversionKt'
 }
 
 task Sandwich(type: JavaExec) {
@@ -2438,6 +2428,11 @@ task Select(type: JavaExec) {
     main = 'creatinggenerics.SelectKt'
 }
 
+task SetOperations(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'SetOperationsKt'
+}
+
 task Sets(type: JavaExec) {
     classpath kotlinClassPath
     main = 'SetsKt'
@@ -2466,11 +2461,6 @@ task SimpleConstructor(type: JavaExec) {
 task SimpleLoggingStrategy(type: JavaExec) {
     classpath kotlinClassPath
     main = 'logging.SimpleLoggingStrategyKt'
-}
-
-task SimpleOperation(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'SimpleOperationKt'
 }
 
 task SingleArgRequire(type: JavaExec) {
@@ -2828,11 +2818,6 @@ task TypeCheckingSoln3(type: JavaExec) {
     main = 'typecheckingsoln3.TypeCheckingSoln3Kt'
 }
 
-task TypeDeclarations(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'TypeDeclarationsKt'
-}
-
 task Types(type: JavaExec) {
     classpath kotlinClassPath
     main = 'TypesKt'
@@ -3131,6 +3116,7 @@ task run (dependsOn: [
     'CallStack',
     'CallTopLevelFunction',
     'CallTopLevelFunction2',
+    'CallingReference',
     'CaptureImplementation',
     'Car',
     'CarCrate',
@@ -3202,7 +3188,6 @@ task run (dependsOn: [
     'DefiningEquality',
     'DefiningExceptions',
     'DefiningRanges',
-    'Definition',
     'DelegToolsSoln1',
     'DelegToolsSoln2',
     'DelegToolsSoln3',
@@ -3267,7 +3252,6 @@ task run (dependsOn: [
     'Flatten',
     'FlattenAndFlatMap',
     'FloatingPointRange',
-    'FoldAndReduce',
     'FoldRight',
     'FoldVsForLoop',
     'ForControl',
@@ -3353,6 +3337,7 @@ task run (dependsOn: [
     'InvokeFunctionType',
     'IsInitialized',
     'IsKeyword',
+    'IsPlus',
     'IterateOverString',
     'Iteration',
     'IterationVsMembership',
@@ -3398,7 +3383,6 @@ task run (dependsOn: [
     'LoggingSoln3',
     'LongConstants',
     'LoopWithIndex',
-    'Main',
     'MainArgConversion',
     'MainArgs',
     'MakeSalad',
@@ -3453,6 +3437,7 @@ task run (dependsOn: [
     'NothingTypeSoln3',
     'NullGnome',
     'NullInMaps',
+    'NullableExtension',
     'NullableFunction',
     'NullableInMap',
     'NullableParameter',
@@ -3460,7 +3445,6 @@ task run (dependsOn: [
     'NullableTypes',
     'Num',
     'NumberConversions',
-    'NumberSequence1',
     'NumberSequence2',
     'NumberTypes',
     'ObjectCounter',
@@ -3482,7 +3466,6 @@ task run (dependsOn: [
     'OpOverloadingSoln3',
     'Open1',
     'Open2',
-    'OperationsOnSets',
     'OperatorPlus',
     'OtherConstructors',
     'OutOfBounds',
@@ -3526,13 +3509,13 @@ task run (dependsOn: [
     'ReadonlyVsMutableList',
     'RecursionLimits',
     'RecursiveEnumImport',
+    'ReduceAndReduceRight',
     'References',
     'RemoveDuplicates',
     'Repeat',
     'RepeatByInt',
-    'RepeatFun',
+    'RepeatHi',
     'RepeatThreeTimes',
-    'RepeatVerbose',
     'RequireNotNull',
     'ResourceCleanupSoln1',
     'ResourceCleanupSoln2',
@@ -3543,11 +3526,11 @@ task run (dependsOn: [
     'ReturningFunc',
     'RigidHolder',
     'RunningFold',
+    'SAMConversion',
     'SAMImplementation',
     'Safe',
     'SafeCall',
     'SafeOperation',
-    'SamConversion',
     'Sandwich',
     'SayHello',
     'Scientist',
@@ -3560,13 +3543,13 @@ task run (dependsOn: [
     'SealedSubclasses',
     'SealedVsAbstract',
     'Select',
+    'SetOperations',
     'Sets',
     'Share2',
     'SimilarOperation',
     'Simple',
     'SimpleConstructor',
     'SimpleLoggingStrategy',
-    'SimpleOperation',
     'SingleArgRequire',
     'SortWith',
     'Speakers',
@@ -3638,7 +3621,6 @@ task run (dependsOn: [
     'TypeCheckingSoln2a',
     'TypeCheckingSoln2b',
     'TypeCheckingSoln3',
-    'TypeDeclarations',
     'Types',
     'UnSealed',
     'Underscore',

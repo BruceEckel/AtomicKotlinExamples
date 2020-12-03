@@ -1,7 +1,6 @@
 // Interfaces/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package interfacesExercise1
-
 import atomictest.eq
 
 interface Computer {

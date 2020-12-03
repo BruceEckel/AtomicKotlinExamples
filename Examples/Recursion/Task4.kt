@@ -1,7 +1,6 @@
 // Recursion/Task4.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package recursionExercise4
-
 import atomictest.eq
 
 class City(val name: String) {
@@ -17,11 +16,11 @@ fun addConnection(first: City, second: City) {
 }
 
 fun City.allReachableRecursive(): Set<City> {
-  // stores all the cities reachable from the the given city:
+  // Stores all cities reachable from the given city:
   val connections = mutableSetOf<City>()
 
-  // add all connections reachable
-  // from 'current' city to 'connections' set
+  // Add all connections reachable
+  // from 'current' city to 'connections' Set
   fun addConnectionsFrom(current: City) {
     if (current in connections) return
     connections += current
@@ -36,16 +35,16 @@ fun City.allReachableRecursive(): Set<City> {
 }
 
 fun City.allReachableIterative(): Set<City> {
-  // stores all the cities reachable from the given city
+  // Stores all cities reachable from the given city
   val connections = mutableSetOf<City>()
-  // stores all the cities which direct connections are to be analyzed
+  // Stores all cities for which direct connections are to be analyzed
   val toBeAnalyzed = mutableSetOf(this)
 
-  // for each 'current' city from 'toBeAnalyzed' set:
-  // unmark it (remove from 'to be analyzed' set)
-  // if it's already in 'connections', do nothing
-  // add it to 'connections'
-  // mark all its connections as 'to be analyzed'
+  // For each 'current' city from 'toBeAnalyzed' set:
+  // - Unmark it (remove from 'to be analyzed' set)
+  // - If it's already in 'connections', do nothing
+  // - Add it to 'connections'
+  // - Mark all its connections as 'to be analyzed'
   while (toBeAnalyzed.isNotEmpty()) {
     val current = toBeAnalyzed.first()
 
