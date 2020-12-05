@@ -28,7 +28,7 @@ class Bonobo : GreatApe() {
 }
 
 class Chimpanzee : GreatApe() {
-  // New property
+  // New property:
   val additionalEnergy = 20
   override fun call() = "Yawp!"
   override fun eat() {

@@ -1,6 +1,7 @@
 // Interfaces/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package interfacesExercise2
+import atomictest.eq
 
 interface Pet {
   fun speak(): String
@@ -20,7 +21,5 @@ class Hamster: Pet {
 
 fun main() {
   val pets = listOf(Dog(), Cat(), Hamster())
-  for (pet in pets) {
-    println(pet.speak())
-  }
+  pets.map { it.speak() } eq "[Bark!, Meow!, Squeak!]"
 }

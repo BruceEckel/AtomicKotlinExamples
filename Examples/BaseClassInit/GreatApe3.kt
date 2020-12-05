@@ -17,16 +17,15 @@ class Chimpanzee(weight: Double, age: Int) :
 class BonoboB(weight: Double, age: Int) :
   Bonobo(weight, age)
 
-fun info(ape: GreatApe) =
-  "weight: ${ape.weight} age: ${ape.age}"
+fun GreatApe.info() = "wt: $weight age: $age"
 
 fun main() {
-  info(GreatApe(100.0, 12)) eq
-    "weight: 100.0 age: 12"
-  info(Bonobo(110.0, 13)) eq
-    "weight: 110.0 age: 13"
-  info(Chimpanzee(120.0, 14)) eq
-    "weight: 120.0 age: 14"
-  info(BonoboB(130.0, 15)) eq
-    "weight: 130.0 age: 15"
+  GreatApe(100.0, 12).info() eq
+    "wt: 100.0 age: 12"
+  Bonobo(110.0, 13).info() eq
+    "wt: 110.0 age: 13"
+  Chimpanzee(120.0, 14).info() eq
+    "wt: 120.0 age: 14"
+  BonoboB(130.0, 15).info() eq
+    "wt: 130.0 age: 15"
 }

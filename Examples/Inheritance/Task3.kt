@@ -4,9 +4,7 @@ package inheritanceExercise3
 import atomictest.eq
 
 open class Game {
-  val initOrder =
-    mutableListOf<String>()
-
+  val initOrder = mutableListOf<String>()
   init {
     initOrder += "Game"
   }
@@ -25,8 +23,5 @@ class Chess: BoardGame() {
 }
 
 fun main() {
-  val chess = Chess()
-  chess.initOrder eq listOf(
-    "Game", "BoardGame", "Chess"
-  )
+  Chess().initOrder eq "[Game, BoardGame, Chess]"
 }

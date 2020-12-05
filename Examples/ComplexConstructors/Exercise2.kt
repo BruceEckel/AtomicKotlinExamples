@@ -12,5 +12,5 @@ class SumChars(text: String) {
 }
 
 fun main() {
-//  SumChars("What?").sum eq 467
+  SumChars("What?").sum eq 467
 }

@@ -2168,6 +2168,11 @@ task PropDelegationSoln4(type: JavaExec) {
     main = 'propertydelegationsoln4.PropDelegationSoln4Kt'
 }
 
+task PropertyAccessor(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'abstractclasses.PropertyAccessorKt'
+}
+
 task PropertyOptions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'lazyinitialization.PropertyOptionsKt'
@@ -2628,6 +2633,11 @@ task Task3(type: JavaExec) {
     main = 'whenExpressionsExercise3.Task3Kt'
 }
 
+task Task3StarterCode(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'abstractClassesExercise3StarterCode.Task3StarterCodeKt'
+}
+
 task Task4(type: JavaExec) {
     classpath kotlinClassPath
     main = 'variableArgumentListsExercise4.Task4Kt'
@@ -3011,11 +3021,6 @@ task WildAnimals(type: JavaExec) {
 task WithDefaultArguments(type: JavaExec) {
     classpath kotlinClassPath
     main = 'withdefaultarguments.WithDefaultArgumentsKt'
-}
-
-task WithPropertyAccessor(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'abstractclasses.WithPropertyAccessorKt'
 }
 
 task WithSecondary(type: JavaExec) {
@@ -3491,6 +3496,7 @@ task run (dependsOn: [
     'PropDelegationSoln2',
     'PropDelegationSoln3',
     'PropDelegationSoln4',
+    'PropertyAccessor',
     'PropertyOptions',
     'PropertyReadWrite',
     'PropertyReference',
@@ -3583,6 +3589,7 @@ task run (dependsOn: [
     'Task10',
     'Task2',
     'Task3',
+    'Task3StarterCode',
     'Task4',
     'Task5',
     'Task6',
@@ -3660,7 +3667,6 @@ task run (dependsOn: [
     'WhyFlatMap',
     'WildAnimals',
     'WithDefaultArguments',
-    'WithPropertyAccessor',
     'WithSecondary',
     'WithinInterface',
     'WithoutDefaultArguments',

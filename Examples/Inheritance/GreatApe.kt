@@ -12,16 +12,11 @@ open class Bonobo : GreatApe()
 class Chimpanzee : GreatApe()
 class BonoboB : Bonobo()
 
-fun info(ape: GreatApe) =
-  "weight: ${ape.weight} age: ${ape.age}"
+fun GreatApe.info() = "wt: $weight age: $age"
 
 fun main() {
-  info(GreatApe()) eq
-    "weight: 100.0 age: 12"
-  info(Bonobo()) eq
-    "weight: 100.0 age: 12"
-  info(Chimpanzee()) eq
-    "weight: 100.0 age: 12"
-  info(BonoboB()) eq
-    "weight: 100.0 age: 12"
+  GreatApe().info() eq "wt: 100.0 age: 12"
+  Bonobo().info() eq "wt: 100.0 age: 12"
+  Chimpanzee().info() eq "wt: 100.0 age: 12"
+  BonoboB().info() eq "wt: 100.0 age: 12"
 }

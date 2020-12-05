@@ -45,25 +45,17 @@ class Wizard:
   override fun play() = doMagic() + fly()
 }
 
-fun Character.playTurn() =
-  trace((name + ": " + play()))
+fun Character.playTurn() = name + ": " + play()
 
 fun main() {
-  val characters = listOf(
+  listOf(
     Warrior(),
     Elf(),
     FightingElf(),
     Dragon(),
     Wizard()
-  )
-  characters.forEach { c ->
-    c.playTurn()
-  }
-  trace eq """
-    Warrior: Fight!
-    Elf: Magic!
-    FightingElf: Magic!Fight!
-    Dragon: Fly!
-    Magician: Magic!Fly!
-  """
+  ).map { it.playTurn() } eq
+    "[Warrior: Fight!, Elf: Magic!, " +
+    "FightingElf: Magic!Fight!, " +
+    "Dragon: Fly!, Magician: Magic!Fly!]"
 }

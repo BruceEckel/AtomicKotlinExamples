@@ -22,7 +22,7 @@ class KangarooRat: Rodent {
 fun upcast(rodent: Rodent) {
   trace(rodent.eat())
   trace(rodent.speak())
-//   rodent.jump() // Won't compile
+  //  rodent.jump() // Won't compile
 }
 
 fun main() {
