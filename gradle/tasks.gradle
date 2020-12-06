@@ -2623,9 +2623,19 @@ task Task10(type: JavaExec) {
     main = 'summaryIExercise10.Task10Kt'
 }
 
+task Task1StarterCode(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'compositionExercise1StarterCode.Task1StarterCodeKt'
+}
+
 task Task2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'whenExpressionsExercise2.Task2Kt'
+}
+
+task Task2StarterCode(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'compositionExercise2StarterCode.Task2StarterCodeKt'
 }
 
 task Task3(type: JavaExec) {
@@ -3587,7 +3597,9 @@ task run (dependsOn: [
     'TakeOrDrop',
     'Task1',
     'Task10',
+    'Task1StarterCode',
     'Task2',
+    'Task2StarterCode',
     'Task3',
     'Task3StarterCode',
     'Task4',

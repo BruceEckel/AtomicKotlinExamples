@@ -3,9 +3,9 @@
 package classdelegation
 import atomictest.eq
 
-class ExplicitControls : ShipControls {
+class ExplicitControls : Controls {
   private val controls = SpaceShipControls()
-  // Delegated members:
+  // Delegation by hand:
   override fun up(velocity: Int) =
     controls.up(velocity)
   override fun back(velocity: Int) =

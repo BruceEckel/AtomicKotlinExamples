@@ -33,9 +33,9 @@ class UserInput : MouseManager {
 class Button(
   val width: Int,
   val height: Int,
-  val image: Rectangle =
+  var image: Rectangle =
     ButtonImage(width, height),
-  val input: MouseManager = UserInput()
+  private var input: MouseManager = UserInput()
 ): Rectangle by image, MouseManager by input
 
 fun main() {

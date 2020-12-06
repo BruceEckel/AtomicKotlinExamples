@@ -33,15 +33,15 @@ fun interactWithCrocodile(crocodile: Crocodile) {
   crocodile.bite()
 }
 
-class IAmHonestlyDuck(
+class CrocoDuck(
     val crocodile: Crocodile
 ) : Duck {
   override fun quack() = crocodile.bite()
   override fun swim() = crocodile.bite()
 }
 
-fun mimicDuck(crocodile: Crocodile): IAmHonestlyDuck =
-    IAmHonestlyDuck(crocodile)
+fun mimicDuck(crocodile: Crocodile): CrocoDuck =
+    CrocoDuck(crocodile)
 
 fun main() {
   val honestlyDuck = mimicDuck(RealCrocodile())

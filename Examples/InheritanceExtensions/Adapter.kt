@@ -25,12 +25,5 @@ fun main() {
   utility1(mc)
   utility2(mc)
   useMyClass(mc)
-  trace eq """
-    h()
-    g()
-    g()
-    h()
-    g()
-    h()
-  """
+  trace eq "h() g() g() h() g() h()"
 }

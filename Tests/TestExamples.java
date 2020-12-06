@@ -388,8 +388,18 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTask1StarterCode() {
+    testExample("Examples/Composition/Task1StarterCode.kt", compositionExercise1StarterCode.Task1StarterCodeKt::main);
+  }
+
+  @Test
   public void testTask26() {
     testExample("Examples/Composition/Task2.kt", compositionExercise2.Task2Kt::main);
+  }
+
+  @Test
+  public void testTask2StarterCode() {
+    testExample("Examples/Composition/Task2StarterCode.kt", compositionExercise2StarterCode.Task2StarterCodeKt::main);
   }
 
   @Test

@@ -1,18 +1,16 @@
-// Composition/Task2.kt
+// Composition/Task2StarterCode.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package compositionExercise2
+package compositionExercise2StarterCode
 import atomictest.*
 
-class Stack<E> {
-  private val list = mutableListOf<E>()
-  fun push(e: E) = list.add(e)
-  fun pop(): E = list.removeAt(list.lastIndex)
+class Stack<E> : ArrayList<E>() {
+  fun push(e: E) = add(e)
+  fun pop(): E = removeAt(lastIndex)
 }
 
-class Queue<E> {
-  private val list = mutableListOf<E>()
-  fun put(e: E) = list.add(e)
-  fun poll(): E = list.removeAt(0)
+class Queue<E>: ArrayList<E>() {
+  fun put(e: E) = add(e)
+  fun poll(): E = removeAt(0)
 }
 
 fun main() {
