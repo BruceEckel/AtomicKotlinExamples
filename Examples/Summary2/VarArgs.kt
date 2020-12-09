@@ -12,14 +12,5 @@ fun varargs(s: String, vararg ints: Int) {
 
 fun main() {
   varargs("primes", 5, 7, 11, 13, 17, 19, 23)
-  trace eq """
-    5
-    7
-    11
-    13
-    17
-    19
-    23
-    primes
-  """
+  trace eq "5 7 11 13 17 19 23 primes"
 }
