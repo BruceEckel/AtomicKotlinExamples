@@ -29,9 +29,9 @@ fun main() {
   checkAndCall(Derived1()) // Upcast
   checkAndCall(Derived2()) // Upcast
   trace eq """
-  Derived1.f()
-  Derived1.g()
-  Derived2.f()
-  Derived2.h()
+    Derived1.f()
+    Derived1.g()
+    Derived2.f()
+    Derived2.h()
   """
 }

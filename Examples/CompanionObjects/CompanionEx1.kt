@@ -51,9 +51,9 @@ fun main() {
   consumer(Vendor1.factory)
   consumer(Vendor2.factory)
   trace eq """
-  Vendor1 pencil
-  Vendor1 pen
-  Vendor2 pencil
-  Vendor2 pen
+    Vendor1 pencil
+    Vendor1 pen
+    Vendor2 pencil
+    Vendor2 pen
   """
 }

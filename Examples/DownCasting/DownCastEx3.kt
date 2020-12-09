@@ -49,11 +49,11 @@ fun main() {
     listOf(Worm2(), Snail2(), Beetle2())
   animals2.forEach { it.move() }
   trace eq """
-  Wriggle
-  Slide
-  Walk
-  Wriggle
-  Slide
-  Walk
+    Wriggle
+    Slide
+    Walk
+    Wriggle
+    Slide
+    Walk
   """
 }

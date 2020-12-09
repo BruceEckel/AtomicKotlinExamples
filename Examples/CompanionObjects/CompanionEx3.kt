@@ -63,7 +63,7 @@ fun main() {
   ID(name=b, id=LCcPJtUGh5),
   ID(name=c, id=Acs5BzSj6m),
   ID(name=d, id=gHrshDvhwc)
-  """.trimIndent()
+  """
   val bank = Bank("Jerry's Savings & Loan")
   listOf(ID("Morty Smith"), ID("Beth Smith"),
     ID("Summer Smith")).forEach {
@@ -75,5 +75,5 @@ fun main() {
   ID(name=Morty Smith, id=ePkc0HjTAU) 1000
   ID(name=Beth Smith, id=jjePlEO93w) 1001
   ID(name=Summer Smith, id=C8yaeFEgv6) 1002
-  """.trimIndent()
+  """
 }

@@ -12,7 +12,7 @@ class Logger(fileName: String) {
   fun info(msg: String) = log("Info", msg)
   fun warn(msg: String) = log("Warn", msg)
   fun error(msg: String) = log("Error", msg)
-  // Added for basic testing:
+  // For basic testing:
   fun report(msg: String) {
     trace(msg)
     debug(msg)

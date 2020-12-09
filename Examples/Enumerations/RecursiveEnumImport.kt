@@ -2,7 +2,7 @@
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package enumerations
 import atomictest.eq
-import enumerations.Size.*            // [1]
+import enumerations.Size.*             // [1]
 
 enum class Size {
   Tiny, Small, Medium, Large, Huge, Gigantic

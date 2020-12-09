@@ -3,7 +3,7 @@
 package innerClassesExercise1
 import atomictest.eq
 
-interface Pet {
+fun interface Pet {
   fun speak(): String
 }
 
@@ -18,15 +18,17 @@ class PetCreator {
   }
   fun cat(): Pet {
     val emit = "Meow"
-    return object : Pet {
+    return object: Pet {
       override fun speak() = emit + home()
     }
   }
   fun hamster(): Pet {
-    val poke = "Squeak"
-    return object : Pet {
-      override fun speak() = poke + home()
-    }
+    val squeak = "Squeak"
+    return Pet { squeak + home() }
+  }
+  fun goldfish(): Pet {
+    val blub = "Blub"
+    return Pet { blub + home() }
   }
 }
 
@@ -35,4 +37,5 @@ fun main() {
   create.dog().speak() eq "Bark home!"
   create.cat().speak() eq "Meow home!"
   create.hamster().speak() eq "Squeak home!"
+  create.goldfish().speak() eq "Blub home!"
 }

@@ -23,7 +23,7 @@ private fun <L, R> runTest(
 
 /**
  * Compares the string representation
- * of the object with the string `value`.
+ * of this object with the string `rval`.
  */
 infix fun <T : Any> T.eq(rval: String) {
   runTest(this, rval) {
@@ -32,8 +32,7 @@ infix fun <T : Any> T.eq(rval: String) {
 }
 
 /**
- * Verifies that this object is
- * equal to `value`.
+ * Verifies this object is equal to `rval`.
  */
 infix fun <T> T.eq(rval: T) {
   runTest(this, rval) {
@@ -42,8 +41,7 @@ infix fun <T> T.eq(rval: T) {
 }
 
 /**
- * Verifies that this object is not
- * equal to `value`.
+ * Verifies this object is != `rval`.
  */
 infix fun <T> T.neq(rval: T) {
   runTest(this, rval, checkEquals = false) {
@@ -53,7 +51,7 @@ infix fun <T> T.neq(rval: T) {
 
 /**
  * Verifies that a `Double` number is equal
- * to `value` within a positive delta.
+ * to `rval` within a positive delta.
  */
 infix fun Double.eq(rval: Double) {
   runTest(this, rval) {
@@ -90,11 +88,9 @@ class CapturedException(
 /**
  * Captures an exception and produces
  * information about it. Usage:
- * ```
- * capture {
- *   // Code that fails
- * } eq "FailureException: message"
- * ```
+ *    capture {
+ *      // Code that fails
+ *    } eq "FailureException: message"
  */
 fun capture(f:() -> Unit): CapturedException =
   try {
@@ -113,12 +109,12 @@ object trace {
   }
   /**
    * Compares trc contents to a multiline
-   * `String` by ignoring line separators.
+   * `String` by ignoring white space.
    */
   infix fun eq(multiline: String) {
     val trace = trc.joinToString("\n")
     val expected = multiline.trimIndent()
-      .trim().replace("\n", " ")
+      .replace("\n", " ")
     runTest(trace, multiline) {
       trace.replace("\n", " ") == expected
     }

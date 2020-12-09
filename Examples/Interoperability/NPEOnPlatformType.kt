@@ -4,14 +4,14 @@ import interoperability.JTool
 import atomictest.*
 
 fun main() {
-  val xn = JTool.get(null)          // [1]
-  xn?.method() eq null              // [2]
-  capture {
-    xn.method()                     // [3]
-  } contains listOf("NullPointerException")
+  val xn: JTool? = JTool.get(null)  // [1]
+  xn?.method() eq null
 
-  val yn: JTool? = JTool.get(null)  // [4]
-  yn?.method() eq null
+  val yn = JTool.get(null)          // [2]
+  yn?.method() eq null              // [3]
+  capture {
+    yn.method()                     // [4]
+  } contains listOf("NullPointerException")
 
   capture {
     val zn: JTool = JTool.get(null) // [5]

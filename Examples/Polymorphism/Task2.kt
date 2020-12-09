@@ -28,9 +28,9 @@ fun main() {
   val animal: Animal = Frog()
   animal.jump()
   trace eq """
-  Frog: jump
-  Animal: jump
-  Frog: talk
-  Animal: talk
+    Frog: jump
+    Animal: jump
+    Frog: talk
+    Animal: talk
   """
 }

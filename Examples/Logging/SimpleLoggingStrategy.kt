@@ -9,7 +9,7 @@ val logFile = // Reset ensures an empty file:
 fun debug(msg: String) =
   System.err.println("Debug: $msg")
 // To disable:
-// fun debug(msg: String) { /* do nothing */ }
+// fun debug(msg: String) = Unit
 
 fun trace(msg: String) =
   logFile.appendText("Trace: $msg\n")

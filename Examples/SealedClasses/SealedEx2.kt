@@ -9,9 +9,9 @@ fun main() {
     .map { it.simpleName }
     .forEach { trace(it) }
   trace eq """
-  Train
-  Bus
-  Tram
-  Plane
+    Train
+    Bus
+    Tram
+    Plane
   """
 }

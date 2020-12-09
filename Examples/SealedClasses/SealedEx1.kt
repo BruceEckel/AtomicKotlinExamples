@@ -49,13 +49,13 @@ fun main() {
     Plane("1103", 190)
   ).forEach(::travel)
   trace eq """
-  Train S1
-  size 200
-  Bus 11
-  size 45
-  Tram 22A Express
-  size 60
-  Plane 1103
-  size 190
+    Train S1
+    size 200
+    Bus 11
+    size 45
+    Tram 22A Express
+    size 60
+    Plane 1103
+    size 190
   """
 }

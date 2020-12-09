@@ -6,8 +6,8 @@ import atomictest.CapturedException
 fun capture(f:() -> Unit): CapturedException =
   try {                                 // [1]
     f()
-    CapturedException(null,             // [2]
-      "<Error>: Expected an exception")
+    CapturedException(null,
+      "<Error>: Expected an exception") // [2]
   } catch (e: Throwable) {              // [3]
     CapturedException(e::class,         // [4]
       if (e.message != null) ": ${e.message}"

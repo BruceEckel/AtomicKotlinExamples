@@ -3,7 +3,7 @@
 package nothingtype
 
 fun failWithBadData(obj: Any?): Nothing =
-  throw BadData("Need String, got $obj")
+  throw BadData("Needs String, got $obj")
 
 fun checkObject2(obj: Any?): String =
   (obj as? String) ?: failWithBadData(obj)

@@ -8,12 +8,12 @@ class Exception1(
 ): Exception("wrong value: $value")
 
 open class Exception2(
-  message: String
-): Exception(message)
+  description: String
+): Exception(description)
 
 class Exception3(
-  message: String
-): Exception2(message)
+  description: String
+): Exception2(description)
 
 fun main() {
   capture {

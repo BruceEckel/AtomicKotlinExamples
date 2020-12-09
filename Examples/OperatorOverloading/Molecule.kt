@@ -18,7 +18,7 @@ data class Molecule(
 fun main() {
   val m1 = Molecule()
   val m2 = Molecule()
-  m1 + m2                      // [1]
+  m1 + m2                           // [1]
   m1 eq "Molecule(id=0, attached=" +
     "Molecule(id=1, attached=null))"
 }

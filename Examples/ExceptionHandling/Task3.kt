@@ -1,9 +1,8 @@
-// Logging/LoggingSoln2.kt
+// ExceptionHandling/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package loggingsoln2
-import atomictest.eq
-import atomiclog.Logger
-import loggingsoln2.Status.*
+package exceptionhandlingsoln3
+import atomictest.trace
+import exceptionhandlingsoln3.Status.*
 
 open class Except : Exception() {
   override fun toString() =
@@ -43,10 +42,6 @@ class NetConnection(val url: String) {
 
 enum class Status { Success, Failed }
 
-// Everything up to here is STARTER CODE
-
-private val logger = Logger("LoggingSoln2.txt")
-
 fun transact(level: Int): Status {
   val db = DataBase()
   val nets = listOf(
@@ -56,21 +51,25 @@ fun transact(level: Int): Status {
   try {
     db.open(1, level)
   } catch (e: DBOpenFail) {
-    logger.error("$e")
+    trace("Database Problem $e")
     return Failed
   }
   fun transfer(net: NetConnection): Status {
+// Everything up to here is STARTER CODE
     try {
       net.open(2, level)
       db.write(net.read(), 3, level)
-    } catch (e: Except) {
-      logger.error("$e")
+    } catch (e: NetworkFail) {
+      trace("Network Problem $e")
+      return Failed
+    } catch (e: DBWriteFail) {
+      trace("Database Write Failed $e")
       return Failed
     } finally {
       try {
         net.close(4, level)
       } catch (e: NetworkCloseFail) {
-        logger.error("$e")
+        trace("Network Close Failed $e")
         return Failed
       }
     }
@@ -85,29 +84,34 @@ fun transact(level: Int): Status {
     try {
       db.close(5, level)
     } catch (e: DBCloseFail) {
-      logger.error("$e")
+      trace("Database Problem $e")
       throw e
     }
   }
   return Success
 }
 
-// From here on is STARTER CODE
-
+// All of main() is STARTER CODE:
 fun main() {
   for (level in 0..5)
     try {
-      transact(level)
-    } catch (e: Except) {
-      logger.error("main(): $e")
+      trace(transact(level))
+    } catch (e: DBCloseFail) {
+      trace("main() Problem $e")
+    } catch (e: NetworkCloseFail) {
+      trace("main() Problem $e")
     }
-  logger.logFile.readText() eq
-  """
-  Error: DBOpenFail
-  Error: NetworkOpenFail
-  Error: DBWriteFail
-  Error: NetworkCloseFail
-  Error: DBCloseFail
-  Error: main(): DBCloseFail
+  trace eq """
+    Success
+    Database Problem DBOpenFail
+    Failed
+    Network Problem NetworkOpenFail
+    Failed
+    Database Write Failed DBWriteFail
+    Failed
+    Network Close Failed NetworkCloseFail
+    Failed
+    Database Problem DBCloseFail
+    main() Problem DBCloseFail
   """
 }

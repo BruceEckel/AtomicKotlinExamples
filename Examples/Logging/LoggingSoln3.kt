@@ -14,7 +14,7 @@ var debugLevel = Error
 class Logger(fileName: String) {
   val logFile = DataFile(fileName).reset()
   private fun log(thisLevel: Level, msg: String) {
-    if(thisLevel.ordinal >= debugLevel.ordinal)
+    if(thisLevel >= debugLevel)
       logFile.appendText("${thisLevel.name}: $msg\n")
   }
   fun trace(msg: String) = log(Trace, msg)
@@ -31,7 +31,7 @@ class Logger(fileName: String) {
   }
 }
 
-private val logger = Logger("LoggingSoln2.txt")
+private val logger = Logger("LoggingSoln3.txt")
 
 fun main() {
   Level.values().toList().forEach {

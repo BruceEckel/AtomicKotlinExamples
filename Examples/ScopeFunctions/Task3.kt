@@ -1,4 +1,4 @@
-// ScopeFunctions/ScopeFuncSoln3.kt
+// ScopeFunctions/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
 package scopefuncsoln3
 import atomictest.eq

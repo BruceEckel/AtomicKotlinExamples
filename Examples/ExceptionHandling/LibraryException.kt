@@ -6,7 +6,7 @@ import atomictest.*
 fun testCode(code: Int) {
   if (code <= 1000) {
     throw IllegalArgumentException(
-      "Code must be > 1000: $code")
+      "'code' must be > 1000: $code")
   }
 }
 
@@ -16,7 +16,7 @@ fun main() {
     testCode("A1".toInt(16))
   } catch (e: IllegalArgumentException) {
     e.message eq
-      "Code must be > 1000: 161"
+      "'code' must be > 1000: 161"
   }
   try {
     testCode("0".toInt(1))
