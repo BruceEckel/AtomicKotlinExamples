@@ -2125,7 +2125,7 @@ task PlatformTypes(type: JavaExec) {
 
 task PlayerInterface(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertiesininterfaces.PlayerInterfaceKt'
+    main = 'interfaces.PlayerInterfaceKt'
 }
 
 task PlayingCards(type: JavaExec) {
@@ -2346,11 +2346,6 @@ task RigidHolder(type: JavaExec) {
 task RunningFold(type: JavaExec) {
     classpath kotlinClassPath
     main = 'RunningFoldKt'
-}
-
-task SAMConversion(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'interfaces.SAMConversionKt'
 }
 
 task SAMImplementation(type: JavaExec) {
@@ -3517,7 +3512,6 @@ task run (dependsOn: [
     'ReturningFunc',
     'RigidHolder',
     'RunningFold',
-    'SAMConversion',
     'SAMImplementation',
     'Safe',
     'SafeCall',

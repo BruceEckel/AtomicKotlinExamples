@@ -1,6 +1,6 @@
 // Interfaces/PlayerInterface.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package propertiesininterfaces
+package interfaces
 import atomictest.eq
 
 interface Player {

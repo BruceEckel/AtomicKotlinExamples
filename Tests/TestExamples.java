@@ -1494,12 +1494,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testPlayerInterface() {
-    testExample("Examples/Interfaces/PlayerInterface.kt", propertiesininterfaces.PlayerInterfaceKt::main);
-  }
-
-  @Test
-  public void testSAMConversion() {
-    testExample("Examples/Interfaces/SAMConversion.kt", interfaces.SAMConversionKt::main);
+    testExample("Examples/Interfaces/PlayerInterface.kt", interfaces.PlayerInterfaceKt::main);
   }
 
   @Test
