@@ -1,6 +1,6 @@
 // LateInitialization/LateInitSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package lateinitializationsoln1
+package lateInitializationExercise1
 
 interface PowerPlant
 class ElectricMotor : PowerPlant

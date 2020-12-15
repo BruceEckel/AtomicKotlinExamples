@@ -1,6 +1,6 @@
 // ScopeFunctions/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package scopefuncsoln1
+package scopeFunctionsExercise1
 import atomictest.eq
 
 data class NumPair(var x: Int, var y: Int) {

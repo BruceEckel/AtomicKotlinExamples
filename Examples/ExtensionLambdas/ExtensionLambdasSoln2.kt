@@ -1,6 +1,6 @@
 // ExtensionLambdas/ExtensionLambdasSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package extensionlambdasoln2
+package extensionLambdasExercise2
 import sandwich.*
 import atomictest.eq
 

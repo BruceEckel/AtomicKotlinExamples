@@ -1,6 +1,6 @@
 // CheckInstructions/CheckInstructionsSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package checkinstructionssoln1
+package checkInstructionsExercise1
 import atomictest.*
 
 fun f(s: String): String {

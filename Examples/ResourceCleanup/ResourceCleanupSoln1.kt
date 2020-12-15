@@ -1,6 +1,6 @@
 // ResourceCleanup/ResourceCleanupSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package resourcecleanupsoln1
+package resourceCleanupExercise1
 import atomictest.trace
 import java.io.File
 

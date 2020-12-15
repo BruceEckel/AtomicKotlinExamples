@@ -6,13 +6,13 @@ import atomictest.*
 class Stack<E> {
   private val list = mutableListOf<E>()
   fun push(e: E) = list.add(e)
-  fun pop(): E = list.removeAt(list.lastIndex)
+  fun pop(): E = list.removeLast()
 }
 
 class Queue<E> {
   private val list = mutableListOf<E>()
   fun put(e: E) = list.add(e)
-  fun poll(): E = list.removeAt(0)
+  fun poll(): E = list.removeFirst()
 }
 
 fun main() {

@@ -1,6 +1,6 @@
 // LazyInitialization/LazyInitSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package lazyinitsoln1
+package lazyInitializationExercise1
 import atomictest.*
 import kotlin.reflect.KProperty1
 

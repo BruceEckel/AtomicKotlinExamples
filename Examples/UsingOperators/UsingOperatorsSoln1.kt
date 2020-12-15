@@ -1,7 +1,7 @@
 // UsingOperators/UsingOperatorsSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package usingoperatorssoln1
-import atomictest.*
+package usingOperatorsExercise1
+import atomictest.trace
 
 data class DataMany(
   val a: Int = 1,

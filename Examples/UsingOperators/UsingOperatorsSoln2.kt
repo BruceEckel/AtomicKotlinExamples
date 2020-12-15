@@ -1,9 +1,9 @@
 // UsingOperators/UsingOperatorsSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package usingoperatorssoln2
-import atomictest.*
+package usingOperatorsExercise2
+import atomictest.trace
 
-fun create() = MutableList(10) { it }
+fun create(): MutableList<Int> = MutableList(10) { it }
 
 fun assignAppendIncrementContains() {
   trace("assignAppendIncrementContains()")

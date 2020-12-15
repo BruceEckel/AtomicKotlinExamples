@@ -1,6 +1,6 @@
 // PropertyDelegation/PropDelegationSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package propertydelegationsoln1
+package propertyDelegationToolsExercise1
 import atomictest.eq
 
 class Configuration(

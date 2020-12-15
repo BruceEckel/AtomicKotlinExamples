@@ -1,5 +1,5 @@
 // Tests/unittesting/UnitTestingSoln2.kt
-package unittesting
+package unitTestingExercise2
 import interfaces.Desktop
 import interfaces.DeepThought
 import interfaces.Quantum

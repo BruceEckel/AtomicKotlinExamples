@@ -1,15 +1,15 @@
 // Logging/LoggingSoln3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package loggingsoln3
+package loggingExercise3
 import atomictest.eq
 import checkinstructions.DataFile
-import loggingsoln3.Level.*
+import loggingExercise3.Level.*
 
 enum class Level {
   Trace, Debug, Info, Warn, Error
 }
 
-var debugLevel = Error
+var debugLevel: Level = Error
 
 class Logger(fileName: String) {
   val logFile = DataFile(fileName).reset()

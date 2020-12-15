@@ -102,6 +102,13 @@ fun capture(f:() -> Unit): CapturedException =
       (e.message?.let { ": $it" } ?: ""))
   }
 
+/**
+ * Accumulates output when called as in:
+ *   trace("info")
+ *   trace(object)
+ * Later compares accumulated to expected:
+ *   trace eq "expected output"
+ */
 object trace {
   private val trc = mutableListOf<String>()
   operator fun invoke(obj: Any?) {

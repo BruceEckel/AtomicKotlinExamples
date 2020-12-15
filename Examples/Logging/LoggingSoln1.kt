@@ -1,6 +1,6 @@
 // Logging/LoggingSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package loggingsoln1
+package loggingExercise1
 import atomictest.*
 import atomiclog.Logger
 

@@ -1,6 +1,6 @@
 // LateInitialization/LateInitSoln3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package lateinitializationsoln3
+package lateInitializationExercise3
 import atomictest.*
 
 data class Generator(val id: Int)

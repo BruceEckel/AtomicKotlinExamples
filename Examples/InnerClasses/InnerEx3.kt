@@ -22,8 +22,7 @@ class Container<T>(
       if (i < items.size) i++
     }
   }
-  override
-  fun iterator() = object : Iterator<T> {
+  override fun iterator() = object : Iterator<T> {
     private var i = 0
     override fun hasNext() = i < items.size
     override fun next(): T = items[i++]

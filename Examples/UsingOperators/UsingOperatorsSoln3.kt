@@ -1,6 +1,6 @@
 // UsingOperators/UsingOperatorsSoln3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package usingoperatorssoln3
+package usingOperatorsExercise3
 import atomictest.trace
 import kotlin.random.Random
 

@@ -1,13 +1,13 @@
 // NothingType/NothingTypeSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package nothingtypesoln2
+package theNothingTypeExercise2
 import atomictest.*
 
 object Log {
   private val messages =
     mutableListOf<String>()
   fun add(msg: String) = messages.add(msg)
-  fun report() = messages.toList()
+  fun report(): List<String> = messages.toList()
 }
 
 class Failure(msg: String) : Exception(msg)

@@ -35,7 +35,7 @@ class Bank(val name: String) {
     }
     companion object Numbers {
       private var i: Long = 1000
-      private fun nextAccountNumber() = i++
+      private fun nextAccountNumber(): Long = i++
     }
     fun finish() {
       number = nextAccountNumber()

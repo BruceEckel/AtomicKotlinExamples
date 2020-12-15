@@ -1,6 +1,6 @@
 // CheckInstructions/CheckInstructionsSoln4.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package checkinstructionssoln4
+package checkInstructionsExercise4
 import atomictest.*
 
 class Tank(val capacity: Double) {

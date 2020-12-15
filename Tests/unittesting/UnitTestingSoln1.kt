@@ -1,5 +1,5 @@
 // Tests/unittesting/UnitTestingSoln1.kt
-package unittesting
+package unitTestingExercise1
 import sealedclasses.Bus
 import sealedclasses.Train
 import sealedclasses.travel

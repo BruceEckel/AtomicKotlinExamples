@@ -38,11 +38,6 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask3StarterCode() {
-    testExample("Examples/Abstract/Task3StarterCode.kt", abstractClassesExercise3StarterCode.Task3StarterCodeKt::main);
-  }
-
-  @Test
   public void testGreatApe3() {
     testExample("Examples/BaseClassInit/GreatApe3.kt", baseclassinit.GreatApe3Kt::main);
   }
@@ -204,22 +199,22 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testCheckInstructionsSoln1() {
-    testExample("Examples/CheckInstructions/CheckInstructionsSoln1.kt", checkinstructionssoln1.CheckInstructionsSoln1Kt::main);
+    testExample("Examples/CheckInstructions/CheckInstructionsSoln1.kt", checkInstructionsExercise1.CheckInstructionsSoln1Kt::main);
   }
 
   @Test
   public void testCheckInstructionsSoln2() {
-    testExample("Examples/CheckInstructions/CheckInstructionsSoln2.kt", checkinstructionssoln2.CheckInstructionsSoln2Kt::main);
+    testExample("Examples/CheckInstructions/CheckInstructionsSoln2.kt", checkInstructionsExercise2.CheckInstructionsSoln2Kt::main);
   }
 
   @Test
   public void testCheckInstructionsSoln3() {
-    testExample("Examples/CheckInstructions/CheckInstructionsSoln3.kt", checkinstructionssoln3.CheckInstructionsSoln3Kt::main);
+    testExample("Examples/CheckInstructions/CheckInstructionsSoln3.kt", checkInstructionsExercise3.CheckInstructionsSoln3Kt::main);
   }
 
   @Test
   public void testCheckInstructionsSoln4() {
-    testExample("Examples/CheckInstructions/CheckInstructionsSoln4.kt", checkinstructionssoln4.CheckInstructionsSoln4Kt::main);
+    testExample("Examples/CheckInstructions/CheckInstructionsSoln4.kt", checkInstructionsExercise4.CheckInstructionsSoln4Kt::main);
   }
 
   @Test
@@ -388,18 +383,8 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask1StarterCode() {
-    testExample("Examples/Composition/Task1StarterCode.kt", compositionExercise1StarterCode.Task1StarterCodeKt::main);
-  }
-
-  @Test
   public void testTask26() {
     testExample("Examples/Composition/Task2.kt", compositionExercise2.Task2Kt::main);
-  }
-
-  @Test
-  public void testTask2StarterCode() {
-    testExample("Examples/Composition/Task2StarterCode.kt", compositionExercise2StarterCode.Task2StarterCodeKt::main);
   }
 
   @Test
@@ -509,17 +494,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testCreatingGenericsSoln1() {
-    testExample("Examples/CreatingGenerics/CreatingGenericsSoln1.kt", creatinggenericssoln1.CreatingGenericsSoln1Kt::main);
+    testExample("Examples/CreatingGenerics/CreatingGenericsSoln1.kt", creatingGenericsExercise1.CreatingGenericsSoln1Kt::main);
   }
 
   @Test
   public void testCreatingGenericsSoln2() {
-    testExample("Examples/CreatingGenerics/CreatingGenericsSoln2.kt", creatinggenericssoln2.CreatingGenericsSoln2Kt::main);
+    testExample("Examples/CreatingGenerics/CreatingGenericsSoln2.kt", creatingGenericsExercise2.CreatingGenericsSoln2Kt::main);
   }
 
   @Test
   public void testCreatingGenericsSoln3() {
-    testExample("Examples/CreatingGenerics/CreatingGenericsSoln3.kt", creatinggenericssoln3.CreatingGenericsSoln3Kt::main);
+    testExample("Examples/CreatingGenerics/CreatingGenericsSoln3.kt", creatingGenericsExercise3.CreatingGenericsSoln3Kt::main);
   }
 
   @Test
@@ -619,17 +604,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testDelegToolsSoln1() {
-    testExample("Examples/DelegationTools/DelegToolsSoln1.kt", delegtoolssoln1.DelegToolsSoln1Kt::main);
+    testExample("Examples/DelegationTools/DelegToolsSoln1.kt", propertyDelegationToolsExercise2.DelegToolsSoln1Kt::main);
   }
 
   @Test
   public void testDelegToolsSoln2() {
-    testExample("Examples/DelegationTools/DelegToolsSoln2.kt", delegtoolssoln2.DelegToolsSoln2Kt::main);
+    testExample("Examples/DelegationTools/DelegToolsSoln2.kt", propertyDelegationToolsExercise3.DelegToolsSoln2Kt::main);
   }
 
   @Test
   public void testDelegToolsSoln3() {
-    testExample("Examples/DelegationTools/DelegToolsSoln3.kt", delegtoolssoln3.DelegToolsSoln3Kt::main);
+    testExample("Examples/DelegationTools/DelegToolsSoln3.kt", propertyDelegationToolsExercise4.DelegToolsSoln3Kt::main);
   }
 
   @Test
@@ -824,17 +809,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testTask110() {
-    testExample("Examples/ExceptionHandling/Task1.kt", exceptionhandlingsoln1.Task1Kt::main);
+    testExample("Examples/ExceptionHandling/Task1.kt", exceptionHandlingExercise1.Task1Kt::main);
   }
 
   @Test
   public void testTask213() {
-    testExample("Examples/ExceptionHandling/Task2.kt", exceptionhandlingsoln2.Task2Kt::main);
+    testExample("Examples/ExceptionHandling/Task2.kt", exceptionHandlingExercise2.Task2Kt::main);
   }
 
   @Test
   public void testTask312() {
-    testExample("Examples/ExceptionHandling/Task3.kt", exceptionhandlingsoln3.Task3Kt::main);
+    testExample("Examples/ExceptionHandling/Task3.kt", exceptionHandlingExercise3.Task3Kt::main);
   }
 
   @Test
@@ -964,17 +949,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testExtensionLambdasSoln1() {
-    testExample("Examples/ExtensionLambdas/ExtensionLambdasSoln1.kt", extensionlambdasoln1.ExtensionLambdasSoln1Kt::main);
+    testExample("Examples/ExtensionLambdas/ExtensionLambdasSoln1.kt", extensionLambdasExercise1.ExtensionLambdasSoln1Kt::main);
   }
 
   @Test
   public void testExtensionLambdasSoln2() {
-    testExample("Examples/ExtensionLambdas/ExtensionLambdasSoln2.kt", extensionlambdasoln2.ExtensionLambdasSoln2Kt::main);
+    testExample("Examples/ExtensionLambdas/ExtensionLambdasSoln2.kt", extensionLambdasExercise2.ExtensionLambdasSoln2Kt::main);
   }
 
   @Test
   public void testExtensionLambdasSoln3() {
-    testExample("Examples/ExtensionLambdas/ExtensionLambdasSoln3.kt", extensionlambdasoln3.ExtensionLambdasSoln3Kt::main);
+    testExample("Examples/ExtensionLambdas/ExtensionLambdasSoln3.kt", extensionLambdasExercise3.ExtensionLambdasSoln3Kt::main);
   }
 
   @Test
@@ -1724,17 +1709,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testLateInitSoln1() {
-    testExample("Examples/LateInitialization/LateInitSoln1.kt", lateinitializationsoln1.LateInitSoln1Kt::main);
+    testExample("Examples/LateInitialization/LateInitSoln1.kt", lateInitializationExercise1.LateInitSoln1Kt::main);
   }
 
   @Test
   public void testLateInitSoln2() {
-    testExample("Examples/LateInitialization/LateInitSoln2.kt", lateinitializationsoln2.LateInitSoln2Kt::main);
+    testExample("Examples/LateInitialization/LateInitSoln2.kt", lateInitializationExercise2.LateInitSoln2Kt::main);
   }
 
   @Test
   public void testLateInitSoln3() {
-    testExample("Examples/LateInitialization/LateInitSoln3.kt", lateinitializationsoln3.LateInitSoln3Kt::main);
+    testExample("Examples/LateInitialization/LateInitSoln3.kt", lateInitializationExercise3.LateInitSoln3Kt::main);
   }
 
   @Test
@@ -1744,17 +1729,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testLazyInitSoln1() {
-    testExample("Examples/LazyInitialization/LazyInitSoln1.kt", lazyinitsoln1.LazyInitSoln1Kt::main);
+    testExample("Examples/LazyInitialization/LazyInitSoln1.kt", lazyInitializationExercise1.LazyInitSoln1Kt::main);
   }
 
   @Test
   public void testLazyInitSoln2() {
-    testExample("Examples/LazyInitialization/LazyInitSoln2.kt", lazyinitsoln2.LazyInitSoln2Kt::main);
+    testExample("Examples/LazyInitialization/LazyInitSoln2.kt", lazyInitializationExercise2.LazyInitSoln2Kt::main);
   }
 
   @Test
   public void testLazyInitSoln3() {
-    testExample("Examples/LazyInitialization/LazyInitSoln3.kt", lazyinitsoln3.LazyInitSoln3Kt::main);
+    testExample("Examples/LazyInitialization/LazyInitSoln3.kt", lazyInitializationExercise3.LazyInitSoln3Kt::main);
   }
 
   @Test
@@ -1894,17 +1879,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testLoggingSoln1() {
-    testExample("Examples/Logging/LoggingSoln1.kt", loggingsoln1.LoggingSoln1Kt::main);
+    testExample("Examples/Logging/LoggingSoln1.kt", loggingExercise1.LoggingSoln1Kt::main);
   }
 
   @Test
   public void testLoggingSoln2() {
-    testExample("Examples/Logging/LoggingSoln2.kt", loggingsoln2.LoggingSoln2Kt::main);
+    testExample("Examples/Logging/LoggingSoln2.kt", loggingExercise2.LoggingSoln2Kt::main);
   }
 
   @Test
   public void testLoggingSoln3() {
-    testExample("Examples/Logging/LoggingSoln3.kt", loggingsoln3.LoggingSoln3Kt::main);
+    testExample("Examples/Logging/LoggingSoln3.kt", loggingExercise3.LoggingSoln3Kt::main);
   }
 
   @Test
@@ -2299,17 +2284,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testNothingTypeSoln1() {
-    testExample("Examples/NothingType/NothingTypeSoln1.kt", nothingtypesoln1.NothingTypeSoln1Kt::main);
+    testExample("Examples/NothingType/NothingTypeSoln1.kt", theNothingTypeExercise1.NothingTypeSoln1Kt::main);
   }
 
   @Test
   public void testNothingTypeSoln2() {
-    testExample("Examples/NothingType/NothingTypeSoln2.kt", nothingtypesoln2.NothingTypeSoln2Kt::main);
+    testExample("Examples/NothingType/NothingTypeSoln2.kt", theNothingTypeExercise2.NothingTypeSoln2Kt::main);
   }
 
   @Test
   public void testNothingTypeSoln3() {
-    testExample("Examples/NothingType/NothingTypeSoln3.kt", nothingtypesoln3.NothingTypeSoln3Kt::main);
+    testExample("Examples/NothingType/NothingTypeSoln3.kt", theNothingTypeExercise3.NothingTypeSoln3Kt::main);
   }
 
   @Test
@@ -2674,17 +2659,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testOpOverloadingSoln1() {
-    testExample("Examples/OperatorOverloading/OpOverloadingSoln1.kt", opoverloadingsoln1.OpOverloadingSoln1Kt::main);
+    testExample("Examples/OperatorOverloading/OpOverloadingSoln1.kt", operatorOverloadingExercise1.OpOverloadingSoln1Kt::main);
   }
 
   @Test
   public void testOpOverloadingSoln2() {
-    testExample("Examples/OperatorOverloading/OpOverloadingSoln2.kt", opoverloadingsoln2.OpOverloadingSoln2Kt::main);
+    testExample("Examples/OperatorOverloading/OpOverloadingSoln2.kt", operatorOverloadingExercise2.OpOverloadingSoln2Kt::main);
   }
 
   @Test
   public void testOpOverloadingSoln3() {
-    testExample("Examples/OperatorOverloading/OpOverloadingSoln3.kt", opoverloadingsoln3.OpOverloadingSoln3Kt::main);
+    testExample("Examples/OperatorOverloading/OpOverloadingSoln3.kt", operatorOverloadingExercise3.OpOverloadingSoln3Kt::main);
   }
 
   @Test
@@ -2785,6 +2770,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask341() {
     testExample("Examples/Packages/Task3.kt", packagesExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask48() {
+    testExample("Examples/Packages/Task4.kt", packagesExercise4.Task4Kt::main);
   }
 
   @Test
@@ -2893,7 +2883,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask48() {
+  public void testTask49() {
     testExample("Examples/PropertyAccessors/Task4.kt", propertyAccessorsExercise4.Task4Kt::main);
   }
 
@@ -2939,22 +2929,22 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testPropDelegationSoln1() {
-    testExample("Examples/PropertyDelegation/PropDelegationSoln1.kt", propertydelegationsoln1.PropDelegationSoln1Kt::main);
+    testExample("Examples/PropertyDelegation/PropDelegationSoln1.kt", propertyDelegationToolsExercise1.PropDelegationSoln1Kt::main);
   }
 
   @Test
   public void testPropDelegationSoln2() {
-    testExample("Examples/PropertyDelegation/PropDelegationSoln2.kt", propertydelegationsoln2.PropDelegationSoln2Kt::main);
+    testExample("Examples/PropertyDelegation/PropDelegationSoln2.kt", propertyDelegationExercise1.PropDelegationSoln2Kt::main);
   }
 
   @Test
   public void testPropDelegationSoln3() {
-    testExample("Examples/PropertyDelegation/PropDelegationSoln3.kt", propertydelegationsoln3.PropDelegationSoln3Kt::main);
+    testExample("Examples/PropertyDelegation/PropDelegationSoln3.kt", propertyDelegationExercise2.PropDelegationSoln3Kt::main);
   }
 
   @Test
   public void testPropDelegationSoln4() {
-    testExample("Examples/PropertyDelegation/PropDelegationSoln4.kt", propertydelegationsoln4.PropDelegationSoln4Kt::main);
+    testExample("Examples/PropertyDelegation/PropDelegationSoln4.kt", propertyDelegationExercise3.PropDelegationSoln4Kt::main);
   }
 
   @Test
@@ -3008,7 +2998,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask49() {
+  public void testTask410() {
     testExample("Examples/Recursion/Task4.kt", recursionExercise4.Task4Kt::main);
   }
 
@@ -3064,17 +3054,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testResourceCleanupSoln1() {
-    testExample("Examples/ResourceCleanup/ResourceCleanupSoln1.kt", resourcecleanupsoln1.ResourceCleanupSoln1Kt::main);
+    testExample("Examples/ResourceCleanup/ResourceCleanupSoln1.kt", resourceCleanupExercise1.ResourceCleanupSoln1Kt::main);
   }
 
   @Test
   public void testResourceCleanupSoln2() {
-    testExample("Examples/ResourceCleanup/ResourceCleanupSoln2.kt", resourcecleanupsoln2.ResourceCleanupSoln2Kt::main);
+    testExample("Examples/ResourceCleanup/ResourceCleanupSoln2.kt", resourceCleanupExercise2.ResourceCleanupSoln2Kt::main);
   }
 
   @Test
   public void testResourceCleanupSoln3() {
-    testExample("Examples/ResourceCleanup/ResourceCleanupSoln3.kt", resourcecleanupsoln3.ResourceCleanupSoln3Kt::main);
+    testExample("Examples/ResourceCleanup/ResourceCleanupSoln3.kt", resourceCleanupExercise3.ResourceCleanupSoln3Kt::main);
   }
 
   @Test
@@ -3169,7 +3159,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testTask146() {
-    testExample("Examples/ScopeFunctions/Task1.kt", scopefuncsoln1.Task1Kt::main);
+    testExample("Examples/ScopeFunctions/Task1.kt", scopeFunctionsExercise1.Task1Kt::main);
   }
 
   @Test
@@ -3179,7 +3169,7 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testTask348() {
-    testExample("Examples/ScopeFunctions/Task3.kt", scopefuncsoln3.Task3Kt::main);
+    testExample("Examples/ScopeFunctions/Task3.kt", scopeFunctionsExercise3.Task3Kt::main);
   }
 
   @Test
@@ -3443,7 +3433,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask410() {
+  public void testTask411() {
     testExample("Examples/Summary1/Task4.kt", summaryIExercise4.Task4Kt::main);
   }
 
@@ -3583,7 +3573,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask411() {
+  public void testTask412() {
     testExample("Examples/Summary2/Task4.kt", summaryIIExercise4.Task4Kt::main);
   }
 
@@ -3724,22 +3714,22 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testTypeCheckingSoln1() {
-    testExample("Examples/TypeChecking/TypeCheckingSoln1.kt", typecheckingsoln1.TypeCheckingSoln1Kt::main);
+    testExample("Examples/TypeChecking/TypeCheckingSoln1.kt", typeCheckingExercise1.TypeCheckingSoln1Kt::main);
   }
 
   @Test
   public void testTypeCheckingSoln2a() {
-    testExample("Examples/TypeChecking/TypeCheckingSoln2a.kt", typecheckingsoln2a.TypeCheckingSoln2aKt::main);
+    testExample("Examples/TypeChecking/TypeCheckingSoln2a.kt", typeCheckingExercise2a.TypeCheckingSoln2aKt::main);
   }
 
   @Test
   public void testTypeCheckingSoln2b() {
-    testExample("Examples/TypeChecking/TypeCheckingSoln2b.kt", typecheckingsoln2b.TypeCheckingSoln2bKt::main);
+    testExample("Examples/TypeChecking/TypeCheckingSoln2b.kt", typeCheckingExercise2b.TypeCheckingSoln2bKt::main);
   }
 
   @Test
   public void testTypeCheckingSoln3() {
-    testExample("Examples/TypeChecking/TypeCheckingSoln3.kt", typecheckingsoln3.TypeCheckingSoln3Kt::main);
+    testExample("Examples/TypeChecking/TypeCheckingSoln3.kt", typeCheckingExercise3.TypeCheckingSoln3Kt::main);
   }
 
   @Test
@@ -3829,17 +3819,17 @@ public class TestExamples extends AbstractTestExamples {
 
   @Test
   public void testUsingOperatorsSoln1() {
-    testExample("Examples/UsingOperators/UsingOperatorsSoln1.kt", usingoperatorssoln1.UsingOperatorsSoln1Kt::main);
+    testExample("Examples/UsingOperators/UsingOperatorsSoln1.kt", usingOperatorsExercise1.UsingOperatorsSoln1Kt::main);
   }
 
   @Test
   public void testUsingOperatorsSoln2() {
-    testExample("Examples/UsingOperators/UsingOperatorsSoln2.kt", usingoperatorssoln2.UsingOperatorsSoln2Kt::main);
+    testExample("Examples/UsingOperators/UsingOperatorsSoln2.kt", usingOperatorsExercise2.UsingOperatorsSoln2Kt::main);
   }
 
   @Test
   public void testUsingOperatorsSoln3() {
-    testExample("Examples/UsingOperators/UsingOperatorsSoln3.kt", usingoperatorssoln3.UsingOperatorsSoln3Kt::main);
+    testExample("Examples/UsingOperators/UsingOperatorsSoln3.kt", usingOperatorsExercise3.UsingOperatorsSoln3Kt::main);
   }
 
   @Test
@@ -3860,6 +3850,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask356() {
     testExample("Examples/VarAndVal/Task3.kt", varAndValExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask413() {
+    testExample("Examples/VarAndVal/Task4.kt", varAndValExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask53() {
+    testExample("Examples/VarAndVal/Task5.kt", varAndValExercise5.Task5Kt::main);
   }
 
   @Test
@@ -3908,7 +3908,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask412() {
+  public void testTask414() {
     testExample("Examples/Varargs/Task4.kt", variableArgumentListsExercise4.Task4Kt::main);
   }
 

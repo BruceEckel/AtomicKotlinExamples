@@ -1,8 +1,7 @@
 // CreatingGenerics/CreatingGenericsSoln3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package creatinggenericssoln3
+package creatingGenericsExercise3
 import variance.Cat
-import variance.Dog
 
 interface InBox<in T> {
   fun put(item: T)
@@ -22,8 +21,9 @@ class Box<T>(private var contents: T) :
 
 fun main() {
   val catBox: Box<Cat> = Box(Cat())
-  val anyBox: OutBox<Any> = catBox
-  val x: Any = catBox.get()
-  val ic: InBox<Cat> = Box<Any>(Dog())
-  ic.put(Cat())
+  val outBoxAny: OutBox<Any> = catBox
+  val a: Any = outBoxAny.get()
+  val inBoxAny: InBox<Any> = Box(217)
+  val inBoxCat: InBox<Any> = inBoxAny
+  inBoxCat.put(Cat())
 }

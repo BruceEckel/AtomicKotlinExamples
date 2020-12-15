@@ -1,6 +1,6 @@
 // LateInitialization/LateInitSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package lateinitializationsoln2
+package lateInitializationExercise2
 import atomictest.eq
 
 class A {

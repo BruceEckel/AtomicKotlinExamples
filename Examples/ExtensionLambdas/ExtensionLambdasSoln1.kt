@@ -1,6 +1,6 @@
 // ExtensionLambdas/ExtensionLambdasSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package extensionlambdasoln1
+package extensionLambdasExercise1
 import atomictest.eq
 
 fun createString(

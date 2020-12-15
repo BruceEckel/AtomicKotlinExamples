@@ -345,22 +345,22 @@ task CharRange(type: JavaExec) {
 
 task CheckInstructionsSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'checkinstructionssoln1.CheckInstructionsSoln1Kt'
+    main = 'checkInstructionsExercise1.CheckInstructionsSoln1Kt'
 }
 
 task CheckInstructionsSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'checkinstructionssoln2.CheckInstructionsSoln2Kt'
+    main = 'checkInstructionsExercise2.CheckInstructionsSoln2Kt'
 }
 
 task CheckInstructionsSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'checkinstructionssoln3.CheckInstructionsSoln3Kt'
+    main = 'checkInstructionsExercise3.CheckInstructionsSoln3Kt'
 }
 
 task CheckInstructionsSoln4(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'checkinstructionssoln4.CheckInstructionsSoln4Kt'
+    main = 'checkInstructionsExercise4.CheckInstructionsSoln4Kt'
 }
 
 task CheckObject(type: JavaExec) {
@@ -570,17 +570,17 @@ task CreateString2(type: JavaExec) {
 
 task CreatingGenericsSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'creatinggenericssoln1.CreatingGenericsSoln1Kt'
+    main = 'creatingGenericsExercise1.CreatingGenericsSoln1Kt'
 }
 
 task CreatingGenericsSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'creatinggenericssoln2.CreatingGenericsSoln2Kt'
+    main = 'creatingGenericsExercise2.CreatingGenericsSoln2Kt'
 }
 
 task CreatingGenericsSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'creatinggenericssoln3.CreatingGenericsSoln3Kt'
+    main = 'creatingGenericsExercise3.CreatingGenericsSoln3Kt'
 }
 
 task CreatingLists(type: JavaExec) {
@@ -655,17 +655,17 @@ task DefiningRanges(type: JavaExec) {
 
 task DelegToolsSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'delegtoolssoln1.DelegToolsSoln1Kt'
+    main = 'propertyDelegationToolsExercise2.DelegToolsSoln1Kt'
 }
 
 task DelegToolsSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'delegtoolssoln2.DelegToolsSoln2Kt'
+    main = 'propertyDelegationToolsExercise3.DelegToolsSoln2Kt'
 }
 
 task DelegToolsSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'delegtoolssoln3.DelegToolsSoln3Kt'
+    main = 'propertyDelegationToolsExercise4.DelegToolsSoln3Kt'
 }
 
 task DelegateAndExtend(type: JavaExec) {
@@ -865,17 +865,17 @@ task ExtensionFuncs(type: JavaExec) {
 
 task ExtensionLambdasSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'extensionlambdasoln1.ExtensionLambdasSoln1Kt'
+    main = 'extensionLambdasExercise1.ExtensionLambdasSoln1Kt'
 }
 
 task ExtensionLambdasSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'extensionlambdasoln2.ExtensionLambdasSoln2Kt'
+    main = 'extensionLambdasExercise2.ExtensionLambdasSoln2Kt'
 }
 
 task ExtensionLambdasSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'extensionlambdasoln3.ExtensionLambdasSoln3Kt'
+    main = 'extensionLambdasExercise3.ExtensionLambdasSoln3Kt'
 }
 
 task ExtensionPolymorphism(type: JavaExec) {
@@ -1480,32 +1480,32 @@ task LambdaTypeInference(type: JavaExec) {
 
 task LateInitSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lateinitializationsoln1.LateInitSoln1Kt'
+    main = 'lateInitializationExercise1.LateInitSoln1Kt'
 }
 
 task LateInitSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lateinitializationsoln2.LateInitSoln2Kt'
+    main = 'lateInitializationExercise2.LateInitSoln2Kt'
 }
 
 task LateInitSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lateinitializationsoln3.LateInitSoln3Kt'
+    main = 'lateInitializationExercise3.LateInitSoln3Kt'
 }
 
 task LazyInitSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lazyinitsoln1.LazyInitSoln1Kt'
+    main = 'lazyInitializationExercise1.LazyInitSoln1Kt'
 }
 
 task LazyInitSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lazyinitsoln2.LazyInitSoln2Kt'
+    main = 'lazyInitializationExercise2.LazyInitSoln2Kt'
 }
 
 task LazyInitSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'lazyinitsoln3.LazyInitSoln3Kt'
+    main = 'lazyInitializationExercise3.LazyInitSoln3Kt'
 }
 
 task LazyInt(type: JavaExec) {
@@ -1605,17 +1605,17 @@ task LogChanges(type: JavaExec) {
 
 task LoggingSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'loggingsoln1.LoggingSoln1Kt'
+    main = 'loggingExercise1.LoggingSoln1Kt'
 }
 
 task LoggingSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'loggingsoln2.LoggingSoln2Kt'
+    main = 'loggingExercise2.LoggingSoln2Kt'
 }
 
 task LoggingSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'loggingsoln3.LoggingSoln3Kt'
+    main = 'loggingExercise3.LoggingSoln3Kt'
 }
 
 task LongConstants(type: JavaExec) {
@@ -1875,17 +1875,17 @@ task NonNullAssertCall(type: JavaExec) {
 
 task NothingTypeSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nothingtypesoln1.NothingTypeSoln1Kt'
+    main = 'theNothingTypeExercise1.NothingTypeSoln1Kt'
 }
 
 task NothingTypeSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nothingtypesoln2.NothingTypeSoln2Kt'
+    main = 'theNothingTypeExercise2.NothingTypeSoln2Kt'
 }
 
 task NothingTypeSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'nothingtypesoln3.NothingTypeSoln3Kt'
+    main = 'theNothingTypeExercise3.NothingTypeSoln3Kt'
 }
 
 task NullGnome(type: JavaExec) {
@@ -2020,17 +2020,17 @@ task OpOrderParens(type: JavaExec) {
 
 task OpOverloadingSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'opoverloadingsoln1.OpOverloadingSoln1Kt'
+    main = 'operatorOverloadingExercise1.OpOverloadingSoln1Kt'
 }
 
 task OpOverloadingSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'opoverloadingsoln2.OpOverloadingSoln2Kt'
+    main = 'operatorOverloadingExercise2.OpOverloadingSoln2Kt'
 }
 
 task OpOverloadingSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'opoverloadingsoln3.OpOverloadingSoln3Kt'
+    main = 'operatorOverloadingExercise3.OpOverloadingSoln3Kt'
 }
 
 task Open1(type: JavaExec) {
@@ -2150,22 +2150,22 @@ task Predicates(type: JavaExec) {
 
 task PropDelegationSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertydelegationsoln1.PropDelegationSoln1Kt'
+    main = 'propertyDelegationToolsExercise1.PropDelegationSoln1Kt'
 }
 
 task PropDelegationSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertydelegationsoln2.PropDelegationSoln2Kt'
+    main = 'propertyDelegationExercise1.PropDelegationSoln2Kt'
 }
 
 task PropDelegationSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertydelegationsoln3.PropDelegationSoln3Kt'
+    main = 'propertyDelegationExercise2.PropDelegationSoln3Kt'
 }
 
 task PropDelegationSoln4(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'propertydelegationsoln4.PropDelegationSoln4Kt'
+    main = 'propertyDelegationExercise3.PropDelegationSoln4Kt'
 }
 
 task PropertyAccessor(type: JavaExec) {
@@ -2305,17 +2305,17 @@ task RequireNotNull(type: JavaExec) {
 
 task ResourceCleanupSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'resourcecleanupsoln1.ResourceCleanupSoln1Kt'
+    main = 'resourceCleanupExercise1.ResourceCleanupSoln1Kt'
 }
 
 task ResourceCleanupSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'resourcecleanupsoln2.ResourceCleanupSoln2Kt'
+    main = 'resourceCleanupExercise2.ResourceCleanupSoln2Kt'
 }
 
 task ResourceCleanupSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'resourcecleanupsoln3.ResourceCleanupSoln3Kt'
+    main = 'resourceCleanupExercise3.ResourceCleanupSoln3Kt'
 }
 
 task ReturnFromFun(type: JavaExec) {
@@ -2613,29 +2613,14 @@ task Task10(type: JavaExec) {
     main = 'summaryIExercise10.Task10Kt'
 }
 
-task Task1StarterCode(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'compositionExercise1StarterCode.Task1StarterCodeKt'
-}
-
 task Task2(type: JavaExec) {
     classpath kotlinClassPath
     main = 'whenExpressionsExercise2.Task2Kt'
 }
 
-task Task2StarterCode(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'compositionExercise2StarterCode.Task2StarterCodeKt'
-}
-
 task Task3(type: JavaExec) {
     classpath kotlinClassPath
     main = 'whenExpressionsExercise3.Task3Kt'
-}
-
-task Task3StarterCode(type: JavaExec) {
-    classpath kotlinClassPath
-    main = 'abstractClassesExercise3StarterCode.Task3StarterCodeKt'
 }
 
 task Task4(type: JavaExec) {
@@ -2645,7 +2630,7 @@ task Task4(type: JavaExec) {
 
 task Task5(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'summaryIIExercise5.Task5Kt'
+    main = 'varAndValExercise5.Task5Kt'
 }
 
 task Task6(type: JavaExec) {
@@ -2810,22 +2795,22 @@ task TypeCheck3(type: JavaExec) {
 
 task TypeCheckingSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'typecheckingsoln1.TypeCheckingSoln1Kt'
+    main = 'typeCheckingExercise1.TypeCheckingSoln1Kt'
 }
 
 task TypeCheckingSoln2a(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'typecheckingsoln2a.TypeCheckingSoln2aKt'
+    main = 'typeCheckingExercise2a.TypeCheckingSoln2aKt'
 }
 
 task TypeCheckingSoln2b(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'typecheckingsoln2b.TypeCheckingSoln2bKt'
+    main = 'typeCheckingExercise2b.TypeCheckingSoln2bKt'
 }
 
 task TypeCheckingSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'typecheckingsoln3.TypeCheckingSoln3Kt'
+    main = 'typeCheckingExercise3.TypeCheckingSoln3Kt'
 }
 
 task Types(type: JavaExec) {
@@ -2920,17 +2905,17 @@ task UsingLongs(type: JavaExec) {
 
 task UsingOperatorsSoln1(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingoperatorssoln1.UsingOperatorsSoln1Kt'
+    main = 'usingOperatorsExercise1.UsingOperatorsSoln1Kt'
 }
 
 task UsingOperatorsSoln2(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingoperatorssoln2.UsingOperatorsSoln2Kt'
+    main = 'usingOperatorsExercise2.UsingOperatorsSoln2Kt'
 }
 
 task UsingOperatorsSoln3(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'usingoperatorssoln3.UsingOperatorsSoln3Kt'
+    main = 'usingOperatorsExercise3.UsingOperatorsSoln3Kt'
 }
 
 task UsingTrace(type: JavaExec) {
@@ -3585,11 +3570,8 @@ task run (dependsOn: [
     'TakeOrDrop',
     'Task1',
     'Task10',
-    'Task1StarterCode',
     'Task2',
-    'Task2StarterCode',
     'Task3',
-    'Task3StarterCode',
     'Task4',
     'Task5',
     'Task6',

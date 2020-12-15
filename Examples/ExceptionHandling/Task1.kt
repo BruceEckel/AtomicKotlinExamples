@@ -1,8 +1,8 @@
 // ExceptionHandling/Task1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package exceptionhandlingsoln1
+package exceptionHandlingExercise1
 import atomictest.trace
-import kotlin.random.Random             // STARTER CODE
+import kotlin.random.Random
 
 data class Hamster(val name: String)
 
@@ -22,8 +22,8 @@ class NoSuchHamsterException(val id: String) :
 class OutOfWaterException :
   HamsterCageException("Cage out of water")
 
-class HamsterCage(val capacity: Int) {   // STARTER CODE
-  private val rand = Random(47)          // STARTER CODE
+class HamsterCage(val capacity: Int) {
+  private val rand = Random(47)
   private val cage = HashSet<Hamster>()
   fun add(h: Hamster) {
     if (cage.size >= capacity)
@@ -40,10 +40,10 @@ class HamsterCage(val capacity: Int) {   // STARTER CODE
   }
 }
 
-val hamsters = listOf(                 // STARTER CODE
-  Hamster("Sally"), Hamster("Ralph"),  // STARTER CODE
-  Hamster("Bob"), Hamster("Sergio"),   // STARTER CODE
-  Hamster("Allison"), Hamster("Jane")) // STARTER CODE
+val hamsters = listOf(
+  Hamster("Sally"), Hamster("Ralph"),
+  Hamster("Bob"), Hamster("Sergio"),
+  Hamster("Allison"), Hamster("Jane"))
 
 fun test(hc: HamsterCage) {
   try {
@@ -67,7 +67,6 @@ fun test(hc: HamsterCage) {
   }
 }
 
-// STARTER CODE:
 fun main() {
   test(HamsterCage(3))
   trace eq """

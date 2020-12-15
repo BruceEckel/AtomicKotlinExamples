@@ -1,6 +1,6 @@
 // TypeChecking/TypeCheckingSoln2b.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package typecheckingsoln2b
+package typeCheckingExercise2b
 import atomictest.eq
 import typechecking.name
 

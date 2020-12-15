@@ -1,6 +1,6 @@
 // ExceptionHandling/Task2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package exceptionhandlingsoln2
+package exceptionHandlingExercise2
 import atomictest.trace
 
 open class NumberFail : Exception()
@@ -26,9 +26,6 @@ fun convertNumber(s: String): Int =
 
 fun embedNumber(n: Int) = "AbCdE${n}fGhIj"
 
-// All up to here is STARTER CODE
-// The learner defines these two functions:
-
 fun justFail(s: String) =
   try {
     trace(embedNumber(
@@ -52,8 +49,6 @@ fun recover(s: String) {
   trace(embedNumber(n))
 }
 
-// From here on is STARTER CODE:
-
 fun test(s: String) {
   trace("justFail($s)")
   justFail(s)
@@ -72,7 +67,7 @@ fun main() {
     recover(The13thFloor9)
     AbCdE13fGhIj
     justFail(NoDigitsHere)
-    exceptionhandlingsoln2.NoNumber
+    exceptionHandlingExercise2.NoNumber
     recover(NoDigitsHere)
     AbCdE0fGhIj
     justFail(negative-11int)
@@ -80,7 +75,7 @@ fun main() {
     recover(negative-11int)
     AbCdE-11fGhIj
     justFail(A float: 3.14159 (pi))
-    exceptionhandlingsoln2.BadNumber
+    exceptionHandlingExercise2.BadNumber
     recover(A float: 3.14159 (pi))
     AbCdE-1fGhIj
   """

@@ -1,8 +1,8 @@
 // ExceptionHandling/Task3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package exceptionhandlingsoln3
+package exceptionHandlingExercise3
 import atomictest.trace
-import exceptionhandlingsoln3.Status.*
+import exceptionHandlingExercise3.Status.*
 
 open class Except : Exception() {
   override fun toString() =
@@ -55,7 +55,6 @@ fun transact(level: Int): Status {
     return Failed
   }
   fun transfer(net: NetConnection): Status {
-// Everything up to here is STARTER CODE
     try {
       net.open(2, level)
       db.write(net.read(), 3, level)
@@ -91,7 +90,6 @@ fun transact(level: Int): Status {
   return Success
 }
 
-// All of main() is STARTER CODE:
 fun main() {
   for (level in 0..5)
     try {

@@ -1,5 +1,5 @@
 // Tests/unittesting/UnitTestingSoln3.kt
-package unittesting
+package unitTestingExercise3
 import classdelegation.SpaceShipControls
 import kotlin.test.*
 

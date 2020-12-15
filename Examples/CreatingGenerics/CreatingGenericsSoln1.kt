@@ -1,6 +1,6 @@
 // CreatingGenerics/CreatingGenericsSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package creatinggenericssoln1
+package creatingGenericsExercise1
 import atomictest.eq
 
 fun interface Items<T> {

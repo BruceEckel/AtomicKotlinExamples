@@ -18,7 +18,7 @@ class PetCreator {
   }
   fun cat(): Pet {
     val emit = "Meow"
-    return object: Pet {
+    return object : Pet {
       override fun speak() = emit + home()
     }
   }

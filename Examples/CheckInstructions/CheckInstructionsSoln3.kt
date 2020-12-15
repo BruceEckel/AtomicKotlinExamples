@@ -1,6 +1,6 @@
 // CheckInstructions/CheckInstructionsSoln3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package checkinstructionssoln3
+package checkInstructionsExercise3
 import atomictest.*
 
 class Level(

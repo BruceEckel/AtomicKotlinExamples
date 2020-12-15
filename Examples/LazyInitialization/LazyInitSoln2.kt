@@ -1,6 +1,6 @@
 // LazyInitialization/LazyInitSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package lazyinitsoln2
+package lazyInitializationExercise2
 import atomictest.*
 
 class Outer {

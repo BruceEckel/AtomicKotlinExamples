@@ -1,6 +1,6 @@
 // DelegationTools/DelegToolsSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package delegtoolssoln2
+package propertyDelegationToolsExercise3
 import kotlin.properties.Delegates.observable
 import kotlin.reflect.KProperty
 import atomictest.*

@@ -1,6 +1,6 @@
 // ExtensionLambdas/ExtensionLambdasSoln3.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package extensionlambdasoln3
+package extensionLambdasExercise3
 import atomictest.eq
 
 open class Cleanser : ArrayList<String>() {

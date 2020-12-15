@@ -3,7 +3,6 @@
 package compositionExercise3
 import atomictest.*
 
-@OptIn(ExperimentalStdlibApi::class)
 class Queue<E> {
   private val arrayDeque = ArrayDeque<E>()
   fun put(e: E) = arrayDeque.addLast(e)

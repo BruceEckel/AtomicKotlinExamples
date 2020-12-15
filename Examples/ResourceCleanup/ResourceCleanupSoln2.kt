@@ -1,6 +1,6 @@
 // ResourceCleanup/ResourceCleanupSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package resourcecleanupsoln2
+package resourceCleanupExercise2
 import atomictest.trace
 
 class Cleanup : AutoCloseable {

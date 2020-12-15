@@ -1,6 +1,6 @@
 // OperatorOverloading/OpOverloadingSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package opoverloadingsoln1
+package operatorOverloadingExercise1
 import atomictest.*
 
 class WrapRange(

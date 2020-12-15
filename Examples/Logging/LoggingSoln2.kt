@@ -1,9 +1,9 @@
 // Logging/LoggingSoln2.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package loggingsoln2
+package loggingExercise2
 import atomictest.eq
 import atomiclog.Logger
-import loggingsoln2.Status.*
+import loggingExercise2.Status.*
 
 open class Except : Exception() {
   override fun toString() =
@@ -42,8 +42,6 @@ class NetConnection(val url: String) {
 }
 
 enum class Status { Success, Failed }
-
-// Everything up to here is STARTER CODE
 
 private val logger = Logger("LoggingSoln2.txt")
 
@@ -91,8 +89,6 @@ fun transact(level: Int): Status {
   }
   return Success
 }
-
-// From here on is STARTER CODE
 
 fun main() {
   for (level in 0..5)

@@ -1,6 +1,6 @@
 // NothingType/NothingTypeSoln1.kt
 // (c)2020 Mindview LLC. See Copyright.txt for permissions.
-package nothingtypesoln1
+package theNothingTypeExercise1
 import atomictest.*
 
 class Failure(msg: String) : Exception(msg)
