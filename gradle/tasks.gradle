@@ -2348,6 +2348,11 @@ task RunningFold(type: JavaExec) {
     main = 'RunningFoldKt'
 }
 
+task SAMConversion(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'interfaces.SAMConversionKt'
+}
+
 task SAMImplementation(type: JavaExec) {
     classpath kotlinClassPath
     main = 'interfaces.SAMImplementationKt'
@@ -3512,6 +3517,7 @@ task run (dependsOn: [
     'ReturningFunc',
     'RigidHolder',
     'RunningFold',
+    'SAMConversion',
     'SAMImplementation',
     'Safe',
     'SafeCall',

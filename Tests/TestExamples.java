@@ -1498,6 +1498,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testSAMConversion() {
+    testExample("Examples/Interfaces/SAMConversion.kt", interfaces.SAMConversionKt::main);
+  }
+
+  @Test
   public void testSAMImplementation() {
     testExample("Examples/Interfaces/SAMImplementation.kt", interfaces.SAMImplementationKt::main);
   }
