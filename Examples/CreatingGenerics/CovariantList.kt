@@ -10,5 +10,5 @@ fun main() {
   mutablePetList.add(Dog())
   // Type mismatch:
   // mutablePetList =
-  //    mutableListOf<Cat>(Cat())     // [1]
+  //    mutableListOf<Cat>(Cat())  // [1]
 }

@@ -5,7 +5,7 @@ import atomictest.eq
 import typechecking.name
 
 interface Shape {
-  fun draw() = "${this.name}: Draw"
+  fun draw() = "$name: Draw"
   fun rotate() = ""
 }
 

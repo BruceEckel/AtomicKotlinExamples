@@ -4,16 +4,16 @@ package safecalls
 import atomictest.*
 
 fun String.echo() {
-  trace(this.toUpperCase())
+  trace(toUpperCase())
   trace(this)
-  trace(this.toLowerCase())
+  trace(toLowerCase())
 }
 
 fun main() {
   val s1: String? = "Howdy!"
-  s1?.echo()                     // [1]
+  s1?.echo()                  // [1]
   val s2: String? = null
-  s2?.echo()                     // [2]
+  s2?.echo()                  // [2]
   trace eq """
     HOWDY!
     Howdy!

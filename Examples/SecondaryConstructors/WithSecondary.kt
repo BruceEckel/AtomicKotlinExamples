@@ -11,12 +11,12 @@ class WithSecondary(i: Int) {
     trace("Secondary: '$c'")
   }
   constructor(s: String) :
-    this(s.first()) {                // [1]
+    this(s.first()) {             // [1]
     trace("Secondary: \"$s\"")
   }
   /* Doesn't compile without a call
      to the primary constructor:
-  constructor(f: Float) {            // [2]
+  constructor(f: Float) {         // [2]
     trace("Secondary: $f")
   }
   */

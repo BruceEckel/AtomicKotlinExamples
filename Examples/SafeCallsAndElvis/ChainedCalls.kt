@@ -10,13 +10,13 @@ class Person(
 
 fun main() {
   val alice = Person("Alice")
-  alice.friend?.friend?.name eq null  // [1]
+  alice.friend?.friend?.name eq null   // [1]
 
   val bob = Person("Bob")
   val charlie = Person("Charlie", bob)
   bob.friend = charlie
-  bob.friend?.friend?.name eq "Bob"   // [2]
+  bob.friend?.friend?.name eq "Bob"    // [2]
 
   (alice.friend?.friend?.name
-    ?: "Unknown") eq "Unknown"        // [3]
+    ?: "Unknown") eq "Unknown"         // [3]
 }

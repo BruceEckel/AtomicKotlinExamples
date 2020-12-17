@@ -4,8 +4,8 @@ package typechecking
 import atomictest.eq
 
 interface Insect {
-  fun walk() = "${this.name}: walk"
-  fun fly() = "${this.name}: fly"
+  fun walk() = "$name: walk"
+  fun fly() = "$name: fly"
 }
 
 class HouseFly : Insect
@@ -17,19 +17,19 @@ class Flea : Insect {
 }
 
 fun Insect.basic() =
-  this.walk() + " " +
+  walk() + " " +
   if (this is Flea)
-    this.crawl()
+    crawl()
   else
-    this.fly()
+    fly()
 
 interface SwimmingInsect: Insect {
-  fun swim() = "${this.name}: swim"
+  fun swim() = "$name: swim"
 }
 
 interface WaterWalker: Insect {
   fun walkWater() =
-    "${this.name}: walk on water"
+    "$name: walk on water"
 }
 
 class WaterBeetle : SwimmingInsect
@@ -39,9 +39,9 @@ class WhirligigBeetle :
 
 fun Insect.water() =
   when(this) {
-    is SwimmingInsect -> this.swim()
-    is WaterWalker -> this.walkWater()
-    else -> "${this.name}: drown"
+    is SwimmingInsect -> swim()
+    is WaterWalker -> walkWater()
+    else -> "$name: drown"
   }
 
 fun main() {

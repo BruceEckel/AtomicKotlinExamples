@@ -5,7 +5,7 @@ import atomictest.eq
 import typechecking.name
 
 sealed class Shape {
-  fun draw() = "${this.name}: Draw"
+  fun draw() = "$name: Draw"
 }
 
 class Circle : Shape()

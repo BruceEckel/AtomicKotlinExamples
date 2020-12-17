@@ -14,7 +14,7 @@ fun fibonacci(n: Int): BigInteger {
   ): BigInteger {
     if (n == 0) return current
     return fibonacci(
-      n - 1, next, current + next)      // [1]
+      n - 1, next, current + next)   // [1]
   }
   return fibonacci(n, ZERO, ONE)
 }

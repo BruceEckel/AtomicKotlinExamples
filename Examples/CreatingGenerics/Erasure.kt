@@ -10,5 +10,5 @@ fun main() {
 }
 
 fun useList(list: List<Any>) {
-  // if (list is List<String>) {}   // [1]
+  // if (list is List<String>) {}  // [1]
 }

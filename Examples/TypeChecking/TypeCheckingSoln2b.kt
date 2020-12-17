@@ -6,7 +6,7 @@ import typechecking.name
 
 interface BeverageContainer {
   fun open(): String
-  fun pour() = "${this.name}: Pour"
+  fun pour() = "$name: Pour"
   fun recycle(): String
 }
 

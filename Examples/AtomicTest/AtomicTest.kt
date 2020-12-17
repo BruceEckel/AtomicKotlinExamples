@@ -6,14 +6,14 @@ import kotlin.reflect.KClass
 
 const val ERROR_TAG = "[Error]: "
 
-private fun <L, R> runTest(
+private fun <L, R> test(
   actual: L,
   expected: R,
   checkEquals: Boolean = true,
-  test: () -> Boolean
+  predicate: () -> Boolean
 ) {
   println(actual)
-  if (!test()) {
+  if (!predicate()) {
     print(ERROR_TAG)
     println("$actual " +
       (if (checkEquals) "!=" else "==") +
@@ -25,9 +25,9 @@ private fun <L, R> runTest(
  * Compares the string representation
  * of this object with the string `rval`.
  */
-infix fun <T : Any> T.eq(rval: String) {
-  runTest(this, rval) {
-    this.toString().trim() == rval.trimIndent()
+infix fun Any.eq(rval: String) {
+  test(this, rval) {
+    toString().trim() == rval.trimIndent()
   }
 }
 
@@ -35,7 +35,7 @@ infix fun <T : Any> T.eq(rval: String) {
  * Verifies this object is equal to `rval`.
  */
 infix fun <T> T.eq(rval: T) {
-  runTest(this, rval) {
+  test(this, rval) {
     this == rval
   }
 }
@@ -44,7 +44,7 @@ infix fun <T> T.eq(rval: T) {
  * Verifies this object is != `rval`.
  */
 infix fun <T> T.neq(rval: T) {
-  runTest(this, rval, checkEquals = false) {
+  test(this, rval, checkEquals = false) {
     this != rval
   }
 }
@@ -54,7 +54,7 @@ infix fun <T> T.neq(rval: T) {
  * to `rval` within a positive delta.
  */
 infix fun Double.eq(rval: Double) {
-  runTest(this, rval) {
+  test(this, rval) {
     abs(this - rval) < 0.0000001
   }
 }
@@ -122,7 +122,7 @@ object trace {
     val trace = trc.joinToString("\n")
     val expected = multiline.trimIndent()
       .replace("\n", " ")
-    runTest(trace, multiline) {
+    test(trace, multiline) {
       trace.replace("\n", " ") == expected
     }
     trc.clear()

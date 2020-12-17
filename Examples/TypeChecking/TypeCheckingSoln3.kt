@@ -5,8 +5,8 @@ import atomictest.eq
 import typechecking.name
 
 sealed class Insect {
-  open fun walk() = "${this.name}: walk"
-  open fun fly() = "${this.name}: fly"
+  open fun walk() = "$name: walk"
+  open fun fly() = "$name: fly"
 }
 
 class HouseFly : Insect()
@@ -18,19 +18,19 @@ class Flea : Insect() {
 }
 
 fun Insect.basic() =
-  this.walk() + " " +
+  walk() + " " +
     when(this) {
-      is Flea -> this.crawl()
-      else -> this.fly()
+      is Flea -> crawl()
+      else -> fly()
     }
 
 interface SwimmingInsect {
-  fun swim() = "${this.name}: swim"
+  fun swim() = "$name: swim"
 }
 
 interface WaterWalker {
   fun walkWater() =
-    "${this.name}: walk on water"
+    "$name: walk on water"
 }
 
 class WaterBeetle : Insect(), SwimmingInsect
@@ -40,9 +40,9 @@ class WhirligigBeetle : Insect(),
 
 fun Insect.water() =
   when(this) {
-    is SwimmingInsect -> this.swim()
-    is WaterWalker -> this.walkWater()
-    else -> "${this.name}: drown"
+    is SwimmingInsect -> swim()
+    is WaterWalker -> walkWater()
+    else -> "$name: drown"
   }
 
 fun main() {

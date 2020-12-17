@@ -7,11 +7,11 @@ class Default {
   var i: Int = 0
     get() {
       trace("get()")
-      return field         // [1]
+      return field       // [1]
     }
     set(value) {
       trace("set($value)")
-      field = value        // [2]
+      field = value      // [2]
     }
 }
 

@@ -7,7 +7,7 @@ fun <T, R : Any> Iterable<T>.mapIndexedNotNull(
   transform: (Int, T) -> R?
 ): List<R> {
   val result = mutableListOf<R>()
-  for ((index, e) in this.withIndex()) {
+  for ((index, e) in withIndex()) {
     val transformed = transform(index, e)
     if (transformed != null) {
       result += transformed

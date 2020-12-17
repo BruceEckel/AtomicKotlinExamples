@@ -14,7 +14,7 @@ fun Int.square(): Int {
 }
 
 fun Int.lessThanTen(): Boolean {
-  trace("${this}.lessThanTen()")
+  trace("$this.lessThanTen()")
   return this < 10
 }
 

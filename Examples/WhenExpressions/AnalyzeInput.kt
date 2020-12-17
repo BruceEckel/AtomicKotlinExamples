@@ -20,16 +20,16 @@ class Coordinates {
 fun processInputs(inputs: List<String>) {
   val coordinates = Coordinates()
   for (input in inputs) {
-    when (input) {                     // [1]
-      "up", "u" -> coordinates.y--     // [2]
+    when (input) {                   // [1]
+      "up", "u" -> coordinates.y--   // [2]
       "down", "d" -> coordinates.y++
       "left", "l" -> coordinates.x--
-      "right", "r" -> {                // [3]
+      "right", "r" -> {              // [3]
         trace("Moving right")
         coordinates.x++
       }
-      "nowhere" -> {}                  // [4]
-      "exit" -> return                 // [5]
+      "nowhere" -> {}                // [4]
+      "exit" -> return               // [5]
       else -> trace("bad input: $input")
     }
   }

@@ -33,17 +33,17 @@ class ConcreteImplementation
 fun basicGenerics() {
   gFunction("Yellow")
   gFunction(1)
-  gFunction(Dog()).bark()             // [1]
+  gFunction(Dog()).bark()            // [1]
   gFunction<Dog>(Dog()).bark()
 
   GClass("Cyan").f()
   GClass(11).f()
-  GClass(Dog()).f().bark()            // [2]
+  GClass(Dog()).f().bark()           // [2]
   GClass<Dog>(Dog()).f().bark()
 
   GMemberFunction().f("Amber")
   GMemberFunction().f(111)
-  GMemberFunction().f(Dog()).bark()   // [3]
+  GMemberFunction().f(Dog()).bark()  // [3]
   GMemberFunction().f<Dog>(Dog()).bark()
 
   GImplementation("Cyan").f()

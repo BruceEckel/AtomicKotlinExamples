@@ -27,7 +27,7 @@ class Temperature {
 }
 
 fun main() {
-  val temp = Temperature()     // [1]
+  val temp = Temperature()   // [1]
   temp.setFahrenheit(98.6)
   temp.getFahrenheit() eq 98.6
   temp.getCelsius() eq 37.0

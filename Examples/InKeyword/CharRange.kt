@@ -4,7 +4,7 @@
 fun isDigit(ch: Char) = ch in '0'..'9'
 
 fun notDigit(ch: Char) =
-  ch !in '0'..'9'                // [1]
+  ch !in '0'..'9'               // [1]
 
 fun main() {
   println(isDigit('a'))
