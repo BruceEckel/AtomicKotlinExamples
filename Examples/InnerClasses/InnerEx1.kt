@@ -7,7 +7,7 @@ fun interface Pet {
   fun speak(): String
 }
 
-class PetCreator {
+object CreatePet {
   fun home() = " home!"
   fun dog(): Pet {
     val say = "Bark"
@@ -33,9 +33,8 @@ class PetCreator {
 }
 
 fun main() {
-  val create = PetCreator()
-  create.dog().speak() eq "Bark home!"
-  create.cat().speak() eq "Meow home!"
-  create.hamster().speak() eq "Squeak home!"
-  create.goldfish().speak() eq "Blub home!"
+  CreatePet.dog().speak() eq "Bark home!"
+  CreatePet.cat().speak() eq "Meow home!"
+  CreatePet.hamster().speak() eq "Squeak home!"
+  CreatePet.goldfish().speak() eq "Blub home!"
 }

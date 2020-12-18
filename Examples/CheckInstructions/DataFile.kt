@@ -22,7 +22,7 @@ class DataFile(val fileName: String) :
 }
 
 fun main() {
-  DataFile("Test.txt") eq
+  DataFile("Test.txt").reset() eq
     Paths.get("DataFiles", "Test.txt")
       .toString()
 }

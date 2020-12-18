@@ -7,7 +7,7 @@ fun interface Counter {
   fun next(): Int
 }
 
-class CounterFactory {
+object CounterFactory {
   private var count = 0
   fun new(name: String): Counter {
     // Local inner class:
@@ -44,10 +44,9 @@ fun main() {
   fun test(counter: Counter) {
     (0..3).forEach { counter.next() }
   }
-  val cf = CounterFactory()
-  test(cf.new("Local"))
-  test(cf.new2("Anon"))
-  test(cf.new3("SAM"))
+  test(CounterFactory.new("Local"))
+  test(CounterFactory.new2("Anon"))
+  test(CounterFactory.new3("SAM"))
   trace eq """
     Local() Local 0 Local 1 Local 2 Local 3
     Counter() Anon 4 Anon 5 Anon 6 Anon 7
