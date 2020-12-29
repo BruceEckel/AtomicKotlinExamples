@@ -2625,12 +2625,12 @@ task Task3(type: JavaExec) {
 
 task Task4(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'variableArgumentListsExercise4.Task4Kt'
+    main = 'whenExpressionsExercise4.Task4Kt'
 }
 
 task Task5(type: JavaExec) {
     classpath kotlinClassPath
-    main = 'varAndValExercise5.Task5Kt'
+    main = 'constrainingVisibilityExercise5.Task5Kt'
 }
 
 task Task6(type: JavaExec) {

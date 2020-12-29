@@ -93,6 +93,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTask4() {
+    testExample("Examples/Booleans/Task4.kt", booleansExercise4.Task4Kt::main);
+  }
+
+  @Test
   public void testDoWhileControl() {
     testExample("Examples/BreakAndContinue/DoWhileControl.kt", DoWhileControlKt::main);
   }
@@ -428,6 +433,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTask41() {
+    testExample("Examples/Constructors/Task4.kt", constructorsExercise4.Task4Kt::main);
+  }
+
+  @Test
   public void testVisibleArgs() {
     testExample("Examples/Constructors/VisibleArgs.kt", VisibleArgsKt::main);
   }
@@ -465,6 +475,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask38() {
     testExample("Examples/CreatingClasses/Task3.kt", creatingClassesExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask42() {
+    testExample("Examples/CreatingClasses/Task4.kt", creatingClassesExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask5() {
+    testExample("Examples/CreatingClasses/Task5.kt", creatingClassesExercise5.Task5Kt::main);
   }
 
   @Test
@@ -590,6 +610,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask210() {
     testExample("Examples/DataTypes/Task2.kt", dataTypesExercise2.Task2Kt::main);
+  }
+
+  @Test
+  public void testTask43() {
+    testExample("Examples/DataTypes/Task4.kt", dataTypesExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask51() {
+    testExample("Examples/DataTypes/Task5.kt", dataTypesExercise5.Task5Kt::main);
   }
 
   @Test
@@ -868,6 +898,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTask44() {
+    testExample("Examples/Exceptions/Task4.kt", exceptionsExercise4.Task4Kt::main);
+  }
+
+  @Test
   public void testToIntException() {
     testExample("Examples/Exceptions/ToIntException.kt", exceptions.ToIntExceptionKt::main);
   }
@@ -900,6 +935,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask215() {
     testExample("Examples/ExpressionsStatements/Task2.kt", expressionsAndStatementsExercise2.Task2Kt::main);
+  }
+
+  @Test
+  public void testTask45() {
+    testExample("Examples/ExpressionsStatements/Task4.kt", expressionsAndStatementsExercise4.Task4Kt::main);
   }
 
   @Test
@@ -940,6 +980,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask314() {
     testExample("Examples/ExtensionFunctions/Task3.kt", extensionFunctionsExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask46() {
+    testExample("Examples/ExtensionFunctions/Task4.kt", extensionFunctionsExercise4.Task4Kt::main);
   }
 
   @Test
@@ -1078,7 +1123,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask4() {
+  public void testTask47() {
     testExample("Examples/FoldingLists/Task4.kt", foldingListsExercise4.Task4Kt::main);
   }
 
@@ -1118,6 +1163,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTask48() {
+    testExample("Examples/Functions/Task4.kt", functionsExercise4.Task4Kt::main);
+  }
+
+  @Test
   public void testEmptyProgram() {
     testExample("Examples/HelloWorld/EmptyProgram.kt", EmptyProgramKt::main);
   }
@@ -1140,6 +1190,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask318() {
     testExample("Examples/HelloWorld/Task3.kt", helloWorldExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask49() {
+    testExample("Examples/HelloWorld/Task4.kt", helloWorldExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask52() {
+    testExample("Examples/HelloWorld/Task5.kt", helloWorldExercise5.Task5Kt::main);
   }
 
   @Test
@@ -1193,7 +1253,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask41() {
+  public void testTask410() {
     testExample("Examples/HigherOrderFunctions/Task4.kt", higherOrderFunctionsExercise4.Task4Kt::main);
   }
 
@@ -1245,6 +1305,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask320() {
     testExample("Examples/IfExpressions/Task3.kt", ifExpressionsExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask411() {
+    testExample("Examples/IfExpressions/Task4.kt", ifExpressionsExercise4.Task4Kt::main);
   }
 
   @Test
@@ -1438,7 +1503,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask42() {
+  public void testTask412() {
     testExample("Examples/InKeyword/Task4.kt", theInKeywordExercise4.Task4Kt::main);
   }
 
@@ -1813,6 +1878,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTask413() {
+    testExample("Examples/Lists/Task4.kt", listsExercise4.Task4Kt::main);
+  }
+
+  @Test
   public void testCustomLabel() {
     testExample("Examples/LocalFunctions/CustomLabel.kt", CustomLabelKt::main);
   }
@@ -1968,8 +2038,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask43() {
+  public void testTask414() {
     testExample("Examples/LoopingAndRanges/Task4.kt", loopingAndRangesExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask53() {
+    testExample("Examples/LoopingAndRanges/Task5.kt", loopingAndRangesExercise5.Task5Kt::main);
   }
 
   @Test
@@ -2003,12 +2078,12 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask44() {
+  public void testTask415() {
     testExample("Examples/ManipulatingLists/Task4.kt", manipulatingListsExercise4.Task4Kt::main);
   }
 
   @Test
-  public void testTask5() {
+  public void testTask54() {
     testExample("Examples/ManipulatingLists/Task5.kt", manipulatingListsExercise5.Task5Kt::main);
   }
 
@@ -2080,6 +2155,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask331() {
     testExample("Examples/Maps/Task3.kt", mapsExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask416() {
+    testExample("Examples/Maps/Task4.kt", mapsExercise4.Task4Kt::main);
   }
 
   @Test
@@ -2175,6 +2255,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask333() {
     testExample("Examples/NamedAndDefaultArgs/Task3.kt", namedAndDefaultArgumentsExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask417() {
+    testExample("Examples/NamedAndDefaultArgs/Task4.kt", namedAndDefaultArgumentsExercise4.Task4Kt::main);
   }
 
   @Test
@@ -2433,8 +2518,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask45() {
+  public void testTask418() {
     testExample("Examples/NumberTypes/Task4.kt", numberTypesExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask55() {
+    testExample("Examples/NumberTypes/Task5.kt", numberTypesExercise5.Task5Kt::main);
   }
 
   @Test
@@ -2518,8 +2608,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask46() {
+  public void testTask419() {
     testExample("Examples/ObjectsEverywhere/Task4.kt", objectsEverywhereExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask56() {
+    testExample("Examples/ObjectsEverywhere/Task5.kt", objectsEverywhereExercise5.Task5Kt::main);
   }
 
   @Test
@@ -2583,7 +2678,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask47() {
+  public void testTask420() {
     testExample("Examples/OperationsOnCollections/Task4.kt", operationsOnCollectionsExercise4.Task4Kt::main);
   }
 
@@ -2723,6 +2818,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTask421() {
+    testExample("Examples/Overloading/Task4.kt", overloadingExercise4.Task4Kt::main);
+  }
+
+  @Test
   public void testWithDefaultArguments() {
     testExample("Examples/Overloading/WithDefaultArguments.kt", withdefaultarguments.WithDefaultArgumentsKt::main);
   }
@@ -2773,7 +2873,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask48() {
+  public void testTask422() {
     testExample("Examples/Packages/Task4.kt", packagesExercise4.Task4Kt::main);
   }
 
@@ -2883,8 +2983,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask49() {
+  public void testTask423() {
     testExample("Examples/PropertyAccessors/Task4.kt", propertyAccessorsExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask57() {
+    testExample("Examples/PropertyAccessors/Task5.kt", propertyAccessorsExercise5.Task5Kt::main);
   }
 
   @Test
@@ -2998,7 +3103,7 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask410() {
+  public void testTask424() {
     testExample("Examples/Recursion/Task4.kt", recursionExercise4.Task4Kt::main);
   }
 
@@ -3035,6 +3140,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask346() {
     testExample("Examples/RepetitionWithWhile/Task3.kt", repetitionWithWhileExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask425() {
+    testExample("Examples/RepetitionWithWhile/Task4.kt", repetitionWithWhileExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask58() {
+    testExample("Examples/RepetitionWithWhile/Task5.kt", repetitionWithWhileExercise5.Task5Kt::main);
   }
 
   @Test
@@ -3318,6 +3433,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTask426() {
+    testExample("Examples/Sets/Task4.kt", setsExercise4.Task4Kt::main);
+  }
+
+  @Test
   public void testExpressionInTemplate() {
     testExample("Examples/StringTemplates/ExpressionInTemplate.kt", ExpressionInTemplateKt::main);
   }
@@ -3345,6 +3465,16 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask351() {
     testExample("Examples/StringTemplates/Task3.kt", stringTemplatesExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask427() {
+    testExample("Examples/StringTemplates/Task4.kt", stringTemplatesExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask59() {
+    testExample("Examples/StringTemplates/Task5.kt", stringTemplatesExercise5.Task5Kt::main);
   }
 
   @Test
@@ -3433,12 +3563,12 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask411() {
+  public void testTask428() {
     testExample("Examples/Summary1/Task4.kt", summaryIExercise4.Task4Kt::main);
   }
 
   @Test
-  public void testTask51() {
+  public void testTask510() {
     testExample("Examples/Summary1/Task5.kt", summaryIExercise5.Task5Kt::main);
   }
 
@@ -3573,12 +3703,12 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask412() {
+  public void testTask429() {
     testExample("Examples/Summary2/Task4.kt", summaryIIExercise4.Task4Kt::main);
   }
 
   @Test
-  public void testTask52() {
+  public void testTask511() {
     testExample("Examples/Summary2/Task5.kt", summaryIIExercise5.Task5Kt::main);
   }
 
@@ -3645,6 +3775,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask354() {
     testExample("Examples/Testing/Task3.kt", testingExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask430() {
+    testExample("Examples/Testing/Task4.kt", testingExercise4.Task4Kt::main);
   }
 
   @Test
@@ -3853,12 +3988,12 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask413() {
+  public void testTask431() {
     testExample("Examples/VarAndVal/Task4.kt", varAndValExercise4.Task4Kt::main);
   }
 
   @Test
-  public void testTask53() {
+  public void testTask512() {
     testExample("Examples/VarAndVal/Task5.kt", varAndValExercise5.Task5Kt::main);
   }
 
@@ -3908,8 +4043,13 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
-  public void testTask414() {
+  public void testTask432() {
     testExample("Examples/Varargs/Task4.kt", variableArgumentListsExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask513() {
+    testExample("Examples/Varargs/Task5.kt", variableArgumentListsExercise5.Task5Kt::main);
   }
 
   @Test
@@ -3963,6 +4103,16 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testTask433() {
+    testExample("Examples/Visibility/Task4.kt", constrainingVisibilityExercise4.Task4Kt::main);
+  }
+
+  @Test
+  public void testTask514() {
+    testExample("Examples/Visibility/Task5.kt", constrainingVisibilityExercise5.Task5Kt::main);
+  }
+
+  @Test
   public void testAnalyzeInput() {
     testExample("Examples/WhenExpressions/AnalyzeInput.kt", whenexpressions.AnalyzeInputKt::main);
   }
@@ -4000,6 +4150,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testTask359() {
     testExample("Examples/WhenExpressions/Task3.kt", whenExpressionsExercise3.Task3Kt::main);
+  }
+
+  @Test
+  public void testTask434() {
+    testExample("Examples/WhenExpressions/Task4.kt", whenExpressionsExercise4.Task4Kt::main);
   }
 
   @Test
