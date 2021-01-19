@@ -1,5 +1,5 @@
 // RepetitionWithWhile/Task1.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package repetitionWithWhileExercise1
 
 fun displayContent(s: String) {

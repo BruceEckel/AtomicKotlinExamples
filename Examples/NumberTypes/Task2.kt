@@ -1,5 +1,5 @@
 // NumberTypes/Task2.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package numberTypesExercise2
 
 val million: Int = 1_000_000

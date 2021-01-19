@@ -1,5 +1,5 @@
 // Functions/MultiplyByThree.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 
 fun multiplyByThree(x: Int): Int = x * 3
 

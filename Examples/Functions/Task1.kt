@@ -1,5 +1,5 @@
 // Functions/Task1.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package functionsExercise1
 
 fun getSquare(i: Int): Int = i * i

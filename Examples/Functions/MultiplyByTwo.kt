@@ -1,5 +1,5 @@
 // Functions/MultiplyByTwo.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 
 fun multiplyByTwo(x: Int): Int {  // [1]
   println("Inside multiplyByTwo") // [2]

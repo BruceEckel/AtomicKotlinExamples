@@ -1,5 +1,5 @@
 // CreatingClasses/Task3.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package creatingClassesExercise3
 
 class Robot {
@@ -21,10 +21,8 @@ class Robot {
 }
 
 fun main() {
-/*
   val robot = Robot()
-  robot.goUp(11)
-*/
+  robot.up(11)
 }
 /* Expected output:
 Up 11 steps

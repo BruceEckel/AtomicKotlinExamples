@@ -1,5 +1,5 @@
 // PropertyDelegation/PropDelegationSoln4.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package propertyDelegationExercise3
 import atomictest.eq
 import kotlin.reflect.KProperty

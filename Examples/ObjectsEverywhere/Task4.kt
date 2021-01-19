@@ -1,5 +1,5 @@
 // ObjectsEverywhere/Task4.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package objectsEverywhereExercise4
 
 fun reverseDecimal(number: Int): Int = number.toString().reversed().toInt()

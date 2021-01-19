@@ -1,5 +1,5 @@
 // Enumerations/Task2.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package enumerationsExercise2
 import atomictest.eq
 import enumerationsExercise2.Month.*

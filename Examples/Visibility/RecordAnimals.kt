@@ -1,5 +1,5 @@
 // Visibility/RecordAnimals.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 
 private var index = 0                  // [1]
 

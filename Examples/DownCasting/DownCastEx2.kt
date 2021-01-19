@@ -1,5 +1,5 @@
 // DownCasting/DownCastEx2.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package downcastingExercise2
 import downcasting.*
 import atomictest.eq

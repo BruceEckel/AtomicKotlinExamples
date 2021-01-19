@@ -1,5 +1,5 @@
 // Visibility/Cookie.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 
 class Cookie(
   private var isReady: Boolean  // [1]

@@ -1,5 +1,5 @@
 // Constructors/Task2.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package constructorsExercise2
 
 class Robot(val fieldSize: Int, var x: Int, var y: Int) {

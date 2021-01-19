@@ -1,5 +1,5 @@
 // interoperability/CallTopLevelFunction2.java
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package interoperability;
 import static interop.TopLevelFunctionKt.hi;
 import static atomictest.AtomicTestKt.eq;

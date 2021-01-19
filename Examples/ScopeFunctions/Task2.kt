@@ -1,5 +1,5 @@
 // ScopeFunctions/Task2.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package scopeFunctionsExercise2
 import classdelegation.SpaceShipControls
 import atomictest.*

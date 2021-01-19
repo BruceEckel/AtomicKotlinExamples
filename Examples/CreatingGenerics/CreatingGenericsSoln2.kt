@@ -1,5 +1,5 @@
 // CreatingGenerics/CreatingGenericsSoln2.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package creatingGenericsExercise2
 import creatinggenerics.Crate
 import atomictest.eq

@@ -1,5 +1,5 @@
 // Summary1/Task7.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package summaryIExercise7
 
 fun countDigits(number: Int, digit: Int): Int {

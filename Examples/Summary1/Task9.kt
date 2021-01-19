@@ -1,5 +1,5 @@
 // Summary1/Task9.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package summaryIExercise9
 
 fun printTriangle(n: Int) {

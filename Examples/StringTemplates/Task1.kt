@@ -1,5 +1,5 @@
 // StringTemplates/Task1.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package stringTemplatesExercise1
 
 fun findMax(first: Int, second: Int): Int =

@@ -1,5 +1,5 @@
 // Summary1/Task10.kt
-// (c)2020 Mindview LLC. See Copyright.txt for permissions.
+// (c)2021 Mindview LLC. See Copyright.txt for permissions.
 package summaryIExercise10
 
 fun showSnake(rows: Int, columns: Int) {
