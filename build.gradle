@@ -41,13 +41,6 @@ dependencies {
     // Logging:
     implementation 'io.github.microutils:kotlin-logging:1.4.6'
     implementation 'org.slf4j:slf4j-simple:1.7.25'
-
-    // Zircon
-    implementation "org.jetbrains.kotlinx:kotlinx-collections-immutable"
-    implementation "org.hexworks.zircon:zircon.core-jvm:$zircon_version"
-    implementation "org.hexworks.zircon:zircon.jvm.swing:$zircon_version"
-    // For LibgdxApplications:
-    implementation "org.hexworks.zircon:zircon.jvm.libgdx:$zircon_version"
 }
 
 apply from: 'gradle/tasks.gradle'
