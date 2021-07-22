@@ -19,3 +19,8 @@ fun main() {
   testDouble()
   testDouble2()
 }
+/* Output:
+-9223372036854775808
+1.7976931348623157E308
+true
+ */

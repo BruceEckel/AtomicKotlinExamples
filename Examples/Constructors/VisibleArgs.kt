@@ -9,7 +9,7 @@ fun main() {
   val alien1 =
     MutableNameAlien("Reverse Giraffe")
   val alien2 =
-    FixedNameAlien("Krombopolis Michael")
+    FixedNameAlien("Krombopulos Michael")
 
   alien1.name = "Parasite"
   // Can't do this:

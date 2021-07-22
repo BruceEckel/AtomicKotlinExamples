@@ -15,7 +15,7 @@ fun main() {
     "Miffy",
     "Miller",
     "1-234-567890",
-    "1600 Amphitheatre Parkway")
+    "1600 Amphitheater Parkway")
   val newContact = contact.copy(
     number = "098-765-4321",
     address = "Brandschenkestrasse 110")

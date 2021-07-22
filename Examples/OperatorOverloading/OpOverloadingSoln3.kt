@@ -7,7 +7,7 @@ class Repository<T>(initSize: Int = 10) {
   private val list =
     MutableList<T?>(initSize) { null }
   operator fun plusAssign(rv: T) {
-    val i = list.indexOfFirst { it == null }
+    val i = list.indexOf(null)
     if(i == -1)
       list += rv
     else

@@ -15,3 +15,9 @@ fun main() {
   println(second(false, false, false))
   println(second(false, true, false))
 }
+/* Output:
+true
+false
+false
+true
+*/

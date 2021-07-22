@@ -8,11 +8,11 @@ fun main() {
   val hour = 6
   println("Current time: " + hour)
 
-  val isOpen = hour >= opens && hour <= closes
+  val isOpen = hour >= opens && hour < closes
   println("Open: " + isOpen)
   println("Not open: " + !isOpen)
 
-  val isClosed = hour < opens || hour > closes
+  val isClosed = hour < opens || hour >= closes
   println("Closed: " + isClosed)
 }
 /* Output:

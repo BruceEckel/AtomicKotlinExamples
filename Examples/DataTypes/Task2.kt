@@ -29,8 +29,4 @@ fun main() {
   // val bb = boolean + boolean
   // val ic = int + character
   // val ds = double + string
-
-  println("The type that can't be combined " +
-    "with itself using '+':")
-  println("Boolean")
 }

@@ -25,7 +25,7 @@ fun List<Pet>.liveInWater(): List<Pet> =
 fun List<Pet>.areAmphibious(): List<Pet> =
   filter(AMPHIBIOUS::livesIn)
 
-fun List<Pet>.partAmphibious(): Pair<List<Pet>, List<Pet>> =
+fun List<Pet>.partitionAmphibious(): Pair<List<Pet>, List<Pet>> =
   partition(AMPHIBIOUS::livesIn)
 
 fun main() {
@@ -39,6 +39,6 @@ fun main() {
   pets.liveOnLand() eq "[Dog, Cat]"
   pets.liveInWater() eq "[Goldfish]"
   pets.areAmphibious() eq "[Turtle, Frog]"
-  pets.partAmphibious() eq
+  pets.partitionAmphibious() eq
     "([Turtle, Frog], [Dog, Cat, Goldfish])"
 }

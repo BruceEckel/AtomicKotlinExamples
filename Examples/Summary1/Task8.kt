@@ -7,11 +7,9 @@ fun reverseDecimal(number: Int): Int {
   var result = 0
 
   while (worker > 0) {
+    result *= 10
     result += worker % 10
     worker /= 10
-    if (worker != 0) {
-      result *= 10
-    }
   }
   return result
 }

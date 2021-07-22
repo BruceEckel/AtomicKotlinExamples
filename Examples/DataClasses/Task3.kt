@@ -7,7 +7,7 @@ data class Book(val title: String, val authors: List<Author>)
 
 data class Author(val name: String)
 
-fun authorBooksMap(books: List<Book>): Map<Author, List<Book>> {
+fun createAuthorToBooksMap(books: List<Book>): Map<Author, List<Book>> {
   val result = mutableMapOf<Author, MutableList<Book>>()
   for (book in books) {
     for (author in book.authors) {
@@ -35,7 +35,7 @@ fun main() {
     Book("Kotlin in Action", listOf(Author("Dmitry Jemerov"), Author("Svetlana Isakova"))),
     Book("Atomic Kotlin", listOf(Author("Bruce Eckel"), Author("Svetlana Isakova")))
   )
-  val authorToBooksMap = authorBooksMap(books)
+  val authorToBooksMap = createAuthorToBooksMap(books)
   authorToBooksMap.getValue(Author("Bruce Eckel")).size eq 11
   authorToBooksMap.getValue(Author("Svetlana Isakova")).first().title eq "Kotlin in Action"
 }

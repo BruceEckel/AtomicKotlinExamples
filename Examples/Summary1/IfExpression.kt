@@ -12,7 +12,7 @@ fun main() {
     val closes = 20
     println("Operating hours: " +
       opens + " - " + closes)
-    hour >= opens && hour <= closes
+    hour >= opens && hour < closes
   } else {
     false
   }

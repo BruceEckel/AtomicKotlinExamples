@@ -8,7 +8,7 @@ class Rectangle(
   val color: String = "yellow"
 ) {
   override fun toString(): String {
-    return "Rectangle ${side1}x$side2 of '$color' color"
+    return "$color rectangle $side1 x $side2"
   }
 }
 
