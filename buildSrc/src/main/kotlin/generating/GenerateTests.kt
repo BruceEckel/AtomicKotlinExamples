@@ -1,20 +1,26 @@
 package generating
+
+import org.gradle.api.DefaultTask
+import org.gradle.api.tasks.TaskAction
 import java.io.File
 
-fun main() {
-  val exampleFiles = File("Examples")
-    .listFilesFixedOrder()
-    .flatMap { atom ->
-      atom
+abstract class GenerateTests : DefaultTask() {
+    @TaskAction
+    fun run() {
+      val exampleFiles = File("Examples")
         .listFilesFixedOrder()
-        .filter { it.extension == "kt" }
+        .flatMap { atom ->
+          atom
+            .listFilesFixedOrder()
+            .filter { it.extension == "kt" }
+        }
+      val testFiles = File("Tests/unittesting")
+        .listFilesFixedOrder()
+      val allFiles = (exampleFiles + testFiles)
+        .map { ExampleInfo.create(it) }
+      File("Tests/TestExamples.java").writeText(
+        generateTests(allFiles))
     }
-  val testFiles = File("Tests/unittesting")
-    .listFilesFixedOrder()
-  val allFiles = (exampleFiles + testFiles)
-    .map { ExampleInfo.create(it) }
-  File("Tests/TestExamples.java").writeText(
-    generateTests(allFiles))
 }
 
 fun File.listFilesFixedOrder() = listFiles()!!
