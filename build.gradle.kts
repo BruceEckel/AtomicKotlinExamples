@@ -42,7 +42,7 @@ dependencies {
     implementation("org.slf4j:slf4j-simple:1.7.25")
 }
 
-//apply(from = "gradle/tasks.gradle.kts")
+apply(from = "gradle/tasks.gradle")
 
 tasks.withType<Test> {
     testLogging {
