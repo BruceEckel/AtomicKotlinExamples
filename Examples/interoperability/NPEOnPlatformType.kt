@@ -16,5 +16,5 @@ fun main() {
   capture {
     val zn: JTool = JTool.get(null) // [5]
   } eq "NullPointerException: " +
-    "JTool.get(null) must not be null"
+    "get(null) must not be null"
 }
