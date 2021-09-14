@@ -8,7 +8,7 @@ fun main() {
   Transport::class.sealedSubclasses
     .map { it.simpleName }
     .forEach { trace(it) }
-  trace eq """
+   trace eq """
     Train
     Bus
     Tram

@@ -5,8 +5,13 @@ import atomictest.*
 
 abstract class Cleanable(val id: String) {
   open val parts: List<Cleanable> = listOf()
-  fun clean(): String =
-    "${parts.map(Cleanable::clean)} $id clean\n"
+  fun clean(): String {
+    val text = "$id clean"
+    if (parts.isEmpty()) return text
+    return "${parts.joinToString(
+      " ", "(", ")",
+      transform = Cleanable::clean)} $text\n"
+  }
 }
 
 class House: Cleanable("House") {
@@ -36,26 +41,12 @@ class House: Cleanable("House") {
 
 fun main() {
   House().clean() eq """
-  [[[[] Shelf clean
-  , [] Shelf clean
-  , [] Drawer clean
-  , [] Drawer clean
-  ] Closet clean
-  , [[] Toilet clean
-  , [] Sink clean
-  , [] Bathtub clean
-  ] Bathroom clean
-  ] Master Bedroom clean
-  , [[[] Shelf clean
-  , [] Shelf clean
-  , [] Drawer clean
-  , [] Drawer clean
-  ] Closet clean
-  , [[] Toilet clean
-  , [] Sink clean
-  , [] Bathtub clean
-  ] Bathroom clean
-  ] Guest Bedroom clean
-  ] House clean
-  """
+    (((Shelf clean Shelf clean Drawer clean Drawer clean) Closet clean
+     (Toilet clean Sink clean Bathtub clean) Bathroom clean
+    ) Master Bedroom clean
+     ((Shelf clean Shelf clean Drawer clean Drawer clean) Closet clean
+     (Toilet clean Sink clean Bathtub clean) Bathroom clean
+    ) Guest Bedroom clean
+    ) House clean
+  """.trimIndent()
 }

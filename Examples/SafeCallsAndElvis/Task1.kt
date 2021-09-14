@@ -4,7 +4,7 @@ package safeCallsAndTheElvisOperatorExercise1
 import atomictest.eq
 
 fun downcase(s: String?): String =
-  s?.toLowerCase() ?: ""
+  s?.lowercase() ?: ""
 
 fun main() {
   downcase(null) eq ""

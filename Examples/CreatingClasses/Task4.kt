@@ -3,9 +3,9 @@
 package creatingClassesExercise4
 
 fun main() {
-  val s: String = "Hello!"
-  println(s.toUpperCase())
-  println(s.toLowerCase())
+  val s = "Hello!"
+  println(s.uppercase())
+  println(s.lowercase())
 }
 /* Output:
 HELLO!

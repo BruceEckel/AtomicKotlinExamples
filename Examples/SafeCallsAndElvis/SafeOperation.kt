@@ -4,9 +4,9 @@ package safecalls
 import atomictest.*
 
 fun String.echo() {
-  trace(toUpperCase())
+  trace(uppercase())
   trace(this)
-  trace(toLowerCase())
+  trace(lowercase())
 }
 
 fun main() {
