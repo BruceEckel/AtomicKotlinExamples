@@ -3,9 +3,7 @@
 package propertyAccessorsExercise1
 
 class Hamster(val name: String) {
-  override fun toString(): String {
-    return "Hamster('$name')"
-  }
+  override fun toString() = "Hamster('$name')"
 }
 
 class Cage(private val maxCapacity: Int) {

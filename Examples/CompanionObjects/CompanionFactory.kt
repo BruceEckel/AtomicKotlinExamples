@@ -5,7 +5,7 @@ import atomictest.eq
 
 class Numbered2
 private constructor(private val id: Int) {
-  override fun toString(): String = "#$id"
+  override fun toString() = "#$id"
   companion object Factory {
     fun create(size: Int) =
       List(size) { Numbered2(it) }

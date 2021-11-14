@@ -8,9 +8,8 @@ data class Student(
   val lastName: String,
   val grade: Int
 ) {
-  override fun toString(): String {
-    return "$firstName $lastName ($grade)"
-  }
+  override fun toString() =
+    "$firstName $lastName ($grade)"
 }
 
 fun List<Student>.sortByGradeAndThenByName(): List<Student> = sortedWith(

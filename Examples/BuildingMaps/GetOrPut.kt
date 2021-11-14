@@ -4,7 +4,6 @@ import atomictest.eq
 
 fun main() {
   val map = mapOf(1 to "one", 2 to "two")
-
   map.getOrElse(0) { "zero" } eq "zero"
 
   val mutableMap = map.toMutableMap()

@@ -2,9 +2,8 @@
 // (c)2021 Mindview LLC. See Copyright.txt for permissions.
 
 class Scientist(val name: String) {
-  override fun toString(): String {
-    return "Scientist('$name')"
-  }
+  override fun toString() =
+    "Scientist('$name')"
 }
 
 fun main() {

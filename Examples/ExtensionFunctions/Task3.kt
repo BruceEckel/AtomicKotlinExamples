@@ -9,9 +9,8 @@ class Rectangle(
   val width: Int,
   val height: Int
 ) {
-  override fun toString(): String {
-    return "[x=$x, y=$y, width=$width, height=$height]"
-  }
+  override fun toString() =
+    "[x=$x, y=$y, width=$width, height=$height]"
 }
 
 fun Rectangle.coversZero(): Boolean =

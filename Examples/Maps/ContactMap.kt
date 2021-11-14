@@ -7,9 +7,8 @@ class Contact(
   val name: String,
   val phone: String
 ) {
-  override fun toString(): String {
-    return "Contact('$name', '$phone')"
-  }
+  override fun toString() =
+    "Contact('$name', '$phone')"
 }
 
 fun main() {

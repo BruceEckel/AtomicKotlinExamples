@@ -4,9 +4,8 @@ package mapsExercise1
 import atomictest.eq
 
 class Contact(val name: String, val number: String) {
-  override fun toString(): String {
-    return "Contact('$name', '$number')"
-  }
+  override fun toString() =
+    "Contact('$name', '$number')"
 }
 
 fun buildNumberToContactMap(contactList: List<Contact>): Map<String, Contact> {

@@ -6,27 +6,24 @@ import atomictest.eq
 class Badger(id: String, years: Int) {
   val name = id
   val age = years
-  override fun toString(): String {
-    return "Badger: $name, age: $age"
-  }
+  override fun toString() =
+    "Badger: $name, age: $age"
 }
 
 class Snake(
   var type: String,
   var length: Double
 ) {
-  override fun toString(): String {
-    return "Snake: $type, length: $length"
-  }
+  override fun toString() =
+    "Snake: $type, length: $length"
 }
 
 class Moose(
   val age: Int,
   val height: Double
 ) {
-  override fun toString(): String {
-    return "Moose, age: $age, height: $height"
-  }
+  override fun toString() =
+    "Moose, age: $age, height: $height"
 }
 
 fun main() {
