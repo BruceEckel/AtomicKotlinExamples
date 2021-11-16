@@ -4,6 +4,7 @@ import atomictest.eq
 
 fun main() {
   val even = mapOf(2 to "two", 4 to "four")
+
   even.map {                            // [1]
     "${it.key}=${it.value}"
   } eq listOf("2=two", "4=four")
