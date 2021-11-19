@@ -3,13 +3,12 @@
 package lists
 import atomictest.eq
 
-fun getList(): List<Int> {
-  return mutableListOf(1, 2, 3)
-}
+fun makeList(): List<Int> =
+  mutableListOf(1, 2, 3)
 
 fun main() {
-  // getList() produces a read-only List:
-  val list = getList()
-  // list += 3 // Error
+  // makeList() produces a read-only List:
+  val list = makeList()
+  // list.add(3) // Unresolved reference: add
   list eq listOf(1, 2, 3)
 }

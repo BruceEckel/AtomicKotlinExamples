@@ -85,6 +85,11 @@ task AnyInstead(type: JavaExec) {
     main = 'introgenerics.AnyInsteadKt'
 }
 
+task ApparentlyMutableList(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'ApparentlyMutableListKt'
+}
+
 task Arg(type: JavaExec) {
     classpath kotlinClassPath
     main = 'ArgKt'
@@ -2125,6 +2130,11 @@ task PlayingCards(type: JavaExec) {
     main = 'manipulatinglists.PlayingCardsKt'
 }
 
+task PlusAssignPuzzle(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'PlusAssignPuzzleKt'
+}
+
 task Postconditions(type: JavaExec) {
     classpath kotlinClassPath
     main = 'checkinstructions.PostconditionsKt'
@@ -3058,6 +3068,7 @@ task run (dependsOn: [
     'Any',
     'AnyFromListOfStar',
     'AnyInstead',
+    'ApparentlyMutableList',
     'Arg',
     'ArgumentOrder',
     'ArithmeticOperators',
@@ -3466,6 +3477,7 @@ task run (dependsOn: [
     'PlatformTypes',
     'PlayerInterface',
     'PlayingCards',
+    'PlusAssignPuzzle',
     'Postconditions',
     'PostfixVsPrefix',
     'Predicates',

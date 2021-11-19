@@ -385,7 +385,7 @@ on the Mac, "Extract Here" on Linux, or "Extract all ..." on Windows.
 # Appendix B: Command-Line Hello World
 
 This appendix explains how to compile and run the program shown in the "Hello
-World" atom in the book, using the latest version (1.4 or higher) of the
+World" atom in the book, using the latest version (1.5 or higher) of the
 [Kotlin command-line compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 Open up a console window in the `HelloWorld` directory, where you'll see
@@ -455,7 +455,7 @@ kotlin bar.FooKt
 
 The Kotlin interpreter is also called the REPL (for *Read-Evaluate-Print-
 Loop*). To use this you must first install the
-latest version (1.4 or higher) of the [Kotlin command-line
+latest version (1.5 or higher) of the [Kotlin command-line
 compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 > NOTE: You do not need to install command-line Kotlin for the operations
@@ -463,7 +463,7 @@ compiler](http://kotlinlang.org/docs/tutorials/command-line.html).
 
 ## Install Kotlin
 
-In this book, we use Kotlin version 1.4, the latest available at the time. The
+In this book, we use Kotlin version 1.5, the latest available at the time. The
 detailed installation instructions for the command-line compiler are available
 at [The Kotlin Site](https://kotlinlang.org/docs/tutorials/command-line.html).
 
@@ -482,13 +482,13 @@ To start the REPL, type `kotlinc` by itself on the command line. You should see
 something like the following:
 
 ```
-Welcome to Kotlin version 1.4 (JRE 1.8.0_144-b01)
+Welcome to Kotlin version 1.5 (JRE 1.8.0_144-b01)
 Type :help for help, :quit for quit
 >>>
 ```
 
 The exact version numbers will vary depending on the versions of Kotlin
-and Java you've installed, but make sure that you're running Kotlin 1.4
+and Java you've installed, but make sure that you're running Kotlin 1.5
 or greater.
 
 The REPL gives you immediate interactive feedback, which is helpful for

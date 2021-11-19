@@ -1823,6 +1823,11 @@ public class TestExamples extends AbstractTestExamples {
   }
 
   @Test
+  public void testApparentlyMutableList() {
+    testExample("Examples/Lists/ApparentlyMutableList.kt", ApparentlyMutableListKt::main);
+  }
+
+  @Test
   public void testLists() {
     testExample("Examples/Lists/Lists.kt", ListsKt::main);
   }
@@ -1860,6 +1865,11 @@ public class TestExamples extends AbstractTestExamples {
   @Test
   public void testParameterizedTypes() {
     testExample("Examples/Lists/ParameterizedTypes.kt", ParameterizedTypesKt::main);
+  }
+
+  @Test
+  public void testPlusAssignPuzzle() {
+    testExample("Examples/Lists/PlusAssignPuzzle.kt", PlusAssignPuzzleKt::main);
   }
 
   @Test
